@@ -9725,7 +9725,7 @@
         "type": "ui_gauge",
         "z": "33e76285.1cd03e",
         "g": "1f533065.36249",
-        "name": "Clingar",
+        "name": "Connel",
         "group": "c8a900d5.b5a2",
         "order": 3,
         "width": 2,
@@ -9734,7 +9734,7 @@
         "title": "Connel {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": 0,
+        "min": "500",
         "max": "1100",
         "colors": [
             "#b3000c",
