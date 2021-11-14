@@ -7196,7 +7196,7 @@
         "label": "% opladt",
         "format": "{{value}}",
         "min": "500",
-        "max": "1000",
+        "max": "1100",
         "colors": [
             "#b3000c",
             "#e6e600",
