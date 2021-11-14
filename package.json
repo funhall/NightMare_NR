@@ -2,7 +2,9 @@
     "name": "NOdeRed_Escape",
     "description": "Backup af Nightmare NodeRed",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-aedes": "0.5.2"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
