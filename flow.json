@@ -5826,7 +5826,7 @@
         "title": "Corwin {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": 0,
+        "min": "500",
         "max": "1100",
         "colors": [
             "#b3000c",
@@ -7195,7 +7195,7 @@
         "title": "Nellie",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": 0,
+        "min": "500",
         "max": "1000",
         "colors": [
             "#b3000c",
@@ -13428,7 +13428,7 @@
         "title": "Huston {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": 0,
+        "min": "500",
         "max": "1100",
         "colors": [
             "#b3000c",
