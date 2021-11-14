@@ -1,0 +1,12 @@
+{
+    "name": "NOdeRed_Escape",
+    "description": "Backup af Nightmare NodeRed",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flow.json",
+            "credentialsFile": "flow_cred.json"
+        }
+    }
+}
