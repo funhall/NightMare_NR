@@ -29244,8 +29244,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 1200,
-        "y": 1140,
+        "x": 1210,
+        "y": 1160,
         "wires": [
             []
         ]
