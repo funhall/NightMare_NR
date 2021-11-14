@@ -8342,7 +8342,7 @@
         "title": "Clingar {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": 0,
+        "min": "500",
         "max": "1100",
         "colors": [
             "#b3000c",
