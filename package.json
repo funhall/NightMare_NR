@@ -6,7 +6,8 @@
         "node-red-contrib-aedes": "0.5.2",
         "node-red-contrib-average": "0.1.7",
         "node-red-contrib-calc": "1.0.5",
-        "node-red-contrib-controltimer": "0.1.0"
+        "node-red-contrib-controltimer": "0.1.0",
+        "node-red-contrib-dsm": "0.14.1"
     },
     "node-red": {
         "settings": {
