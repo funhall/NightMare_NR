@@ -12,7 +12,8 @@
         "node-red-contrib-firebase-realtime-database": "0.1.3",
         "node-red-contrib-join-wait": "0.5.2",
         "node-red-contrib-loop": "1.0.1",
-        "node-red-contrib-throttle": "0.1.6"
+        "node-red-contrib-throttle": "0.1.6",
+        "node-red-contrib-time-based-dimmer": "0.8.2"
     },
     "node-red": {
         "settings": {
