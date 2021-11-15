@@ -18,7 +18,8 @@
         "node-red-contrib-xml2json": "0.0.2",
         "node-red-dashboard": "2.30.0",
         "node-red-node-pi-gpio": "1.2.3",
-        "node-red-node-ping": "0.3.1"
+        "node-red-node-ping": "0.3.1",
+        "ttb-node-red-counter": "0.1.0"
     },
     "node-red": {
         "settings": {
