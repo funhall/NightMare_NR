@@ -1977,11 +1977,6 @@
         "collapse": false
     },
     {
-        "id": "09c04ceaa5a177df",
-        "type": "firebase admin",
-        "name": "funhallproject"
-    },
-    {
         "id": "6e0e3f3cba3305ce",
         "type": "ui_link",
         "name": "Funhall Lys",
@@ -14638,49 +14633,6 @@
         "wires": [
             [
                 "aa7912c5d7649fad"
-            ]
-        ]
-    },
-    {
-        "id": "30c54313c07eb15f",
-        "type": "firebase out",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "ref": "ordre",
-        "operation": "set",
-        "admin": "09c04ceaa5a177df",
-        "x": 1170,
-        "y": 860,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d7b09247dc3f9421",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "crapsdwdsws",
-        "payloadType": "str",
-        "x": 910,
-        "y": 880,
-        "wires": [
-            [
-                "30c54313c07eb15f"
             ]
         ]
     },
