@@ -731,7 +731,9 @@
             "7f66ec389780f9ef"
         ],
         "x": 1794,
-        "y": 179
+        "y": 179,
+        "w": 822,
+        "h": 382
     },
     {
         "id": "36a6e967.8bcbe6",
@@ -823,7 +825,9 @@
             "75df4308f516803e"
         ],
         "x": 194,
-        "y": 779
+        "y": 779,
+        "w": 852,
+        "h": 262
     },
     {
         "id": "98e94e8b.fb918",
@@ -847,7 +851,9 @@
             "6b11c885cb48fb91"
         ],
         "x": 234,
-        "y": 1059
+        "y": 1059,
+        "w": 732,
+        "h": 222
     },
     {
         "id": "92bbdc3e.5711e",
@@ -1156,7 +1162,9 @@
             "71bc87a30de98f84"
         ],
         "x": 214,
-        "y": 479
+        "y": 479,
+        "w": 772,
+        "h": 262
     },
     {
         "id": "b6b199f8.fdc168",
@@ -1193,7 +1201,9 @@
             "ae5ed11e98c324bb"
         ],
         "x": 94,
-        "y": -1
+        "y": -1,
+        "w": 1432,
+        "h": 362
     },
     {
         "id": "48152d2a.8fd824",
@@ -1224,7 +1234,9 @@
             "47f3aa8b6bfadeda"
         ],
         "x": 1154,
-        "y": 439
+        "y": 439,
+        "w": 892,
+        "h": 342
     },
     {
         "id": "463e1cfb0b0e88d4",
@@ -1314,7 +1326,9 @@
             "e9187272fe6c8b69"
         ],
         "x": 1334,
-        "y": 2279
+        "y": 2279,
+        "w": 832,
+        "h": 302
     },
     {
         "id": "cb4507d973cdd427",
@@ -1345,7 +1359,9 @@
             "611c6caea528518d"
         ],
         "x": 1354,
-        "y": 1919
+        "y": 1919,
+        "w": 632,
+        "h": 322
     },
     {
         "id": "4ab11592647668ea",
@@ -1375,7 +1391,9 @@
             "b05d5685cb299966"
         ],
         "x": 1334,
-        "y": 2639
+        "y": 2639,
+        "w": 882,
+        "h": 322
     },
     {
         "id": "1212422a5694bdaf",
@@ -1414,7 +1432,9 @@
             "134603c6507fac1d"
         ],
         "x": 54,
-        "y": 2299
+        "y": 2299,
+        "w": 1162,
+        "h": 322
     },
     {
         "id": "d3219f37cc75d1ae",
@@ -1444,7 +1464,9 @@
             "274206c7aa8281c0"
         ],
         "x": 134,
-        "y": 2679
+        "y": 2679,
+        "w": 832,
+        "h": 282
     },
     {
         "id": "a87e7fb4e449f030",
@@ -1475,7 +1497,9 @@
             "942ec7e469b1c876"
         ],
         "x": 274,
-        "y": 1959
+        "y": 1959,
+        "w": 852,
+        "h": 262
     },
     {
         "id": "bd662a4f36edc960",
@@ -1575,7 +1599,9 @@
             "897809061de76326"
         ],
         "x": 154,
-        "y": 1379
+        "y": 1379,
+        "w": 772,
+        "h": 222
     },
     {
         "id": "82fd466d.f6c968",
@@ -10592,31 +10618,6 @@
         "wires": []
     },
     {
-        "id": "2bf1316a.75130e",
-        "type": "light-scheduler",
-        "z": "33e76285.1cd03e",
-        "settings": "6871a700.1c4708",
-        "events": "[{\"start\":{\"dow\":5,\"mod\":595},\"end\":{\"dow\":5,\"mod\":720}},{\"start\":{\"dow\":6,\"mod\":595},\"end\":{\"dow\":6,\"mod\":720}}]",
-        "topic": "on",
-        "name": "",
-        "onPayload": "ON",
-        "onPayloadType": "str",
-        "offPayload": "OFF",
-        "offPayloadType": "str",
-        "onlyWhenDark": false,
-        "scheduleRndMax": 0,
-        "sunElevationThreshold": 6,
-        "sunShowElevationInStatus": false,
-        "outputfreq": "output.statechange",
-        "x": 3760,
-        "y": 4200,
-        "wires": [
-            [
-                "a2c2a3a2.a73aa"
-            ]
-        ]
-    },
-    {
         "id": "275b62d0.768b4e",
         "type": "link in",
         "z": "33e76285.1cd03e",
@@ -15028,6 +15029,31 @@
         "wires": []
     },
     {
+        "id": "2bf1316a.75130e",
+        "type": "light-scheduler",
+        "z": "33e76285.1cd03e",
+        "settings": "6871a700.1c4708",
+        "events": "[{\"start\":{\"dow\":5,\"mod\":595},\"end\":{\"dow\":5,\"mod\":720}},{\"start\":{\"dow\":6,\"mod\":595},\"end\":{\"dow\":6,\"mod\":720}}]",
+        "topic": "on",
+        "name": "",
+        "onPayload": "ON",
+        "onPayloadType": "str",
+        "offPayload": "OFF",
+        "offPayloadType": "str",
+        "onlyWhenDark": false,
+        "scheduleRndMax": 0,
+        "sunElevationThreshold": 6,
+        "sunShowElevationInStatus": false,
+        "outputfreq": "output.statechange",
+        "x": 3760,
+        "y": 4200,
+        "wires": [
+            [
+                "a2c2a3a2.a73aa"
+            ]
+        ]
+    },
+    {
         "id": "84e11b56.e27758",
         "type": "inject",
         "z": "5b3651b.92335b",
@@ -17853,25 +17879,6 @@
         ]
     },
     {
-        "id": "ce2b3940.6fda48",
-        "type": "timed-counter",
-        "z": "5b3651b.92335b",
-        "g": "bd662a4f36edc960",
-        "name": "",
-        "timelimit": 350,
-        "timeunit": 1,
-        "withhold": false,
-        "fixedtimeout": false,
-        "pertopic": false,
-        "x": 1340,
-        "y": 140,
-        "wires": [
-            [
-                "bbfc5d82.a94d2"
-            ]
-        ]
-    },
-    {
         "id": "bbfc5d82.a94d2",
         "type": "change",
         "z": "5b3651b.92335b",
@@ -18809,6 +18816,42 @@
         "y": 840,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "ce2b3940.6fda48",
+        "type": "timed-counter",
+        "z": "5b3651b.92335b",
+        "name": "",
+        "timelimit": 350,
+        "timeunit": 1,
+        "withhold": false,
+        "fixedtimeout": false,
+        "pertopic": false,
+        "x": 1340,
+        "y": 140,
+        "wires": [
+            [
+                "bbfc5d82.a94d2"
+            ]
+        ]
+    },
+    {
+        "id": "fabe9343.d98a4",
+        "type": "timed-counter",
+        "z": "5b3651b.92335b",
+        "name": "",
+        "timelimit": 350,
+        "timeunit": 1,
+        "withhold": false,
+        "fixedtimeout": false,
+        "pertopic": false,
+        "x": 1140,
+        "y": 1100,
+        "wires": [
+            [
+                "19054d4c.e3eb83"
+            ]
         ]
     },
     {
@@ -28705,8 +28748,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
-        "y": 160,
+        "x": 910,
+        "y": 140,
         "wires": []
     },
     {
@@ -29545,25 +29588,6 @@
             [
                 "fabe9343.d98a4",
                 "c082004.e2d69"
-            ]
-        ]
-    },
-    {
-        "id": "fabe9343.d98a4",
-        "type": "timed-counter",
-        "z": "bb729826.2554c8",
-        "g": "4a68a01b.1ce4d",
-        "name": "",
-        "timelimit": 350,
-        "timeunit": 1,
-        "withhold": false,
-        "fixedtimeout": false,
-        "pertopic": false,
-        "x": 1140,
-        "y": 1100,
-        "wires": [
-            [
-                "19054d4c.e3eb83"
             ]
         ]
     },
