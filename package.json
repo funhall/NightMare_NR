@@ -9,7 +9,8 @@
         "node-red-contrib-controltimer": "0.1.0",
         "node-red-contrib-dsm": "0.14.1",
         "node-red-contrib-dynamic-dimmer": "1.3.2",
-        "node-red-contrib-firebase-realtime-database": "0.1.3"
+        "node-red-contrib-firebase-realtime-database": "0.1.3",
+        "node-red-contrib-join-wait": "0.5.2"
     },
     "node-red": {
         "settings": {
