@@ -771,7 +771,9 @@
             "3893ba8f.390a76"
         ],
         "x": 2114,
-        "y": 3359
+        "y": 3359,
+        "w": 1632,
+        "h": 502
     },
     {
         "id": "2316e898.9addc8",
@@ -794,7 +796,9 @@
             "8e13249fac38c5db"
         ],
         "x": 2154,
-        "y": 3939
+        "y": 3939,
+        "w": 1012,
+        "h": 222
     },
     {
         "id": "1cc6de93.c0b0f1",
@@ -1066,7 +1070,9 @@
             "b0afd849b2fe92e1"
         ],
         "x": 454,
-        "y": 239
+        "y": 239,
+        "w": 1662,
+        "h": 522
     },
     {
         "id": "fc1dd592.319c58",
@@ -1098,7 +1104,9 @@
             "6f16a75f82923f0f"
         ],
         "x": 434,
-        "y": 759
+        "y": 759,
+        "w": 1472,
+        "h": 382
     },
     {
         "id": "88967f27835024c3",
@@ -1119,7 +1127,9 @@
             "d23df1927731c182"
         ],
         "x": 2174,
-        "y": 4219
+        "y": 4219,
+        "w": 972,
+        "h": 222
     },
     {
         "id": "a0bf9c88b3455d08",
@@ -1494,7 +1504,9 @@
             "ca873f6ad2820e42"
         ],
         "x": 454,
-        "y": 19
+        "y": 19,
+        "w": 1592,
+        "h": 202
     },
     {
         "id": "3897bed133705e81",
@@ -5558,36 +5570,6 @@
         "wires": []
     },
     {
-        "id": "f248dd5a.717ae",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "5bbf3c03.f33c44",
-        "inc": 1,
-        "name": "Oplader til",
-        "x": 3890,
-        "y": 1120,
-        "wires": [
-            [
-                "698dd4c8.1d8d4c"
-            ]
-        ]
-    },
-    {
-        "id": "9fbe4e78.ba7a3",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "5bbf3c03.f33c44",
-        "inc": 1,
-        "name": "Aflader",
-        "x": 3900,
-        "y": 1180,
-        "wires": [
-            [
-                "fb047a7b.5c1a08"
-            ]
-        ]
-    },
-    {
         "id": "698dd4c8.1d8d4c",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -6329,36 +6311,6 @@
         ]
     },
     {
-        "id": "ff7b05a1.2008c8",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "5cafbfff.cd9ff",
-        "inc": 1,
-        "name": "Oplader til",
-        "x": 3890,
-        "y": 620,
-        "wires": [
-            [
-                "24c2d204.7d4b9e"
-            ]
-        ]
-    },
-    {
-        "id": "e3fdc4d5.625438",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "5cafbfff.cd9ff",
-        "inc": 1,
-        "name": "Aflader",
-        "x": 3900,
-        "y": 680,
-        "wires": [
-            [
-                "59395c8c.25eda4"
-            ]
-        ]
-    },
-    {
         "id": "59395c8c.25eda4",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -7094,36 +7046,6 @@
             [
                 "b831ad61.cbedf",
                 "bd80985c.70f828"
-            ]
-        ]
-    },
-    {
-        "id": "d681d33d.b2a72",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "5010c57f.67bbdc",
-        "inc": 1,
-        "name": "Oplader til",
-        "x": 3870,
-        "y": 120,
-        "wires": [
-            [
-                "51654048.7602d"
-            ]
-        ]
-    },
-    {
-        "id": "b831ad61.cbedf",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "5010c57f.67bbdc",
-        "inc": 1,
-        "name": "Aflader",
-        "x": 3880,
-        "y": 180,
-        "wires": [
-            [
-                "bd16ada7.90b26"
             ]
         ]
     },
@@ -7984,36 +7906,6 @@
         ]
     },
     {
-        "id": "9936874a.db3ea8",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "783c049e.f1a19c",
-        "inc": 1,
-        "name": "Oplader til",
-        "x": 3790,
-        "y": 2120,
-        "wires": [
-            [
-                "431e9630.5d90b8"
-            ]
-        ]
-    },
-    {
-        "id": "d7ed1926.0b9ef8",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "783c049e.f1a19c",
-        "inc": 1,
-        "name": "Aflader",
-        "x": 3800,
-        "y": 2180,
-        "wires": [
-            [
-                "f9b22b6e.d97288"
-            ]
-        ]
-    },
-    {
         "id": "f9b22b6e.d97288",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -8694,36 +8586,6 @@
             ],
             [
                 "54b0e2da.4f1ecc"
-            ]
-        ]
-    },
-    {
-        "id": "b7f56ad2.df2148",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "1f533065.36249",
-        "inc": 1,
-        "name": "Oplader til",
-        "x": 3890,
-        "y": 2620,
-        "wires": [
-            [
-                "78ca5ebb.4ac1a"
-            ]
-        ]
-    },
-    {
-        "id": "54b0e2da.4f1ecc",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "1f533065.36249",
-        "inc": 1,
-        "name": "Aflader",
-        "x": 3900,
-        "y": 2680,
-        "wires": [
-            [
-                "cc24665e.f71b58"
             ]
         ]
     },
@@ -9619,36 +9481,6 @@
             [
                 "371823e.b42f8dc",
                 "3ca8e0c2.5f554"
-            ]
-        ]
-    },
-    {
-        "id": "433cded5.0b5a9",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "92bbdc3e.5711e",
-        "inc": 1,
-        "name": "Oplader til",
-        "x": 3890,
-        "y": 1620,
-        "wires": [
-            [
-                "168fae83.87e5d1"
-            ]
-        ]
-    },
-    {
-        "id": "371823e.b42f8dc",
-        "type": "counter",
-        "z": "33e76285.1cd03e",
-        "g": "92bbdc3e.5711e",
-        "inc": 1,
-        "name": "Aflader",
-        "x": 3900,
-        "y": 1680,
-        "wires": [
-            [
-                "6c0c2459.16a4fc"
             ]
         ]
     },
@@ -11725,8 +11557,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 840,
-        "y": 80,
+        "x": 880,
+        "y": 100,
         "wires": [
             []
         ]
@@ -13714,23 +13546,6 @@
         "wires": [
             [
                 "ba36de2e2eb002c0"
-            ]
-        ]
-    },
-    {
-        "id": "04e21a6b5d12a197",
-        "type": "rpi-gpio in",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "pin": "7",
-        "intype": "tri",
-        "debounce": "25",
-        "read": false,
-        "x": 310,
-        "y": 660,
-        "wires": [
-            [
-                "518a047eb2a401eb"
             ]
         ]
     },
@@ -28578,6 +28393,191 @@
             [
                 "a1425492.5d43c8",
                 "e31a61e6.09726"
+            ]
+        ]
+    },
+    {
+        "id": "04e21a6b5d12a197",
+        "type": "rpi-gpio in",
+        "z": "7acb8604.65cfe8",
+        "name": "",
+        "pin": "7",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "x": 310,
+        "y": 660,
+        "wires": [
+            [
+                "518a047eb2a401eb"
+            ]
+        ]
+    },
+    {
+        "id": "f248dd5a.717ae",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Oplader til",
+        "x": 3890,
+        "y": 1120,
+        "wires": [
+            [
+                "698dd4c8.1d8d4c"
+            ]
+        ]
+    },
+    {
+        "id": "9fbe4e78.ba7a3",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Aflader",
+        "x": 3900,
+        "y": 1180,
+        "wires": [
+            [
+                "fb047a7b.5c1a08"
+            ]
+        ]
+    },
+    {
+        "id": "ff7b05a1.2008c8",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Oplader til",
+        "x": 3890,
+        "y": 620,
+        "wires": [
+            [
+                "24c2d204.7d4b9e"
+            ]
+        ]
+    },
+    {
+        "id": "e3fdc4d5.625438",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Aflader",
+        "x": 3900,
+        "y": 680,
+        "wires": [
+            [
+                "59395c8c.25eda4"
+            ]
+        ]
+    },
+    {
+        "id": "d681d33d.b2a72",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Oplader til",
+        "x": 3870,
+        "y": 120,
+        "wires": [
+            [
+                "51654048.7602d"
+            ]
+        ]
+    },
+    {
+        "id": "b831ad61.cbedf",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Aflader",
+        "x": 3880,
+        "y": 180,
+        "wires": [
+            [
+                "bd16ada7.90b26"
+            ]
+        ]
+    },
+    {
+        "id": "9936874a.db3ea8",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Oplader til",
+        "x": 3790,
+        "y": 2120,
+        "wires": [
+            [
+                "431e9630.5d90b8"
+            ]
+        ]
+    },
+    {
+        "id": "d7ed1926.0b9ef8",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Aflader",
+        "x": 3800,
+        "y": 2180,
+        "wires": [
+            [
+                "f9b22b6e.d97288"
+            ]
+        ]
+    },
+    {
+        "id": "b7f56ad2.df2148",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Oplader til",
+        "x": 3890,
+        "y": 2620,
+        "wires": [
+            [
+                "78ca5ebb.4ac1a"
+            ]
+        ]
+    },
+    {
+        "id": "54b0e2da.4f1ecc",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Aflader",
+        "x": 3900,
+        "y": 2680,
+        "wires": [
+            [
+                "cc24665e.f71b58"
+            ]
+        ]
+    },
+    {
+        "id": "433cded5.0b5a9",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Oplader til",
+        "x": 3890,
+        "y": 1620,
+        "wires": [
+            [
+                "168fae83.87e5d1"
+            ]
+        ]
+    },
+    {
+        "id": "371823e.b42f8dc",
+        "type": "counter",
+        "z": "7acb8604.65cfe8",
+        "inc": 1,
+        "name": "Aflader",
+        "x": 3900,
+        "y": 1680,
+        "wires": [
+            [
+                "6c0c2459.16a4fc"
             ]
         ]
     },
