@@ -3,7 +3,8 @@
     "description": "Backup af Nightmare NodeRed",
     "version": "0.0.1",
     "dependencies": {
-        "node-red-contrib-aedes": "0.5.2"
+        "node-red-contrib-aedes": "0.5.2",
+        "node-red-contrib-average": "0.1.7"
     },
     "node-red": {
         "settings": {
