@@ -3256,14 +3256,16 @@
         "color": "",
         "bgcolor": "{{msg.background}}",
         "icon": "fa-hand-lizard-o",
-        "payload": "",
+        "payload": "vaek",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
         "x": 1100,
         "y": 3880,
         "wires": [
-            []
+            [
+                "5a2324bb.70dc5c"
+            ]
         ]
     },
     {
