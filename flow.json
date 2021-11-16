@@ -14294,7 +14294,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "Counter",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14548,8 +14548,8 @@
         "withhold": true,
         "fixedtimeout": false,
         "pertopic": false,
-        "x": 1670,
-        "y": 2560,
+        "x": 1740,
+        "y": 2540,
         "wires": [
             []
         ]
