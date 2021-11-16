@@ -17016,7 +17016,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Rum1/Start video.mp4",
+                "to": "Billeder/Trailer.mp4",
                 "tot": "str"
             }
         ],
@@ -18482,8 +18482,8 @@
         "width": "24",
         "height": "14",
         "order": 0,
-        "category": "Rum1",
-        "file": "IMG_1172.jpg",
+        "category": "Billeder",
+        "file": "Trailer.mp4",
         "layout": "center",
         "showcontrols": false,
         "loop": false,
@@ -22488,8 +22488,8 @@
         "links": [
             "f0179ec8779c60a9"
         ],
-        "x": 1135,
-        "y": 1500,
+        "x": 1215,
+        "y": 1540,
         "wires": [
             [
                 "3f562a99.ad1f26"
