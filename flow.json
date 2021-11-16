@@ -94,7 +94,7 @@
         "id": "d2152ba53a59266a",
         "type": "tab",
         "label": "Placering af byster",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -1976,7 +1976,9 @@
             "b69dae3f2aa81630"
         ],
         "x": 1524,
-        "y": 519
+        "y": 519,
+        "w": 932,
+        "h": 322
     },
     {
         "id": "82fd466d.f6c968",
