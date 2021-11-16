@@ -21065,11 +21065,12 @@
         "id": "4f2d4389.1a41ac",
         "type": "link in",
         "z": "53c075e1.2512cc",
+        "d": true,
         "g": "b6b199f8.fdc168",
         "name": "Lås kiste",
         "links": [
-            "dcda2e3ca6ad94be",
-            "d5cf4e95d10ff5a7"
+            "d5cf4e95d10ff5a7",
+            "dcda2e3ca6ad94be"
         ],
         "x": 275,
         "y": 300,
@@ -21631,13 +21632,14 @@
         "id": "8c898ed3c39f26a9",
         "type": "link in",
         "z": "53c075e1.2512cc",
+        "d": true,
         "g": "b6b199f8.fdc168",
         "name": "Open kiste",
         "links": [
+            "3b205761544f7a3b",
             "9174cbaece076164",
             "ba36de2e2eb002c0",
-            "dcacf67a632c4d47",
-            "3b205761544f7a3b"
+            "dcacf67a632c4d47"
         ],
         "x": 195,
         "y": 240,
