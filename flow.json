@@ -14272,8 +14272,8 @@
                 "t": "set",
                 "p": "reset",
                 "pt": "msg",
-                "to": "b",
-                "tot": "msg"
+                "to": "222",
+                "tot": "num"
             }
         ],
         "action": "",
