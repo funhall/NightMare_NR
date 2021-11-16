@@ -24,8 +24,9 @@
         "id": "cf29ad44.fd75a",
         "type": "tab",
         "label": "Boks 5 - blandet",
-        "disabled": false,
-        "info": ""
+        "disabled": true,
+        "info": "",
+        "env": []
     },
     {
         "id": "53c075e1.2512cc",
