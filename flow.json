@@ -4258,7 +4258,6 @@
         "id": "62fb0b48.dc7704",
         "type": "aedes broker",
         "z": "33e76285.1cd03e",
-        "d": true,
         "name": "",
         "mqtt_port": 1883,
         "mqtt_ws_bind": "port",
@@ -14426,27 +14425,6 @@
         "x": 1100,
         "y": 1200,
         "wires": []
-    },
-    {
-        "id": "6b800d4d01c02264",
-        "type": "mqtt in",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "topic": "Huston/",
-        "qos": "0",
-        "datatype": "auto",
-        "broker": "dca8425b.8fb18",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 160,
-        "y": 1300,
-        "wires": [
-            [
-                "b65b259eef111e3e"
-            ]
-        ]
     },
     {
         "id": "84e11b56.e27758",
