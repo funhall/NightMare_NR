@@ -1580,11 +1580,12 @@
             "348934144a83769e",
             "0b4065c07610a12f",
             "f7e75af2d62ce436",
-            "897809061de76326"
+            "897809061de76326",
+            "a24895f8cc3929c6"
         ],
-        "x": 154,
+        "x": 174,
         "y": 1379,
-        "w": 772,
+        "w": 882,
         "h": 222
     },
     {
@@ -21219,7 +21220,8 @@
         "z": "53c075e1.2512cc",
         "name": "Lås rum 4",
         "links": [
-            "dcda2e3ca6ad94be"
+            "dcda2e3ca6ad94be",
+            "38e7fddab438ba1b"
         ],
         "x": 1355,
         "y": 1700,
@@ -22650,9 +22652,10 @@
         "id": "9614784a6e2a9915",
         "type": "link in",
         "z": "53c075e1.2512cc",
-        "name": "",
+        "name": "Åben rum 4",
         "links": [
-            "f32df306be0e48bf"
+            "f32df306be0e48bf",
+            "348934144a83769e"
         ],
         "x": 1105,
         "y": 1740,
@@ -22854,7 +22857,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 290,
+        "x": 310,
         "y": 1560,
         "wires": []
     },
@@ -22879,7 +22882,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 490,
+        "x": 510,
         "y": 1480,
         "wires": [
             [
@@ -22917,13 +22920,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
+        "x": 670,
         "y": 1440,
         "wires": [
             [
                 "0b4065c07610a12f",
-                "81cfa495811f90d0",
-                "38e7fddab438ba1b"
+                "81cfa495811f90d0"
             ]
         ]
     },
@@ -22961,13 +22963,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
+        "x": 670,
         "y": 1480,
         "wires": [
             [
                 "0b4065c07610a12f",
-                "81cfa495811f90d0",
-                "348934144a83769e"
+                "81cfa495811f90d0"
             ]
         ]
     },
@@ -22978,7 +22979,7 @@
         "g": "b0f69d0ec2aff7a7",
         "name": "Var:global.rum2 - open/close",
         "info": "",
-        "x": 300,
+        "x": 320,
         "y": 1420,
         "wires": []
     },
@@ -23002,11 +23003,13 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 850,
+        "x": 870,
         "y": 1460,
         "wires": [
             [
-                "979fce9841f19e46"
+                "979fce9841f19e46",
+                "348934144a83769e",
+                "a24895f8cc3929c6"
             ]
         ]
     },
@@ -23016,9 +23019,12 @@
         "z": "53c075e1.2512cc",
         "g": "b0f69d0ec2aff7a7",
         "name": "Rum 4 lukket",
-        "links": [],
-        "x": 805,
-        "y": 1420,
+        "mode": "link",
+        "links": [
+            "32699eeca3789540"
+        ],
+        "x": 1015,
+        "y": 1540,
         "wires": []
     },
     {
@@ -23027,9 +23033,12 @@
         "z": "53c075e1.2512cc",
         "g": "b0f69d0ec2aff7a7",
         "name": "Rum 4 åben",
-        "links": [],
-        "x": 795,
-        "y": 1500,
+        "mode": "link",
+        "links": [
+            "9614784a6e2a9915"
+        ],
+        "x": 975,
+        "y": 1440,
         "wires": []
     },
     {
@@ -23046,7 +23055,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
+        "x": 810,
         "y": 1560,
         "wires": []
     },
@@ -23059,7 +23068,7 @@
         "links": [
             "dccfa14448734d73"
         ],
-        "x": 505,
+        "x": 525,
         "y": 1540,
         "wires": [
             [
@@ -23081,7 +23090,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 280,
+        "x": 300,
         "y": 1480,
         "wires": [
             [
@@ -23268,6 +23277,32 @@
         "x": 1155,
         "y": 1120,
         "wires": []
+    },
+    {
+        "id": "a24895f8cc3929c6",
+        "type": "delay",
+        "z": "53c075e1.2512cc",
+        "g": "b0f69d0ec2aff7a7",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 960,
+        "y": 1500,
+        "wires": [
+            [
+                "38e7fddab438ba1b"
+            ]
+        ]
     },
     {
         "id": "c1000a13.7adf18",
