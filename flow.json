@@ -26525,9 +26525,7 @@
         "x": 495,
         "y": 1700,
         "wires": [
-            [
-                "36978862d70a5611"
-            ]
+            []
         ]
     },
     {
@@ -26605,7 +26603,8 @@
             [
                 "fde4233bc144e81e",
                 "d303af2cd1894c35",
-                "2a5d54c0a9cefc3d"
+                "2a5d54c0a9cefc3d",
+                "d03731519faa8069"
             ]
         ]
     },
@@ -26628,13 +26627,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Flash",
+        "payload": "1",
         "payloadType": "str",
         "x": 670,
         "y": 1740,
         "wires": [
             [
-                "7ed056c0e55e1835"
+                "36978862d70a5611"
             ]
         ]
     },
@@ -26696,7 +26695,7 @@
         "z": "e1fe16e7.a28238",
         "name": "",
         "kind": "fcnt",
-        "count": "300",
+        "count": "2",
         "initial": "1",
         "step": "1",
         "condition": "",
@@ -26705,7 +26704,7 @@
         "enumeration": "enum",
         "enumerationType": "msg",
         "limit": "",
-        "loopPayload": "loop-index",
+        "loopPayload": "loop-keep",
         "finalPayload": "final-count",
         "x": 1050,
         "y": 1600,
