@@ -10405,7 +10405,7 @@
         "z": "33e76285.1cd03e",
         "g": "5010c57f.67bbdc",
         "name": "MSG Nellie",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14217,7 +14217,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "Clingar MSG",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14264,7 +14264,7 @@
         "id": "13fbbe6b04370775",
         "type": "debug",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Counter",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -14273,7 +14273,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1190,
+        "x": 1180,
         "y": 1260,
         "wires": []
     },
@@ -14435,8 +14435,7 @@
                 "p": "valuecount",
                 "pt": "flow",
                 "to": "payload",
-                "tot": "msg",
-                "dc": true
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -14444,8 +14443,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 1180,
+        "x": 950,
+        "y": 1220,
         "wires": [
             [
                 "d86ab0d661e8759d"
