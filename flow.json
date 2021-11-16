@@ -26604,7 +26604,7 @@
                 "fde4233bc144e81e",
                 "d303af2cd1894c35",
                 "2a5d54c0a9cefc3d",
-                "d03731519faa8069"
+                "31fc9033de76c5dc"
             ]
         ]
     },
@@ -26629,7 +26629,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "str",
-        "x": 670,
+        "x": 570,
         "y": 1740,
         "wires": [
             [
@@ -26643,7 +26643,7 @@
         "z": "e1fe16e7.a28238",
         "name": "",
         "pauseType": "delay",
-        "timeout": "300",
+        "timeout": "1000",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -26654,7 +26654,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1070,
+        "x": 1080,
         "y": 1700,
         "wires": [
             [
@@ -26690,38 +26690,12 @@
         ]
     },
     {
-        "id": "6f67f7c2b70ab8ec",
-        "type": "loop",
-        "z": "e1fe16e7.a28238",
-        "name": "",
-        "kind": "fcnt",
-        "count": "5",
-        "initial": "1",
-        "step": "1",
-        "condition": "",
-        "conditionType": "js",
-        "when": "before",
-        "enumeration": "enum",
-        "enumerationType": "msg",
-        "limit": "10000",
-        "loopPayload": "loop-keep",
-        "finalPayload": "final-count",
-        "x": 1050,
-        "y": 1600,
-        "wires": [
-            [],
-            [
-                "36978862d70a5611"
-            ]
-        ]
-    },
-    {
-        "id": "d03731519faa8069",
+        "id": "31fc9033de76c5dc",
         "type": "delay",
         "z": "e1fe16e7.a28238",
         "name": "",
         "pauseType": "delay",
-        "timeout": "300",
+        "timeout": "1000",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -26732,11 +26706,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1290,
+        "x": 1240,
         "y": 1620,
         "wires": [
             [
-                "6f67f7c2b70ab8ec"
+                "36978862d70a5611"
             ]
         ]
     },
