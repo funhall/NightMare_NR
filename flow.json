@@ -4273,8 +4273,8 @@
         "keyname": "",
         "dburl": "",
         "usetls": false,
-        "x": 210,
-        "y": 1460,
+        "x": 190,
+        "y": 1380,
         "wires": [
             [
                 "b65b259eef111e3e"
@@ -14272,8 +14272,8 @@
                 "t": "set",
                 "p": "reset",
                 "pt": "msg",
-                "to": "valuecount",
-                "tot": "flow"
+                "to": "b",
+                "tot": "msg"
             }
         ],
         "action": "",
