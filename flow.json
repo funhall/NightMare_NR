@@ -26550,7 +26550,7 @@
         "y": 1700,
         "wires": [
             [
-                "010b34305ac6039d"
+                "36978862d70a5611"
             ]
         ]
     },
@@ -26653,13 +26653,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 680,
+        "payload": "Flash",
+        "payloadType": "str",
+        "x": 670,
         "y": 1740,
         "wires": [
             [
-                "36978862d70a5611"
+                "fde4233bc144e81e"
             ]
         ]
     },
@@ -26680,7 +26680,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1130,
+        "x": 1070,
         "y": 1700,
         "wires": [
             [
@@ -26716,35 +26716,12 @@
         ]
     },
     {
-        "id": "010b34305ac6039d",
-        "type": "switch",
-        "z": "e1fe16e7.a28238",
-        "name": "",
-        "property": "gameon",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 690,
-        "y": 1640,
-        "wires": [
-            [
-                "36978862d70a5611"
-            ]
-        ]
-    },
-    {
         "id": "6f67f7c2b70ab8ec",
         "type": "loop",
         "z": "e1fe16e7.a28238",
         "name": "",
         "kind": "fcnt",
-        "count": "100",
+        "count": "300",
         "initial": "1",
         "step": "1",
         "condition": "",
@@ -26759,7 +26736,9 @@
         "y": 1600,
         "wires": [
             [],
-            []
+            [
+                "36978862d70a5611"
+            ]
         ]
     },
     {
@@ -26779,11 +26758,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1190,
-        "y": 1640,
+        "x": 1290,
+        "y": 1620,
         "wires": [
             [
-                "36978862d70a5611"
+                "6f67f7c2b70ab8ec"
             ]
         ]
     },
