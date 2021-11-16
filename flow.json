@@ -19851,7 +19851,7 @@
         "type": "debug",
         "z": "53c075e1.2512cc",
         "g": "1cc6de93.c0b0f1",
-        "name": "",
+        "name": "Kiste exit",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -19860,7 +19860,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 490,
+        "x": 500,
         "y": 800,
         "wires": []
     },
@@ -22018,6 +22018,7 @@
         "z": "53c075e1.2512cc",
         "g": "48152d2a.8fd824",
         "name": "Kiste forladt og exit lukket",
+        "mode": "link",
         "links": [
             "401cc2946f4da29d"
         ],
