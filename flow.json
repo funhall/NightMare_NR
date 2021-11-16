@@ -10,8 +10,9 @@
         "id": "5b3651b.92335b",
         "type": "tab",
         "label": "Audio og Video",
-        "disabled": false,
-        "info": ""
+        "disabled": true,
+        "info": "",
+        "env": []
     },
     {
         "id": "1dc9b2fc.c07e1d",
@@ -16450,6 +16451,7 @@
         "id": "1ebd51ec206c76b1",
         "type": "link in",
         "z": "5b3651b.92335b",
+        "d": true,
         "g": "b3771d986777a428",
         "name": "Klargørring",
         "links": [
@@ -16604,6 +16606,7 @@
         "id": "a95e61626c8e82f2",
         "type": "link in",
         "z": "5b3651b.92335b",
+        "d": true,
         "g": "b3771d986777a428",
         "name": "Game over",
         "links": [
@@ -16992,6 +16995,7 @@
         "id": "9e1cefbb6a68a30a",
         "type": "link in",
         "z": "5b3651b.92335b",
+        "d": true,
         "g": "fc1dd592.319c58",
         "name": "Klar gørring start billede",
         "links": [
@@ -17159,10 +17163,7 @@
         "x": 790,
         "y": 180,
         "wires": [
-            [
-                "c56352e9.8951e",
-                "201b223b7b08297f"
-            ]
+            []
         ]
     },
     {
@@ -17185,8 +17186,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 960,
-        "y": 180,
+        "x": 980,
+        "y": 160,
         "wires": [
             [
                 "dad1f1e2.59c67"
