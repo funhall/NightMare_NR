@@ -17076,7 +17076,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Rum1/Queen_new.mp4",
+                "to": "Billeder/Queen_new.mp4",
                 "tot": "str"
             },
             {
@@ -18471,7 +18471,7 @@
         "height": "14",
         "order": 0,
         "category": "Billeder",
-        "file": "IMG_0557.jpg",
+        "file": "Queen_new.mp4",
         "layout": "center",
         "showcontrols": false,
         "loop": false,
