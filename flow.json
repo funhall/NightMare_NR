@@ -26630,8 +26630,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 760,
-        "y": 1760,
+        "x": 680,
+        "y": 1740,
         "wires": [
             [
                 "36978862d70a5611"
@@ -26644,7 +26644,7 @@
         "z": "e1fe16e7.a28238",
         "name": "",
         "pauseType": "delay",
-        "timeout": "200",
+        "timeout": "500",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -26669,7 +26669,7 @@
         "z": "e1fe16e7.a28238",
         "name": "",
         "pauseType": "delay",
-        "timeout": "300",
+        "timeout": "500",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
