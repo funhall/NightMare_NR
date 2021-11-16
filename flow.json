@@ -818,7 +818,9 @@
             "5306e37e399c8f2e",
             "138fc1e5a847cef9",
             "75df4308f516803e",
-            "a2ca4dad9bddbd11"
+            "a2ca4dad9bddbd11",
+            "0fb03f808df88ec0",
+            "8f22d7c6ff5d18e8"
         ],
         "x": 174,
         "y": 759,
@@ -1221,7 +1223,6 @@
             "0682aa7356958f3b",
             "b24a98dac6730e9c",
             "713b25d62feee487",
-            "06e11731d7852aae",
             "47f3aa8b6bfadeda"
         ],
         "x": 1154,
@@ -21316,8 +21317,8 @@
         "y": 920,
         "wires": [
             [
-                "8a7b588a.2db918",
-                "a2ca4dad9bddbd11"
+                "a2ca4dad9bddbd11",
+                "0fb03f808df88ec0"
             ]
         ]
     },
@@ -22223,7 +22224,8 @@
         "g": "48152d2a.8fd824",
         "name": "lås exit",
         "links": [
-            "dcda2e3ca6ad94be"
+            "dcda2e3ca6ad94be",
+            "8f22d7c6ff5d18e8"
         ],
         "x": 1415,
         "y": 540,
@@ -22787,7 +22789,8 @@
         "g": "48152d2a.8fd824",
         "name": "open exit",
         "links": [
-            "dcacf67a632c4d47"
+            "dcacf67a632c4d47",
+            "0fb03f808df88ec0"
         ],
         "x": 1595,
         "y": 620,
@@ -22795,21 +22798,6 @@
             [
                 "bd6499b0.90ce58"
             ]
-        ]
-    },
-    {
-        "id": "06e11731d7852aae",
-        "type": "link in",
-        "z": "53c075e1.2512cc",
-        "g": "48152d2a.8fd824",
-        "name": "open exit",
-        "links": [
-            "dcacf67a632c4d47"
-        ],
-        "x": 1815,
-        "y": 500,
-        "wires": [
-            []
         ]
     },
     {
@@ -23123,9 +23111,37 @@
         "y": 920,
         "wires": [
             [
-                "4b305eb5.4d339"
+                "8f22d7c6ff5d18e8"
             ]
         ]
+    },
+    {
+        "id": "0fb03f808df88ec0",
+        "type": "link out",
+        "z": "53c075e1.2512cc",
+        "g": "1cc6de93.c0b0f1",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "713b25d62feee487"
+        ],
+        "x": 815,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "8f22d7c6ff5d18e8",
+        "type": "link out",
+        "z": "53c075e1.2512cc",
+        "g": "1cc6de93.c0b0f1",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "5536bf922f651b16"
+        ],
+        "x": 1005,
+        "y": 920,
+        "wires": []
     },
     {
         "id": "c1000a13.7adf18",
