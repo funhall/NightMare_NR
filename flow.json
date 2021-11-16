@@ -14298,7 +14298,7 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "gt",
+                "t": "gte",
                 "v": "valuecount",
                 "vt": "flow"
             }
