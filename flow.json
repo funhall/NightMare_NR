@@ -15092,8 +15092,7 @@
         "y": 1260,
         "wires": [
             [
-                "31898b088ff0cabf",
-                "13fbbe6b04370775"
+                "31898b088ff0cabf"
             ]
         ]
     },
@@ -15106,11 +15105,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1030,
-        "y": 1260,
+        "x": 1090,
+        "y": 1120,
         "wires": []
     },
     {
@@ -15130,7 +15130,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 760,
+        "x": 740,
         "y": 1340,
         "wires": [
             [
@@ -15150,6 +15150,13 @@
                 "pt": "msg",
                 "to": "",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "valuecount",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -15157,11 +15164,39 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
+        "x": 1000,
         "y": 1360,
         "wires": [
             [
-                "8f535195c7ced6ab"
+                "8f535195c7ced6ab",
+                "ee2f67462c3f9102"
+            ]
+        ]
+    },
+    {
+        "id": "ee2f67462c3f9102",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "valuecount",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 1260,
+        "wires": [
+            [
+                "13fbbe6b04370775"
             ]
         ]
     },
