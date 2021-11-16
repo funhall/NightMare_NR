@@ -14361,8 +14361,7 @@
         "y": 1400,
         "wires": [
             [
-                "d3c7a17132db1922",
-                "83726027c2a6c124"
+                "d3c7a17132db1922"
             ]
         ]
     },
@@ -14393,31 +14392,6 @@
                 "cc9bf9dda205f60f",
                 "a0b8a11b6e1a9593"
             ]
-        ]
-    },
-    {
-        "id": "83726027c2a6c124",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "valuecount",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 970,
-        "y": 1260,
-        "wires": [
-            []
         ]
     },
     {
