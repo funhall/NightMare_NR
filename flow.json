@@ -562,7 +562,9 @@
             "3893ba8f.390a76"
         ],
         "x": 2114,
-        "y": 3359
+        "y": 3359,
+        "w": 1632,
+        "h": 502
     },
     {
         "id": "2316e898.9addc8",
@@ -585,7 +587,9 @@
             "8e13249fac38c5db"
         ],
         "x": 2154,
-        "y": 3939
+        "y": 3939,
+        "w": 1012,
+        "h": 222
     },
     {
         "id": "1cc6de93.c0b0f1",
@@ -864,7 +868,9 @@
             "b0afd849b2fe92e1"
         ],
         "x": 434,
-        "y": 219
+        "y": 219,
+        "w": 1552,
+        "h": 522
     },
     {
         "id": "fc1dd592.319c58",
@@ -896,7 +902,9 @@
             "6f16a75f82923f0f"
         ],
         "x": 434,
-        "y": 759
+        "y": 759,
+        "w": 1472,
+        "h": 382
     },
     {
         "id": "88967f27835024c3",
@@ -915,7 +923,9 @@
             "d23df1927731c182"
         ],
         "x": 2174,
-        "y": 4219
+        "y": 4219,
+        "w": 972,
+        "h": 162
     },
     {
         "id": "a0bf9c88b3455d08",
@@ -1286,7 +1296,9 @@
             "ca873f6ad2820e42"
         ],
         "x": 534,
-        "y": 19
+        "y": 19,
+        "w": 1512,
+        "h": 202
     },
     {
         "id": "3897bed133705e81",
@@ -8243,8 +8255,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 2360,
-        "y": 380,
+        "x": 2020,
+        "y": 280,
         "wires": []
     },
     {
@@ -10763,8 +10775,8 @@
         "constant": "1",
         "round": false,
         "decimals": 0,
-        "x": 1820,
-        "y": 380,
+        "x": 1600,
+        "y": 320,
         "wires": [
             [
                 "5f196771121d5cd8",
@@ -10818,8 +10830,8 @@
         "pauseActionName": "PAUSE",
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
-        "x": 1280,
-        "y": 400,
+        "x": 1160,
+        "y": 340,
         "wires": [
             [
                 "bde12427c3a05150",
@@ -10847,8 +10859,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1590,
-        "y": 380,
+        "x": 1410,
+        "y": 320,
         "wires": [
             [
                 "fabc83a4b10d4d46",
@@ -10875,8 +10887,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2080,
-        "y": 380,
+        "x": 1840,
+        "y": 320,
         "wires": [
             [
                 "1ada877b.576d69"
@@ -10889,8 +10901,8 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "sm_config": "{\n    \"currentState\": \"stopped\",\n    \"states\": {\n        \"stopped\": {\n            \"on\": \"started\"\n        },\n        \"started\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        },\n        \"counting\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        }\n    },\n    \"data\": {\n        \"prev_time\": null,\n        \"time\": 0,\n        \"seconds\": 0,\n        \"interval\": 1,\n        \"interval_output\": true,\n        \"hms_format\": true\n    },\n    \"methods\": {\n        \"init\": [\n            \"sm.calc_time = function() {\",\n            \"   var now = Date.now();\",\n            \"   sm.data.time += now - sm.data.prev_time;\",\n            \"   sm.data.prev_time = now;\",\n            \"   sm.data.seconds = Math.round(sm.data.time / 1000);\",\n            \"};\",\n            \"sm.sec2hhmmss = function(sec) {\",\n                \"var t = {};\",\n                \"t.h = pad(Math.floor(sec / 3600));\",\n                \"sec %= 3600;\",\n                \"t.m = pad(Math.floor(sec / 60));\",\n                \"t.s = pad(sec % 60);\",\n                \"return t.h+':'+t.m+':'+t.s;\",\n            \"};\"\n        ],\n        \"on\": [\n            \"if (sm.currentState === 'started') {\",\n            \"   sm.data.prev_time = Date.now();\",\n            \"   resume('inc', msg);\",\n            \"}\",\n            \"output = false;\"\n        ],\n        \"inc\": [\n            \"timeout.interval = setTimeout(function() {\",\n            \"   sm.calc_time();\",\n            \"   msg.data = sm.data;\",\n            \"   if (sm.data.interval_output) {\",\n            \"       msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\",\n            \"       node.send(msg);\",\n            \"   }\",\n            \"   resume('inc', msg);\",\n            \"}, sm.data.interval*1000);\",\n            \"output = false;\"\n        ],\n        \"off\": [\n            \"clearTimeout(timeout.interval);\",\n            \"sm.calc_time();\",\n            \"msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\"\n        ],\n        \"reset\": [\n            \"sm.data.time = 0;\",\n            \"sm.data.seconds = 0;\"\n        ],\n        \"status\": {\n            \"fill\": {\n                \"get\": \"sm.currentState === 'counting' ? 'green' : 'grey';\"\n            },\n            \"shape\": \"dot\",\n            \"text\": {\n                \"get\": \"'time ' + (sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds);\"\n            }\n        }\n    }\n}\n",
-        "x": 1650,
-        "y": 280,
+        "x": 1390,
+        "y": 160,
         "wires": [
             [
                 "250c3baf03e0708e"
@@ -10926,8 +10938,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1940,
-        "y": 320,
+        "x": 1580,
+        "y": 160,
         "wires": [
             [
                 "838bc03649f7c918",
@@ -10947,8 +10959,8 @@
         "label": "",
         "format": "{{msg.gametime}}",
         "layout": "row-spread",
-        "x": 2260,
-        "y": 260,
+        "x": 1900,
+        "y": 160,
         "wires": []
     },
     {
@@ -12474,7 +12486,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1720,
+        "x": 1520,
         "y": 2480,
         "wires": [
             [
@@ -13862,8 +13874,8 @@
         "onceDelay": 0.1,
         "topic": "off",
         "payloadType": "date",
-        "x": 1450,
-        "y": 500,
+        "x": 1190,
+        "y": 120,
         "wires": [
             [
                 "619dfcb3c2447f34"
@@ -13878,8 +13890,8 @@
         "links": [
             "7ce4a2f9.9437dc"
         ],
-        "x": 1405,
-        "y": 460,
+        "x": 1075,
+        "y": 60,
         "wires": [
             [
                 "7b4caab790159719"
@@ -13905,8 +13917,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1560,
-        "y": 460,
+        "x": 1230,
+        "y": 60,
         "wires": [
             [
                 "619dfcb3c2447f34"
@@ -14262,7 +14274,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "Counter",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16399,7 +16411,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 1190,
-        "y": 320,
+        "y": 340,
         "wires": [
             [
                 "7932efa4761d1227"
