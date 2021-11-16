@@ -26756,7 +26756,7 @@
         "enumeration": "enum",
         "enumerationType": "msg",
         "limit": "5000",
-        "loopPayload": "loop-index",
+        "loopPayload": "loop-orig",
         "finalPayload": "final-count",
         "x": 890,
         "y": 1760,
