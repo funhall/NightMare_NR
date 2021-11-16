@@ -12373,7 +12373,6 @@
         "g": "8a907ee3e43a8bdb",
         "name": "check om byster er på plads",
         "links": [
-            "5306e37e399c8f2e",
             "ba36de2e2eb002c0"
         ],
         "x": 495,
@@ -22055,14 +22054,12 @@
         "id": "5306e37e399c8f2e",
         "type": "link out",
         "z": "53c075e1.2512cc",
-        "d": true,
         "g": "1cc6de93.c0b0f1",
         "name": "Exit open",
         "mode": "link",
         "links": [
             "2fdad2b31e791882",
-            "5548b3317829b264",
-            "fe10acda04a4e60a"
+            "5548b3317829b264"
         ],
         "x": 615,
         "y": 980,
