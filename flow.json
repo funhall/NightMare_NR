@@ -1067,15 +1067,13 @@
             "baa84779ee429f2d",
             "20d95fc524dcf354",
             "15e1552226e4df69",
-            "3dc52f8bf562c33b",
-            "f376d8a1dbd27e87",
             "a07db7603114a3ab",
             "980a6acd8593bc09",
             "b0afd849b2fe92e1"
         ],
         "x": 434,
         "y": 219,
-        "w": 1662,
+        "w": 1552,
         "h": 522
     },
     {
@@ -18294,7 +18292,9 @@
         "x": 1660,
         "y": 620,
         "wires": [
-            []
+            [
+                "dafeec74fce3c809"
+            ]
         ]
     },
     {
@@ -18538,62 +18538,6 @@
             [
                 "8546f97c8a5b9f38"
             ]
-        ]
-    },
-    {
-        "id": "3dc52f8bf562c33b",
-        "type": "inject",
-        "z": "5b3651b.92335b",
-        "g": "b3771d986777a428",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1580,
-        "y": 680,
-        "wires": [
-            [
-                "f376d8a1dbd27e87"
-            ]
-        ]
-    },
-    {
-        "id": "f376d8a1dbd27e87",
-        "type": "change",
-        "z": "5b3651b.92335b",
-        "g": "b3771d986777a428",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "firsttimeplay",
-                "pt": "global",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1970,
-        "y": 680,
-        "wires": [
-            []
         ]
     },
     {
