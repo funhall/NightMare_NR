@@ -258,10 +258,10 @@
             "26963b7f.30acb4",
             "d5a48d3c.57b9f"
         ],
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 2694,
+        "y": 1039,
+        "w": 2172,
+        "h": 402
     },
     {
         "id": "c4fe518a.1dca8",
@@ -336,10 +336,10 @@
             "c6d5889b.4d6fb8",
             "6908ba03.fb9e94"
         ],
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 2674,
+        "y": 539,
+        "w": 2192,
+        "h": 422
     },
     {
         "id": "5010c57f.67bbdc",
@@ -386,10 +386,10 @@
             "6ec00d53.a274c4",
             "d23478e7.70b628"
         ],
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 2674,
+        "y": 39,
+        "w": 2172,
+        "h": 422
     },
     {
         "id": "783c049e.f1a19c",
@@ -434,10 +434,10 @@
             "c8b56003.89f21",
             "53bc86ee.b28948"
         ],
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 2594,
+        "y": 2039,
+        "w": 2172,
+        "h": 402
     },
     {
         "id": "1f533065.36249",
@@ -491,10 +491,10 @@
             "308325e.81547da",
             "3ff35b00.eecba4"
         ],
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 2694,
+        "y": 2539,
+        "w": 1872,
+        "h": 642
     },
     {
         "id": "3ef9495f.289ca6",
@@ -688,10 +688,10 @@
             "a055bc11.e8153",
             "168494a9.786b2b"
         ],
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 2694,
+        "y": 1539,
+        "w": 2172,
+        "h": 422
     },
     {
         "id": "81fb859b.40bb48",
@@ -4535,7 +4535,7 @@
         "g": "5bbf3c03.f33c44",
         "name": "",
         "topic": "Cartmell",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
         "nl": false,
@@ -5361,7 +5361,7 @@
         "g": "5cafbfff.cd9ff",
         "name": "",
         "topic": "Corwin",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
         "nl": false,
@@ -6097,7 +6097,7 @@
         "g": "5010c57f.67bbdc",
         "name": "Nellie",
         "topic": "Nellie",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
         "nl": false,
@@ -6951,7 +6951,7 @@
         "g": "783c049e.f1a19c",
         "name": "",
         "topic": "Clingar",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
         "nl": false,
@@ -7634,7 +7634,7 @@
         "g": "1f533065.36249",
         "name": "",
         "topic": "Connel",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
         "nl": false,
@@ -8486,7 +8486,7 @@
         "g": "92bbdc3e.5711e",
         "name": "",
         "topic": "Huston",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
         "nl": false,
