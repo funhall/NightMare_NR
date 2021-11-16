@@ -14294,7 +14294,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "Counter",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -26550,7 +26550,8 @@
         "y": 1700,
         "wires": [
             [
-                "010b34305ac6039d"
+                "010b34305ac6039d",
+                "36978862d70a5611"
             ]
         ]
     },
@@ -26729,8 +26730,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 700,
-        "y": 1700,
+        "x": 690,
+        "y": 1640,
         "wires": [
             [
                 "36978862d70a5611"
