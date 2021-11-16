@@ -24,7 +24,7 @@
         "id": "cf29ad44.fd75a",
         "type": "tab",
         "label": "Boks 5 - blandet",
-        "disabled": true,
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -491,15 +491,11 @@
             "51a82bba.c75414",
             "9eb232d6.682b5",
             "c4be9f5c.259de",
-            "5bb7e35b.3913ac",
-            "e8529a34.3cfd98",
-            "e249bc20.1935a",
-            "29e1bba989b8a829",
-            "f2c2a9aa54be5001"
+            "e249bc20.1935a"
         ],
         "x": 1564,
         "y": 3579,
-        "w": 1162,
+        "w": 932,
         "h": 422
     },
     {
@@ -5128,82 +5124,6 @@
         "wires": []
     },
     {
-        "id": "679231fd.7bfe3",
-        "type": "mqtt out",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "topic": "kiste/output/D4",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dca8425b.8fb18",
-        "x": 2300,
-        "y": 4080,
-        "wires": []
-    },
-    {
-        "id": "fd74868e.90fa58",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "HIGH",
-        "payloadType": "str",
-        "x": 2090,
-        "y": 4080,
-        "wires": [
-            [
-                "679231fd.7bfe3"
-            ]
-        ]
-    },
-    {
-        "id": "53857036.a6a13",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Flash",
-        "payloadType": "str",
-        "x": 2090,
-        "y": 4040,
-        "wires": [
-            [
-                "679231fd.7bfe3"
-            ]
-        ]
-    },
-    {
         "id": "4e3953ed.7bfd6c",
         "type": "mqtt in",
         "z": "33e76285.1cd03e",
@@ -8886,23 +8806,6 @@
         "wires": []
     },
     {
-        "id": "5bb7e35b.3913ac",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "g": "c4fe518a.1dca8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2340,
-        "y": 3880,
-        "wires": []
-    },
-    {
         "id": "943be0c1.1cd8a",
         "type": "comment",
         "z": "33e76285.1cd03e",
@@ -8955,32 +8858,6 @@
         "x": 3760,
         "y": 2380,
         "wires": []
-    },
-    {
-        "id": "e8529a34.3cfd98",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "c4fe518a.1dca8",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2400,
-        "y": 3900,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "507ea008.39725",
@@ -12589,48 +12466,6 @@
             [
                 "cd89f1181b4ef790"
             ]
-        ]
-    },
-    {
-        "id": "29e1bba989b8a829",
-        "type": "http request",
-        "z": "33e76285.1cd03e",
-        "g": "c4fe518a.1dca8",
-        "name": "load playlist",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.100:8080/requests/status.xml?command=in_play&input=/home/pi/Queen.xspf",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 2490,
-        "y": 3720,
-        "wires": [
-            [
-                "f2c2a9aa54be5001"
-            ]
-        ]
-    },
-    {
-        "id": "f2c2a9aa54be5001",
-        "type": "http request",
-        "z": "33e76285.1cd03e",
-        "g": "c4fe518a.1dca8",
-        "name": "play playlist",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.100:8080/requests/status.xml?command=pl_play",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 2630,
-        "y": 3860,
-        "wires": [
-            []
         ]
     },
     {
