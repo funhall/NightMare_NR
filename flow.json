@@ -93,7 +93,7 @@
     {
         "id": "d2152ba53a59266a",
         "type": "tab",
-        "label": "Variabler for start",
+        "label": "Placering af byster",
         "disabled": false,
         "info": "",
         "env": []
@@ -529,8 +529,8 @@
             "308325e.81547da",
             "3ff35b00.eecba4"
         ],
-        "x": 2694,
-        "y": 2539,
+        "x": 2874,
+        "y": 2479,
         "w": 1872,
         "h": 642
     },
@@ -1997,6 +1997,32 @@
         "y": 59,
         "w": 432,
         "h": 142
+    },
+    {
+        "id": "36ae335cdb4fbb62",
+        "type": "group",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a7932ebfbe2453cd",
+            "55348f55479243a9",
+            "8d3eec79601c8182",
+            "ee57ee852f8d7755",
+            "ab7d97175595173d",
+            "e19d88dea71466bb",
+            "68524b50d7a48c0f",
+            "1b6a60c4a011d57a",
+            "fa79b9461e7602a7",
+            "b5519264c4955c26",
+            "b69dae3f2aa81630"
+        ],
+        "x": 1524,
+        "y": 519,
+        "w": 932,
+        "h": 322
     },
     {
         "id": "82fd466d.f6c968",
@@ -8061,8 +8087,8 @@
         "host": "192.168.1.206",
         "timer": "20",
         "inputs": 0,
-        "x": 2840,
-        "y": 2620,
+        "x": 3020,
+        "y": 2560,
         "wires": [
             [
                 "23a2272c.b3bf88"
@@ -8090,8 +8116,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 3110,
-        "y": 2620,
+        "x": 3290,
+        "y": 2560,
         "wires": [
             [
                 "7227b1c.2ea975"
@@ -8128,8 +8154,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3300,
-        "y": 2580,
+        "x": 3480,
+        "y": 2520,
         "wires": [
             [
                 "9a36d507.b11e68"
@@ -8163,8 +8189,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3300,
-        "y": 2640,
+        "x": 3480,
+        "y": 2580,
         "wires": [
             [
                 "c30a2c8f.585d",
@@ -8192,8 +8218,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 3660,
-        "y": 2580,
+        "x": 3840,
+        "y": 2520,
         "wires": [
             []
         ]
@@ -8218,8 +8244,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3470,
-        "y": 2620,
+        "x": 3650,
+        "y": 2560,
         "wires": [
             [
                 "9a36d507.b11e68"
@@ -8235,8 +8261,8 @@
         "group": "9d85a95.3d6e458",
         "voice": "Google US English",
         "always": true,
-        "x": 3660,
-        "y": 2740,
+        "x": 3840,
+        "y": 2680,
         "wires": []
     },
     {
@@ -8262,8 +8288,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 3180,
-        "y": 2700,
+        "x": 3360,
+        "y": 2640,
         "wires": []
     },
     {
@@ -8280,8 +8306,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 2770,
-        "y": 2700,
+        "x": 2950,
+        "y": 2640,
         "wires": [
             [
                 "4897b793.701af8",
@@ -8310,8 +8336,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3460,
-        "y": 2740,
+        "x": 3640,
+        "y": 2680,
         "wires": [
             [
                 "420b8037.2c9ea"
@@ -8338,8 +8364,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 3290,
-        "y": 2760,
+        "x": 3470,
+        "y": 2700,
         "wires": [
             [
                 "7b99696c.8d8f38"
@@ -8366,8 +8392,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3100,
-        "y": 2760,
+        "x": 3280,
+        "y": 2700,
         "wires": [
             [
                 "fa52c77c.d0fb48",
@@ -8395,8 +8421,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3470,
-        "y": 2660,
+        "x": 3650,
+        "y": 2600,
         "wires": [
             [
                 "f233b0e6.7285e"
@@ -8423,8 +8449,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3110,
-        "y": 2840,
+        "x": 3290,
+        "y": 2780,
         "wires": [
             [
                 "512afd39.042164"
@@ -8438,8 +8464,8 @@
         "g": "1f533065.36249",
         "name": "",
         "topic": "",
-        "x": 3440,
-        "y": 2840,
+        "x": 3620,
+        "y": 2780,
         "wires": [
             [
                 "8f9473cd.e4ee8",
@@ -8474,8 +8500,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 3770,
-        "y": 2780,
+        "x": 3950,
+        "y": 2720,
         "wires": [
             [],
             []
@@ -8501,8 +8527,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 4080,
-        "y": 2680,
+        "x": 4260,
+        "y": 2620,
         "wires": [
             [
                 "869101db.b7822"
@@ -8536,8 +8562,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 4280,
-        "y": 2620,
+        "x": 4460,
+        "y": 2560,
         "wires": [
             []
         ]
@@ -8569,8 +8595,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 4300,
-        "y": 2700,
+        "x": 4480,
+        "y": 2640,
         "wires": [
             []
         ]
@@ -8595,8 +8621,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 4080,
-        "y": 2860,
+        "x": 4260,
+        "y": 2800,
         "wires": [
             [
                 "69109ef8.014e2"
@@ -8620,8 +8646,8 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 3380,
-        "y": 2920,
+        "x": 3560,
+        "y": 2860,
         "wires": [
             [
                 "5d12dc73.777c74"
@@ -8640,8 +8666,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3370,
-        "y": 2880,
+        "x": 3550,
+        "y": 2820,
         "wires": [
             [
                 "512afd39.042164",
@@ -8669,8 +8695,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 4080,
-        "y": 2620,
+        "x": 4260,
+        "y": 2560,
         "wires": [
             [
                 "2e918869.6ed4d8"
@@ -8700,8 +8726,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 3860,
-        "y": 2920,
+        "x": 4040,
+        "y": 2860,
         "wires": [
             [],
             [
@@ -8736,8 +8762,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 4210,
-        "y": 2920,
+        "x": 4390,
+        "y": 2860,
         "wires": [
             [
                 "cd273450.1cfd18"
@@ -9835,8 +9861,8 @@
         "links": [
             "cebf59a5.bdd588"
         ],
-        "x": 4315,
-        "y": 2920,
+        "x": 4495,
+        "y": 2860,
         "wires": []
     },
     {
@@ -10630,8 +10656,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 4050,
-        "y": 2820,
+        "x": 4230,
+        "y": 2760,
         "wires": [
             [
                 "d256ca7.f8df538",
@@ -10659,8 +10685,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 4240,
-        "y": 2820,
+        "x": 4420,
+        "y": 2760,
         "wires": [
             [
                 "6978a413.7d34ac"
@@ -10813,8 +10839,8 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 3890,
-        "y": 2820,
+        "x": 4070,
+        "y": 2760,
         "wires": [
             [
                 "b3443a93.2b4bd8",
@@ -10834,8 +10860,8 @@
         "constant": "8",
         "round": false,
         "decimals": 0,
-        "x": 3890,
-        "y": 2860,
+        "x": 4070,
+        "y": 2800,
         "wires": [
             [
                 "62de2396.5b1ddc"
@@ -10864,8 +10890,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 3790,
-        "y": 2980,
+        "x": 3970,
+        "y": 2920,
         "wires": [
             [
                 "d256ca7.f8df538"
@@ -10890,8 +10916,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 4050,
-        "y": 2920,
+        "x": 4230,
+        "y": 2860,
         "wires": [
             [
                 "6150fee9.b367a"
@@ -10912,8 +10938,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4310,
-        "y": 2860,
+        "x": 4490,
+        "y": 2800,
         "wires": []
     },
     {
@@ -10930,8 +10956,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4450,
-        "y": 3000,
+        "x": 4630,
+        "y": 2940,
         "wires": []
     },
     {
@@ -10948,8 +10974,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4050,
-        "y": 2780,
+        "x": 4230,
+        "y": 2720,
         "wires": []
     },
     {
@@ -10965,8 +10991,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4150,
-        "y": 3140,
+        "x": 4330,
+        "y": 3080,
         "wires": []
     },
     {
@@ -10986,8 +11012,8 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 4440,
-        "y": 2820,
+        "x": 4620,
+        "y": 2760,
         "wires": [
             [
                 "7d8974a2.13421c"
@@ -11127,8 +11153,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3640,
-        "y": 2940,
+        "x": 3820,
+        "y": 2880,
         "wires": []
     },
     {
@@ -11151,8 +11177,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3720,
-        "y": 2860,
+        "x": 3900,
+        "y": 2800,
         "wires": [
             [
                 "509ae781.13a9a8"
@@ -11179,8 +11205,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3720,
-        "y": 2820,
+        "x": 3900,
+        "y": 2760,
         "wires": [
             [
                 "cc6e48c8.77b308"
@@ -11826,7 +11852,8 @@
             "d3a3e58ca4265b97",
             "dcded3516cdf5deb",
             "ea561507f22332a1",
-            "fe10acda04a4e60a"
+            "fe10acda04a4e60a",
+            "3deb135766c2e688"
         ],
         "x": 815,
         "y": 600,
@@ -13195,7 +13222,8 @@
         "name": "Byster klar til spil",
         "links": [
             "9684b3bc.fb755",
-            "51a82bba.c75414"
+            "51a82bba.c75414",
+            "3deb135766c2e688"
         ],
         "x": 1545,
         "y": 2220,
@@ -16097,7 +16125,8 @@
         "links": [
             "2811ee64.252c92",
             "c4be9f5c.259de",
-            "6583ef7d905a91cb"
+            "6583ef7d905a91cb",
+            "783b42d2ad117523"
         ],
         "x": 2175,
         "y": 3620,
@@ -23854,7 +23883,8 @@
             "c4be9f5c.259de",
             "dcda2e3ca6ad94be",
             "d0db6f812a7972aa",
-            "6583ef7d905a91cb"
+            "6583ef7d905a91cb",
+            "783b42d2ad117523"
         ],
         "x": 795,
         "y": 100,
@@ -28577,8 +28607,8 @@
         "g": "1f533065.36249",
         "inc": 1,
         "name": "Oplader til",
-        "x": 3890,
-        "y": 2620,
+        "x": 4070,
+        "y": 2560,
         "wires": [
             []
         ]
@@ -28590,8 +28620,8 @@
         "g": "1f533065.36249",
         "inc": 1,
         "name": "Aflader",
-        "x": 3900,
-        "y": 2680,
+        "x": 4080,
+        "y": 2620,
         "wires": [
             []
         ]
@@ -30249,6 +30279,1633 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "9b02a9971ae4d0fe",
+        "type": "mqtt in",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "topic": "Nellie/input/D7",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 560,
+        "y": 420,
+        "wires": [
+            [
+                "08a2efb6989fd9be",
+                "640de4d947597364"
+            ]
+        ]
+    },
+    {
+        "id": "456e35e435bdbeba",
+        "type": "ui_button",
+        "z": "d2152ba53a59266a",
+        "name": "Nellie",
+        "group": "704f0c02.e979e4",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "fa-hand-lizard-o",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1090,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08a2efb6989fd9be",
+        "type": "switch",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "placeret",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "vaek",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 380,
+        "wires": [
+            [
+                "f02b9fc5e5674c24"
+            ],
+            [
+                "f19f2e9d5451011d"
+            ]
+        ]
+    },
+    {
+        "id": "f02b9fc5e5674c24",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "grøn",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "placeret",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Nellie",
+                "pt": "global",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 360,
+        "wires": [
+            [
+                "456e35e435bdbeba",
+                "8d3eec79601c8182"
+            ]
+        ]
+    },
+    {
+        "id": "f19f2e9d5451011d",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "rød",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Nellie",
+                "pt": "global",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 400,
+        "wires": [
+            [
+                "456e35e435bdbeba",
+                "ee57ee852f8d7755"
+            ]
+        ]
+    },
+    {
+        "id": "a7811dcf99ed9ddc",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Nellie placeret",
+        "payloadType": "str",
+        "x": 570,
+        "y": 380,
+        "wires": [
+            [
+                "08a2efb6989fd9be"
+            ]
+        ]
+    },
+    {
+        "id": "19c3dbbc55531cbd",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Nellie vaek",
+        "payloadType": "str",
+        "x": 560,
+        "y": 340,
+        "wires": [
+            [
+                "08a2efb6989fd9be"
+            ]
+        ]
+    },
+    {
+        "id": "80ec2210bc9085e3",
+        "type": "mqtt in",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "topic": "Corwin/input/D7",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 560,
+        "y": 700,
+        "wires": [
+            [
+                "0db3fd848c897edb",
+                "9e1af10cefeefce1",
+                "49f4d32c060fd0d1"
+            ]
+        ]
+    },
+    {
+        "id": "2b13d4eeaaca0c34",
+        "type": "ui_button",
+        "z": "d2152ba53a59266a",
+        "name": "Corwin",
+        "group": "704f0c02.e979e4",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "fa-hand-lizard-o",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1060,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0db3fd848c897edb",
+        "type": "switch",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "placeret",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "vaek",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 660,
+        "wires": [
+            [
+                "b114ca459d5b33ec"
+            ],
+            [
+                "4fae876e654cbc9f"
+            ]
+        ]
+    },
+    {
+        "id": "b114ca459d5b33ec",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "grøn",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "placeret",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Corwin",
+                "pt": "global",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 640,
+        "wires": [
+            [
+                "2b13d4eeaaca0c34",
+                "8d3eec79601c8182"
+            ]
+        ]
+    },
+    {
+        "id": "4fae876e654cbc9f",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "rød",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Corwin",
+                "pt": "global",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 680,
+        "wires": [
+            [
+                "2b13d4eeaaca0c34",
+                "ee57ee852f8d7755"
+            ]
+        ]
+    },
+    {
+        "id": "32f9a9445d0e4147",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Corwin placeret",
+        "payloadType": "str",
+        "x": 580,
+        "y": 660,
+        "wires": [
+            [
+                "0db3fd848c897edb"
+            ]
+        ]
+    },
+    {
+        "id": "53c8b868a2225070",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Corwin vaek",
+        "payloadType": "str",
+        "x": 570,
+        "y": 620,
+        "wires": [
+            [
+                "0db3fd848c897edb"
+            ]
+        ]
+    },
+    {
+        "id": "2f922ad76f411bfb",
+        "type": "mqtt in",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "topic": "Cartmell/input/D7",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 560,
+        "y": 860,
+        "wires": [
+            [
+                "1b92107c666d8be4",
+                "db61f4a9a7b6a0c3"
+            ]
+        ]
+    },
+    {
+        "id": "84d86ee4237f74c1",
+        "type": "ui_button",
+        "z": "d2152ba53a59266a",
+        "name": "Cartmell",
+        "group": "704f0c02.e979e4",
+        "order": 1,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "fa-hand-lizard-o",
+        "payload": "placeret",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1060,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b92107c666d8be4",
+        "type": "switch",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "placeret",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "vaek",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 820,
+        "wires": [
+            [
+                "5fd0bd3eae6ba2df"
+            ],
+            [
+                "912c6e75f6f34195"
+            ]
+        ]
+    },
+    {
+        "id": "5fd0bd3eae6ba2df",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "grøn",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "placeret",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Cartmell",
+                "pt": "global",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 800,
+        "wires": [
+            [
+                "84d86ee4237f74c1",
+                "8d3eec79601c8182"
+            ]
+        ]
+    },
+    {
+        "id": "912c6e75f6f34195",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "rød",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Cartmell",
+                "pt": "global",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 840,
+        "wires": [
+            [
+                "84d86ee4237f74c1",
+                "ee57ee852f8d7755"
+            ]
+        ]
+    },
+    {
+        "id": "9438a73ddc64679c",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Cartmell placeret",
+        "payloadType": "str",
+        "x": 580,
+        "y": 820,
+        "wires": [
+            [
+                "1b92107c666d8be4"
+            ]
+        ]
+    },
+    {
+        "id": "c6dd99bd0d6a25e9",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Cartmell vaek",
+        "payloadType": "str",
+        "x": 570,
+        "y": 780,
+        "wires": [
+            [
+                "1b92107c666d8be4"
+            ]
+        ]
+    },
+    {
+        "id": "8d66630c71db6895",
+        "type": "mqtt in",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "topic": "Huston/input/D7",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 540,
+        "y": 1020,
+        "wires": [
+            [
+                "306b0cc4c9d90fdf",
+                "70122635d80c4aed"
+            ]
+        ]
+    },
+    {
+        "id": "b9a32118677b3359",
+        "type": "ui_button",
+        "z": "d2152ba53a59266a",
+        "name": "Huston",
+        "group": "704f0c02.e979e4",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "fa-hand-lizard-o",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1040,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "306b0cc4c9d90fdf",
+        "type": "switch",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "placeret",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "vaek",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 980,
+        "wires": [
+            [
+                "97a2b5d82ed9d21c"
+            ],
+            [
+                "a4778d9f9c401996"
+            ]
+        ]
+    },
+    {
+        "id": "97a2b5d82ed9d21c",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "grøn",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "placeret",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Huston",
+                "pt": "global",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 960,
+        "wires": [
+            [
+                "b9a32118677b3359",
+                "8d3eec79601c8182"
+            ]
+        ]
+    },
+    {
+        "id": "a4778d9f9c401996",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "rød",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Huston",
+                "pt": "global",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 1000,
+        "wires": [
+            [
+                "b9a32118677b3359",
+                "ee57ee852f8d7755"
+            ]
+        ]
+    },
+    {
+        "id": "a00ad4a880eafc53",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Huston placeret",
+        "payloadType": "str",
+        "x": 560,
+        "y": 980,
+        "wires": [
+            [
+                "306b0cc4c9d90fdf"
+            ]
+        ]
+    },
+    {
+        "id": "95e540b66aa2baa7",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Huston vaek",
+        "payloadType": "str",
+        "x": 550,
+        "y": 940,
+        "wires": [
+            [
+                "306b0cc4c9d90fdf"
+            ]
+        ]
+    },
+    {
+        "id": "7782bcb0cb0682b5",
+        "type": "mqtt in",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "topic": "Clingar/input/D7",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "inputs": 0,
+        "x": 540,
+        "y": 1180,
+        "wires": [
+            [
+                "962111740e5ec608"
+            ]
+        ]
+    },
+    {
+        "id": "a1f9c4b7d9c361ed",
+        "type": "ui_button",
+        "z": "d2152ba53a59266a",
+        "name": "Clingar",
+        "group": "704f0c02.e979e4",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "fa-hand-lizard-o",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1040,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "962111740e5ec608",
+        "type": "switch",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "placeret",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "vaek",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 1140,
+        "wires": [
+            [
+                "98d4bcf90f021391",
+                "3202d0514e7fbb03"
+            ],
+            [
+                "cf7292368641dd61"
+            ]
+        ]
+    },
+    {
+        "id": "98d4bcf90f021391",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "grøn",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "placeret",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Clingar",
+                "pt": "global",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 1120,
+        "wires": [
+            [
+                "a1f9c4b7d9c361ed",
+                "8d3eec79601c8182"
+            ]
+        ]
+    },
+    {
+        "id": "cf7292368641dd61",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "rød",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Clingar",
+                "pt": "global",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 1160,
+        "wires": [
+            [
+                "a1f9c4b7d9c361ed",
+                "ee57ee852f8d7755"
+            ]
+        ]
+    },
+    {
+        "id": "1694e13f909ef5d9",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Clingar placeret",
+        "payloadType": "str",
+        "x": 560,
+        "y": 1140,
+        "wires": [
+            [
+                "962111740e5ec608"
+            ]
+        ]
+    },
+    {
+        "id": "7554cc698806b5f5",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Clingar vaek",
+        "payloadType": "str",
+        "x": 550,
+        "y": 1100,
+        "wires": [
+            [
+                "962111740e5ec608"
+            ]
+        ]
+    },
+    {
+        "id": "ba20d08cf34340a6",
+        "type": "mqtt in",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "topic": "Connel/input/D7",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 560,
+        "y": 560,
+        "wires": [
+            [
+                "70cb82a7264482aa",
+                "5e18ffed363070bf"
+            ]
+        ]
+    },
+    {
+        "id": "9350b40d33b8d1dd",
+        "type": "ui_button",
+        "z": "d2152ba53a59266a",
+        "name": "Connel",
+        "group": "704f0c02.e979e4",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "fa-hand-lizard-o",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1060,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70cb82a7264482aa",
+        "type": "switch",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Connel placeret",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Connel vaek",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 520,
+        "wires": [
+            [
+                "393b5277c7d12ffe"
+            ],
+            [
+                "8cbecf92d4534f7c"
+            ]
+        ]
+    },
+    {
+        "id": "393b5277c7d12ffe",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "grøn",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "placeret",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Connel",
+                "pt": "global",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 500,
+        "wires": [
+            [
+                "9350b40d33b8d1dd",
+                "8d3eec79601c8182"
+            ]
+        ]
+    },
+    {
+        "id": "8cbecf92d4534f7c",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "name": "rød",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Connel",
+                "pt": "global",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 540,
+        "wires": [
+            [
+                "9350b40d33b8d1dd",
+                "ee57ee852f8d7755"
+            ]
+        ]
+    },
+    {
+        "id": "bb4fc9f98edb5eed",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Connel placeret",
+        "payloadType": "str",
+        "x": 580,
+        "y": 520,
+        "wires": [
+            [
+                "70cb82a7264482aa"
+            ]
+        ]
+    },
+    {
+        "id": "93a6562ce72c549c",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Connel vaek",
+        "payloadType": "str",
+        "x": 570,
+        "y": 480,
+        "wires": [
+            [
+                "70cb82a7264482aa"
+            ]
+        ]
+    },
+    {
+        "id": "3202d0514e7fbb03",
+        "type": "link out",
+        "z": "d2152ba53a59266a",
+        "name": "Clingar placeret",
+        "links": [
+            "48666c92.6abcf4",
+            "99cb10cc7559926c",
+            "afb0532228793a44"
+        ],
+        "x": 855,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "70122635d80c4aed",
+        "type": "link out",
+        "z": "d2152ba53a59266a",
+        "name": "Huston placeret",
+        "links": [
+            "451f5d27.059b74",
+            "6a6f2508b3b2e1a2",
+            "07d6c1fdab504f56"
+        ],
+        "x": 855,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "db61f4a9a7b6a0c3",
+        "type": "link out",
+        "z": "d2152ba53a59266a",
+        "name": "Cartmell placeret",
+        "mode": "link",
+        "links": [],
+        "x": 855,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "9e1af10cefeefce1",
+        "type": "link out",
+        "z": "d2152ba53a59266a",
+        "name": "Corwin placeret",
+        "links": [],
+        "x": 855,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "5e18ffed363070bf",
+        "type": "link out",
+        "z": "d2152ba53a59266a",
+        "name": "Connel placeret",
+        "links": [
+            "7f53b25f.8ac16c"
+        ],
+        "x": 855,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "640de4d947597364",
+        "type": "link out",
+        "z": "d2152ba53a59266a",
+        "name": "Nellie placeret",
+        "links": [
+            "37384502.d17b8a",
+            "259a59c2.1816e6",
+            "3a30a76a0d3d8ee7",
+            "982e1be47b8f1067"
+        ],
+        "x": 855,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "49f4d32c060fd0d1",
+        "type": "debug",
+        "z": "d2152ba53a59266a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "a7932ebfbe2453cd",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "plus",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 1630,
+        "y": 680,
+        "wires": [
+            [
+                "8d3eec79601c8182"
+            ]
+        ]
+    },
+    {
+        "id": "55348f55479243a9",
+        "type": "debug",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "8d3eec79601c8182",
+        "type": "function",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "plusser",
+        "func": "var counter = flow.get(\"counter\") || 0\nif (msg.topic ==\"reset\") {\n    counter = 0\n} else {\n        counter ++\n}\nflow.set(\"counter\", counter)\n\nmsg.payload = counter\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1810,
+        "y": 680,
+        "wires": [
+            [
+                "55348f55479243a9",
+                "68524b50d7a48c0f",
+                "1b6a60c4a011d57a"
+            ]
+        ]
+    },
+    {
+        "id": "ee57ee852f8d7755",
+        "type": "function",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "minusser",
+        "func": "var counter = flow.get(\"counter\") || 0\nif (msg.topic ==\"reset\") {\n    counter = 0\n} else {\n        counter --\n}\nflow.set(\"counter\", counter)\n\nmsg.payload = counter\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1810,
+        "y": 760,
+        "wires": [
+            [
+                "55348f55479243a9",
+                "68524b50d7a48c0f",
+                "1b6a60c4a011d57a"
+            ]
+        ]
+    },
+    {
+        "id": "ab7d97175595173d",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "plus",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "reset",
+        "payload": "reset",
+        "payloadType": "str",
+        "x": 1620,
+        "y": 800,
+        "wires": [
+            [
+                "8d3eec79601c8182"
+            ]
+        ]
+    },
+    {
+        "id": "e19d88dea71466bb",
+        "type": "inject",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "minus",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 1620,
+        "y": 740,
+        "wires": [
+            [
+                "ee57ee852f8d7755"
+            ]
+        ]
+    },
+    {
+        "id": "68524b50d7a48c0f",
+        "type": "ui_gauge",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "",
+        "group": "5241c487.80287c",
+        "order": 4,
+        "width": 2,
+        "height": 2,
+        "gtype": "gage",
+        "title": "Byster",
+        "label": "Stk",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "6",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 2260,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "1b6a60c4a011d57a",
+        "type": "switch",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "",
+        "property": "counter",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "num"
+            },
+            {
+                "t": "neq",
+                "v": "6",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1990,
+        "y": 780,
+        "wires": [
+            [
+                "fa79b9461e7602a7",
+                "b69dae3f2aa81630"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fa79b9461e7602a7",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameStatus",
+                "pt": "msg",
+                "to": "GAME OVER",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "gameover",
+                "pt": "flow",
+                "to": "yes",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2240,
+        "y": 720,
+        "wires": [
+            [
+                "68524b50d7a48c0f"
+            ]
+        ]
+    },
+    {
+        "id": "b5519264c4955c26",
+        "type": "change",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "Tæller til 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1810,
+        "y": 560,
+        "wires": [
+            [
+                "8d3eec79601c8182"
+            ]
+        ]
+    },
+    {
+        "id": "b69dae3f2aa81630",
+        "type": "debug",
+        "z": "d2152ba53a59266a",
+        "g": "36ae335cdb4fbb62",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2340,
+        "y": 760,
+        "wires": []
     },
     {
         "id": "140319477bd49890",
