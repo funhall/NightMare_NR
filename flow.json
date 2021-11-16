@@ -34,7 +34,8 @@
         "type": "tab",
         "label": "Boks 6 Magnet låse + kiste vægt",
         "disabled": false,
-        "info": ""
+        "info": "",
+        "env": []
     },
     {
         "id": "e1fe16e7.a28238",
@@ -12375,7 +12376,8 @@
         "g": "8a907ee3e43a8bdb",
         "name": "check om byster er på plads",
         "links": [
-            "ba36de2e2eb002c0"
+            "ba36de2e2eb002c0",
+            "5306e37e399c8f2e"
         ],
         "x": 455,
         "y": 2560,
@@ -22061,7 +22063,8 @@
         "mode": "link",
         "links": [
             "2fdad2b31e791882",
-            "5548b3317829b264"
+            "5548b3317829b264",
+            "fe10acda04a4e60a"
         ],
         "x": 615,
         "y": 980,
