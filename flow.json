@@ -7267,7 +7267,7 @@
         "label": "% opladt",
         "format": "{{value}}",
         "min": "500",
-        "max": "1100",
+        "max": "1024",
         "colors": [
             "#b3000c",
             "#e6e600",
@@ -14799,7 +14799,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
