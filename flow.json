@@ -26741,32 +26741,6 @@
         ]
     },
     {
-        "id": "7ed056c0e55e1835",
-        "type": "loop",
-        "z": "e1fe16e7.a28238",
-        "name": "",
-        "kind": "fcnt",
-        "count": "5",
-        "initial": "1",
-        "step": "1",
-        "condition": "",
-        "conditionType": "js",
-        "when": "before",
-        "enumeration": "enum",
-        "enumerationType": "msg",
-        "limit": "5000",
-        "loopPayload": "loop-orig",
-        "finalPayload": "final-count",
-        "x": 890,
-        "y": 1760,
-        "wires": [
-            [],
-            [
-                "fde4233bc144e81e"
-            ]
-        ]
-    },
-    {
         "id": "ab0ea4b7.1c8cc8",
         "type": "inject",
         "z": "f6bd50b9.85c27",
