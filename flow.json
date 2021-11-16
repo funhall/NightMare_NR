@@ -1086,12 +1086,14 @@
             "fcb9b7a4d4dbac64",
             "e4ae64684e4b1a4b",
             "5b7ceed71caff75e",
-            "d4d2aeec1061c558"
+            "d4d2aeec1061c558",
+            "ad760a43fb023cc4",
+            "0f7f9634d14ea8f9"
         ],
         "x": 404,
         "y": 2379,
         "w": 1512,
-        "h": 222
+        "h": 242
     },
     {
         "id": "bdf3eb2232f83c85",
@@ -12310,7 +12312,9 @@
         "y": 2480,
         "wires": [
             [
-                "4f17f4badd740b98"
+                "4f17f4badd740b98",
+                "d4d2aeec1061c558",
+                "0f7f9634d14ea8f9"
             ]
         ]
     },
@@ -12344,9 +12348,7 @@
         "x": 1300,
         "y": 2540,
         "wires": [
-            [
-                "d4d2aeec1061c558"
-            ]
+            []
         ]
     },
     {
@@ -12371,7 +12373,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1130,
-        "y": 2520,
+        "y": 2500,
         "wires": [
             [
                 "3ec27a962d094fc2"
@@ -12504,7 +12506,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1520,
+        "x": 1600,
         "y": 2480,
         "wires": [
             [
@@ -14532,6 +14534,51 @@
         "wires": [
             [
                 "6ec00d53.a274c4"
+            ]
+        ]
+    },
+    {
+        "id": "ad760a43fb023cc4",
+        "type": "timed-counter",
+        "z": "33e76285.1cd03e",
+        "g": "8a907ee3e43a8bdb",
+        "name": "",
+        "timelimit": 350,
+        "timeunit": 1,
+        "withhold": true,
+        "fixedtimeout": false,
+        "pertopic": false,
+        "x": 1670,
+        "y": 2560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f7f9634d14ea8f9",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "8a907ee3e43a8bdb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1510,
+        "y": 2580,
+        "wires": [
+            [
+                "98bbc5ca0fe2a538"
             ]
         ]
     },
@@ -26499,8 +26546,8 @@
         "links": [
             "d4d2aeec1061c558"
         ],
-        "x": 535,
-        "y": 1680,
+        "x": 495,
+        "y": 1700,
         "wires": [
             [
                 "010b34305ac6039d"
