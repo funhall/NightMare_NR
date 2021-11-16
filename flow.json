@@ -14118,7 +14118,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14240,7 +14240,8 @@
         "wires": [
             [
                 "d86ab0d661e8759d",
-                "13fbbe6b04370775"
+                "13fbbe6b04370775",
+                "31976a0b2ad55d29"
             ]
         ]
     },
@@ -14249,7 +14250,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14332,8 +14333,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 1100,
+        "x": 830,
+        "y": 1080,
         "wires": [
             [
                 "498b2f4e4bcdf879"
@@ -14406,8 +14407,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 1100,
+        "x": 1070,
+        "y": 1080,
         "wires": []
     },
     {
@@ -14431,6 +14432,31 @@
         "reg": false,
         "x": 730,
         "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31976a0b2ad55d29",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "valuecount",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 1180,
         "wires": [
             []
         ]
