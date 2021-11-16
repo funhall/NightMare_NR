@@ -26645,7 +26645,7 @@
         "z": "e1fe16e7.a28238",
         "name": "",
         "pauseType": "delay",
-        "timeout": "1500",
+        "timeout": "600",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -26656,7 +26656,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1080,
+        "x": 1070,
         "y": 1700,
         "wires": [
             [
@@ -26711,9 +26711,7 @@
         "x": 1230,
         "y": 1620,
         "wires": [
-            [
-                "36978862d70a5611"
-            ]
+            []
         ]
     },
     {
