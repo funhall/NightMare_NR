@@ -14281,7 +14281,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "Counter",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -26539,13 +26539,13 @@
         "id": "36978862d70a5611",
         "type": "change",
         "z": "e1fe16e7.a28238",
-        "name": "HIGH",
+        "name": "LOW",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "HIGH",
+                "to": "LOW",
                 "tot": "str"
             }
         ],
@@ -26567,13 +26567,13 @@
         "id": "3bf0fa1d61ca2d61",
         "type": "change",
         "z": "e1fe16e7.a28238",
-        "name": "LOW",
+        "name": "HIGH",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "LOW",
+                "to": "HIGH",
                 "tot": "str"
             }
         ],
