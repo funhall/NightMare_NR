@@ -846,11 +846,14 @@
             "35bb660b5a00372e",
             "f207791f5b8aac32",
             "b1233621c6970822",
-            "6b11c885cb48fb91"
+            "6b11c885cb48fb91",
+            "4f7d14c6bece702a",
+            "5b5c6ac24cc58522",
+            "211cc1dfc8ebe1cb"
         ],
         "x": 234,
         "y": 1059,
-        "w": 732,
+        "w": 962,
         "h": 222
     },
     {
@@ -1151,11 +1154,14 @@
             "aa859172.ba9d",
             "c90763c7.286aa",
             "6fbdd8be998db49c",
-            "71bc87a30de98f84"
+            "71bc87a30de98f84",
+            "3b205761544f7a3b",
+            "3579c91afe168063",
+            "d5cf4e95d10ff5a7"
         ],
         "x": 214,
         "y": 479,
-        "w": 772,
+        "w": 892,
         "h": 262
     },
     {
@@ -20949,9 +20955,11 @@
         "id": "5f9e039c.683cdc",
         "type": "link in",
         "z": "53c075e1.2512cc",
-        "name": "Lås rum 2 o udg.",
+        "name": "Lås rum 2 og udg.",
         "links": [
-            "dcda2e3ca6ad94be"
+            "dcda2e3ca6ad94be",
+            "4f7d14c6bece702a",
+            "211cc1dfc8ebe1cb"
         ],
         "x": 1375,
         "y": 1460,
@@ -21290,7 +21298,10 @@
         "x": 890,
         "y": 1140,
         "wires": [
-            []
+            [
+                "4f7d14c6bece702a",
+                "5b5c6ac24cc58522"
+            ]
         ]
     },
     {
@@ -21345,7 +21356,10 @@
         "x": 910,
         "y": 580,
         "wires": [
-            []
+            [
+                "3b205761544f7a3b",
+                "3579c91afe168063"
+            ]
         ]
     },
     {
@@ -21391,10 +21405,11 @@
         "id": "5e6b985193ffd5f4",
         "type": "link in",
         "z": "53c075e1.2512cc",
-        "name": "",
+        "name": "Åben rum 2",
         "links": [
             "dcacf67a632c4d47",
-            "fd22658b.683318"
+            "fd22658b.683318",
+            "4f7d14c6bece702a"
         ],
         "x": 1285,
         "y": 1240,
@@ -21676,7 +21691,8 @@
         "g": "b6b199f8.fdc168",
         "name": "Lås kiste",
         "links": [
-            "dcda2e3ca6ad94be"
+            "dcda2e3ca6ad94be",
+            "d5cf4e95d10ff5a7"
         ],
         "x": 255,
         "y": 300,
@@ -22244,7 +22260,8 @@
         "links": [
             "9174cbaece076164",
             "ba36de2e2eb002c0",
-            "dcacf67a632c4d47"
+            "dcacf67a632c4d47",
+            "3b205761544f7a3b"
         ],
         "x": 175,
         "y": 240,
@@ -23141,6 +23158,115 @@
         ],
         "x": 1005,
         "y": 920,
+        "wires": []
+    },
+    {
+        "id": "3b205761544f7a3b",
+        "type": "link out",
+        "z": "53c075e1.2512cc",
+        "g": "a0bf9c88b3455d08",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "8c898ed3c39f26a9"
+        ],
+        "x": 1015,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3579c91afe168063",
+        "type": "delay",
+        "z": "53c075e1.2512cc",
+        "g": "a0bf9c88b3455d08",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1020,
+        "y": 540,
+        "wires": [
+            [
+                "d5cf4e95d10ff5a7"
+            ]
+        ]
+    },
+    {
+        "id": "d5cf4e95d10ff5a7",
+        "type": "link out",
+        "z": "53c075e1.2512cc",
+        "g": "a0bf9c88b3455d08",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "4f2d4389.1a41ac"
+        ],
+        "x": 1025,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "4f7d14c6bece702a",
+        "type": "link out",
+        "z": "53c075e1.2512cc",
+        "g": "98e94e8b.fb918",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "5f9e039c.683cdc",
+            "5e6b985193ffd5f4"
+        ],
+        "x": 1015,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "5b5c6ac24cc58522",
+        "type": "delay",
+        "z": "53c075e1.2512cc",
+        "g": "98e94e8b.fb918",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1040,
+        "y": 1120,
+        "wires": [
+            [
+                "211cc1dfc8ebe1cb"
+            ]
+        ]
+    },
+    {
+        "id": "211cc1dfc8ebe1cb",
+        "type": "link out",
+        "z": "53c075e1.2512cc",
+        "g": "98e94e8b.fb918",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "5f9e039c.683cdc"
+        ],
+        "x": 1155,
+        "y": 1120,
         "wires": []
     },
     {
