@@ -5956,8 +5956,8 @@
         "title": "Corwin {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": "500",
-        "max": "1100",
+        "min": "400",
+        "max": "950",
         "colors": [
             "#b3000c",
             "#e6e600",
