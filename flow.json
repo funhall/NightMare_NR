@@ -14249,7 +14249,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14305,8 +14305,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 790,
-        "y": 1200,
+        "x": 670,
+        "y": 1180,
         "wires": [
             [
                 "1dcd7c1e1853e201"
@@ -14385,13 +14385,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
         "x": 510,
         "y": 1400,
         "wires": [
             [
-                "cc9bf9dda205f60f"
+                "cc9bf9dda205f60f",
+                "a0b8a11b6e1a9593"
             ]
         ]
     },
@@ -14435,6 +14435,31 @@
         "x": 1100,
         "y": 1200,
         "wires": []
+    },
+    {
+        "id": "a0b8a11b6e1a9593",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "valuecount",
+                "pt": "flow",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1340,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "84e11b56.e27758",
