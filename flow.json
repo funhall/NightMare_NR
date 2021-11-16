@@ -12242,7 +12242,6 @@
         "y": 2560,
         "wires": [
             [
-                "93bb9095fd630948",
                 "cb7568d5b1a32974"
             ]
         ]
@@ -14029,9 +14028,7 @@
         "name": "",
         "props": [
             {
-                "p": "reset",
-                "v": "",
-                "vt": "date"
+                "p": "payload"
             },
             {
                 "p": "topic",
@@ -14043,7 +14040,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 500,
+        "payloadType": "date",
+        "x": 510,
         "y": 2520,
         "wires": [
             [
