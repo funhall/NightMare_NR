@@ -26630,7 +26630,8 @@
             [
                 "fde4233bc144e81e",
                 "d303af2cd1894c35",
-                "2a5d54c0a9cefc3d"
+                "2a5d54c0a9cefc3d",
+                "d03731519faa8069"
             ]
         ]
     },
@@ -26735,6 +26736,57 @@
         "wires": [
             [
                 "36978862d70a5611"
+            ]
+        ]
+    },
+    {
+        "id": "6f67f7c2b70ab8ec",
+        "type": "loop",
+        "z": "e1fe16e7.a28238",
+        "name": "",
+        "kind": "fcnt",
+        "count": "3",
+        "initial": "1",
+        "step": "1",
+        "condition": "",
+        "conditionType": "js",
+        "when": "before",
+        "enumeration": "enum",
+        "enumerationType": "msg",
+        "limit": "",
+        "loopPayload": "loop-index",
+        "finalPayload": "final-count",
+        "x": 1050,
+        "y": 1600,
+        "wires": [
+            [],
+            [
+                "36978862d70a5611"
+            ]
+        ]
+    },
+    {
+        "id": "d03731519faa8069",
+        "type": "delay",
+        "z": "e1fe16e7.a28238",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 1640,
+        "wires": [
+            [
+                "6f67f7c2b70ab8ec"
             ]
         ]
     },
