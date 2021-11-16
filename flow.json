@@ -14953,7 +14953,7 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "gt",
+                "t": "lt",
                 "v": "valuecount",
                 "vt": "flow"
             }
