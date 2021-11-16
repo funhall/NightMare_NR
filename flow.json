@@ -26615,7 +26615,7 @@
         "z": "e1fe16e7.a28238",
         "name": "",
         "pauseType": "delay",
-        "timeout": "600",
+        "timeout": "900",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
