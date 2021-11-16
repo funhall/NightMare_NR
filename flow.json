@@ -1107,7 +1107,9 @@
             "e9187272fe6c8b69"
         ],
         "x": 1434,
-        "y": 2279
+        "y": 2279,
+        "w": 732,
+        "h": 302
     },
     {
         "id": "cb4507d973cdd427",
@@ -1136,7 +1138,9 @@
             "611c6caea528518d"
         ],
         "x": 1454,
-        "y": 1919
+        "y": 1919,
+        "w": 532,
+        "h": 322
     },
     {
         "id": "4ab11592647668ea",
@@ -1164,7 +1168,9 @@
             "b05d5685cb299966"
         ],
         "x": 1434,
-        "y": 2619
+        "y": 2619,
+        "w": 782,
+        "h": 322
     },
     {
         "id": "1212422a5694bdaf",
@@ -1201,7 +1207,9 @@
             "134603c6507fac1d"
         ],
         "x": 54,
-        "y": 2299
+        "y": 2299,
+        "w": 1162,
+        "h": 322
     },
     {
         "id": "d3219f37cc75d1ae",
@@ -1229,7 +1237,9 @@
             "274206c7aa8281c0"
         ],
         "x": 294,
-        "y": 2779
+        "y": 2779,
+        "w": 732,
+        "h": 282
     },
     {
         "id": "a87e7fb4e449f030",
@@ -1258,7 +1268,9 @@
             "942ec7e469b1c876"
         ],
         "x": 374,
-        "y": 1959
+        "y": 1959,
+        "w": 752,
+        "h": 262
     },
     {
         "id": "bd662a4f36edc960",
@@ -11811,7 +11823,7 @@
         "type": "link in",
         "z": "33e76285.1cd03e",
         "g": "4a313dca7433cecc",
-        "name": "check list",
+        "name": "check om magnet låse er klar til spil",
         "links": [
             "ba36de2e2eb002c0",
             "dcda2e3ca6ad94be",
@@ -12054,7 +12066,7 @@
         "type": "link in",
         "z": "33e76285.1cd03e",
         "g": "463e1cfb0b0e88d4",
-        "name": "check list",
+        "name": "check byster er fjernet og klar til spil",
         "links": [
             "dcda2e3ca6ad94be",
             "e751d86262111364"
@@ -12359,7 +12371,7 @@
         "type": "link in",
         "z": "33e76285.1cd03e",
         "g": "8a907ee3e43a8bdb",
-        "name": "check list",
+        "name": "check om byster er på plads",
         "links": [
             "5306e37e399c8f2e",
             "ba36de2e2eb002c0"
@@ -13404,7 +13416,7 @@
         "type": "link in",
         "z": "33e76285.1cd03e",
         "g": "3897bed133705e81",
-        "name": "check list",
+        "name": "check om gavle er fjernet",
         "links": [
             "dcda2e3ca6ad94be",
             "e751d86262111364"
