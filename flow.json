@@ -26703,7 +26703,7 @@
         "when": "before",
         "enumeration": "enum",
         "enumerationType": "msg",
-        "limit": "",
+        "limit": "10000",
         "loopPayload": "loop-keep",
         "finalPayload": "final-count",
         "x": 1050,
