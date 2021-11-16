@@ -521,7 +521,9 @@
             "7f66ec389780f9ef"
         ],
         "x": 1794,
-        "y": 179
+        "y": 179,
+        "w": 822,
+        "h": 382
     },
     {
         "id": "36a6e967.8bcbe6",
@@ -716,7 +718,9 @@
             "d983dd56.71e29"
         ],
         "x": 1134,
-        "y": 99
+        "y": 99,
+        "w": 572,
+        "h": 222
     },
     {
         "id": "14756354.332ecd",
@@ -745,7 +749,9 @@
             "ff614039.402ec"
         ],
         "x": 1114,
-        "y": 379
+        "y": 379,
+        "w": 712,
+        "h": 502
     },
     {
         "id": "4a68a01b.1ce4d",
@@ -774,7 +780,9 @@
             "89e7e760.9d3558"
         ],
         "x": 154,
-        "y": 919
+        "y": 919,
+        "w": 1432,
+        "h": 302
     },
     {
         "id": "9531364d722b6af5",
@@ -1106,17 +1114,17 @@
             "3d814a134161d663",
             "94f0971d7968b920",
             "78cd87bb244a65d9",
-            "ef6ce3133f12654d",
             "0453ca976cb53b44",
             "32fe00fa4e2440b5",
             "0b6ffad040669af4",
             "04e2d85fa6dc6794",
-            "1a5849f7ccf8d7db",
             "ec8325f9fcfaa4b2",
             "e9187272fe6c8b69"
         ],
-        "x": 1334,
-        "y": 2279
+        "x": 1434,
+        "y": 2279,
+        "w": 732,
+        "h": 302
     },
     {
         "id": "cb4507d973cdd427",
@@ -1135,19 +1143,19 @@
             "83cd7534ad20b9c9",
             "863ebb4fdb161c4a",
             "6dd43b2a5f8fdbf4",
-            "341bd4fbf390f050",
             "c2a76e6456b3efe8",
             "d74b84d7fe7914db",
             "ea91f823fed74869",
             "65eee8a35b5afe8a",
-            "e7764cfa3a08e5a9",
             "50f3d4ae5c658cc2",
             "5f2a25d4624c4c29",
             "ac09b92701adca50",
             "611c6caea528518d"
         ],
-        "x": 1354,
-        "y": 1919
+        "x": 1454,
+        "y": 1919,
+        "w": 532,
+        "h": 322
     },
     {
         "id": "4ab11592647668ea",
@@ -1163,12 +1171,10 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "f7cc4f56e0d87053",
             "2f7a0d7db00c8da1",
             "b4e8a17f97989423",
             "ed7e812f19353766",
             "2121df862364de6f",
-            "08e62eeaaa434249",
             "1918e7c631bf669b",
             "0f0349967c11e28d",
             "8068c3c4d391fce2",
@@ -1176,8 +1182,10 @@
             "fc0f4c9bfeddce9f",
             "b05d5685cb299966"
         ],
-        "x": 1334,
-        "y": 2639
+        "x": 1434,
+        "y": 2619,
+        "w": 782,
+        "h": 322
     },
     {
         "id": "1212422a5694bdaf",
@@ -1197,12 +1205,10 @@
             "9584405aeb04fdb2",
             "30c5e8987e1f2b2f",
             "401cc2946f4da29d",
-            "79a7e540665ed322",
             "7f0600450c2d6f42",
             "5c7ddb4535a34cee",
             "d9cab60ead43dfd3",
             "7f9f358796feacf0",
-            "7f8f1621a0eac5d8",
             "1f048f23306578a3",
             "24421f72d16e207b",
             "ab1d814ed13a9af3",
@@ -1216,7 +1222,9 @@
             "134603c6507fac1d"
         ],
         "x": 54,
-        "y": 2299
+        "y": 2299,
+        "w": 1162,
+        "h": 322
     },
     {
         "id": "d3219f37cc75d1ae",
@@ -1232,12 +1240,10 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "57cee0776fd60e4d",
             "e24c2cf212f1c355",
             "9b1d19a28d891edb",
             "1044ece196442723",
             "0b946a8061d59eaa",
-            "7d8e13f4efec4a97",
             "2cfe4cb3a2c844d0",
             "58196701c84fca22",
             "d87d133e316d7043",
@@ -1245,8 +1251,10 @@
             "91d2b043123f4068",
             "274206c7aa8281c0"
         ],
-        "x": 134,
-        "y": 2679
+        "x": 294,
+        "y": 2779,
+        "w": 732,
+        "h": 282
     },
     {
         "id": "a87e7fb4e449f030",
@@ -1262,12 +1270,10 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "77b656a62bbb73ca",
             "b068019a2d38fe38",
             "e4a529e0f165f2b5",
             "327f230e8f3ff3a8",
             "45e789cf8a14aab2",
-            "2abd4739cb712cd0",
             "8b9c1f6bb07107fd",
             "070eaa82346c9847",
             "0b6a7cbb089adf62",
@@ -1276,8 +1282,10 @@
             "17b7e37bdb39ccb0",
             "942ec7e469b1c876"
         ],
-        "x": 274,
-        "y": 1959
+        "x": 374,
+        "y": 1959,
+        "w": 752,
+        "h": 262
     },
     {
         "id": "bd662a4f36edc960",
@@ -19105,7 +19113,7 @@
         "type": "link in",
         "z": "1dc9b2fc.c07e1d",
         "g": "3ef9495f.289ca6",
-        "name": "",
+        "name": "Reset gavle til 0",
         "links": [
             "ba36de2e2eb002c0"
         ],
@@ -21498,7 +21506,7 @@
         "type": "link in",
         "z": "53c075e1.2512cc",
         "g": "48152d2a.8fd824",
-        "name": "",
+        "name": "Game on delay open exit",
         "links": [
             "c90763c7.286aa"
         ],
@@ -22477,7 +22485,7 @@
         "type": "link out",
         "z": "53c075e1.2512cc",
         "g": "1cc6de93.c0b0f1",
-        "name": "",
+        "name": "Exit button",
         "mode": "link",
         "links": [
             "713b25d62feee487"
@@ -22491,7 +22499,7 @@
         "type": "link out",
         "z": "53c075e1.2512cc",
         "g": "1cc6de93.c0b0f1",
-        "name": "",
+        "name": "Exit button with delay",
         "mode": "link",
         "links": [
             "5536bf922f651b16"
@@ -22505,7 +22513,7 @@
         "type": "link out",
         "z": "53c075e1.2512cc",
         "g": "a0bf9c88b3455d08",
-        "name": "",
+        "name": "Kiste button",
         "mode": "link",
         "links": [
             "8c898ed3c39f26a9"
@@ -22545,7 +22553,7 @@
         "type": "link out",
         "z": "53c075e1.2512cc",
         "g": "a0bf9c88b3455d08",
-        "name": "",
+        "name": "Kiste button with delay",
         "mode": "link",
         "links": [
             "4f2d4389.1a41ac"
@@ -22559,11 +22567,11 @@
         "type": "link out",
         "z": "53c075e1.2512cc",
         "g": "98e94e8b.fb918",
-        "name": "",
+        "name": "Rum 2 button",
         "mode": "link",
         "links": [
-            "5f9e039c.683cdc",
-            "5e6b985193ffd5f4"
+            "5e6b985193ffd5f4",
+            "5f9e039c.683cdc"
         ],
         "x": 1015,
         "y": 1180,
@@ -22600,7 +22608,7 @@
         "type": "link out",
         "z": "53c075e1.2512cc",
         "g": "98e94e8b.fb918",
-        "name": "",
+        "name": "Rum 2 button with delay",
         "mode": "link",
         "links": [
             "5f9e039c.683cdc"
@@ -23062,7 +23070,7 @@
         "id": "8e8ee1a2.3cbc8",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "Game over",
+        "name": "Eight number red LOW",
         "links": [
             "c4be9f5c.259de",
             "dcda2e3ca6ad94be"
@@ -23133,7 +23141,7 @@
         "id": "84ce64e0.0d4558",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Eight number red HIGH",
         "links": [
             "f207791f5b8aac32"
         ],
@@ -23249,7 +23257,7 @@
         "id": "5ff263a2.f8164c",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Flashrum 3 rød",
         "links": [
             "e31a61e6.09726"
         ],
@@ -23546,7 +23554,7 @@
         "id": "1a4113903d3ffe63",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Krypt rød HIGH",
         "links": [
             "0c3ae02a7868f431"
         ],
@@ -23556,22 +23564,6 @@
             [
                 "0e9569c87b0c0618"
             ]
-        ]
-    },
-    {
-        "id": "341bd4fbf390f050",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "cb4507d973cdd427",
-        "name": "Til grøn farve på byster",
-        "links": [
-            "2d29b4737083defc",
-            "9aa857f602cb80c9"
-        ],
-        "x": 1395,
-        "y": 2160,
-        "wires": [
-            []
         ]
     },
     {
@@ -23682,21 +23674,6 @@
         ]
     },
     {
-        "id": "e7764cfa3a08e5a9",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "cb4507d973cdd427",
-        "name": "",
-        "links": [
-            "e751d86262111364"
-        ],
-        "x": 1395,
-        "y": 2200,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "50f3d4ae5c658cc2",
         "type": "change",
         "z": "e1fe16e7.a28238",
@@ -23748,8 +23725,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 850,
-        "y": 2720,
+        "x": 910,
+        "y": 2820,
         "wires": []
     },
     {
@@ -23767,8 +23744,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 850,
-        "y": 2760,
+        "x": 910,
+        "y": 2860,
         "wires": []
     },
     {
@@ -23786,8 +23763,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 850,
-        "y": 2800,
+        "x": 910,
+        "y": 2900,
         "wires": []
     },
     {
@@ -23806,7 +23783,7 @@
         "expiry": "",
         "broker": "dca8425b.8fb18",
         "x": 2030,
-        "y": 2680,
+        "y": 2660,
         "wires": []
     },
     {
@@ -23825,7 +23802,7 @@
         "expiry": "",
         "broker": "dca8425b.8fb18",
         "x": 2060,
-        "y": 2720,
+        "y": 2700,
         "wires": []
     },
     {
@@ -23844,24 +23821,8 @@
         "expiry": "",
         "broker": "dca8425b.8fb18",
         "x": 2030,
-        "y": 2760,
+        "y": 2740,
         "wires": []
-    },
-    {
-        "id": "f7cc4f56e0d87053",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "4ab11592647668ea",
-        "name": "Til grøn farve på byster",
-        "links": [
-            "2d29b4737083defc",
-            "9aa857f602cb80c9"
-        ],
-        "x": 1375,
-        "y": 2880,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "2f7a0d7db00c8da1",
@@ -23882,7 +23843,7 @@
         "topic": "topic",
         "outputs": 1,
         "x": 1760,
-        "y": 2860,
+        "y": 2840,
         "wires": [
             [
                 "112b9b99905f510d"
@@ -23908,7 +23869,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 1710,
-        "y": 2900,
+        "y": 2880,
         "wires": [
             [
                 "ed7e812f19353766"
@@ -23934,7 +23895,7 @@
         "topic": "topic",
         "outputs": 1,
         "x": 1870,
-        "y": 2900,
+        "y": 2880,
         "wires": [
             [
                 "112b9b99905f510d"
@@ -23961,27 +23922,12 @@
         "repair": false,
         "outputs": 2,
         "x": 1530,
-        "y": 2880,
+        "y": 2860,
         "wires": [
             [
                 "2f7a0d7db00c8da1",
                 "b4e8a17f97989423"
             ],
-            []
-        ]
-    },
-    {
-        "id": "08e62eeaaa434249",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "4ab11592647668ea",
-        "name": "",
-        "links": [
-            "e751d86262111364"
-        ],
-        "x": 1375,
-        "y": 2920,
-        "wires": [
             []
         ]
     },
@@ -24013,7 +23959,7 @@
         "to": "",
         "reg": false,
         "x": 1510,
-        "y": 2920,
+        "y": 2900,
         "wires": [
             [
                 "2f7a0d7db00c8da1",
@@ -24084,7 +24030,7 @@
         "type": "link in",
         "z": "e1fe16e7.a28238",
         "g": "1212422a5694bdaf",
-        "name": "",
+        "name": "Corwin blink",
         "links": [
             "b24a98dac6730e9c"
         ],
@@ -24152,23 +24098,6 @@
         "x": 1010,
         "y": 2080,
         "wires": []
-    },
-    {
-        "id": "79a7e540665ed322",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "1212422a5694bdaf",
-        "name": "Til grøn farve på byster",
-        "links": [
-            "2d29b4737083defc",
-            "e751d86262111364",
-            "9aa857f602cb80c9"
-        ],
-        "x": 135,
-        "y": 2540,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "7f0600450c2d6f42",
@@ -24274,21 +24203,6 @@
                 "7f0600450c2d6f42",
                 "5c7ddb4535a34cee"
             ],
-            []
-        ]
-    },
-    {
-        "id": "7f8f1621a0eac5d8",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "1212422a5694bdaf",
-        "name": "",
-        "links": [
-            "e751d86262111364"
-        ],
-        "x": 135,
-        "y": 2580,
-        "wires": [
             []
         ]
     },
@@ -24462,22 +24376,6 @@
         ]
     },
     {
-        "id": "ef6ce3133f12654d",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "bdf3eb2232f83c85",
-        "name": "Til grøn farve på byster",
-        "links": [
-            "2d29b4737083defc",
-            "9aa857f602cb80c9"
-        ],
-        "x": 1375,
-        "y": 2500,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "0453ca976cb53b44",
         "type": "trigger",
         "z": "e1fe16e7.a28238",
@@ -24585,21 +24483,6 @@
         ]
     },
     {
-        "id": "1a5849f7ccf8d7db",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "bdf3eb2232f83c85",
-        "name": "",
-        "links": [
-            "e751d86262111364"
-        ],
-        "x": 1375,
-        "y": 2540,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "ec8325f9fcfaa4b2",
         "type": "change",
         "z": "e1fe16e7.a28238",
@@ -24634,22 +24517,6 @@
                 "32fe00fa4e2440b5",
                 "94f0971d7968b920"
             ]
-        ]
-    },
-    {
-        "id": "77b656a62bbb73ca",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "a87e7fb4e449f030",
-        "name": "Til grøn farve på byster",
-        "links": [
-            "2d29b4737083defc",
-            "9aa857f602cb80c9"
-        ],
-        "x": 315,
-        "y": 2140,
-        "wires": [
-            []
         ]
     },
     {
@@ -24760,21 +24627,6 @@
         ]
     },
     {
-        "id": "2abd4739cb712cd0",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "a87e7fb4e449f030",
-        "name": "",
-        "links": [
-            "e751d86262111364"
-        ],
-        "x": 315,
-        "y": 2180,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8b9c1f6bb07107fd",
         "type": "change",
         "z": "e1fe16e7.a28238",
@@ -24812,22 +24664,6 @@
         ]
     },
     {
-        "id": "57cee0776fd60e4d",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "d3219f37cc75d1ae",
-        "name": "Til grøn farve på byster",
-        "links": [
-            "2d29b4737083defc",
-            "9aa857f602cb80c9"
-        ],
-        "x": 175,
-        "y": 2860,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "e24c2cf212f1c355",
         "type": "trigger",
         "z": "e1fe16e7.a28238",
@@ -24845,8 +24681,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 560,
-        "y": 2840,
+        "x": 620,
+        "y": 2940,
         "wires": [
             [
                 "d0e276a4fc0122cf"
@@ -24871,8 +24707,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 510,
-        "y": 2900,
+        "x": 570,
+        "y": 3000,
         "wires": [
             [
                 "1044ece196442723"
@@ -24897,8 +24733,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 690,
-        "y": 2920,
+        "x": 750,
+        "y": 3020,
         "wires": [
             [
                 "d0e276a4fc0122cf"
@@ -24924,28 +24760,13 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 330,
-        "y": 2860,
+        "x": 390,
+        "y": 2960,
         "wires": [
             [
                 "e24c2cf212f1c355",
                 "9b1d19a28d891edb"
             ],
-            []
-        ]
-    },
-    {
-        "id": "7d8e13f4efec4a97",
-        "type": "link in",
-        "z": "e1fe16e7.a28238",
-        "g": "d3219f37cc75d1ae",
-        "name": "",
-        "links": [
-            "e751d86262111364"
-        ],
-        "x": 175,
-        "y": 2900,
-        "wires": [
             []
         ]
     },
@@ -24976,8 +24797,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
-        "y": 2920,
+        "x": 370,
+        "y": 3020,
         "wires": [
             [
                 "e24c2cf212f1c355",
@@ -25181,7 +25002,7 @@
         "id": "0cc9bfec698619e8",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Krypt rød LOW",
         "links": [
             "dcda2e3ca6ad94be"
         ],
@@ -25224,7 +25045,7 @@
         "id": "91866a6bb1fae64e",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Rum 4 set global VAR",
         "links": [
             "ba36de2e2eb002c0"
         ],
@@ -25295,7 +25116,7 @@
         "id": "dcded3516cdf5deb",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Rum 3 hvid til VAR",
         "links": [
             "ba36de2e2eb002c0"
         ],
@@ -25338,7 +25159,7 @@
         "id": "5548b3317829b264",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Rum 3 RØD HIGH",
         "links": [
             "5306e37e399c8f2e"
         ],
@@ -25503,7 +25324,7 @@
         "id": "2fdad2b31e791882",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Rum 3 rød LOW",
         "links": [
             "5306e37e399c8f2e",
             "9174cbaece076164"
@@ -25547,7 +25368,7 @@
         "id": "16145597f7d90222",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "RUM 3 hvid 1024",
         "links": [
             "dcacf67a632c4d47",
             "dcda2e3ca6ad94be",
@@ -25937,7 +25758,7 @@
             "e5698f0d41280642"
         ],
         "x": 1695,
-        "y": 2680,
+        "y": 2660,
         "wires": [
             [
                 "0f0349967c11e28d"
@@ -26067,7 +25888,7 @@
             "d303af2cd1894c35"
         ],
         "x": 1695,
-        "y": 2720,
+        "y": 2700,
         "wires": [
             [
                 "8068c3c4d391fce2"
@@ -26083,8 +25904,8 @@
         "links": [
             "d303af2cd1894c35"
         ],
-        "x": 635,
-        "y": 2740,
+        "x": 695,
+        "y": 2840,
         "wires": [
             [
                 "d87d133e316d7043"
@@ -26166,8 +25987,8 @@
         "links": [
             "fde4233bc144e81e"
         ],
-        "x": 635,
-        "y": 2780,
+        "x": 695,
+        "y": 2880,
         "wires": [
             [
                 "d0e276a4fc0122cf"
@@ -26549,7 +26370,7 @@
         "id": "cbaf72d4d377c087",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Rum 3 hvid lys 200",
         "links": [
             "9174cbaece076164"
         ],
@@ -26591,7 +26412,7 @@
         "id": "8863226fbeaabb84",
         "type": "link in",
         "z": "e1fe16e7.a28238",
-        "name": "",
+        "name": "Blinker alle byster grøn",
         "links": [
             "d4d2aeec1061c558"
         ],
@@ -28187,20 +28008,6 @@
         "wires": []
     },
     {
-        "id": "f3bae928.69b448",
-        "type": "link in",
-        "z": "bb729826.2554c8",
-        "name": "",
-        "links": [
-            "82912c5e.7a23f"
-        ],
-        "x": 295,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "43ee7ae3.1c8714",
         "type": "comment",
         "z": "bb729826.2554c8",
@@ -28277,7 +28084,7 @@
         "id": "479994c0.59226c",
         "type": "link in",
         "z": "bb729826.2554c8",
-        "name": "",
+        "name": "Globalgame off",
         "links": [],
         "x": 355,
         "y": 640,
