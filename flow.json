@@ -14447,7 +14447,8 @@
                 "p": "valuecount",
                 "pt": "flow",
                 "to": "payload",
-                "tot": "msg"
+                "tot": "msg",
+                "dc": true
             }
         ],
         "action": "",
