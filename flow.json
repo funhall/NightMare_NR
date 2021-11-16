@@ -4262,6 +4262,7 @@
         "id": "62fb0b48.dc7704",
         "type": "aedes broker",
         "z": "33e76285.1cd03e",
+        "d": true,
         "name": "",
         "mqtt_port": 1883,
         "mqtt_ws_bind": "port",
@@ -14126,8 +14127,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 470,
-        "y": 1460,
+        "x": 370,
+        "y": 1320,
         "wires": []
     },
     {
@@ -14249,7 +14250,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14307,33 +14308,6 @@
         "outputs": 1,
         "x": 910,
         "y": 1140,
-        "wires": [
-            [
-                "498b2f4e4bcdf879"
-            ]
-        ]
-    },
-    {
-        "id": "1dcd7c1e1853e201",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "valuecount",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 830,
-        "y": 1080,
         "wires": [
             [
                 "498b2f4e4bcdf879"
@@ -14399,7 +14373,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
