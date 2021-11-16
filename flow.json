@@ -15151,13 +15151,6 @@
                 "pt": "msg",
                 "to": "",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "valuecount",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
             }
         ],
         "action": "",
