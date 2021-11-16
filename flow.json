@@ -42,7 +42,8 @@
         "type": "tab",
         "label": "Belysning",
         "disabled": false,
-        "info": ""
+        "info": "",
+        "env": []
     },
     {
         "id": "f6bd50b9.85c27",
@@ -26587,8 +26588,7 @@
             [
                 "fde4233bc144e81e",
                 "d303af2cd1894c35",
-                "2a5d54c0a9cefc3d",
-                "31fc9033de76c5dc"
+                "2a5d54c0a9cefc3d"
             ]
         ]
     },
@@ -26627,7 +26627,7 @@
         "z": "e1fe16e7.a28238",
         "name": "",
         "pauseType": "delay",
-        "timeout": "900",
+        "timeout": "200",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -26669,29 +26669,6 @@
         "payloadType": "date",
         "x": 1750,
         "y": 1460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "31fc9033de76c5dc",
-        "type": "delay",
-        "z": "e1fe16e7.a28238",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "600",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1230,
-        "y": 1620,
         "wires": [
             []
         ]
