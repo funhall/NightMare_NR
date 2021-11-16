@@ -14865,12 +14865,12 @@
         "z": "33e76285.1cd03e",
         "inc": 1,
         "name": "",
-        "x": 590,
+        "x": 520,
         "y": 1260,
         "wires": [
             [
                 "31898b088ff0cabf",
-                "13fbbe6b04370775"
+                "1dcd7c1e1853e201"
             ]
         ]
     },
@@ -14879,7 +14879,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14940,6 +14940,58 @@
         "wires": [
             [
                 "8f535195c7ced6ab"
+            ]
+        ]
+    },
+    {
+        "id": "d86ab0d661e8759d",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "valuecount",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 930,
+        "y": 1220,
+        "wires": [
+            [
+                "13fbbe6b04370775"
+            ]
+        ]
+    },
+    {
+        "id": "1dcd7c1e1853e201",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "valuecount",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 1180,
+        "wires": [
+            [
+                "d86ab0d661e8759d"
             ]
         ]
     },
