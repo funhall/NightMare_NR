@@ -7152,7 +7152,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7736,7 +7736,7 @@
         "type": "change",
         "z": "33e76285.1cd03e",
         "g": "3897bed133705e81",
-        "name": "",
+        "name": "True / green",
         "rules": [
             {
                 "t": "set",
@@ -7765,7 +7765,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1920,
+        "x": 1910,
         "y": 140,
         "wires": [
             [
