@@ -9713,7 +9713,7 @@
                 "p": "klargorring",
                 "pt": "flow",
                 "to": "Færdig",
-                "tot": "flow"
+                "tot": "msg"
             },
             {
                 "t": "set",
