@@ -3635,7 +3635,9 @@
         "name": "Start spil",
         "props": [
             {
-                "p": "payload"
+                "p": "stoptext",
+                "v": "Stop",
+                "vt": "str"
             }
         ],
         "repeat": "",
@@ -3643,8 +3645,6 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Stop",
-        "payloadType": "str",
         "x": 100,
         "y": 600,
         "wires": [
