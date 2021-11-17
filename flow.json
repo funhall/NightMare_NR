@@ -342,7 +342,9 @@
             "7f66ec389780f9ef"
         ],
         "x": 1794,
-        "y": 179
+        "y": 179,
+        "w": 822,
+        "h": 382
     },
     {
         "id": "36a6e967.8bcbe6",
@@ -2514,6 +2516,33 @@
         "y": 1619,
         "w": 752,
         "h": 142
+    },
+    {
+        "id": "639befce27376865",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1badf725239f8c9c",
+            "081f2f1feb0890bd",
+            "76e390f2b52af6b6",
+            "83e011912e761703",
+            "7708476aef5b8a14",
+            "5f71293d0196b230",
+            "57dd660b17bee653",
+            "71a2516ae58d6f73",
+            "351e054b23c3245f",
+            "f837a62edbfae346",
+            "9d7f12bb0656b299",
+            "fa85f5aea340a7f6"
+        ],
+        "x": 1154,
+        "y": 2119,
+        "w": 822,
+        "h": 302
     },
     {
         "id": "82fd466d.f6c968",
@@ -9860,7 +9889,8 @@
             "a364de78fa277074",
             "b91d7ea836498986",
             "a1aa32c4949c4fe3",
-            "b00a5f4f524cc552"
+            "b00a5f4f524cc552",
+            "57dd660b17bee653"
         ],
         "x": 575,
         "y": 180,
@@ -10835,8 +10865,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 510,
-        "y": 3040,
+        "x": 270,
+        "y": 2980,
         "wires": [
             [
                 "768a50f820099ee7",
@@ -10848,7 +10878,7 @@
         "id": "edf166990d4453c0",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Venstre magnet stang ",
+        "name": "Venstre magnet stang HIGH",
         "rules": [
             {
                 "t": "set",
@@ -10863,7 +10893,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 800,
+        "x": 820,
         "y": 2620,
         "wires": [
             [
@@ -10935,39 +10965,6 @@
         "x": 770,
         "y": 3140,
         "wires": []
-    },
-    {
-        "id": "7cf6443309b511f8",
-        "type": "link in",
-        "z": "33e76285.1cd03e",
-        "name": "KLargør stang",
-        "links": [
-            "dcda2e3ca6ad94be",
-            "d0db6f812a7972aa"
-        ],
-        "x": 615,
-        "y": 2600,
-        "wires": [
-            [
-                "edf166990d4453c0"
-            ]
-        ]
-    },
-    {
-        "id": "c0be1f1aa356c03f",
-        "type": "link in",
-        "z": "33e76285.1cd03e",
-        "name": "Venstre magnet stang LOW",
-        "links": [
-            "dbb22315.74583"
-        ],
-        "x": 615,
-        "y": 2700,
-        "wires": [
-            [
-                "0a4371ce3110aae8"
-            ]
-        ]
     },
     {
         "id": "a26e8c105759a46e",
@@ -11046,7 +11043,7 @@
         "links": [
             "5cb78c3c0599c328"
         ],
-        "x": 825,
+        "x": 775,
         "y": 2760,
         "wires": []
     },
@@ -11054,7 +11051,7 @@
         "id": "77e7ddf456d35f0f",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "name": "Venstre",
+        "name": "Højre",
         "group": "117cda2a.43e596",
         "order": 3,
         "width": 1,
@@ -11064,12 +11061,12 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.venstrebackground}}",
-        "icon": "fa-arrow-left",
+        "icon": "fa-arrow-right",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 900,
+        "x": 890,
         "y": 2800,
         "wires": [
             []
@@ -11134,8 +11131,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 870,
-        "y": 3020,
+        "x": 630,
+        "y": 2960,
         "wires": [
             [
                 "407c6cf130e625d7",
@@ -11169,8 +11166,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 870,
-        "y": 3060,
+        "x": 630,
+        "y": 3000,
         "wires": [
             [
                 "8138ecba75709a9a"
@@ -11183,15 +11180,15 @@
         "z": "33e76285.1cd03e",
         "name": "Højre stang oppe",
         "links": [],
-        "x": 1045,
-        "y": 3000,
+        "x": 805,
+        "y": 2940,
         "wires": []
     },
     {
         "id": "8138ecba75709a9a",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "name": "Højre",
+        "name": "Venstre",
         "group": "117cda2a.43e596",
         "order": 4,
         "width": 1,
@@ -11201,13 +11198,13 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.hojrebackground}}",
-        "icon": "fa-arrow-right",
+        "icon": "fa-arrow-left",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1110,
-        "y": 3040,
+        "x": 880,
+        "y": 2980,
         "wires": [
             []
         ]
@@ -11234,8 +11231,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 730,
-        "y": 3020,
+        "x": 490,
+        "y": 2960,
         "wires": [
             [
                 "0514d6460be9c5ef"
@@ -11270,8 +11267,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
-        "y": 3080,
+        "x": 450,
+        "y": 3020,
         "wires": []
     },
     {
@@ -22448,6 +22445,1138 @@
         "y": 1660,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "a7264893ecb26a71",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "topic": "gavle/input/D0",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 310,
+        "y": 2080,
+        "wires": [
+            [
+                "e80c03e02d11a5f4"
+            ]
+        ]
+    },
+    {
+        "id": "e80c03e02d11a5f4",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Hvis kiste 1",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked6High",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Besked6Low",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 490,
+        "y": 2080,
+        "wires": [
+            [
+                "d1f6d04b8cdca968",
+                "1c461ec79b4cd391"
+            ],
+            [
+                "9b356a3f555e7f34"
+            ]
+        ]
+    },
+    {
+        "id": "df2bcf846cc7c192",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Hvis kiste 2",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked5High",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Besked5Low",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 2160,
+        "wires": [
+            [
+                "0ba66c09122ef496",
+                "3d35d0470a384350"
+            ],
+            [
+                "d6b1919b6f79f14f"
+            ]
+        ]
+    },
+    {
+        "id": "0ba66c09122ef496",
+        "type": "ui_text",
+        "z": "e21f6458e5ab1eb6",
+        "group": "58682796.70d078",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 890,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "9b356a3f555e7f34",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": " ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Ok",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste1",
+                "pt": "global",
+                "to": "vaek",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2100,
+        "wires": [
+            [
+                "d1f6d04b8cdca968",
+                "76e390f2b52af6b6"
+            ]
+        ]
+    },
+    {
+        "id": "d6b1919b6f79f14f",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": " ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Ok",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste2",
+                "pt": "global",
+                "to": "vaek",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2180,
+        "wires": [
+            [
+                "0ba66c09122ef496",
+                "76e390f2b52af6b6"
+            ]
+        ]
+    },
+    {
+        "id": "742deb38d57cdc50",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Hvis kiste 3",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked4High",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Besked4Low",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 2260,
+        "wires": [
+            [
+                "029266d81c7e9406"
+            ],
+            [
+                "eca16a60c37bff03"
+            ]
+        ]
+    },
+    {
+        "id": "eca16a60c37bff03",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": " ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Ok",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste3",
+                "pt": "global",
+                "to": "vaek",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2280,
+        "wires": [
+            [
+                "fde6d8cc0237e16b",
+                "76e390f2b52af6b6"
+            ]
+        ]
+    },
+    {
+        "id": "fde6d8cc0237e16b",
+        "type": "ui_text",
+        "z": "e21f6458e5ab1eb6",
+        "group": "58682796.70d078",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 890,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "d1f6d04b8cdca968",
+        "type": "ui_text",
+        "z": "e21f6458e5ab1eb6",
+        "group": "58682796.70d078",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 890,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "029266d81c7e9406",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "kiste3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Væk",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste3",
+                "pt": "global",
+                "to": "placeret",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2240,
+        "wires": [
+            [
+                "fde6d8cc0237e16b",
+                "83e011912e761703"
+            ]
+        ]
+    },
+    {
+        "id": "2248455fc3791317",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Hvis kiste 4",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked1High",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Besked1Low",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 2360,
+        "wires": [
+            [
+                "017ab502422f3dcc"
+            ],
+            [
+                "1de1bd04f7a3989f"
+            ]
+        ]
+    },
+    {
+        "id": "1de1bd04f7a3989f",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": " ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ok",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste4",
+                "pt": "global",
+                "to": "vaek",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2380,
+        "wires": [
+            [
+                "e7a6640e9506382e",
+                "76e390f2b52af6b6"
+            ]
+        ]
+    },
+    {
+        "id": "e7a6640e9506382e",
+        "type": "ui_text",
+        "z": "e21f6458e5ab1eb6",
+        "group": "58682796.70d078",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "4",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 890,
+        "y": 2360,
+        "wires": []
+    },
+    {
+        "id": "017ab502422f3dcc",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "kiste4",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Væk",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste4",
+                "pt": "global",
+                "to": "placeret",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2340,
+        "wires": [
+            [
+                "e7a6640e9506382e",
+                "83e011912e761703"
+            ]
+        ]
+    },
+    {
+        "id": "64701d83a2df564b",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Hvis kiste 5",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked2High",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Besked2Low",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 2440,
+        "wires": [
+            [
+                "92b92f5ffcb60b9a"
+            ],
+            [
+                "c9b2cc7b980e6bba"
+            ]
+        ]
+    },
+    {
+        "id": "c9b2cc7b980e6bba",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": " ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Ok",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste5",
+                "pt": "global",
+                "to": "vaek",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2460,
+        "wires": [
+            [
+                "6deb56863457b537",
+                "76e390f2b52af6b6"
+            ]
+        ]
+    },
+    {
+        "id": "6deb56863457b537",
+        "type": "ui_text",
+        "z": "e21f6458e5ab1eb6",
+        "group": "58682796.70d078",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "5",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 890,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "92b92f5ffcb60b9a",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "kiste5",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Væk",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste5",
+                "pt": "global",
+                "to": "placeret",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2420,
+        "wires": [
+            [
+                "6deb56863457b537",
+                "83e011912e761703"
+            ]
+        ]
+    },
+    {
+        "id": "a9cf352411dbe350",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Hvis kiste 6",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked3High",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Besked3Low",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 2520,
+        "wires": [
+            [
+                "0df8f0b1e924892c"
+            ],
+            [
+                "5defb80adf0bc8eb"
+            ]
+        ]
+    },
+    {
+        "id": "5defb80adf0bc8eb",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": " ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Ok",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste6",
+                "pt": "global",
+                "to": "vaek",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2540,
+        "wires": [
+            [
+                "156699430e1d8077",
+                "76e390f2b52af6b6"
+            ]
+        ]
+    },
+    {
+        "id": "156699430e1d8077",
+        "type": "ui_text",
+        "z": "e21f6458e5ab1eb6",
+        "group": "58682796.70d078",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "6",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 890,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "0df8f0b1e924892c",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "kiste6",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Væk",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste6",
+                "pt": "global",
+                "to": "placeret",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2500,
+        "wires": [
+            [
+                "156699430e1d8077",
+                "83e011912e761703"
+            ]
+        ]
+    },
+    {
+        "id": "9f018f1a2493409c",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "topic": "gavle/input/D1",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 310,
+        "y": 2160,
+        "wires": [
+            [
+                "df2bcf846cc7c192"
+            ]
+        ]
+    },
+    {
+        "id": "d4dd73f66756c51c",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "topic": "gavle/input/D2",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 310,
+        "y": 2260,
+        "wires": [
+            [
+                "742deb38d57cdc50"
+            ]
+        ]
+    },
+    {
+        "id": "198fa221994f13b6",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "topic": "gavle/input/D7",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 310,
+        "y": 2520,
+        "wires": [
+            [
+                "a9cf352411dbe350"
+            ]
+        ]
+    },
+    {
+        "id": "264827d6edc8f660",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "topic": "gavle/input/D6",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 310,
+        "y": 2440,
+        "wires": [
+            [
+                "64701d83a2df564b"
+            ]
+        ]
+    },
+    {
+        "id": "6e6654287c6cbd57",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "topic": "gavle/input/D5",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 310,
+        "y": 2360,
+        "wires": [
+            [
+                "2248455fc3791317"
+            ]
+        ]
+    },
+    {
+        "id": "1c461ec79b4cd391",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Kiste 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Væk",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste1",
+                "pt": "global",
+                "to": "placeret",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2060,
+        "wires": [
+            [
+                "d1f6d04b8cdca968",
+                "83e011912e761703"
+            ]
+        ]
+    },
+    {
+        "id": "3d35d0470a384350",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Kiste 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Væk",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kiste2",
+                "pt": "global",
+                "to": "placeret",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 2140,
+        "wires": [
+            [
+                "0ba66c09122ef496",
+                "83e011912e761703"
+            ]
+        ]
+    },
+    {
+        "id": "1badf725239f8c9c",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "plus",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 1270,
+        "y": 2260,
+        "wires": [
+            [
+                "76e390f2b52af6b6"
+            ]
+        ]
+    },
+    {
+        "id": "081f2f1feb0890bd",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "76e390f2b52af6b6",
+        "type": "function",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "plusser",
+        "func": "var counter = flow.get(\"counter\") || 0\nif (msg.topic ==\"reset\") {\n    counter = 0\n} else {\n        counter ++\n}\nflow.set(\"counter\", counter)\n\nmsg.payload = counter\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 2260,
+        "wires": [
+            [
+                "081f2f1feb0890bd",
+                "f837a62edbfae346",
+                "fa85f5aea340a7f6"
+            ]
+        ]
+    },
+    {
+        "id": "83e011912e761703",
+        "type": "function",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "minusser",
+        "func": "var counter = flow.get(\"counter\") || 0\nif (msg.topic ==\"reset\") {\n    counter = 0\n} else {\n        counter --\n}\nflow.set(\"counter\", counter)\n\nmsg.payload = counter\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 2340,
+        "wires": [
+            [
+                "081f2f1feb0890bd",
+                "f837a62edbfae346",
+                "fa85f5aea340a7f6"
+            ]
+        ]
+    },
+    {
+        "id": "7708476aef5b8a14",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "plus",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "reset",
+        "payload": "reset",
+        "payloadType": "str",
+        "x": 1260,
+        "y": 2380,
+        "wires": [
+            [
+                "76e390f2b52af6b6"
+            ]
+        ]
+    },
+    {
+        "id": "5f71293d0196b230",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "minus",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 1260,
+        "y": 2320,
+        "wires": [
+            [
+                "83e011912e761703"
+            ]
+        ]
+    },
+    {
+        "id": "57dd660b17bee653",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "Reset gavle til 0",
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 1195,
+        "y": 2160,
+        "wires": [
+            [
+                "71a2516ae58d6f73"
+            ]
+        ]
+    },
+    {
+        "id": "71a2516ae58d6f73",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1330,
+        "y": 2160,
+        "wires": [
+            [
+                "76e390f2b52af6b6",
+                "83e011912e761703"
+            ]
+        ]
+    },
+    {
+        "id": "351e054b23c3245f",
+        "type": "ui_gauge",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "",
+        "group": "5241c487.80287c",
+        "order": 3,
+        "width": 2,
+        "height": 2,
+        "gtype": "gage",
+        "title": "gavle{{msg.gameStatus}}",
+        "label": "Placeret",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "6",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1900,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "f837a62edbfae346",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "",
+        "property": "counter",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "num"
+            },
+            {
+                "t": "neq",
+                "v": "6",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1650,
+        "y": 2360,
+        "wires": [
+            [
+                "9d7f12bb0656b299"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9d7f12bb0656b299",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "Alle gavle placeret",
+        "mode": "link",
+        "links": [],
+        "x": 1855,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "fa85f5aea340a7f6",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "639befce27376865",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gavleplaceret",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1690,
+        "y": 2200,
+        "wires": [
+            [
+                "351e054b23c3245f"
+            ]
         ]
     },
     {
