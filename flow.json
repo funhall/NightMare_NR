@@ -11564,12 +11564,12 @@
         "z": "33e76285.1cd03e",
         "g": "dbe01fce1c4844e0",
         "name": "",
-        "property": "game",
-        "propertyType": "global",
+        "property": "klargorring",
+        "propertyType": "flow",
         "rules": [
             {
                 "t": "eq",
-                "v": "off",
+                "v": "Færdig",
                 "vt": "str"
             }
         ],
