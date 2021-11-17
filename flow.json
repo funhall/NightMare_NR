@@ -750,7 +750,6 @@
             "c009b96671c0a566",
             "872fc0b4168d93e1",
             "1507c4ef88339a79",
-            "f9e19a8d684c2444",
             "1c5ccd78c67f12cb",
             "2e2a42b0eb8f9385",
             "3410181cefca3bdf",
@@ -784,9 +783,9 @@
             "5b7ceed71caff75e",
             "d4d2aeec1061c558"
         ],
-        "x": 364,
+        "x": 354,
         "y": 2279,
-        "w": 1512,
+        "w": 1522,
         "h": 222
     },
     {
@@ -6756,35 +6755,8 @@
         "wires": [
             [
                 "d3101e5b0b8ccf52",
-                "f9e19a8d684c2444",
                 "9da3f30d848c470c"
             ]
-        ]
-    },
-    {
-        "id": "f9e19a8d684c2444",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "463e1cfb0b0e88d4",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "bysterplaceret",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1350,
-        "y": 500,
-        "wires": [
-            []
         ]
     },
     {
@@ -8265,7 +8237,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "reset",
+                "v": "",
+                "vt": "date"
             },
             {
                 "p": "topic",
@@ -8277,9 +8251,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payloadType": "date",
-        "x": 470,
-        "y": 2420,
+        "x": 450,
+        "y": 2380,
         "wires": [
             [
                 "98bbc5ca0fe2a538"
@@ -9207,8 +9180,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
-        "y": 600,
+        "x": 530,
+        "y": 560,
         "wires": [
             []
         ]
