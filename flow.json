@@ -6642,6 +6642,13 @@
                 "pt": "global",
                 "to": "true",
                 "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -6654,7 +6661,8 @@
         "wires": [
             [
                 "9a0e783e19d4078f",
-                "1c5ccd78c67f12cb"
+                "1c5ccd78c67f12cb",
+                "1507c4ef88339a79"
             ]
         ]
     },
