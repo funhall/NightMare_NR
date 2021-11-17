@@ -2125,12 +2125,13 @@
             "c4afc81e9e2975dd",
             "99d5bc4265a40b68",
             "aa1d5e0da6c5b1f3",
-            "a1af2809e73bca7d"
+            "a1af2809e73bca7d",
+            "f7e5ca754bce7495"
         ],
         "x": 134,
         "y": 979,
         "w": 1172,
-        "h": 282
+        "h": 302
     },
     {
         "id": "9d6515b12fd52c73",
@@ -2163,9 +2164,9 @@
             "c75b7c1984573e27",
             "f15baa775bac3408"
         ],
-        "x": 94,
+        "x": 114,
         "y": 1339,
-        "w": 1572,
+        "w": 1592,
         "h": 222
     },
     {
@@ -22621,7 +22622,7 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 930,
+        "x": 950,
         "y": 1400,
         "wires": []
     },
@@ -22639,7 +22640,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
+        "x": 770,
         "y": 1400,
         "wires": []
     },
@@ -22656,7 +22657,7 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 200,
+        "x": 220,
         "y": 1460,
         "wires": [
             [
@@ -22688,7 +22689,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1000,
+        "x": 1020,
         "y": 1480,
         "wires": [
             [
@@ -22719,7 +22720,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
+        "x": 440,
         "y": 1460,
         "wires": [
             [
@@ -22739,7 +22740,7 @@
         "constant": "-1",
         "round": true,
         "decimals": "1",
-        "x": 600,
+        "x": 620,
         "y": 1460,
         "wires": [
             [
@@ -22759,7 +22760,7 @@
         "constant": "1",
         "round": false,
         "decimals": 0,
-        "x": 780,
+        "x": 800,
         "y": 1460,
         "wires": [
             [
@@ -22823,7 +22824,7 @@
         "g": "9d6515b12fd52c73",
         "name": "flow.kiste - locked/open",
         "info": "",
-        "x": 220,
+        "x": 240,
         "y": 1400,
         "wires": []
     },
@@ -22875,7 +22876,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1480,
+        "x": 1600,
         "y": 1500,
         "wires": [
             []
@@ -22915,7 +22916,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1180,
+        "x": 1200,
         "y": 1440,
         "wires": [
             [
@@ -22959,7 +22960,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1180,
+        "x": 1200,
         "y": 1500,
         "wires": [
             [
@@ -22986,7 +22987,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1570,
+        "x": 1590,
         "y": 1440,
         "wires": [
             []
@@ -23010,7 +23011,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1410,
+        "x": 1430,
         "y": 1440,
         "wires": [
             [
@@ -23031,7 +23032,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 470,
+        "x": 490,
         "y": 1380,
         "wires": []
     },
@@ -23128,9 +23129,10 @@
         "name": "Person i kiste",
         "mode": "link",
         "links": [
-            "84c975a6f2977202"
+            "84c975a6f2977202",
+            "f7e5ca754bce7495"
         ],
-        "x": 1315,
+        "x": 1375,
         "y": 1520,
         "wires": []
     },
@@ -23144,7 +23146,7 @@
         "links": [
             "5eb4f6e82acd1386"
         ],
-        "x": 1325,
+        "x": 1345,
         "y": 1400,
         "wires": []
     },
@@ -24479,6 +24481,23 @@
         "wires": [
             [
                 "5c487c37f6d317a1"
+            ]
+        ]
+    },
+    {
+        "id": "f7e5ca754bce7495",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "1c3803be18092683",
+        "name": "Lås kiste",
+        "links": [
+            "c75b7c1984573e27"
+        ],
+        "x": 925,
+        "y": 1240,
+        "wires": [
+            [
+                "4a7ddef35f8f06a1"
             ]
         ]
     },
