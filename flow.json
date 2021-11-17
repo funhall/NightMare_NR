@@ -9144,6 +9144,109 @@
         ]
     },
     {
+        "id": "ecbff93b844397c3",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 3190,
+        "y": 760,
+        "wires": [
+            [
+                "76f0eea96afb4e7b"
+            ]
+        ]
+    },
+    {
+        "id": "76f0eea96afb4e7b",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "global",
+                "to": "closed",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kistestate",
+                "pt": "global",
+                "to": "closed",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "dorroom2",
+                "pt": "global",
+                "to": "closed",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "doorroom4",
+                "pt": "global",
+                "to": "close",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "left",
+                "pt": "global",
+                "to": "up",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "right",
+                "pt": "global",
+                "to": "up",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "bysterfinish",
+                "pt": "global",
+                "to": "true",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "gavle_vaek",
+                "pt": "global",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3380,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
