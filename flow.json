@@ -3642,7 +3642,7 @@
         "id": "174b209f.447edf",
         "type": "inject",
         "z": "33e76285.1cd03e",
-        "name": "Start spil",
+        "name": "Stop spil",
         "props": [
             {
                 "p": "stoptext",
@@ -3655,8 +3655,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 100,
-        "y": 600,
+        "x": 220,
+        "y": 800,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -5396,8 +5396,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 1100,
-        "y": 560,
+        "x": 1340,
+        "y": 600,
         "wires": []
     },
     {
@@ -6274,8 +6274,8 @@
         "payloadType": "str",
         "topic": "on",
         "topicType": "msg",
-        "x": 100,
-        "y": 540,
+        "x": 340,
+        "y": 580,
         "wires": [
             [
                 "a2638b0a6698a97c"
@@ -6319,8 +6319,8 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "sm_config": "{\n    \"currentState\": \"stopped\",\n    \"states\": {\n        \"stopped\": {\n            \"on\": \"started\"\n        },\n        \"started\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        },\n        \"counting\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        }\n    },\n    \"data\": {\n        \"prev_time\": null,\n        \"time\": 0,\n        \"seconds\": 0,\n        \"interval\": 1,\n        \"interval_output\": true,\n        \"hms_format\": true\n    },\n    \"methods\": {\n        \"init\": [\n            \"sm.calc_time = function() {\",\n            \"   var now = Date.now();\",\n            \"   sm.data.time += now - sm.data.prev_time;\",\n            \"   sm.data.prev_time = now;\",\n            \"   sm.data.seconds = Math.round(sm.data.time / 1000);\",\n            \"};\",\n            \"sm.sec2hhmmss = function(sec) {\",\n                \"var t = {};\",\n                \"t.h = pad(Math.floor(sec / 3600));\",\n                \"sec %= 3600;\",\n                \"t.m = pad(Math.floor(sec / 60));\",\n                \"t.s = pad(sec % 60);\",\n                \"return t.h+':'+t.m+':'+t.s;\",\n            \"};\"\n        ],\n        \"on\": [\n            \"if (sm.currentState === 'started') {\",\n            \"   sm.data.prev_time = Date.now();\",\n            \"   resume('inc', msg);\",\n            \"}\",\n            \"output = false;\"\n        ],\n        \"inc\": [\n            \"timeout.interval = setTimeout(function() {\",\n            \"   sm.calc_time();\",\n            \"   msg.data = sm.data;\",\n            \"   if (sm.data.interval_output) {\",\n            \"       msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\",\n            \"       node.send(msg);\",\n            \"   }\",\n            \"   resume('inc', msg);\",\n            \"}, sm.data.interval*1000);\",\n            \"output = false;\"\n        ],\n        \"off\": [\n            \"clearTimeout(timeout.interval);\",\n            \"sm.calc_time();\",\n            \"msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\"\n        ],\n        \"reset\": [\n            \"sm.data.time = 0;\",\n            \"sm.data.seconds = 0;\"\n        ],\n        \"status\": {\n            \"fill\": {\n                \"get\": \"sm.currentState === 'counting' ? 'green' : 'grey';\"\n            },\n            \"shape\": \"dot\",\n            \"text\": {\n                \"get\": \"'time ' + (sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds);\"\n            }\n        }\n    }\n}\n",
-        "x": 610,
-        "y": 520,
+        "x": 850,
+        "y": 560,
         "wires": [
             [
                 "250c3baf03e0708e"
@@ -6356,8 +6356,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 520,
+        "x": 1020,
+        "y": 560,
         "wires": [
             [
                 "838bc03649f7c918",
@@ -6377,8 +6377,8 @@
         "label": "",
         "format": "{{msg.gametime}}",
         "layout": "row-spread",
-        "x": 1060,
-        "y": 520,
+        "x": 1300,
+        "y": 560,
         "wires": []
     },
     {
@@ -7159,8 +7159,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 100,
-        "y": 640,
+        "x": 380,
+        "y": 760,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
@@ -9541,8 +9541,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
-        "y": 540,
+        "x": 640,
+        "y": 580,
         "wires": [
             [
                 "619dfcb3c2447f34",
@@ -9564,8 +9564,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
-        "y": 740,
+        "x": 820,
+        "y": 820,
         "wires": [
             [
                 "5801dd6cddafa481"
@@ -9605,8 +9605,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 760,
-        "y": 640,
+        "x": 1120,
+        "y": 720,
         "wires": [
             [
                 "619dfcb3c2447f34"
@@ -9633,8 +9633,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 660,
+        "x": 890,
+        "y": 740,
         "wires": [
             [
                 "011d71bd028f4985"
@@ -9677,8 +9677,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 680,
+        "x": 1110,
+        "y": 760,
         "wires": [
             [
                 "619dfcb3c2447f34"
@@ -9705,8 +9705,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 270,
-        "y": 620,
+        "x": 670,
+        "y": 680,
         "wires": [
             [
                 "011d71bd028f4985",
@@ -9737,8 +9737,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 280,
-        "y": 660,
+        "x": 680,
+        "y": 720,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -9764,8 +9764,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 280,
-        "y": 700,
+        "x": 680,
+        "y": 760,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -9792,8 +9792,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 250,
-        "y": 540,
+        "x": 490,
+        "y": 580,
         "wires": [
             [
                 "f6da3ededc910c6b"
@@ -9818,8 +9818,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 60,
-        "y": 500,
+        "x": 160,
+        "y": 600,
         "wires": [
             [
                 "58cb52c53dde8dc9"
@@ -9834,8 +9834,8 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 115,
-        "y": 460,
+        "x": 155,
+        "y": 480,
         "wires": [
             [
                 "6085369696d74c71"
@@ -9868,7 +9868,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
+        "x": 450,
         "y": 480,
         "wires": [
             [
@@ -9897,8 +9897,8 @@
         "onceDelay": 0.1,
         "topic": "on",
         "payloadType": "date",
-        "x": 370,
-        "y": 440,
+        "x": 750,
+        "y": 480,
         "wires": [
             [
                 "619dfcb3c2447f34"
@@ -9922,11 +9922,52 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 210,
+        "x": 290,
         "y": 480,
         "wires": [
             [
                 "e3130477d482d82a"
+            ]
+        ]
+    },
+    {
+        "id": "b41f9f2bfad990e4",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "Stop timer",
+        "links": [],
+        "x": 255,
+        "y": 720,
+        "wires": [
+            [
+                "594a5878cdc1c5c9"
+            ]
+        ]
+    },
+    {
+        "id": "594a5878cdc1c5c9",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Besked1High",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 720,
+        "wires": [
+            [
+                "c0ba6a06d7b7da0d"
             ]
         ]
     },
