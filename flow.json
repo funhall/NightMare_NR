@@ -433,7 +433,9 @@
         ],
         "env": [],
         "x": 194,
-        "y": 759
+        "y": 759,
+        "w": 942,
+        "h": 262
     },
     {
         "id": "98e94e8b.fb918",
@@ -460,7 +462,9 @@
             "211cc1dfc8ebe1cb"
         ],
         "x": 234,
-        "y": 1059
+        "y": 1059,
+        "w": 962,
+        "h": 222
     },
     {
         "id": "81fb859b.40bb48",
@@ -661,7 +665,9 @@
         ],
         "env": [],
         "x": 194,
-        "y": 439
+        "y": 439,
+        "w": 902,
+        "h": 282
     },
     {
         "id": "b6b199f8.fdc168",
@@ -699,7 +705,9 @@
             "051dd689cd112f72"
         ],
         "x": 14,
-        "y": -1
+        "y": -1,
+        "w": 1432,
+        "h": 362
     },
     {
         "id": "48152d2a.8fd824",
@@ -732,7 +740,9 @@
         ],
         "env": [],
         "x": 1354,
-        "y": 439
+        "y": 439,
+        "w": 892,
+        "h": 402
     },
     {
         "id": "463e1cfb0b0e88d4",
@@ -864,7 +874,9 @@
             "a24895f8cc3929c6"
         ],
         "x": 174,
-        "y": 1379
+        "y": 1379,
+        "w": 882,
+        "h": 222
     },
     {
         "id": "31a7d742fc6bb0db",
@@ -2566,6 +2578,27 @@
         "y": 1079,
         "w": 1032,
         "h": 462
+    },
+    {
+        "id": "c0aa0eaa7e4416d0",
+        "type": "group",
+        "z": "2bdc58f37cbddb93",
+        "name": "Tænder rød lys når kors er i serie",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8de3359a0e783d12",
+            "203a8c4b782d1ab6",
+            "3b491f6589b03130",
+            "fd6ee23692604dd3",
+            "71bdd19e51a7ce13"
+        ],
+        "env": [],
+        "x": 284,
+        "y": 839,
+        "w": 782,
+        "h": 122
     },
     {
         "id": "82fd466d.f6c968",
@@ -9855,7 +9888,8 @@
             "b00a5f4f524cc552",
             "57dd660b17bee653",
             "51a82bba.c75414",
-            "6a2cd86b7e315d2b"
+            "6a2cd86b7e315d2b",
+            "fd6ee23692604dd3"
         ],
         "x": 575,
         "y": 180,
@@ -21227,6 +21261,115 @@
         ]
     },
     {
+        "id": "8de3359a0e783d12",
+        "type": "mqtt out",
+        "z": "2bdc58f37cbddb93",
+        "g": "c0aa0eaa7e4416d0",
+        "name": "LED strip Eight Number",
+        "topic": "boks5/output/D4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 930,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "203a8c4b782d1ab6",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "c0aa0eaa7e4416d0",
+        "name": "LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 880,
+        "wires": [
+            [
+                "8de3359a0e783d12"
+            ]
+        ]
+    },
+    {
+        "id": "3b491f6589b03130",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "c0aa0eaa7e4416d0",
+        "name": "HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 920,
+        "wires": [
+            [
+                "8de3359a0e783d12"
+            ]
+        ]
+    },
+    {
+        "id": "fd6ee23692604dd3",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "c0aa0eaa7e4416d0",
+        "name": "",
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 325,
+        "y": 880,
+        "wires": [
+            [
+                "203a8c4b782d1ab6"
+            ]
+        ]
+    },
+    {
+        "id": "71bdd19e51a7ce13",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "c0aa0eaa7e4416d0",
+        "name": "",
+        "links": [
+            "f2c935c6cc9ec96a"
+        ],
+        "x": 335,
+        "y": 920,
+        "wires": [
+            [
+                "3b491f6589b03130"
+            ]
+        ]
+    },
+    {
         "id": "12696b2c777c71a4",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
@@ -24500,6 +24643,59 @@
                 "4a7ddef35f8f06a1"
             ]
         ]
+    },
+    {
+        "id": "3f398b6e018b7a68",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Kors i serie",
+        "topic": "boks5/input/D6",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 1880,
+        "wires": [
+            [
+                "11a30b89acaec2f3",
+                "f2c935c6cc9ec96a"
+            ]
+        ]
+    },
+    {
+        "id": "11a30b89acaec2f3",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "f2c935c6cc9ec96a",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Kors i serie",
+        "mode": "link",
+        "links": [
+            "5e6b985193ffd5f4",
+            "71bdd19e51a7ce13"
+        ],
+        "x": 335,
+        "y": 1880,
+        "wires": []
     },
     {
         "id": "dce242cef0b59c86",
@@ -31195,11 +31391,11 @@
         "z": "53c075e1.2512cc",
         "name": "Åben rum 2",
         "links": [
+            "4f7d14c6bece702a",
+            "5edb16fbcc9ca5d2",
             "dcacf67a632c4d47",
             "fd22658b.683318",
-            "4f7d14c6bece702a",
-            "e0ec28a1df054d10",
-            "0e42be98d25e3424"
+            "f2c935c6cc9ec96a"
         ],
         "x": 1285,
         "y": 1240,
@@ -32423,7 +32619,9 @@
         "g": "98e94e8b.fb918",
         "name": "Rum 2 åben",
         "links": [
-            "84ce64e0.0d4558"
+            "84ce64e0.0d4558",
+            "5f447fd7700e8ad5",
+            "d229656ac1715746"
         ],
         "x": 835,
         "y": 1180,
@@ -40861,7 +41059,9 @@
             "57a8de12e1ec4afc",
             "a07b8f5ea811f79d",
             "3cdaad147b79de12",
-            "7cf6443309b511f8"
+            "7cf6443309b511f8",
+            "3aeee5c9bee78e88",
+            "5de4499bfce766ba"
         ],
         "x": 735,
         "y": 140,
@@ -43786,7 +43986,9 @@
         "name": "Game over",
         "links": [
             "4ce16553.6a6e0c",
-            "8e8ee1a2.3cbc8"
+            "8e8ee1a2.3cbc8",
+            "3aeee5c9bee78e88",
+            "5de4499bfce766ba"
         ],
         "x": 2275,
         "y": 4060,
