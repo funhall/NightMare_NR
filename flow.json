@@ -9883,6 +9883,13 @@
                 "pt": "msg",
                 "to": "",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Færdig",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -10054,7 +10061,7 @@
                 "t": "set",
                 "p": "klargorring",
                 "pt": "flow",
-                "to": "klar",
+                "to": "ikke klar",
                 "tot": "str"
             },
             {
