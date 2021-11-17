@@ -7476,7 +7476,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "reset",
+                "v": "",
+                "vt": "date"
             },
             {
                 "p": "topic",
@@ -7488,9 +7490,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1070,
+        "x": 1060,
         "y": 560,
         "wires": [
             [
