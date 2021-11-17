@@ -19843,8 +19843,35 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
+        "x": 250,
+        "y": 880,
+        "wires": [
+            [
+                "ce278ad12ae831a2"
+            ]
+        ]
+    },
+    {
+        "id": "ce278ad12ae831a2",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "kisteexit",
+                "pt": "global",
+                "to": "closed",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
         "x": 450,
-        "y": 900,
+        "y": 880,
         "wires": [
             [
                 "b94749abab964c31"
