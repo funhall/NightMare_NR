@@ -11289,6 +11289,64 @@
         "wires": []
     },
     {
+        "id": "ac95b58825a464fc",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "rightbackground",
+                "v": "red",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 800,
+        "y": 2860,
+        "wires": [
+            [
+                "77e7ddf456d35f0f"
+            ]
+        ]
+    },
+    {
+        "id": "6062f50ec3c87335",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "rightbackground",
+                "v": "red",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 790,
+        "y": 3020,
+        "wires": [
+            [
+                "8138ecba75709a9a"
+            ]
+        ]
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
