@@ -6400,11 +6400,11 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.tjektext}}rtrt",
+        "label": "{{msg.tjektext}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.tjeklistbackground}}",
-        "icon": "{{msg.icon}}",
+        "icon": "",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
@@ -6421,7 +6421,15 @@
         "z": "33e76285.1cd03e",
         "g": "5e203e809c0bd87a",
         "name": "",
-        "rules": [],
+        "rules": [
+            {
+                "t": "set",
+                "p": "tjektext",
+                "pt": "msg",
+                "to": "Ready",
+                "tot": "str"
+            }
+        ],
         "action": "",
         "property": "",
         "from": "",
@@ -6442,7 +6450,15 @@
         "z": "33e76285.1cd03e",
         "g": "5e203e809c0bd87a",
         "name": "",
-        "rules": [],
+        "rules": [
+            {
+                "t": "set",
+                "p": "tjektext",
+                "pt": "msg",
+                "to": "NOT ready",
+                "tot": "str"
+            }
+        ],
         "action": "",
         "property": "",
         "from": "",
@@ -9107,7 +9123,8 @@
                 "p": "payload"
             },
             {
-                "p": "topic",
+                "p": "tjeklistbackground",
+                "v": "red",
                 "vt": "str"
             }
         ],
@@ -9116,7 +9133,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "wew",
+        "payload": " ",
         "payloadType": "str",
         "x": 2660,
         "y": 960,
