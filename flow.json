@@ -7145,7 +7145,7 @@
         "id": "f51d408db856e1dc",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "name": "Nødstop",
+        "name": "Stop",
         "group": "5241c487.80287c",
         "order": 1,
         "width": 2,
@@ -7160,8 +7160,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 380,
-        "y": 760,
+        "x": 390,
+        "y": 780,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
