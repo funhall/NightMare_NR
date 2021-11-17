@@ -8205,7 +8205,7 @@
         "z": "33e76285.1cd03e",
         "g": "96be5e73cc5cc970",
         "name": "Counter",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9475,8 +9475,7 @@
         "wires": [
             [
                 "6085369696d74c71",
-                "106326f838ebf42e",
-                "a154943f70f37d50"
+                "106326f838ebf42e"
             ]
         ]
     },
@@ -9512,7 +9511,8 @@
         "wires": [
             [
                 "619dfcb3c2447f34",
-                "838bc03649f7c918"
+                "838bc03649f7c918",
+                "a154943f70f37d50"
             ]
         ]
     },
