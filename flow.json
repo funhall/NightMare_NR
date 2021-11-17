@@ -14859,8 +14859,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1010,
-        "y": 1560,
+        "x": 990,
+        "y": 1600,
         "wires": [
             [
                 "682c6386bdb2a38d"
@@ -16563,7 +16563,7 @@
         "type": "trigger",
         "z": "c39524c2016c8df2",
         "name": "",
-        "op1": "1",
+        "op1": "HIGH",
         "op2": "0",
         "op1type": "str",
         "op2type": "str",
@@ -16646,7 +16646,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 830,
+        "x": 810,
         "y": 1560,
         "wires": [
             [
