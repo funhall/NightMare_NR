@@ -5158,17 +5158,17 @@
         "color": "",
         "bgcolor": "{{msg.klarbackground}}",
         "icon": "",
-        "payload": "Igang",
-        "payloadType": "flow",
+        "payload": "1",
+        "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 290,
+        "x": 250,
         "y": 120,
         "wires": [
             [
                 "e8ba061f5f8c7fec",
-                "e4cb261fc0707569",
-                "ddfc4ff3b60682f8"
+                "ddfc4ff3b60682f8",
+                "53b37da00d21886a"
             ]
         ]
     },
@@ -6162,6 +6162,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
+        "payloadType": "str",
         "x": 70,
         "y": 100,
         "wires": [
@@ -9046,6 +9047,33 @@
                 "4ef97eb1e1560b93"
             ],
             []
+        ]
+    },
+    {
+        "id": "53b37da00d21886a",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Igang",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 60,
+        "wires": [
+            [
+                "e4cb261fc0707569"
+            ]
         ]
     },
     {
