@@ -6150,7 +6150,8 @@
                 "vt": "str"
             },
             {
-                "p": "topic",
+                "p": "klarbackground",
+                "v": "blue",
                 "vt": "str"
             }
         ],
@@ -6159,8 +6160,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 90,
-        "y": 120,
+        "x": 70,
+        "y": 100,
         "wires": [
             [
                 "404ca19b.0b55e"
