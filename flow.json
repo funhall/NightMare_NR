@@ -553,7 +553,7 @@
         ],
         "x": 1044,
         "y": 259,
-        "w": 842,
+        "w": 822,
         "h": 122
     },
     {
@@ -7828,8 +7828,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1780,
-        "y": 340,
+        "x": 1760,
+        "y": 320,
         "wires": [
             [
                 "f9296daf73054592"
@@ -7885,7 +7885,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "gavle",
+                "p": "gavlebackground",
                 "pt": "msg",
                 "to": "green",
                 "tot": "str"
@@ -7928,7 +7928,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "bysterbackground",
+                "p": "gavlebackground",
                 "pt": "msg",
                 "to": "red",
                 "tot": "str"
@@ -8851,7 +8851,7 @@
         "y": 320,
         "wires": [
             [
-                "d7184ceece2b62fb"
+                "85d6f0338a028c44"
             ]
         ]
     },
