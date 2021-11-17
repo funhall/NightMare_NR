@@ -20358,6 +20358,31 @@
         ]
     },
     {
+        "id": "99d5bc4265a40b68",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Background",
+        "props": [
+            {
+                "p": "kistebackground",
+                "v": "red",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 610,
+        "y": 1260,
+        "wires": [
+            [
+                "f9b41ed2cbf8a219"
+            ]
+        ]
+    },
+    {
         "id": "84e11b56.e27758",
         "type": "inject",
         "z": "5b3651b.92335b",
