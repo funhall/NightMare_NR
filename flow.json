@@ -1454,13 +1454,14 @@
             "619dfcb3c2447f34",
             "250c3baf03e0708e",
             "838bc03649f7c918",
-            "f6da3ededc910c6b"
+            "f6da3ededc910c6b",
+            "f51d408db856e1dc"
         ],
         "env": [],
         "x": 34,
         "y": 459,
         "w": 1152,
-        "h": 122
+        "h": 182
     },
     {
         "id": "0a74e5498dffe49a",
@@ -7197,6 +7198,7 @@
         "id": "f51d408db856e1dc",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
+        "g": "c4e578e11dcc76bd",
         "name": "Nødstop",
         "group": "5241c487.80287c",
         "order": 1,
@@ -7212,8 +7214,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 60,
-        "y": 800,
+        "x": 120,
+        "y": 600,
         "wires": [
             [
                 "2ee7be2f8091805a"
@@ -9587,6 +9589,126 @@
             [
                 "619dfcb3c2447f34"
             ]
+        ]
+    },
+    {
+        "id": "a0962a7c1c1b67dc",
+        "type": "mqtt in",
+        "z": "33e76285.1cd03e",
+        "name": "Nødstop",
+        "topic": "boks5/input/D5",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "7efea3c0901ecdbc",
+                "5801dd6cddafa481"
+            ]
+        ]
+    },
+    {
+        "id": "7efea3c0901ecdbc",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "Nodstop",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "011d71bd028f4985",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nodstop",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5801dd6cddafa481",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked1High",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 660,
+        "wires": [
+            [
+                "011d71bd028f4985"
+            ],
+            [
+                "18fca4cd232def7d"
+            ]
+        ]
+    },
+    {
+        "id": "18fca4cd232def7d",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nodstop",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 660,
+        "wires": [
+            []
         ]
     },
     {
@@ -18509,7 +18631,8 @@
             "dcda2e3ca6ad94be",
             "e751d86262111364",
             "d0db6f812a7972aa",
-            "a1b3d2126fab40bf"
+            "a1b3d2126fab40bf",
+            "0e42be98d25e3424"
         ],
         "x": 1255,
         "y": 420,
@@ -27305,7 +27428,8 @@
             "dcacf67a632c4d47",
             "fd22658b.683318",
             "4f7d14c6bece702a",
-            "e0ec28a1df054d10"
+            "e0ec28a1df054d10",
+            "0e42be98d25e3424"
         ],
         "x": 1285,
         "y": 1240,
@@ -28167,7 +28291,8 @@
             "786cf1f7b5add738",
             "a8d8b969438e4a6d",
             "99f85c035d3ee3ad",
-            "349117b14f4fe452"
+            "349117b14f4fe452",
+            "0e42be98d25e3424"
         ],
         "x": 195,
         "y": 240,
@@ -28712,7 +28837,8 @@
         "links": [
             "dcacf67a632c4d47",
             "e751d86262111364",
-            "a1b3d2126fab40bf"
+            "a1b3d2126fab40bf",
+            "0e42be98d25e3424"
         ],
         "x": 1225,
         "y": 1600,
@@ -28732,7 +28858,8 @@
         "links": [
             "0fb03f808df88ec0",
             "dcacf67a632c4d47",
-            "b0f4550f43154eed"
+            "b0f4550f43154eed",
+            "0e42be98d25e3424"
         ],
         "x": 1795,
         "y": 620,
@@ -30554,7 +30681,8 @@
         "z": "f6bd50b9.85c27",
         "name": "Åben indgang",
         "links": [
-            "dcacf67a632c4d47"
+            "dcacf67a632c4d47",
+            "0e42be98d25e3424"
         ],
         "x": 765,
         "y": 640,
