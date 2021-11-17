@@ -11253,7 +11253,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -24800,7 +24800,7 @@
         "y": 2000,
         "wires": [
             [
-                "f6751dafc627a055"
+                "c922701709d1d09c"
             ]
         ]
     },
@@ -24816,8 +24816,45 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
+        "x": 790,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "c922701709d1d09c",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked1High",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
         "y": 2000,
+        "wires": [
+            [
+                "f6751dafc627a055",
+                "ce4649c03bbc3e2f"
+            ]
+        ]
+    },
+    {
+        "id": "ce4649c03bbc3e2f",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Nødstopp trykket",
+        "mode": "link",
+        "links": [],
+        "x": 495,
+        "y": 1980,
         "wires": []
     },
     {
