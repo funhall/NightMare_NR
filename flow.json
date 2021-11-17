@@ -1453,7 +1453,8 @@
             "58cb52c53dde8dc9",
             "619dfcb3c2447f34",
             "250c3baf03e0708e",
-            "838bc03649f7c918"
+            "838bc03649f7c918",
+            "f6da3ededc910c6b"
         ],
         "env": [],
         "x": 34,
@@ -6282,7 +6283,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "Start spiler",
+        "label": "Start spil",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -6295,7 +6296,7 @@
         "y": 540,
         "wires": [
             [
-                "619dfcb3c2447f34"
+                "f6da3ededc910c6b"
             ]
         ]
     },
@@ -9559,6 +9560,34 @@
         "x": 1000,
         "y": 380,
         "wires": []
+    },
+    {
+        "id": "f6da3ededc910c6b",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "c4e578e11dcc76bd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 540,
+        "wires": [
+            [
+                "619dfcb3c2447f34"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
