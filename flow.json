@@ -6400,7 +6400,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.tjektext}}",
+        "label": "{{msg.tjektext}}rtrt",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.tjeklistbackground}}",
