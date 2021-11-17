@@ -8620,8 +8620,8 @@
                 "t": "set",
                 "p": "klargorring",
                 "pt": "flow",
-                "to": "true",
-                "tot": "bool"
+                "to": "Igang",
+                "tot": "msg"
             },
             {
                 "t": "set",
@@ -8643,11 +8643,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 670,
+        "x": 690,
         "y": 80,
         "wires": [
             [
-                "404ca19b.0b55e"
+                "3f275e5d73da77dc"
             ]
         ]
     },
@@ -8662,7 +8662,7 @@
             "f11944f6972a495d"
         ],
         "x": 455,
-        "y": 160,
+        "y": 180,
         "wires": []
     },
     {
@@ -8715,16 +8715,25 @@
         "propertyType": "flow",
         "rules": [
             {
-                "t": "true"
+                "t": "eq",
+                "v": "Igang",
+                "vt": "str"
             },
             {
-                "t": "else"
+                "t": "eq",
+                "v": "Færdig",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Ikke klar",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
-        "x": 480,
+        "outputs": 3,
+        "x": 500,
         "y": 100,
         "wires": [
             [
@@ -8732,6 +8741,9 @@
             ],
             [
                 "41206f8c8cf7167e"
+            ],
+            [
+                "4aefc470da7667cf"
             ]
         ]
     },
@@ -8759,8 +8771,8 @@
                 "t": "set",
                 "p": "klargorring",
                 "pt": "flow",
-                "to": "false",
-                "tot": "bool"
+                "to": "Færdig",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -8768,11 +8780,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 670,
+        "x": 690,
         "y": 120,
         "wires": [
             [
-                "404ca19b.0b55e"
+                "3f275e5d73da77dc"
             ]
         ]
     },
@@ -8835,71 +8847,38 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 200,
+        "x": 300,
+        "y": 280,
         "wires": [
-            [
-                "e77e87ab302f6a93"
-            ]
-        ]
-    },
-    {
-        "id": "e77e87ab302f6a93",
-        "type": "switch",
-        "z": "33e76285.1cd03e",
-        "name": "Klargjort",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Klargjort",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Ikke klar",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 580,
-        "y": 200,
-        "wires": [
-            [
-                "dbab2fff99275f35"
-            ],
             []
         ]
     },
     {
-        "id": "dbab2fff99275f35",
+        "id": "4aefc470da7667cf",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Div. Variabler",
         "rules": [
-            {
-                "t": "set",
-                "p": "klartext",
-                "pt": "msg",
-                "to": "Glargjort",
-                "tot": "msg"
-            },
             {
                 "t": "set",
                 "p": "klarbackground",
                 "pt": "msg",
-                "to": "green",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klartext",
+                "pt": "msg",
+                "to": "Ikke klar",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "klargorring",
                 "pt": "flow",
-                "to": "false",
-                "tot": "bool"
+                "to": "Ikke klar",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -8907,13 +8886,42 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 760,
-        "y": 200,
+        "x": 690,
+        "y": 160,
+        "wires": [
+            [
+                "3f275e5d73da77dc"
+            ]
+        ]
+    },
+    {
+        "id": "a422065c72ada863",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "Klargørring",
+        "links": [
+            "3f275e5d73da77dc"
+        ],
+        "x": 175,
+        "y": 80,
         "wires": [
             [
                 "404ca19b.0b55e"
             ]
         ]
+    },
+    {
+        "id": "3f275e5d73da77dc",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "Klargørrring sat",
+        "mode": "link",
+        "links": [
+            "a422065c72ada863"
+        ],
+        "x": 795,
+        "y": 120,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
