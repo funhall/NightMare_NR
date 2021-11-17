@@ -9199,7 +9199,7 @@
                 "p": "bysterplaceret",
                 "pt": "global",
                 "to": "true",
-                "tot": "bool"
+                "tot": "msg"
             }
         ],
         "action": "",
