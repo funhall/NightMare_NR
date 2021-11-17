@@ -2139,11 +2139,12 @@
             "75ff42675f6ff98f",
             "8d57920ba7921f6d",
             "04cb49f51b99acab",
-            "0f0325f5159de357"
+            "0f0325f5159de357",
+            "082d6f8dbcf61056"
         ],
         "x": 234,
         "y": 79,
-        "w": 732,
+        "w": 872,
         "h": 242
     },
     {
@@ -43433,13 +43434,6 @@
                 "pt": "msg",
                 "to": "green",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "START",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
             }
         ],
         "action": "",
@@ -43533,7 +43527,9 @@
         "x": 890,
         "y": 180,
         "wires": [
-            []
+            [
+                "082d6f8dbcf61056"
+            ]
         ]
     },
     {
@@ -43581,6 +43577,38 @@
         "wires": [
             [
                 "8d57920ba7921f6d"
+            ]
+        ]
+    },
+    {
+        "id": "082d6f8dbcf61056",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "",
+        "property": "doorroom2",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "open",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1030,
+        "y": 180,
+        "wires": [
+            [
+                "828bc5fa6ea76e9e"
+            ],
+            [
+                "5428cdecb2cdf816"
             ]
         ]
     }
