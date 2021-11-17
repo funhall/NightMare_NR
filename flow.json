@@ -8919,7 +8919,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "klartekst",
+                "p": "klartext",
                 "pt": "msg",
                 "to": "Klar til spil",
                 "tot": "str"
