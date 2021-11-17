@@ -11092,7 +11092,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "{{msg.payload}}",
+        "label": "{{msg.payload}}df",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.background}}",
