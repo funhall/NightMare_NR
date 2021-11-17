@@ -158,7 +158,7 @@
         "category": "",
         "in": [
             {
-                "x": 0,
+                "x": 60,
                 "y": 140,
                 "wires": [
                     {
@@ -169,8 +169,8 @@
         ],
         "out": [
             {
-                "x": 1120,
-                "y": 80,
+                "x": 920,
+                "y": 160,
                 "wires": [
                     {
                         "id": "f5d5a22c.b5488",
@@ -2285,6 +2285,153 @@
         "h": 402
     },
     {
+        "id": "dbe01fce1c4844e0",
+        "type": "group",
+        "z": "33e76285.1cd03e",
+        "name": "Start stop Game time",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "174b209f.447edf",
+            "1ada877b.576d69",
+            "58cb52c53dde8dc9",
+            "619dfcb3c2447f34",
+            "250c3baf03e0708e",
+            "838bc03649f7c918",
+            "f51d408db856e1dc",
+            "f6da3ededc910c6b",
+            "a0962a7c1c1b67dc",
+            "011d71bd028f4985",
+            "5801dd6cddafa481",
+            "18fca4cd232def7d",
+            "c0ba6a06d7b7da0d",
+            "4697c7b2b5242851",
+            "542bd9212ddb0eb8",
+            "a2638b0a6698a97c",
+            "54e9a38e3055c96e",
+            "6e84323610cab4f8",
+            "e3130477d482d82a",
+            "7238f418a68d050f",
+            "6085369696d74c71",
+            "b41f9f2bfad990e4",
+            "594a5878cdc1c5c9",
+            "38c9d1ce4d9d6dec",
+            "cf138dea9a98dca1",
+            "72d2fe598eca57d7",
+            "6ae7dc55b448fca2",
+            "e11f1b45e2d272ee",
+            "83a775612f7422fe",
+            "462ca0afe5906366",
+            "106326f838ebf42e"
+        ],
+        "env": [],
+        "x": 94,
+        "y": 479,
+        "w": 1652,
+        "h": 362
+    },
+    {
+        "id": "95a3c4b6507c5cff",
+        "type": "group",
+        "z": "2bdc58f37cbddb93",
+        "name": "Rum 1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "54706de9e7f6afc3",
+            "2ac5afa480c29832",
+            "6410a3d409c65544",
+            "de5ea08b0ff1a997",
+            "91966b424e9124b3",
+            "397b6fcd88e6dca3",
+            "59bcbc0eb287671d",
+            "e26b7cac8b2be6d4",
+            "9b391ee6ccfc7d08",
+            "3e290a334065f6a0",
+            "54c83c00ac584f00",
+            "ce74e291796fd569",
+            "4904644ae19bf16a",
+            "ea9dd1feba1f638a",
+            "5b0c77c3b5c4cbfd"
+        ],
+        "env": [],
+        "x": 434,
+        "y": 819,
+        "w": 1072,
+        "h": 382
+    },
+    {
+        "id": "50bee133c969308b",
+        "type": "group",
+        "z": "2bdc58f37cbddb93",
+        "name": "Rum 3",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ea8102888f0cc01d",
+            "97f7e8d10f0be05e",
+            "2f9f9a0afba2d10f",
+            "392710fef73be1d8",
+            "f9af1ca2c1db655f",
+            "a19f8ff30ae6c9ed",
+            "d6cc0ffddc758805",
+            "03ac02f10634ecfb",
+            "d71a615e937a8d08",
+            "cdd4927ed90f4281",
+            "128b0dede8b2d42e",
+            "f4db15fd6838fdaf",
+            "4d3749f1ee9a9522",
+            "f91b84881f96290d",
+            "991c27dac5556311",
+            "1cf88a1c4b795355",
+            "70bda8c7ff6717aa",
+            "a5f2760c3eefe945",
+            "60c1ca75a8487e9f",
+            "3764116c4443cc0c",
+            "c756cad252b8ccf2",
+            "ff3551470cb85fa7",
+            "89b50d7e86ac3077",
+            "425572fc7a00120a",
+            "76e7010791f5083b",
+            "80a868808fc1a091",
+            "51b93c2f3fedbe74",
+            "68d6cd626c5a721b"
+        ],
+        "env": [],
+        "x": 274,
+        "y": 159,
+        "w": 1852,
+        "h": 482
+    },
+    {
+        "id": "2af49f6686f95446",
+        "type": "group",
+        "z": "2bdc58f37cbddb93",
+        "name": "Rum 4",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3d95a6d7963e1f61",
+            "06d8ecc15f73783d",
+            "a6b700e996acba10",
+            "b00a5f4f524cc552",
+            "ab25ebc985202214",
+            "32a34eaa5f51ab27",
+            "7e0259b00fba94b9",
+            "9fb3b6df1e47e868",
+            "777cfe81a9a8602c"
+        ],
+        "env": [],
+        "x": 594,
+        "y": 1339,
+        "w": 892,
+        "h": 302
+    },
+    {
         "id": "82fd466d.f6c968",
         "type": "ui_tab",
         "name": "Nightmare personale",
@@ -3044,8 +3191,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
-        "y": 240,
+        "x": 710,
+        "y": 200,
         "wires": [
             []
         ]
@@ -3094,8 +3241,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
-        "y": 40,
+        "x": 710,
+        "y": 140,
         "wires": [
             []
         ]
@@ -3118,7 +3265,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 190,
+        "x": 250,
         "y": 140,
         "wires": [
             [
@@ -3150,7 +3297,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 530,
-        "y": 280,
+        "y": 240,
         "wires": [
             [
                 "31558c33.837ac4"
@@ -3644,6 +3791,7 @@
         "id": "174b209f.447edf",
         "type": "inject",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Stop spil",
         "props": [
             {
@@ -3657,8 +3805,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 300,
-        "y": 920,
+        "x": 280,
+        "y": 800,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -5292,6 +5440,7 @@
         "id": "1ada877b.576d69",
         "type": "ui_gauge",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "cust_time",
         "group": "1d01efe067ef138e",
         "order": 1,
@@ -5310,8 +5459,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 1620,
-        "y": 620,
+        "x": 1660,
+        "y": 640,
         "wires": []
     },
     {
@@ -6173,6 +6322,7 @@
         "id": "58cb52c53dde8dc9",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Start spil/Playing",
         "group": "117cda2a.43e596",
         "order": 15,
@@ -6188,8 +6338,8 @@
         "payloadType": "str",
         "topic": "on",
         "topicType": "msg",
-        "x": 410,
-        "y": 600,
+        "x": 450,
+        "y": 620,
         "wires": [
             [
                 "a2638b0a6698a97c"
@@ -6200,10 +6350,11 @@
         "id": "619dfcb3c2447f34",
         "type": "dsm",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "sm_config": "{\n    \"currentState\": \"stopped\",\n    \"states\": {\n        \"stopped\": {\n            \"on\": \"started\"\n        },\n        \"started\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        },\n        \"counting\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        }\n    },\n    \"data\": {\n        \"prev_time\": null,\n        \"time\": 0,\n        \"seconds\": 0,\n        \"interval\": 1,\n        \"interval_output\": true,\n        \"hms_format\": true\n    },\n    \"methods\": {\n        \"init\": [\n            \"sm.calc_time = function() {\",\n            \"   var now = Date.now();\",\n            \"   sm.data.time += now - sm.data.prev_time;\",\n            \"   sm.data.prev_time = now;\",\n            \"   sm.data.seconds = Math.round(sm.data.time / 1000);\",\n            \"};\",\n            \"sm.sec2hhmmss = function(sec) {\",\n                \"var t = {};\",\n                \"t.h = pad(Math.floor(sec / 3600));\",\n                \"sec %= 3600;\",\n                \"t.m = pad(Math.floor(sec / 60));\",\n                \"t.s = pad(sec % 60);\",\n                \"return t.h+':'+t.m+':'+t.s;\",\n            \"};\"\n        ],\n        \"on\": [\n            \"if (sm.currentState === 'started') {\",\n            \"   sm.data.prev_time = Date.now();\",\n            \"   resume('inc', msg);\",\n            \"}\",\n            \"output = false;\"\n        ],\n        \"inc\": [\n            \"timeout.interval = setTimeout(function() {\",\n            \"   sm.calc_time();\",\n            \"   msg.data = sm.data;\",\n            \"   if (sm.data.interval_output) {\",\n            \"       msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\",\n            \"       node.send(msg);\",\n            \"   }\",\n            \"   resume('inc', msg);\",\n            \"}, sm.data.interval*1000);\",\n            \"output = false;\"\n        ],\n        \"off\": [\n            \"clearTimeout(timeout.interval);\",\n            \"sm.calc_time();\",\n            \"msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\"\n        ],\n        \"reset\": [\n            \"sm.data.time = 0;\",\n            \"sm.data.seconds = 0;\"\n        ],\n        \"status\": {\n            \"fill\": {\n                \"get\": \"sm.currentState === 'counting' ? 'green' : 'grey';\"\n            },\n            \"shape\": \"dot\",\n            \"text\": {\n                \"get\": \"'time ' + (sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds);\"\n            }\n        }\n    }\n}\n",
-        "x": 1130,
-        "y": 580,
+        "x": 1170,
+        "y": 600,
         "wires": [
             [
                 "250c3baf03e0708e"
@@ -6214,6 +6365,7 @@
         "id": "250c3baf03e0708e",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "rules": [
             {
@@ -6239,8 +6391,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1300,
-        "y": 580,
+        "x": 1340,
+        "y": 600,
         "wires": [
             [
                 "838bc03649f7c918",
@@ -6252,6 +6404,7 @@
         "id": "838bc03649f7c918",
         "type": "ui_text",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "group": "5642b2b1.f4032c",
         "order": 1,
         "width": 0,
@@ -6260,8 +6413,8 @@
         "label": "",
         "format": "{{msg.gametime}}",
         "layout": "row-spread",
-        "x": 1580,
-        "y": 580,
+        "x": 1620,
+        "y": 600,
         "wires": []
     },
     {
@@ -7027,6 +7180,7 @@
         "id": "f51d408db856e1dc",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Stop/continue",
         "group": "5241c487.80287c",
         "order": 1,
@@ -7042,8 +7196,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 500,
-        "y": 900,
+        "x": 460,
+        "y": 780,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
@@ -8894,6 +9048,7 @@
         "id": "f6da3ededc910c6b",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "game on",
         "rules": [
             {
@@ -8923,8 +9078,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 920,
-        "y": 600,
+        "x": 960,
+        "y": 620,
         "wires": [
             [
                 "619dfcb3c2447f34",
@@ -8936,6 +9091,7 @@
         "id": "a0962a7c1c1b67dc",
         "type": "mqtt in",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Nødstop",
         "topic": "boks5/input/D5",
         "qos": "2",
@@ -8945,8 +9101,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 940,
-        "y": 940,
+        "x": 660,
+        "y": 800,
         "wires": [
             [
                 "5801dd6cddafa481"
@@ -8957,6 +9113,7 @@
         "id": "011d71bd028f4985",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Gametime off / nodstop true / stop timer",
         "rules": [
             {
@@ -8986,8 +9143,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1360,
-        "y": 720,
+        "x": 1180,
+        "y": 740,
         "wires": [
             [
                 "619dfcb3c2447f34"
@@ -8998,6 +9155,7 @@
         "id": "5801dd6cddafa481",
         "type": "switch",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -9014,8 +9172,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 950,
-        "y": 720,
+        "x": 830,
+        "y": 800,
         "wires": [
             [
                 "011d71bd028f4985"
@@ -9029,6 +9187,7 @@
         "id": "18fca4cd232def7d",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Game on / nodstop false / start timer",
         "rules": [
             {
@@ -9058,8 +9217,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1350,
-        "y": 760,
+        "x": 1170,
+        "y": 780,
         "wires": [
             [
                 "6ae7dc55b448fca2"
@@ -9070,6 +9229,7 @@
         "id": "c0ba6a06d7b7da0d",
         "type": "switch",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "property": "game",
         "propertyType": "global",
@@ -9086,8 +9246,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 690,
-        "y": 820,
+        "x": 710,
+        "y": 680,
         "wires": [
             [
                 "4697c7b2b5242851",
@@ -9103,6 +9263,7 @@
         "id": "4697c7b2b5242851",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Continue",
         "rules": [
             {
@@ -9118,8 +9279,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 880,
-        "y": 840,
+        "x": 840,
+        "y": 760,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -9130,6 +9291,7 @@
         "id": "542bd9212ddb0eb8",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Stop",
         "rules": [
             {
@@ -9145,8 +9307,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 870,
-        "y": 880,
+        "x": 850,
+        "y": 720,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -9157,6 +9319,7 @@
         "id": "a2638b0a6698a97c",
         "type": "switch",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "property": "klargorring",
         "propertyType": "flow",
@@ -9173,21 +9336,20 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 590,
-        "y": 600,
+        "x": 630,
+        "y": 620,
         "wires": [
             [
                 "f6da3ededc910c6b"
             ],
-            [
-                "69cfedd2ecb7de14"
-            ]
+            []
         ]
     },
     {
         "id": "54e9a38e3055c96e",
         "type": "inject",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Start spil",
         "props": [
             {
@@ -9201,8 +9363,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 220,
-        "y": 600,
+        "x": 260,
+        "y": 620,
         "wires": [
             [
                 "58cb52c53dde8dc9"
@@ -9213,12 +9375,13 @@
         "id": "6e84323610cab4f8",
         "type": "link in",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Reset timer",
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 155,
-        "y": 500,
+        "x": 195,
+        "y": 520,
         "wires": [
             [
                 "6085369696d74c71",
@@ -9230,6 +9393,7 @@
         "id": "e3130477d482d82a",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Reset time",
         "rules": [
             {
@@ -9252,8 +9416,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 500,
+        "x": 610,
+        "y": 520,
         "wires": [
             [
                 "619dfcb3c2447f34",
@@ -9265,6 +9429,7 @@
         "id": "7238f418a68d050f",
         "type": "inject",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "props": [
             {
@@ -9281,8 +9446,8 @@
         "onceDelay": 0.1,
         "topic": "on",
         "payloadType": "date",
-        "x": 1030,
-        "y": 500,
+        "x": 1070,
+        "y": 520,
         "wires": [
             [
                 "619dfcb3c2447f34"
@@ -9293,6 +9458,7 @@
         "id": "6085369696d74c71",
         "type": "switch",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "property": "game",
         "propertyType": "global",
@@ -9306,8 +9472,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 410,
-        "y": 500,
+        "x": 450,
+        "y": 520,
         "wires": [
             [
                 "e3130477d482d82a"
@@ -9318,12 +9484,13 @@
         "id": "b41f9f2bfad990e4",
         "type": "link in",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Stop timer",
         "links": [
             "2b480c9c40b1ae41"
         ],
-        "x": 275,
-        "y": 840,
+        "x": 575,
+        "y": 720,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
@@ -9334,6 +9501,7 @@
         "id": "594a5878cdc1c5c9",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Stop",
         "rules": [
             {
@@ -9349,8 +9517,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 430,
-        "y": 720,
+        "x": 470,
+        "y": 680,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
@@ -9361,12 +9529,13 @@
         "id": "38c9d1ce4d9d6dec",
         "type": "link in",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Start time",
         "links": [
             "6ae7dc55b448fca2"
         ],
-        "x": 375,
-        "y": 540,
+        "x": 415,
+        "y": 560,
         "wires": [
             [
                 "72d2fe598eca57d7"
@@ -9377,6 +9546,7 @@
         "id": "cf138dea9a98dca1",
         "type": "inject",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "props": [
             {
@@ -9393,8 +9563,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 720,
+        "x": 260,
+        "y": 680,
         "wires": [
             [
                 "594a5878cdc1c5c9"
@@ -9416,6 +9586,7 @@
         "id": "72d2fe598eca57d7",
         "type": "switch",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "property": "game",
         "propertyType": "global",
@@ -9429,8 +9600,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 530,
-        "y": 560,
+        "x": 570,
+        "y": 580,
         "wires": [
             [
                 "f6da3ededc910c6b"
@@ -9441,29 +9612,14 @@
         "id": "6ae7dc55b448fca2",
         "type": "link out",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Stop time",
         "mode": "link",
         "links": [
             "38c9d1ce4d9d6dec"
         ],
-        "x": 1535,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "69cfedd2ecb7de14",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 700,
+        "x": 1375,
+        "y": 780,
         "wires": []
     },
     {
@@ -9639,7 +9795,8 @@
             "f11944f6972a495d",
             "b71bafe8e5381546",
             "b1c144db8add45ef",
-            "6e84323610cab4f8"
+            "6e84323610cab4f8",
+            "a364de78fa277074"
         ],
         "x": 575,
         "y": 180,
@@ -10103,6 +10260,7 @@
         "id": "e11f1b45e2d272ee",
         "type": "inject",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "props": [
             {
@@ -10120,8 +10278,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 240,
-        "y": 560,
+        "x": 280,
+        "y": 580,
         "wires": [
             [
                 "72d2fe598eca57d7"
@@ -10169,6 +10327,7 @@
         "id": "83a775612f7422fe",
         "type": "inject",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "",
         "props": [
             {
@@ -10186,8 +10345,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
-        "y": 780,
+        "x": 200,
+        "y": 720,
         "wires": [
             [
                 "c0ba6a06d7b7da0d",
@@ -10199,7 +10358,8 @@
         "id": "462ca0afe5906366",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "g": "dbe01fce1c4844e0",
+        "name": "Glob. game off",
         "rules": [
             {
                 "t": "set",
@@ -10214,8 +10374,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 780,
+        "x": 400,
+        "y": 720,
         "wires": [
             []
         ]
@@ -10224,6 +10384,7 @@
         "id": "106326f838ebf42e",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
         "name": "Start text",
         "rules": [
             {
@@ -10239,8 +10400,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 240,
-        "y": 520,
+        "x": 280,
+        "y": 540,
         "wires": [
             [
                 "58cb52c53dde8dc9"
@@ -18093,20 +18254,24 @@
         "id": "80a868808fc1a091",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "Klargørring",
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 125,
-        "y": 140,
+        "x": 335,
+        "y": 220,
         "wires": [
-            []
+            [
+                "2f9f9a0afba2d10f"
+            ]
         ]
     },
     {
         "id": "ea8102888f0cc01d",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "Rum 3 - Hvid",
         "topic": "belysning/output/D1",
         "qos": "",
@@ -18117,14 +18282,15 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1690,
-        "y": 500,
+        "x": 930,
+        "y": 380,
         "wires": []
     },
     {
         "id": "97f7e8d10f0be05e",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "Lys 200",
         "rules": [
             {
@@ -18140,11 +18306,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1200,
-        "y": 540,
+        "x": 420,
+        "y": 440,
         "wires": [
             [
-                "ea8102888f0cc01d",
                 "f91b84881f96290d"
             ]
         ]
@@ -18153,6 +18318,7 @@
         "id": "2f9f9a0afba2d10f",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "lys 1024",
         "rules": [
             {
@@ -18168,12 +18334,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1420,
-        "y": 420,
+        "x": 640,
+        "y": 260,
         "wires": [
             [
-                "ea8102888f0cc01d",
-                "f91b84881f96290d"
+                "ea8102888f0cc01d"
             ]
         ]
     },
@@ -18181,6 +18346,7 @@
         "id": "392710fef73be1d8",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "Lys 0",
         "rules": [
             {
@@ -18196,29 +18362,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1210,
-        "y": 480,
+        "x": 410,
+        "y": 380,
         "wires": [
             [
-                "ea8102888f0cc01d",
                 "f91b84881f96290d"
             ]
         ]
     },
     {
-        "id": "4f87f75ff56c3dff",
-        "type": "comment",
-        "z": "2bdc58f37cbddb93",
-        "name": "Start",
-        "info": "",
-        "x": 1050,
-        "y": 340,
-        "wires": []
-    },
-    {
         "id": "f9af1ca2c1db655f",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "Rum 3 - Blå",
         "topic": "belysning/output/D2",
         "qos": "",
@@ -18229,14 +18385,15 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2130,
-        "y": 480,
+        "x": 1350,
+        "y": 380,
         "wires": []
     },
     {
         "id": "a19f8ff30ae6c9ed",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "props": [
             {
@@ -18250,8 +18407,8 @@
         "topic": "",
         "payload": "1024",
         "payloadType": "num",
-        "x": 1930,
-        "y": 420,
+        "x": 1150,
+        "y": 320,
         "wires": [
             [
                 "f9af1ca2c1db655f"
@@ -18262,6 +18419,7 @@
         "id": "d6cc0ffddc758805",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "props": [
             {
@@ -18275,8 +18433,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1900,
-        "y": 560,
+        "x": 1120,
+        "y": 460,
         "wires": [
             [
                 "f9af1ca2c1db655f"
@@ -18287,6 +18445,7 @@
         "id": "03ac02f10634ecfb",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "props": [
             {
@@ -18300,8 +18459,8 @@
         "topic": "",
         "payload": "300",
         "payloadType": "str",
-        "x": 1910,
-        "y": 480,
+        "x": 1130,
+        "y": 380,
         "wires": [
             [
                 "f9af1ca2c1db655f"
@@ -18312,6 +18471,7 @@
         "id": "d71a615e937a8d08",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "props": [
             {
@@ -18325,8 +18485,8 @@
         "topic": "",
         "payload": "10",
         "payloadType": "num",
-        "x": 1910,
-        "y": 520,
+        "x": 1130,
+        "y": 420,
         "wires": [
             [
                 "f9af1ca2c1db655f"
@@ -18337,6 +18497,7 @@
         "id": "cdd4927ed90f4281",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "props": [
             {
@@ -18350,8 +18511,8 @@
         "topic": "",
         "payload": "FLASH",
         "payloadType": "str",
-        "x": 1900,
-        "y": 600,
+        "x": 1120,
+        "y": 500,
         "wires": [
             [
                 "f9af1ca2c1db655f"
@@ -18362,6 +18523,7 @@
         "id": "128b0dede8b2d42e",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "props": [
             {
@@ -18375,8 +18537,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 1920,
-        "y": 360,
+        "x": 1140,
+        "y": 260,
         "wires": [
             [
                 "f9af1ca2c1db655f"
@@ -18387,6 +18549,7 @@
         "id": "f4db15fd6838fdaf",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "props": [
             {
@@ -18400,8 +18563,8 @@
         "topic": "",
         "payload": "HIGh",
         "payloadType": "str",
-        "x": 1920,
-        "y": 320,
+        "x": 1140,
+        "y": 220,
         "wires": [
             [
                 "f9af1ca2c1db655f"
@@ -18412,6 +18575,7 @@
         "id": "4d3749f1ee9a9522",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "Rum 3- Rød",
         "topic": "belysning/output/D3",
         "qos": "",
@@ -18422,14 +18586,15 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2810,
-        "y": 500,
+        "x": 2030,
+        "y": 400,
         "wires": []
     },
     {
         "id": "54706de9e7f6afc3",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "Rum1 - Rød",
         "topic": "belysning/output/D8",
         "qos": "",
@@ -18440,14 +18605,15 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2170,
-        "y": 780,
+        "x": 1350,
+        "y": 860,
         "wires": []
     },
     {
         "id": "2ac5afa480c29832",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "Rum1 - Grøn",
         "topic": "belysning/output/D??",
         "qos": "",
@@ -18458,14 +18624,15 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2230,
-        "y": 980,
+        "x": 1410,
+        "y": 1060,
         "wires": []
     },
     {
         "id": "f91b84881f96290d",
         "type": "ui_slider",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "label": "Lys rum 3",
         "tooltip": "",
@@ -18480,8 +18647,8 @@
         "min": 0,
         "max": "1024",
         "step": "10",
-        "x": 1440,
-        "y": 520,
+        "x": 640,
+        "y": 380,
         "wires": [
             [
                 "ea8102888f0cc01d"
@@ -18492,6 +18659,7 @@
         "id": "6410a3d409c65544",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "Rum1 - Hvid",
         "topic": "belysning/output/D7",
         "qos": "",
@@ -18502,14 +18670,15 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2170,
-        "y": 900,
+        "x": 1350,
+        "y": 980,
         "wires": []
     },
     {
         "id": "de5ea08b0ff1a997",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "nedtælling",
         "rules": [
             {
@@ -18525,8 +18694,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1470,
-        "y": 860,
+        "x": 730,
+        "y": 960,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -18537,6 +18706,7 @@
         "id": "91966b424e9124b3",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "1024",
         "rules": [
             {
@@ -18552,8 +18722,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1570,
-        "y": 920,
+        "x": 830,
+        "y": 1020,
         "wires": [
             [
                 "6410a3d409c65544",
@@ -18566,6 +18736,7 @@
         "id": "397b6fcd88e6dca3",
         "type": "ui_slider",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "",
         "label": "Lys rum 1",
         "tooltip": "",
@@ -18580,8 +18751,8 @@
         "min": 0,
         "max": "1024",
         "step": "10",
-        "x": 1880,
-        "y": 940,
+        "x": 1140,
+        "y": 1040,
         "wires": [
             [
                 "6410a3d409c65544"
@@ -18589,28 +18760,10 @@
         ]
     },
     {
-        "id": "71c318d89e0a7e26",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "name": "Flashrum 3 rød",
-        "links": [
-            "e31a61e6.09726"
-        ],
-        "x": 2575,
-        "y": 680,
-        "wires": [
-            [
-                "991c27dac5556311",
-                "1cf88a1c4b795355",
-                "392710fef73be1d8",
-                "30fb80a88fa50a1e"
-            ]
-        ]
-    },
-    {
         "id": "991c27dac5556311",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "rules": [
             {
@@ -18626,8 +18779,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2620,
-        "y": 560,
+        "x": 1820,
+        "y": 440,
         "wires": [
             [
                 "4d3749f1ee9a9522"
@@ -18638,6 +18791,7 @@
         "id": "1cf88a1c4b795355",
         "type": "delay",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -18650,12 +18804,10 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 2730,
-        "y": 700,
+        "x": 1950,
+        "y": 600,
         "wires": [
-            [
-                "2f9f9a0afba2d10f"
-            ]
+            []
         ]
     },
     {
@@ -18675,25 +18827,10 @@
         "wires": []
     },
     {
-        "id": "eb40c7cda2b1a40e",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "name": "Hjælp knap",
-        "links": [
-            "7ce4a2f9.9437dc"
-        ],
-        "x": 1035,
-        "y": 660,
-        "wires": [
-            [
-                "70bda8c7ff6717aa"
-            ]
-        ]
-    },
-    {
         "id": "3d95a6d7963e1f61",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
         "name": "Rum4 - Blå",
         "topic": "boks9/output/D2",
         "qos": "",
@@ -18704,14 +18841,15 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1870,
-        "y": 1100,
+        "x": 1130,
+        "y": 1400,
         "wires": []
     },
     {
         "id": "06d8ecc15f73783d",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
         "name": "Rum4 - Rød",
         "topic": "boks9/output/D1",
         "qos": "",
@@ -18722,21 +18860,22 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2750,
-        "y": 1200,
+        "x": 1390,
+        "y": 1380,
         "wires": []
     },
     {
         "id": "59bcbc0eb287671d",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "Nedtælling lys rum 1",
         "links": [
             "ba36de2e2eb002c0",
             "786cf1f7b5add738"
         ],
-        "x": 1235,
-        "y": 860,
+        "x": 495,
+        "y": 960,
         "wires": [
             [
                 "9b391ee6ccfc7d08"
@@ -18747,6 +18886,7 @@
         "id": "e26b7cac8b2be6d4",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "Lys rum 1 100%",
         "links": [
             "dcda2e3ca6ad94be",
@@ -18754,8 +18894,8 @@
             "d0db6f812a7972aa",
             "a1b3d2126fab40bf"
         ],
-        "x": 1455,
-        "y": 920,
+        "x": 715,
+        "y": 1020,
         "wires": [
             [
                 "91966b424e9124b3"
@@ -18763,19 +18903,10 @@
         ]
     },
     {
-        "id": "7324f4c2f984272a",
-        "type": "comment",
-        "z": "2bdc58f37cbddb93",
-        "name": "Hjælpe knap",
-        "info": "",
-        "x": 930,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "9b391ee6ccfc7d08",
         "type": "switch",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "",
         "property": "gameon",
         "propertyType": "global",
@@ -18787,8 +18918,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1330,
-        "y": 860,
+        "x": 590,
+        "y": 960,
         "wires": [
             [
                 "de5ea08b0ff1a997"
@@ -18799,6 +18930,7 @@
         "id": "a6b700e996acba10",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
         "name": "Rum4 - Rød",
         "topic": "boks9/output/D1",
         "qos": "",
@@ -18809,18 +18941,19 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1870,
-        "y": 1200,
+        "x": 1130,
+        "y": 1500,
         "wires": []
     },
     {
         "id": "70bda8c7ff6717aa",
         "type": "subflow:195c9babcf1455a4",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 1320,
-        "y": 660,
+        "x": 540,
+        "y": 560,
         "wires": [
             [
                 "ea8102888f0cc01d"
@@ -18831,10 +18964,11 @@
         "id": "3e290a334065f6a0",
         "type": "subflow:195c9babcf1455a4",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 1520,
-        "y": 960,
+        "x": 780,
+        "y": 1060,
         "wires": [
             [
                 "397b6fcd88e6dca3"
@@ -18845,12 +18979,13 @@
         "id": "54c83c00ac584f00",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "Hjælp knap",
         "links": [
             "7ce4a2f9.9437dc"
         ],
-        "x": 1215,
-        "y": 980,
+        "x": 475,
+        "y": 1080,
         "wires": [
             [
                 "3e290a334065f6a0",
@@ -18862,10 +18997,11 @@
         "id": "ce74e291796fd569",
         "type": "subflow:195c9babcf1455a4",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 1480,
-        "y": 1060,
+        "x": 740,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -18874,13 +19010,14 @@
         "id": "b00a5f4f524cc552",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
         "name": "Rum 4 set global VAR",
         "links": [
             "ba36de2e2eb002c0",
             "786cf1f7b5add738"
         ],
-        "x": 1375,
-        "y": 1160,
+        "x": 635,
+        "y": 1460,
         "wires": [
             [
                 "ab25ebc985202214",
@@ -18892,6 +19029,7 @@
         "id": "ab25ebc985202214",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
         "name": "rodrum4",
         "rules": [
             {
@@ -18907,8 +19045,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1540,
-        "y": 1180,
+        "x": 800,
+        "y": 1480,
         "wires": [
             [
                 "a6b700e996acba10"
@@ -18919,6 +19057,7 @@
         "id": "32a34eaa5f51ab27",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
         "name": "rodrum4",
         "rules": [
             {
@@ -18934,8 +19073,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1540,
-        "y": 1140,
+        "x": 800,
+        "y": 1440,
         "wires": [
             [
                 "3d95a6d7963e1f61"
@@ -18943,26 +19082,10 @@
         ]
     },
     {
-        "id": "ca345021606d2f27",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "name": "Rum 3 hvid til VAR",
-        "links": [
-            "ba36de2e2eb002c0",
-            "786cf1f7b5add738"
-        ],
-        "x": 1035,
-        "y": 380,
-        "wires": [
-            [
-                "a5f2760c3eefe945"
-            ]
-        ]
-    },
-    {
         "id": "a5f2760c3eefe945",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "rules": [
             {
@@ -18978,25 +19101,24 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1160,
-        "y": 380,
+        "x": 460,
+        "y": 320,
         "wires": [
-            [
-                "ea8102888f0cc01d"
-            ]
+            []
         ]
     },
     {
         "id": "60c1ca75a8487e9f",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "Rum 3 RØD HIGH",
         "links": [
             "5306e37e399c8f2e",
             "9d8d607f2a23f6bd"
         ],
-        "x": 2435,
-        "y": 420,
+        "x": 1655,
+        "y": 320,
         "wires": [
             [
                 "3764116c4443cc0c"
@@ -19007,6 +19129,7 @@
         "id": "3764116c4443cc0c",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "rules": [
             {
@@ -19022,8 +19145,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2580,
-        "y": 420,
+        "x": 1800,
+        "y": 320,
         "wires": [
             [
                 "4d3749f1ee9a9522"
@@ -19031,26 +19154,10 @@
         ]
     },
     {
-        "id": "11686ca5bf9fd695",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "name": "Tænd hvid lys rum 3",
-        "links": [
-            "e751d86262111364",
-            "a1b3d2126fab40bf"
-        ],
-        "x": 1035,
-        "y": 580,
-        "wires": [
-            [
-                "c756cad252b8ccf2"
-            ]
-        ]
-    },
-    {
         "id": "c756cad252b8ccf2",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "HIGH",
         "rules": [
             {
@@ -19066,8 +19173,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1310,
-        "y": 580,
+        "x": 530,
+        "y": 480,
         "wires": [
             [
                 "ea8102888f0cc01d"
@@ -19078,6 +19185,7 @@
         "id": "4904644ae19bf16a",
         "type": "time-based-dimmer",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "",
         "interval": "60",
         "step": "20",
@@ -19087,8 +19195,8 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 1680,
-        "y": 860,
+        "x": 940,
+        "y": 960,
         "wires": [
             [
                 "6410a3d409c65544",
@@ -19100,6 +19208,7 @@
         "id": "ff3551470cb85fa7",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "Rum 3 rød LOW",
         "links": [
             "5306e37e399c8f2e",
@@ -19107,8 +19216,8 @@
             "99f85c035d3ee3ad",
             "9d8d607f2a23f6bd"
         ],
-        "x": 2435,
-        "y": 460,
+        "x": 1655,
+        "y": 360,
         "wires": [
             [
                 "89b50d7e86ac3077"
@@ -19119,6 +19228,7 @@
         "id": "89b50d7e86ac3077",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "rules": [
             {
@@ -19134,8 +19244,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2580,
-        "y": 460,
+        "x": 1800,
+        "y": 360,
         "wires": [
             [
                 "4d3749f1ee9a9522"
@@ -19143,30 +19253,10 @@
         ]
     },
     {
-        "id": "57a8de12e1ec4afc",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "name": "RUM 3 hvid 1024",
-        "links": [
-            "dcacf67a632c4d47",
-            "dcda2e3ca6ad94be",
-            "e751d86262111364",
-            "d0db6f812a7972aa",
-            "a1b3d2126fab40bf",
-            "0e42be98d25e3424"
-        ],
-        "x": 1255,
-        "y": 420,
-        "wires": [
-            [
-                "2f9f9a0afba2d10f"
-            ]
-        ]
-    },
-    {
         "id": "7e0259b00fba94b9",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
         "name": "",
         "props": [
             {
@@ -19180,8 +19270,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 1510,
-        "y": 1240,
+        "x": 770,
+        "y": 1540,
         "wires": [
             [
                 "3d95a6d7963e1f61",
@@ -19193,6 +19283,7 @@
         "id": "9fb3b6df1e47e868",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
         "name": "",
         "props": [
             {
@@ -19206,8 +19297,8 @@
         "topic": "",
         "payload": "FLASH",
         "payloadType": "str",
-        "x": 1510,
-        "y": 1300,
+        "x": 770,
+        "y": 1600,
         "wires": [
             [
                 "a6b700e996acba10"
@@ -19218,6 +19309,7 @@
         "id": "777cfe81a9a8602c",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
         "name": "",
         "props": [
             {
@@ -19231,8 +19323,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 1650,
-        "y": 1280,
+        "x": 910,
+        "y": 1580,
         "wires": [
             [
                 "a6b700e996acba10",
@@ -19244,6 +19336,7 @@
         "id": "425572fc7a00120a",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "props": [
             {
@@ -19261,8 +19354,8 @@
         "topic": "",
         "payload": "FLASH",
         "payloadType": "str",
-        "x": 2330,
-        "y": 540,
+        "x": 1550,
+        "y": 440,
         "wires": [
             [
                 "4d3749f1ee9a9522"
@@ -19273,6 +19366,7 @@
         "id": "76e7010791f5083b",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
         "name": "",
         "props": [
             {
@@ -19286,8 +19380,8 @@
         "topic": "",
         "payload": "30",
         "payloadType": "num",
-        "x": 2590,
-        "y": 300,
+        "x": 1810,
+        "y": 200,
         "wires": [
             [
                 "4d3749f1ee9a9522"
@@ -19298,6 +19392,7 @@
         "id": "ea9dd1feba1f638a",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "",
         "props": [
             {
@@ -19315,8 +19410,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 1710,
-        "y": 760,
+        "x": 970,
+        "y": 860,
         "wires": [
             []
         ]
@@ -19325,6 +19420,7 @@
         "id": "5b0c77c3b5c4cbfd",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
         "name": "",
         "props": [
             {
@@ -19342,26 +19438,67 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 2030,
-        "y": 1060,
+        "x": 1290,
+        "y": 1160,
         "wires": [
             []
         ]
     },
     {
-        "id": "a1b8dc7d6346f2e2",
-        "type": "link in",
+        "id": "51b93c2f3fedbe74",
+        "type": "inject",
         "z": "2bdc58f37cbddb93",
-        "name": "Rum 3 hvid lys 200",
-        "links": [
-            "9174cbaece076164",
-            "99f85c035d3ee3ad"
+        "g": "50bee133c969308b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
         ],
-        "x": 1075,
-        "y": 520,
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 280,
         "wires": [
             [
-                "97f7e8d10f0be05e"
+                "2f9f9a0afba2d10f"
+            ]
+        ]
+    },
+    {
+        "id": "68d6cd626c5a721b",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 480,
+        "wires": [
+            [
+                "c756cad252b8ccf2"
             ]
         ]
     },
@@ -29160,7 +29297,8 @@
             "cbaf72d4d377c087",
             "ff3551470cb85fa7",
             "a1b8dc7d6346f2e2",
-            "956192102726fdf9"
+            "956192102726fdf9",
+            "1f9891ca9c6e7ea7"
         ],
         "x": 1095,
         "y": 860,
@@ -29236,7 +29374,9 @@
             "fe10acda04a4e60a",
             "f61e55dcbcbe2658",
             "60c1ca75a8487e9f",
-            "ff3551470cb85fa7"
+            "ff3551470cb85fa7",
+            "b28463c12b40f762",
+            "1f9891ca9c6e7ea7"
         ],
         "x": 635,
         "y": 980,
