@@ -6165,7 +6165,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "klartext",
+                "v": "Klargør",
+                "vt": "str"
             },
             {
                 "p": "topic",
@@ -6177,8 +6179,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payloadType": "date",
-        "x": 160,
+        "x": 110,
         "y": 180,
         "wires": [
             [
