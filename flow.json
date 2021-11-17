@@ -10019,7 +10019,7 @@
         "z": "33e76285.1cd03e",
         "g": "f4e5ec1eb5ea4c59",
         "name": "",
-        "func": "if ( global.get(\"gavle_vaek\") === \"true\" && global.get(\"bysterplaceret\") === \"true\" && global.get(\"kisteexit\") === \"closed\" && global.get(\"kistestate\") === \"closed\" && global.get(\"doorroom2\") === \"closed\" && global.get(\"doorroom1\") === \"closed\") { \n  msg.payload = \"Klargjort\";\n} else {\n  msg.payload = \"Ikke klar\";\n}\nreturn msg;\n",
+        "func": "if ( global.get(\"gavle_vaek\") === \"true\" && global.get(\"bysterplaceret\") === \"true\" && global.get(\"kisteexit\") === \"closed\" && global.get(\"kistestate\") === \"closed\" && global.get(\"doorroom2\") === \"closed\" && global.get(\"doorroom1\") === \"closed\" && global.get(\"left\") === \"up\"  && global.get(\"right\") === \"up\" ) { \n  msg.payload = \"Klargjort\";\n} else {\n  msg.payload = \"Ikke klar\";\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10819,9 +10819,9 @@
         "id": "62d18bfbb48fa72e",
         "type": "mqtt in",
         "z": "33e76285.1cd03e",
-        "name": "Stang venstre",
+        "name": "Stang højre",
         "topic": "boks8/input/D7",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
         "nl": false,
@@ -10849,7 +10849,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 370,
+        "x": 430,
         "y": 2860,
         "wires": []
     },
@@ -10857,9 +10857,9 @@
         "id": "e25fe2ca674576d0",
         "type": "mqtt in",
         "z": "33e76285.1cd03e",
-        "name": "Stang højre",
+        "name": "Stang venstre",
         "topic": "boks8/input/D6",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
         "nl": false,
@@ -10935,7 +10935,7 @@
         "z": "33e76285.1cd03e",
         "name": "Kontakt i skab",
         "topic": "boks8/input/D5",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
         "nl": false,
@@ -10975,14 +10975,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "venstrebackground",
+                "p": "rightbackground",
                 "pt": "msg",
                 "to": "green",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "left",
+                "p": "right",
                 "pt": "global",
                 "to": "up",
                 "tot": "str"
@@ -11010,14 +11010,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "venstrebackground",
+                "p": "rightbackground",
                 "pt": "msg",
                 "to": "red",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "left",
+                "p": "right",
                 "pt": "global",
                 "to": "down",
                 "tot": "str"
@@ -11061,7 +11061,7 @@
         "label": "",
         "tooltip": "",
         "color": "",
-        "bgcolor": "{{msg.venstrebackground}}",
+        "bgcolor": "{{msg.rightbackground}}",
         "icon": "fa-arrow-right",
         "payload": "",
         "payloadType": "str",
@@ -11114,14 +11114,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "hojrebackground",
+                "p": "leftbackground",
                 "pt": "msg",
                 "to": "red",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "right",
+                "p": "left",
                 "pt": "global",
                 "to": "down",
                 "tot": "str"
@@ -11149,14 +11149,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "hojrebackground",
+                "p": "leftbackground",
                 "pt": "msg",
                 "to": "green",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "right",
+                "p": "left",
                 "pt": "global",
                 "to": "up",
                 "tot": "str"
@@ -11198,7 +11198,7 @@
         "label": "",
         "tooltip": "",
         "color": "",
-        "bgcolor": "{{msg.hojrebackground}}",
+        "bgcolor": "{{msg.leftbackground}}",
         "icon": "fa-arrow-left",
         "payload": "",
         "payloadType": "str",
@@ -11277,7 +11277,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
