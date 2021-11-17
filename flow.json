@@ -19141,7 +19141,7 @@
         "z": "2bdc58f37cbddb93",
         "g": "95a3c4b6507c5cff",
         "name": "",
-        "interval": "3000",
+        "interval": "300",
         "step": "10",
         "minValue": "20",
         "maxValue": "1024",
