@@ -2275,8 +2275,8 @@
             "5ddb1957bb0f256e",
             "60ff46c64dec3f9e"
         ],
-        "x": 74,
-        "y": 1399,
+        "x": 94,
+        "y": 1639,
         "w": 1572,
         "h": 222
     },
@@ -8912,7 +8912,7 @@
         "z": "33e76285.1cd03e",
         "g": "f4e5ec1eb5ea4c59",
         "name": "",
-        "func": "if ( global.get(\"gavle_vaek\") === \"true\" && global.get(\"bysterplaceret\") === \"true\") { \n  msg.payload = \"Klargjort\";\n} else {\n  msg.payload = \"Ikke klar\";\n}\nreturn msg;",
+        "func": "if ( global.get(\"gavle_vaek\") === \"true\" && global.get(\"bysterplaceret\") === \"true\" && global.get(\"kisteexit\") === \"closed\") { \n  msg.payload = \"Klargjort\";\n} else {\n  msg.payload = \"Ikke klar\";\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -19905,8 +19905,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 1070,
-        "y": 1460,
+        "x": 930,
+        "y": 1700,
         "wires": []
     },
     {
@@ -19923,8 +19923,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 890,
-        "y": 1460,
+        "x": 750,
+        "y": 1700,
         "wires": []
     },
     {
@@ -19940,8 +19940,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 180,
-        "y": 1520,
+        "x": 200,
+        "y": 1760,
         "wires": [
             [
                 "60ff46c64dec3f9e",
@@ -19972,8 +19972,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 980,
-        "y": 1540,
+        "x": 1000,
+        "y": 1780,
         "wires": [
             [
                 "42ad3ae464b20556"
@@ -20003,8 +20003,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
-        "y": 1520,
+        "x": 420,
+        "y": 1760,
         "wires": [
             [
                 "84b4c76e67b531fe"
@@ -20023,8 +20023,8 @@
         "constant": "-1",
         "round": true,
         "decimals": "1",
-        "x": 580,
-        "y": 1520,
+        "x": 600,
+        "y": 1760,
         "wires": [
             [
                 "38114ecb84933283"
@@ -20043,8 +20043,8 @@
         "constant": "1",
         "round": false,
         "decimals": 0,
-        "x": 760,
-        "y": 1520,
+        "x": 780,
+        "y": 1760,
         "wires": [
             [
                 "d68d10f01d12c569",
@@ -20107,8 +20107,8 @@
         "g": "9d6515b12fd52c73",
         "name": "flow.kiste - locked/open",
         "info": "",
-        "x": 200,
-        "y": 1460,
+        "x": 220,
+        "y": 1700,
         "wires": []
     },
     {
@@ -20150,7 +20150,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "{{msg.kistetext}}rert",
+        "label": "{{msg.kistetext}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.background}}",
@@ -20159,8 +20159,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1430,
-        "y": 1560,
+        "x": 1450,
+        "y": 1800,
         "wires": [
             []
         ]
@@ -20199,8 +20199,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1160,
-        "y": 1500,
+        "x": 1180,
+        "y": 1740,
         "wires": [
             [
                 "834e5579ba26084b",
@@ -20242,8 +20242,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1180,
-        "y": 1580,
+        "x": 1200,
+        "y": 1820,
         "wires": [
             [
                 "834e5579ba26084b"
@@ -20268,8 +20268,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1550,
-        "y": 1500,
+        "x": 1570,
+        "y": 1740,
         "wires": [
             []
         ]
@@ -20290,8 +20290,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1350,
-        "y": 1500,
+        "x": 1370,
+        "y": 1740,
         "wires": [
             [
                 "84ab184bb818391a"
@@ -20311,8 +20311,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 450,
-        "y": 1440,
+        "x": 470,
+        "y": 1680,
         "wires": []
     },
     {
