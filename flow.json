@@ -2416,20 +2416,18 @@
         },
         "nodes": [
             "3d95a6d7963e1f61",
-            "06d8ecc15f73783d",
             "a6b700e996acba10",
             "b00a5f4f524cc552",
-            "ab25ebc985202214",
             "32a34eaa5f51ab27",
             "7e0259b00fba94b9",
             "9fb3b6df1e47e868",
             "777cfe81a9a8602c"
         ],
         "env": [],
-        "x": 594,
-        "y": 1339,
-        "w": 892,
-        "h": 302
+        "x": 114,
+        "y": 1239,
+        "w": 632,
+        "h": 282
     },
     {
         "id": "82fd466d.f6c968",
@@ -9799,7 +9797,8 @@
             "6e84323610cab4f8",
             "a364de78fa277074",
             "b91d7ea836498986",
-            "a1aa32c4949c4fe3"
+            "a1aa32c4949c4fe3",
+            "b00a5f4f524cc552"
         ],
         "x": 575,
         "y": 180,
@@ -18856,27 +18855,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1130,
-        "y": 1400,
-        "wires": []
-    },
-    {
-        "id": "06d8ecc15f73783d",
-        "type": "mqtt out",
-        "z": "2bdc58f37cbddb93",
-        "g": "2af49f6686f95446",
-        "name": "Rum4 - Rød",
-        "topic": "boks9/output/D1",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dca8425b.8fb18",
-        "x": 1390,
-        "y": 1380,
+        "x": 650,
+        "y": 1280,
         "wires": []
     },
     {
@@ -18921,8 +18901,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1130,
-        "y": 1500,
+        "x": 650,
+        "y": 1340,
         "wires": []
     },
     {
@@ -18993,43 +18973,13 @@
         "g": "2af49f6686f95446",
         "name": "Rum 4 set global VAR",
         "links": [
-            "ba36de2e2eb002c0",
-            "786cf1f7b5add738"
+            "e8ba061f5f8c7fec"
         ],
-        "x": 635,
-        "y": 1460,
+        "x": 155,
+        "y": 1280,
         "wires": [
             [
-                "ab25ebc985202214",
                 "32a34eaa5f51ab27"
-            ]
-        ]
-    },
-    {
-        "id": "ab25ebc985202214",
-        "type": "change",
-        "z": "2bdc58f37cbddb93",
-        "g": "2af49f6686f95446",
-        "name": "rodrum4",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "rodrum4",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 800,
-        "y": 1480,
-        "wires": [
-            [
-                "a6b700e996acba10"
             ]
         ]
     },
@@ -19038,14 +18988,14 @@
         "type": "change",
         "z": "2bdc58f37cbddb93",
         "g": "2af49f6686f95446",
-        "name": "rodrum4",
+        "name": "1024",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "blaarum4",
-                "tot": "global"
+                "to": "1024",
+                "tot": "num"
             }
         ],
         "action": "",
@@ -19053,11 +19003,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 800,
-        "y": 1440,
+        "x": 310,
+        "y": 1280,
         "wires": [
             [
-                "3d95a6d7963e1f61"
+                "3d95a6d7963e1f61",
+                "a6b700e996acba10"
             ]
         ]
     },
@@ -19223,8 +19174,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 770,
-        "y": 1540,
+        "x": 290,
+        "y": 1420,
         "wires": [
             [
                 "3d95a6d7963e1f61",
@@ -19250,8 +19201,8 @@
         "topic": "",
         "payload": "FLASH",
         "payloadType": "str",
-        "x": 770,
-        "y": 1600,
+        "x": 290,
+        "y": 1480,
         "wires": [
             [
                 "a6b700e996acba10"
@@ -19276,8 +19227,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 910,
-        "y": 1580,
+        "x": 430,
+        "y": 1460,
         "wires": [
             [
                 "a6b700e996acba10",
@@ -19391,8 +19342,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 870,
-        "y": 480,
+        "x": 950,
+        "y": 420,
         "wires": [
             []
         ]
@@ -37788,7 +37739,6 @@
             "c583a7afd2c494f2",
             "f61e55dcbcbe2658",
             "59bcbc0eb287671d",
-            "b00a5f4f524cc552",
             "ca345021606d2f27",
             "956192102726fdf9"
         ],
