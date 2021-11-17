@@ -1455,13 +1455,15 @@
             "250c3baf03e0708e",
             "838bc03649f7c918",
             "f6da3ededc910c6b",
-            "f51d408db856e1dc"
+            "f51d408db856e1dc",
+            "7efea3c0901ecdbc",
+            "011d71bd028f4985"
         ],
         "env": [],
         "x": 34,
-        "y": 459,
+        "y": 479,
         "w": 1152,
-        "h": 182
+        "h": 202
     },
     {
         "id": "0a74e5498dffe49a",
@@ -5415,7 +5417,7 @@
         "seg1": "",
         "seg2": "",
         "x": 1100,
-        "y": 540,
+        "y": 560,
         "wires": []
     },
     {
@@ -6294,7 +6296,7 @@
         "topic": "on",
         "topicType": "msg",
         "x": 120,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "f6da3ededc910c6b"
@@ -6340,7 +6342,7 @@
         "name": "",
         "sm_config": "{\n    \"currentState\": \"stopped\",\n    \"states\": {\n        \"stopped\": {\n            \"on\": \"started\"\n        },\n        \"started\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        },\n        \"counting\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        }\n    },\n    \"data\": {\n        \"prev_time\": null,\n        \"time\": 0,\n        \"seconds\": 0,\n        \"interval\": 1,\n        \"interval_output\": true,\n        \"hms_format\": true\n    },\n    \"methods\": {\n        \"init\": [\n            \"sm.calc_time = function() {\",\n            \"   var now = Date.now();\",\n            \"   sm.data.time += now - sm.data.prev_time;\",\n            \"   sm.data.prev_time = now;\",\n            \"   sm.data.seconds = Math.round(sm.data.time / 1000);\",\n            \"};\",\n            \"sm.sec2hhmmss = function(sec) {\",\n                \"var t = {};\",\n                \"t.h = pad(Math.floor(sec / 3600));\",\n                \"sec %= 3600;\",\n                \"t.m = pad(Math.floor(sec / 60));\",\n                \"t.s = pad(sec % 60);\",\n                \"return t.h+':'+t.m+':'+t.s;\",\n            \"};\"\n        ],\n        \"on\": [\n            \"if (sm.currentState === 'started') {\",\n            \"   sm.data.prev_time = Date.now();\",\n            \"   resume('inc', msg);\",\n            \"}\",\n            \"output = false;\"\n        ],\n        \"inc\": [\n            \"timeout.interval = setTimeout(function() {\",\n            \"   sm.calc_time();\",\n            \"   msg.data = sm.data;\",\n            \"   if (sm.data.interval_output) {\",\n            \"       msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\",\n            \"       node.send(msg);\",\n            \"   }\",\n            \"   resume('inc', msg);\",\n            \"}, sm.data.interval*1000);\",\n            \"output = false;\"\n        ],\n        \"off\": [\n            \"clearTimeout(timeout.interval);\",\n            \"sm.calc_time();\",\n            \"msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\"\n        ],\n        \"reset\": [\n            \"sm.data.time = 0;\",\n            \"sm.data.seconds = 0;\"\n        ],\n        \"status\": {\n            \"fill\": {\n                \"get\": \"sm.currentState === 'counting' ? 'green' : 'grey';\"\n            },\n            \"shape\": \"dot\",\n            \"text\": {\n                \"get\": \"'time ' + (sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds);\"\n            }\n        }\n    }\n}\n",
         "x": 550,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "250c3baf03e0708e"
@@ -6378,7 +6380,7 @@
         "to": "",
         "reg": false,
         "x": 740,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "838bc03649f7c918",
@@ -6400,7 +6402,7 @@
         "format": "{{msg.gametime}}",
         "layout": "row-spread",
         "x": 1060,
-        "y": 500,
+        "y": 520,
         "wires": []
     },
     {
@@ -7215,7 +7217,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 120,
-        "y": 600,
+        "y": 620,
         "wires": [
             [
                 "2ee7be2f8091805a"
@@ -9584,7 +9586,7 @@
         "to": "",
         "reg": false,
         "x": 320,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "619dfcb3c2447f34"
@@ -9617,6 +9619,7 @@
         "id": "7efea3c0901ecdbc",
         "type": "debug",
         "z": "33e76285.1cd03e",
+        "g": "c4e578e11dcc76bd",
         "name": "Nodstop",
         "active": true,
         "tosidebar": true,
@@ -9626,14 +9629,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 380,
-        "y": 580,
+        "x": 360,
+        "y": 620,
         "wires": []
     },
     {
         "id": "011d71bd028f4985",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "c4e578e11dcc76bd",
         "name": "",
         "rules": [
             {
@@ -9641,7 +9645,14 @@
                 "p": "nodstop",
                 "pt": "global",
                 "to": "true",
-                "tot": "bool"
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -9649,10 +9660,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 620,
+        "x": 540,
+        "y": 640,
         "wires": [
-            []
+            [
+                "619dfcb3c2447f34"
+            ]
         ]
     },
     {
@@ -9697,7 +9710,7 @@
                 "p": "nodstop",
                 "pt": "global",
                 "to": "false",
-                "tot": "bool"
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -9705,8 +9718,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 660,
+        "x": 550,
+        "y": 680,
         "wires": [
             []
         ]
