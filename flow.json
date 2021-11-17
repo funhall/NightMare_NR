@@ -19013,10 +19013,6 @@
                 "p": "rum2background",
                 "v": "red",
                 "vt": "str"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
