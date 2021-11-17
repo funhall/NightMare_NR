@@ -2039,7 +2039,8 @@
             "d65d38e0b9b85dbd",
             "fb7b0934932bbd0d",
             "709e27e57d26236e",
-            "ceabf7068dabdd5e"
+            "ceabf7068dabdd5e",
+            "167b5e205f71449f"
         ],
         "x": 114,
         "y": 59,
@@ -2067,7 +2068,9 @@
             "e032b1905a35fb34",
             "70be23919371d3af",
             "91483d1e8ef3aa10",
-            "fec365ec6a1a5929"
+            "fec365ec6a1a5929",
+            "fa78055450a2acab",
+            "be3c3aebc9ec5217"
         ],
         "env": [],
         "x": 114,
@@ -23386,7 +23389,8 @@
         "g": "821e49952fadaf78",
         "name": "Open exit",
         "links": [
-            "4dfaf3a5efda95b4"
+            "4dfaf3a5efda95b4",
+            "ce4649c03bbc3e2f"
         ],
         "x": 995,
         "y": 720,
@@ -24703,7 +24707,8 @@
         "g": "1c3803be18092683",
         "name": "Åbner ksite",
         "links": [
-            "7fc3fbad33439116"
+            "7fc3fbad33439116",
+            "ce4649c03bbc3e2f"
         ],
         "x": 725,
         "y": 1140,
@@ -24852,10 +24857,74 @@
         "z": "e21f6458e5ab1eb6",
         "name": "Nødstopp trykket",
         "mode": "link",
-        "links": [],
+        "links": [
+            "a1af2809e73bca7d",
+            "826b95112c8631bf",
+            "167b5e205f71449f"
+        ],
         "x": 495,
         "y": 1980,
         "wires": []
+    },
+    {
+        "id": "fa78055450a2acab",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "f38486a5759666f0",
+        "name": "",
+        "links": [],
+        "x": 885,
+        "y": 400,
+        "wires": [
+            [
+                "be3c3aebc9ec5217"
+            ]
+        ]
+    },
+    {
+        "id": "be3c3aebc9ec5217",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "f38486a5759666f0",
+        "name": "low",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 400,
+        "wires": [
+            [
+                "786dd2e020e047f0"
+            ]
+        ]
+    },
+    {
+        "id": "167b5e205f71449f",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "",
+        "links": [
+            "ce4649c03bbc3e2f"
+        ],
+        "x": 705,
+        "y": 200,
+        "wires": [
+            [
+                "d65d38e0b9b85dbd"
+            ]
+        ]
     },
     {
         "id": "dce242cef0b59c86",
