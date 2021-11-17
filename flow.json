@@ -8342,7 +8342,8 @@
             "80a868808fc1a091",
             "f11944f6972a495d",
             "b71bafe8e5381546",
-            "b1c144db8add45ef"
+            "b1c144db8add45ef",
+            "6e84323610cab4f8"
         ],
         "x": 555,
         "y": 200,
@@ -9531,7 +9532,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
+        "x": 420,
         "y": 520,
         "wires": [
             [
@@ -9813,6 +9814,47 @@
             [
                 "58cb52c53dde8dc9"
             ]
+        ]
+    },
+    {
+        "id": "6e84323610cab4f8",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "Reset timer",
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 225,
+        "y": 500,
+        "wires": [
+            [
+                "e3130477d482d82a"
+            ]
+        ]
+    },
+    {
+        "id": "e3130477d482d82a",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Reset time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 480,
+        "wires": [
+            []
         ]
     },
     {
