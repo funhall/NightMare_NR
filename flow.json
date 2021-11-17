@@ -784,7 +784,8 @@
             "d4d2aeec1061c558",
             "fc9b6aa8fa506d52",
             "0d5cbafad6f33ae1",
-            "6eb8430c101c731d"
+            "6eb8430c101c731d",
+            "bdf8cec0e1a2db9f"
         ],
         "x": 254,
         "y": 2039,
@@ -10272,7 +10273,8 @@
         "name": "Game over",
         "mode": "link",
         "links": [
-            "b41f9f2bfad990e4"
+            "b41f9f2bfad990e4",
+            "bdf8cec0e1a2db9f"
         ],
         "x": 655,
         "y": 380,
@@ -11500,6 +11502,24 @@
         "wires": [
             [
                 "7fc3fbad33439116"
+            ]
+        ]
+    },
+    {
+        "id": "bdf8cec0e1a2db9f",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "8a907ee3e43a8bdb",
+        "name": "Åbner udgang og lys når game over",
+        "links": [
+            "2b480c9c40b1ae41"
+        ],
+        "x": 1305,
+        "y": 2100,
+        "wires": [
+            [
+                "4f17f4badd740b98",
+                "d4d2aeec1061c558"
             ]
         ]
     },
