@@ -2183,6 +2183,36 @@
         "h": 242
     },
     {
+        "id": "821e49952fadaf78",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Kiste exit",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1144df5d1cfd6280",
+            "c9c85ecafe022276",
+            "1a956d639064d0ac",
+            "1befdcd9209f772f",
+            "abc4a91471d586ab",
+            "60130155528dcc9b",
+            "beb1919cf9975282",
+            "7fa55fa9b2a7f299",
+            "78bcbd4bb6aa9b96",
+            "03b6594c3963f359",
+            "b94749abab964c31",
+            "2492d259430ab9ad",
+            "6671e40c616cd8e1",
+            "ce278ad12ae831a2"
+        ],
+        "env": [],
+        "x": 114,
+        "y": 679,
+        "w": 1152,
+        "h": 222
+    },
+    {
         "id": "82fd466d.f6c968",
         "type": "ui_tab",
         "name": "Nightmare personale",
@@ -19158,6 +19188,7 @@
         "id": "1144df5d1cfd6280",
         "type": "mqtt out",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "Kiste exit lås op/i",
         "topic": "boks6/output/D4",
         "qos": "",
@@ -19168,14 +19199,15 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1110,
-        "y": 980,
+        "x": 1150,
+        "y": 780,
         "wires": []
     },
     {
         "id": "c9c85ecafe022276",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "Lås Exit",
         "rules": [
             {
@@ -19198,8 +19230,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 920,
-        "y": 1040,
+        "x": 1060,
+        "y": 860,
         "wires": [
             [
                 "1144df5d1cfd6280"
@@ -19210,6 +19242,7 @@
         "id": "1a956d639064d0ac",
         "type": "delay",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "",
         "pauseType": "delay",
         "timeout": "2",
@@ -19223,8 +19256,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 780,
-        "y": 1040,
+        "x": 900,
+        "y": 860,
         "wires": [
             [
                 "c9c85ecafe022276"
@@ -19235,6 +19268,7 @@
         "id": "1befdcd9209f772f",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "open exit",
         "rules": [
             {
@@ -19250,90 +19284,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 1000,
+        "x": 900,
+        "y": 820,
         "wires": [
             [
-                "29602264b6fd3cb4",
                 "1144df5d1cfd6280"
-            ]
-        ]
-    },
-    {
-        "id": "29602264b6fd3cb4",
-        "type": "debug",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1570,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "1a42064c324fd6f4",
-        "type": "debug",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1830,
-        "y": 1060,
-        "wires": []
-    },
-    {
-        "id": "3d9925cb24381e2a",
-        "type": "debug",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1410,
-        "y": 1100,
-        "wires": []
-    },
-    {
-        "id": "de86c9bf482cd8d6",
-        "type": "change",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "gameon",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1190,
-        "y": 1120,
-        "wires": [
-            [
-                "3d9925cb24381e2a"
             ]
         ]
     },
@@ -19350,8 +19305,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 220,
-        "y": 1720,
+        "x": 200,
+        "y": 1400,
         "wires": [
             [
                 "aea609932bb77faa",
@@ -19372,8 +19327,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 710,
-        "y": 1840,
+        "x": 690,
+        "y": 1520,
         "wires": []
     },
     {
@@ -19398,8 +19353,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 410,
-        "y": 1720,
+        "x": 390,
+        "y": 1400,
         "wires": [
             [
                 "5b7cfa19a9a51b86"
@@ -19442,8 +19397,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 1680,
+        "x": 550,
+        "y": 1360,
         "wires": [
             [
                 "7f44533ac0b79782",
@@ -19484,8 +19439,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 1720,
+        "x": 550,
+        "y": 1400,
         "wires": [
             [
                 "7f44533ac0b79782",
@@ -19499,8 +19454,8 @@
         "z": "e21f6458e5ab1eb6",
         "name": "flow.kistestate - open/closed",
         "info": "",
-        "x": 260,
-        "y": 1680,
+        "x": 240,
+        "y": 1360,
         "wires": []
     },
     {
@@ -19522,11 +19477,13 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 810,
-        "y": 1720,
+        "x": 750,
+        "y": 1380,
         "wires": [
             [
-                "89d16fef4e23be2c"
+                "89d16fef4e23be2c",
+                "c4afc81e9e2975dd",
+                "5c487c37f6d317a1"
             ]
         ]
     },
@@ -19547,10 +19504,12 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 900,
-        "y": 1640,
+        "x": 880,
+        "y": 1480,
         "wires": [
-            []
+            [
+                "4a7ddef35f8f06a1"
+            ]
         ]
     },
     {
@@ -19566,14 +19525,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 450,
-        "y": 1640,
+        "x": 430,
+        "y": 1320,
         "wires": []
     },
     {
         "id": "abc4a91471d586ab",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "Kiste exit status",
         "topic": "boks6/input/D5",
         "qos": "2",
@@ -19583,8 +19543,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 100,
-        "y": 940,
+        "x": 220,
+        "y": 820,
         "wires": [
             [
                 "60130155528dcc9b",
@@ -19596,6 +19556,7 @@
         "id": "60130155528dcc9b",
         "type": "debug",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "Kiste exit",
         "active": true,
         "tosidebar": true,
@@ -19605,14 +19566,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 840,
+        "x": 560,
+        "y": 720,
         "wires": []
     },
     {
         "id": "beb1919cf9975282",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -19631,8 +19593,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 270,
-        "y": 940,
+        "x": 390,
+        "y": 820,
         "wires": [
             [
                 "7fa55fa9b2a7f299"
@@ -19646,6 +19608,7 @@
         "id": "7fa55fa9b2a7f299",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "closed",
         "rules": [
             {
@@ -19675,8 +19638,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 430,
-        "y": 940,
+        "x": 550,
+        "y": 820,
         "wires": [
             [
                 "03b6594c3963f359",
@@ -19688,6 +19651,7 @@
         "id": "78bcbd4bb6aa9b96",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "open",
         "rules": [
             {
@@ -19717,8 +19681,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 430,
-        "y": 980,
+        "x": 550,
+        "y": 860,
         "wires": [
             [
                 "03b6594c3963f359",
@@ -19730,6 +19694,7 @@
         "id": "03b6594c3963f359",
         "type": "debug",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -19739,14 +19704,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 650,
-        "y": 840,
+        "x": 770,
+        "y": 720,
         "wires": []
     },
     {
         "id": "b94749abab964c31",
         "type": "ui_button",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "",
         "group": "117cda2a.43e596",
         "order": 8,
@@ -19762,8 +19728,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
-        "y": 940,
+        "x": 750,
+        "y": 820,
         "wires": [
             [
                 "2492d259430ab9ad",
@@ -19773,32 +19739,10 @@
         ]
     },
     {
-        "id": "b41ae3385750d0cb",
-        "type": "delay",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 640,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "2492d259430ab9ad",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "",
         "property": "kisteexit",
         "propertyType": "global",
@@ -19815,8 +19759,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 770,
-        "y": 940,
+        "x": 890,
+        "y": 760,
         "wires": [
             [
                 "7fa55fa9b2a7f299"
@@ -19830,6 +19774,7 @@
         "id": "6671e40c616cd8e1",
         "type": "inject",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "Background",
         "props": [
             {
@@ -19843,8 +19788,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 250,
-        "y": 880,
+        "x": 370,
+        "y": 760,
         "wires": [
             [
                 "ce278ad12ae831a2"
@@ -19855,6 +19800,7 @@
         "id": "ce278ad12ae831a2",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
         "name": "",
         "rules": [
             {
@@ -19870,11 +19816,544 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
-        "y": 880,
+        "x": 570,
+        "y": 760,
         "wires": [
             [
                 "b94749abab964c31"
+            ]
+        ]
+    },
+    {
+        "id": "d68d10f01d12c569",
+        "type": "ui_gauge",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "group": "964197a0.4ac628",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Vægt i kiste",
+        "label": "vægt i kiste",
+        "format": "",
+        "min": "0",
+        "max": "200",
+        "colors": [
+            "#b30012",
+            "#e6e600",
+            "#05f50d"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 2070,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "a9e7f29c540bbb0f",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1890,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "e2444edfcb7e4ec1",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Kiste aflæs vægt",
+        "topic": "kiste",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 1180,
+        "y": 1060,
+        "wires": [
+            [
+                "60ff46c64dec3f9e",
+                "af2315eae2e69ce7"
+            ]
+        ]
+    },
+    {
+        "id": "2981cd91ebb78b34",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "<> 100",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "5",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "5",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1980,
+        "y": 1080,
+        "wires": [
+            [
+                "42ad3ae464b20556"
+            ],
+            [
+                "7f3ef9f36fb63a54"
+            ]
+        ]
+    },
+    {
+        "id": "af2315eae2e69ce7",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Make number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1400,
+        "y": 1060,
+        "wires": [
+            [
+                "84b4c76e67b531fe"
+            ]
+        ]
+    },
+    {
+        "id": "84b4c76e67b531fe",
+        "type": "calculator",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "-1",
+        "round": true,
+        "decimals": "1",
+        "x": 1580,
+        "y": 1060,
+        "wires": [
+            [
+                "38114ecb84933283"
+            ]
+        ]
+    },
+    {
+        "id": "38114ecb84933283",
+        "type": "calculator",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "ceil",
+        "constant": "1",
+        "round": false,
+        "decimals": 0,
+        "x": 1760,
+        "y": 1060,
+        "wires": [
+            [
+                "d68d10f01d12c569",
+                "a9e7f29c540bbb0f",
+                "2981cd91ebb78b34"
+            ]
+        ]
+    },
+    {
+        "id": "4a7ddef35f8f06a1",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Lås kiste",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 1460,
+        "wires": [
+            [
+                "3450b6446e3d8883",
+                "0cbe5843b8d6db7b"
+            ]
+        ]
+    },
+    {
+        "id": "3450b6446e3d8883",
+        "type": "mqtt out",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Kiste Lås",
+        "topic": "boks6/output/D1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1240,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "bbac22a6ca5ebca6",
+        "type": "comment",
+        "z": "e21f6458e5ab1eb6",
+        "name": "flow.kiste - locked/open",
+        "info": "",
+        "x": 1200,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "3efd73c3e30fc79a",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "LOW",
+        "payloadType": "str",
+        "x": 1150,
+        "y": 1280,
+        "wires": [
+            [
+                "3450b6446e3d8883"
+            ]
+        ]
+    },
+    {
+        "id": "8a741db448415167",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "HIGH",
+        "payloadType": "str",
+        "x": 1110,
+        "y": 1520,
+        "wires": [
+            [
+                "3450b6446e3d8883"
+            ]
+        ]
+    },
+    {
+        "id": "5c487c37f6d317a1",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "open kiste",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 1440,
+        "wires": [
+            [
+                "3450b6446e3d8883",
+                "f4c438b88d9d5a88"
+            ]
+        ]
+    },
+    {
+        "id": "834e5579ba26084b",
+        "type": "ui_button",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "group": "964197a0.4ac628",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.kistetext}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 2430,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42ad3ae464b20556",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Kiste tom",
+        "rules": [
+            {
+                "t": "set",
+                "p": "kistetext",
+                "pt": "msg",
+                "to": "Kiste tom",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kistetom",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2160,
+        "y": 1040,
+        "wires": [
+            [
+                "834e5579ba26084b",
+                "5ddb1957bb0f256e"
+            ]
+        ]
+    },
+    {
+        "id": "7f3ef9f36fb63a54",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "kiste fuld",
+        "rules": [
+            {
+                "t": "set",
+                "p": "kistetext",
+                "pt": "msg",
+                "to": "Person i kiste",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "lime",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kistetom",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2180,
+        "y": 1120,
+        "wires": [
+            [
+                "834e5579ba26084b"
+            ]
+        ]
+    },
+    {
+        "id": "f4c438b88d9d5a88",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2170,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "84ab184bb818391a",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "!=exit open",
+        "property": "kisteexit",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "open",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2550,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ddb1957bb0f256e",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Gameon true",
+        "property": "gameon",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2350,
+        "y": 1040,
+        "wires": [
+            [
+                "84ab184bb818391a"
+            ]
+        ]
+    },
+    {
+        "id": "0cbe5843b8d6db7b",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2290,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "60ff46c64dec3f9e",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "c4afc81e9e2975dd",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "kistestate open",
+        "property": "kistestate",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "open",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 970,
+        "y": 1380,
+        "wires": [
+            [
+                "5b7cfa19a9a51b86"
+            ],
+            [
+                "9acbf97818726d0c"
             ]
         ]
     },
@@ -24954,7 +25433,8 @@
             "06e11731d7852aae",
             "16145597f7d90222",
             "57a8de12e1ec4afc",
-            "c284ad56d1a3ccde"
+            "c284ad56d1a3ccde",
+            "956192102726fdf9"
         ],
         "x": 555,
         "y": 480,
@@ -26478,7 +26958,8 @@
             "d5cf4e95d10ff5a7",
             "dcda2e3ca6ad94be",
             "d0db6f812a7972aa",
-            "a24e5a46212a3c19"
+            "a24e5a46212a3c19",
+            "08bc181c0a4ac78c"
         ],
         "x": 275,
         "y": 300,
@@ -26956,7 +27437,8 @@
         "name": "Game on delay open exit",
         "links": [
             "c90763c7.286aa",
-            "052f957735d63bd1"
+            "052f957735d63bd1",
+            "5e77ec5fb526d8f9"
         ],
         "x": 1415,
         "y": 660,
@@ -27052,7 +27534,8 @@
             "dcacf67a632c4d47",
             "786cf1f7b5add738",
             "a8d8b969438e4a6d",
-            "99f85c035d3ee3ad"
+            "99f85c035d3ee3ad",
+            "349117b14f4fe452"
         ],
         "x": 195,
         "y": 240,
@@ -27398,7 +27881,8 @@
             "2fdad2b31e791882",
             "cbaf72d4d377c087",
             "ff3551470cb85fa7",
-            "a1b8dc7d6346f2e2"
+            "a1b8dc7d6346f2e2",
+            "956192102726fdf9"
         ],
         "x": 1095,
         "y": 860,
@@ -27984,7 +28468,8 @@
         "name": "Kiste button",
         "mode": "link",
         "links": [
-            "8c898ed3c39f26a9"
+            "8c898ed3c39f26a9",
+            "956192102726fdf9"
         ],
         "x": 995,
         "y": 600,
@@ -28024,7 +28509,8 @@
         "name": "Kiste button with delay",
         "mode": "link",
         "links": [
-            "4f2d4389.1a41ac"
+            "4f2d4389.1a41ac",
+            "3cdaad147b79de12"
         ],
         "x": 1055,
         "y": 560,
@@ -35829,7 +36315,8 @@
             "16145597f7d90222",
             "e26b7cac8b2be6d4",
             "57a8de12e1ec4afc",
-            "a07b8f5ea811f79d"
+            "a07b8f5ea811f79d",
+            "3cdaad147b79de12"
         ],
         "x": 735,
         "y": 140,
@@ -35855,7 +36342,8 @@
             "f61e55dcbcbe2658",
             "59bcbc0eb287671d",
             "b00a5f4f524cc552",
-            "ca345021606d2f27"
+            "ca345021606d2f27",
+            "956192102726fdf9"
         ],
         "x": 615,
         "y": 700,
@@ -36767,7 +37255,8 @@
             "f7e75af2d62ce436",
             "1c0361f2da8af167",
             "1063949fccf05afa",
-            "09533f94b03c3a5b"
+            "09533f94b03c3a5b",
+            "bb1dba3f3fa35072"
         ],
         "x": 635,
         "y": 4740,
