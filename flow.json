@@ -9180,7 +9180,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "kisteexit",
                 "pt": "global",
                 "to": "closed",
                 "tot": "str"
