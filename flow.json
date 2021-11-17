@@ -6455,7 +6455,7 @@
                 "t": "set",
                 "p": "tjektext",
                 "pt": "msg",
-                "to": "NOT ready",
+                "to": "NOT readydf",
                 "tot": "str"
             }
         ],
