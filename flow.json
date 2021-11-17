@@ -6685,7 +6685,7 @@
                 "p": "bysterplaceret",
                 "pt": "global",
                 "to": "false",
-                "tot": "bool"
+                "tot": "str"
             }
         ],
         "action": "",
@@ -7792,7 +7792,7 @@
                 "p": "gavle_vaek",
                 "pt": "global",
                 "to": "false",
-                "tot": "bool"
+                "tot": "str"
             }
         ],
         "action": "",
