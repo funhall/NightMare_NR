@@ -20654,7 +20654,7 @@
         "type": "time-based-dimmer",
         "z": "2bdc58f37cbddb93",
         "name": "",
-        "interval": "300",
+        "interval": "30",
         "step": "10",
         "minValue": "20",
         "maxValue": "1024",
