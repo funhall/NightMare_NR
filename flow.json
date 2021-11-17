@@ -1441,30 +1441,6 @@
         "y": 519
     },
     {
-        "id": "c4e578e11dcc76bd",
-        "type": "group",
-        "z": "33e76285.1cd03e",
-        "name": "Start spil",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1ada877b.576d69",
-            "58cb52c53dde8dc9",
-            "619dfcb3c2447f34",
-            "250c3baf03e0708e",
-            "838bc03649f7c918",
-            "f6da3ededc910c6b",
-            "f51d408db856e1dc",
-            "011d71bd028f4985"
-        ],
-        "env": [],
-        "x": 34,
-        "y": 479,
-        "w": 1152,
-        "h": 202
-    },
-    {
         "id": "0a74e5498dffe49a",
         "type": "group",
         "z": "c39524c2016c8df2",
@@ -5394,7 +5370,6 @@
         "id": "1ada877b.576d69",
         "type": "ui_gauge",
         "z": "33e76285.1cd03e",
-        "g": "c4e578e11dcc76bd",
         "name": "cust_time",
         "group": "1d01efe067ef138e",
         "order": 1,
@@ -6276,7 +6251,6 @@
         "id": "58cb52c53dde8dc9",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "g": "c4e578e11dcc76bd",
         "name": "Start spil",
         "group": "117cda2a.43e596",
         "order": 15,
@@ -6335,7 +6309,6 @@
         "id": "619dfcb3c2447f34",
         "type": "dsm",
         "z": "33e76285.1cd03e",
-        "g": "c4e578e11dcc76bd",
         "name": "",
         "sm_config": "{\n    \"currentState\": \"stopped\",\n    \"states\": {\n        \"stopped\": {\n            \"on\": \"started\"\n        },\n        \"started\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        },\n        \"counting\": {\n            \"inc\": \"counting\",\n            \"off\": \"stopped\"\n        }\n    },\n    \"data\": {\n        \"prev_time\": null,\n        \"time\": 0,\n        \"seconds\": 0,\n        \"interval\": 1,\n        \"interval_output\": true,\n        \"hms_format\": true\n    },\n    \"methods\": {\n        \"init\": [\n            \"sm.calc_time = function() {\",\n            \"   var now = Date.now();\",\n            \"   sm.data.time += now - sm.data.prev_time;\",\n            \"   sm.data.prev_time = now;\",\n            \"   sm.data.seconds = Math.round(sm.data.time / 1000);\",\n            \"};\",\n            \"sm.sec2hhmmss = function(sec) {\",\n                \"var t = {};\",\n                \"t.h = pad(Math.floor(sec / 3600));\",\n                \"sec %= 3600;\",\n                \"t.m = pad(Math.floor(sec / 60));\",\n                \"t.s = pad(sec % 60);\",\n                \"return t.h+':'+t.m+':'+t.s;\",\n            \"};\"\n        ],\n        \"on\": [\n            \"if (sm.currentState === 'started') {\",\n            \"   sm.data.prev_time = Date.now();\",\n            \"   resume('inc', msg);\",\n            \"}\",\n            \"output = false;\"\n        ],\n        \"inc\": [\n            \"timeout.interval = setTimeout(function() {\",\n            \"   sm.calc_time();\",\n            \"   msg.data = sm.data;\",\n            \"   if (sm.data.interval_output) {\",\n            \"       msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\",\n            \"       node.send(msg);\",\n            \"   }\",\n            \"   resume('inc', msg);\",\n            \"}, sm.data.interval*1000);\",\n            \"output = false;\"\n        ],\n        \"off\": [\n            \"clearTimeout(timeout.interval);\",\n            \"sm.calc_time();\",\n            \"msg.timer = sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds;\"\n        ],\n        \"reset\": [\n            \"sm.data.time = 0;\",\n            \"sm.data.seconds = 0;\"\n        ],\n        \"status\": {\n            \"fill\": {\n                \"get\": \"sm.currentState === 'counting' ? 'green' : 'grey';\"\n            },\n            \"shape\": \"dot\",\n            \"text\": {\n                \"get\": \"'time ' + (sm.data.hms_format ? sm.sec2hhmmss(sm.data.seconds): sm.data.seconds);\"\n            }\n        }\n    }\n}\n",
         "x": 550,
@@ -6350,7 +6323,6 @@
         "id": "250c3baf03e0708e",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "g": "c4e578e11dcc76bd",
         "name": "",
         "rules": [
             {
@@ -6389,7 +6361,6 @@
         "id": "838bc03649f7c918",
         "type": "ui_text",
         "z": "33e76285.1cd03e",
-        "g": "c4e578e11dcc76bd",
         "group": "5642b2b1.f4032c",
         "order": 1,
         "width": 0,
@@ -7165,7 +7136,6 @@
         "id": "f51d408db856e1dc",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "g": "c4e578e11dcc76bd",
         "name": "Nødstop",
         "group": "5241c487.80287c",
         "order": 1,
@@ -7185,7 +7155,7 @@
         "y": 620,
         "wires": [
             [
-                "5801dd6cddafa481"
+                "c0ba6a06d7b7da0d"
             ]
         ]
     },
@@ -9534,13 +9504,19 @@
         "id": "f6da3ededc910c6b",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "g": "c4e578e11dcc76bd",
-        "name": "",
+        "name": "game on",
         "rules": [
             {
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "game",
+                "pt": "global",
                 "to": "on",
                 "tot": "str"
             }
@@ -9550,7 +9526,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
+        "x": 310,
         "y": 560,
         "wires": [
             [
@@ -9583,7 +9559,6 @@
         "id": "011d71bd028f4985",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "g": "c4e578e11dcc76bd",
         "name": "Gametime off / nodstop true",
         "rules": [
             {
@@ -9602,7 +9577,7 @@
             },
             {
                 "t": "set",
-                "p": "gametime",
+                "p": "game",
                 "pt": "global",
                 "to": "off",
                 "tot": "str"
@@ -9613,7 +9588,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 580,
+        "x": 760,
         "y": 640,
         "wires": [
             [
@@ -9641,7 +9616,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 350,
+        "x": 530,
         "y": 660,
         "wires": [
             [
@@ -9656,7 +9631,7 @@
         "id": "18fca4cd232def7d",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Gametime on / nodstop false",
+        "name": "Game on / nodstop false",
         "rules": [
             {
                 "t": "set",
@@ -9667,7 +9642,7 @@
             },
             {
                 "t": "set",
-                "p": "gametime",
+                "p": "game",
                 "pt": "global",
                 "to": "on",
                 "tot": "str"
@@ -9685,11 +9660,42 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 580,
+        "x": 750,
         "y": 680,
         "wires": [
             [
                 "619dfcb3c2447f34"
+            ]
+        ]
+    },
+    {
+        "id": "c0ba6a06d7b7da0d",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 620,
+        "wires": [
+            [
+                "011d71bd028f4985"
+            ],
+            [
+                "18fca4cd232def7d"
             ]
         ]
     },
