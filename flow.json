@@ -9847,7 +9847,7 @@
             },
             {
                 "t": "set",
-                "p": "payload",
+                "p": "gametime",
                 "pt": "msg",
                 "to": "00:00",
                 "tot": "str"
