@@ -9346,8 +9346,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 370,
-        "y": 760,
+        "x": 310,
+        "y": 700,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
@@ -9389,10 +9389,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
         "x": 100,
-        "y": 780,
+        "y": 700,
         "wires": [
             [
                 "594a5878cdc1c5c9"
@@ -10150,9 +10149,63 @@
         "g": "f4e5ec1eb5ea4c59",
         "name": "Game over knap må ikke bruges i app spillet skal afsluttes irl",
         "info": "Gdfgdfd",
-        "x": 550,
+        "x": 400,
         "y": 400,
         "wires": []
+    },
+    {
+        "id": "83a775612f7422fe",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 760,
+        "wires": [
+            [
+                "c0ba6a06d7b7da0d"
+            ]
+        ]
+    },
+    {
+        "id": "462ca0afe5906366",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "game",
+                "pt": "global",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 760,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
