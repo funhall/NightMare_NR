@@ -20322,8 +20322,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1500,
-        "y": 1020,
+        "x": 1450,
+        "y": 980,
         "wires": []
     },
     {
@@ -20374,12 +20374,38 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 610,
-        "y": 1260,
+        "x": 410,
+        "y": 1240,
         "wires": [
             [
+                "aa1d5e0da6c5b1f3",
                 "f9b41ed2cbf8a219"
             ]
+        ]
+    },
+    {
+        "id": "aa1d5e0da6c5b1f3",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "kistetate open",
+        "rules": [
+            {
+                "t": "set",
+                "p": "kistestate",
+                "pt": "global",
+                "to": "open",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1240,
+        "wires": [
+            []
         ]
     },
     {
