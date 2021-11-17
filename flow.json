@@ -6652,7 +6652,8 @@
         "wires": [
             [
                 "9a0e783e19d4078f",
-                "1c5ccd78c67f12cb"
+                "1c5ccd78c67f12cb",
+                "c7004bbf41bb366e"
             ]
         ]
     },
@@ -8915,7 +8916,8 @@
         "z": "33e76285.1cd03e",
         "name": "Klargørring",
         "links": [
-            "3f275e5d73da77dc"
+            "3f275e5d73da77dc",
+            "c7004bbf41bb366e"
         ],
         "x": 75,
         "y": 160,
@@ -9144,6 +9146,19 @@
                 "1507c4ef88339a79"
             ]
         ]
+    },
+    {
+        "id": "c7004bbf41bb366e",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "a422065c72ada863"
+        ],
+        "x": 2115,
+        "y": 480,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
