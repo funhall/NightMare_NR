@@ -8105,8 +8105,7 @@
         "name": "Alle byster placeret",
         "mode": "link",
         "links": [
-            "8863226fbeaabb84",
-            "26a099f9dcdfb28d"
+            "fb2907834c58bfd3"
         ],
         "x": 1345,
         "y": 2340,
@@ -18471,7 +18470,7 @@
         "props": [
             {
                 "p": "reset",
-                "v": "1",
+                "v": "",
                 "vt": "str"
             },
             {
@@ -18541,6 +18540,72 @@
             [
                 "c685a31d5d9f5359"
             ]
+        ]
+    },
+    {
+        "id": "fb2907834c58bfd3",
+        "type": "link in",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "links": [
+            "d4d2aeec1061c558"
+        ],
+        "x": 195,
+        "y": 1540,
+        "wires": [
+            [
+                "a5c9c59635375fc2"
+            ]
+        ]
+    },
+    {
+        "id": "a5c9c59635375fc2",
+        "type": "delay",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 440,
+        "y": 1400,
+        "wires": [
+            [
+                "ccf2400eb3979168"
+            ]
+        ]
+    },
+    {
+        "id": "ccf2400eb3979168",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 1400,
+        "wires": [
+            []
         ]
     },
     {
