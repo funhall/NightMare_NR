@@ -3646,7 +3646,7 @@
         "payload": "Stop",
         "payloadType": "str",
         "x": 100,
-        "y": 580,
+        "y": 600,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -7149,8 +7149,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 120,
-        "y": 620,
+        "x": 100,
+        "y": 640,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
