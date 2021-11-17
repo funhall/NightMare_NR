@@ -6455,7 +6455,7 @@
                 "t": "set",
                 "p": "tjektext",
                 "pt": "msg",
-                "to": "NOT readydf",
+                "to": "NOT ready",
                 "tot": "str"
             }
         ],
@@ -9203,7 +9203,7 @@
                 "t": "set",
                 "p": "doorroom4",
                 "pt": "global",
-                "to": "close",
+                "to": "closed",
                 "tot": "str"
             },
             {
