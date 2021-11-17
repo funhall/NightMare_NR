@@ -135,6 +135,14 @@
         "env": []
     },
     {
+        "id": "e21f6458e5ab1eb6",
+        "type": "tab",
+        "label": "Aflæs magnet status",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "195c9babcf1455a4",
         "type": "subflow",
         "name": "Hjælp knap lys",
@@ -2113,6 +2121,29 @@
         "y": 59,
         "w": 1022,
         "h": 342
+    },
+    {
+        "id": "08b42802ab3938de",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Dør til rum 2 status",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "12696b2c777c71a4",
+            "874af2dffc28cbec",
+            "ebdb8db0400aa58a",
+            "828bc5fa6ea76e9e",
+            "5428cdecb2cdf816",
+            "75ff42675f6ff98f",
+            "8d57920ba7921f6d",
+            "04cb49f51b99acab"
+        ],
+        "x": 234,
+        "y": 99,
+        "w": 732,
+        "h": 222
     },
     {
         "id": "82fd466d.f6c968",
@@ -6421,7 +6452,7 @@
         "type": "change",
         "z": "33e76285.1cd03e",
         "g": "5e203e809c0bd87a",
-        "name": "",
+        "name": "Tjeklist",
         "rules": [
             {
                 "t": "set",
@@ -6436,7 +6467,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2420,
+        "x": 2390,
         "y": 860,
         "wires": [
             [
@@ -24203,7 +24234,9 @@
             "dcda2e3ca6ad94be",
             "4f7d14c6bece702a",
             "211cc1dfc8ebe1cb",
-            "d0db6f812a7972aa"
+            "d0db6f812a7972aa",
+            "e0ec28a1df054d10",
+            "22869551f0fbf58a"
         ],
         "x": 1375,
         "y": 1460,
@@ -24652,7 +24685,8 @@
         "links": [
             "dcacf67a632c4d47",
             "fd22658b.683318",
-            "4f7d14c6bece702a"
+            "4f7d14c6bece702a",
+            "e0ec28a1df054d10"
         ],
         "x": 1285,
         "y": 1240,
@@ -26726,7 +26760,8 @@
         "z": "e1fe16e7.a28238",
         "name": "Eight number red HIGH",
         "links": [
-            "f207791f5b8aac32"
+            "f207791f5b8aac32",
+            "9aee907597d3bdf1"
         ],
         "x": 815,
         "y": 140,
@@ -35213,7 +35248,8 @@
             "6b11c885cb48fb91",
             "71bc87a30de98f84",
             "6e7644daea9a5665",
-            "f7e75af2d62ce436"
+            "f7e75af2d62ce436",
+            "1c0361f2da8af167"
         ],
         "x": 635,
         "y": 4740,
@@ -43294,5 +43330,227 @@
                 "d121bc585dad9943"
             ]
         ]
+    },
+    {
+        "id": "12696b2c777c71a4",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "Dør til rum 2 status",
+        "topic": "boks6/input/D7",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "874af2dffc28cbec",
+                "ebdb8db0400aa58a"
+            ]
+        ]
+    },
+    {
+        "id": "874af2dffc28cbec",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "ebdb8db0400aa58a",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked3High",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Besked3Low",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 200,
+        "wires": [
+            [
+                "828bc5fa6ea76e9e"
+            ],
+            [
+                "5428cdecb2cdf816"
+            ]
+        ]
+    },
+    {
+        "id": "828bc5fa6ea76e9e",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "Rum 2 lukket",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Lukket",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "doorroom2",
+                "pt": "global",
+                "to": "closed",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "rum2background",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "START",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 160,
+        "wires": [
+            [
+                "04cb49f51b99acab",
+                "8d57920ba7921f6d"
+            ]
+        ]
+    },
+    {
+        "id": "5428cdecb2cdf816",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "Rum 2 åben",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Åben",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "doorroom2",
+                "pt": "global",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "rum2background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "04cb49f51b99acab",
+                "8d57920ba7921f6d"
+            ]
+        ]
+    },
+    {
+        "id": "75ff42675f6ff98f",
+        "type": "comment",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "Var:global.rum2 - open/close",
+        "info": "",
+        "x": 380,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8d57920ba7921f6d",
+        "type": "ui_button",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "",
+        "group": "117cda2a.43e596",
+        "order": 9,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "Rum 2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.rum2background}}",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 890,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04cb49f51b99acab",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 280,
+        "wires": []
     }
 ]
