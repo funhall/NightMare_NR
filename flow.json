@@ -1456,7 +1456,6 @@
             "838bc03649f7c918",
             "f6da3ededc910c6b",
             "f51d408db856e1dc",
-            "7efea3c0901ecdbc",
             "011d71bd028f4985"
         ],
         "env": [],
@@ -7212,7 +7211,7 @@
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "payload": "",
+        "payload": "Besked1High",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
@@ -7220,7 +7219,8 @@
         "y": 620,
         "wires": [
             [
-                "2ee7be2f8091805a"
+                "2ee7be2f8091805a",
+                "5801dd6cddafa481"
             ]
         ]
     },
@@ -9610,28 +9610,9 @@
         "y": 660,
         "wires": [
             [
-                "7efea3c0901ecdbc",
                 "5801dd6cddafa481"
             ]
         ]
-    },
-    {
-        "id": "7efea3c0901ecdbc",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "g": "c4e578e11dcc76bd",
-        "name": "Nodstop",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
-        "y": 620,
-        "wires": []
     },
     {
         "id": "011d71bd028f4985",
