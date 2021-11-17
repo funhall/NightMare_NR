@@ -536,27 +536,6 @@
         "h": null
     },
     {
-        "id": "9531364d722b6af5",
-        "type": "group",
-        "z": "33e76285.1cd03e",
-        "name": "Sæt gavle klar til spil",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "85d6f0338a028c44",
-            "d7184ceece2b62fb",
-            "6637d5d0ede2a015",
-            "486e42751f42e446",
-            "f0449bc147306c77",
-            "3565a0e4bd0922ee"
-        ],
-        "x": 1044,
-        "y": 259,
-        "w": 822,
-        "h": 122
-    },
-    {
         "id": "b3771d986777a428",
         "type": "group",
         "z": "5b3651b.92335b",
@@ -836,31 +815,6 @@
         ],
         "x": 534,
         "y": 19
-    },
-    {
-        "id": "3897bed133705e81",
-        "type": "group",
-        "z": "33e76285.1cd03e",
-        "name": "Tjekker om alle gavle er fjernet",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "26a7b9ea531781b4",
-            "cfc10be3bd767df0",
-            "1b90c70b6cac61d5",
-            "44901806d4589c6a",
-            "f9296daf73054592",
-            "f11944f6972a495d",
-            "4adbd161b3e6510c",
-            "522d9229e5e404dc",
-            "38c9049b677574d8",
-            "9aa857f602cb80c9"
-        ],
-        "x": 1014,
-        "y": 59,
-        "w": 1162,
-        "h": 162
     },
     {
         "id": "c49070f4e172b4d7",
@@ -2096,6 +2050,30 @@
         "y": 2759,
         "w": 732,
         "h": 322
+    },
+    {
+        "id": "3897bed133705e81",
+        "type": "group",
+        "z": "33e76285.1cd03e",
+        "name": "Tjekker om alle gavle er fjernet",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "26a7b9ea531781b4",
+            "cfc10be3bd767df0",
+            "1b90c70b6cac61d5",
+            "44901806d4589c6a",
+            "f9296daf73054592",
+            "f11944f6972a495d",
+            "4adbd161b3e6510c",
+            "38c9049b677574d8",
+            "9aa857f602cb80c9"
+        ],
+        "x": 1054,
+        "y": 59,
+        "w": 1162,
+        "h": 222
     },
     {
         "id": "82fd466d.f6c968",
@@ -6259,120 +6237,6 @@
         "wires": []
     },
     {
-        "id": "85d6f0338a028c44",
-        "type": "ui_button",
-        "z": "33e76285.1cd03e",
-        "g": "9531364d722b6af5",
-        "name": "Gavle",
-        "group": "117cda2a.43e596",
-        "order": 7,
-        "width": 1,
-        "height": 1,
-        "passthru": false,
-        "label": "Gavle",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.gavlebackground}}",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1590,
-        "y": 320,
-        "wires": [
-            [
-                "f0449bc147306c77"
-            ]
-        ]
-    },
-    {
-        "id": "d7184ceece2b62fb",
-        "type": "switch",
-        "z": "33e76285.1cd03e",
-        "g": "9531364d722b6af5",
-        "name": "",
-        "property": "gavle_vaek",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1190,
-        "y": 320,
-        "wires": [
-            [
-                "6637d5d0ede2a015"
-            ],
-            [
-                "486e42751f42e446"
-            ]
-        ]
-    },
-    {
-        "id": "6637d5d0ede2a015",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "9531364d722b6af5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "gavlebackground",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1390,
-        "y": 300,
-        "wires": [
-            [
-                "85d6f0338a028c44"
-            ]
-        ]
-    },
-    {
-        "id": "486e42751f42e446",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "9531364d722b6af5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "gavlebackground",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1390,
-        "y": 340,
-        "wires": [
-            [
-                "85d6f0338a028c44"
-            ]
-        ]
-    },
-    {
         "id": "cd89f1181b4ef790",
         "type": "function",
         "z": "33e76285.1cd03e",
@@ -7809,34 +7673,6 @@
         ]
     },
     {
-        "id": "f0449bc147306c77",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "9531364d722b6af5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Gavle fjernet",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1760,
-        "y": 320,
-        "wires": [
-            [
-                "f9296daf73054592"
-            ]
-        ]
-    },
-    {
         "id": "26a7b9ea531781b4",
         "type": "function",
         "z": "33e76285.1cd03e",
@@ -7848,8 +7684,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1520,
-        "y": 180,
+        "x": 1540,
+        "y": 240,
         "wires": [
             [
                 "f9296daf73054592",
@@ -7872,7 +7708,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1590,
+        "x": 1630,
         "y": 100,
         "wires": []
     },
@@ -7910,8 +7746,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1900,
-        "y": 100,
+        "x": 1940,
+        "y": 140,
         "wires": [
             [
                 "9aa857f602cb80c9",
@@ -7946,8 +7782,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1900,
-        "y": 160,
+        "x": 1940,
+        "y": 180,
         "wires": [
             [
                 "9aa857f602cb80c9"
@@ -7995,7 +7831,7 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 1055,
+        "x": 1095,
         "y": 180,
         "wires": [
             [
@@ -8021,39 +7857,12 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 1320,
-        "y": 180,
+        "x": 1340,
+        "y": 240,
         "wires": [
             [
-                "26a7b9ea531781b4",
-                "522d9229e5e404dc"
+                "26a7b9ea531781b4"
             ]
-        ]
-    },
-    {
-        "id": "522d9229e5e404dc",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "3897bed133705e81",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Cartmell",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1360,
-        "y": 100,
-        "wires": [
-            []
         ]
     },
     {
@@ -8070,8 +7879,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1730,
-        "y": 180,
+        "x": 1750,
+        "y": 240,
         "wires": []
     },
     {
@@ -8084,7 +7893,7 @@
         "links": [
             "3565a0e4bd0922ee"
         ],
-        "x": 2135,
+        "x": 2175,
         "y": 140,
         "wires": []
     },
@@ -8839,23 +8648,6 @@
         "wires": []
     },
     {
-        "id": "3565a0e4bd0922ee",
-        "type": "link in",
-        "z": "33e76285.1cd03e",
-        "g": "9531364d722b6af5",
-        "name": "",
-        "links": [
-            "9aa857f602cb80c9"
-        ],
-        "x": 1085,
-        "y": 320,
-        "wires": [
-            [
-                "85d6f0338a028c44"
-            ]
-        ]
-    },
-    {
         "id": "8a4ff72efe495124",
         "type": "complete",
         "z": "33e76285.1cd03e",
@@ -8864,6 +8656,31 @@
         "uncaught": false,
         "x": 170,
         "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85d6f0338a028c44",
+        "type": "ui_button",
+        "z": "33e76285.1cd03e",
+        "name": "Gavle",
+        "group": "117cda2a.43e596",
+        "order": 7,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "Gavle",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.gavlebackground}}",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1230,
+        "y": 400,
         "wires": [
             []
         ]
