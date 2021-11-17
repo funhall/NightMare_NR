@@ -7127,10 +7127,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1550,
+        "x": 1530,
         "y": 360,
         "wires": []
     },
@@ -8622,7 +8623,8 @@
         "y": 80,
         "wires": [
             [
-                "3f275e5d73da77dc"
+                "3f275e5d73da77dc",
+                "518a047eb2a401eb"
             ]
         ]
     },
@@ -8876,7 +8878,8 @@
         "y": 160,
         "wires": [
             [
-                "3f275e5d73da77dc"
+                "3f275e5d73da77dc",
+                "518a047eb2a401eb"
             ]
         ]
     },
