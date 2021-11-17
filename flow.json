@@ -8960,6 +8960,29 @@
         ]
     },
     {
+        "id": "04118f148f2abeab",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Gameover",
+        "payloadType": "str",
+        "x": 70,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
