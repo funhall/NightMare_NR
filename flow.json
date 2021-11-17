@@ -789,7 +789,6 @@
             "220c13e27089f538",
             "93bb9095fd630948",
             "98bbc5ca0fe2a538",
-            "f0179ec8779c60a9",
             "22c056bf0e89330f",
             "cb7568d5b1a32974",
             "4f17f4badd740b98",
@@ -797,11 +796,12 @@
             "5b7ceed71caff75e",
             "d4d2aeec1061c558",
             "fc9b6aa8fa506d52",
-            "0d5cbafad6f33ae1"
+            "0d5cbafad6f33ae1",
+            "6eb8430c101c731d"
         ],
         "x": 254,
         "y": 2039,
-        "w": 1602,
+        "w": 1532,
         "h": 222
     },
     {
@@ -2382,18 +2382,18 @@
             "991c27dac5556311",
             "1cf88a1c4b795355",
             "70bda8c7ff6717aa",
-            "60c1ca75a8487e9f",
             "3764116c4443cc0c",
             "c756cad252b8ccf2",
-            "ff3551470cb85fa7",
             "89b50d7e86ac3077",
             "425572fc7a00120a",
             "76e7010791f5083b",
             "80a868808fc1a091",
-            "82645358f3b60fb0"
+            "82645358f3b60fb0",
+            "c8aa8feef584e35c",
+            "5959dd7045e731d3"
         ],
         "env": [],
-        "x": 1214,
+        "x": 1274,
         "y": 139,
         "w": 1932,
         "h": 1062
@@ -2413,7 +2413,8 @@
             "32a34eaa5f51ab27",
             "7e0259b00fba94b9",
             "9fb3b6df1e47e868",
-            "777cfe81a9a8602c"
+            "777cfe81a9a8602c",
+            "fb18325475db6d6f"
         ],
         "env": [],
         "x": 114,
@@ -2445,9 +2446,7 @@
             "ea9dd1feba1f638a",
             "a1aa32c4949c4fe3",
             "b9b0ee2e1cb21624",
-            "20d689c8b00d2164",
-            "c4b15587bd3a3ffa",
-            "c784d99a57f83464"
+            "20d689c8b00d2164"
         ],
         "x": 54,
         "y": 99,
@@ -7074,6 +7073,13 @@
                 "pt": "global",
                 "to": "true",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -7184,19 +7190,6 @@
         ]
     },
     {
-        "id": "f0179ec8779c60a9",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "g": "8a907ee3e43a8bdb",
-        "name": "Byster placeret efter pause",
-        "links": [
-            "dee305791b87212d"
-        ],
-        "x": 1815,
-        "y": 2140,
-        "wires": []
-    },
-    {
         "id": "22c056bf0e89330f",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -7260,11 +7253,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1540,
+        "x": 1480,
         "y": 2140,
         "wires": [
             [
-                "f0179ec8779c60a9"
+                "6eb8430c101c731d"
             ]
         ]
     },
@@ -10530,7 +10523,8 @@
         "name": "Start spil knap",
         "mode": "link",
         "links": [
-            "2561ecfaae4095f8"
+            "2561ecfaae4095f8",
+            "5959dd7045e731d3"
         ],
         "x": 565,
         "y": 660,
@@ -10949,7 +10943,8 @@
         "wires": [
             [
                 "45c8983ea6aa7b7c",
-                "625b6ff3661303bf"
+                "651f5cfd402660ec",
+                "f8aa31e41680bc14"
             ]
         ]
     },
@@ -11246,19 +11241,6 @@
         ]
     },
     {
-        "id": "625b6ff3661303bf",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "name": "Kontakt i skab",
-        "links": [
-            "349ffd34e41e73ba",
-            "9614784a6e2a9915"
-        ],
-        "x": 725,
-        "y": 3180,
-        "wires": []
-    },
-    {
         "id": "b5d647f750761d06",
         "type": "debug",
         "z": "33e76285.1cd03e",
@@ -11345,6 +11327,167 @@
         "wires": [
             [
                 "8138ecba75709a9a"
+            ]
+        ]
+    },
+    {
+        "id": "6eb8430c101c731d",
+        "type": "mqtt out",
+        "z": "33e76285.1cd03e",
+        "g": "8a907ee3e43a8bdb",
+        "name": "Udgangs dør",
+        "topic": "boks5/output/D2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1690,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "cead8cfeb795a590",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 3200,
+        "wires": [
+            [
+                "e023e657c841ea12"
+            ]
+        ]
+    },
+    {
+        "id": "651f5cfd402660ec",
+        "type": "trigger",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "op1": "HIGH",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-2000",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 900,
+        "y": 3200,
+        "wires": [
+            [
+                "7bd299f34630144b"
+            ]
+        ]
+    },
+    {
+        "id": "7bd299f34630144b",
+        "type": "delay",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1130,
+        "y": 3200,
+        "wires": [
+            [
+                "cead8cfeb795a590"
+            ]
+        ]
+    },
+    {
+        "id": "e023e657c841ea12",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "Kontakt i skab blink rum4",
+        "mode": "link",
+        "links": [
+            "fb18325475db6d6f"
+        ],
+        "x": 1455,
+        "y": 3200,
+        "wires": []
+    },
+    {
+        "id": "f8aa31e41680bc14",
+        "type": "delay",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "60",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 580,
+        "y": 3240,
+        "wires": [
+            [
+                "4b6dd8271263ed7b"
+            ]
+        ]
+    },
+    {
+        "id": "4b6dd8271263ed7b",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 3260,
+        "wires": [
+            [
+                "651f5cfd402660ec"
             ]
         ]
     },
@@ -17354,7 +17497,7 @@
         "to": "",
         "reg": false,
         "x": 990,
-        "y": 1600,
+        "y": 1560,
         "wires": [
             [
                 "682c6386bdb2a38d"
@@ -19178,12 +19321,12 @@
         "id": "fb2907834c58bfd3",
         "type": "link in",
         "z": "c39524c2016c8df2",
-        "name": "",
+        "name": "Alle byster blinker grøn",
         "links": [
             "d4d2aeec1061c558"
         ],
-        "x": 195,
-        "y": 1540,
+        "x": 355,
+        "y": 1560,
         "wires": [
             [
                 "a5c9c59635375fc2",
@@ -19252,7 +19395,7 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 1355,
+        "x": 1415,
         "y": 200,
         "wires": [
             [
@@ -19275,7 +19418,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2230,
+        "x": 2290,
         "y": 320,
         "wires": []
     },
@@ -19299,7 +19442,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1760,
+        "x": 1820,
         "y": 340,
         "wires": [
             [
@@ -19327,7 +19470,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1760,
+        "x": 1820,
         "y": 240,
         "wires": [
             [
@@ -19355,7 +19498,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1750,
+        "x": 1810,
         "y": 300,
         "wires": [
             [
@@ -19378,7 +19521,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1710,
+        "x": 1770,
         "y": 1040,
         "wires": []
     },
@@ -19400,7 +19543,7 @@
         "topic": "",
         "payload": "1024",
         "payloadType": "num",
-        "x": 1510,
+        "x": 1570,
         "y": 980,
         "wires": [
             [
@@ -19426,7 +19569,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1480,
+        "x": 1540,
         "y": 1120,
         "wires": [
             [
@@ -19452,7 +19595,7 @@
         "topic": "",
         "payload": "300",
         "payloadType": "str",
-        "x": 1490,
+        "x": 1550,
         "y": 1040,
         "wires": [
             [
@@ -19478,7 +19621,7 @@
         "topic": "",
         "payload": "10",
         "payloadType": "num",
-        "x": 1490,
+        "x": 1550,
         "y": 1080,
         "wires": [
             [
@@ -19504,7 +19647,7 @@
         "topic": "",
         "payload": "FLASH",
         "payloadType": "str",
-        "x": 1480,
+        "x": 1540,
         "y": 1160,
         "wires": [
             [
@@ -19530,7 +19673,7 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 1500,
+        "x": 1560,
         "y": 920,
         "wires": [
             [
@@ -19556,7 +19699,7 @@
         "topic": "",
         "payload": "HIGh",
         "payloadType": "str",
-        "x": 1500,
+        "x": 1560,
         "y": 880,
         "wires": [
             [
@@ -19579,7 +19722,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 3050,
+        "x": 3110,
         "y": 380,
         "wires": []
     },
@@ -19640,7 +19783,7 @@
         "min": 0,
         "max": "1024",
         "step": "10",
-        "x": 1940,
+        "x": 2000,
         "y": 340,
         "wires": [
             [
@@ -19770,7 +19913,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2840,
+        "x": 2900,
         "y": 420,
         "wires": [
             [
@@ -19795,7 +19938,7 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 2970,
+        "x": 3030,
         "y": 580,
         "wires": [
             []
@@ -19889,7 +20032,7 @@
         "g": "50bee133c969308b",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 1780,
+        "x": 1840,
         "y": 520,
         "wires": [
             [
@@ -19990,35 +20133,17 @@
         ]
     },
     {
-        "id": "60c1ca75a8487e9f",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "g": "50bee133c969308b",
-        "name": "Rum 3 RØD HIGH",
-        "links": [
-            "5306e37e399c8f2e",
-            "9d8d607f2a23f6bd"
-        ],
-        "x": 2675,
-        "y": 300,
-        "wires": [
-            [
-                "3764116c4443cc0c"
-            ]
-        ]
-    },
-    {
         "id": "3764116c4443cc0c",
         "type": "change",
         "z": "2bdc58f37cbddb93",
         "g": "50bee133c969308b",
-        "name": "",
+        "name": "500",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "HIGH",
+                "to": "500",
                 "tot": "str"
             }
         ],
@@ -20027,7 +20152,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2820,
+        "x": 2850,
         "y": 300,
         "wires": [
             [
@@ -20055,7 +20180,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1760,
+        "x": 1820,
         "y": 400,
         "wires": [
             [
@@ -20086,26 +20211,6 @@
         ]
     },
     {
-        "id": "ff3551470cb85fa7",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "g": "50bee133c969308b",
-        "name": "Rum 3 rød LOW",
-        "links": [
-            "5306e37e399c8f2e",
-            "9174cbaece076164",
-            "99f85c035d3ee3ad",
-            "9d8d607f2a23f6bd"
-        ],
-        "x": 2675,
-        "y": 340,
-        "wires": [
-            [
-                "89b50d7e86ac3077"
-            ]
-        ]
-    },
-    {
         "id": "89b50d7e86ac3077",
         "type": "change",
         "z": "2bdc58f37cbddb93",
@@ -20125,7 +20230,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2820,
+        "x": 2880,
         "y": 340,
         "wires": [
             [
@@ -20235,7 +20340,7 @@
         "topic": "",
         "payload": "FLASH",
         "payloadType": "str",
-        "x": 2570,
+        "x": 2630,
         "y": 420,
         "wires": [
             [
@@ -20261,7 +20366,7 @@
         "topic": "",
         "payload": "30",
         "payloadType": "num",
-        "x": 2830,
+        "x": 2890,
         "y": 180,
         "wires": [
             [
@@ -20319,7 +20424,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1320,
+        "x": 1380,
         "y": 340,
         "wires": [
             [
@@ -20420,47 +20525,53 @@
         ]
     },
     {
-        "id": "c4b15587bd3a3ffa",
+        "id": "c8aa8feef584e35c",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
-        "g": "26046f160ae182f7",
+        "g": "50bee133c969308b",
         "name": "",
         "links": [
             "ec67e6f0513072c5"
         ],
-        "x": 305,
-        "y": 540,
+        "x": 2735,
+        "y": 300,
         "wires": [
             [
-                "c784d99a57f83464"
+                "3764116c4443cc0c"
             ]
         ]
     },
     {
-        "id": "c784d99a57f83464",
-        "type": "change",
+        "id": "5959dd7045e731d3",
+        "type": "link in",
         "z": "2bdc58f37cbddb93",
-        "g": "26046f160ae182f7",
-        "name": "1024",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "500",
-                "tot": "num"
-            }
+        "g": "50bee133c969308b",
+        "name": "",
+        "links": [
+            "7fc3fbad33439116"
         ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 470,
-        "y": 540,
+        "x": 1425,
+        "y": 280,
         "wires": [
             [
-                "54706de9e7f6afc3"
+                "392710fef73be1d8"
+            ]
+        ]
+    },
+    {
+        "id": "fb18325475db6d6f",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "2af49f6686f95446",
+        "name": "",
+        "links": [
+            "e023e657c841ea12"
+        ],
+        "x": 165,
+        "y": 1360,
+        "wires": [
+            [
+                "a6b700e996acba10"
             ]
         ]
     },
@@ -22412,7 +22523,8 @@
         "name": "Exit closed",
         "mode": "link",
         "links": [
-            "c4b15587bd3a3ffa"
+            "c4b15587bd3a3ffa",
+            "c8aa8feef584e35c"
         ],
         "x": 735,
         "y": 860,
@@ -31486,7 +31598,6 @@
         "z": "53c075e1.2512cc",
         "name": "Open udgangsdør",
         "links": [
-            "f0179ec8779c60a9",
             "79e13e5553989ce3"
         ],
         "x": 1215,
