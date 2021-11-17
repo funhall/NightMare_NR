@@ -9797,7 +9797,7 @@
         "name": "Start spil",
         "props": [
             {
-                "p": "stoptext",
+                "p": "starttext",
                 "v": "Start spil",
                 "vt": "str"
             }
