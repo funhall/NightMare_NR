@@ -12693,7 +12693,7 @@
         "title": "Corwin {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": "400",
+        "min": "600",
         "max": "950",
         "colors": [
             "#b3000c",
@@ -14114,8 +14114,8 @@
         "title": "Nellie",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": "500",
-        "max": "1024",
+        "min": "600",
+        "max": "950",
         "colors": [
             "#b3000c",
             "#e6e600",
@@ -14440,8 +14440,8 @@
         "title": "Clingar {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": "500",
-        "max": "1100",
+        "min": "600",
+        "max": "950",
         "colors": [
             "#b3000c",
             "#e6e600",
@@ -15275,8 +15275,8 @@
         "title": "Connel {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": "500",
-        "max": "1100",
+        "min": "600",
+        "max": "950",
         "colors": [
             "#b3000c",
             "#e6e600",
@@ -16333,8 +16333,8 @@
         "title": "Huston {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": "500",
-        "max": "1100",
+        "min": "600",
+        "max": "950",
         "colors": [
             "#b3000c",
             "#e6e600",
