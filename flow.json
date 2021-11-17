@@ -6640,7 +6640,7 @@
                 "t": "set",
                 "p": "bysterplaceret",
                 "pt": "global",
-                "to": "",
+                "to": "true",
                 "tot": "str"
             },
             {
