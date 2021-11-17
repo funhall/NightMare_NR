@@ -8860,7 +8860,7 @@
         "y": 220,
         "wires": [
             [
-                "4ef97eb1e1560b93"
+                "4e7b9ce0477b0e84"
             ]
         ]
     },
@@ -8947,6 +8947,13 @@
                 "pt": "flow",
                 "to": "Færdig",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Ikke klar",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -8954,7 +8961,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
+        "x": 800,
         "y": 220,
         "wires": [
             []
@@ -9017,6 +9024,35 @@
             [
                 "e4cb261fc0707569"
             ]
+        ]
+    },
+    {
+        "id": "4e7b9ce0477b0e84",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Klargjort",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "4ef97eb1e1560b93"
+            ],
+            []
         ]
     },
     {
