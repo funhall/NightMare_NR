@@ -3518,7 +3518,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.payload}}Game over",
+        "label": "{{msg.payload}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -3527,8 +3527,8 @@
         "payloadType": "date",
         "topic": "topic",
         "topicType": "msg",
-        "x": 430,
-        "y": 560,
+        "x": 350,
+        "y": 340,
         "wires": [
             []
         ]
@@ -8838,8 +8838,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 450,
-        "y": 380,
+        "x": 370,
+        "y": 420,
         "wires": [
             []
         ]
