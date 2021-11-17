@@ -1851,13 +1851,15 @@
             "8dbc010011e3c674",
             "f074d3e42fa3f778",
             "fbd4ff4c330455d6",
-            "4c54c6a3d168acbb"
+            "4c54c6a3d168acbb",
+            "b1c144db8add45ef",
+            "25c83829ad0b8eb2"
         ],
         "env": [],
-        "x": 1574,
+        "x": 1614,
         "y": 559,
-        "w": 1512,
-        "h": 422
+        "w": 1472,
+        "h": 442
     },
     {
         "id": "7dc6faf4bc4659f0",
@@ -6291,7 +6293,7 @@
         "z": "33e76285.1cd03e",
         "g": "5e203e809c0bd87a",
         "name": "",
-        "func": "if ( global.get(\"kisteexit\") === \"closed\" && global.get(\"kistestate\") === \"closed\" && global.get(\"doorroom2\") === \"closed\"  && global.get(\"doorroom4\") === \"closed\" && global.get(\"left\") === \"up\" && global.get(\"right\") === \"up\"  && global.get(\"bysterplaceret\") === \"true\" && global.get(\"gavle_vaek\") === \"true\" ) { \n  msg.payload = \"all on\";\n} else {\n  msg.payload = \"not all on\";\n}\nreturn msg;\n\n",
+        "func": "if ( global.get(\"kisteexit\") === \"closed\" && global.get(\"kistestate\") === \"closed\" && global.get(\"doorroom2\") === \"closed\"  && global.get(\"doorroom4\") === \"closed\" && global.get(\"left\") === \"up\" && global.get(\"right\") === \"up\"  && global.get(\"bysterplaceret\") === \"true\" && global.get(\"gavle_vaek\") === \"true\" ) { \n  msg.payload = \"lock_ready\";\n} else {\n  msg.payload = \"lock_not-ready\";\n}\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6379,8 +6381,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1680,
-        "y": 900,
+        "x": 1740,
+        "y": 820,
         "wires": [
             [
                 "a4a8d9fc3b12fa39"
@@ -6419,50 +6421,7 @@
         "z": "33e76285.1cd03e",
         "g": "5e203e809c0bd87a",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "icon",
-                "pt": "msg",
-                "to": "check_box",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "tjeklistbackground",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "tjektext",
-                "pt": "msg",
-                "to": "READY",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "tjeklist",
-                "pt": "global",
-                "to": "ready",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klartext",
-                "pt": "msg",
-                "to": "Klargjort",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klarbackground",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            }
-        ],
+        "rules": [],
         "action": "",
         "property": "",
         "from": "",
@@ -6483,36 +6442,7 @@
         "z": "33e76285.1cd03e",
         "g": "5e203e809c0bd87a",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "icon",
-                "pt": "msg",
-                "to": "check_box_outline_blank",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "tjektext",
-                "pt": "msg",
-                "to": "WAIT",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "tjeklistbackground",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "tjeklist",
-                "pt": "global",
-                "to": "WAIT",
-                "tot": "str"
-            }
-        ],
+        "rules": [],
         "action": "",
         "property": "",
         "from": "",
@@ -7219,7 +7149,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2110,
-        "y": 620,
+        "y": 640,
         "wires": []
     },
     {
@@ -7243,7 +7173,7 @@
         "to": "",
         "reg": false,
         "x": 2100,
-        "y": 680,
+        "y": 700,
         "wires": [
             [
                 "b6eb4f51906fae60"
@@ -7265,7 +7195,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2330,
-        "y": 600,
+        "y": 620,
         "wires": []
     },
     {
@@ -7289,7 +7219,7 @@
         "to": "",
         "reg": false,
         "x": 2320,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
                 "05553c3059be3846"
@@ -7311,7 +7241,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2530,
-        "y": 600,
+        "y": 620,
         "wires": []
     },
     {
@@ -7335,7 +7265,7 @@
         "to": "",
         "reg": false,
         "x": 2520,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
                 "6b3dcdf3172c279b"
@@ -7357,7 +7287,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2750,
-        "y": 600,
+        "y": 620,
         "wires": []
     },
     {
@@ -7381,7 +7311,7 @@
         "to": "",
         "reg": false,
         "x": 2740,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
                 "eaf50b28356c7430"
@@ -8644,7 +8574,8 @@
         "links": [
             "80a868808fc1a091",
             "f11944f6972a495d",
-            "b71bafe8e5381546"
+            "b71bafe8e5381546",
+            "b1c144db8add45ef"
         ],
         "x": 555,
         "y": 200,
@@ -9146,6 +9077,51 @@
             [
                 "1507c4ef88339a79"
             ]
+        ]
+    },
+    {
+        "id": "b1c144db8add45ef",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "5e203e809c0bd87a",
+        "name": "check om gavle er fjernet",
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 1655,
+        "y": 940,
+        "wires": [
+            [
+                "a4a8d9fc3b12fa39"
+            ]
+        ]
+    },
+    {
+        "id": "25c83829ad0b8eb2",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "5e203e809c0bd87a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "wew",
+        "payloadType": "str",
+        "x": 2660,
+        "y": 960,
+        "wires": [
+            []
         ]
     },
     {
