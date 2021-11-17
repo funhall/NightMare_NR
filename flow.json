@@ -3674,7 +3674,7 @@
         "payload": "Pause",
         "payloadType": "str",
         "x": 140,
-        "y": 740,
+        "y": 820,
         "wires": [
             []
         ]
@@ -9584,7 +9584,7 @@
         "type": "change",
         "z": "33e76285.1cd03e",
         "g": "c4e578e11dcc76bd",
-        "name": "",
+        "name": "Gametime off / nodstop true",
         "rules": [
             {
                 "t": "set",
@@ -9599,6 +9599,13 @@
                 "pt": "msg",
                 "to": "off",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "gametime",
+                "pt": "global",
+                "to": "off",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -9606,7 +9613,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
+        "x": 580,
         "y": 640,
         "wires": [
             [
@@ -9649,7 +9656,7 @@
         "id": "18fca4cd232def7d",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Gametime on / nodstop false",
         "rules": [
             {
                 "t": "set",
@@ -9657,6 +9664,13 @@
                 "pt": "global",
                 "to": "false",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "gametime",
+                "pt": "global",
+                "to": "on",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -9664,7 +9678,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
+        "x": 580,
         "y": 680,
         "wires": [
             []
