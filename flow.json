@@ -8724,7 +8724,7 @@
             },
             {
                 "t": "eq",
-                "v": "Færdig",
+                "v": "Klar",
                 "vt": "str"
             },
             {
@@ -9046,7 +9046,9 @@
             [
                 "4ef97eb1e1560b93"
             ],
-            []
+            [
+                "b6512c56f89deb44"
+            ]
         ]
     },
     {
@@ -9068,11 +9070,46 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
+        "x": 490,
         "y": 100,
         "wires": [
             [
                 "e4cb261fc0707569"
+            ]
+        ]
+    },
+    {
+        "id": "b6512c56f89deb44",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Klar",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "klar",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 260,
+        "wires": [
+            [
+                "e4cb261fc0707569",
+                "ddfc4ff3b60682f8"
             ]
         ]
     },
