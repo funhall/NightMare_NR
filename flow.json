@@ -19010,7 +19010,7 @@
         "name": "",
         "props": [
             {
-                "p": "rum2background",
+                "p": "rum1background",
                 "v": "red",
                 "vt": "str"
             }
