@@ -7145,7 +7145,7 @@
         "id": "f51d408db856e1dc",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "name": "Stop",
+        "name": "Stop/continue",
         "group": "5241c487.80287c",
         "order": 1,
         "width": 2,
@@ -7160,7 +7160,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 390,
+        "x": 380,
         "y": 780,
         "wires": [
             [
@@ -9618,7 +9618,7 @@
         "y": 720,
         "wires": [
             [
-                "619dfcb3c2447f34"
+                "6ae7dc55b448fca2"
             ]
         ]
     },
@@ -9714,8 +9714,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 670,
-        "y": 680,
+        "x": 630,
+        "y": 660,
         "wires": [
             [
                 "011d71bd028f4985",
@@ -9988,7 +9988,8 @@
         "z": "33e76285.1cd03e",
         "name": "Start time",
         "links": [
-            "f9a6a7bd47c3ec70"
+            "f9a6a7bd47c3ec70",
+            "6ae7dc55b448fca2"
         ],
         "x": 295,
         "y": 540,
@@ -10103,6 +10104,19 @@
                 "f6da3ededc910c6b"
             ]
         ]
+    },
+    {
+        "id": "6ae7dc55b448fca2",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "Stop time",
+        "mode": "link",
+        "links": [
+            "38c9d1ce4d9d6dec"
+        ],
+        "x": 1295,
+        "y": 720,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
