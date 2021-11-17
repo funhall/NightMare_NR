@@ -2341,12 +2341,13 @@
             "a154943f70f37d50",
             "d43e2b9455353772",
             "77e52b4710d8a6d7",
-            "fcb04237c2802b48"
+            "fcb04237c2802b48",
+            "5455aa12563ab843"
         ],
         "env": [],
-        "x": -6,
+        "x": -26,
         "y": 439,
-        "w": 1752,
+        "w": 1772,
         "h": 422
     },
     {
@@ -6415,12 +6416,12 @@
         "payloadType": "str",
         "topic": "on",
         "topicType": "msg",
-        "x": 450,
+        "x": 250,
         "y": 600,
         "wires": [
             [
-                "a2638b0a6698a97c",
-                "7fc3fbad33439116"
+                "7fc3fbad33439116",
+                "5455aa12563ab843"
             ]
         ]
     },
@@ -9411,7 +9412,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 260,
+        "x": 80,
         "y": 600,
         "wires": [
             [
@@ -11651,6 +11652,32 @@
         "wires": [
             [
                 "4910cdca14f3e815"
+            ]
+        ]
+    },
+    {
+        "id": "5455aa12563ab843",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
+        "name": "",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 600,
+        "wires": [
+            [
+                "a2638b0a6698a97c"
             ]
         ]
     },
