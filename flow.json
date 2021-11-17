@@ -797,8 +797,8 @@
             "fc9b6aa8fa506d52",
             "0d5cbafad6f33ae1"
         ],
-        "x": 174,
-        "y": 2199,
+        "x": 254,
+        "y": 2039,
         "w": 1602,
         "h": 222
     },
@@ -6996,8 +6996,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 2380,
+        "x": 860,
+        "y": 2220,
         "wires": [
             [
                 "cb7568d5b1a32974",
@@ -7019,8 +7019,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 850,
-        "y": 2300,
+        "x": 930,
+        "y": 2140,
         "wires": []
     },
     {
@@ -7050,8 +7050,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1160,
-        "y": 2300,
+        "x": 1240,
+        "y": 2140,
         "wires": [
             [
                 "4f17f4badd740b98",
@@ -7086,8 +7086,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1160,
-        "y": 2360,
+        "x": 1240,
+        "y": 2200,
         "wires": [
             []
         ]
@@ -7113,8 +7113,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 990,
-        "y": 2320,
+        "x": 1070,
+        "y": 2160,
         "wires": [
             [
                 "3ec27a962d094fc2"
@@ -7142,8 +7142,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 580,
-        "y": 2380,
+        "x": 660,
+        "y": 2220,
         "wires": [
             [
                 "3b4f370bbc616dfb",
@@ -7161,8 +7161,8 @@
         "links": [
             "dee305791b87212d"
         ],
-        "x": 1735,
-        "y": 2300,
+        "x": 1815,
+        "y": 2140,
         "wires": []
     },
     {
@@ -7185,8 +7185,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 2320,
+        "x": 670,
+        "y": 2160,
         "wires": [
             [
                 "e280e9326f0c5a92"
@@ -7207,8 +7207,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
-        "y": 2380,
+        "x": 1070,
+        "y": 2220,
         "wires": []
     },
     {
@@ -7229,8 +7229,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1460,
-        "y": 2300,
+        "x": 1540,
+        "y": 2140,
         "wires": [
             [
                 "f0179ec8779c60a9"
@@ -8046,8 +8046,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
-        "y": 2240,
+        "x": 850,
+        "y": 2080,
         "wires": []
     },
     {
@@ -8072,8 +8072,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 350,
-        "y": 2300,
+        "x": 430,
+        "y": 2140,
         "wires": [
             [
                 "98bbc5ca0fe2a538"
@@ -8107,8 +8107,8 @@
         "links": [
             "fb2907834c58bfd3"
         ],
-        "x": 1345,
-        "y": 2340,
+        "x": 1425,
+        "y": 2180,
         "wires": []
     },
     {
@@ -10682,8 +10682,8 @@
         "links": [
             "4da0a01d.355f7"
         ],
-        "x": 215,
-        "y": 2340,
+        "x": 295,
+        "y": 2180,
         "wires": [
             [
                 "0d5cbafad6f33ae1"
@@ -10708,13 +10708,571 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 310,
-        "y": 2340,
+        "x": 390,
+        "y": 2180,
         "wires": [
             [
                 "98bbc5ca0fe2a538"
             ]
         ]
+    },
+    {
+        "id": "831b3ca1bde92224",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "HIGH",
+        "payloadType": "str",
+        "x": 410,
+        "y": 2620,
+        "wires": [
+            [
+                "edf166990d4453c0"
+            ]
+        ]
+    },
+    {
+        "id": "8dc25fc08918c0ad",
+        "type": "mqtt out",
+        "z": "33e76285.1cd03e",
+        "name": "Magnet stang",
+        "topic": "boks8/output/D1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1160,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "1e61d73aa48c4701",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "LOW",
+        "payloadType": "str",
+        "x": 430,
+        "y": 2680,
+        "wires": [
+            [
+                "0a4371ce3110aae8"
+            ]
+        ]
+    },
+    {
+        "id": "62d18bfbb48fa72e",
+        "type": "mqtt in",
+        "z": "33e76285.1cd03e",
+        "name": "Stang venstre",
+        "topic": "boks8/input/D7",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 2800,
+        "wires": [
+            [
+                "e2b396c7159876d0",
+                "9d0c7edf654580bb"
+            ]
+        ]
+    },
+    {
+        "id": "e2b396c7159876d0",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 2860,
+        "wires": []
+    },
+    {
+        "id": "e25fe2ca674576d0",
+        "type": "mqtt in",
+        "z": "33e76285.1cd03e",
+        "name": "Stang højre",
+        "topic": "boks8/input/D6",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 510,
+        "y": 3040,
+        "wires": [
+            [
+                "768a50f820099ee7",
+                "b5d647f750761d06"
+            ]
+        ]
+    },
+    {
+        "id": "edf166990d4453c0",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Venstre magnet stang ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 2620,
+        "wires": [
+            [
+                "8dc25fc08918c0ad"
+            ]
+        ]
+    },
+    {
+        "id": "0a4371ce3110aae8",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Venstre magnet stang low",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 2680,
+        "wires": [
+            [
+                "8dc25fc08918c0ad"
+            ]
+        ]
+    },
+    {
+        "id": "2616298e5360ae99",
+        "type": "mqtt in",
+        "z": "33e76285.1cd03e",
+        "name": "Kontakt i skab",
+        "topic": "boks8/input/D5",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 530,
+        "y": 3160,
+        "wires": [
+            [
+                "45c8983ea6aa7b7c",
+                "625b6ff3661303bf"
+            ]
+        ]
+    },
+    {
+        "id": "45c8983ea6aa7b7c",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 3140,
+        "wires": []
+    },
+    {
+        "id": "7cf6443309b511f8",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "KLargør stang",
+        "links": [
+            "dcda2e3ca6ad94be",
+            "d0db6f812a7972aa"
+        ],
+        "x": 615,
+        "y": 2600,
+        "wires": [
+            [
+                "edf166990d4453c0"
+            ]
+        ]
+    },
+    {
+        "id": "c0be1f1aa356c03f",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "Venstre magnet stang LOW",
+        "links": [
+            "dbb22315.74583"
+        ],
+        "x": 615,
+        "y": 2700,
+        "wires": [
+            [
+                "0a4371ce3110aae8"
+            ]
+        ]
+    },
+    {
+        "id": "a26e8c105759a46e",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "locked",
+        "rules": [
+            {
+                "t": "set",
+                "p": "venstrebackground",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "left",
+                "pt": "global",
+                "to": "up",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 2780,
+        "wires": [
+            [
+                "d047976c1637fb51",
+                "77e7ddf456d35f0f"
+            ]
+        ]
+    },
+    {
+        "id": "43ab5b7a7b9c4a75",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "open",
+        "rules": [
+            {
+                "t": "set",
+                "p": "venstrebackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "left",
+                "pt": "global",
+                "to": "down",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 2820,
+        "wires": [
+            [
+                "77e7ddf456d35f0f"
+            ]
+        ]
+    },
+    {
+        "id": "d047976c1637fb51",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "Venstre stang oppe",
+        "links": [
+            "5cb78c3c0599c328"
+        ],
+        "x": 825,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "77e7ddf456d35f0f",
+        "type": "ui_button",
+        "z": "33e76285.1cd03e",
+        "name": "Venstre",
+        "group": "117cda2a.43e596",
+        "order": 3,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.venstrebackground}}",
+        "icon": "fa-arrow-left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 900,
+        "y": 2800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d0c7edf654580bb",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked3High",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Besked3Low",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 2800,
+        "wires": [
+            [
+                "a26e8c105759a46e"
+            ],
+            [
+                "43ab5b7a7b9c4a75"
+            ]
+        ]
+    },
+    {
+        "id": "0514d6460be9c5ef",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "locked",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hojrebackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "right",
+                "pt": "global",
+                "to": "down",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 3020,
+        "wires": [
+            [
+                "407c6cf130e625d7",
+                "8138ecba75709a9a"
+            ]
+        ]
+    },
+    {
+        "id": "2df2b85bbf3da8db",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "open",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hojrebackground",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "right",
+                "pt": "global",
+                "to": "up",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 3060,
+        "wires": [
+            [
+                "8138ecba75709a9a"
+            ]
+        ]
+    },
+    {
+        "id": "407c6cf130e625d7",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "Højre stang oppe",
+        "links": [],
+        "x": 1045,
+        "y": 3000,
+        "wires": []
+    },
+    {
+        "id": "8138ecba75709a9a",
+        "type": "ui_button",
+        "z": "33e76285.1cd03e",
+        "name": "Højre",
+        "group": "117cda2a.43e596",
+        "order": 4,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.hojrebackground}}",
+        "icon": "fa-arrow-right",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1110,
+        "y": 3040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "768a50f820099ee7",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked2Low",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Besked2High",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 730,
+        "y": 3020,
+        "wires": [
+            [
+                "0514d6460be9c5ef"
+            ],
+            [
+                "2df2b85bbf3da8db"
+            ]
+        ]
+    },
+    {
+        "id": "625b6ff3661303bf",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "Kontakt i skab",
+        "links": [
+            "349ffd34e41e73ba",
+            "9614784a6e2a9915"
+        ],
+        "x": 725,
+        "y": 3180,
+        "wires": []
+    },
+    {
+        "id": "b5d647f750761d06",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 3080,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -26758,7 +27316,8 @@
         "g": "3ef9495f.289ca6",
         "name": "Alle gavle placeret",
         "links": [
-            "dd8ceaf24d4078ba"
+            "dd8ceaf24d4078ba",
+            "c0be1f1aa356c03f"
         ],
         "x": 2495,
         "y": 400,
@@ -29854,7 +30413,8 @@
         "name": "Åben rum 4",
         "links": [
             "f32df306be0e48bf",
-            "348934144a83769e"
+            "348934144a83769e",
+            "625b6ff3661303bf"
         ],
         "x": 1105,
         "y": 1740,
@@ -31573,8 +32133,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 910,
-        "y": 720,
+        "x": 1030,
+        "y": 900,
         "wires": []
     },
     {
@@ -31598,8 +32158,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 580,
-        "y": 780,
+        "x": 700,
+        "y": 960,
         "wires": [
             [
                 "35a86a4c8915f316"
@@ -31627,8 +32187,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 570,
-        "y": 740,
+        "x": 690,
+        "y": 920,
         "wires": [
             [
                 "35a86a4c8915f316"
@@ -31649,8 +32209,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 920,
-        "y": 840,
+        "x": 1040,
+        "y": 1020,
         "wires": []
     },
     {
@@ -31674,8 +32234,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 580,
-        "y": 900,
+        "x": 700,
+        "y": 1080,
         "wires": [
             [
                 "a386c2e6800353e6"
@@ -31703,8 +32263,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 570,
-        "y": 860,
+        "x": 690,
+        "y": 1040,
         "wires": [
             [
                 "a386c2e6800353e6"
@@ -31725,8 +32285,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 900,
-        "y": 980,
+        "x": 1020,
+        "y": 1160,
         "wires": []
     },
     {
@@ -31750,8 +32310,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 560,
-        "y": 1040,
+        "x": 680,
+        "y": 1220,
         "wires": [
             [
                 "9208d7190315ac11"
@@ -31779,8 +32339,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 550,
-        "y": 1000,
+        "x": 670,
+        "y": 1180,
         "wires": [
             [
                 "9208d7190315ac11"
@@ -31806,8 +32366,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 580,
-        "y": 700,
+        "x": 700,
+        "y": 880,
         "wires": [
             [
                 "35a86a4c8915f316"
@@ -31833,8 +32393,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 580,
-        "y": 660,
+        "x": 700,
+        "y": 840,
         "wires": [
             [
                 "35a86a4c8915f316"
@@ -31850,8 +32410,8 @@
             "dcacf67a632c4d47",
             "0e42be98d25e3424"
         ],
-        "x": 765,
-        "y": 640,
+        "x": 885,
+        "y": 820,
         "wires": [
             [
                 "35a86a4c8915f316"
@@ -38249,7 +38809,8 @@
             "e26b7cac8b2be6d4",
             "57a8de12e1ec4afc",
             "a07b8f5ea811f79d",
-            "3cdaad147b79de12"
+            "3cdaad147b79de12",
+            "7cf6443309b511f8"
         ],
         "x": 735,
         "y": 140,
