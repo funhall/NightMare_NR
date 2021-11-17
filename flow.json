@@ -2002,43 +2002,6 @@
         "h": 222
     },
     {
-        "id": "f4e5ec1eb5ea4c59",
-        "type": "group",
-        "z": "33e76285.1cd03e",
-        "name": "Styrer klargørringen",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "865a7e22.84d5e",
-            "770a598c.8e9238",
-            "404ca19b.0b55e",
-            "77fdd94a6dd798f6",
-            "96ec132ae7628bed",
-            "e8ba061f5f8c7fec",
-            "e4cb261fc0707569",
-            "41206f8c8cf7167e",
-            "ddfc4ff3b60682f8",
-            "e9c7d1a9e9141a38",
-            "4aefc470da7667cf",
-            "a422065c72ada863",
-            "3f275e5d73da77dc",
-            "4ef97eb1e1560b93",
-            "04118f148f2abeab",
-            "db97f440126e6ab3",
-            "4e7b9ce0477b0e84",
-            "53b37da00d21886a",
-            "b6512c56f89deb44",
-            "3751ee32e1516eb9",
-            "2b480c9c40b1ae41"
-        ],
-        "env": [],
-        "x": 74,
-        "y": 59,
-        "w": 1042,
-        "h": 382
-    },
-    {
         "id": "08b42802ab3938de",
         "type": "group",
         "z": "e21f6458e5ab1eb6",
@@ -2282,6 +2245,42 @@
         "y": 1059,
         "w": 1292,
         "h": 342
+    },
+    {
+        "id": "f4e5ec1eb5ea4c59",
+        "type": "group",
+        "z": "33e76285.1cd03e",
+        "name": "Styrer klargørringen",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "865a7e22.84d5e",
+            "770a598c.8e9238",
+            "404ca19b.0b55e",
+            "77fdd94a6dd798f6",
+            "96ec132ae7628bed",
+            "e8ba061f5f8c7fec",
+            "e4cb261fc0707569",
+            "41206f8c8cf7167e",
+            "ddfc4ff3b60682f8",
+            "e9c7d1a9e9141a38",
+            "4aefc470da7667cf",
+            "a422065c72ada863",
+            "3f275e5d73da77dc",
+            "4ef97eb1e1560b93",
+            "04118f148f2abeab",
+            "db97f440126e6ab3",
+            "4e7b9ce0477b0e84",
+            "53b37da00d21886a",
+            "b6512c56f89deb44",
+            "2b480c9c40b1ae41"
+        ],
+        "env": [],
+        "x": 94,
+        "y": 39,
+        "w": 1022,
+        "h": 382
     },
     {
         "id": "82fd466d.f6c968",
@@ -3682,64 +3681,6 @@
             [
                 "34527a37.7b12b6",
                 "62d907e1.51b658"
-            ]
-        ]
-    },
-    {
-        "id": "865a7e22.84d5e",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Færdig spil",
-        "props": [
-            {
-                "p": "reset",
-                "v": "",
-                "vt": "date"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 180,
-        "y": 300,
-        "wires": [
-            [
-                "ddfc4ff3b60682f8"
-            ]
-        ]
-    },
-    {
-        "id": "770a598c.8e9238",
-        "type": "ui_button",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Game over",
-        "group": "5241c487.80287c",
-        "order": 2,
-        "width": 2,
-        "height": 1,
-        "passthru": false,
-        "label": "{{msg.payload}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "date",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 390,
-        "y": 360,
-        "wires": [
-            [
-                "db97f440126e6ab3"
             ]
         ]
     },
@@ -5286,36 +5227,6 @@
         "wires": []
     },
     {
-        "id": "404ca19b.0b55e",
-        "type": "ui_button",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Klargørring",
-        "group": "117cda2a.43e596",
-        "order": 6,
-        "width": 2,
-        "height": 1,
-        "passthru": false,
-        "label": "{{msg.klartext}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.klarbackground}}",
-        "icon": "",
-        "payload": "1",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 350,
-        "y": 140,
-        "wires": [
-            [
-                "e8ba061f5f8c7fec",
-                "ddfc4ff3b60682f8",
-                "53b37da00d21886a"
-            ]
-        ]
-    },
-    {
         "id": "51a82bba.c75414",
         "type": "link in",
         "z": "33e76285.1cd03e",
@@ -6280,37 +6191,6 @@
         "wires": [
             [
                 "a2638b0a6698a97c"
-            ]
-        ]
-    },
-    {
-        "id": "77fdd94a6dd798f6",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "",
-        "props": [
-            {
-                "p": "klartext",
-                "v": "Klargørring",
-                "vt": "str"
-            },
-            {
-                "p": "klarbackground",
-                "v": "red",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 170,
-        "y": 120,
-        "wires": [
-            [
-                "404ca19b.0b55e"
             ]
         ]
     },
@@ -8301,66 +8181,6 @@
         ]
     },
     {
-        "id": "96ec132ae7628bed",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Igang",
-        "rules": [
-            {
-                "t": "set",
-                "p": "klargorring",
-                "pt": "flow",
-                "to": "Igang",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "klarbackground",
-                "pt": "msg",
-                "to": "blue",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klartext",
-                "pt": "msg",
-                "to": "Sætter op",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 930,
-        "y": 100,
-        "wires": [
-            [
-                "3f275e5d73da77dc"
-            ]
-        ]
-    },
-    {
-        "id": "e8ba061f5f8c7fec",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Klargorring",
-        "mode": "link",
-        "links": [
-            "80a868808fc1a091",
-            "f11944f6972a495d",
-            "b71bafe8e5381546",
-            "b1c144db8add45ef",
-            "6e84323610cab4f8"
-        ],
-        "x": 555,
-        "y": 200,
-        "wires": []
-    },
-    {
         "id": "85d6f0338a028c44",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
@@ -8385,439 +8205,6 @@
         "wires": [
             [
                 "f9296daf73054592"
-            ]
-        ]
-    },
-    {
-        "id": "e4cb261fc0707569",
-        "type": "switch",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "",
-        "property": "klargorring",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Igang",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Klar",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Ikke klar",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 790,
-        "y": 120,
-        "wires": [
-            [
-                "96ec132ae7628bed"
-            ],
-            [
-                "41206f8c8cf7167e"
-            ],
-            [
-                "4aefc470da7667cf"
-            ]
-        ]
-    },
-    {
-        "id": "41206f8c8cf7167e",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Færdig",
-        "rules": [
-            {
-                "t": "set",
-                "p": "klarbackground",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klartext",
-                "pt": "msg",
-                "to": "Klar",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klargorring",
-                "pt": "flow",
-                "to": "Færdig",
-                "tot": "flow"
-            },
-            {
-                "t": "set",
-                "p": "reset",
-                "pt": "msg",
-                "to": "z",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 940,
-        "y": 140,
-        "wires": [
-            [
-                "3f275e5d73da77dc"
-            ]
-        ]
-    },
-    {
-        "id": "ddfc4ff3b60682f8",
-        "type": "trigger",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "",
-        "op1": "1",
-        "op2": "0",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "-2",
-        "extend": false,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 340,
-        "y": 240,
-        "wires": [
-            [
-                "e9c7d1a9e9141a38"
-            ]
-        ]
-    },
-    {
-        "id": "e9c7d1a9e9141a38",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "",
-        "func": "if ( global.get(\"gavle_vaek\") === \"true\" && global.get(\"bysterplaceret\") === \"true\" && global.get(\"kisteexit\") === \"closed\" && global.get(\"kistestate\") === \"closed\" && global.get(\"doorroom2\") === \"closed\" && global.get(\"doorroom1\") === \"closed\") { \n  msg.payload = \"Klargjort\";\n} else {\n  msg.payload = \"Ikke klar\";\n}\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 240,
-        "wires": [
-            [
-                "4e7b9ce0477b0e84",
-                "3751ee32e1516eb9"
-            ]
-        ]
-    },
-    {
-        "id": "4aefc470da7667cf",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Ikke klar",
-        "rules": [
-            {
-                "t": "set",
-                "p": "klarbackground",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klartext",
-                "pt": "msg",
-                "to": "Klargørring",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klargorring",
-                "pt": "flow",
-                "to": "Ikke klar",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 940,
-        "y": 180,
-        "wires": [
-            [
-                "3f275e5d73da77dc"
-            ]
-        ]
-    },
-    {
-        "id": "a422065c72ada863",
-        "type": "link in",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Klargørring",
-        "links": [
-            "3f275e5d73da77dc",
-            "c7004bbf41bb366e"
-        ],
-        "x": 175,
-        "y": 160,
-        "wires": [
-            [
-                "404ca19b.0b55e"
-            ]
-        ]
-    },
-    {
-        "id": "3f275e5d73da77dc",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Klargørrring sat",
-        "mode": "link",
-        "links": [
-            "a422065c72ada863"
-        ],
-        "x": 1055,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "4ef97eb1e1560b93",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Klargjort",
-        "rules": [
-            {
-                "t": "set",
-                "p": "klartext",
-                "pt": "msg",
-                "to": "Klar til spil",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klarbackground",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "reset",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 880,
-        "y": 240,
-        "wires": [
-            [
-                "ddfc4ff3b60682f8",
-                "404ca19b.0b55e"
-            ]
-        ]
-    },
-    {
-        "id": "04118f148f2abeab",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Gameover",
-        "payloadType": "str",
-        "x": 210,
-        "y": 360,
-        "wires": [
-            [
-                "770a598c.8e9238"
-            ]
-        ]
-    },
-    {
-        "id": "db97f440126e6ab3",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "gavle_vaek",
-                "pt": "global",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "klargorring",
-                "pt": "flow",
-                "to": "Klar",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klartext",
-                "pt": "msg",
-                "to": "Klargørring",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klarbackground",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "game",
-                "pt": "global",
-                "to": "off",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 340,
-        "wires": [
-            [
-                "404ca19b.0b55e",
-                "2b480c9c40b1ae41"
-            ]
-        ]
-    },
-    {
-        "id": "4e7b9ce0477b0e84",
-        "type": "switch",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Klargjort",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 690,
-        "y": 240,
-        "wires": [
-            [
-                "4ef97eb1e1560b93"
-            ],
-            [
-                "b6512c56f89deb44"
-            ]
-        ]
-    },
-    {
-        "id": "53b37da00d21886a",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "klargorring",
-                "pt": "flow",
-                "to": "Igang",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 590,
-        "y": 120,
-        "wires": [
-            [
-                "e4cb261fc0707569"
-            ]
-        ]
-    },
-    {
-        "id": "b6512c56f89deb44",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Klar 1",
-        "rules": [
-            {
-                "t": "set",
-                "p": "klargorring",
-                "pt": "flow",
-                "to": "klar",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "reset",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 890,
-        "y": 300,
-        "wires": [
-            [
-                "e4cb261fc0707569"
             ]
         ]
     },
@@ -9502,23 +8889,6 @@
         "wires": []
     },
     {
-        "id": "3751ee32e1516eb9",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1000,
-        "y": 380,
-        "wires": []
-    },
-    {
         "id": "f6da3ededc910c6b",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -9556,8 +8926,7 @@
         "wires": [
             [
                 "619dfcb3c2447f34",
-                "58cb52c53dde8dc9",
-                "3751ee32e1516eb9"
+                "58cb52c53dde8dc9"
             ]
         ]
     },
@@ -9618,7 +8987,9 @@
         "x": 1120,
         "y": 720,
         "wires": [
-            []
+            [
+                "619dfcb3c2447f34"
+            ]
         ]
     },
     {
@@ -9841,9 +9212,7 @@
         "type": "link in",
         "z": "33e76285.1cd03e",
         "name": "Reset timer",
-        "links": [
-            "e8ba061f5f8c7fec"
-        ],
+        "links": [],
         "x": 155,
         "y": 480,
         "wires": [
@@ -9883,8 +9252,7 @@
         "wires": [
             [
                 "619dfcb3c2447f34",
-                "838bc03649f7c918",
-                "3751ee32e1516eb9"
+                "838bc03649f7c918"
             ]
         ]
     },
@@ -10041,20 +9409,6 @@
         "wires": []
     },
     {
-        "id": "2b480c9c40b1ae41",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Game over",
-        "mode": "link",
-        "links": [
-            "b41f9f2bfad990e4"
-        ],
-        "x": 615,
-        "y": 400,
-        "wires": []
-    },
-    {
         "id": "51f38662168ae960",
         "type": "switch",
         "z": "33e76285.1cd03e",
@@ -10131,6 +9485,630 @@
         "statusType": "auto",
         "x": 560,
         "y": 900,
+        "wires": []
+    },
+    {
+        "id": "865a7e22.84d5e",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Færdig spil",
+        "props": [
+            {
+                "p": "reset",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 200,
+        "y": 280,
+        "wires": [
+            [
+                "ddfc4ff3b60682f8"
+            ]
+        ]
+    },
+    {
+        "id": "770a598c.8e9238",
+        "type": "ui_button",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Game over",
+        "group": "5241c487.80287c",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 340,
+        "wires": [
+            [
+                "db97f440126e6ab3"
+            ]
+        ]
+    },
+    {
+        "id": "404ca19b.0b55e",
+        "type": "ui_button",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Klargørring",
+        "group": "117cda2a.43e596",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.klartext}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.klarbackground}}",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "e8ba061f5f8c7fec",
+                "ddfc4ff3b60682f8",
+                "53b37da00d21886a"
+            ]
+        ]
+    },
+    {
+        "id": "77fdd94a6dd798f6",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "props": [
+            {
+                "p": "klartext",
+                "v": "Klargørring",
+                "vt": "str"
+            },
+            {
+                "p": "klarbackground",
+                "v": "red",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 190,
+        "y": 100,
+        "wires": [
+            [
+                "404ca19b.0b55e"
+            ]
+        ]
+    },
+    {
+        "id": "96ec132ae7628bed",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Igang",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Igang",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "klarbackground",
+                "pt": "msg",
+                "to": "blue",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klartext",
+                "pt": "msg",
+                "to": "Sætter op",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 80,
+        "wires": [
+            [
+                "3f275e5d73da77dc"
+            ]
+        ]
+    },
+    {
+        "id": "e8ba061f5f8c7fec",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Klargorring",
+        "mode": "link",
+        "links": [
+            "80a868808fc1a091",
+            "f11944f6972a495d",
+            "b71bafe8e5381546",
+            "b1c144db8add45ef"
+        ],
+        "x": 575,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e4cb261fc0707569",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "property": "klargorring",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Igang",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Klar",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Ikke klar",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 810,
+        "y": 100,
+        "wires": [
+            [
+                "96ec132ae7628bed"
+            ],
+            [
+                "41206f8c8cf7167e"
+            ],
+            [
+                "4aefc470da7667cf"
+            ]
+        ]
+    },
+    {
+        "id": "41206f8c8cf7167e",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Færdig",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klarbackground",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klartext",
+                "pt": "msg",
+                "to": "Klar",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Færdig",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "z",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 120,
+        "wires": [
+            [
+                "3f275e5d73da77dc"
+            ]
+        ]
+    },
+    {
+        "id": "ddfc4ff3b60682f8",
+        "type": "trigger",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-2",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 360,
+        "y": 220,
+        "wires": [
+            [
+                "e9c7d1a9e9141a38"
+            ]
+        ]
+    },
+    {
+        "id": "e9c7d1a9e9141a38",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "func": "if ( global.get(\"gavle_vaek\") === \"true\" && global.get(\"bysterplaceret\") === \"true\" && global.get(\"kisteexit\") === \"closed\" && global.get(\"kistestate\") === \"closed\" && global.get(\"doorroom2\") === \"closed\" && global.get(\"doorroom1\") === \"closed\") { \n  msg.payload = \"Klargjort\";\n} else {\n  msg.payload = \"Ikke klar\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "4e7b9ce0477b0e84"
+            ]
+        ]
+    },
+    {
+        "id": "4aefc470da7667cf",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Ikke klar",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klarbackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klartext",
+                "pt": "msg",
+                "to": "Klargørring",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Ikke klar",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 160,
+        "wires": [
+            [
+                "3f275e5d73da77dc"
+            ]
+        ]
+    },
+    {
+        "id": "a422065c72ada863",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Klargørring",
+        "links": [
+            "3f275e5d73da77dc",
+            "c7004bbf41bb366e"
+        ],
+        "x": 195,
+        "y": 140,
+        "wires": [
+            [
+                "404ca19b.0b55e"
+            ]
+        ]
+    },
+    {
+        "id": "3f275e5d73da77dc",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Klargørrring sat",
+        "mode": "link",
+        "links": [
+            "a422065c72ada863"
+        ],
+        "x": 1075,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4ef97eb1e1560b93",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Klargjort",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klartext",
+                "pt": "msg",
+                "to": "Klar til spil",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klarbackground",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 220,
+        "wires": [
+            [
+                "404ca19b.0b55e",
+                "ddfc4ff3b60682f8"
+            ]
+        ]
+    },
+    {
+        "id": "04118f148f2abeab",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Gameover",
+        "payloadType": "str",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "770a598c.8e9238"
+            ]
+        ]
+    },
+    {
+        "id": "db97f440126e6ab3",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gavle_vaek",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Klar",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klartext",
+                "pt": "msg",
+                "to": "Klargørring",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klarbackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "game",
+                "pt": "global",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 320,
+        "wires": [
+            [
+                "404ca19b.0b55e",
+                "2b480c9c40b1ae41"
+            ]
+        ]
+    },
+    {
+        "id": "4e7b9ce0477b0e84",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Klargjort",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 220,
+        "wires": [
+            [
+                "4ef97eb1e1560b93"
+            ],
+            [
+                "b6512c56f89deb44"
+            ]
+        ]
+    },
+    {
+        "id": "53b37da00d21886a",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Igang",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "e4cb261fc0707569"
+            ]
+        ]
+    },
+    {
+        "id": "b6512c56f89deb44",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Klar 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "klar",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 280,
+        "wires": [
+            [
+                "e4cb261fc0707569"
+            ]
+        ]
+    },
+    {
+        "id": "2b480c9c40b1ae41",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "Game over",
+        "mode": "link",
+        "links": [
+            "b41f9f2bfad990e4"
+        ],
+        "x": 655,
+        "y": 380,
         "wires": []
     },
     {
