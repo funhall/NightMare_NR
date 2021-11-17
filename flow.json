@@ -6564,14 +6564,14 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "g": "463e1cfb0b0e88d4",
-        "name": "",
+        "name": "Tjekker om alle byster er klar til spil",
         "func": "if ( global.get(\"Cartmell\") === \"false\" && global.get(\"Huston\") === \"false\" && global.get(\"Corwin\") === \"true\" && global.get(\"Nellie\") === \"false\" && global.get(\"Clingar\") === \"false\" && global.get(\"Connel\") === \"false\") { \n  msg.payload = \"Alle_klar\";\n} else {\n  msg.payload = \"Nogen er væk\";\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1540,
+        "x": 1620,
         "y": 560,
         "wires": [
             [
@@ -9168,8 +9168,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "scope": [
-            "4ef97eb1e1560b93",
-            "b6512c56f89deb44"
+            "d3101e5b0b8ccf52"
         ],
         "uncaught": false,
         "x": 1180,
