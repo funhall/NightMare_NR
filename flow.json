@@ -11706,13 +11706,13 @@
         "label": "8",
         "tooltip": "",
         "color": "",
-        "bgcolor": "{{msg.8background}}",
+        "bgcolor": "{{msg.eightbackground}}",
         "icon": "",
         "payload": "ok",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2080,
+        "x": 2100,
         "y": 1180,
         "wires": [
             [
@@ -11759,7 +11759,7 @@
         "name": "",
         "props": [
             {
-                "p": "8background",
+                "p": "eightbackground",
                 "v": "red",
                 "vt": "str"
             }
