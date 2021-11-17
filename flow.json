@@ -8945,13 +8945,6 @@
                 "t": "set",
                 "p": "klargorring",
                 "pt": "flow",
-                "to": "Færdig",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "klargorring",
-                "pt": "flow",
                 "to": "Igang",
                 "tot": "str"
             }
@@ -8961,7 +8954,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 800,
+        "x": 810,
         "y": 220,
         "wires": [
             []
