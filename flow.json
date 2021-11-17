@@ -7041,7 +7041,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 380,
+        "x": 420,
         "y": 880,
         "wires": [
             [
@@ -9322,7 +9322,7 @@
         "y": 820,
         "wires": [
             [
-                "594a5878cdc1c5c9"
+                "c0ba6a06d7b7da0d"
             ]
         ]
     },
@@ -9345,8 +9345,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
-        "y": 800,
+        "x": 370,
+        "y": 760,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
