@@ -7142,7 +7142,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "STOP",
+        "label": "{{msg.stoptext}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -9548,7 +9548,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 120,
-        "y": 660,
+        "y": 740,
         "wires": [
             [
                 "5801dd6cddafa481"
@@ -9688,14 +9688,70 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 290,
+        "x": 270,
         "y": 620,
         "wires": [
             [
-                "011d71bd028f4985"
+                "011d71bd028f4985",
+                "4697c7b2b5242851"
             ],
             [
-                "18fca4cd232def7d"
+                "18fca4cd232def7d",
+                "542bd9212ddb0eb8"
+            ]
+        ]
+    },
+    {
+        "id": "4697c7b2b5242851",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "stoptext",
+                "pt": "msg",
+                "to": "continue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 660,
+        "wires": [
+            [
+                "f51d408db856e1dc"
+            ]
+        ]
+    },
+    {
+        "id": "542bd9212ddb0eb8",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "stoptext",
+                "pt": "msg",
+                "to": "Stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 700,
+        "wires": [
+            [
+                "f51d408db856e1dc"
             ]
         ]
     },
