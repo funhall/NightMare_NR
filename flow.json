@@ -1471,35 +1471,6 @@
         "y": 519
     },
     {
-        "id": "be6ab646aba208a1",
-        "type": "group",
-        "z": "33e76285.1cd03e",
-        "name": "Power on/off",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d9f50002.a92af",
-            "58cba73f.1e46c8",
-            "2edc0b3d.6f1d74",
-            "945180bf0ef6aa6b",
-            "8ccb2f9965dd5d0c",
-            "2167ac1eab1fe97b",
-            "74823456d545bc69",
-            "aa7912c5d7649fad",
-            "9134cd93f3c9e4cb",
-            "bc3dfb701db5da90",
-            "0663e716afdd1a4d",
-            "994f276e56ed3842",
-            "ed99e09cfe228f96"
-        ],
-        "env": [],
-        "x": 54,
-        "y": 659,
-        "w": 1032,
-        "h": 242
-    },
-    {
         "id": "c4e578e11dcc76bd",
         "type": "group",
         "z": "33e76285.1cd03e",
@@ -5284,54 +5255,6 @@
         ]
     },
     {
-        "id": "d9f50002.a92af",
-        "type": "mqtt out",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "12V boks",
-        "topic": "opladerStyrring/output/D3",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dca8425b.8fb18",
-        "x": 1000,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "58cba73f.1e46c8",
-        "type": "ui_button",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "Power on/off",
-        "group": "117cda2a.43e596",
-        "order": 16,
-        "width": 1,
-        "height": 1,
-        "passthru": false,
-        "label": "{{msg.powertext}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.powerback}}",
-        "icon": "fa-plug",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 150,
-        "y": 760,
-        "wires": [
-            [
-                "74823456d545bc69",
-                "0663e716afdd1a4d"
-            ]
-        ]
-    },
-    {
         "id": "43790ab3.358724",
         "type": "mqtt out",
         "z": "33e76285.1cd03e",
@@ -5347,25 +5270,6 @@
         "broker": "dca8425b.8fb18",
         "x": 4650,
         "y": 4200,
-        "wires": []
-    },
-    {
-        "id": "2edc0b3d.6f1d74",
-        "type": "mqtt out",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "230V fordeler",
-        "topic": "opladerStyrring/output/D4",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dca8425b.8fb18",
-        "x": 980,
-        "y": 800,
         "wires": []
     },
     {
@@ -7665,156 +7569,6 @@
         ]
     },
     {
-        "id": "945180bf0ef6aa6b",
-        "type": "http request",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "Sluk tv rum1",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://192.168.1.60:1880/sluktv?state=sluk",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 930,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8ccb2f9965dd5d0c",
-        "type": "delay",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 780,
-        "y": 840,
-        "wires": [
-            [
-                "2edc0b3d.6f1d74"
-            ]
-        ]
-    },
-    {
-        "id": "2167ac1eab1fe97b",
-        "type": "http request",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "Sluk tv rum3",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://192.168.1.32:1880/sluktv?state=sluk",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 930,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "74823456d545bc69",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "Reset alle variabler",
-        "rules": [
-            {
-                "t": "set",
-                "p": "kistestate",
-                "pt": "global",
-                "to": "open",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "kisteexit",
-                "pt": "global",
-                "to": "open",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "doorroom2",
-                "pt": "global",
-                "to": "open",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "tjeklist",
-                "pt": "global",
-                "to": "wait",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "gavleplaceret",
-                "pt": "global",
-                "to": "false",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "kistetom",
-                "pt": "global",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "firsttimeplay",
-                "pt": "global",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "left",
-                "pt": "global",
-                "to": "down",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "right",
-                "pt": "global",
-                "to": "down",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 370,
-        "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "26a7b9ea531781b4",
         "type": "function",
         "z": "33e76285.1cd03e",
@@ -8118,168 +7872,6 @@
         "wires": [
             [
                 "4bae206c110fb2aa"
-            ]
-        ]
-    },
-    {
-        "id": "aa7912c5d7649fad",
-        "type": "switch",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "",
-        "property": "poweron",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 550,
-        "y": 760,
-        "wires": [
-            [
-                "9134cd93f3c9e4cb"
-            ],
-            [
-                "bc3dfb701db5da90"
-            ]
-        ]
-    },
-    {
-        "id": "9134cd93f3c9e4cb",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "Power off",
-        "rules": [
-            {
-                "t": "set",
-                "p": "poweron",
-                "pt": "global",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "powerback",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "powertext",
-                "pt": "msg",
-                "to": "ON",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "HIGH",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 720,
-        "y": 720,
-        "wires": [
-            [
-                "58cba73f.1e46c8",
-                "8ccb2f9965dd5d0c",
-                "945180bf0ef6aa6b",
-                "2167ac1eab1fe97b",
-                "d9f50002.a92af",
-                "ed99e09cfe228f96"
-            ]
-        ]
-    },
-    {
-        "id": "bc3dfb701db5da90",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "Power on",
-        "rules": [
-            {
-                "t": "set",
-                "p": "poweron",
-                "pt": "flow",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "powerback",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "powertext",
-                "pt": "msg",
-                "to": "OFF",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "LOW",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 720,
-        "y": 760,
-        "wires": [
-            [
-                "58cba73f.1e46c8",
-                "2edc0b3d.6f1d74",
-                "d9f50002.a92af",
-                "994f276e56ed3842"
-            ]
-        ]
-    },
-    {
-        "id": "0663e716afdd1a4d",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "",
-        "rules": [
-            {
-                "t": "delete",
-                "p": "socketid",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 370,
-        "y": 760,
-        "wires": [
-            [
-                "aa7912c5d7649fad"
             ]
         ]
     },
@@ -9460,7 +9052,6 @@
         "id": "8b9bfac458be4957",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "d": true,
         "name": "Power on/off",
         "group": "117cda2a.43e596",
         "order": 16,
@@ -9476,8 +9067,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 290,
-        "y": 1120,
+        "x": 170,
+        "y": 1060,
         "wires": [
             [
                 "a96c954c12b092ec",
@@ -9568,8 +9159,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 380,
-        "y": 1240,
+        "x": 160,
+        "y": 1160,
         "wires": [
             [
                 "a96c954c12b092ec"
@@ -9714,8 +9305,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 630,
-        "y": 1240,
+        "x": 430,
+        "y": 1140,
         "wires": [
             [
                 "8e0492c1a7a5f7f6"
@@ -9739,8 +9330,8 @@
             "09533f94b03c3a5b",
             "bb1dba3f3fa35072"
         ],
-        "x": 775,
-        "y": 1240,
+        "x": 615,
+        "y": 1140,
         "wires": []
     },
     {
@@ -9889,8 +9480,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 1180,
+        "x": 490,
+        "y": 1080,
         "wires": []
     },
     {
@@ -9942,34 +9533,6 @@
         ],
         "x": 1215,
         "y": 1020,
-        "wires": []
-    },
-    {
-        "id": "994f276e56ed3842",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "Power ON",
-        "mode": "link",
-        "links": [
-            "db96da4950130d36"
-        ],
-        "x": 815,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "ed99e09cfe228f96",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "g": "be6ab646aba208a1",
-        "name": "Power OFF",
-        "mode": "link",
-        "links": [
-            "e0282cf331829ce9"
-        ],
-        "x": 815,
-        "y": 700,
         "wires": []
     },
     {
