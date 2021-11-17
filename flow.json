@@ -2337,7 +2337,8 @@
             "106326f838ebf42e",
             "7fc3fbad33439116",
             "01b016a84dbb5dd5",
-            "4910cdca14f3e815"
+            "4910cdca14f3e815",
+            "019566a3a22a4b03"
         ],
         "env": [],
         "x": 74,
@@ -11572,6 +11573,34 @@
         "outputs": 1,
         "x": 380,
         "y": 640,
+        "wires": [
+            [
+                "019566a3a22a4b03"
+            ]
+        ]
+    },
+    {
+        "id": "019566a3a22a4b03",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 660,
         "wires": [
             [
                 "7fc3fbad33439116"
