@@ -6293,7 +6293,7 @@
         "z": "33e76285.1cd03e",
         "g": "5e203e809c0bd87a",
         "name": "",
-        "func": "if ( global.get(\"kisteexit\") === \"closed\" && global.get(\"kistestate\") === \"closed\" && global.get(\"doorroom2\") === \"closed\"  && global.get(\"doorroom4\") === \"closed\" && global.get(\"left\") === \"up\" && global.get(\"right\") === \"up\"  && global.get(\"bysterplaceret\") === \"true\" && global.get(\"gavle_vaek\") === \"true\" ) { \n  msg.payload = \"lock_ready\";\n} else {\n  msg.payload = \"lock_not-ready\";\n}\nreturn msg;\n\n",
+        "func": "if ( global.get(\"kisteexit\") === \"closed\" && global.get(\"kistestate\") === \"closed\" && global.get(\"doorroom2\") === \"closed\"  && global.get(\"doorroom4\") === \"closed\" && global.get(\"left\") === \"up\" && global.get(\"right\") === \"up\"  && global.get(\"bysterplaceret\") === \"true\" && global.get(\"gavle_vaek\") === \"true\" ) { \n  msg.payload = \"lock_ready\";\n} else {\n  msg.payload = \"lock_not_ready\";\n}\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
