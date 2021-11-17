@@ -1489,13 +1489,15 @@
             "aa7912c5d7649fad",
             "9134cd93f3c9e4cb",
             "bc3dfb701db5da90",
-            "0663e716afdd1a4d"
+            "0663e716afdd1a4d",
+            "994f276e56ed3842",
+            "ed99e09cfe228f96"
         ],
         "env": [],
         "x": 54,
-        "y": 679,
+        "y": 659,
         "w": 1032,
-        "h": 222
+        "h": 242
     },
     {
         "id": "c4e578e11dcc76bd",
@@ -5304,7 +5306,6 @@
         "id": "58cba73f.1e46c8",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "d": true,
         "g": "be6ab646aba208a1",
         "name": "Power on/off",
         "group": "117cda2a.43e596",
@@ -8199,7 +8200,8 @@
                 "8ccb2f9965dd5d0c",
                 "945180bf0ef6aa6b",
                 "2167ac1eab1fe97b",
-                "d9f50002.a92af"
+                "d9f50002.a92af",
+                "ed99e09cfe228f96"
             ]
         ]
     },
@@ -8250,7 +8252,8 @@
             [
                 "58cba73f.1e46c8",
                 "2edc0b3d.6f1d74",
-                "d9f50002.a92af"
+                "d9f50002.a92af",
+                "994f276e56ed3842"
             ]
         ]
     },
@@ -9457,6 +9460,7 @@
         "id": "8b9bfac458be4957",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
+        "d": true,
         "name": "Power on/off",
         "group": "117cda2a.43e596",
         "order": 16,
@@ -9472,8 +9476,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 410,
-        "y": 1180,
+        "x": 290,
+        "y": 1120,
         "wires": [
             [
                 "a96c954c12b092ec",
@@ -9919,6 +9923,7 @@
         "type": "link out",
         "z": "33e76285.1cd03e",
         "name": "Power OFF",
+        "mode": "link",
         "links": [
             "e0282cf331829ce9"
         ],
@@ -9931,11 +9936,40 @@
         "type": "link out",
         "z": "33e76285.1cd03e",
         "name": "Power ON",
+        "mode": "link",
         "links": [
             "db96da4950130d36"
         ],
         "x": 1215,
         "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "994f276e56ed3842",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "be6ab646aba208a1",
+        "name": "Power ON",
+        "mode": "link",
+        "links": [
+            "db96da4950130d36"
+        ],
+        "x": 815,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "ed99e09cfe228f96",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "be6ab646aba208a1",
+        "name": "Power OFF",
+        "mode": "link",
+        "links": [
+            "e0282cf331829ce9"
+        ],
+        "x": 815,
+        "y": 700,
         "wires": []
     },
     {
@@ -36360,7 +36394,8 @@
         "name": "Oplader tænd",
         "links": [
             "d6903db4074da266",
-            "2216095b02d3c520"
+            "2216095b02d3c520",
+            "994f276e56ed3842"
         ],
         "x": 3955,
         "y": 4240,
@@ -36611,7 +36646,8 @@
         "name": "Oplader sluk",
         "links": [
             "9169d621f89cc42b",
-            "49095ecf9ab1fd70"
+            "49095ecf9ab1fd70",
+            "ed99e09cfe228f96"
         ],
         "x": 3955,
         "y": 4180,
