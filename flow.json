@@ -9459,8 +9459,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 1000,
+        "x": 530,
+        "y": 680,
         "wires": []
     },
     {
@@ -9517,8 +9517,7 @@
         "y": 340,
         "wires": [
             [
-                "3bebd32b5735ccd4",
-                "2b480c9c40b1ae41"
+                "3bebd32b5735ccd4"
             ]
         ]
     },
@@ -9970,7 +9969,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
+        "x": 740,
         "y": 320,
         "wires": [
             [
