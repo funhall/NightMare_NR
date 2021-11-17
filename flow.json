@@ -2346,20 +2346,19 @@
             "de5ea08b0ff1a997",
             "91966b424e9124b3",
             "397b6fcd88e6dca3",
-            "59bcbc0eb287671d",
-            "e26b7cac8b2be6d4",
             "9b391ee6ccfc7d08",
             "3e290a334065f6a0",
             "54c83c00ac584f00",
             "ce74e291796fd569",
             "4904644ae19bf16a",
             "ea9dd1feba1f638a",
-            "5b0c77c3b5c4cbfd"
+            "5b0c77c3b5c4cbfd",
+            "a1aa32c4949c4fe3"
         ],
         "env": [],
-        "x": 94,
+        "x": 114,
         "y": 139,
-        "w": 1032,
+        "w": 972,
         "h": 782
     },
     {
@@ -9794,7 +9793,9 @@
             "b71bafe8e5381546",
             "b1c144db8add45ef",
             "6e84323610cab4f8",
-            "a364de78fa277074"
+            "a364de78fa277074",
+            "b91d7ea836498986",
+            "a1aa32c4949c4fe3"
         ],
         "x": 575,
         "y": 180,
@@ -18603,7 +18604,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 930,
+        "x": 890,
         "y": 680,
         "wires": []
     },
@@ -18622,7 +18623,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 810,
+        "x": 770,
         "y": 880,
         "wires": []
     },
@@ -18668,7 +18669,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1030,
+        "x": 990,
         "y": 300,
         "wires": []
     },
@@ -18692,7 +18693,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 390,
+        "x": 350,
         "y": 360,
         "wires": [
             [
@@ -18720,12 +18721,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 220,
+        "x": 550,
+        "y": 260,
         "wires": [
             [
-                "397b6fcd88e6dca3",
-                "4904644ae19bf16a"
+                "397b6fcd88e6dca3"
             ]
         ]
     },
@@ -18748,7 +18748,7 @@
         "min": 0,
         "max": "1024",
         "step": "10",
-        "x": 840,
+        "x": 800,
         "y": 360,
         "wires": [
             [
@@ -18862,44 +18862,6 @@
         "wires": []
     },
     {
-        "id": "59bcbc0eb287671d",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "g": "95a3c4b6507c5cff",
-        "name": "Nedtælling lys rum 1",
-        "links": [
-            "ba36de2e2eb002c0",
-            "786cf1f7b5add738"
-        ],
-        "x": 135,
-        "y": 280,
-        "wires": [
-            [
-                "9b391ee6ccfc7d08"
-            ]
-        ]
-    },
-    {
-        "id": "e26b7cac8b2be6d4",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "g": "95a3c4b6507c5cff",
-        "name": "Lys rum 1 100%",
-        "links": [
-            "dcda2e3ca6ad94be",
-            "e751d86262111364",
-            "d0db6f812a7972aa",
-            "a1b3d2126fab40bf"
-        ],
-        "x": 335,
-        "y": 220,
-        "wires": [
-            [
-                "91966b424e9124b3"
-            ]
-        ]
-    },
-    {
         "id": "9b391ee6ccfc7d08",
         "type": "switch",
         "z": "2bdc58f37cbddb93",
@@ -18915,7 +18877,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 230,
+        "x": 190,
         "y": 360,
         "wires": [
             [
@@ -18964,7 +18926,7 @@
         "g": "95a3c4b6507c5cff",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 500,
+        "x": 460,
         "y": 640,
         "wires": [
             [
@@ -18981,7 +18943,7 @@
         "links": [
             "7ce4a2f9.9437dc"
         ],
-        "x": 195,
+        "x": 155,
         "y": 660,
         "wires": [
             [
@@ -18997,7 +18959,7 @@
         "g": "95a3c4b6507c5cff",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 460,
+        "x": 420,
         "y": 740,
         "wires": [
             []
@@ -19166,7 +19128,7 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 580,
+        "x": 540,
         "y": 360,
         "wires": [
             [
@@ -19380,7 +19342,7 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 610,
+        "x": 570,
         "y": 180,
         "wires": [
             []
@@ -19408,7 +19370,7 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 930,
+        "x": 890,
         "y": 480,
         "wires": [
             []
@@ -19441,6 +19403,23 @@
         "wires": [
             [
                 "392710fef73be1d8"
+            ]
+        ]
+    },
+    {
+        "id": "a1aa32c4949c4fe3",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
+        "name": "Klargørring",
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 415,
+        "y": 260,
+        "wires": [
+            [
+                "91966b424e9124b3"
             ]
         ]
     },
@@ -29240,7 +29219,8 @@
             "ff3551470cb85fa7",
             "a1b8dc7d6346f2e2",
             "956192102726fdf9",
-            "1f9891ca9c6e7ea7"
+            "1f9891ca9c6e7ea7",
+            "25a8f331c93bd50f"
         ],
         "x": 1095,
         "y": 860,
@@ -29318,7 +29298,9 @@
             "60c1ca75a8487e9f",
             "ff3551470cb85fa7",
             "b28463c12b40f762",
-            "1f9891ca9c6e7ea7"
+            "1f9891ca9c6e7ea7",
+            "111c1080548d89dd",
+            "25a8f331c93bd50f"
         ],
         "x": 635,
         "y": 980,
