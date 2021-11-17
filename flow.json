@@ -8915,7 +8915,7 @@
         "id": "4ef97eb1e1560b93",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "klargørring i gang1",
+        "name": "Klargjort",
         "rules": [
             {
                 "t": "set",
@@ -8926,7 +8926,7 @@
             },
             {
                 "t": "set",
-                "p": "klarbackground}",
+                "p": "klarbackground",
                 "pt": "msg",
                 "to": "green",
                 "tot": "str"
@@ -8944,7 +8944,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
+        "x": 780,
         "y": 220,
         "wires": [
             [
