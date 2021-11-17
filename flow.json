@@ -9199,7 +9199,14 @@
                 "p": "bysterplaceret",
                 "pt": "global",
                 "to": "true",
-                "tot": "msg"
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "gavle_vaek",
+                "pt": "global",
+                "to": "true",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -9207,7 +9214,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
+        "x": 510,
         "y": 600,
         "wires": [
             []
