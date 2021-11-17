@@ -8994,10 +8994,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "klargorring",
-                "pt": "flow",
-                "to": "Ikke klar",
-                "tot": "str"
+                "p": "gavle_vaek",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
             }
         ],
         "action": "",
@@ -9005,7 +9005,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
+        "x": 500,
         "y": 340,
         "wires": [
             [
