@@ -9319,7 +9319,7 @@
         "y": 820,
         "wires": [
             [
-                "51f38662168ae960"
+                "594a5878cdc1c5c9"
             ]
         ]
     },
@@ -9343,7 +9343,7 @@
         "to": "",
         "reg": false,
         "x": 410,
-        "y": 820,
+        "y": 800,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
@@ -9358,8 +9358,8 @@
         "links": [
             "6ae7dc55b448fca2"
         ],
-        "x": 295,
-        "y": 540,
+        "x": 255,
+        "y": 520,
         "wires": [
             [
                 "72d2fe598eca57d7"
@@ -9405,31 +9405,6 @@
         "x": 1465,
         "y": 400,
         "wires": []
-    },
-    {
-        "id": "51f38662168ae960",
-        "type": "switch",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "game",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 250,
-        "y": 820,
-        "wires": [
-            [
-                "594a5878cdc1c5c9"
-            ]
-        ]
     },
     {
         "id": "72d2fe598eca57d7",
@@ -10130,7 +10105,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 190,
+        "x": 120,
         "y": 540,
         "wires": [
             [
