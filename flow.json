@@ -8998,6 +8998,13 @@
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Ikke klar",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -9005,7 +9012,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
+        "x": 480,
         "y": 340,
         "wires": [
             [
