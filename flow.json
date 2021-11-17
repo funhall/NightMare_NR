@@ -306,18 +306,15 @@
             "543c5fae.b45d1",
             "c4359768.9b5fe8",
             "ba66ad44.f0e9",
-            "dc265170.11498",
             "51a82bba.c75414",
             "9eb232d6.682b5",
-            "c4be9f5c.259de",
-            "e249bc20.1935a",
             "6a9a4143e42f1471",
             "3ad2d48d35907e77"
         ],
         "x": 2404,
         "y": 4119,
-        "w": 932,
-        "h": 442
+        "w": 892,
+        "h": 342
     },
     {
         "id": "3ef9495f.289ca6",
@@ -2448,12 +2445,13 @@
             "ea9dd1feba1f638a",
             "a1aa32c4949c4fe3",
             "b9b0ee2e1cb21624",
-            "20d689c8b00d2164"
+            "20d689c8b00d2164",
+            "565afc3094528f2f"
         ],
-        "x": 54,
+        "x": 34,
         "y": 99,
-        "w": 972,
-        "h": 502
+        "w": 992,
+        "h": 562
     },
     {
         "id": "1d4f38fd430a0ca5",
@@ -5393,13 +5391,9 @@
         "y": 4400,
         "wires": [
             [
-                "ba66ad44.f0e9",
-                "e249bc20.1935a",
-                "c4be9f5c.259de"
+                "ba66ad44.f0e9"
             ],
-            [
-                "dc265170.11498"
-            ]
+            []
         ]
     },
     {
@@ -5473,32 +5467,6 @@
         ]
     },
     {
-        "id": "dc265170.11498",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "c4fe518a.1dca8",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "HIGH",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2960,
-        "y": 4460,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "43790ab3.358724",
         "type": "mqtt out",
         "z": "33e76285.1cd03e",
@@ -5561,20 +5529,6 @@
                 "3d80e799.828c38"
             ]
         ]
-    },
-    {
-        "id": "c4be9f5c.259de",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "g": "c4fe518a.1dca8",
-        "name": "Game over",
-        "links": [
-            "4ce16553.6a6e0c",
-            "8e8ee1a2.3cbc8"
-        ],
-        "x": 3075,
-        "y": 4520,
-        "wires": []
     },
     {
         "id": "1ada877b.576d69",
@@ -6418,23 +6372,6 @@
                 "43790ab3.358724"
             ]
         ]
-    },
-    {
-        "id": "e249bc20.1935a",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "g": "c4fe518a.1dca8",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3220,
-        "y": 4380,
-        "wires": []
     },
     {
         "id": "2b0d58a2.492d78",
@@ -8155,7 +8092,8 @@
         "name": "Alle byster placeret",
         "mode": "link",
         "links": [
-            "fb2907834c58bfd3"
+            "fb2907834c58bfd3",
+            "565afc3094528f2f"
         ],
         "x": 1425,
         "y": 2180,
@@ -19913,8 +19851,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
-        "y": 320,
+        "x": 330,
+        "y": 400,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -20080,8 +20018,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 210,
-        "y": 320,
+        "x": 190,
+        "y": 400,
         "wires": [
             [
                 "de5ea08b0ff1a997",
@@ -20130,8 +20068,8 @@
         "g": "26046f160ae182f7",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 480,
-        "y": 420,
+        "x": 460,
+        "y": 560,
         "wires": [
             [
                 "397b6fcd88e6dca3"
@@ -20147,8 +20085,8 @@
         "links": [
             "7ce4a2f9.9437dc"
         ],
-        "x": 255,
-        "y": 460,
+        "x": 235,
+        "y": 600,
         "wires": [
             [
                 "3e290a334065f6a0",
@@ -20163,8 +20101,8 @@
         "g": "26046f160ae182f7",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 480,
-        "y": 480,
+        "x": 460,
+        "y": 620,
         "wires": [
             []
         ]
@@ -20285,8 +20223,8 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 540,
-        "y": 320,
+        "x": 520,
+        "y": 400,
         "wires": [
             [
                 "397b6fcd88e6dca3"
@@ -20541,8 +20479,8 @@
         "links": [
             "7fc3fbad33439116"
         ],
-        "x": 115,
-        "y": 320,
+        "x": 95,
+        "y": 400,
         "wires": [
             [
                 "9b391ee6ccfc7d08"
@@ -20571,11 +20509,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
-        "y": 380,
+        "x": 140,
+        "y": 320,
         "wires": [
             [
-                "de5ea08b0ff1a997"
+                "3e86871486d1741a"
             ]
         ]
     },
@@ -20584,7 +20522,7 @@
         "type": "change",
         "z": "2bdc58f37cbddb93",
         "g": "26046f160ae182f7",
-        "name": "",
+        "name": "1024",
         "rules": [
             {
                 "t": "set",
@@ -20599,8 +20537,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 360,
+        "x": 310,
+        "y": 440,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -20655,6 +20593,124 @@
         "wires": [
             [
                 "a6b700e996acba10"
+            ]
+        ]
+    },
+    {
+        "id": "359175bef7584310",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "nedtælling",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "start_op",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "5a26c8c69eb99df2"
+            ]
+        ]
+    },
+    {
+        "id": "3e86871486d1741a",
+        "type": "switch",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "359175bef7584310",
+                "01dac7b97282ed65"
+            ]
+        ]
+    },
+    {
+        "id": "5a26c8c69eb99df2",
+        "type": "time-based-dimmer",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "interval": "300",
+        "step": "10",
+        "minValue": "20",
+        "maxValue": "1024",
+        "startIncCommand": "start_op",
+        "stopIncCommand": "stop_op",
+        "startDecCommand": "start_ned",
+        "stopDecCommand": "stop_ned",
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "397b6fcd88e6dca3"
+            ]
+        ]
+    },
+    {
+        "id": "01dac7b97282ed65",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "1024",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1024",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "5a26c8c69eb99df2"
+            ]
+        ]
+    },
+    {
+        "id": "565afc3094528f2f",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "26046f160ae182f7",
+        "name": "",
+        "links": [
+            "d4d2aeec1061c558"
+        ],
+        "x": 85,
+        "y": 220,
+        "wires": [
+            [
+                "3e86871486d1741a"
             ]
         ]
     },
