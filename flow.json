@@ -19058,13 +19058,13 @@
         "type": "change",
         "z": "e21f6458e5ab1eb6",
         "g": "f38486a5759666f0",
-        "name": "LOW",
+        "name": "HIGH",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "LOW",
+                "to": "HIGH",
                 "tot": "str"
             }
         ],
@@ -19087,13 +19087,13 @@
         "type": "change",
         "z": "e21f6458e5ab1eb6",
         "g": "f38486a5759666f0",
-        "name": "Lås rum 1",
+        "name": "LOW",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "HIGH",
+                "to": "LOW",
                 "tot": "str"
             }
         ],
@@ -19102,7 +19102,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
+        "x": 1010,
         "y": 560,
         "wires": [
             [
