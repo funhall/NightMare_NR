@@ -6287,7 +6287,7 @@
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "payload": "START",
+        "payload": "on",
         "payloadType": "str",
         "topic": "on",
         "topicType": "msg",
