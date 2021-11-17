@@ -8925,7 +8925,7 @@
             },
             {
                 "t": "set",
-                "p": "klarbackground",
+                "p": "klarbackground}",
                 "pt": "msg",
                 "to": "green",
                 "tot": "str"
@@ -8947,7 +8947,8 @@
         "y": 220,
         "wires": [
             [
-                "ddfc4ff3b60682f8"
+                "ddfc4ff3b60682f8",
+                "404ca19b.0b55e"
             ]
         ]
     },
