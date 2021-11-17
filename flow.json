@@ -2136,8 +2136,8 @@
             "99d5bc4265a40b68",
             "aa1d5e0da6c5b1f3"
         ],
-        "x": 94,
-        "y": 959,
+        "x": 134,
+        "y": 979,
         "w": 1172,
         "h": 282
     },
@@ -2487,6 +2487,31 @@
         "y": 1939,
         "w": 592,
         "h": 82
+    },
+    {
+        "id": "7a5fe20602228ef8",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "ccc7333eed013810",
+            "64425d5c0234515c",
+            "29fdd270df48f8f7",
+            "c3b549a116f391b2",
+            "8454f2119aa96ad7"
+        ],
+        "x": 134,
+        "y": 1679,
+        "w": 752,
+        "h": 142
     },
     {
         "id": "82fd466d.f6c968",
@@ -8147,7 +8172,7 @@
         "z": "33e76285.1cd03e",
         "g": "96be5e73cc5cc970",
         "name": "Counter",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16707,8 +16732,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 330,
-        "y": 1540,
+        "x": 190,
+        "y": 1420,
         "wires": [
             [
                 "69655eab84abe955"
@@ -18411,8 +18436,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 330,
-        "y": 1600,
+        "x": 210,
+        "y": 1640,
         "wires": [
             [
                 "69655eab84abe955"
@@ -20509,8 +20534,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 200,
-        "y": 1080,
+        "x": 240,
+        "y": 1100,
         "wires": [
             [
                 "aea609932bb77faa"
@@ -20531,8 +20556,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
-        "y": 1200,
+        "x": 730,
+        "y": 1220,
         "wires": []
     },
     {
@@ -20558,8 +20583,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 390,
-        "y": 1080,
+        "x": 430,
+        "y": 1100,
         "wires": [
             [
                 "5b7cfa19a9a51b86"
@@ -20603,8 +20628,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
-        "y": 1040,
+        "x": 590,
+        "y": 1060,
         "wires": [
             [
                 "7f44533ac0b79782",
@@ -20646,8 +20671,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
-        "y": 1080,
+        "x": 590,
+        "y": 1100,
         "wires": [
             [
                 "7f44533ac0b79782",
@@ -20662,8 +20687,8 @@
         "g": "1c3803be18092683",
         "name": "flow.kistestate - open/closed",
         "info": "",
-        "x": 240,
-        "y": 1040,
+        "x": 280,
+        "y": 1060,
         "wires": []
     },
     {
@@ -20686,8 +20711,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 750,
-        "y": 1060,
+        "x": 790,
+        "y": 1080,
         "wires": [
             [
                 "89d16fef4e23be2c",
@@ -20714,8 +20739,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 880,
-        "y": 1160,
+        "x": 920,
+        "y": 1180,
         "wires": [
             [
                 "4a7ddef35f8f06a1"
@@ -21210,8 +21235,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1060,
-        "y": 1120,
+        "x": 1100,
+        "y": 1140,
         "wires": [
             [
                 "3450b6446e3d8883"
@@ -21233,8 +21258,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1180,
-        "y": 1060,
+        "x": 1220,
+        "y": 1080,
         "wires": []
     },
     {
@@ -21268,8 +21293,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 880,
-        "y": 1120,
+        "x": 920,
+        "y": 1140,
         "wires": [
             [
                 "3450b6446e3d8883"
@@ -21477,8 +21502,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 970,
-        "y": 1060,
+        "x": 1010,
+        "y": 1080,
         "wires": [
             [
                 "5b7cfa19a9a51b86"
@@ -21506,8 +21531,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 230,
-        "y": 1000,
+        "x": 270,
+        "y": 1020,
         "wires": [
             [
                 "aa1d5e0da6c5b1f3",
@@ -21535,8 +21560,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 1000,
+        "x": 560,
+        "y": 1020,
         "wires": [
             []
         ]
@@ -21625,6 +21650,130 @@
             [
                 "c9c85ecafe022276"
             ]
+        ]
+    },
+    {
+        "id": "ccc7333eed013810",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "7a5fe20602228ef8",
+        "name": "Dukke aflæs vægt",
+        "topic": "dukke",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 250,
+        "y": 1760,
+        "wires": [
+            [
+                "29fdd270df48f8f7",
+                "64425d5c0234515c",
+                "c3b549a116f391b2"
+            ]
+        ]
+    },
+    {
+        "id": "64425d5c0234515c",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "g": "7a5fe20602228ef8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "29fdd270df48f8f7",
+        "type": "ui_button",
+        "z": "e21f6458e5ab1eb6",
+        "g": "7a5fe20602228ef8",
+        "name": "Dukke vægt",
+        "group": "9d85a95.3d6e458",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 1780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3b549a116f391b2",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "g": "7a5fe20602228ef8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "-0.3",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "0.5",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 490,
+        "y": 1720,
+        "wires": [
+            [
+                "8454f2119aa96ad7"
+            ],
+            [
+                "8454f2119aa96ad7"
+            ]
+        ]
+    },
+    {
+        "id": "8454f2119aa96ad7",
+        "type": "delay",
+        "z": "e21f6458e5ab1eb6",
+        "g": "7a5fe20602228ef8",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "2",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 1720,
+        "wires": [
+            []
         ]
     },
     {
@@ -23385,7 +23534,8 @@
         "g": "2316e898.9addc8",
         "name": "Dukke skrig",
         "links": [
-            "e31a61e6.09726"
+            "e31a61e6.09726",
+            "6b8a5bb477a416c1"
         ],
         "x": 2195,
         "y": 4080,
