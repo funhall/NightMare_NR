@@ -32,6 +32,14 @@
         "env": []
     },
     {
+        "id": "42a18184186a4f43",
+        "type": "tab",
+        "label": "Video / audio",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "5b3651b.92335b",
         "type": "tab",
         "label": "Audio og Video",
@@ -139,14 +147,6 @@
         "type": "tab",
         "label": "Flow 5",
         "disabled": true,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "42a18184186a4f43",
-        "type": "tab",
-        "label": "Video / audio",
-        "disabled": false,
         "info": "",
         "env": []
     },
@@ -2354,9 +2354,9 @@
             "3f73821671c0a461"
         ],
         "env": [],
-        "x": 534,
-        "y": 159,
-        "w": 1502,
+        "x": 374,
+        "y": 59,
+        "w": 1512,
         "h": 202
     },
     {
@@ -17327,6 +17327,36 @@
         ]
     },
     {
+        "id": "bdc5bb9a67ae35f0",
+        "type": "status",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "scope": null,
+        "x": 270,
+        "y": 1760,
+        "wires": [
+            [
+                "775c0a15c0b53755"
+            ]
+        ]
+    },
+    {
+        "id": "775c0a15c0b53755",
+        "type": "debug",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1760,
+        "wires": []
+    },
+    {
         "id": "80a868808fc1a091",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
@@ -20486,6 +20516,384 @@
         "reg": false,
         "x": 520,
         "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dce242cef0b59c86",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "79e37f03118231ed"
+            ]
+        ]
+    },
+    {
+        "id": "6b708282dfeeeb33",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=http://stream.vinylhits.dk/vinylmp3",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 970,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87a253aea6896414",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1790,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15239578b2c72d37",
+        "type": "ui_slider",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "label": "Radio",
+        "tooltip": "",
+        "group": "117cda2a.43e596",
+        "order": 21,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "250",
+        "step": 1,
+        "x": 630,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6901acc273a3b8f8",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 200,
+        "wires": [
+            [
+                "9e687831ae8d1589"
+            ]
+        ]
+    },
+    {
+        "id": "9e687831ae8d1589",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 220,
+        "wires": [
+            [
+                "f2041666dd9aee93",
+                "470b4d8e6ae451b9"
+            ]
+        ]
+    },
+    {
+        "id": "470b4d8e6ae451b9",
+        "type": "join",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1510,
+        "y": 220,
+        "wires": [
+            [
+                "d13db69b9372a73e",
+                "334626ad32a91919"
+            ]
+        ]
+    },
+    {
+        "id": "f2041666dd9aee93",
+        "type": "timed-counter",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "timelimit": 350,
+        "timeunit": 1,
+        "withhold": false,
+        "fixedtimeout": false,
+        "pertopic": false,
+        "x": 1180,
+        "y": 180,
+        "wires": [
+            [
+                "d60e5f6b48bbb405"
+            ]
+        ]
+    },
+    {
+        "id": "d60e5f6b48bbb405",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1360,
+        "y": 180,
+        "wires": [
+            [
+                "470b4d8e6ae451b9"
+            ]
+        ]
+    },
+    {
+        "id": "d13db69b9372a73e",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1360,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "334626ad32a91919",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1630,
+        "y": 160,
+        "wires": [
+            [
+                "87a253aea6896414"
+            ]
+        ]
+    },
+    {
+        "id": "e87f139c66187ed8",
+        "type": "switch",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 810,
+        "y": 160,
+        "wires": [
+            [],
+            [
+                "6b708282dfeeeb33"
+            ]
+        ]
+    },
+    {
+        "id": "dc15a294901f18c5",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "15239578b2c72d37"
+            ]
+        ]
+    },
+    {
+        "id": "79e37f03118231ed",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f73821671c0a461",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 790,
+        "y": 100,
         "wires": [
             []
         ]
@@ -45470,384 +45878,6 @@
             [
                 "d121bc585dad9943"
             ]
-        ]
-    },
-    {
-        "id": "dce242cef0b59c86",
-        "type": "inject",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 720,
-        "y": 200,
-        "wires": [
-            [
-                "79e37f03118231ed"
-            ]
-        ]
-    },
-    {
-        "id": "6b708282dfeeeb33",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=http://stream.vinylhits.dk/vinylmp3",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 1130,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "87a253aea6896414",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 1950,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "15239578b2c72d37",
-        "type": "ui_slider",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "label": "Radio",
-        "tooltip": "",
-        "group": "117cda2a.43e596",
-        "order": 21,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "250",
-        "step": 1,
-        "x": 790,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6901acc273a3b8f8",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "value",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 980,
-        "y": 300,
-        "wires": [
-            [
-                "9e687831ae8d1589"
-            ]
-        ]
-    },
-    {
-        "id": "9e687831ae8d1589",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1160,
-        "y": 320,
-        "wires": [
-            [
-                "f2041666dd9aee93",
-                "470b4d8e6ae451b9"
-            ]
-        ]
-    },
-    {
-        "id": "470b4d8e6ae451b9",
-        "type": "join",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "mode": "custom",
-        "build": "string",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1670,
-        "y": 320,
-        "wires": [
-            [
-                "d13db69b9372a73e",
-                "334626ad32a91919"
-            ]
-        ]
-    },
-    {
-        "id": "f2041666dd9aee93",
-        "type": "timed-counter",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "timelimit": 350,
-        "timeunit": 1,
-        "withhold": false,
-        "fixedtimeout": false,
-        "pertopic": false,
-        "x": 1340,
-        "y": 280,
-        "wires": [
-            [
-                "d60e5f6b48bbb405"
-            ]
-        ]
-    },
-    {
-        "id": "d60e5f6b48bbb405",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "value",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1520,
-        "y": 280,
-        "wires": [
-            [
-                "470b4d8e6ae451b9"
-            ]
-        ]
-    },
-    {
-        "id": "d13db69b9372a73e",
-        "type": "debug",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1520,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "334626ad32a91919",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "url",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1790,
-        "y": 260,
-        "wires": [
-            [
-                "87a253aea6896414"
-            ]
-        ]
-    },
-    {
-        "id": "e87f139c66187ed8",
-        "type": "switch",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "gt",
-                "v": "1",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 970,
-        "y": 260,
-        "wires": [
-            [],
-            [
-                "6b708282dfeeeb33"
-            ]
-        ]
-    },
-    {
-        "id": "dc15a294901f18c5",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "0",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 320,
-        "wires": [
-            [
-                "15239578b2c72d37"
-            ]
-        ]
-    },
-    {
-        "id": "79e37f03118231ed",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "url",
-                "pt": "msg",
-                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=0",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 750,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3f73821671c0a461",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 950,
-        "y": 200,
-        "wires": [
-            []
         ]
     }
 ]
