@@ -7680,7 +7680,7 @@
         "z": "33e76285.1cd03e",
         "g": "3897bed133705e81",
         "name": "",
-        "func": "if ( global.get(\"kiste1\") === \"vaek\" && global.get(\"kiste2\") === \"vaek\" && global.get(\"kiste3\") === \"vaek\" && global.get(\"kiste4\") === \"vaek\" && global.get(\"kiste5\") === \"vaek\" && global.get(\"kiste6\") === \"vaek\") { \n  msg.payload = \"Gavle placeret\";\n} else {\n  msg.payload = \"Gavle fjernet\";\n}\nreturn msg;",
+        "func": "if ( global.get(\"kiste1\") === \"vaek\" && global.get(\"kiste2\") === \"vaek\" && global.get(\"kiste3\") === \"vaek\" && global.get(\"kiste4\") === \"vaek\" && global.get(\"kiste5\") === \"vaek\" && global.get(\"kiste6\") === \"vaek\") { \n  msg.payload = \"Gavle fjernet\";\n} else {\n  msg.payload = \"Gavle placeret\";\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
