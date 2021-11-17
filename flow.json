@@ -3656,7 +3656,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 220,
+        "x": 180,
         "y": 800,
         "wires": [
             [
@@ -9945,7 +9945,8 @@
         "z": "33e76285.1cd03e",
         "name": "Stop timer",
         "links": [
-            "2b480c9c40b1ae41"
+            "2b480c9c40b1ae41",
+            "f9a6a7bd47c3ec70"
         ],
         "x": 155,
         "y": 720,
@@ -9988,7 +9989,6 @@
         "z": "33e76285.1cd03e",
         "name": "Start time",
         "links": [
-            "f9a6a7bd47c3ec70",
             "6ae7dc55b448fca2"
         ],
         "x": 295,
@@ -10035,7 +10035,7 @@
         "name": "",
         "mode": "link",
         "links": [
-            "38c9d1ce4d9d6dec"
+            "b41f9f2bfad990e4"
         ],
         "x": 1465,
         "y": 400,
