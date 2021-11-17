@@ -9198,8 +9198,8 @@
                 "t": "set",
                 "p": "bysterplaceret",
                 "pt": "global",
-                "to": "true",
-                "tot": "bool"
+                "to": "",
+                "tot": "str"
             }
         ],
         "action": "",
