@@ -9012,6 +9012,20 @@
                 "pt": "flow",
                 "to": "Ikke klar",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klartext",
+                "pt": "msg",
+                "to": "Ikke klar",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klarbackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
             }
         ],
         "action": "",
