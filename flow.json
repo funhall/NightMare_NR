@@ -8929,6 +8929,13 @@
                 "pt": "msg",
                 "to": "green",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -8939,7 +8946,9 @@
         "x": 810,
         "y": 220,
         "wires": [
-            []
+            [
+                "ddfc4ff3b60682f8"
+            ]
         ]
     },
     {
