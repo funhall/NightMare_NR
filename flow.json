@@ -5163,8 +5163,8 @@
         "y": 120,
         "wires": [
             [
-                "96ec132ae7628bed",
-                "e8ba061f5f8c7fec"
+                "e8ba061f5f8c7fec",
+                "e4cb261fc0707569"
             ]
         ]
     },
@@ -8619,6 +8619,20 @@
                 "pt": "flow",
                 "to": "true",
                 "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "klarbackground",
+                "pt": "msg",
+                "to": "blue",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klartext",
+                "pt": "msg",
+                "to": "Sætter op",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -8626,10 +8640,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 120,
+        "x": 670,
+        "y": 80,
         "wires": [
-            []
+            [
+                "404ca19b.0b55e"
+            ]
         ]
     },
     {
@@ -8682,6 +8698,76 @@
         "y": 400,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "e4cb261fc0707569",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "klargorring",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "96ec132ae7628bed"
+            ],
+            [
+                "41206f8c8cf7167e"
+            ]
+        ]
+    },
+    {
+        "id": "41206f8c8cf7167e",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Div. Variabler",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klarbackground",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klartext",
+                "pt": "msg",
+                "to": "Klar",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "404ca19b.0b55e"
+            ]
         ]
     },
     {
