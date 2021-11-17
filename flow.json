@@ -16301,8 +16301,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 780,
-        "y": 1700,
+        "x": 900,
+        "y": 1680,
         "wires": [
             [
                 "68ddeb26afa6cb78",
@@ -16456,7 +16456,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 980,
+        "x": 1060,
         "y": 1700,
         "wires": [
             [
@@ -16483,7 +16483,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
+        "x": 1240,
         "y": 1700,
         "wires": [
             [
@@ -16562,8 +16562,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1140,
-        "y": 1800,
+        "x": 1060,
+        "y": 1780,
         "wires": [
             [
                 "2ea548b9d50199f8"
@@ -16589,8 +16589,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1320,
-        "y": 1800,
+        "x": 1240,
+        "y": 1780,
         "wires": [
             [
                 "682c6386bdb2a38d",
