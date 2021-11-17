@@ -8978,14 +8978,14 @@
                 "t": "set",
                 "p": "klargorring",
                 "pt": "flow",
-                "to": "Klargørring",
+                "to": "Klar",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "klartext",
                 "pt": "msg",
-                "to": "Ikke klar",
+                "to": "Klargørring",
                 "tot": "str"
             },
             {
