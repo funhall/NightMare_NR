@@ -3676,9 +3676,7 @@
         "x": 140,
         "y": 740,
         "wires": [
-            [
-                "2ee7be2f8091805a"
-            ]
+            []
         ]
     },
     {
@@ -6911,38 +6909,6 @@
         ]
     },
     {
-        "id": "2ee7be2f8091805a",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "tjeklist",
-                "pt": "global",
-                "to": "ready",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "reset",
-                "pt": "msg",
-                "to": "reset",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 120,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3b4f370bbc616dfb",
         "type": "function",
         "z": "33e76285.1cd03e",
@@ -7219,7 +7185,6 @@
         "y": 620,
         "wires": [
             [
-                "2ee7be2f8091805a",
                 "5801dd6cddafa481"
             ]
         ]
