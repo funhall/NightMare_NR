@@ -26,7 +26,7 @@
     {
         "id": "e21f6458e5ab1eb6",
         "type": "tab",
-        "label": "Styrring af magnet låse",
+        "label": "Vægt + magnet låse",
         "disabled": false,
         "info": "",
         "env": []
@@ -434,7 +434,9 @@
         ],
         "env": [],
         "x": 194,
-        "y": 759
+        "y": 759,
+        "w": 942,
+        "h": 262
     },
     {
         "id": "98e94e8b.fb918",
@@ -461,7 +463,9 @@
             "211cc1dfc8ebe1cb"
         ],
         "x": 234,
-        "y": 1059
+        "y": 1059,
+        "w": 962,
+        "h": 222
     },
     {
         "id": "81fb859b.40bb48",
@@ -662,7 +666,9 @@
         ],
         "env": [],
         "x": 194,
-        "y": 439
+        "y": 439,
+        "w": 902,
+        "h": 282
     },
     {
         "id": "b6b199f8.fdc168",
@@ -700,7 +706,9 @@
             "051dd689cd112f72"
         ],
         "x": 14,
-        "y": -1
+        "y": -1,
+        "w": 1432,
+        "h": 362
     },
     {
         "id": "48152d2a.8fd824",
@@ -733,7 +741,9 @@
         ],
         "env": [],
         "x": 1354,
-        "y": 439
+        "y": 439,
+        "w": 892,
+        "h": 402
     },
     {
         "id": "463e1cfb0b0e88d4",
@@ -785,8 +795,8 @@
             "5b7ceed71caff75e",
             "d4d2aeec1061c558"
         ],
-        "x": 1574,
-        "y": 1179,
+        "x": 2134,
+        "y": 979,
         "w": 1522,
         "h": 222
     },
@@ -862,7 +872,9 @@
             "a24895f8cc3929c6"
         ],
         "x": 174,
-        "y": 1379
+        "y": 1379,
+        "w": 882,
+        "h": 222
     },
     {
         "id": "31a7d742fc6bb0db",
@@ -1775,7 +1787,8 @@
             "fbd4ff4c330455d6",
             "4c54c6a3d168acbb",
             "b1c144db8add45ef",
-            "25c83829ad0b8eb2"
+            "25c83829ad0b8eb2",
+            "498b2f4e4bcdf879"
         ],
         "env": [],
         "x": 2114,
@@ -2082,13 +2095,17 @@
             "b94749abab964c31",
             "2492d259430ab9ad",
             "6671e40c616cd8e1",
-            "ce278ad12ae831a2"
+            "ce278ad12ae831a2",
+            "826b95112c8631bf",
+            "ec67e6f0513072c5",
+            "1fb00f59406653d8",
+            "4134cf0cf89825e9"
         ],
         "env": [],
-        "x": 114,
+        "x": 154,
         "y": 679,
-        "w": 1152,
-        "h": 222
+        "w": 1272,
+        "h": 262
     },
     {
         "id": "1c3803be18092683",
@@ -2120,7 +2137,7 @@
             "aa1d5e0da6c5b1f3"
         ],
         "x": 94,
-        "y": 939,
+        "y": 959,
         "w": 1172,
         "h": 282
     },
@@ -2151,10 +2168,12 @@
             "7f3ef9f36fb63a54",
             "84ab184bb818391a",
             "5ddb1957bb0f256e",
-            "60ff46c64dec3f9e"
+            "60ff46c64dec3f9e",
+            "c75b7c1984573e27",
+            "f15baa775bac3408"
         ],
         "x": 94,
-        "y": 1299,
+        "y": 1339,
         "w": 1572,
         "h": 222
     },
@@ -2180,8 +2199,8 @@
             "3c7c4138f69619ba"
         ],
         "env": [],
-        "x": 34,
-        "y": 1439,
+        "x": 94,
+        "y": 1299,
         "w": 952,
         "h": 242
     },
@@ -2241,8 +2260,8 @@
             "2216095b02d3c520"
         ],
         "env": [],
-        "x": 34,
-        "y": 1059,
+        "x": 114,
+        "y": 899,
         "w": 1292,
         "h": 342
     },
@@ -2276,7 +2295,8 @@
             "b6512c56f89deb44",
             "2b480c9c40b1ae41",
             "3bebd32b5735ccd4",
-            "5b90813930018f61"
+            "5b90813930018f61",
+            "e5cb0c79d6f2b63d"
         ],
         "env": [],
         "x": 94,
@@ -2427,6 +2447,46 @@
         "y": 99,
         "w": 972,
         "h": 502
+    },
+    {
+        "id": "1d4f38fd430a0ca5",
+        "type": "group",
+        "z": "33e76285.1cd03e",
+        "name": "Åbner exit ved person i kiste og kiste lukket",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "84c975a6f2977202",
+            "deb6bcec4edd53e2",
+            "15d281769651ec91",
+            "8aee57ae8d247fa0",
+            "4dfaf3a5efda95b4"
+        ],
+        "env": [],
+        "x": 254,
+        "y": 1799,
+        "w": 672,
+        "h": 102
+    },
+    {
+        "id": "dc1cdcf7a1c46201",
+        "type": "group",
+        "z": "33e76285.1cd03e",
+        "name": "Låser exit efter kiste er forladt",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5eb4f6e82acd1386",
+            "f3a373498c872b82",
+            "09dcd7ae4d5abbb5"
+        ],
+        "env": [],
+        "x": 214,
+        "y": 1939,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "82fd466d.f6c968",
@@ -5275,8 +5335,8 @@
         "keyname": "",
         "dburl": "",
         "usetls": false,
-        "x": 150,
-        "y": 1620,
+        "x": 210,
+        "y": 1480,
         "wires": [
             [
                 "b65b259eef111e3e"
@@ -6445,33 +6505,6 @@
         ]
     },
     {
-        "id": "8344f9ef82d68fd0",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 220,
-        "y": 1820,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "98a028d9e3eab4bf",
         "type": "debug",
         "z": "33e76285.1cd03e",
@@ -6933,8 +6966,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2100,
-        "y": 1360,
+        "x": 2660,
+        "y": 1160,
         "wires": [
             [
                 "cb7568d5b1a32974",
@@ -6956,8 +6989,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2170,
-        "y": 1280,
+        "x": 2730,
+        "y": 1080,
         "wires": []
     },
     {
@@ -6987,8 +7020,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2480,
-        "y": 1280,
+        "x": 3040,
+        "y": 1080,
         "wires": [
             [
                 "4f17f4badd740b98",
@@ -7023,8 +7056,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2480,
-        "y": 1340,
+        "x": 3040,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -7050,8 +7083,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2310,
-        "y": 1300,
+        "x": 2870,
+        "y": 1100,
         "wires": [
             [
                 "3ec27a962d094fc2"
@@ -7079,8 +7112,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 1900,
-        "y": 1360,
+        "x": 2460,
+        "y": 1160,
         "wires": [
             [
                 "3b4f370bbc616dfb",
@@ -7098,8 +7131,8 @@
         "links": [
             "dee305791b87212d"
         ],
-        "x": 3055,
-        "y": 1280,
+        "x": 3615,
+        "y": 1080,
         "wires": []
     },
     {
@@ -7122,8 +7155,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1910,
-        "y": 1300,
+        "x": 2470,
+        "y": 1100,
         "wires": [
             [
                 "e280e9326f0c5a92"
@@ -7144,8 +7177,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2310,
-        "y": 1360,
+        "x": 2870,
+        "y": 1160,
         "wires": []
     },
     {
@@ -7166,8 +7199,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2780,
-        "y": 1280,
+        "x": 3340,
+        "y": 1080,
         "wires": [
             [
                 "f0179ec8779c60a9"
@@ -7983,8 +8016,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2090,
-        "y": 1220,
+        "x": 2650,
+        "y": 1020,
         "wires": []
     },
     {
@@ -8009,8 +8042,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1670,
-        "y": 1280,
+        "x": 2230,
+        "y": 1080,
         "wires": [
             [
                 "98bbc5ca0fe2a538"
@@ -8045,8 +8078,8 @@
             "8863226fbeaabb84",
             "26a099f9dcdfb28d"
         ],
-        "x": 2665,
-        "y": 1320,
+        "x": 3225,
+        "y": 1120,
         "wires": []
     },
     {
@@ -8088,8 +8121,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 370,
-        "y": 1520,
+        "x": 430,
+        "y": 1380,
         "wires": []
     },
     {
@@ -8099,8 +8132,8 @@
         "g": "96be5e73cc5cc970",
         "inc": 1,
         "name": "",
-        "x": 380,
-        "y": 1620,
+        "x": 440,
+        "y": 1480,
         "wires": [
             [
                 "13fbbe6b04370775",
@@ -8122,8 +8155,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1640,
+        "x": 600,
+        "y": 1500,
         "wires": []
     },
     {
@@ -8146,8 +8179,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 880,
-        "y": 1560,
+        "x": 940,
+        "y": 1420,
         "wires": [
             [
                 "8f535195c7ced6ab"
@@ -8172,8 +8205,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 750,
-        "y": 1600,
+        "x": 810,
+        "y": 1460,
         "wires": [
             []
         ]
@@ -8196,8 +8229,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 630,
-        "y": 1560,
+        "x": 690,
+        "y": 1420,
         "wires": [
             [
                 "d3c7a17132db1922"
@@ -8225,8 +8258,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 1560,
+        "x": 200,
+        "y": 1420,
         "wires": [
             [
                 "cc9bf9dda205f60f",
@@ -8238,6 +8271,7 @@
         "id": "498b2f4e4bcdf879",
         "type": "debug",
         "z": "33e76285.1cd03e",
+        "g": "5e203e809c0bd87a",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -8246,8 +8280,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2470,
-        "y": 1080,
+        "x": 2730,
+        "y": 900,
         "wires": []
     },
     {
@@ -8270,8 +8304,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 1520,
+        "x": 670,
+        "y": 1380,
         "wires": [
             []
         ]
@@ -8296,8 +8330,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 1600,
+        "x": 630,
+        "y": 1460,
         "wires": [
             [
                 "d86ab0d661e8759d"
@@ -8326,8 +8360,8 @@
         "topic": "",
         "payload": "222",
         "payloadType": "num",
-        "x": 370,
-        "y": 1480,
+        "x": 430,
+        "y": 1340,
         "wires": [
             [
                 "8f535195c7ced6ab"
@@ -8574,8 +8608,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1180,
-        "y": 1320,
+        "x": 1260,
+        "y": 1160,
         "wires": []
     },
     {
@@ -8598,8 +8632,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 150,
-        "y": 1240,
+        "x": 230,
+        "y": 1080,
         "wires": [
             [
                 "a96c954c12b092ec",
@@ -8623,8 +8657,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1220,
-        "y": 1260,
+        "x": 1300,
+        "y": 1100,
         "wires": []
     },
     {
@@ -8647,8 +8681,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 960,
-        "y": 1360,
+        "x": 1040,
+        "y": 1200,
         "wires": [
             [
                 "0d5a3412a809c7c0"
@@ -8677,8 +8711,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 1340,
+        "x": 220,
+        "y": 1180,
         "wires": [
             [
                 "a96c954c12b092ec"
@@ -8699,8 +8733,8 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 1050,
-        "y": 1160,
+        "x": 1130,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -8723,8 +8757,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1040,
-        "y": 1220,
+        "x": 1120,
+        "y": 1060,
         "wires": [
             [
                 "6ec4dcf3d1452e11"
@@ -8746,8 +8780,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1050,
-        "y": 1100,
+        "x": 1130,
+        "y": 940,
         "wires": [
             []
         ]
@@ -8828,8 +8862,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
-        "y": 1320,
+        "x": 490,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -8853,8 +8887,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 650,
-        "y": 1240,
+        "x": 730,
+        "y": 1080,
         "wires": [
             [
                 "0f7a8868f4e92bdd"
@@ -8905,8 +8939,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 840,
-        "y": 1200,
+        "x": 920,
+        "y": 1040,
         "wires": [
             [
                 "8b9bfac458be4957",
@@ -8959,8 +8993,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 840,
-        "y": 1260,
+        "x": 920,
+        "y": 1100,
         "wires": [
             [
                 "8b9bfac458be4957",
@@ -8984,8 +9018,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 370,
-        "y": 1280,
+        "x": 450,
+        "y": 1120,
         "wires": []
     },
     {
@@ -9006,8 +9040,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 1240,
+        "x": 520,
+        "y": 1080,
         "wires": [
             [
                 "ebc9dbf83f81e88d"
@@ -9024,8 +9058,8 @@
         "links": [
             "e0282cf331829ce9"
         ],
-        "x": 1195,
-        "y": 1160,
+        "x": 1275,
+        "y": 1000,
         "wires": []
     },
     {
@@ -9038,8 +9072,8 @@
         "links": [
             "db96da4950130d36"
         ],
-        "x": 1195,
-        "y": 1200,
+        "x": 1275,
+        "y": 1040,
         "wires": []
     },
     {
@@ -10413,6 +10447,7 @@
         "id": "e5cb0c79d6f2b63d",
         "type": "debug",
         "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -10421,8 +10456,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1300,
-        "y": 340,
+        "x": 870,
+        "y": 180,
         "wires": []
     },
     {
@@ -10437,6 +10472,176 @@
         ],
         "x": 565,
         "y": 660,
+        "wires": []
+    },
+    {
+        "id": "84c975a6f2977202",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "1d4f38fd430a0ca5",
+        "name": "Åbner exit efter person har forladt kiste",
+        "links": [
+            "c75b7c1984573e27"
+        ],
+        "x": 295,
+        "y": 1860,
+        "wires": [
+            [
+                "deb6bcec4edd53e2"
+            ]
+        ]
+    },
+    {
+        "id": "deb6bcec4edd53e2",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "1d4f38fd430a0ca5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "game",
+                "pt": "global",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 1860,
+        "wires": [
+            [
+                "15d281769651ec91"
+            ]
+        ]
+    },
+    {
+        "id": "15d281769651ec91",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "1d4f38fd430a0ca5",
+        "name": "",
+        "property": "kistestate",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "closed",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 1840,
+        "wires": [
+            [
+                "8aee57ae8d247fa0"
+            ]
+        ]
+    },
+    {
+        "id": "8aee57ae8d247fa0",
+        "type": "delay",
+        "z": "33e76285.1cd03e",
+        "g": "1d4f38fd430a0ca5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 1860,
+        "wires": [
+            [
+                "4dfaf3a5efda95b4"
+            ]
+        ]
+    },
+    {
+        "id": "4dfaf3a5efda95b4",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "1d4f38fd430a0ca5",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "826b95112c8631bf"
+        ],
+        "x": 885,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "5eb4f6e82acd1386",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "dc1cdcf7a1c46201",
+        "name": "låser exit efter kiste er tom",
+        "links": [
+            "f15baa775bac3408"
+        ],
+        "x": 255,
+        "y": 1980,
+        "wires": [
+            [
+                "f3a373498c872b82"
+            ]
+        ]
+    },
+    {
+        "id": "f3a373498c872b82",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "dc1cdcf7a1c46201",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "game",
+                "pt": "global",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 1980,
+        "wires": [
+            [
+                "09dcd7ae4d5abbb5"
+            ]
+        ]
+    },
+    {
+        "id": "09dcd7ae4d5abbb5",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "dc1cdcf7a1c46201",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "4134cf0cf89825e9"
+        ],
+        "x": 765,
+        "y": 1980,
         "wires": []
     },
     {
@@ -20197,7 +20402,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1150,
+        "x": 1310,
         "y": 780,
         "wires": []
     },
@@ -20228,7 +20433,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1060,
+        "x": 1100,
         "y": 860,
         "wires": [
             [
@@ -20254,7 +20459,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 900,
+        "x": 940,
         "y": 860,
         "wires": [
             [
@@ -20282,7 +20487,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 900,
+        "x": 1080,
         "y": 820,
         "wires": [
             [
@@ -20305,7 +20510,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 200,
-        "y": 1060,
+        "y": 1080,
         "wires": [
             [
                 "aea609932bb77faa"
@@ -20327,7 +20532,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 690,
-        "y": 1180,
+        "y": 1200,
         "wires": []
     },
     {
@@ -20354,7 +20559,7 @@
         "repair": false,
         "outputs": 2,
         "x": 390,
-        "y": 1060,
+        "y": 1080,
         "wires": [
             [
                 "5b7cfa19a9a51b86"
@@ -20399,7 +20604,7 @@
         "to": "",
         "reg": false,
         "x": 550,
-        "y": 1020,
+        "y": 1040,
         "wires": [
             [
                 "7f44533ac0b79782",
@@ -20442,7 +20647,7 @@
         "to": "",
         "reg": false,
         "x": 550,
-        "y": 1060,
+        "y": 1080,
         "wires": [
             [
                 "7f44533ac0b79782",
@@ -20458,7 +20663,7 @@
         "name": "flow.kistestate - open/closed",
         "info": "",
         "x": 240,
-        "y": 1020,
+        "y": 1040,
         "wires": []
     },
     {
@@ -20482,7 +20687,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 750,
-        "y": 1040,
+        "y": 1060,
         "wires": [
             [
                 "89d16fef4e23be2c",
@@ -20510,7 +20715,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 880,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "4a7ddef35f8f06a1"
@@ -20531,7 +20736,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 220,
+        "x": 260,
         "y": 820,
         "wires": [
             [
@@ -20554,7 +20759,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
+        "x": 600,
         "y": 720,
         "wires": []
     },
@@ -20581,7 +20786,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 390,
+        "x": 430,
         "y": 820,
         "wires": [
             [
@@ -20626,12 +20831,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
+        "x": 590,
         "y": 820,
         "wires": [
             [
                 "03b6594c3963f359",
-                "b94749abab964c31"
+                "b94749abab964c31",
+                "ec67e6f0513072c5"
             ]
         ]
     },
@@ -20669,12 +20875,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
+        "x": 590,
         "y": 860,
         "wires": [
             [
                 "03b6594c3963f359",
-                "b94749abab964c31"
+                "b94749abab964c31",
+                "1fb00f59406653d8"
             ]
         ]
     },
@@ -20692,7 +20899,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
+        "x": 810,
         "y": 720,
         "wires": []
     },
@@ -20716,7 +20923,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 750,
+        "x": 790,
         "y": 820,
         "wires": [
             [
@@ -20776,7 +20983,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 370,
+        "x": 410,
         "y": 760,
         "wires": [
             [
@@ -20804,7 +21011,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
+        "x": 610,
         "y": 760,
         "wires": [
             [
@@ -20836,7 +21043,7 @@
         "seg1": "",
         "seg2": "",
         "x": 930,
-        "y": 1360,
+        "y": 1400,
         "wires": []
     },
     {
@@ -20854,7 +21061,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 750,
-        "y": 1360,
+        "y": 1400,
         "wires": []
     },
     {
@@ -20871,7 +21078,7 @@
         "rap": false,
         "inputs": 0,
         "x": 200,
-        "y": 1420,
+        "y": 1460,
         "wires": [
             [
                 "60ff46c64dec3f9e",
@@ -20903,7 +21110,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1000,
-        "y": 1440,
+        "y": 1480,
         "wires": [
             [
                 "42ad3ae464b20556"
@@ -20934,7 +21141,7 @@
         "to": "",
         "reg": false,
         "x": 420,
-        "y": 1420,
+        "y": 1460,
         "wires": [
             [
                 "84b4c76e67b531fe"
@@ -20954,7 +21161,7 @@
         "round": true,
         "decimals": "1",
         "x": 600,
-        "y": 1420,
+        "y": 1460,
         "wires": [
             [
                 "38114ecb84933283"
@@ -20974,7 +21181,7 @@
         "round": false,
         "decimals": 0,
         "x": 780,
-        "y": 1420,
+        "y": 1460,
         "wires": [
             [
                 "d68d10f01d12c569",
@@ -21003,8 +21210,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
-        "y": 1100,
+        "x": 1060,
+        "y": 1120,
         "wires": [
             [
                 "3450b6446e3d8883"
@@ -21027,7 +21234,7 @@
         "expiry": "",
         "broker": "dca8425b.8fb18",
         "x": 1180,
-        "y": 1040,
+        "y": 1060,
         "wires": []
     },
     {
@@ -21038,7 +21245,7 @@
         "name": "flow.kiste - locked/open",
         "info": "",
         "x": 220,
-        "y": 1360,
+        "y": 1400,
         "wires": []
     },
     {
@@ -21062,7 +21269,7 @@
         "to": "",
         "reg": false,
         "x": 880,
-        "y": 1100,
+        "y": 1120,
         "wires": [
             [
                 "3450b6446e3d8883"
@@ -21074,13 +21281,13 @@
         "type": "ui_button",
         "z": "e21f6458e5ab1eb6",
         "g": "9d6515b12fd52c73",
-        "name": "dfdf",
+        "name": "Person i kiste",
         "group": "964197a0.4ac628",
         "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "{{msg.kistetext}}dfdf",
+        "label": "{{msg.kistetext}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.background}}",
@@ -21089,8 +21296,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1450,
-        "y": 1460,
+        "x": 1480,
+        "y": 1500,
         "wires": [
             []
         ]
@@ -21130,11 +21337,12 @@
         "to": "",
         "reg": false,
         "x": 1180,
-        "y": 1400,
+        "y": 1440,
         "wires": [
             [
                 "834e5579ba26084b",
-                "5ddb1957bb0f256e"
+                "5ddb1957bb0f256e",
+                "f15baa775bac3408"
             ]
         ]
     },
@@ -21172,11 +21380,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1200,
-        "y": 1480,
+        "x": 1180,
+        "y": 1500,
         "wires": [
             [
-                "834e5579ba26084b"
+                "834e5579ba26084b",
+                "c75b7c1984573e27"
             ]
         ]
     },
@@ -21199,7 +21408,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1570,
-        "y": 1400,
+        "y": 1440,
         "wires": [
             []
         ]
@@ -21210,18 +21419,20 @@
         "z": "e21f6458e5ab1eb6",
         "g": "9d6515b12fd52c73",
         "name": "Gameon true",
-        "property": "gameon",
+        "property": "game",
         "propertyType": "global",
         "rules": [
             {
-                "t": "true"
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1370,
-        "y": 1400,
+        "x": 1410,
+        "y": 1440,
         "wires": [
             [
                 "84ab184bb818391a"
@@ -21242,7 +21453,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 470,
-        "y": 1340,
+        "y": 1380,
         "wires": []
     },
     {
@@ -21267,7 +21478,7 @@
         "repair": false,
         "outputs": 2,
         "x": 970,
-        "y": 1040,
+        "y": 1060,
         "wires": [
             [
                 "5b7cfa19a9a51b86"
@@ -21296,7 +21507,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 230,
-        "y": 980,
+        "y": 1000,
         "wires": [
             [
                 "aa1d5e0da6c5b1f3",
@@ -21325,9 +21536,95 @@
         "to": "",
         "reg": false,
         "x": 520,
-        "y": 980,
+        "y": 1000,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "c75b7c1984573e27",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "g": "9d6515b12fd52c73",
+        "name": "Person i kiste",
+        "mode": "link",
+        "links": [
+            "84c975a6f2977202"
+        ],
+        "x": 1315,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "f15baa775bac3408",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "g": "9d6515b12fd52c73",
+        "name": "Kiste tom",
+        "mode": "link",
+        "links": [
+            "5eb4f6e82acd1386"
+        ],
+        "x": 1325,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "826b95112c8631bf",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
+        "name": "Open exit",
+        "links": [
+            "4dfaf3a5efda95b4"
+        ],
+        "x": 995,
+        "y": 720,
+        "wires": [
+            [
+                "1befdcd9209f772f"
+            ]
+        ]
+    },
+    {
+        "id": "ec67e6f0513072c5",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
+        "name": "Exit closed",
+        "mode": "link",
+        "links": [],
+        "x": 735,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "1fb00f59406653d8",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
+        "name": "Exit open",
+        "mode": "link",
+        "links": [],
+        "x": 715,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "4134cf0cf89825e9",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
+        "name": "Lås exit",
+        "links": [
+            "09dcd7ae4d5abbb5"
+        ],
+        "x": 945,
+        "y": 900,
+        "wires": [
+            [
+                "c9c85ecafe022276"
+            ]
         ]
     },
     {
