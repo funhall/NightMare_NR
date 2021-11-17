@@ -8445,7 +8445,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9193,7 +9193,7 @@
             },
             {
                 "t": "set",
-                "p": "dorroom2",
+                "p": "doorroom2",
                 "pt": "global",
                 "to": "closed",
                 "tot": "str"
