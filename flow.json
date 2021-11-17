@@ -7152,7 +7152,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8862,7 +8862,8 @@
         "y": 220,
         "wires": [
             [
-                "4e7b9ce0477b0e84"
+                "4e7b9ce0477b0e84",
+                "518a047eb2a401eb"
             ]
         ]
     },
@@ -9169,9 +9170,7 @@
         "x": 1130,
         "y": 340,
         "wires": [
-            [
-                "518a047eb2a401eb"
-            ]
+            []
         ]
     },
     {
