@@ -848,8 +848,8 @@
             "d9d31740559369aa",
             "82832cd98a10278c"
         ],
-        "x": 474,
-        "y": 3419,
+        "x": 194,
+        "y": 3479,
         "w": 912,
         "h": 182
     },
@@ -2544,6 +2544,30 @@
         "y": 2119,
         "w": 822,
         "h": 302
+    },
+    {
+        "id": "eead7c435d7faf43",
+        "type": "group",
+        "z": "33e76285.1cd03e",
+        "name": "KOntakt i skab åbner rum4 og blinker rød i 60 sek.",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2616298e5360ae99",
+            "45c8983ea6aa7b7c",
+            "cead8cfeb795a590",
+            "651f5cfd402660ec",
+            "7bd299f34630144b",
+            "e023e657c841ea12",
+            "f8aa31e41680bc14",
+            "4b6dd8271263ed7b"
+        ],
+        "env": [],
+        "x": 194,
+        "y": 3159,
+        "w": 1062,
+        "h": 202
     },
     {
         "id": "82fd466d.f6c968",
@@ -7891,8 +7915,8 @@
         "label": "",
         "format": "<font size = 6> {{msg.payload}}",
         "layout": "row-left",
-        "x": 1310,
-        "y": 3460,
+        "x": 1030,
+        "y": 3520,
         "wires": []
     },
     {
@@ -7904,8 +7928,8 @@
         "links": [
             "7ce4a2f9.9437dc"
         ],
-        "x": 515,
-        "y": 3460,
+        "x": 235,
+        "y": 3520,
         "wires": [
             [
                 "b7606efe5db45a72",
@@ -7926,8 +7950,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
-        "y": 3460,
+        "x": 590,
+        "y": 3520,
         "wires": [
             [
                 "4bae206c110fb2aa"
@@ -7946,8 +7970,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 3500,
+        "x": 580,
+        "y": 3560,
         "wires": [
             [
                 "4bae206c110fb2aa"
@@ -7966,8 +7990,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 3560,
+        "x": 580,
+        "y": 3620,
         "wires": [
             [
                 "4bae206c110fb2aa"
@@ -10929,6 +10953,7 @@
         "id": "2616298e5360ae99",
         "type": "mqtt in",
         "z": "33e76285.1cd03e",
+        "g": "eead7c435d7faf43",
         "name": "Kontakt i skab",
         "topic": "boks8/input/D5",
         "qos": "0",
@@ -10938,8 +10963,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 530,
-        "y": 3160,
+        "x": 290,
+        "y": 3220,
         "wires": [
             [
                 "45c8983ea6aa7b7c",
@@ -10952,6 +10977,7 @@
         "id": "45c8983ea6aa7b7c",
         "type": "debug",
         "z": "33e76285.1cd03e",
+        "g": "eead7c435d7faf43",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -10960,8 +10986,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
-        "y": 3140,
+        "x": 530,
+        "y": 3200,
         "wires": []
     },
     {
@@ -11353,6 +11379,7 @@
         "id": "cead8cfeb795a590",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "eead7c435d7faf43",
         "name": "LOW",
         "rules": [
             {
@@ -11368,8 +11395,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1310,
-        "y": 3200,
+        "x": 1070,
+        "y": 3260,
         "wires": [
             [
                 "e023e657c841ea12"
@@ -11380,6 +11407,7 @@
         "id": "651f5cfd402660ec",
         "type": "trigger",
         "z": "33e76285.1cd03e",
+        "g": "eead7c435d7faf43",
         "name": "",
         "op1": "HIGH",
         "op2": "0",
@@ -11393,8 +11421,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 900,
-        "y": 3200,
+        "x": 660,
+        "y": 3260,
         "wires": [
             [
                 "7bd299f34630144b"
@@ -11405,6 +11433,7 @@
         "id": "7bd299f34630144b",
         "type": "delay",
         "z": "33e76285.1cd03e",
+        "g": "eead7c435d7faf43",
         "name": "",
         "pauseType": "delay",
         "timeout": "500",
@@ -11418,8 +11447,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1130,
-        "y": 3200,
+        "x": 890,
+        "y": 3260,
         "wires": [
             [
                 "cead8cfeb795a590"
@@ -11430,19 +11459,21 @@
         "id": "e023e657c841ea12",
         "type": "link out",
         "z": "33e76285.1cd03e",
+        "g": "eead7c435d7faf43",
         "name": "Kontakt i skab blink rum4",
         "mode": "link",
         "links": [
             "fb18325475db6d6f"
         ],
-        "x": 1455,
-        "y": 3200,
+        "x": 1215,
+        "y": 3260,
         "wires": []
     },
     {
         "id": "f8aa31e41680bc14",
         "type": "delay",
         "z": "33e76285.1cd03e",
+        "g": "eead7c435d7faf43",
         "name": "",
         "pauseType": "delay",
         "timeout": "60",
@@ -11456,8 +11487,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 580,
-        "y": 3240,
+        "x": 340,
+        "y": 3300,
         "wires": [
             [
                 "4b6dd8271263ed7b"
@@ -11468,6 +11499,7 @@
         "id": "4b6dd8271263ed7b",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "eead7c435d7faf43",
         "name": "",
         "rules": [
             {
@@ -11483,8 +11515,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 3260,
+        "x": 510,
+        "y": 3320,
         "wires": [
             [
                 "651f5cfd402660ec"
@@ -11825,8 +11857,8 @@
         "title": "Cartmell {{msg.ladestatus}}",
         "label": "% opladt",
         "format": "{{value}}",
-        "min": "500",
-        "max": "1100",
+        "min": "600",
+        "max": "950",
         "colors": [
             "#b3000c",
             "#e6e600",
