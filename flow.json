@@ -11324,7 +11324,7 @@
         "name": "",
         "props": [
             {
-                "p": "rightbackground",
+                "p": "leftbackground",
                 "v": "red",
                 "vt": "str"
             },
