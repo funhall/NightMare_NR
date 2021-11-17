@@ -9199,7 +9199,7 @@
                 "p": "gavle_vaek",
                 "pt": "global",
                 "to": "true",
-                "tot": "str"
+                "tot": "bool"
             }
         ],
         "action": "",
