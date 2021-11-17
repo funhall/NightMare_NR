@@ -3531,7 +3531,7 @@
         "y": 340,
         "wires": [
             [
-                "4aefc470da7667cf"
+                "db97f440126e6ab3"
             ]
         ]
     },
@@ -8983,6 +8983,33 @@
         "wires": [
             [
                 "770a598c.8e9238"
+            ]
+        ]
+    },
+    {
+        "id": "db97f440126e6ab3",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "klargorring",
+                "pt": "flow",
+                "to": "Ikke klar",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 340,
+        "wires": [
+            [
+                "4aefc470da7667cf"
             ]
         ]
     },
