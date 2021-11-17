@@ -9200,13 +9200,6 @@
                 "pt": "global",
                 "to": "true",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "gavle_vaek",
-                "pt": "global",
-                "to": "true",
-                "tot": "str"
             }
         ],
         "action": "",
@@ -9214,7 +9207,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
+        "x": 540,
         "y": 600,
         "wires": [
             []
