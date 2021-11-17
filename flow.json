@@ -9196,7 +9196,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "bysterplaceret",
+                "p": "gavle_vaek",
                 "pt": "global",
                 "to": "true",
                 "tot": "str"
@@ -9207,7 +9207,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
+        "x": 530,
         "y": 600,
         "wires": [
             []
