@@ -8952,7 +8952,7 @@
                 "t": "set",
                 "p": "klargorring",
                 "pt": "flow",
-                "to": "Ikke klar",
+                "to": "Igang",
                 "tot": "str"
             }
         ],
