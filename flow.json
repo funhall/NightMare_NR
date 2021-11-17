@@ -18702,9 +18702,9 @@
         "y": 160,
         "wires": [
             [
-                "a32fcc378c921f21",
                 "709e27e57d26236e",
-                "ceabf7068dabdd5e"
+                "ceabf7068dabdd5e",
+                "a32fcc378c921f21"
             ]
         ]
     },
