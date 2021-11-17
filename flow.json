@@ -8614,7 +8614,7 @@
         "id": "96ec132ae7628bed",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Div. Variabler",
+        "name": "Igang",
         "rules": [
             {
                 "t": "set",
@@ -8643,7 +8643,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 670,
         "y": 80,
         "wires": [
             [
@@ -8751,7 +8751,7 @@
         "id": "41206f8c8cf7167e",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Div. Variabler",
+        "name": "Færdig",
         "rules": [
             {
                 "t": "set",
@@ -8773,6 +8773,13 @@
                 "pt": "flow",
                 "to": "Færdig",
                 "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "z",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -8780,7 +8787,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 680,
         "y": 120,
         "wires": [
             [
@@ -8847,8 +8854,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 280,
+        "x": 460,
+        "y": 220,
         "wires": [
             []
         ]
@@ -8857,7 +8864,7 @@
         "id": "4aefc470da7667cf",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Div. Variabler",
+        "name": "Ikke klar",
         "rules": [
             {
                 "t": "set",
@@ -8886,7 +8893,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 680,
         "y": 160,
         "wires": [
             [
@@ -8902,11 +8909,12 @@
         "links": [
             "3f275e5d73da77dc"
         ],
-        "x": 175,
-        "y": 80,
+        "x": 75,
+        "y": 160,
         "wires": [
             [
-                "404ca19b.0b55e"
+                "404ca19b.0b55e",
+                "ddfc4ff3b60682f8"
             ]
         ]
     },
