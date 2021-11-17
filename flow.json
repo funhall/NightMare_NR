@@ -7780,7 +7780,7 @@
                 "p": "gavle_vaek",
                 "pt": "global",
                 "to": "false",
-                "tot": "str"
+                "tot": "bool"
             }
         ],
         "action": "",
