@@ -17722,37 +17722,6 @@
         ]
     },
     {
-        "id": "bdc5bb9a67ae35f0",
-        "type": "status",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "scope": null,
-        "x": 270,
-        "y": 1760,
-        "wires": [
-            [
-                "775c0a15c0b53755"
-            ]
-        ]
-    },
-    {
-        "id": "775c0a15c0b53755",
-        "type": "debug",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 1760,
-        "wires": []
-    },
-    {
         "id": "80a868808fc1a091",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
