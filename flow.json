@@ -6642,7 +6642,7 @@
                 "p": "bysterplaceret",
                 "pt": "global",
                 "to": "true",
-                "tot": "str"
+                "tot": "bool"
             }
         ],
         "action": "",
@@ -6678,7 +6678,7 @@
                 "p": "bysterplaceret",
                 "pt": "global",
                 "to": "false",
-                "tot": "str"
+                "tot": "bool"
             }
         ],
         "action": "",
