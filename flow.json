@@ -9214,7 +9214,9 @@
         "type": "link in",
         "z": "33e76285.1cd03e",
         "name": "Reset timer",
-        "links": [],
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
         "x": 155,
         "y": 480,
         "wires": [
@@ -9635,7 +9637,8 @@
             "80a868808fc1a091",
             "f11944f6972a495d",
             "b71bafe8e5381546",
-            "b1c144db8add45ef"
+            "b1c144db8add45ef",
+            "6e84323610cab4f8"
         ],
         "x": 575,
         "y": 180,
