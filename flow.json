@@ -382,9 +382,7 @@
             "3893ba8f.390a76"
         ],
         "x": 2114,
-        "y": 3359,
-        "w": 1632,
-        "h": 502
+        "y": 3359
     },
     {
         "id": "2316e898.9addc8",
@@ -407,9 +405,7 @@
             "8e13249fac38c5db"
         ],
         "x": 2154,
-        "y": 3939,
-        "w": 1012,
-        "h": 222
+        "y": 3939
     },
     {
         "id": "1cc6de93.c0b0f1",
@@ -438,9 +434,7 @@
         ],
         "env": [],
         "x": 194,
-        "y": 759,
-        "w": 942,
-        "h": 262
+        "y": 759
     },
     {
         "id": "98e94e8b.fb918",
@@ -467,9 +461,7 @@
             "211cc1dfc8ebe1cb"
         ],
         "x": 234,
-        "y": 1059,
-        "w": 962,
-        "h": 222
+        "y": 1059
     },
     {
         "id": "81fb859b.40bb48",
@@ -490,9 +482,7 @@
             "d983dd56.71e29"
         ],
         "x": 1134,
-        "y": 99,
-        "w": 572,
-        "h": 222
+        "y": 99
     },
     {
         "id": "14756354.332ecd",
@@ -521,9 +511,7 @@
             "ff614039.402ec"
         ],
         "x": 1114,
-        "y": 379,
-        "w": 712,
-        "h": 502
+        "y": 379
     },
     {
         "id": "4a68a01b.1ce4d",
@@ -551,10 +539,8 @@
             "cebcc24e.4c3c4",
             "89e7e760.9d3558"
         ],
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 0,
+        "y": 0
     },
     {
         "id": "b3771d986777a428",
@@ -598,9 +584,7 @@
             "b0afd849b2fe92e1"
         ],
         "x": 434,
-        "y": 219,
-        "w": 1552,
-        "h": 522
+        "y": 219
     },
     {
         "id": "fc1dd592.319c58",
@@ -632,9 +616,7 @@
             "6f16a75f82923f0f"
         ],
         "x": 434,
-        "y": 759,
-        "w": 1472,
-        "h": 382
+        "y": 759
     },
     {
         "id": "88967f27835024c3",
@@ -653,9 +635,7 @@
             "d23df1927731c182"
         ],
         "x": 2174,
-        "y": 4219,
-        "w": 972,
-        "h": 162
+        "y": 4219
     },
     {
         "id": "a0bf9c88b3455d08",
@@ -682,9 +662,7 @@
         ],
         "env": [],
         "x": 194,
-        "y": 439,
-        "w": 902,
-        "h": 282
+        "y": 439
     },
     {
         "id": "b6b199f8.fdc168",
@@ -722,9 +700,7 @@
             "051dd689cd112f72"
         ],
         "x": 14,
-        "y": -1,
-        "w": 1432,
-        "h": 362
+        "y": -1
     },
     {
         "id": "48152d2a.8fd824",
@@ -757,9 +733,7 @@
         ],
         "env": [],
         "x": 1354,
-        "y": 439,
-        "w": 892,
-        "h": 402
+        "y": 439
     },
     {
         "id": "463e1cfb0b0e88d4",
@@ -843,9 +817,7 @@
         ],
         "env": [],
         "x": 534,
-        "y": 19,
-        "w": 1512,
-        "h": 202
+        "y": 19
     },
     {
         "id": "c49070f4e172b4d7",
@@ -890,9 +862,7 @@
             "a24895f8cc3929c6"
         ],
         "x": 174,
-        "y": 1379,
-        "w": 882,
-        "h": 222
+        "y": 1379
     },
     {
         "id": "31a7d742fc6bb0db",
@@ -1592,9 +1562,7 @@
             "5d02341d00343a29"
         ],
         "x": 2684,
-        "y": 1779,
-        "w": 2172,
-        "h": 402
+        "y": 1779
     },
     {
         "id": "3da35250b0cf751c",
@@ -1641,9 +1609,7 @@
             "3bb13b576bdcc42e"
         ],
         "x": 2664,
-        "y": 1279,
-        "w": 2192,
-        "h": 422
+        "y": 1279
     },
     {
         "id": "3ebf9874a4bb7749",
@@ -1693,9 +1659,7 @@
             "226acff579529de9"
         ],
         "x": 2684,
-        "y": 759,
-        "w": 2172,
-        "h": 422
+        "y": 759
     },
     {
         "id": "56a2f6be993fbac7",
@@ -1741,9 +1705,7 @@
             "fa486b66b21c8d8d"
         ],
         "x": 2604,
-        "y": 2719,
-        "w": 2172,
-        "h": 402
+        "y": 2719
     },
     {
         "id": "1f4e2aa155dc0a1c",
@@ -1798,9 +1760,7 @@
             "be99070b27a6117b"
         ],
         "x": 2864,
-        "y": 3219,
-        "w": 1872,
-        "h": 642
+        "y": 3219
     },
     {
         "id": "3e6fe3e71981bb6b",
@@ -1846,9 +1806,7 @@
             "e45cb0f387deb7c2"
         ],
         "x": 2684,
-        "y": 2279,
-        "w": 2172,
-        "h": 422
+        "y": 2279
     },
     {
         "id": "5e203e809c0bd87a",
@@ -1917,9 +1875,7 @@
             "02abeb727c7a0bea"
         ],
         "x": 1554,
-        "y": 2219,
-        "w": 732,
-        "h": 302
+        "y": 2219
     },
     {
         "id": "33d5513e7699b853",
@@ -1948,9 +1904,7 @@
             "4d14ef76e0126be2"
         ],
         "x": 1574,
-        "y": 1879,
-        "w": 532,
-        "h": 322
+        "y": 1879
     },
     {
         "id": "fcfd3443e0b0d4c7",
@@ -1978,9 +1932,7 @@
             "56676871696932db"
         ],
         "x": 1554,
-        "y": 2559,
-        "w": 772,
-        "h": 322
+        "y": 2559
     },
     {
         "id": "549daca12e284a9c",
@@ -2015,9 +1967,7 @@
             "0da9dabb92fd93c8"
         ],
         "x": 134,
-        "y": 2279,
-        "w": 1162,
-        "h": 322
+        "y": 2279
     },
     {
         "id": "377ac035b96a41de",
@@ -2046,9 +1996,7 @@
             "da4e87050a9f8bf1"
         ],
         "x": 214,
-        "y": 1959,
-        "w": 752,
-        "h": 262
+        "y": 1959
     },
     {
         "id": "60708098e23acd96",
@@ -2081,9 +2029,7 @@
             "93cf151674cded4c"
         ],
         "x": 264,
-        "y": 2759,
-        "w": 732,
-        "h": 322
+        "y": 2759
     },
     {
         "id": "3897bed133705e81",
@@ -2170,9 +2116,7 @@
             "ceabf7068dabdd5e"
         ],
         "x": 114,
-        "y": 59,
-        "w": 1352,
-        "h": 242
+        "y": 59
     },
     {
         "id": "f38486a5759666f0",
@@ -2199,9 +2143,7 @@
         ],
         "env": [],
         "x": 114,
-        "y": 359,
-        "w": 1192,
-        "h": 242
+        "y": 359
     },
     {
         "id": "821e49952fadaf78",
@@ -2229,9 +2171,7 @@
         ],
         "env": [],
         "x": 114,
-        "y": 679,
-        "w": 1152,
-        "h": 222
+        "y": 679
     },
     {
         "id": "1c3803be18092683",
@@ -2263,9 +2203,7 @@
             "aa1d5e0da6c5b1f3"
         ],
         "x": 94,
-        "y": 939,
-        "w": 1172,
-        "h": 282
+        "y": 939
     },
     {
         "id": "9d6515b12fd52c73",
@@ -2297,9 +2235,7 @@
             "60ff46c64dec3f9e"
         ],
         "x": 94,
-        "y": 1639,
-        "w": 1572,
-        "h": 222
+        "y": 1639
     },
     {
         "id": "96be5e73cc5cc970",
@@ -2355,9 +2291,7 @@
         ],
         "env": [],
         "x": 374,
-        "y": 59,
-        "w": 1512,
-        "h": 202
+        "y": 59
     },
     {
         "id": "82fd466d.f6c968",
@@ -3736,8 +3670,8 @@
         "topic": "on",
         "payload": "Pause",
         "payloadType": "str",
-        "x": 220,
-        "y": 1000,
+        "x": 1380,
+        "y": 660,
         "wires": [
             [
                 "2ee7be2f8091805a"
@@ -5370,6 +5304,7 @@
         "id": "58cba73f.1e46c8",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
+        "d": true,
         "g": "be6ab646aba208a1",
         "name": "Power on/off",
         "group": "117cda2a.43e596",
@@ -7064,8 +6999,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 1000,
+        "x": 1360,
+        "y": 700,
         "wires": [
             []
         ]
@@ -7342,8 +7277,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 140,
-        "y": 1060,
+        "x": 1300,
+        "y": 720,
         "wires": [
             [
                 "2ee7be2f8091805a"
@@ -9499,6 +9434,509 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "0d5a3412a809c7c0",
+        "type": "mqtt out",
+        "z": "33e76285.1cd03e",
+        "name": "12V boks",
+        "topic": "opladerStyrring/output/D3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1200,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "8b9bfac458be4957",
+        "type": "ui_button",
+        "z": "33e76285.1cd03e",
+        "name": "Power on/off",
+        "group": "117cda2a.43e596",
+        "order": 16,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.powertext}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.powerback}}",
+        "icon": "fa-plug",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1180,
+        "wires": [
+            [
+                "a96c954c12b092ec",
+                "a7d78d76559a4524",
+                "cfc30d8cfe56d483"
+            ]
+        ]
+    },
+    {
+        "id": "6ec4dcf3d1452e11",
+        "type": "mqtt out",
+        "z": "33e76285.1cd03e",
+        "name": "230V fordeler",
+        "topic": "opladerStyrring/output/D4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1240,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "92ec8656354ba768",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "links": [
+            "a1b3d2126fab40bf"
+        ],
+        "x": 895,
+        "y": 1200,
+        "wires": [
+            [
+                "e092439690e79b56"
+            ]
+        ]
+    },
+    {
+        "id": "e092439690e79b56",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 1200,
+        "wires": [
+            [
+                "0d5a3412a809c7c0"
+            ]
+        ]
+    },
+    {
+        "id": "d7638f88152afda5",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 1240,
+        "wires": [
+            [
+                "a96c954c12b092ec"
+            ]
+        ]
+    },
+    {
+        "id": "5c5514b89c316c0b",
+        "type": "http request",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.60:1880/sluktv?state=sluk",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1070,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12d5466fc1c24752",
+        "type": "delay",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1060,
+        "y": 1040,
+        "wires": [
+            [
+                "6ec4dcf3d1452e11"
+            ]
+        ]
+    },
+    {
+        "id": "9b32feb92009a17d",
+        "type": "http request",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.32:1880/sluktv?state=sluk",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1070,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a96c954c12b092ec",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Reset alle variabler",
+        "rules": [
+            {
+                "t": "set",
+                "p": "kistestate",
+                "pt": "global",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kisteexit",
+                "pt": "global",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "doorroom2",
+                "pt": "global",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "tjeklist",
+                "pt": "global",
+                "to": "wait",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "gavleplaceret",
+                "pt": "global",
+                "to": "false",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kistetom",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "firsttimeplay",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "left",
+                "pt": "global",
+                "to": "down",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "right",
+                "pt": "global",
+                "to": "down",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 1240,
+        "wires": [
+            [
+                "8e0492c1a7a5f7f6"
+            ]
+        ]
+    },
+    {
+        "id": "8e0492c1a7a5f7f6",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "Variabler resat",
+        "links": [
+            "11f9a43d.dbc02c",
+            "da41c50e4c22faae",
+            "6b11c885cb48fb91",
+            "71bc87a30de98f84",
+            "6e7644daea9a5665",
+            "f7e75af2d62ce436",
+            "1c0361f2da8af167",
+            "1063949fccf05afa",
+            "09533f94b03c3a5b",
+            "bb1dba3f3fa35072"
+        ],
+        "x": 775,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "ebc9dbf83f81e88d",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "poweron",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 670,
+        "y": 1060,
+        "wires": [
+            [
+                "0f7a8868f4e92bdd"
+            ],
+            [
+                "37a436d54c77f495"
+            ]
+        ]
+    },
+    {
+        "id": "0f7a8868f4e92bdd",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Power off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "poweron",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "powerback",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "powertext",
+                "pt": "msg",
+                "to": "ON",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 1020,
+        "wires": [
+            [
+                "8b9bfac458be4957",
+                "12d5466fc1c24752",
+                "5c5514b89c316c0b",
+                "9b32feb92009a17d",
+                "0d5a3412a809c7c0",
+                "49095ecf9ab1fd70"
+            ]
+        ]
+    },
+    {
+        "id": "37a436d54c77f495",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Power on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "poweron",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "powerback",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "powertext",
+                "pt": "msg",
+                "to": "OFF",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 1080,
+        "wires": [
+            [
+                "8b9bfac458be4957",
+                "6ec4dcf3d1452e11",
+                "0d5a3412a809c7c0",
+                "2216095b02d3c520"
+            ]
+        ]
+    },
+    {
+        "id": "a7d78d76559a4524",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "cfc30d8cfe56d483",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "socketid",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 1060,
+        "wires": [
+            [
+                "ebc9dbf83f81e88d"
+            ]
+        ]
+    },
+    {
+        "id": "49095ecf9ab1fd70",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "Power OFF",
+        "links": [
+            "e0282cf331829ce9"
+        ],
+        "x": 1215,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "2216095b02d3c520",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "Power ON",
+        "links": [
+            "db96da4950130d36"
+        ],
+        "x": 1215,
+        "y": 1020,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -26979,7 +27417,8 @@
         "name": "Kiste exit status",
         "links": [
             "dccfa14448734d73",
-            "b19eb0d3df1549b5"
+            "b19eb0d3df1549b5",
+            "8e0492c1a7a5f7f6"
         ],
         "x": 395,
         "y": 980,
@@ -28556,7 +28995,8 @@
         "name": "Kistestate open",
         "links": [
             "dccfa14448734d73",
-            "b19eb0d3df1549b5"
+            "b19eb0d3df1549b5",
+            "8e0492c1a7a5f7f6"
         ],
         "x": 515,
         "y": 600,
@@ -28574,7 +29014,8 @@
         "name": "Doorroom 2",
         "links": [
             "dccfa14448734d73",
-            "b19eb0d3df1549b5"
+            "b19eb0d3df1549b5",
+            "8e0492c1a7a5f7f6"
         ],
         "x": 545,
         "y": 1220,
@@ -28897,7 +29338,8 @@
         "name": "Doorroom 2",
         "links": [
             "dccfa14448734d73",
-            "b19eb0d3df1549b5"
+            "b19eb0d3df1549b5",
+            "8e0492c1a7a5f7f6"
         ],
         "x": 525,
         "y": 1540,
@@ -35917,7 +36359,8 @@
         "z": "416eda1d3361af12",
         "name": "Oplader tænd",
         "links": [
-            "d6903db4074da266"
+            "d6903db4074da266",
+            "2216095b02d3c520"
         ],
         "x": 3955,
         "y": 4240,
@@ -36167,7 +36610,8 @@
         "z": "416eda1d3361af12",
         "name": "Oplader sluk",
         "links": [
-            "9169d621f89cc42b"
+            "9169d621f89cc42b",
+            "49095ecf9ab1fd70"
         ],
         "x": 3955,
         "y": 4180,
@@ -36919,7 +37363,8 @@
             "128f82c726014ea8",
             "e26b7cac8b2be6d4",
             "11686ca5bf9fd695",
-            "57a8de12e1ec4afc"
+            "57a8de12e1ec4afc",
+            "92ec8656354ba768"
         ],
         "x": 575,
         "y": 580,
@@ -44434,7 +44879,8 @@
         "g": "ed80a615853c3223",
         "name": "",
         "links": [
-            "b19eb0d3df1549b5"
+            "b19eb0d3df1549b5",
+            "8e0492c1a7a5f7f6"
         ],
         "x": 625,
         "y": 1760,
@@ -45130,7 +45576,8 @@
         "g": "1b7b17b8c407587c",
         "name": "",
         "links": [
-            "b19eb0d3df1549b5"
+            "b19eb0d3df1549b5",
+            "8e0492c1a7a5f7f6"
         ],
         "x": 1205,
         "y": 2400,
