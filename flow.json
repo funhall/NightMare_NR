@@ -9840,9 +9840,9 @@
         "rules": [
             {
                 "t": "set",
-                "p": "reset",
+                "p": "payload",
                 "pt": "msg",
-                "to": "",
+                "to": "reset",
                 "tot": "str"
             }
         ],
