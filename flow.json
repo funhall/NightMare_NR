@@ -3656,7 +3656,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 180,
-        "y": 800,
+        "y": 900,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -7041,7 +7041,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 380,
-        "y": 780,
+        "y": 880,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
@@ -8944,7 +8944,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 820,
-        "y": 820,
+        "y": 920,
         "wires": [
             [
                 "5801dd6cddafa481"
@@ -8955,7 +8955,7 @@
         "id": "011d71bd028f4985",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Gametime off / nodstop true",
+        "name": "Gametime off / nodstop true / stop timer",
         "rules": [
             {
                 "t": "set",
@@ -8984,8 +8984,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1120,
-        "y": 720,
+        "x": 1240,
+        "y": 700,
         "wires": [
             []
         ]
@@ -9010,8 +9010,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 890,
-        "y": 740,
+        "x": 970,
+        "y": 720,
         "wires": [
             [
                 "011d71bd028f4985"
@@ -9025,7 +9025,7 @@
         "id": "18fca4cd232def7d",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Game on / nodstop false",
+        "name": "Game on / nodstop false / start timer",
         "rules": [
             {
                 "t": "set",
@@ -9054,8 +9054,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1110,
-        "y": 760,
+        "x": 1230,
+        "y": 740,
         "wires": [
             [
                 "6ae7dc55b448fca2"
@@ -9082,8 +9082,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 630,
-        "y": 660,
+        "x": 590,
+        "y": 780,
         "wires": [
             [
                 "011d71bd028f4985",
@@ -9114,8 +9114,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 680,
-        "y": 720,
+        "x": 780,
+        "y": 820,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -9141,8 +9141,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 680,
-        "y": 760,
+        "x": 780,
+        "y": 860,
         "wires": [
             [
                 "f51d408db856e1dc"
@@ -9316,7 +9316,7 @@
             "2b480c9c40b1ae41"
         ],
         "x": 155,
-        "y": 720,
+        "y": 820,
         "wires": [
             [
                 "51f38662168ae960"
@@ -9343,7 +9343,7 @@
         "to": "",
         "reg": false,
         "x": 410,
-        "y": 720,
+        "y": 820,
         "wires": [
             [
                 "c0ba6a06d7b7da0d"
@@ -9388,7 +9388,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 100,
-        "y": 680,
+        "y": 780,
         "wires": [
             [
                 "594a5878cdc1c5c9"
@@ -9424,7 +9424,7 @@
         "repair": false,
         "outputs": 1,
         "x": 250,
-        "y": 720,
+        "y": 820,
         "wires": [
             [
                 "594a5878cdc1c5c9"
@@ -9465,8 +9465,8 @@
         "links": [
             "38c9d1ce4d9d6dec"
         ],
-        "x": 1315,
-        "y": 760,
+        "x": 1415,
+        "y": 740,
         "wires": []
     },
     {
@@ -9482,7 +9482,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 560,
-        "y": 900,
+        "y": 1000,
         "wires": []
     },
     {
