@@ -6292,13 +6292,11 @@
         "z": "33e76285.1cd03e",
         "g": "9531364d722b6af5",
         "name": "",
-        "property": "gavleplaceret",
+        "property": "gavle_vaek",
         "propertyType": "global",
         "rules": [
             {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
+                "t": "true"
             },
             {
                 "t": "else"
@@ -7951,7 +7949,9 @@
         "x": 1900,
         "y": 160,
         "wires": [
-            []
+            [
+                "9aa857f602cb80c9"
+            ]
         ]
     },
     {
