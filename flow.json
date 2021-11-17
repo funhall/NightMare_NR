@@ -6266,7 +6266,7 @@
             },
             {
                 "p": "klarbackground",
-                "v": "blue",
+                "v": "red",
                 "vt": "str"
             }
         ],
@@ -6275,7 +6275,6 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payloadType": "str",
         "x": 170,
         "y": 120,
         "wires": [
