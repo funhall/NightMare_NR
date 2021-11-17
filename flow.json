@@ -11712,7 +11712,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2060,
+        "x": 2080,
         "y": 1180,
         "wires": [
             [
@@ -11763,10 +11763,6 @@
             {
                 "p": "8background",
                 "v": "red",
-                "vt": "str"
-            },
-            {
-                "p": "topic",
                 "vt": "str"
             }
         ],
