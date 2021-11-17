@@ -8918,9 +8918,16 @@
         "rules": [
             {
                 "t": "set",
-                "p": "klargorring",
-                "pt": "flow",
-                "to": "Igang",
+                "p": "klartekst",
+                "pt": "msg",
+                "to": "Klar til spil",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "klarbackground",
+                "pt": "msg",
+                "to": "green",
                 "tot": "str"
             }
         ],
@@ -9096,8 +9103,7 @@
         "y": 280,
         "wires": [
             [
-                "e4cb261fc0707569",
-                "ddfc4ff3b60682f8"
+                "e4cb261fc0707569"
             ]
         ]
     },
