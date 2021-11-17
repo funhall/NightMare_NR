@@ -8706,7 +8706,7 @@
             {
                 "t": "set",
                 "p": "game",
-                "pt": "msg",
+                "pt": "global",
                 "to": "off",
                 "tot": "str"
             }
