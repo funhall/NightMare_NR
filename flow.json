@@ -14859,11 +14859,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 1580,
+        "x": 1010,
+        "y": 1560,
         "wires": [
             [
-                "e2a42f470f877246",
                 "682c6386bdb2a38d"
             ]
         ]
@@ -14887,8 +14886,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1270,
-        "y": 1580,
+        "x": 1290,
+        "y": 1560,
         "wires": [
             [
                 "682c6386bdb2a38d",
@@ -14916,38 +14915,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "1",
+        "payload": "HIGH",
         "payloadType": "str",
         "x": 430,
         "y": 1680,
         "wires": [
             [
                 "69655eab84abe955"
-            ]
-        ]
-    },
-    {
-        "id": "e2a42f470f877246",
-        "type": "delay",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "500",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1090,
-        "y": 1580,
-        "wires": [
-            [
-                "d65a52bf4b2d80fa"
             ]
         ]
     },
@@ -16605,7 +16579,8 @@
         "y": 1440,
         "wires": [
             [
-                "0c7fa4977f596358"
+                "664f999d9c901dc8",
+                "682c6386bdb2a38d"
             ]
         ]
     },
@@ -16651,6 +16626,31 @@
         "wires": [
             [
                 "69655eab84abe955"
+            ]
+        ]
+    },
+    {
+        "id": "664f999d9c901dc8",
+        "type": "delay",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 1560,
+        "wires": [
+            [
+                "0c7fa4977f596358"
             ]
         ]
     },
