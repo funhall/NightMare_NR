@@ -19236,7 +19236,7 @@
         "id": "1befdcd9209f772f",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
-        "name": "open ext",
+        "name": "open exit",
         "rules": [
             {
                 "t": "set",
@@ -19244,13 +19244,6 @@
                 "pt": "msg",
                 "to": "LOW",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "gavleplaceret",
-                "pt": "global",
-                "to": "0",
-                "tot": "num"
             }
         ],
         "action": "",
@@ -19831,6 +19824,31 @@
             ],
             [
                 "78bcbd4bb6aa9b96"
+            ]
+        ]
+    },
+    {
+        "id": "6671e40c616cd8e1",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Background",
+        "props": [
+            {
+                "p": "kisteexitbackground",
+                "v": "red",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 450,
+        "y": 900,
+        "wires": [
+            [
+                "b94749abab964c31"
             ]
         ]
     },
