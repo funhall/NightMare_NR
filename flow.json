@@ -20674,13 +20674,13 @@
         "id": "01dac7b97282ed65",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "name": "1024",
+        "name": "0",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "1024",
+                "to": "0",
                 "tot": "num"
             }
         ],
