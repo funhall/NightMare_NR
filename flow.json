@@ -9103,12 +9103,10 @@
         "links": [
             "a1b3d2126fab40bf"
         ],
-        "x": 895,
+        "x": 655,
         "y": 1200,
         "wires": [
-            [
-                "e092439690e79b56"
-            ]
+            []
         ]
     },
     {
@@ -9310,27 +9308,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "8e0492c1a7a5f7f6",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "name": "Variabler resat",
-        "links": [
-            "11f9a43d.dbc02c",
-            "da41c50e4c22faae",
-            "6b11c885cb48fb91",
-            "71bc87a30de98f84",
-            "6e7644daea9a5665",
-            "f7e75af2d62ce436",
-            "1c0361f2da8af167",
-            "1063949fccf05afa",
-            "09533f94b03c3a5b",
-            "bb1dba3f3fa35072"
-        ],
-        "x": 615,
-        "y": 1140,
-        "wires": []
     },
     {
         "id": "ebc9dbf83f81e88d",
