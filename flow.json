@@ -3491,7 +3491,9 @@
         "name": "Færdig spil",
         "props": [
             {
-                "p": "payload"
+                "p": "reset",
+                "v": "",
+                "vt": "date"
             },
             {
                 "p": "topic",
@@ -3503,11 +3505,12 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payloadType": "date",
-        "x": 440,
-        "y": 500,
+        "x": 80,
+        "y": 280,
         "wires": [
-            []
+            [
+                "ddfc4ff3b60682f8"
+            ]
         ]
     },
     {
