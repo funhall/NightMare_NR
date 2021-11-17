@@ -8976,7 +8976,7 @@
         "topic": "",
         "payload": "Gameover",
         "payloadType": "str",
-        "x": 70,
+        "x": 110,
         "y": 340,
         "wires": [
             [
