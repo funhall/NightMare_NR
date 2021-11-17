@@ -18683,13 +18683,13 @@
         "type": "change",
         "z": "e21f6458e5ab1eb6",
         "g": "08b42802ab3938de",
-        "name": "HIGH",
+        "name": "LOW",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "HIGH",
+                "to": "LOW",
                 "tot": "str"
             }
         ],
@@ -18713,13 +18713,13 @@
         "type": "change",
         "z": "e21f6458e5ab1eb6",
         "g": "08b42802ab3938de",
-        "name": "LOW",
+        "name": "HIGH",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "LOW",
+                "to": "HIGH",
                 "tot": "str"
             }
         ],
