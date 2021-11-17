@@ -2354,7 +2354,8 @@
             "4904644ae19bf16a",
             "ea9dd1feba1f638a",
             "5b0c77c3b5c4cbfd",
-            "a1aa32c4949c4fe3"
+            "a1aa32c4949c4fe3",
+            "b9b0ee2e1cb21624"
         ],
         "env": [],
         "x": 114,
@@ -19449,6 +19450,36 @@
         ],
         "x": 175,
         "y": 360,
+        "wires": [
+            [
+                "9b391ee6ccfc7d08"
+            ]
+        ]
+    },
+    {
+        "id": "b9b0ee2e1cb21624",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "g": "95a3c4b6507c5cff",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 440,
         "wires": [
             [
                 "9b391ee6ccfc7d08"
