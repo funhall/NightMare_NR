@@ -7152,8 +7152,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 470,
-        "y": 660,
+        "x": 1550,
+        "y": 360,
         "wires": []
     },
     {
@@ -8947,7 +8947,7 @@
         "id": "4ef97eb1e1560b93",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "klargørring i gang1",
         "rules": [
             {
                 "t": "set",
@@ -9087,7 +9087,7 @@
         "id": "b6512c56f89deb44",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Klar",
+        "name": "Klar 1",
         "rules": [
             {
                 "t": "set",
@@ -9143,6 +9143,24 @@
         "wires": [
             [
                 "1507c4ef88339a79"
+            ]
+        ]
+    },
+    {
+        "id": "232be28f2c633088",
+        "type": "complete",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "scope": [
+            "4ef97eb1e1560b93",
+            "b6512c56f89deb44"
+        ],
+        "uncaught": false,
+        "x": 1180,
+        "y": 360,
+        "wires": [
+            [
+                "518a047eb2a401eb"
             ]
         ]
     },
