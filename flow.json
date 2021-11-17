@@ -3636,21 +3636,17 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
-        "topic": "on",
-        "payload": "Pause",
+        "topic": "",
+        "payload": "Stop",
         "payloadType": "str",
-        "x": 140,
-        "y": 820,
+        "x": 100,
+        "y": 580,
         "wires": [
             []
         ]
