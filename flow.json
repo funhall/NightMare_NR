@@ -3527,7 +3527,7 @@
         "payloadType": "date",
         "topic": "topic",
         "topicType": "msg",
-        "x": 350,
+        "x": 290,
         "y": 340,
         "wires": [
             []
@@ -8979,7 +8979,9 @@
         "x": 70,
         "y": 340,
         "wires": [
-            []
+            [
+                "770a598c.8e9238"
+            ]
         ]
     },
     {
