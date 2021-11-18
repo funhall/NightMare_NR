@@ -11207,6 +11207,20 @@
         ]
     },
     {
+        "id": "8f89d29d99edf874",
+        "type": "firebase out",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "ref": "Nighmare navn",
+        "operation": "set",
+        "admin": "f2d1649946d0b11c",
+        "x": 2580,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
