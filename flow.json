@@ -7370,7 +7370,7 @@
         "color": "",
         "bgcolor": "{{msg.opladerbackground}}",
         "icon": "",
-        "payload": "LOW",
+        "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
@@ -11469,18 +11469,22 @@
                 "t": "eq",
                 "v": "off",
                 "vt": "str"
+            },
+            {
+                "t": "else"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 410,
         "y": 4060,
         "wires": [
             [
                 "ddc10ae23ddc9a48",
                 "d5dfa67603817536"
-            ]
+            ],
+            []
         ]
     },
     {
