@@ -21644,6 +21644,78 @@
         ]
     },
     {
+        "id": "9ef25ba6159a670c",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 1000,
+        "wires": [
+            [
+                "8e5f8bfecd18a2e2"
+            ]
+        ]
+    },
+    {
+        "id": "8e5f8bfecd18a2e2",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "game",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 1020,
+        "wires": [
+            [
+                "5a5093d51b97e4e4"
+            ]
+        ]
+    },
+    {
+        "id": "5a5093d51b97e4e4",
+        "type": "debug",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 1020,
+        "wires": []
+    },
+    {
         "id": "12696b2c777c71a4",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
