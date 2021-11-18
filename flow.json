@@ -32037,35 +32037,6 @@
         "wires": []
     },
     {
-        "id": "6ac54683c6746802",
-        "type": "ui_button",
-        "z": "416eda1d3361af12",
-        "name": "Power on/off",
-        "group": "117cda2a.43e596",
-        "order": 15,
-        "width": 1,
-        "height": 1,
-        "passthru": false,
-        "label": "{{msg.powertext}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.powerback}}",
-        "icon": "fa-plug",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 270,
-        "y": 4680,
-        "wires": [
-            [
-                "79befba318b949bb",
-                "aa13bdd6e986a808",
-                "c2317e6bb51fcbbd"
-            ]
-        ]
-    },
-    {
         "id": "663dacc9aa2702da",
         "type": "mqtt out",
         "z": "416eda1d3361af12",
@@ -34645,7 +34616,6 @@
         "y": 4520,
         "wires": [
             [
-                "6ac54683c6746802",
                 "9a3da6b35b2e3e32",
                 "ea515e8b54e39d6f",
                 "9df1af1bbad297c2",
@@ -34698,7 +34668,6 @@
         "y": 4580,
         "wires": [
             [
-                "6ac54683c6746802",
                 "53c9513505ea73be",
                 "03041a90d66953f1",
                 "d6903db4074da266"
