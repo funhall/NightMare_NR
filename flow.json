@@ -5705,7 +5705,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.tjektext}}qwqw",
+        "label": "{{msg.tjektext}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.tjeklistbackground}}",
@@ -41307,32 +41307,6 @@
         "wires": []
     },
     {
-        "id": "403c560896a4f756",
-        "type": "ui_button",
-        "z": "416eda1d3361af12",
-        "g": "10cb36b526d918e4",
-        "name": "Tjekliste",
-        "group": "117cda2a.43e596",
-        "order": 2,
-        "width": 2,
-        "height": 1,
-        "passthru": false,
-        "label": "{{msg.tjektext}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.tjeklistbackground}}",
-        "icon": "{{msg.icon}}",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1580,
-        "y": 2140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "c39551b751c0d1db",
         "type": "change",
         "z": "416eda1d3361af12",
@@ -41391,7 +41365,6 @@
         "y": 2100,
         "wires": [
             [
-                "403c560896a4f756",
                 "59968e26258e5edc"
             ]
         ]
@@ -41441,7 +41414,6 @@
         "y": 2160,
         "wires": [
             [
-                "403c560896a4f756",
                 "59968e26258e5edc"
             ]
         ]
