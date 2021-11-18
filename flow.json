@@ -5559,6 +5559,13 @@
                 "t": "delete",
                 "p": "gamecounter",
                 "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "requestTimeout",
+                "pt": "flow",
+                "to": "timer",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -9321,7 +9328,8 @@
         "mode": "link",
         "links": [
             "b41f9f2bfad990e4",
-            "bdf8cec0e1a2db9f"
+            "bdf8cec0e1a2db9f",
+            "814c356d347004e6"
         ],
         "x": 595,
         "y": 520,
@@ -11214,10 +11222,77 @@
         "ref": "Nighmare navn",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2580,
-        "y": 1400,
+        "x": 2460,
+        "y": 1560,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "814c356d347004e6",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "links": [
+            "2b480c9c40b1ae41"
+        ],
+        "x": 1955,
+        "y": 1500,
+        "wires": [
+            [
+                "b6788659149d61fe",
+                "d44be0e2f07cdf26"
+            ]
+        ]
+    },
+    {
+        "id": "b6788659149d61fe",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "timer",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2140,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d44be0e2f07cdf26",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "timer",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2180,
+        "y": 1560,
+        "wires": [
+            [
+                "8f89d29d99edf874"
+            ]
         ]
     },
     {
