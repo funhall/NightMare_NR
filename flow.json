@@ -25282,13 +25282,6 @@
                 "pt": "msg",
                 "to": "value1",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
             }
         ],
         "action": "",
