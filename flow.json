@@ -5272,7 +5272,7 @@
         "width": "6",
         "height": "6",
         "gtype": "donut",
-        "title": "33Time used {{msg.gametime}}",
+        "title": "Time used {{msg.gametime}}",
         "label": "min. left",
         "format": "{{msg.gamecounter}}",
         "min": 0,
@@ -32016,32 +32016,6 @@
         "wires": []
     },
     {
-        "id": "fbdf25bc4d1b0ce4",
-        "type": "ui_gauge",
-        "z": "416eda1d3361af12",
-        "name": "cust_time",
-        "group": "1d01efe067ef138e",
-        "order": 1,
-        "width": "6",
-        "height": "6",
-        "gtype": "donut",
-        "title": "Time used {{msg.gametime}}",
-        "label": "min. left",
-        "format": "{{msg.gamecounter}}",
-        "min": 0,
-        "max": "120",
-        "colors": [
-            "#b30900",
-            "#e6e600",
-            "#60cb3a"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "x": 2060,
-        "y": 380,
-        "wires": []
-    },
-    {
         "id": "6d360fac94832ebc",
         "type": "change",
         "z": "416eda1d3361af12",
@@ -33210,9 +33184,7 @@
         "x": 1880,
         "y": 420,
         "wires": [
-            [
-                "fbdf25bc4d1b0ce4"
-            ]
+            []
         ]
     },
     {
@@ -33262,8 +33234,7 @@
         "y": 260,
         "wires": [
             [
-                "a5f334f6d46ba558",
-                "fbdf25bc4d1b0ce4"
+                "a5f334f6d46ba558"
             ]
         ]
     },
@@ -33465,7 +33436,6 @@
                 "3fa0ca8f2a854e92",
                 "81199e4c434c7f3b",
                 "a5f334f6d46ba558",
-                "fbdf25bc4d1b0ce4",
                 "d0db6f812a7972aa",
                 "cdf7f38c82629991"
             ]
