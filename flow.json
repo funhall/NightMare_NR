@@ -21710,11 +21710,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 240,
-        "y": 1000,
+        "x": 80,
+        "y": 1020,
         "wires": [
             [
-                "903cb0d22c22d10a"
+                "2cee95bfae639718"
             ]
         ]
     },
@@ -21762,31 +21762,27 @@
         "wires": []
     },
     {
-        "id": "903cb0d22c22d10a",
-        "type": "loop",
+        "id": "2cee95bfae639718",
+        "type": "trigger",
         "z": "2bdc58f37cbddb93",
         "name": "",
-        "kind": "fcnt",
-        "count": "100",
-        "initial": "1",
-        "step": "1",
-        "condition": "",
-        "conditionType": "js",
-        "when": "before",
-        "enumeration": "enum",
-        "enumerationType": "msg",
-        "limit": "1000",
-        "loopPayload": "loop-orig",
-        "finalPayload": "final-count",
-        "x": 540,
-        "y": 960,
+        "op1": "HIGH",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-2000",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 300,
+        "y": 1020,
         "wires": [
             [
                 "8e5f8bfecd18a2e2"
-            ],
-            [
-                "8e5f8bfecd18a2e2",
-                "5a5093d51b97e4e4"
             ]
         ]
     },
