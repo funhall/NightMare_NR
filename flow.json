@@ -23119,7 +23119,7 @@
         "inputMsgField": "payload",
         "outputMsgField": "payload",
         "operation": "mult",
-        "constant": "-1",
+        "constant": "1",
         "round": true,
         "decimals": "1",
         "x": 540,
