@@ -23412,7 +23412,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 1090,
@@ -25595,14 +25596,14 @@
         "z": "e21f6458e5ab1eb6",
         "g": "9d6515b12fd52c73",
         "name": "",
-        "inputMsgField": "payload",
-        "outputMsgField": "payload",
+        "inputMsgField": "value",
+        "outputMsgField": "value",
         "operation": "ceil",
         "constant": "1",
         "round": false,
         "decimals": 0,
-        "x": 560,
-        "y": 1620,
+        "x": 500,
+        "y": 1580,
         "wires": [
             [
                 "4ef486606ff63b76"
