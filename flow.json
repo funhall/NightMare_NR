@@ -22960,7 +22960,7 @@
         "gtype": "gage",
         "title": "Vægt i kiste",
         "label": "vægt i kiste",
-        "format": "",
+        "format": "{{msg.payload}}",
         "min": "0",
         "max": "200",
         "colors": [
