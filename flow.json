@@ -11296,6 +11296,35 @@
         ]
     },
     {
+        "id": "8e25bcbc34afd576",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1790,
+        "y": 1680,
+        "wires": [
+            [
+                "d44be0e2f07cdf26"
+            ]
+        ]
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
