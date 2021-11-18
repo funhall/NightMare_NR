@@ -12059,7 +12059,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
         "x": 800,
         "y": 120,
@@ -12082,7 +12081,8 @@
         "y": 80,
         "wires": [
             [
-                "cb13aafde8be1156"
+                "cb13aafde8be1156",
+                "df4b132fb8b85a7f"
             ]
         ]
     },
