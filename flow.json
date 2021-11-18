@@ -2434,11 +2434,15 @@
             "a1aa32c4949c4fe3",
             "b9b0ee2e1cb21624",
             "20d689c8b00d2164",
-            "565afc3094528f2f"
+            "565afc3094528f2f",
+            "359175bef7584310",
+            "5a26c8c69eb99df2",
+            "01dac7b97282ed65",
+            "3e86871486d1741a"
         ],
-        "x": 34,
+        "x": 134,
         "y": 99,
-        "w": 992,
+        "w": 1132,
         "h": 562
     },
     {
@@ -20090,7 +20094,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 910,
+        "x": 1150,
         "y": 480,
         "wires": []
     },
@@ -20109,7 +20113,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 910,
+        "x": 1150,
         "y": 560,
         "wires": []
     },
@@ -20155,7 +20159,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 930,
+        "x": 1170,
         "y": 180,
         "wires": []
     },
@@ -20179,7 +20183,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
+        "x": 570,
         "y": 400,
         "wires": [
             [
@@ -20207,7 +20211,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
+        "x": 770,
         "y": 180,
         "wires": [
             [
@@ -20234,7 +20238,7 @@
         "min": 0,
         "max": "1024",
         "step": "10",
-        "x": 720,
+        "x": 960,
         "y": 180,
         "wires": [
             [
@@ -20346,7 +20350,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 190,
+        "x": 430,
         "y": 400,
         "wires": [
             [
@@ -20396,7 +20400,7 @@
         "g": "26046f160ae182f7",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 460,
+        "x": 700,
         "y": 560,
         "wires": [
             [
@@ -20413,7 +20417,7 @@
         "links": [
             "7ce4a2f9.9437dc"
         ],
-        "x": 235,
+        "x": 475,
         "y": 600,
         "wires": [
             [
@@ -20429,7 +20433,7 @@
         "g": "26046f160ae182f7",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 460,
+        "x": 700,
         "y": 620,
         "wires": [
             []
@@ -20551,7 +20555,7 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 520,
+        "x": 760,
         "y": 400,
         "wires": [
             [
@@ -20665,7 +20669,7 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 510,
+        "x": 750,
         "y": 140,
         "wires": [
             []
@@ -20710,7 +20714,7 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 375,
+        "x": 615,
         "y": 180,
         "wires": [
             [
@@ -20727,7 +20731,7 @@
         "links": [
             "7fc3fbad33439116"
         ],
-        "x": 95,
+        "x": 335,
         "y": 400,
         "wires": [
             [
@@ -20757,7 +20761,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
+        "x": 380,
         "y": 320,
         "wires": [
             [
@@ -20785,7 +20789,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
+        "x": 550,
         "y": 440,
         "wires": [
             [
@@ -20849,6 +20853,7 @@
         "id": "359175bef7584310",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "26046f160ae182f7",
         "name": "nedtælling",
         "rules": [
             {
@@ -20864,8 +20869,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
-        "y": 240,
+        "x": 510,
+        "y": 220,
         "wires": [
             [
                 "5a26c8c69eb99df2"
@@ -20876,6 +20881,7 @@
         "id": "3e86871486d1741a",
         "type": "switch",
         "z": "2bdc58f37cbddb93",
+        "g": "26046f160ae182f7",
         "name": "",
         "property": "game",
         "propertyType": "global",
@@ -20889,8 +20895,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 190,
-        "y": 240,
+        "x": 330,
+        "y": 220,
         "wires": [
             [
                 "359175bef7584310",
@@ -20902,6 +20908,7 @@
         "id": "5a26c8c69eb99df2",
         "type": "time-based-dimmer",
         "z": "2bdc58f37cbddb93",
+        "g": "26046f160ae182f7",
         "name": "",
         "interval": "30",
         "step": "10",
@@ -20911,7 +20918,7 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 520,
+        "x": 720,
         "y": 240,
         "wires": [
             [
@@ -20923,6 +20930,7 @@
         "id": "01dac7b97282ed65",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "26046f160ae182f7",
         "name": "0",
         "rules": [
             {
@@ -20938,7 +20946,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
+        "x": 530,
         "y": 280,
         "wires": [
             [
@@ -20955,12 +20963,10 @@
         "links": [
             "d4d2aeec1061c558"
         ],
-        "x": 85,
-        "y": 220,
+        "x": 175,
+        "y": 240,
         "wires": [
-            [
-                "3e86871486d1741a"
-            ]
+            []
         ]
     },
     {
@@ -21075,9 +21081,7 @@
         "x": 1295,
         "y": 460,
         "wires": [
-            [
-                "bc5581aed29adaf5"
-            ]
+            []
         ]
     },
     {
