@@ -11974,10 +11974,10 @@
         "type": "firebase out",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "Error message",
+        "ref": "Error message/opstart",
         "operation": "push",
         "admin": "f2d1649946d0b11c",
-        "x": 1280,
+        "x": 1300,
         "y": 40,
         "wires": [
             []
@@ -12037,6 +12037,35 @@
         "y": 40,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "c7de2f0aef58073a",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 810,
+        "y": 120,
+        "wires": [
+            [
+                "df4b132fb8b85a7f"
+            ]
         ]
     },
     {
