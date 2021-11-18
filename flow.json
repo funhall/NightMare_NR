@@ -25149,210 +25149,94 @@
         ]
     },
     {
-        "id": "6cbfa85e.a749a8",
-        "type": "debug",
+        "id": "de24111a662df84b",
+        "type": "combine-delta",
         "z": "e21f6458e5ab1eb6",
+        "topic": "",
+        "topicA": "a",
+        "topicB": "b",
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "x": 3070,
-        "y": 1220,
-        "wires": []
-    },
-    {
-        "id": "a3818b6a.0226e8",
-        "type": "function",
-        "z": "e21f6458e5ab1eb6",
-        "name": "gekozen dim percentage",
-        "func": "msg.payload = 100 - (msg.payload);\nmsg.topic = \"procent2\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 3090,
-        "y": 1400,
+        "x": 2480,
+        "y": 1160,
         "wires": [
             [
-                "e3475f55.c03fa"
+                "1d34903a0bdd7396"
             ]
         ]
     },
     {
-        "id": "e32ad161.289ea",
-        "type": "debug",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "x": 3390,
-        "y": 1400,
-        "wires": []
-    },
-    {
-        "id": "55d05e31.bcfa7",
-        "type": "function",
-        "z": "e21f6458e5ab1eb6",
-        "name": "r waarde",
-        "func": "val1 = msg.r1\nval2 = msg.procent2\n\nmsg.payload = val2 / 100 * val1;\nmsg.topic = \"r\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 3360,
-        "y": 1300,
-        "wires": [
-            [
-                "701e536.6d647ac"
-            ]
-        ]
-    },
-    {
-        "id": "701e536.6d647ac",
-        "type": "debug",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "x": 3390,
-        "y": 1220,
-        "wires": []
-    },
-    {
-        "id": "4f36d145.d98a4",
-        "type": "ui_slider",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "label": "Dimmer",
-        "group": "fca18ac4.088f68",
-        "order": 4,
-        "width": "6",
-        "height": "1",
-        "passthru": true,
-        "topic": "procent",
-        "min": "0",
-        "max": "100",
-        "step": "2",
-        "x": 2880,
-        "y": 1400,
-        "wires": [
-            [
-                "928022ac.2d3ec",
-                "a3818b6a.0226e8"
-            ]
-        ]
-    },
-    {
-        "id": "928022ac.2d3ec",
-        "type": "debug",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "x": 2890,
-        "y": 1340,
-        "wires": []
-    },
-    {
-        "id": "958278b7.d96368",
-        "type": "ui_numeric",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "label": "",
-        "group": "fca18ac4.088f68",
-        "order": 6,
-        "width": "2",
-        "height": "1",
-        "passthru": true,
-        "topic": "r1",
-        "format": "{{value}}",
-        "min": "0",
-        "max": "255",
-        "step": "5",
-        "x": 2900,
-        "y": 1300,
-        "wires": [
-            [
-                "6cbfa85e.a749a8",
-                "e3475f55.c03fa"
-            ]
-        ]
-    },
-    {
-        "id": "aecd66cc.eb29c8",
+        "id": "68c5fe92f067f77d",
         "type": "inject",
         "z": "e21f6458e5ab1eb6",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "34",
+                "vt": "num"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "255",
-        "payloadType": "num",
-        "x": 2690,
-        "y": 1300,
+        "payloadType": "date",
+        "x": 2240,
+        "y": 1100,
         "wires": [
             [
-                "958278b7.d96368"
+                "de24111a662df84b"
             ]
         ]
     },
     {
-        "id": "afbd0522.4334c8",
+        "id": "8b78c9f3c2aeea40",
         "type": "inject",
         "z": "e21f6458e5ab1eb6",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "4",
+                "vt": "num"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 2670,
-        "y": 1400,
+        "payloadType": "date",
+        "x": 2260,
+        "y": 1180,
         "wires": [
             [
-                "4f36d145.d98a4"
+                "de24111a662df84b"
             ]
         ]
     },
     {
-        "id": "e3475f55.c03fa",
-        "type": "join",
+        "id": "1d34903a0bdd7396",
+        "type": "debug",
         "z": "e21f6458e5ab1eb6",
         "name": "",
-        "mode": "custom",
-        "build": "merged",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 3200,
-        "y": 1300,
-        "wires": [
-            [
-                "55d05e31.bcfa7",
-                "e32ad161.289ea"
-            ]
-        ]
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2700,
+        "y": 1180,
+        "wires": []
     },
     {
         "id": "dce242cef0b59c86",
