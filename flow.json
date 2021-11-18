@@ -25298,7 +25298,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "9d6515b12fd52c73",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -25358,7 +25358,8 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "weightvalue",
-                "tot": "flow"
+                "tot": "flow",
+                "dc": true
             }
         ],
         "action": "",
