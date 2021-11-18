@@ -2150,7 +2150,6 @@
             "8a70eb98c25d5e5b",
             "c2a7d96a10bbf24a",
             "8582c10572c0f75b",
-            "dc6f20afccb784f3",
             "800b19572c82b708",
             "4ef486606ff63b76"
         ],
@@ -23106,8 +23105,7 @@
         "y": 1540,
         "wires": [
             [
-                "84b4c76e67b531fe",
-                "dc6f20afccb784f3"
+                "84b4c76e67b531fe"
             ]
         ]
     },
@@ -23149,7 +23147,8 @@
             [
                 "a9e7f29c540bbb0f",
                 "5c059907d2392b67",
-                "c2a7d96a10bbf24a"
+                "c2a7d96a10bbf24a",
+                "4ef486606ff63b76"
             ]
         ]
     },
@@ -25413,26 +25412,6 @@
             [
                 "d68d10f01d12c569",
                 "2981cd91ebb78b34"
-            ]
-        ]
-    },
-    {
-        "id": "dc6f20afccb784f3",
-        "type": "calculator",
-        "z": "e21f6458e5ab1eb6",
-        "g": "9d6515b12fd52c73",
-        "name": "",
-        "inputMsgField": "value",
-        "outputMsgField": "value",
-        "operation": "mult",
-        "constant": "-1",
-        "round": true,
-        "decimals": "1",
-        "x": 500,
-        "y": 1600,
-        "wires": [
-            [
-                "4ef486606ff63b76"
             ]
         ]
     },
