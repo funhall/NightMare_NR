@@ -3021,16 +3021,6 @@
         "name": "funhallproject"
     },
     {
-        "id": "a594e7f69991c9dc",
-        "type": "ui_spacer",
-        "z": "2bdc58f37cbddb93",
-        "name": "spacer",
-        "group": "117cda2a.43e596",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "866fbcf38e4c4693",
         "type": "ui_spacer",
         "z": "2bdc58f37cbddb93",
