@@ -5887,7 +5887,7 @@
         "width": 1,
         "height": 1,
         "passthru": false,
-        "label": "Bysterrtrt",
+        "label": "Byster",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.bysterbackground}}",
@@ -41583,32 +41583,6 @@
         "wires": []
     },
     {
-        "id": "66f9353357aaf24e",
-        "type": "ui_button",
-        "z": "416eda1d3361af12",
-        "g": "1b7b17b8c407587c",
-        "name": "Byster",
-        "group": "117cda2a.43e596",
-        "order": 7,
-        "width": 1,
-        "height": 1,
-        "passthru": false,
-        "label": "Byster",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.bysterbackground}}",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1690,
-        "y": 2380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "91afe63fd6f34131",
         "type": "change",
         "z": "416eda1d3361af12",
@@ -41639,7 +41613,6 @@
         "y": 2300,
         "wires": [
             [
-                "66f9353357aaf24e",
                 "7e68c190358c62d1",
                 "b7192da4630f7fcc"
             ]
@@ -41676,7 +41649,6 @@
         "y": 2360,
         "wires": [
             [
-                "66f9353357aaf24e",
                 "6324053b4ef75039"
             ]
         ]
