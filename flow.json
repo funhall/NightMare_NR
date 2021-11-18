@@ -11975,8 +11975,8 @@
         "ref": "Error message from Node-red",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 1010,
-        "y": 20,
+        "x": 1290,
+        "y": 40,
         "wires": [
             []
         ]
@@ -11991,8 +11991,7 @@
         "y": 60,
         "wires": [
             [
-                "df4b132fb8b85a7f",
-                "cb13aafde8be1156"
+                "1ca9b9ded8383a69"
             ]
         ]
     },
@@ -12005,13 +12004,41 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1020,
+        "x": 1040,
         "y": 80,
         "wires": []
+    },
+    {
+        "id": "1ca9b9ded8383a69",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 40,
+        "wires": [
+            [
+                "df4b132fb8b85a7f",
+                "cb13aafde8be1156"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
