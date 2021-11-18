@@ -26340,7 +26340,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 790,
+        "x": 930,
         "y": 20,
         "wires": [
             [
@@ -26359,7 +26359,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "status",
-                "tot": "str"
+                "tot": "msg"
             }
         ],
         "action": "",
