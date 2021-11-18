@@ -5566,6 +5566,13 @@
                 "pt": "flow",
                 "to": "timer",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "timer",
+                "pt": "flow",
+                "to": "gametime",
+                "tot": "msg"
             }
         ],
         "action": "",
