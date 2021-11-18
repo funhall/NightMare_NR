@@ -25145,11 +25145,6 @@
         "name": "",
         "rules": [
             {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
-            },
-            {
                 "t": "set",
                 "p": "weightvalue",
                 "pt": "flow",
@@ -25162,7 +25157,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
+        "x": 580,
         "y": 1680,
         "wires": [
             [
