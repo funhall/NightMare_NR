@@ -2458,10 +2458,10 @@
         },
         "nodes": [
             "84c975a6f2977202",
-            "deb6bcec4edd53e2",
             "15d281769651ec91",
             "8aee57ae8d247fa0",
-            "4dfaf3a5efda95b4"
+            "4dfaf3a5efda95b4",
+            "0f154c3e85411683"
         ],
         "env": [],
         "x": 254,
@@ -2479,8 +2479,8 @@
         },
         "nodes": [
             "5eb4f6e82acd1386",
-            "f3a373498c872b82",
-            "09dcd7ae4d5abbb5"
+            "09dcd7ae4d5abbb5",
+            "e44b03a3d1a66f81"
         ],
         "env": [],
         "x": 254,
@@ -9345,7 +9345,7 @@
             },
             {
                 "t": "set",
-                "p": "gamehjhj",
+                "p": "game",
                 "pt": "global",
                 "to": "on",
                 "tot": "str"
@@ -10623,35 +10623,7 @@
         "y": 1860,
         "wires": [
             [
-                "deb6bcec4edd53e2"
-            ]
-        ]
-    },
-    {
-        "id": "deb6bcec4edd53e2",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "1d4f38fd430a0ca5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "game",
-                "pt": "global",
-                "to": "on",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 440,
-        "y": 1860,
-        "wires": [
-            [
-                "15d281769651ec91"
+                "0f154c3e85411683"
             ]
         ]
     },
@@ -10734,35 +10706,7 @@
         "y": 1980,
         "wires": [
             [
-                "f3a373498c872b82"
-            ]
-        ]
-    },
-    {
-        "id": "f3a373498c872b82",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "dc1cdcf7a1c46201",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "game",
-                "pt": "global",
-                "to": "on",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 440,
-        "y": 1980,
-        "wires": [
-            [
-                "09dcd7ae4d5abbb5"
+                "e44b03a3d1a66f81"
             ]
         ]
     },
@@ -11933,6 +11877,58 @@
         "x": 1100,
         "y": 660,
         "wires": []
+    },
+    {
+        "id": "e44b03a3d1a66f81",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "dc1cdcf7a1c46201",
+        "name": "",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 1980,
+        "wires": [
+            [
+                "09dcd7ae4d5abbb5"
+            ]
+        ]
+    },
+    {
+        "id": "0f154c3e85411683",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "1d4f38fd430a0ca5",
+        "name": "",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 1860,
+        "wires": [
+            [
+                "15d281769651ec91"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
