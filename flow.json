@@ -19969,6 +19969,7 @@
         "id": "738a289040f45649",
         "type": "catch",
         "z": "c39524c2016c8df2",
+        "d": true,
         "name": "",
         "scope": null,
         "uncaught": false,
