@@ -11756,6 +11756,37 @@
         ]
     },
     {
+        "id": "175cec237ea11404",
+        "type": "catch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 160,
+        "y": 20,
+        "wires": [
+            [
+                "f21ba4b66e63ac95"
+            ]
+        ]
+    },
+    {
+        "id": "f21ba4b66e63ac95",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 20,
+        "wires": []
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
