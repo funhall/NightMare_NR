@@ -21705,12 +21705,11 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
-        "x": 80,
+        "x": 110,
         "y": 1020,
         "wires": [
             [
