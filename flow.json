@@ -21741,7 +21741,8 @@
         "y": 1020,
         "wires": [
             [
-                "5a5093d51b97e4e4"
+                "5a5093d51b97e4e4",
+                "c42c3eefe9f549ac"
             ]
         ]
     },
@@ -21784,6 +21785,31 @@
             [
                 "8e5f8bfecd18a2e2"
             ]
+        ]
+    },
+    {
+        "id": "c42c3eefe9f549ac",
+        "type": "ui_button",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "group": "5241c487.80287c",
+        "order": 21,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 800,
+        "y": 980,
+        "wires": [
+            []
         ]
     },
     {
