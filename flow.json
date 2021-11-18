@@ -25425,8 +25425,8 @@
         "constant": "-1",
         "round": true,
         "decimals": "1",
-        "x": 520,
-        "y": 1580,
+        "x": 540,
+        "y": 1560,
         "wires": [
             [
                 "c2a7d96a10bbf24a"
