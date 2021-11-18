@@ -5596,7 +5596,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 4160,
+        "x": 4140,
         "y": 4200,
         "wires": [
             [
@@ -6103,7 +6103,7 @@
         "z": "33e76285.1cd03e",
         "name": "Oplader tænd",
         "links": [
-            "bfe66db610ec0a09"
+            "2216095b02d3c520"
         ],
         "x": 3915,
         "y": 4140,
@@ -6356,7 +6356,7 @@
         "z": "33e76285.1cd03e",
         "name": "Oplader sluk",
         "links": [
-            "7d99fe8225a318fc"
+            "49095ecf9ab1fd70"
         ],
         "x": 3915,
         "y": 4080,
@@ -7989,7 +7989,7 @@
         "id": "d24900139e445a93",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Tænd lader",
         "group": "117cda2a.43e596",
         "order": 36,
         "width": 3,
@@ -8016,7 +8016,7 @@
         "id": "a06087a44ec2c79f",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Sluk lader",
         "group": "117cda2a.43e596",
         "order": 44,
         "width": 0,
@@ -9094,7 +9094,8 @@
         "name": "Power OFF",
         "mode": "link",
         "links": [
-            "e0282cf331829ce9"
+            "e0282cf331829ce9",
+            "e487c8e0.af6ef8"
         ],
         "x": 1235,
         "y": 1280,
@@ -9108,7 +9109,8 @@
         "name": "Power ON",
         "mode": "link",
         "links": [
-            "db96da4950130d36"
+            "db96da4950130d36",
+            "a183bf06.aaab8"
         ],
         "x": 1235,
         "y": 1320,
