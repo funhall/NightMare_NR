@@ -5566,8 +5566,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 4650,
-        "y": 4200,
+        "x": 4470,
+        "y": 4160,
         "wires": []
     },
     {
@@ -5817,7 +5817,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 4130,
