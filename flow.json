@@ -11993,7 +11993,7 @@
         "wires": [
             [
                 "1ca9b9ded8383a69",
-                "80192debf0c79b4f"
+                "f11af73ab6b2c013"
             ]
         ]
     },
@@ -12017,8 +12017,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 860,
-        "y": 60,
+        "x": 880,
+        "y": 40,
         "wires": [
             [
                 "8359aea3875b69c3"
@@ -12085,6 +12085,22 @@
         "x": 1350,
         "y": 140,
         "wires": []
+    },
+    {
+        "id": "f11af73ab6b2c013",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1050,
+        "y": 100,
+        "wires": [
+            [
+                "80192debf0c79b4f"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
