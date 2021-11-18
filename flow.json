@@ -11339,7 +11339,7 @@
         "type": "join",
         "z": "33e76285.1cd03e",
         "name": "",
-        "mode": "auto",
+        "mode": "custom",
         "build": "object",
         "property": "payload",
         "propertyType": "msg",
