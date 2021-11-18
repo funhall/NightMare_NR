@@ -2377,7 +2377,8 @@
             "c8aa8feef584e35c",
             "5959dd7045e731d3",
             "19e5e26c75b7a2ef",
-            "89ad1d9c38dd82a8"
+            "89ad1d9c38dd82a8",
+            "fce49b48361736ad"
         ],
         "env": [],
         "x": 1254,
@@ -20358,8 +20359,8 @@
         "g": "50bee133c969308b",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 1820,
-        "y": 480,
+        "x": 1880,
+        "y": 540,
         "wires": [
             [
                 "ea8102888f0cc01d"
@@ -21053,7 +21054,8 @@
         "y": 460,
         "wires": [
             [
-                "bc5581aed29adaf5"
+                "bc5581aed29adaf5",
+                "fce49b48361736ad"
             ]
         ]
     },
@@ -21596,6 +21598,23 @@
                 "991c27dac5556311"
             ]
         ]
+    },
+    {
+        "id": "fce49b48361736ad",
+        "type": "debug",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 420,
+        "wires": []
     },
     {
         "id": "12696b2c777c71a4",
@@ -23408,7 +23427,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "9d6515b12fd52c73",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -23416,8 +23435,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1090,
-        "y": 1720,
+        "x": 1010,
+        "y": 1660,
         "wires": []
     },
     {
