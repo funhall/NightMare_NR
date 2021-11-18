@@ -25708,7 +25708,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Nightmare _personale_Game\"],\"hide\":[\"Nightmare _personale_Game\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Nightmare _personale_Game\"],\"hide\":[\"Nightmare_personale_Game\"]}}",
                 "tot": "json"
             }
         ],
