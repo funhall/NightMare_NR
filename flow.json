@@ -2143,12 +2143,17 @@
             "c75b7c1984573e27",
             "f15baa775bac3408",
             "b67c2f23a2e7c445",
-            "c702b97929294150"
+            "c702b97929294150",
+            "95c5c9b389d14cc3",
+            "5c059907d2392b67",
+            "b5704714fab4bf3b",
+            "8a70eb98c25d5e5b",
+            "c2a7d96a10bbf24a"
         ],
-        "x": 74,
-        "y": 1339,
+        "x": 34,
+        "y": 1379,
         "w": 1592,
-        "h": 222
+        "h": 282
     },
     {
         "id": "96be5e73cc5cc970",
@@ -2468,7 +2473,7 @@
             "8454f2119aa96ad7"
         ],
         "x": 94,
-        "y": 1619,
+        "y": 1699,
         "w": 752,
         "h": 142
     },
@@ -22989,8 +22994,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 910,
-        "y": 1400,
+        "x": 870,
+        "y": 1440,
         "wires": []
     },
     {
@@ -23007,8 +23012,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 730,
-        "y": 1400,
+        "x": 690,
+        "y": 1440,
         "wires": []
     },
     {
@@ -23024,8 +23029,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 180,
-        "y": 1460,
+        "x": 140,
+        "y": 1500,
         "wires": [
             [
                 "60ff46c64dec3f9e",
@@ -23056,8 +23061,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 980,
-        "y": 1480,
+        "x": 940,
+        "y": 1520,
         "wires": [
             [
                 "42ad3ae464b20556"
@@ -23087,8 +23092,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
-        "y": 1460,
+        "x": 360,
+        "y": 1500,
         "wires": [
             [
                 "84b4c76e67b531fe",
@@ -23108,8 +23113,8 @@
         "constant": "1",
         "round": true,
         "decimals": "1",
-        "x": 580,
-        "y": 1460,
+        "x": 540,
+        "y": 1500,
         "wires": [
             [
                 "38114ecb84933283"
@@ -23128,13 +23133,15 @@
         "constant": "1",
         "round": false,
         "decimals": 0,
-        "x": 760,
-        "y": 1460,
+        "x": 720,
+        "y": 1500,
         "wires": [
             [
                 "d68d10f01d12c569",
                 "a9e7f29c540bbb0f",
-                "2981cd91ebb78b34"
+                "2981cd91ebb78b34",
+                "5c059907d2392b67",
+                "c2a7d96a10bbf24a"
             ]
         ]
     },
@@ -23192,8 +23199,8 @@
         "g": "9d6515b12fd52c73",
         "name": "flow.kiste - locked/open",
         "info": "",
-        "x": 200,
-        "y": 1400,
+        "x": 160,
+        "y": 1440,
         "wires": []
     },
     {
@@ -23244,8 +23251,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1560,
-        "y": 1500,
+        "x": 1520,
+        "y": 1540,
         "wires": [
             []
         ]
@@ -23284,8 +23291,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1160,
-        "y": 1440,
+        "x": 1120,
+        "y": 1480,
         "wires": [
             [
                 "834e5579ba26084b",
@@ -23328,8 +23335,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1160,
-        "y": 1500,
+        "x": 1120,
+        "y": 1540,
         "wires": [
             [
                 "834e5579ba26084b",
@@ -23355,8 +23362,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1550,
-        "y": 1440,
+        "x": 1510,
+        "y": 1480,
         "wires": [
             []
         ]
@@ -23379,8 +23386,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1390,
-        "y": 1440,
+        "x": 1350,
+        "y": 1480,
         "wires": [
             [
                 "84ab184bb818391a"
@@ -23400,8 +23407,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 450,
-        "y": 1380,
+        "x": 410,
+        "y": 1420,
         "wires": []
     },
     {
@@ -23500,8 +23507,8 @@
             "84c975a6f2977202",
             "f7e5ca754bce7495"
         ],
-        "x": 1335,
-        "y": 1520,
+        "x": 1295,
+        "y": 1560,
         "wires": []
     },
     {
@@ -23514,8 +23521,8 @@
         "links": [
             "5eb4f6e82acd1386"
         ],
-        "x": 1305,
-        "y": 1400,
+        "x": 1265,
+        "y": 1440,
         "wires": []
     },
     {
@@ -23594,7 +23601,7 @@
         "rap": false,
         "inputs": 0,
         "x": 210,
-        "y": 1700,
+        "y": 1780,
         "wires": [
             [
                 "29fdd270df48f8f7",
@@ -23617,7 +23624,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 730,
-        "y": 1720,
+        "y": 1800,
         "wires": []
     },
     {
@@ -23641,7 +23648,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 470,
-        "y": 1720,
+        "y": 1800,
         "wires": [
             []
         ]
@@ -23670,7 +23677,7 @@
         "repair": false,
         "outputs": 2,
         "x": 450,
-        "y": 1660,
+        "y": 1740,
         "wires": [
             [
                 "8454f2119aa96ad7"
@@ -23699,7 +23706,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 650,
-        "y": 1660,
+        "y": 1740,
         "wires": [
             []
         ]
@@ -25114,8 +25121,8 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 215,
-        "y": 1520,
+        "x": 175,
+        "y": 1560,
         "wires": [
             [
                 "c702b97929294150"
@@ -25142,8 +25149,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 390,
-        "y": 1520,
+        "x": 350,
+        "y": 1560,
         "wires": [
             []
         ]
@@ -25237,6 +25244,131 @@
         "x": 2710,
         "y": 1160,
         "wires": []
+    },
+    {
+        "id": "95c5c9b389d14cc3",
+        "type": "combine-delta",
+        "z": "e21f6458e5ab1eb6",
+        "g": "9d6515b12fd52c73",
+        "topic": "Name",
+        "topicA": "value1",
+        "topicB": "value2",
+        "name": "",
+        "x": 910,
+        "y": 1560,
+        "wires": [
+            [
+                "b5704714fab4bf3b"
+            ]
+        ]
+    },
+    {
+        "id": "5c059907d2392b67",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "9d6515b12fd52c73",
+        "name": "Topic value1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "value1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1540,
+        "wires": [
+            [
+                "95c5c9b389d14cc3"
+            ]
+        ]
+    },
+    {
+        "id": "b5704714fab4bf3b",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "g": "9d6515b12fd52c73",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "8a70eb98c25d5e5b",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "g": "9d6515b12fd52c73",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 1620,
+        "wires": [
+            [
+                "c702b97929294150"
+            ]
+        ]
+    },
+    {
+        "id": "c2a7d96a10bbf24a",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "9d6515b12fd52c73",
+        "name": "Topic value2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "value2",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "weightvalue",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 1580,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "dce242cef0b59c86",
