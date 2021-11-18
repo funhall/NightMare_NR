@@ -32102,34 +32102,6 @@
         "wires": []
     },
     {
-        "id": "8c963b30bc49d395",
-        "type": "ui_button",
-        "z": "416eda1d3361af12",
-        "g": "a754c23b5706b2d4",
-        "name": "Klargørring",
-        "group": "117cda2a.43e596",
-        "order": 10,
-        "width": 2,
-        "height": 1,
-        "passthru": false,
-        "label": "{{msg.klartext}}rtrt",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.klarbackground}}",
-        "icon": "",
-        "payload": "",
-        "payloadType": "date",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 290,
-        "y": 220,
-        "wires": [
-            [
-                "a6e6d97e5aaa877d"
-            ]
-        ]
-    },
-    {
         "id": "ccb3309845222efc",
         "type": "comment",
         "z": "416eda1d3361af12",
@@ -33150,7 +33122,6 @@
                 "3fa0ca8f2a854e92",
                 "81199e4c434c7f3b",
                 "786cf1f7b5add738",
-                "8c963b30bc49d395",
                 "f55387d8fba044bd",
                 "cdf7f38c82629991"
             ]
@@ -33592,7 +33563,6 @@
                 "a5f334f6d46ba558",
                 "fbdf25bc4d1b0ce4",
                 "d0db6f812a7972aa",
-                "8c963b30bc49d395",
                 "cdf7f38c82629991"
             ]
         ]
@@ -33933,9 +33903,7 @@
         "x": 255,
         "y": 320,
         "wires": [
-            [
-                "8c963b30bc49d395"
-            ]
+            []
         ]
     },
     {
@@ -34036,9 +34004,7 @@
         "x": 270,
         "y": 360,
         "wires": [
-            [
-                "8c963b30bc49d395"
-            ]
+            []
         ]
     },
     {
