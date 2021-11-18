@@ -2455,7 +2455,7 @@
         "order": 5,
         "disp": true,
         "width": "4",
-        "collapse": false
+        "collapse": true
     },
     {
         "id": "dca8425b.8fb18",
