@@ -19925,10 +19925,10 @@
         "type": "firebase out",
         "z": "c39524c2016c8df2",
         "name": "",
-        "ref": "Error message from Node-red",
+        "ref": "Byster error",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 830,
+        "x": 770,
         "y": 20,
         "wires": [
             []
@@ -19959,7 +19959,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "",
+                "to": "status",
                 "tot": "str"
             }
         ],
@@ -19968,8 +19968,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
-        "y": 80,
+        "x": 340,
+        "y": 60,
         "wires": [
             [
                 "cadf44bf61714979"
@@ -21861,7 +21861,7 @@
         "y": 40,
         "wires": [
             [
-                "b6c0df994c13a749"
+                "6ed549ed6e995656"
             ]
         ]
     },
@@ -22010,10 +22010,10 @@
         "type": "firebase out",
         "z": "2bdc58f37cbddb93",
         "name": "",
-        "ref": "Error message from Node-red",
+        "ref": "Lys Error",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 780,
+        "x": 710,
         "y": 40,
         "wires": [
             []
@@ -22043,6 +22043,33 @@
         "scope": null,
         "x": 150,
         "y": 80,
+        "wires": [
+            [
+                "6ed549ed6e995656"
+            ]
+        ]
+    },
+    {
+        "id": "6ed549ed6e995656",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 60,
         "wires": [
             [
                 "b6c0df994c13a749"
@@ -26271,7 +26298,7 @@
         "y": 20,
         "wires": [
             [
-                "1ebdab27d69e920c"
+                "155d1bcc8628c0d2"
             ]
         ]
     },
@@ -26280,11 +26307,11 @@
         "type": "firebase out",
         "z": "e21f6458e5ab1eb6",
         "name": "",
-        "ref": "Error message from Node-red",
+        "ref": "Vaegt Error ",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 975.8958129882812,
-        "y": 35.888885498046875,
+        "x": 1170,
+        "y": 20,
         "wires": [
             []
         ]
@@ -26298,7 +26325,52 @@
         "x": 470,
         "y": 40,
         "wires": [
-            []
+            [
+                "155d1bcc8628c0d2"
+            ]
+        ]
+    },
+    {
+        "id": "a9b57fdafe1b4c40",
+        "type": "json",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 790,
+        "y": 20,
+        "wires": [
+            [
+                "1ebdab27d69e920c"
+            ]
+        ]
+    },
+    {
+        "id": "155d1bcc8628c0d2",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 40,
+        "wires": [
+            [
+                "a9b57fdafe1b4c40"
+            ]
         ]
     },
     {
