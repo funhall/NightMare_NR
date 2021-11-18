@@ -11993,8 +11993,7 @@
         "wires": [
             [
                 "1ca9b9ded8383a69",
-                "f11af73ab6b2c013",
-                "80192debf0c79b4f"
+                "f11af73ab6b2c013"
             ]
         ]
     },
@@ -12038,8 +12037,7 @@
         "y": 40,
         "wires": [
             [
-                "df4b132fb8b85a7f",
-                "6c0cbef7a18dea23"
+                "df4b132fb8b85a7f"
             ]
         ]
     },
@@ -19987,10 +19985,10 @@
         "type": "firebase out",
         "z": "c39524c2016c8df2",
         "name": "",
-        "ref": "Byster error",
+        "ref": "Error message/Byster",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 770,
+        "x": 800,
         "y": 20,
         "wires": [
             []
@@ -20066,7 +20064,9 @@
         "x": 530,
         "y": 60,
         "wires": [
-            []
+            [
+                "366c17432ffaf6d2"
+            ]
         ]
     },
     {
@@ -22070,10 +22070,10 @@
         "type": "firebase out",
         "z": "2bdc58f37cbddb93",
         "name": "",
-        "ref": "Lys Error",
+        "ref": "Error message/Lys Error",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 710,
+        "x": 760,
         "y": 40,
         "wires": [
             []
@@ -22087,10 +22087,12 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 470,
+        "x": 550,
         "y": 40,
         "wires": [
-            []
+            [
+                "031128a08aa974f4"
+            ]
         ]
     },
     {
@@ -22118,7 +22120,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "status",
-                "tot": "str"
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -26365,10 +26367,10 @@
         "type": "firebase out",
         "z": "e21f6458e5ab1eb6",
         "name": "",
-        "ref": "Vaegt Error ",
+        "ref": "Error message/Vaegt Error ",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 1170,
+        "x": 1220,
         "y": 20,
         "wires": [
             []
@@ -26399,7 +26401,9 @@
         "x": 930,
         "y": 20,
         "wires": [
-            []
+            [
+                "1ebdab27d69e920c"
+            ]
         ]
     },
     {
