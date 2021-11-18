@@ -9198,7 +9198,7 @@
             },
             {
                 "t": "set",
-                "p": "game",
+                "p": "gamedfdf",
                 "pt": "global",
                 "to": "on",
                 "tot": "str"
@@ -9223,7 +9223,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 900,
+        "x": 920,
         "y": 580,
         "wires": [
             [
