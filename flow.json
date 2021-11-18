@@ -19879,6 +19879,20 @@
         ]
     },
     {
+        "id": "2f418f1ae8240707",
+        "type": "status",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "scope": null,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "366c17432ffaf6d2"
+            ]
+        ]
+    },
+    {
         "id": "80a868808fc1a091",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
