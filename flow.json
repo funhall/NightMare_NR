@@ -2229,6 +2229,34 @@
         "h": 122
     },
     {
+        "id": "72a0e370d6a31b24",
+        "type": "group",
+        "z": "33e76285.1cd03e",
+        "name": "Tænd /sluk batteriopladere",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "43790ab3.358724",
+            "a2c2a3a2.a73aa",
+            "a183bf06.aaab8",
+            "e487c8e0.af6ef8",
+            "3f9c20db.e3b0f",
+            "d24900139e445a93",
+            "35b35008d6fb4594",
+            "ae4eb8a18960c053",
+            "016ee9d120f868db",
+            "5724d874655bf42b",
+            "ddc10ae23ddc9a48",
+            "d5dfa67603817536"
+        ],
+        "env": [],
+        "x": 114,
+        "y": 3939,
+        "w": 932,
+        "h": 282
+    },
+    {
         "id": "82fd466d.f6c968",
         "type": "ui_tab",
         "name": "Nightmare personale",
@@ -5170,6 +5198,7 @@
         "id": "43790ab3.358724",
         "type": "mqtt out",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "",
         "topic": "opladerStyrring/output/D5",
         "qos": "",
@@ -5261,6 +5290,7 @@
         "id": "a2c2a3a2.a73aa",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "Tænd oplader",
         "rules": [
             {
@@ -5295,6 +5325,7 @@
         "id": "a183bf06.aaab8",
         "type": "link in",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "Oplader tænd",
         "links": [
             "2216095b02d3c520"
@@ -5388,6 +5419,7 @@
         "id": "e487c8e0.af6ef8",
         "type": "link in",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "Oplader sluk",
         "links": [
             "49095ecf9ab1fd70"
@@ -5404,6 +5436,7 @@
         "id": "3f9c20db.e3b0f",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "Sluk oplader",
         "rules": [
             {
@@ -6956,6 +6989,7 @@
         "id": "d24900139e445a93",
         "type": "ui_button",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "Tænd lader",
         "group": "117cda2a.43e596",
         "order": 34,
@@ -10945,6 +10979,7 @@
         "id": "35b35008d6fb4594",
         "type": "ping",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "protocol": "Automatic",
         "mode": "timed",
         "name": "",
@@ -10960,26 +10995,10 @@
         ]
     },
     {
-        "id": "701b6ac4a7d79f37",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1050,
-        "y": 3840,
-        "wires": []
-    },
-    {
         "id": "ae4eb8a18960c053",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "",
         "rules": [
             {
@@ -10999,8 +11018,7 @@
         "y": 3980,
         "wires": [
             [
-                "016ee9d120f868db",
-                "701b6ac4a7d79f37"
+                "016ee9d120f868db"
             ]
         ]
     },
@@ -11008,6 +11026,7 @@
         "id": "016ee9d120f868db",
         "type": "switch",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -11031,6 +11050,7 @@
         "id": "5724d874655bf42b",
         "type": "switch",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "",
         "property": "oplader",
         "propertyType": "flow",
@@ -11062,6 +11082,7 @@
         "id": "ddc10ae23ddc9a48",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "off",
         "rules": [
             {
@@ -11111,6 +11132,7 @@
         "id": "d5dfa67603817536",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "72a0e370d6a31b24",
         "name": "on",
         "rules": [
             {
