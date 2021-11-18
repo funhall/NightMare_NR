@@ -25182,7 +25182,7 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "name1",
+        "topic": "name",
         "payload": "50",
         "payloadType": "num",
         "x": 2200,
