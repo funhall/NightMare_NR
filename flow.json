@@ -9198,7 +9198,7 @@
             },
             {
                 "t": "set",
-                "p": "gamedfdf",
+                "p": "game",
                 "pt": "global",
                 "to": "on",
                 "tot": "str"
@@ -9345,7 +9345,7 @@
             },
             {
                 "t": "set",
-                "p": "game",
+                "p": "gamehjhj",
                 "pt": "global",
                 "to": "on",
                 "tot": "str"
