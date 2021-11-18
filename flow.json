@@ -25054,34 +25054,7 @@
         "y": 320,
         "wires": [
             [
-                "a028170e5ee00d5d"
-            ]
-        ]
-    },
-    {
-        "id": "a028170e5ee00d5d",
-        "type": "change",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "doorroom2",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 410,
-        "y": 340,
-        "wires": [
-            [
-                "c853e71d2fc0c047"
+                "082d6f8dbcf61056"
             ]
         ]
     },
