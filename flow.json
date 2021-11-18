@@ -5771,23 +5771,6 @@
         "wires": []
     },
     {
-        "id": "e5b1b91d.ca7e58",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 670,
-        "y": 4300,
-        "wires": []
-    },
-    {
         "id": "e487c8e0.af6ef8",
         "type": "link in",
         "z": "33e76285.1cd03e",
@@ -7461,32 +7444,6 @@
         "x": 1215,
         "y": 2260,
         "wires": []
-    },
-    {
-        "id": "2bf1316a.75130e",
-        "type": "light-scheduler",
-        "z": "33e76285.1cd03e",
-        "settings": "6871a700.1c4708",
-        "events": "[{\"start\":{\"dow\":5,\"mod\":595},\"end\":{\"dow\":5,\"mod\":720}},{\"start\":{\"dow\":6,\"mod\":595},\"end\":{\"dow\":6,\"mod\":720}}]",
-        "topic": "on",
-        "name": "",
-        "onPayload": "ON",
-        "onPayloadType": "str",
-        "offPayload": "OFF",
-        "offPayloadType": "str",
-        "onlyWhenDark": false,
-        "scheduleRndMax": 0,
-        "sunElevationThreshold": 6,
-        "sunShowElevationInStatus": false,
-        "outputfreq": "output.statechange",
-        "x": 400,
-        "y": 4240,
-        "wires": [
-            [
-                "a2c2a3a2.a73aa",
-                "e5b1b91d.ca7e58"
-            ]
-        ]
     },
     {
         "id": "b65b259eef111e3e",
