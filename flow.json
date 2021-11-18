@@ -25180,9 +25180,7 @@
         "x": 2480,
         "y": 1160,
         "wires": [
-            [
-                "1d34903a0bdd7396"
-            ]
+            []
         ]
     },
     {
@@ -25255,8 +25253,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2710,
-        "y": 1160,
+        "x": 2510,
+        "y": 1360,
         "wires": []
     },
     {
@@ -25311,7 +25309,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "9d6515b12fd52c73",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -25376,8 +25374,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "weightvalue",
-                "tot": "flow",
-                "dc": true
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -25431,6 +25428,125 @@
         "wires": [
             [
                 "c702b97929294150"
+            ]
+        ]
+    },
+    {
+        "id": "3e34c826f117d2f7",
+        "type": "combine-delta",
+        "z": "e21f6458e5ab1eb6",
+        "topic": "value",
+        "topicA": "value1",
+        "topicB": "value2",
+        "name": "",
+        "x": 2310,
+        "y": 1360,
+        "wires": [
+            [
+                "1d34903a0bdd7396"
+            ]
+        ]
+    },
+    {
+        "id": "60e77e1864aba772",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Topic value1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "value1",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "85",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2160,
+        "y": 1340,
+        "wires": [
+            [
+                "3e34c826f117d2f7"
+            ]
+        ]
+    },
+    {
+        "id": "b18c490f44072169",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Topic value2",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "value2",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "80",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2150,
+        "y": 1380,
+        "wires": [
+            [
+                "3e34c826f117d2f7"
+            ]
+        ]
+    },
+    {
+        "id": "baaf48eaffbe556b",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1970,
+        "y": 1360,
+        "wires": [
+            [
+                "60e77e1864aba772",
+                "b18c490f44072169"
             ]
         ]
     },
