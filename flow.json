@@ -11215,10 +11215,12 @@
         "delay": 300,
         "topic": "topic",
         "topicType": "msg",
-        "x": 2150,
-        "y": 1400,
+        "x": 2050,
+        "y": 1540,
         "wires": [
-            []
+            [
+                "730db2c1a50adf75"
+            ]
         ]
     },
     {
@@ -11226,11 +11228,11 @@
         "type": "firebase out",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "Nighmare navn",
+        "ref": "Nighmare navn/Game tider",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2460,
-        "y": 1560,
+        "x": 2840,
+        "y": 1540,
         "wires": [
             []
         ]
@@ -11269,8 +11271,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2140,
-        "y": 1500,
+        "x": 2210,
+        "y": 1440,
         "wires": [
             []
         ]
@@ -11294,11 +11296,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2180,
-        "y": 1560,
+        "x": 2320,
+        "y": 1520,
         "wires": [
             [
-                "8f89d29d99edf874"
+                "40814ccb4fdf9d15"
             ]
         ]
     },
@@ -11323,11 +11325,67 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1790,
-        "y": 1680,
+        "x": 1960,
+        "y": 1620,
         "wires": [
             [
-                "d44be0e2f07cdf26"
+                "d44be0e2f07cdf26",
+                "54c1ab4b77af5c94"
+            ]
+        ]
+    },
+    {
+        "id": "40814ccb4fdf9d15",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2510,
+        "y": 1540,
+        "wires": [
+            [
+                "8f89d29d99edf874"
+            ]
+        ]
+    },
+    {
+        "id": "730db2c1a50adf75",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "timer",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2320,
+        "y": 1560,
+        "wires": [
+            [
+                "40814ccb4fdf9d15"
             ]
         ]
     },
