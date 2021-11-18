@@ -11509,6 +11509,13 @@
                 "pt": "msg",
                 "to": "red",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "opladertext",
+                "pt": "msg",
+                "to": "slukket",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -11550,6 +11557,13 @@
                 "p": "opladerbackground",
                 "pt": "msg",
                 "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "opladertext",
+                "pt": "msg",
+                "to": "tændt",
                 "tot": "str"
             }
         ],
