@@ -11993,7 +11993,8 @@
         "wires": [
             [
                 "1ca9b9ded8383a69",
-                "f11af73ab6b2c013"
+                "f11af73ab6b2c013",
+                "80192debf0c79b4f"
             ]
         ]
     },
@@ -12094,12 +12095,10 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1050,
-        "y": 100,
+        "x": 590,
+        "y": 140,
         "wires": [
-            [
-                "80192debf0c79b4f"
-            ]
+            []
         ]
     },
     {
