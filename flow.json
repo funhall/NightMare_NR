@@ -21081,7 +21081,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 90,
-        "y": 1020,
+        "y": 1000,
         "wires": [
             [
                 "2cee95bfae639718"
@@ -21161,6 +21161,32 @@
             [
                 "b6c0df994c13a749"
             ]
+        ]
+    },
+    {
+        "id": "96eff0d892ed7d6e",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "name": "start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 1040,
+        "wires": [
+            []
         ]
     },
     {
