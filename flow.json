@@ -3271,27 +3271,27 @@
         "longitude": "9.40201"
     },
     {
-        "id": "173cf4cf1abd0312",
+        "id": "58279242edfe06f9",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "117cda2a.43e596",
-        "order": 3,
+        "order": 5,
         "width": 1,
         "height": 1
     },
     {
-        "id": "e49790717ec0b38a",
+        "id": "1eab8f35179fed98",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "117cda2a.43e596",
-        "order": 34,
+        "order": 31,
         "width": 2,
         "height": 1
     },
     {
-        "id": "99afc36c9298a9b3",
+        "id": "015f6fb04e73adb3",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -3301,7 +3301,7 @@
         "height": 1
     },
     {
-        "id": "9f26c4277ee23913",
+        "id": "be0935047937d024",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -3311,7 +3311,7 @@
         "height": 1
     },
     {
-        "id": "69711a9814865d18",
+        "id": "ab74a7cfbaefafaa",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -3321,7 +3321,7 @@
         "height": 1
     },
     {
-        "id": "01a115fc733da351",
+        "id": "e5152e68896b21be",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -7991,7 +7991,7 @@
         "z": "33e76285.1cd03e",
         "name": "Tænd lader",
         "group": "117cda2a.43e596",
-        "order": 33,
+        "order": 34,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -8018,7 +8018,7 @@
         "z": "33e76285.1cd03e",
         "name": "Sluk lader",
         "group": "117cda2a.43e596",
-        "order": 32,
+        "order": 33,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -34467,7 +34467,7 @@
         "z": "f6bd50b9.85c27",
         "name": "Venstre",
         "group": "117cda2a.43e596",
-        "order": 5,
+        "order": 3,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -50316,7 +50316,7 @@
         "z": "416eda1d3361af12",
         "g": "5a7a8fbe60c69d88",
         "group": "117cda2a.43e596",
-        "order": 31,
+        "order": 32,
         "width": 2,
         "height": 1,
         "name": "",
