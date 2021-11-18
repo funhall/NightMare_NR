@@ -3021,16 +3021,6 @@
         "name": "funhallproject"
     },
     {
-        "id": "1ec638f2062f2d87",
-        "type": "ui_spacer",
-        "z": "2bdc58f37cbddb93",
-        "name": "spacer",
-        "group": "117cda2a.43e596",
-        "order": 34,
-        "width": 2,
-        "height": 1
-    },
-    {
         "id": "57fe606587eee03f",
         "type": "ui_spacer",
         "z": "2bdc58f37cbddb93",
@@ -25383,7 +25373,7 @@
         "z": "42a18184186a4f43",
         "g": "6bba046dfe50c527",
         "name": "",
-        "label": "Radiorrt",
+        "label": "Radio",
         "tooltip": "",
         "group": "117cda2a.43e596",
         "order": 26,
@@ -28316,31 +28306,6 @@
         ]
     },
     {
-        "id": "4b1c4914bd3e2a8b",
-        "type": "ui_slider",
-        "z": "5b3651b.92335b",
-        "g": "bd662a4f36edc960",
-        "name": "",
-        "label": "Radio",
-        "tooltip": "",
-        "group": "117cda2a.43e596",
-        "order": 27,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "250",
-        "step": 1,
-        "x": 790,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "c56352e9.8951e",
         "type": "change",
         "z": "5b3651b.92335b",
@@ -28553,9 +28518,7 @@
         "x": 640,
         "y": 180,
         "wires": [
-            [
-                "4b1c4914bd3e2a8b"
-            ]
+            []
         ]
     },
     {
