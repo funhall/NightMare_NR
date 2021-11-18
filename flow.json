@@ -2453,9 +2453,9 @@
         "name": "Game",
         "tab": "82fd466d.f6c968",
         "order": 5,
-        "disp": true,
+        "disp": false,
         "width": "4",
-        "collapse": true
+        "collapse": false
     },
     {
         "id": "dca8425b.8fb18",
