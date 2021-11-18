@@ -11972,10 +11972,10 @@
         "type": "firebase out",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "Error message from Node-red",
+        "ref": "Error message",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 1290,
+        "x": 1240,
         "y": 40,
         "wires": [
             []
