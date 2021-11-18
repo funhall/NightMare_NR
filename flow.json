@@ -282,7 +282,9 @@
             "3893ba8f.390a76"
         ],
         "x": 2114,
-        "y": 3359
+        "y": 3359,
+        "w": 1632,
+        "h": 502
     },
     {
         "id": "2316e898.9addc8",
@@ -305,7 +307,9 @@
             "8e13249fac38c5db"
         ],
         "x": 2154,
-        "y": 3939
+        "y": 3939,
+        "w": 1012,
+        "h": 222
     },
     {
         "id": "b3771d986777a428",
@@ -349,7 +353,9 @@
             "b0afd849b2fe92e1"
         ],
         "x": 434,
-        "y": 219
+        "y": 219,
+        "w": 1552,
+        "h": 522
     },
     {
         "id": "fc1dd592.319c58",
@@ -381,7 +387,9 @@
             "6f16a75f82923f0f"
         ],
         "x": 434,
-        "y": 759
+        "y": 759,
+        "w": 1472,
+        "h": 382
     },
     {
         "id": "88967f27835024c3",
@@ -400,7 +408,9 @@
             "d23df1927731c182"
         ],
         "x": 2174,
-        "y": 4219
+        "y": 4219,
+        "w": 972,
+        "h": 162
     },
     {
         "id": "463e1cfb0b0e88d4",
@@ -488,7 +498,9 @@
         ],
         "env": [],
         "x": 534,
-        "y": 19
+        "y": 19,
+        "w": 1512,
+        "h": 202
     },
     {
         "id": "c49070f4e172b4d7",
@@ -1852,8 +1864,8 @@
             "3f73821671c0a461"
         ],
         "env": [],
-        "x": 94,
-        "y": 79,
+        "x": 74,
+        "y": 159,
         "w": 1512,
         "h": 202
     },
@@ -3021,9 +3033,19 @@
         "name": "funhallproject"
     },
     {
-        "id": "57fe606587eee03f",
+        "id": "f25593ca173810e3",
         "type": "ui_spacer",
-        "z": "2bdc58f37cbddb93",
+        "z": "42a18184186a4f43",
+        "name": "spacer",
+        "group": "117cda2a.43e596",
+        "order": 21,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "563fa260d59d3657",
+        "type": "ui_spacer",
+        "z": "42a18184186a4f43",
         "name": "spacer",
         "group": "5241c487.80287c",
         "order": 8,
@@ -3031,9 +3053,9 @@
         "height": 1
     },
     {
-        "id": "c6ecbe7354089467",
+        "id": "25184648ab52d325",
         "type": "ui_spacer",
-        "z": "2bdc58f37cbddb93",
+        "z": "42a18184186a4f43",
         "name": "spacer",
         "group": "5241c487.80287c",
         "order": 9,
@@ -5476,7 +5498,7 @@
         "g": "dbe01fce1c4844e0",
         "name": "Start spil/Playing",
         "group": "117cda2a.43e596",
-        "order": 19,
+        "order": 18,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -6897,7 +6919,7 @@
         "z": "33e76285.1cd03e",
         "g": "c49070f4e172b4d7",
         "group": "117cda2a.43e596",
-        "order": 18,
+        "order": 17,
         "width": 2,
         "height": 1,
         "name": "",
@@ -6994,7 +7016,7 @@
         "g": "72a0e370d6a31b24",
         "name": "Tænd lader",
         "group": "117cda2a.43e596",
-        "order": 22,
+        "order": 20,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -7607,7 +7629,7 @@
         "g": "7ba464075860abd5",
         "name": "Power on/off",
         "group": "117cda2a.43e596",
-        "order": 21,
+        "order": 19,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -8827,7 +8849,8 @@
             "6a2cd86b7e315d2b",
             "fd6ee23692604dd3",
             "89ad1d9c38dd82a8",
-            "b67c2f23a2e7c445"
+            "b67c2f23a2e7c445",
+            "2ff3c55a76208c41"
         ],
         "x": 515,
         "y": 320,
@@ -19438,7 +19461,7 @@
         "label": "Lys rum 3",
         "tooltip": "",
         "group": "117cda2a.43e596",
-        "order": 29,
+        "order": 25,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -19540,7 +19563,7 @@
         "label": "Lys rum 1",
         "tooltip": "",
         "group": "117cda2a.43e596",
-        "order": 28,
+        "order": 24,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -25319,8 +25342,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 280,
-        "y": 120,
+        "x": 260,
+        "y": 200,
         "wires": [
             [
                 "79e37f03118231ed"
@@ -25341,8 +25364,8 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 690,
-        "y": 180,
+        "x": 670,
+        "y": 260,
         "wires": [
             []
         ]
@@ -25361,8 +25384,8 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 1510,
-        "y": 180,
+        "x": 1490,
+        "y": 260,
         "wires": [
             []
         ]
@@ -25376,7 +25399,7 @@
         "label": "Radio",
         "tooltip": "",
         "group": "117cda2a.43e596",
-        "order": 26,
+        "order": 23,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -25386,8 +25409,8 @@
         "min": 0,
         "max": "250",
         "step": 1,
-        "x": 350,
-        "y": 240,
+        "x": 330,
+        "y": 320,
         "wires": [
             []
         ]
@@ -25412,8 +25435,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
-        "y": 220,
+        "x": 520,
+        "y": 300,
         "wires": [
             [
                 "9e687831ae8d1589"
@@ -25440,8 +25463,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 720,
-        "y": 240,
+        "x": 700,
+        "y": 320,
         "wires": [
             [
                 "f2041666dd9aee93",
@@ -25470,8 +25493,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1230,
-        "y": 240,
+        "x": 1210,
+        "y": 320,
         "wires": [
             [
                 "d13db69b9372a73e",
@@ -25490,8 +25513,8 @@
         "withhold": false,
         "fixedtimeout": false,
         "pertopic": false,
-        "x": 900,
-        "y": 200,
+        "x": 880,
+        "y": 280,
         "wires": [
             [
                 "d60e5f6b48bbb405"
@@ -25518,8 +25541,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1080,
-        "y": 200,
+        "x": 1060,
+        "y": 280,
         "wires": [
             [
                 "470b4d8e6ae451b9"
@@ -25539,8 +25562,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 120,
+        "x": 1060,
+        "y": 200,
         "wires": []
     },
     {
@@ -25563,8 +25586,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1350,
-        "y": 180,
+        "x": 1330,
+        "y": 260,
         "wires": [
             [
                 "87a253aea6896414"
@@ -25592,8 +25615,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 180,
+        "x": 510,
+        "y": 260,
         "wires": [
             [],
             [
@@ -25621,8 +25644,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 200,
-        "y": 240,
+        "x": 180,
+        "y": 320,
         "wires": [
             [
                 "15239578b2c72d37"
@@ -25649,8 +25672,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
-        "y": 200,
+        "x": 290,
+        "y": 280,
         "wires": [
             []
         ]
@@ -25669,10 +25692,123 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 510,
-        "y": 120,
+        "x": 490,
+        "y": 200,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "75dd83f5efbac9e2",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "Show video afspiller",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Nightmare _personale_Game\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 820,
+        "wires": [
+            [
+                "3776cb2add2e07ca"
+            ]
+        ]
+    },
+    {
+        "id": "f46db4bb3d3b14bb",
+        "type": "ui_ui_control",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "events": "all",
+        "x": 320,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42b9b5a5ccea135a",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "name": "Link til UI CONTROL node",
+        "links": [
+            "3776cb2add2e07ca"
+        ],
+        "x": 165,
+        "y": 60,
+        "wires": [
+            [
+                "f46db4bb3d3b14bb"
+            ]
+        ]
+    },
+    {
+        "id": "2ff3c55a76208c41",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 305,
+        "y": 820,
+        "wires": [
+            [
+                "75dd83f5efbac9e2"
+            ]
+        ]
+    },
+    {
+        "id": "3776cb2add2e07ca",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 945,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "d1c296abc3add300",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 620,
+        "wires": [
+            [
+                "75dd83f5efbac9e2"
+            ]
         ]
     },
     {
@@ -30515,7 +30651,7 @@
         "z": "f6bd50b9.85c27",
         "name": "",
         "group": "117cda2a.43e596",
-        "order": 30,
+        "order": 26,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -30542,7 +30678,7 @@
         "z": "f6bd50b9.85c27",
         "name": "",
         "group": "117cda2a.43e596",
-        "order": 31,
+        "order": 27,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -32875,7 +33011,7 @@
         "g": "a754c23b5706b2d4",
         "name": "Start spil",
         "group": "117cda2a.43e596",
-        "order": 17,
+        "order": 16,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -33014,7 +33150,7 @@
         "label": "Game time",
         "tooltip": "Indstiller spilletiden i Min.",
         "group": "117cda2a.43e596",
-        "order": 25,
+        "order": 22,
         "width": 6,
         "height": 1,
         "passthru": true,
