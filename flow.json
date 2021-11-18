@@ -34777,33 +34777,6 @@
         ]
     },
     {
-        "id": "6037ed0e313117bc",
-        "type": "ui_button",
-        "z": "416eda1d3361af12",
-        "name": "",
-        "group": "117cda2a.43e596",
-        "order": 32,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Sluk lader",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "HIGH",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 3810,
-        "y": 4160,
-        "wires": [
-            [
-                "f38878819848dd36"
-            ]
-        ]
-    },
-    {
         "id": "9169d621f89cc42b",
         "type": "link out",
         "z": "416eda1d3361af12",
