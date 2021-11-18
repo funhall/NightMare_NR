@@ -25703,13 +25703,13 @@
         "id": "75dd83f5efbac9e2",
         "type": "change",
         "z": "42a18184186a4f43",
-        "name": "Show video afspiller",
+        "name": "Show knapper for klargørring",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_Game\"],\"hide\":[\"Nightmare_personale_Gavle_kode\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_Game\"],\"hide\":[\"Nightmare_personale_Gavle_kode\",\"Nightmare_personale_Game\"]}}",
                 "tot": "json"
             }
         ],
@@ -25718,7 +25718,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 680,
+        "x": 700,
         "y": 820,
         "wires": [
             [
