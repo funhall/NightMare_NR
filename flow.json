@@ -25708,7 +25708,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Nightmare _personale_Game\"],\"show\":[\"Escaperoom_Viborg_Timer\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Nightmare _personale_Game\"],\"hide\":[\"Escaperoom_Viborg_Timer\"]}}",
                 "tot": "json"
             }
         ],
