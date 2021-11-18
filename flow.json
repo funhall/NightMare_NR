@@ -2304,7 +2304,8 @@
             "2b480c9c40b1ae41",
             "3bebd32b5735ccd4",
             "5b90813930018f61",
-            "e5cb0c79d6f2b63d"
+            "e5cb0c79d6f2b63d",
+            "6c0cbef7a18dea23"
         ],
         "env": [],
         "x": 94,
@@ -6245,9 +6246,7 @@
         "z": "33e76285.1cd03e",
         "name": "Corwin placeret",
         "mode": "link",
-        "links": [
-            "fc9b6aa8fa506d52"
-        ],
+        "links": [],
         "x": 1815,
         "y": 4380,
         "wires": []
@@ -10778,9 +10777,7 @@
         "z": "33e76285.1cd03e",
         "g": "8a907ee3e43a8bdb",
         "name": "",
-        "links": [
-            "4da0a01d.355f7"
-        ],
+        "links": [],
         "x": 335,
         "y": 2200,
         "wires": [
@@ -11890,6 +11887,23 @@
         "statusType": "auto",
         "x": 1700,
         "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "6c0cbef7a18dea23",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 360,
         "wires": []
     },
     {
