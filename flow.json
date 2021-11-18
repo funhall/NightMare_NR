@@ -788,8 +788,8 @@
             "bdf8cec0e1a2db9f",
             "42a17f01bd1dc813"
         ],
-        "x": 274,
-        "y": 2039,
+        "x": -6,
+        "y": 2099,
         "w": 1612,
         "h": 242
     },
@@ -2093,13 +2093,15 @@
             "826b95112c8631bf",
             "ec67e6f0513072c5",
             "1fb00f59406653d8",
-            "4134cf0cf89825e9"
+            "4134cf0cf89825e9",
+            "fabe7ddddbca209e",
+            "d7d8aa06d91b3789"
         ],
         "env": [],
-        "x": 134,
-        "y": 1039,
+        "x": 114,
+        "y": 999,
         "w": 1272,
-        "h": 302
+        "h": 362
     },
     {
         "id": "1c3803be18092683",
@@ -7066,8 +7068,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 2220,
+        "x": 600,
+        "y": 2280,
         "wires": [
             [
                 "cb7568d5b1a32974",
@@ -7089,8 +7091,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 950,
-        "y": 2140,
+        "x": 670,
+        "y": 2200,
         "wires": []
     },
     {
@@ -7134,8 +7136,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1260,
-        "y": 2140,
+        "x": 980,
+        "y": 2200,
         "wires": [
             [
                 "4f17f4badd740b98",
@@ -7172,8 +7174,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1260,
-        "y": 2200,
+        "x": 980,
+        "y": 2260,
         "wires": [
             []
         ]
@@ -7199,8 +7201,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1090,
-        "y": 2160,
+        "x": 810,
+        "y": 2220,
         "wires": [
             [
                 "3ec27a962d094fc2"
@@ -7228,8 +7230,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 680,
-        "y": 2220,
+        "x": 400,
+        "y": 2280,
         "wires": [
             [
                 "3b4f370bbc616dfb",
@@ -7258,8 +7260,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
-        "y": 2160,
+        "x": 410,
+        "y": 2220,
         "wires": [
             [
                 "e280e9326f0c5a92"
@@ -7280,8 +7282,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1090,
-        "y": 2220,
+        "x": 810,
+        "y": 2280,
         "wires": []
     },
     {
@@ -7302,8 +7304,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1600,
-        "y": 2120,
+        "x": 1320,
+        "y": 2180,
         "wires": [
             [
                 "6eb8430c101c731d"
@@ -8119,8 +8121,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 870,
-        "y": 2080,
+        "x": 590,
+        "y": 2140,
         "wires": []
     },
     {
@@ -8144,8 +8146,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 460,
-        "y": 2140,
+        "x": 180,
+        "y": 2200,
         "wires": [
             [
                 "98bbc5ca0fe2a538"
@@ -8182,8 +8184,8 @@
             "565afc3094528f2f",
             "fb2907834c58bfd3"
         ],
-        "x": 1495,
-        "y": 2200,
+        "x": 1215,
+        "y": 2260,
         "wires": []
     },
     {
@@ -9176,7 +9178,12 @@
         "mode": "link",
         "links": [
             "db96da4950130d36",
-            "a183bf06.aaab8"
+            "a183bf06.aaab8",
+            "d7d8aa06d91b3789",
+            "ff156567d928e364",
+            "57497eed3fc9e7b3",
+            "7c80187aa04495c0",
+            "9667910b6b191207"
         ],
         "x": 1235,
         "y": 1320,
@@ -10733,8 +10740,8 @@
         "links": [
             "ec67e6f0513072c5"
         ],
-        "x": 315,
-        "y": 2180,
+        "x": 35,
+        "y": 2240,
         "wires": [
             [
                 "0d5cbafad6f33ae1"
@@ -10759,8 +10766,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 410,
-        "y": 2180,
+        "x": 130,
+        "y": 2240,
         "wires": [
             [
                 "98bbc5ca0fe2a538"
@@ -11372,8 +11379,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1790,
-        "y": 2140,
+        "x": 1510,
+        "y": 2200,
         "wires": []
     },
     {
@@ -11604,8 +11611,8 @@
         "links": [
             "2b480c9c40b1ae41"
         ],
-        "x": 1335,
-        "y": 2080,
+        "x": 1055,
+        "y": 2140,
         "wires": [
             [
                 "4f17f4badd740b98"
@@ -11840,8 +11847,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1680,
-        "y": 2240,
+        "x": 1400,
+        "y": 2300,
         "wires": []
     },
     {
@@ -11927,6 +11934,49 @@
         "wires": [
             [
                 "15d281769651ec91"
+            ]
+        ]
+    },
+    {
+        "id": "42af591ee57e36a8",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Ved power on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "eightbackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2060,
+        "y": 1120,
+        "wires": [
+            [
+                "eaae9386cab4227e"
+            ]
+        ]
+    },
+    {
+        "id": "9667910b6b191207",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "links": [
+            "2216095b02d3c520"
+        ],
+        "x": 1935,
+        "y": 1120,
+        "wires": [
+            [
+                "42af591ee57e36a8"
             ]
         ]
     },
@@ -22562,8 +22612,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1290,
-        "y": 1140,
+        "x": 1270,
+        "y": 1100,
         "wires": []
     },
     {
@@ -22600,8 +22650,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1080,
-        "y": 1220,
+        "x": 1060,
+        "y": 1180,
         "wires": [
             [
                 "1144df5d1cfd6280"
@@ -22626,8 +22676,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 920,
-        "y": 1220,
+        "x": 900,
+        "y": 1180,
         "wires": [
             [
                 "c9c85ecafe022276"
@@ -22654,8 +22704,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1060,
-        "y": 1180,
+        "x": 1040,
+        "y": 1140,
         "wires": [
             [
                 "1144df5d1cfd6280"
@@ -22903,8 +22953,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 240,
-        "y": 1180,
+        "x": 220,
+        "y": 1140,
         "wires": [
             [
                 "60130155528dcc9b",
@@ -22926,8 +22976,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 1080,
+        "x": 560,
+        "y": 1040,
         "wires": []
     },
     {
@@ -22953,8 +23003,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 410,
-        "y": 1180,
+        "x": 390,
+        "y": 1140,
         "wires": [
             [
                 "7fa55fa9b2a7f299"
@@ -22998,8 +23048,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 1180,
+        "x": 550,
+        "y": 1140,
         "wires": [
             [
                 "03b6594c3963f359",
@@ -23042,8 +23092,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 1280,
+        "x": 530,
+        "y": 1300,
         "wires": [
             [
                 "03b6594c3963f359",
@@ -23066,8 +23116,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 1080,
+        "x": 770,
+        "y": 1040,
         "wires": []
     },
     {
@@ -23090,8 +23140,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 770,
-        "y": 1180,
+        "x": 750,
+        "y": 1140,
         "wires": [
             [
                 "2492d259430ab9ad",
@@ -23121,8 +23171,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 870,
-        "y": 1120,
+        "x": 850,
+        "y": 1080,
         "wires": [
             [
                 "7fa55fa9b2a7f299"
@@ -23150,8 +23200,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 390,
-        "y": 1120,
+        "x": 370,
+        "y": 1080,
         "wires": [
             [
                 "ce278ad12ae831a2"
@@ -23178,8 +23228,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 1120,
+        "x": 570,
+        "y": 1080,
         "wires": [
             [
                 "b94749abab964c31"
@@ -23754,8 +23804,8 @@
             "4dfaf3a5efda95b4",
             "ce4649c03bbc3e2f"
         ],
-        "x": 975,
-        "y": 1080,
+        "x": 955,
+        "y": 1040,
         "wires": [
             [
                 "1befdcd9209f772f"
@@ -23774,8 +23824,8 @@
             "c8aa8feef584e35c",
             "fc9b6aa8fa506d52"
         ],
-        "x": 715,
-        "y": 1260,
+        "x": 675,
+        "y": 1280,
         "wires": []
     },
     {
@@ -23786,8 +23836,8 @@
         "name": "Exit open",
         "mode": "link",
         "links": [],
-        "x": 695,
-        "y": 1300,
+        "x": 655,
+        "y": 1320,
         "wires": []
     },
     {
@@ -23799,8 +23849,8 @@
         "links": [
             "09dcd7ae4d5abbb5"
         ],
-        "x": 925,
-        "y": 1260,
+        "x": 905,
+        "y": 1220,
         "wires": [
             [
                 "c9c85ecafe022276"
@@ -25842,6 +25892,180 @@
         "y": 340,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "fabe7ddddbca209e",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
+        "name": "Ved power on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "kisteexitbackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 1200,
+        "wires": [
+            [
+                "b94749abab964c31"
+            ]
+        ]
+    },
+    {
+        "id": "d7d8aa06d91b3789",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
+        "name": "",
+        "links": [
+            "2216095b02d3c520"
+        ],
+        "x": 395,
+        "y": 1200,
+        "wires": [
+            [
+                "fabe7ddddbca209e"
+            ]
+        ]
+    },
+    {
+        "id": "29f88bd6aad47121",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Ved power on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "kistebackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 680,
+        "wires": [
+            [
+                "f9b41ed2cbf8a219"
+            ]
+        ]
+    },
+    {
+        "id": "ff156567d928e364",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "links": [
+            "2216095b02d3c520"
+        ],
+        "x": 615,
+        "y": 680,
+        "wires": [
+            [
+                "29f88bd6aad47121"
+            ]
+        ]
+    },
+    {
+        "id": "ca94fcd584223615",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Ved power on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rum1background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 420,
+        "wires": [
+            [
+                "041810b00b0117e0"
+            ]
+        ]
+    },
+    {
+        "id": "57497eed3fc9e7b3",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "links": [
+            "2216095b02d3c520"
+        ],
+        "x": 475,
+        "y": 420,
+        "wires": [
+            [
+                "ca94fcd584223615"
+            ]
+        ]
+    },
+    {
+        "id": "0e049be05df83b6d",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Ved power on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rum2background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 100,
+        "wires": [
+            [
+                "8d57920ba7921f6d"
+            ]
+        ]
+    },
+    {
+        "id": "7c80187aa04495c0",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "links": [
+            "2216095b02d3c520"
+        ],
+        "x": 595,
+        "y": 100,
+        "wires": [
+            [
+                "0e049be05df83b6d"
+            ]
         ]
     },
     {
