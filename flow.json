@@ -25183,9 +25183,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "name1",
-        "payload": "34",
+        "payload": "50",
         "payloadType": "num",
-        "x": 2240,
+        "x": 2200,
         "y": 1100,
         "wires": [
             [
@@ -25214,7 +25214,7 @@
         "topic": "name2",
         "payload": "12",
         "payloadType": "num",
-        "x": 2260,
+        "x": 2220,
         "y": 1180,
         "wires": [
             [
