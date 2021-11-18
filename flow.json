@@ -25709,7 +25709,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_Game\"],\"hide\":[\"Nightmare_personale_Gavle_kode\",\"Nightmare_personale_Game\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_Game\"],\"hide\":[\"Nightmare_personale_Gavle_kode\",\"Nightmare_personale_Game\",\"Nightmare_personale_Spil_tid\"]}}",
                 "tot": "json"
             }
         ],
@@ -25832,7 +25832,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"show\":[\"Nightmare_personale_Game\"],\"show\":[\"Nightmare_personale_Gavle_kode\"]}}",
+                "to": "{\"group\":{\"show\":[\"Nightmare_personale_Game\"],\"show\":[\"Nightmare_personale_Gavle_kode\",\"Nightmare_personale_Game\",\"Nightmare_personale_Spil_tid\"]}}",
                 "tot": "json"
             }
         ],
