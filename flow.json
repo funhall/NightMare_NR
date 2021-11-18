@@ -7368,7 +7368,7 @@
         "label": "Oplader {{msg.opladertext}}",
         "tooltip": "",
         "color": "",
-        "bgcolor": "",
+        "bgcolor": "{{msg.opladerbackground}}",
         "icon": "",
         "payload": "LOW",
         "payloadType": "str",
@@ -11502,6 +11502,13 @@
                 "pt": "flow",
                 "to": "off",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "opladerbackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -11536,6 +11543,13 @@
                 "p": "oplader",
                 "pt": "flow",
                 "to": "on",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "opladerbackground",
+                "pt": "msg",
+                "to": "green",
                 "tot": "str"
             }
         ],
