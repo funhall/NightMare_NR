@@ -11487,6 +11487,41 @@
         ]
     },
     {
+        "id": "35b35008d6fb4594",
+        "type": "ping",
+        "z": "33e76285.1cd03e",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "",
+        "host": "192.168.10.1",
+        "timer": "20",
+        "inputs": 0,
+        "x": 540,
+        "y": 3820,
+        "wires": [
+            [
+                "701b6ac4a7d79f37"
+            ]
+        ]
+    },
+    {
+        "id": "701b6ac4a7d79f37",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 3840,
+        "wires": []
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
