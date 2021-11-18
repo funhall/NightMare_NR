@@ -23092,11 +23092,6 @@
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
             }
         ],
         "action": "",
@@ -25149,6 +25144,11 @@
         "name": "",
         "rules": [
             {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
                 "t": "set",
                 "p": "weightvalue",
                 "pt": "flow",
@@ -25161,7 +25161,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
+        "x": 330,
         "y": 1560,
         "wires": [
             [
