@@ -9505,7 +9505,8 @@
             "2561ecfaae4095f8",
             "5959dd7045e731d3",
             "d7f19ce2accbaa81",
-            "a1af2809e73bca7d"
+            "a1af2809e73bca7d",
+            "0b4e893baa86ab2f"
         ],
         "x": 715,
         "y": 780,
@@ -25820,6 +25821,47 @@
         "x": 990,
         "y": 620,
         "wires": []
+    },
+    {
+        "id": "2d5bf19d798f1668",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "Show spil start knapper",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Nightmare_personale_Game\"],\"show\":[\"Nightmare_personale_Gavle_kode\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b4e893baa86ab2f",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "links": [
+            "7fc3fbad33439116"
+        ],
+        "x": 305,
+        "y": 860,
+        "wires": [
+            [
+                "2d5bf19d798f1668"
+            ]
+        ]
     },
     {
         "id": "84e11b56.e27758",
