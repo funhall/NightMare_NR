@@ -2453,9 +2453,9 @@
         "name": "Game",
         "tab": "82fd466d.f6c968",
         "order": 5,
-        "disp": false,
+        "disp": true,
         "width": "4",
-        "collapse": false
+        "collapse": true
     },
     {
         "id": "dca8425b.8fb18",
@@ -25708,7 +25708,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Nightmare _personale_Game\"],\"hide\":[\"Nightmare_personale_Game\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Nightmare _personale_Game\"],\"show\":[\"Nightmare_personale_Game\"]}}",
                 "tot": "json"
             }
         ],
@@ -25802,7 +25802,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
         "x": 410,
         "y": 620,
