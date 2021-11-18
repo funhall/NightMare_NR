@@ -23085,6 +23085,18 @@
                 "pt": "msg",
                 "to": "$number(payload)",
                 "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "value",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
             }
         ],
         "action": "",
@@ -25140,7 +25152,7 @@
                 "t": "set",
                 "p": "weightvalue",
                 "pt": "flow",
-                "to": "payload",
+                "to": "value",
                 "tot": "msg"
             }
         ],
@@ -25298,7 +25310,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "9d6515b12fd52c73",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -25329,7 +25341,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
         "x": 170,
         "y": 1620,
