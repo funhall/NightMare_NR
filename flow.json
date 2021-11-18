@@ -11185,6 +11185,28 @@
         ]
     },
     {
+        "id": "54c1ab4b77af5c94",
+        "type": "ui_text_input",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "label": "Hold navn: ",
+        "tooltip": "",
+        "group": "5241c487.80287c",
+        "order": 9,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 2150,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
@@ -25622,7 +25644,7 @@
         "z": "42a18184186a4f43",
         "g": "6bba046dfe50c527",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
