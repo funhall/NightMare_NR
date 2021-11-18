@@ -34750,33 +34750,6 @@
         ]
     },
     {
-        "id": "7631553fe388fb21",
-        "type": "ui_button",
-        "z": "416eda1d3361af12",
-        "name": "",
-        "group": "117cda2a.43e596",
-        "order": 33,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Tænd lader",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "LOW",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 3820,
-        "y": 4000,
-        "wires": [
-            [
-                "6d360fac94832ebc"
-            ]
-        ]
-    },
-    {
         "id": "9169d621f89cc42b",
         "type": "link out",
         "z": "416eda1d3361af12",
