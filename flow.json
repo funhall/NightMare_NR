@@ -21710,7 +21710,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 330,
+        "x": 240,
         "y": 1000,
         "wires": [
             [
@@ -21777,7 +21777,7 @@
         "enumeration": "enum",
         "enumerationType": "msg",
         "limit": "1000",
-        "loopPayload": "loop-index",
+        "loopPayload": "loop-orig",
         "finalPayload": "final-count",
         "x": 540,
         "y": 960,
