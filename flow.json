@@ -25175,16 +25175,16 @@
             },
             {
                 "p": "topic",
-                "v": "34",
-                "vt": "num"
+                "vt": "str"
             }
         ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
+        "topic": "name",
+        "payload": "34",
+        "payloadType": "num",
         "x": 2240,
         "y": 1100,
         "wires": [
@@ -25204,16 +25204,16 @@
             },
             {
                 "p": "topic",
-                "v": "4",
-                "vt": "num"
+                "vt": "str"
             }
         ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
+        "topic": "name",
+        "payload": "12",
+        "payloadType": "num",
         "x": 2260,
         "y": 1180,
         "wires": [
