@@ -7119,6 +7119,13 @@
                 "pt": "msg",
                 "to": "LOW",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -7132,7 +7139,8 @@
             [
                 "4f17f4badd740b98",
                 "d4d2aeec1061c558",
-                "42a17f01bd1dc813"
+                "42a17f01bd1dc813",
+                "98bbc5ca0fe2a538"
             ]
         ]
     },
