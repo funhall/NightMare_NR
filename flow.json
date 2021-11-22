@@ -3915,7 +3915,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2040,
+        "x": 2090,
         "y": 4340,
         "wires": [
             []
@@ -4094,7 +4094,7 @@
         "rap": false,
         "inputs": 0,
         "x": 1540,
-        "y": 4620,
+        "y": 4520,
         "wires": [
             [
                 "5a2324bb.70dc5c",
@@ -4122,7 +4122,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 2040,
-        "y": 4580,
+        "y": 4480,
         "wires": [
             []
         ]
@@ -4150,7 +4150,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1750,
-        "y": 4580,
+        "y": 4480,
         "wires": [
             [
                 "2d256da.1fc6a92"
@@ -4194,7 +4194,7 @@
         "to": "",
         "reg": false,
         "x": 1890,
-        "y": 4560,
+        "y": 4460,
         "wires": [
             [
                 "346009d4.c2a0a6",
@@ -4229,7 +4229,7 @@
         "to": "",
         "reg": false,
         "x": 1890,
-        "y": 4600,
+        "y": 4500,
         "wires": [
             [
                 "346009d4.c2a0a6",
@@ -4255,7 +4255,7 @@
         "payload": "Cartmell placeret",
         "payloadType": "str",
         "x": 1560,
-        "y": 4580,
+        "y": 4480,
         "wires": [
             [
                 "5a2324bb.70dc5c"
@@ -4280,7 +4280,7 @@
         "payload": "Cartmell vaek",
         "payloadType": "str",
         "x": 1550,
-        "y": 4540,
+        "y": 4440,
         "wires": [
             [
                 "5a2324bb.70dc5c"
@@ -4300,7 +4300,7 @@
         "rap": false,
         "inputs": 0,
         "x": 1520,
-        "y": 4780,
+        "y": 4680,
         "wires": [
             [
                 "1960b067.7a17c",
@@ -4328,7 +4328,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 2020,
-        "y": 4740,
+        "y": 4640,
         "wires": [
             []
         ]
@@ -4356,7 +4356,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1730,
-        "y": 4740,
+        "y": 4640,
         "wires": [
             [
                 "522556d4.24f8d8"
@@ -4400,7 +4400,7 @@
         "to": "",
         "reg": false,
         "x": 1870,
-        "y": 4720,
+        "y": 4620,
         "wires": [
             [
                 "22fe7466.ef300c",
@@ -4435,7 +4435,7 @@
         "to": "",
         "reg": false,
         "x": 1870,
-        "y": 4760,
+        "y": 4660,
         "wires": [
             [
                 "22fe7466.ef300c",
@@ -4461,7 +4461,7 @@
         "payload": "Huston placeret",
         "payloadType": "str",
         "x": 1540,
-        "y": 4740,
+        "y": 4640,
         "wires": [
             [
                 "1960b067.7a17c"
@@ -4486,7 +4486,7 @@
         "payload": "Huston vaek",
         "payloadType": "str",
         "x": 1530,
-        "y": 4700,
+        "y": 4600,
         "wires": [
             [
                 "1960b067.7a17c"
@@ -4504,7 +4504,7 @@
         "broker": "dca8425b.8fb18",
         "inputs": 0,
         "x": 1520,
-        "y": 4940,
+        "y": 4840,
         "wires": [
             [
                 "feb72145.c1814"
@@ -4531,7 +4531,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 2020,
-        "y": 4900,
+        "y": 4800,
         "wires": [
             []
         ]
@@ -4559,7 +4559,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1730,
-        "y": 4900,
+        "y": 4800,
         "wires": [
             [
                 "7b83e097.a1a2a",
@@ -4604,7 +4604,7 @@
         "to": "",
         "reg": false,
         "x": 1870,
-        "y": 4880,
+        "y": 4780,
         "wires": [
             [
                 "ceba4aaa.1301d8",
@@ -4639,7 +4639,7 @@
         "to": "",
         "reg": false,
         "x": 1870,
-        "y": 4920,
+        "y": 4820,
         "wires": [
             [
                 "ceba4aaa.1301d8",
@@ -4665,7 +4665,7 @@
         "payload": "Clingar placeret",
         "payloadType": "str",
         "x": 1540,
-        "y": 4900,
+        "y": 4800,
         "wires": [
             [
                 "feb72145.c1814"
@@ -4690,7 +4690,7 @@
         "payload": "Clingar vaek",
         "payloadType": "str",
         "x": 1530,
-        "y": 4860,
+        "y": 4760,
         "wires": [
             [
                 "feb72145.c1814"
@@ -5338,7 +5338,7 @@
             "afb0532228793a44"
         ],
         "x": 1835,
-        "y": 4960,
+        "y": 4860,
         "wires": []
     },
     {
@@ -5352,7 +5352,7 @@
             "07d6c1fdab504f56"
         ],
         "x": 1835,
-        "y": 4800,
+        "y": 4700,
         "wires": []
     },
     {
@@ -5363,7 +5363,7 @@
         "mode": "link",
         "links": [],
         "x": 1835,
-        "y": 4640,
+        "y": 4540,
         "wires": []
     },
     {
@@ -7067,7 +7067,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7075,7 +7075,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2020,
+        "x": 1810,
         "y": 4420,
         "wires": []
     },
