@@ -19338,9 +19338,7 @@
         "name": "reset",
         "props": [
             {
-                "p": "reset",
-                "v": "",
-                "vt": "date"
+                "p": "payload"
             },
             {
                 "p": "topic",
@@ -19352,6 +19350,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
+        "payloadType": "date",
         "x": 250,
         "y": 2460,
         "wires": [
