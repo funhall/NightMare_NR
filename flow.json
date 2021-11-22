@@ -1657,7 +1657,8 @@
             "1fb00f59406653d8",
             "4134cf0cf89825e9",
             "fabe7ddddbca209e",
-            "d7d8aa06d91b3789"
+            "d7d8aa06d91b3789",
+            "609a6ded9f8ceebb"
         ],
         "env": [],
         "x": 114,
@@ -1974,7 +1975,9 @@
         ],
         "env": [],
         "x": 1254,
-        "y": 99
+        "y": 99,
+        "w": 1932,
+        "h": 1062
     },
     {
         "id": "26046f160ae182f7",
@@ -2008,7 +2011,9 @@
             "3e86871486d1741a"
         ],
         "x": 54,
-        "y": 199
+        "y": 199,
+        "w": 1132,
+        "h": 562
     },
     {
         "id": "1d4f38fd430a0ca5",
@@ -2150,7 +2155,9 @@
             "83403102b3be5bc9"
         ],
         "x": 194,
-        "y": 1079
+        "y": 1079,
+        "w": 1032,
+        "h": 462
     },
     {
         "id": "c0aa0eaa7e4416d0",
@@ -2169,7 +2176,9 @@
         ],
         "env": [],
         "x": 104,
-        "y": 819
+        "y": 819,
+        "w": 782,
+        "h": 122
     },
     {
         "id": "72a0e370d6a31b24",
@@ -2237,7 +2246,9 @@
         ],
         "env": [],
         "x": 54,
-        "y": 39
+        "y": 39,
+        "w": 842,
+        "h": 122
     },
     {
         "id": "82fd466d.f6c968",
@@ -9202,6 +9213,13 @@
                 "p": "doorroom2",
                 "pt": "global",
                 "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kisteexit",
+                "pt": "global",
+                "to": "",
                 "tot": "str"
             }
         ],
@@ -22395,7 +22413,7 @@
                 "t": "set",
                 "p": "kisteexit",
                 "pt": "global",
-                "to": "closed",
+                "to": "closed1",
                 "tot": "str"
             },
             {
@@ -22411,13 +22429,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
+        "x": 570,
         "y": 1140,
         "wires": [
             [
                 "03b6594c3963f359",
                 "b94749abab964c31",
-                "ec67e6f0513072c5"
+                "609a6ded9f8ceebb"
             ]
         ]
     },
@@ -22582,7 +22600,7 @@
                 "t": "set",
                 "p": "kisteexit",
                 "pt": "global",
-                "to": "closed",
+                "to": "closed1",
                 "tot": "str"
             }
         ],
@@ -23180,14 +23198,13 @@
         "type": "link out",
         "z": "e21f6458e5ab1eb6",
         "g": "821e49952fadaf78",
-        "name": "Exit closed",
+        "name": "Exit closed 2 gang",
         "mode": "link",
         "links": [
-            "c4b15587bd3a3ffa",
             "c8aa8feef584e35c",
             "fc9b6aa8fa506d52"
         ],
-        "x": 675,
+        "x": 895,
         "y": 1280,
         "wires": []
     },
@@ -24789,94 +24806,6 @@
         ]
     },
     {
-        "id": "de24111a662df84b",
-        "type": "combine-delta",
-        "z": "e21f6458e5ab1eb6",
-        "topic": "Name",
-        "topicA": "name1",
-        "topicB": "name2",
-        "name": "",
-        "x": 2480,
-        "y": 1160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "68c5fe92f067f77d",
-        "type": "inject",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "name1",
-        "payload": "82",
-        "payloadType": "num",
-        "x": 2200,
-        "y": 1100,
-        "wires": [
-            [
-                "de24111a662df84b"
-            ]
-        ]
-    },
-    {
-        "id": "8b78c9f3c2aeea40",
-        "type": "inject",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "name2",
-        "payload": "81",
-        "payloadType": "num",
-        "x": 2220,
-        "y": 1180,
-        "wires": [
-            [
-                "de24111a662df84b"
-            ]
-        ]
-    },
-    {
-        "id": "1d34903a0bdd7396",
-        "type": "debug",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2510,
-        "y": 1360,
-        "wires": []
-    },
-    {
         "id": "95c5c9b389d14cc3",
         "type": "combine-delta",
         "z": "e21f6458e5ab1eb6",
@@ -25029,125 +24958,6 @@
         "wires": [
             [
                 "7acecf81244c0e70"
-            ]
-        ]
-    },
-    {
-        "id": "3e34c826f117d2f7",
-        "type": "combine-delta",
-        "z": "e21f6458e5ab1eb6",
-        "topic": "value",
-        "topicA": "value1",
-        "topicB": "value2",
-        "name": "",
-        "x": 2310,
-        "y": 1360,
-        "wires": [
-            [
-                "1d34903a0bdd7396"
-            ]
-        ]
-    },
-    {
-        "id": "60e77e1864aba772",
-        "type": "change",
-        "z": "e21f6458e5ab1eb6",
-        "name": "Topic value1",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "value1",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "85",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2160,
-        "y": 1340,
-        "wires": [
-            [
-                "3e34c826f117d2f7"
-            ]
-        ]
-    },
-    {
-        "id": "b18c490f44072169",
-        "type": "change",
-        "z": "e21f6458e5ab1eb6",
-        "name": "Topic value2",
-        "rules": [
-            {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "value2",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "80",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2150,
-        "y": 1380,
-        "wires": [
-            [
-                "3e34c826f117d2f7"
-            ]
-        ]
-    },
-    {
-        "id": "baaf48eaffbe556b",
-        "type": "inject",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1970,
-        "y": 1360,
-        "wires": [
-            [
-                "60e77e1864aba772",
-                "b18c490f44072169"
             ]
         ]
     },
@@ -25540,6 +25350,32 @@
         "x": 405,
         "y": 840,
         "wires": []
+    },
+    {
+        "id": "609a6ded9f8ceebb",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "g": "821e49952fadaf78",
+        "name": "",
+        "property": "kisteexit",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "closed1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 1220,
+        "wires": [
+            [
+                "ec67e6f0513072c5"
+            ]
+        ]
     },
     {
         "id": "dce242cef0b59c86",
