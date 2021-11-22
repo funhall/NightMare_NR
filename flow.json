@@ -4025,8 +4025,7 @@
         "wires": [
             [
                 "e3ba93b1.eb346",
-                "1aa4d222.f118fe",
-                "caa66a89681b2e30"
+                "1aa4d222.f118fe"
             ]
         ]
     },
@@ -5369,7 +5368,7 @@
         "id": "4da0a01d.355f7",
         "type": "link out",
         "z": "33e76285.1cd03e",
-        "name": "Corwin placeret",
+        "name": "Corwin vaek",
         "mode": "link",
         "links": [],
         "x": 1955,
@@ -11366,19 +11365,6 @@
         ]
     },
     {
-        "id": "caa66a89681b2e30",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "name": "Corwin fjernet",
-        "mode": "link",
-        "links": [
-            "9c117b22ce846f1d"
-        ],
-        "x": 1995,
-        "y": 4400,
-        "wires": []
-    },
-    {
         "id": "ebeb2e150d4a8bcc",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -11430,10 +11416,10 @@
         "x": 1730,
         "y": 4400,
         "wires": [
+            [],
             [
                 "ebeb2e150d4a8bcc"
-            ],
-            []
+            ]
         ]
     },
     {
