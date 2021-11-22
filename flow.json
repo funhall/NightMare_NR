@@ -18355,7 +18355,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "HIGH",
+        "payload": "LOW",
         "payloadType": "str",
         "x": 950,
         "y": 2460,
