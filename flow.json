@@ -26772,7 +26772,7 @@
         "category": "Billeder",
         "file": "Trailer.mp4",
         "layout": "center",
-        "showcontrols": false,
+        "showcontrols": true,
         "loop": false,
         "onstart": false,
         "scope": "local",
