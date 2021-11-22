@@ -330,7 +330,6 @@
         "nodes": [
             "39315a005998c813",
             "157067a195de71ae",
-            "a41a842fbe6d034d",
             "9dd960324664422a",
             "83e9056ce75cbb63",
             "7932efa4761d1227",
@@ -352,7 +351,6 @@
             "619a7ebee801c10b",
             "dafeec74fce3c809",
             "9b01a58c4cf04fc8",
-            "f260d22420afdfaa",
             "baa84779ee429f2d",
             "20d95fc524dcf354",
             "15e1552226e4df69",
@@ -2356,8 +2354,8 @@
             "6f1729951cf28e94",
             "c82fcf67a19e204d"
         ],
-        "x": 54,
-        "y": 1119,
+        "x": 114,
+        "y": 1619,
         "w": 1552,
         "h": 522
     },
@@ -2365,7 +2363,7 @@
         "id": "606c3a6c3de0cf55",
         "type": "group",
         "z": "42a18184186a4f43",
-        "name": "Start start video",
+        "name": "Start start video rum 1",
         "style": {
             "label": true
         },
@@ -2376,19 +2374,20 @@
             "79428363115e0141",
             "18e4191c70ae0a3c",
             "38fdefcfbcaf5971",
-            "f3bd7cc286241bf3"
+            "f3bd7cc286241bf3",
+            "941d9d2157c2785d"
         ],
         "env": [],
-        "x": 114,
-        "y": 679,
+        "x": 274,
+        "y": 699,
         "w": 582,
-        "h": 175.33331298828125
+        "h": 182
     },
     {
         "id": "6150c52ec6fe7e34",
         "type": "group",
         "z": "42a18184186a4f43",
-        "name": "Start game over video",
+        "name": "Start game over video rum 1",
         "style": {
             "label": true
         },
@@ -2400,13 +2399,38 @@
             "c8f61e30db3fc5b4",
             "64a589e68bc0371f",
             "1e01b5c589473c0a",
-            "36ea3b67c66cd355"
+            "36ea3b67c66cd355",
+            "13ca3fedfd43a2e1"
         ],
         "env": [],
-        "x": 114,
-        "y": 879,
+        "x": 274,
+        "y": 899,
         "w": 582,
         "h": 222
+    },
+    {
+        "id": "6188f0082d3cd712",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Start game over video rum 3",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ca227d8b89cf86e1",
+            "8b57aed87fb51d18",
+            "87a2c2dac5306bc3",
+            "55a7d079713a1146",
+            "84a73a05a0c97f14",
+            "1a7d871de19df5a6",
+            "46281dbc9b429c99",
+            "e89aa0349c5a6710"
+        ],
+        "env": [],
+        "x": 274,
+        "y": 1179,
+        "w": 582,
+        "h": 175.33331298828125
     },
     {
         "id": "82fd466d.f6c968",
@@ -9628,7 +9652,8 @@
             "5959dd7045e731d3",
             "d7f19ce2accbaa81",
             "a1af2809e73bca7d",
-            "0b4e893baa86ab2f"
+            "0b4e893baa86ab2f",
+            "941d9d2157c2785d"
         ],
         "x": 715,
         "y": 780,
@@ -26113,6 +26138,7 @@
         "persist": false,
         "proxy": "",
         "authType": "",
+        "senderr": false,
         "x": 490,
         "y": 340,
         "wires": [
@@ -26169,7 +26195,8 @@
             "07cfc246052c3c72",
             "fecd2eca1285d476",
             "18e4191c70ae0a3c",
-            "c8f61e30db3fc5b4"
+            "c8f61e30db3fc5b4",
+            "84a73a05a0c97f14"
         ],
         "x": 165,
         "y": 60,
@@ -26342,8 +26369,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 310,
-        "y": 1520,
+        "x": 370,
+        "y": 2020,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26371,8 +26398,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1080,
-        "y": 1240,
+        "x": 1140,
+        "y": 1740,
         "wires": [
             [
                 "c82fcf67a19e204d"
@@ -26397,8 +26424,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 730,
-        "y": 1200,
+        "x": 790,
+        "y": 1700,
         "wires": [
             [
                 "8ef02ffee422d874"
@@ -26425,8 +26452,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 990,
-        "y": 1160,
+        "x": 1050,
+        "y": 1660,
         "wires": [
             []
         ]
@@ -26451,8 +26478,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 1560,
+        "x": 810,
+        "y": 2060,
         "wires": [
             []
         ]
@@ -26477,8 +26504,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1270,
-        "y": 1300,
+        "x": 1330,
+        "y": 1800,
         "wires": [
             []
         ]
@@ -26496,8 +26523,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 310,
-        "y": 1440,
+        "x": 370,
+        "y": 1940,
         "wires": []
     },
     {
@@ -26517,8 +26544,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 1260,
+        "x": 240,
+        "y": 1760,
         "wires": [
             [
                 "a06245ff7e10d6d4",
@@ -26554,8 +26581,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1040,
-        "y": 1520,
+        "x": 1100,
+        "y": 2020,
         "wires": [
             []
         ]
@@ -26575,8 +26602,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1210,
-        "y": 1340,
+        "x": 1270,
+        "y": 1840,
         "wires": [
             [
                 "9dcce0d895dfc7ac"
@@ -26600,8 +26627,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 500,
-        "y": 1600,
+        "x": 560,
+        "y": 2100,
         "wires": [
             [
                 "6d17bc5693a42c8b"
@@ -26625,8 +26652,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 940,
-        "y": 1200,
+        "x": 1000,
+        "y": 1700,
         "wires": [
             [
                 "c4067b8b7e4b0667"
@@ -26651,8 +26678,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1000,
-        "y": 1340,
+        "x": 1060,
+        "y": 1840,
         "wires": [
             [
                 "707fb68872494820"
@@ -26678,8 +26705,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 570,
-        "y": 1400,
+        "x": 630,
+        "y": 1900,
         "wires": [
             [],
             [
@@ -26708,8 +26735,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 1400,
+        "x": 950,
+        "y": 1900,
         "wires": [
             [
                 "45f778e9551ebc3e",
@@ -26731,8 +26758,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1470,
-        "y": 1420,
+        "x": 1530,
+        "y": 1920,
         "wires": []
     },
     {
@@ -26753,8 +26780,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 740,
-        "y": 1520,
+        "x": 800,
+        "y": 2020,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26776,8 +26803,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1510,
-        "y": 1500,
+        "x": 1570,
+        "y": 2000,
         "wires": []
     },
     {
@@ -26800,8 +26827,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1280,
-        "y": 1520,
+        "x": 1340,
+        "y": 2020,
         "wires": [
             [
                 "b3cf25d2d81fb835"
@@ -26813,7 +26840,7 @@
         "type": "ui_media",
         "z": "42a18184186a4f43",
         "group": "8e533b621186201f",
-        "name": "",
+        "name": "Media rum 1",
         "width": "24",
         "height": "14",
         "order": 0,
@@ -26825,7 +26852,7 @@
         "onstart": false,
         "scope": "local",
         "tooltip": "",
-        "x": 350,
+        "x": 370,
         "y": 100,
         "wires": [
             []
@@ -26848,8 +26875,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 160,
-        "y": 1400,
+        "x": 220,
+        "y": 1900,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26874,8 +26901,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 700,
-        "y": 1160,
+        "x": 760,
+        "y": 1660,
         "wires": [
             [
                 "8ef02ffee422d874"
@@ -26902,8 +26929,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1190,
-        "y": 1420,
+        "x": 1250,
+        "y": 1920,
         "wires": [
             [
                 "1ea7844b7ecc83b1"
@@ -26930,8 +26957,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 650,
-        "y": 1440,
+        "x": 710,
+        "y": 1940,
         "wires": [
             [
                 "9c16a210febf75c1"
@@ -26956,8 +26983,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 870,
-        "y": 1440,
+        "x": 930,
+        "y": 1940,
         "wires": [
             [
                 "707fb68872494820"
@@ -26984,8 +27011,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 1360,
+        "x": 710,
+        "y": 1860,
         "wires": [
             [
                 "3c917c2662a15096"
@@ -27000,8 +27027,8 @@
         "name": "",
         "mode": "link",
         "links": [],
-        "x": 1355,
-        "y": 1220,
+        "x": 1415,
+        "y": 1720,
         "wires": []
     },
     {
@@ -27127,8 +27154,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 720,
+        "x": 600,
+        "y": 740,
         "wires": [
             [
                 "18e4191c70ae0a3c"
@@ -27155,8 +27182,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
-        "y": 760,
+        "x": 610,
+        "y": 780,
         "wires": [
             [
                 "8e95e3b21d3009a5"
@@ -27211,8 +27238,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 420,
-        "y": 640,
+        "x": 580,
+        "y": 660,
         "wires": [
             [
                 "e2981395d53cb507"
@@ -27229,8 +27256,8 @@
         "links": [
             "61b2c0553b7bbcc3"
         ],
-        "x": 655,
-        "y": 760,
+        "x": 815,
+        "y": 780,
         "wires": []
     },
     {
@@ -27255,8 +27282,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 720,
+        "x": 380,
+        "y": 740,
         "wires": [
             [
                 "a1200c70914a7608",
@@ -27269,7 +27296,7 @@
         "id": "61b2c0553b7bbcc3",
         "type": "link in",
         "z": "42a18184186a4f43",
-        "name": "Media",
+        "name": "Media rum 1",
         "links": [
             "8e95e3b21d3009a5",
             "e91ee7488c3ae977"
@@ -27292,8 +27319,8 @@
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 655,
-        "y": 720,
+        "x": 815,
+        "y": 740,
         "wires": []
     },
     {
@@ -27311,8 +27338,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 462.8958435058594,
-        "y": 813.3333129882812,
+        "x": 622.8958435058594,
+        "y": 833.3333129882812,
         "wires": [
             [
                 "8e95e3b21d3009a5"
@@ -27339,8 +27366,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 920,
+        "x": 600,
+        "y": 940,
         "wires": [
             [
                 "c8f61e30db3fc5b4"
@@ -27367,8 +27394,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
-        "y": 960,
+        "x": 610,
+        "y": 980,
         "wires": [
             [
                 "e91ee7488c3ae977"
@@ -27385,8 +27412,8 @@
         "links": [
             "61b2c0553b7bbcc3"
         ],
-        "x": 655,
-        "y": 960,
+        "x": 815,
+        "y": 980,
         "wires": []
     },
     {
@@ -27411,8 +27438,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 920,
+        "x": 380,
+        "y": 940,
         "wires": [
             [
                 "84778e98d4f91f0e",
@@ -27431,8 +27458,8 @@
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 655,
-        "y": 920,
+        "x": 815,
+        "y": 940,
         "wires": []
     },
     {
@@ -27450,8 +27477,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 462.8958435058594,
-        "y": 1013.3333129882812,
+        "x": 622.8958435058594,
+        "y": 1033.3333129882812,
         "wires": [
             [
                 "e91ee7488c3ae977"
@@ -27480,8 +27507,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 1060,
+        "x": 380,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -27504,8 +27531,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 300,
-        "y": 1000,
+        "x": 460,
+        "y": 1020,
         "wires": [
             [
                 "64a589e68bc0371f"
@@ -27530,11 +27557,268 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 290,
-        "y": 780,
+        "x": 450,
+        "y": 800,
         "wires": [
             [
                 "38fdefcfbcaf5971"
+            ]
+        ]
+    },
+    {
+        "id": "ca227d8b89cf86e1",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "Show video afspiller",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1220,
+        "wires": [
+            [
+                "84a73a05a0c97f14"
+            ]
+        ]
+    },
+    {
+        "id": "8b57aed87fb51d18",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "start video",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Billeder/Queen_new.mp4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 1260,
+        "wires": [
+            [
+                "87a2c2dac5306bc3"
+            ]
+        ]
+    },
+    {
+        "id": "87a2c2dac5306bc3",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "def5ec1223d561e3"
+        ],
+        "x": 815,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "55a7d079713a1146",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 1220,
+        "wires": [
+            [
+                "ca227d8b89cf86e1",
+                "8b57aed87fb51d18",
+                "46281dbc9b429c99"
+            ]
+        ]
+    },
+    {
+        "id": "84a73a05a0c97f14",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 815,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "1a7d871de19df5a6",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.60:1880/startvideo?video=start",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 622.8958435058594,
+        "y": 1313.3333129882812,
+        "wires": [
+            [
+                "87a2c2dac5306bc3"
+            ]
+        ]
+    },
+    {
+        "id": "46281dbc9b429c99",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 460,
+        "y": 1300,
+        "wires": [
+            [
+                "1a7d871de19df5a6"
+            ]
+        ]
+    },
+    {
+        "id": "cebc054ffd534624",
+        "type": "ui_media",
+        "z": "42a18184186a4f43",
+        "group": "61ed0381dd8a4dd1",
+        "name": "Media rum 3",
+        "width": "2",
+        "height": "2",
+        "order": 15,
+        "category": "",
+        "file": "Queen_new.mp4",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": false,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 370,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "def5ec1223d561e3",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "name": "Media rum 3",
+        "links": [
+            "87a2c2dac5306bc3"
+        ],
+        "x": 175,
+        "y": 140,
+        "wires": [
+            [
+                "cebc054ffd534624"
+            ]
+        ]
+    },
+    {
+        "id": "e89aa0349c5a6710",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "",
+        "links": [],
+        "x": 315,
+        "y": 1260,
+        "wires": [
+            [
+                "ca227d8b89cf86e1",
+                "8b57aed87fb51d18",
+                "46281dbc9b429c99"
+            ]
+        ]
+    },
+    {
+        "id": "13ca3fedfd43a2e1",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "6150c52ec6fe7e34",
+        "name": "",
+        "links": [],
+        "x": 315,
+        "y": 1000,
+        "wires": [
+            [
+                "36ea3b67c66cd355",
+                "65ad8979db2be883",
+                "84778e98d4f91f0e"
+            ]
+        ]
+    },
+    {
+        "id": "941d9d2157c2785d",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
+        "name": "",
+        "links": [
+            "7fc3fbad33439116"
+        ],
+        "x": 325,
+        "y": 840,
+        "wires": [
+            [
+                "f3bd7cc286241bf3",
+                "e3b8b77fa407b905",
+                "a1200c70914a7608"
             ]
         ]
     },
@@ -29376,19 +29660,6 @@
         "wires": []
     },
     {
-        "id": "a41a842fbe6d034d",
-        "type": "ui_ui_control",
-        "z": "5b3651b.92335b",
-        "g": "b3771d986777a428",
-        "name": "",
-        "events": "all",
-        "x": 1880,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "9dd960324664422a",
         "type": "change",
         "z": "5b3651b.92335b",
@@ -29411,9 +29682,7 @@
         "x": 1540,
         "y": 320,
         "wires": [
-            [
-                "a41a842fbe6d034d"
-            ]
+            []
         ]
     },
     {
@@ -29465,9 +29734,7 @@
         "x": 1530,
         "y": 260,
         "wires": [
-            [
-                "a41a842fbe6d034d"
-            ]
+            []
         ]
     },
     {
@@ -29514,9 +29781,7 @@
         "x": 1130,
         "y": 660,
         "wires": [
-            [
-                "f260d22420afdfaa"
-            ]
+            []
         ]
     },
     {
@@ -29542,9 +29807,7 @@
         "x": 1650,
         "y": 400,
         "wires": [
-            [
-                "f260d22420afdfaa"
-            ]
+            []
         ]
     },
     {
@@ -29621,9 +29884,7 @@
         "x": 1420,
         "y": 620,
         "wires": [
-            [
-                "f260d22420afdfaa"
-            ]
+            []
         ]
     },
     {
@@ -30009,6 +30270,7 @@
         "persist": false,
         "proxy": "",
         "authType": "",
+        "senderr": false,
         "x": 1590,
         "y": 440,
         "wires": [
@@ -30907,30 +31169,6 @@
         "authType": "",
         "x": 950,
         "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f260d22420afdfaa",
-        "type": "ui_media",
-        "z": "5b3651b.92335b",
-        "g": "b3771d986777a428",
-        "group": "8e533b621186201f",
-        "name": "",
-        "width": "24",
-        "height": "14",
-        "order": 0,
-        "category": "Billeder",
-        "file": "Queen_new.mp4",
-        "layout": "center",
-        "showcontrols": false,
-        "loop": false,
-        "onstart": false,
-        "scope": "local",
-        "tooltip": "",
-        "x": 1850,
-        "y": 460,
         "wires": [
             []
         ]
