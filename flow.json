@@ -19314,7 +19314,7 @@
         "id": "baaef07e071a848e",
         "type": "inject",
         "z": "c39524c2016c8df2",
-        "name": "",
+        "name": "reset",
         "props": [
             {
                 "p": "reset",
