@@ -26987,7 +26987,7 @@
         "id": "0a2d8e8faec89334",
         "type": "inject",
         "z": "42a18184186a4f43",
-        "name": "show video",
+        "name": "show timer",
         "props": [
             {
                 "p": "payload"
