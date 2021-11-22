@@ -8081,6 +8081,13 @@
                 "pt": "global",
                 "to": "Ikke klar",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "kisteexit",
+                "pt": "global",
+                "to": "",
+                "tot": "str"
             }
         ],
         "action": "",
