@@ -2356,10 +2356,54 @@
             "6f1729951cf28e94",
             "c82fcf67a19e204d"
         ],
-        "x": 154,
-        "y": 999,
+        "x": 54,
+        "y": 1119,
         "w": 1552,
         "h": 522
+    },
+    {
+        "id": "606c3a6c3de0cf55",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Start start video",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a1200c70914a7608",
+            "e3b8b77fa407b905",
+            "8e95e3b21d3009a5",
+            "79428363115e0141",
+            "18e4191c70ae0a3c",
+            "38fdefcfbcaf5971"
+        ],
+        "env": [],
+        "x": 114,
+        "y": 679,
+        "w": 582,
+        "h": 175.33331298828125
+    },
+    {
+        "id": "6150c52ec6fe7e34",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Start start video",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "84778e98d4f91f0e",
+            "65ad8979db2be883",
+            "e91ee7488c3ae977",
+            "56dda3a063fccf83",
+            "c8f61e30db3fc5b4",
+            "64a589e68bc0371f"
+        ],
+        "env": [],
+        "x": 114,
+        "y": 879,
+        "w": 582,
+        "h": 175.33331298828125
     },
     {
         "id": "82fd466d.f6c968",
@@ -26121,7 +26165,8 @@
             "3776cb2add2e07ca",
             "07cfc246052c3c72",
             "fecd2eca1285d476",
-            "18e4191c70ae0a3c"
+            "18e4191c70ae0a3c",
+            "c8f61e30db3fc5b4"
         ],
         "x": 165,
         "y": 60,
@@ -26294,8 +26339,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 410,
-        "y": 1400,
+        "x": 310,
+        "y": 1520,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26323,8 +26368,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1180,
-        "y": 1120,
+        "x": 1080,
+        "y": 1240,
         "wires": [
             [
                 "c82fcf67a19e204d"
@@ -26349,8 +26394,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 830,
-        "y": 1080,
+        "x": 730,
+        "y": 1200,
         "wires": [
             [
                 "8ef02ffee422d874"
@@ -26377,8 +26422,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
-        "y": 1040,
+        "x": 990,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -26403,8 +26448,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 1440,
+        "x": 750,
+        "y": 1560,
         "wires": [
             []
         ]
@@ -26429,8 +26474,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1370,
-        "y": 1180,
+        "x": 1270,
+        "y": 1300,
         "wires": [
             []
         ]
@@ -26448,8 +26493,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 410,
-        "y": 1320,
+        "x": 310,
+        "y": 1440,
         "wires": []
     },
     {
@@ -26469,8 +26514,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 280,
-        "y": 1140,
+        "x": 180,
+        "y": 1260,
         "wires": [
             [
                 "a06245ff7e10d6d4",
@@ -26506,8 +26551,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
-        "y": 1400,
+        "x": 1040,
+        "y": 1520,
         "wires": [
             []
         ]
@@ -26527,8 +26572,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1310,
-        "y": 1220,
+        "x": 1210,
+        "y": 1340,
         "wires": [
             [
                 "9dcce0d895dfc7ac"
@@ -26552,8 +26597,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 600,
-        "y": 1480,
+        "x": 500,
+        "y": 1600,
         "wires": [
             [
                 "6d17bc5693a42c8b"
@@ -26577,8 +26622,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1040,
-        "y": 1080,
+        "x": 940,
+        "y": 1200,
         "wires": [
             [
                 "c4067b8b7e4b0667"
@@ -26603,8 +26648,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1100,
-        "y": 1220,
+        "x": 1000,
+        "y": 1340,
         "wires": [
             [
                 "707fb68872494820"
@@ -26630,8 +26675,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 670,
-        "y": 1280,
+        "x": 570,
+        "y": 1400,
         "wires": [
             [],
             [
@@ -26660,8 +26705,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 990,
-        "y": 1280,
+        "x": 890,
+        "y": 1400,
         "wires": [
             [
                 "45f778e9551ebc3e",
@@ -26683,8 +26728,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1570,
-        "y": 1300,
+        "x": 1470,
+        "y": 1420,
         "wires": []
     },
     {
@@ -26705,8 +26750,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 840,
-        "y": 1400,
+        "x": 740,
+        "y": 1520,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26728,8 +26773,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1610,
-        "y": 1380,
+        "x": 1510,
+        "y": 1500,
         "wires": []
     },
     {
@@ -26752,8 +26797,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1380,
-        "y": 1400,
+        "x": 1280,
+        "y": 1520,
         "wires": [
             [
                 "b3cf25d2d81fb835"
@@ -26770,7 +26815,7 @@
         "height": "14",
         "order": 0,
         "category": "Billeder",
-        "file": "Trailer.mp4",
+        "file": "Queen_new.mp4",
         "layout": "center",
         "showcontrols": true,
         "loop": false,
@@ -26800,8 +26845,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 260,
-        "y": 1280,
+        "x": 160,
+        "y": 1400,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26826,8 +26871,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 800,
-        "y": 1040,
+        "x": 700,
+        "y": 1160,
         "wires": [
             [
                 "8ef02ffee422d874"
@@ -26854,8 +26899,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1290,
-        "y": 1300,
+        "x": 1190,
+        "y": 1420,
         "wires": [
             [
                 "1ea7844b7ecc83b1"
@@ -26882,8 +26927,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 750,
-        "y": 1320,
+        "x": 650,
+        "y": 1440,
         "wires": [
             [
                 "9c16a210febf75c1"
@@ -26908,8 +26953,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 970,
-        "y": 1320,
+        "x": 870,
+        "y": 1440,
         "wires": [
             [
                 "707fb68872494820"
@@ -26936,8 +26981,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 1240,
+        "x": 650,
+        "y": 1360,
         "wires": [
             [
                 "3c917c2662a15096"
@@ -26952,8 +26997,8 @@
         "name": "",
         "mode": "link",
         "links": [],
-        "x": 1455,
-        "y": 1100,
+        "x": 1355,
+        "y": 1220,
         "wires": []
     },
     {
@@ -27063,6 +27108,7 @@
         "id": "a1200c70914a7608",
         "type": "change",
         "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
         "name": "Show video afspiller",
         "rules": [
             {
@@ -27078,8 +27124,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 800,
+        "x": 440,
+        "y": 720,
         "wires": [
             [
                 "18e4191c70ae0a3c"
@@ -27090,6 +27136,7 @@
         "id": "e3b8b77fa407b905",
         "type": "change",
         "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
         "name": "start video",
         "rules": [
             {
@@ -27105,8 +27152,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 370,
-        "y": 840,
+        "x": 450,
+        "y": 760,
         "wires": [
             [
                 "8e95e3b21d3009a5"
@@ -27173,19 +27220,21 @@
         "id": "8e95e3b21d3009a5",
         "type": "link out",
         "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
         "name": "Show timer",
         "mode": "link",
         "links": [
             "61b2c0553b7bbcc3"
         ],
-        "x": 575,
-        "y": 840,
+        "x": 655,
+        "y": 760,
         "wires": []
     },
     {
         "id": "79428363115e0141",
         "type": "inject",
         "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
         "name": "",
         "props": [
             {
@@ -27203,8 +27252,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 800,
+        "x": 220,
+        "y": 720,
         "wires": [
             [
                 "a1200c70914a7608",
@@ -27219,7 +27268,8 @@
         "z": "42a18184186a4f43",
         "name": "Media",
         "links": [
-            "8e95e3b21d3009a5"
+            "8e95e3b21d3009a5",
+            "e91ee7488c3ae977"
         ],
         "x": 165,
         "y": 100,
@@ -27233,19 +27283,21 @@
         "id": "18e4191c70ae0a3c",
         "type": "link out",
         "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
         "name": "Show timer",
         "mode": "link",
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 575,
-        "y": 800,
+        "x": 655,
+        "y": 720,
         "wires": []
     },
     {
         "id": "38fdefcfbcaf5971",
         "type": "http request",
         "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
         "name": "",
         "method": "GET",
         "ret": "txt",
@@ -27256,11 +27308,150 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 382.8958435058594,
-        "y": 893.3333129882812,
+        "x": 462.8958435058594,
+        "y": 813.3333129882812,
         "wires": [
             [
                 "8e95e3b21d3009a5"
+            ]
+        ]
+    },
+    {
+        "id": "84778e98d4f91f0e",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6150c52ec6fe7e34",
+        "name": "Show video afspiller",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 920,
+        "wires": [
+            [
+                "c8f61e30db3fc5b4"
+            ]
+        ]
+    },
+    {
+        "id": "65ad8979db2be883",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "6150c52ec6fe7e34",
+        "name": "start video",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Billeder/Queen_new.mp4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 960,
+        "wires": [
+            [
+                "e91ee7488c3ae977"
+            ]
+        ]
+    },
+    {
+        "id": "e91ee7488c3ae977",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "6150c52ec6fe7e34",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "61b2c0553b7bbcc3"
+        ],
+        "x": 655,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "56dda3a063fccf83",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "6150c52ec6fe7e34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 920,
+        "wires": [
+            [
+                "84778e98d4f91f0e",
+                "65ad8979db2be883",
+                "64a589e68bc0371f"
+            ]
+        ]
+    },
+    {
+        "id": "c8f61e30db3fc5b4",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "6150c52ec6fe7e34",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 655,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "64a589e68bc0371f",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "6150c52ec6fe7e34",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.60:1880/startvideo?video=start",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 462.8958435058594,
+        "y": 1013.3333129882812,
+        "wires": [
+            [
+                "e91ee7488c3ae977"
             ]
         ]
     },
