@@ -21286,13 +21286,40 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "HIGH",
-        "payloadType": "str",
-        "x": 130,
+        "payloadType": "date",
+        "x": 140,
         "y": 1180,
         "wires": [
             [
                 "e57a4cc7677920f9"
+            ]
+        ]
+    },
+    {
+        "id": "57bc5387a13e2831",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1100,
+        "wires": [
+            [
+                "32a34eaa5f51ab27"
             ]
         ]
     },
