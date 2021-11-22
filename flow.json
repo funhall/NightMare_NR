@@ -21621,6 +21621,33 @@
         ]
     },
     {
+        "id": "df644882447c6134",
+        "type": "ui_slider",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "label": "Lys rum 4",
+        "tooltip": "",
+        "group": "117cda2a.43e596",
+        "order": 24,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "1024",
+        "step": "10",
+        "x": 440,
+        "y": 1340,
+        "wires": [
+            [
+                "a6b700e996acba10",
+                "3d95a6d7963e1f61"
+            ]
+        ]
+    },
+    {
         "id": "12696b2c777c71a4",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
