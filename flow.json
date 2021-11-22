@@ -2358,8 +2358,8 @@
             "6f1729951cf28e94",
             "c82fcf67a19e204d"
         ],
-        "x": 334,
-        "y": 839,
+        "x": 274,
+        "y": 899,
         "w": 1552,
         "h": 522
     },
@@ -26122,7 +26122,8 @@
         "links": [
             "3776cb2add2e07ca",
             "07cfc246052c3c72",
-            "fecd2eca1285d476"
+            "fecd2eca1285d476",
+            "8e95e3b21d3009a5"
         ],
         "x": 165,
         "y": 60,
@@ -26295,8 +26296,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 590,
-        "y": 1240,
+        "x": 530,
+        "y": 1300,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26311,8 +26312,8 @@
         "g": "8740c6edb68106b0",
         "name": "",
         "events": "all",
-        "x": 1780,
-        "y": 900,
+        "x": 1720,
+        "y": 960,
         "wires": [
             []
         ]
@@ -26337,8 +26338,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1360,
-        "y": 960,
+        "x": 1300,
+        "y": 1020,
         "wires": [
             [
                 "280f24a616f77cbd",
@@ -26364,8 +26365,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1010,
-        "y": 920,
+        "x": 950,
+        "y": 980,
         "wires": [
             [
                 "8ef02ffee422d874"
@@ -26392,8 +26393,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1270,
-        "y": 880,
+        "x": 1210,
+        "y": 940,
         "wires": [
             [
                 "280f24a616f77cbd"
@@ -26420,8 +26421,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1030,
-        "y": 1280,
+        "x": 970,
+        "y": 1340,
         "wires": [
             [
                 "9124461a126fb6ce"
@@ -26448,8 +26449,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1550,
-        "y": 1020,
+        "x": 1490,
+        "y": 1080,
         "wires": [
             [
                 "9124461a126fb6ce"
@@ -26469,8 +26470,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 590,
-        "y": 1160,
+        "x": 530,
+        "y": 1220,
         "wires": []
     },
     {
@@ -26490,8 +26491,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 460,
-        "y": 980,
+        "x": 400,
+        "y": 1040,
         "wires": [
             [
                 "a06245ff7e10d6d4",
@@ -26527,8 +26528,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1320,
-        "y": 1240,
+        "x": 1260,
+        "y": 1300,
         "wires": [
             [
                 "9124461a126fb6ce"
@@ -26549,8 +26550,8 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 1490,
-        "y": 1060,
+        "x": 1430,
+        "y": 1120,
         "wires": [
             [
                 "9dcce0d895dfc7ac"
@@ -26574,8 +26575,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 780,
-        "y": 1320,
+        "x": 720,
+        "y": 1380,
         "wires": [
             [
                 "6d17bc5693a42c8b"
@@ -26599,8 +26600,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1220,
-        "y": 920,
+        "x": 1160,
+        "y": 980,
         "wires": [
             [
                 "c4067b8b7e4b0667"
@@ -26625,8 +26626,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1280,
-        "y": 1060,
+        "x": 1220,
+        "y": 1120,
         "wires": [
             [
                 "707fb68872494820"
@@ -26652,8 +26653,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 850,
-        "y": 1120,
+        "x": 790,
+        "y": 1180,
         "wires": [
             [],
             [
@@ -26682,8 +26683,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1170,
-        "y": 1120,
+        "x": 1110,
+        "y": 1180,
         "wires": [
             [
                 "45f778e9551ebc3e",
@@ -26705,8 +26706,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1750,
-        "y": 1140,
+        "x": 1690,
+        "y": 1200,
         "wires": []
     },
     {
@@ -26727,8 +26728,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
-        "y": 1240,
+        "x": 960,
+        "y": 1300,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26750,8 +26751,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1790,
-        "y": 1220,
+        "x": 1730,
+        "y": 1280,
         "wires": []
     },
     {
@@ -26774,8 +26775,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1560,
-        "y": 1240,
+        "x": 1500,
+        "y": 1300,
         "wires": [
             [
                 "b3cf25d2d81fb835"
@@ -26793,15 +26794,15 @@
         "height": "14",
         "order": 0,
         "category": "Billeder",
-        "file": "Queen_new.mp4",
+        "file": "Trailer.mp4",
         "layout": "center",
         "showcontrols": false,
         "loop": false,
         "onstart": false,
         "scope": "local",
         "tooltip": "",
-        "x": 1750,
-        "y": 1080,
+        "x": 1690,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -26823,8 +26824,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 440,
-        "y": 1120,
+        "x": 380,
+        "y": 1180,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26849,8 +26850,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 980,
-        "y": 880,
+        "x": 920,
+        "y": 940,
         "wires": [
             [
                 "8ef02ffee422d874"
@@ -26877,8 +26878,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1470,
-        "y": 1140,
+        "x": 1410,
+        "y": 1200,
         "wires": [
             [
                 "1ea7844b7ecc83b1"
@@ -26905,8 +26906,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 930,
-        "y": 1160,
+        "x": 870,
+        "y": 1220,
         "wires": [
             [
                 "9c16a210febf75c1"
@@ -26931,8 +26932,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1150,
-        "y": 1160,
+        "x": 1090,
+        "y": 1220,
         "wires": [
             [
                 "707fb68872494820"
@@ -26959,8 +26960,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 930,
-        "y": 1080,
+        "x": 870,
+        "y": 1140,
         "wires": [
             [
                 "3c917c2662a15096"
@@ -26975,8 +26976,8 @@
         "name": "",
         "mode": "link",
         "links": [],
-        "x": 1635,
-        "y": 940,
+        "x": 1575,
+        "y": 1000,
         "wires": []
     },
     {
@@ -27104,7 +27105,9 @@
         "x": 400,
         "y": 620,
         "wires": [
-            []
+            [
+                "e3b8b77fa407b905"
+            ]
         ]
     },
     {
@@ -27130,31 +27133,8 @@
         "y": 620,
         "wires": [
             [
-                "aa30e7dc62991af8"
+                "8e95e3b21d3009a5"
             ]
-        ]
-    },
-    {
-        "id": "aa30e7dc62991af8",
-        "type": "ui_media",
-        "z": "42a18184186a4f43",
-        "group": "8e533b621186201f",
-        "name": "",
-        "width": "24",
-        "height": "14",
-        "order": 0,
-        "category": "Billeder",
-        "file": "Queen_new.mp4",
-        "layout": "center",
-        "showcontrols": false,
-        "loop": false,
-        "onstart": false,
-        "scope": "local",
-        "tooltip": "",
-        "x": 810,
-        "y": 620,
-        "wires": [
-            []
         ]
     },
     {
@@ -27180,22 +27160,9 @@
         "y": 440,
         "wires": [
             [
-                "fecd2eca1285d476"
+                "07cfc246052c3c72"
             ]
         ]
-    },
-    {
-        "id": "fecd2eca1285d476",
-        "type": "link out",
-        "z": "42a18184186a4f43",
-        "name": "Show timer",
-        "mode": "link",
-        "links": [
-            "42b9b5a5ccea135a"
-        ],
-        "x": 765,
-        "y": 440,
-        "wires": []
     },
     {
         "id": "92a6c08794fadf42",
@@ -27218,11 +27185,53 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 260,
-        "y": 460,
+        "x": 480,
+        "y": 480,
         "wires": [
             [
                 "e2981395d53cb507"
+            ]
+        ]
+    },
+    {
+        "id": "8e95e3b21d3009a5",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 755,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "79428363115e0141",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 620,
+        "wires": [
+            [
+                "a1200c70914a7608"
             ]
         ]
     },
