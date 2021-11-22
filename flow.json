@@ -290,7 +290,9 @@
             "3893ba8f.390a76"
         ],
         "x": 2114,
-        "y": 3359
+        "y": 3359,
+        "w": 1632,
+        "h": 502
     },
     {
         "id": "2316e898.9addc8",
@@ -313,7 +315,9 @@
             "8e13249fac38c5db"
         ],
         "x": 2154,
-        "y": 3939
+        "y": 3939,
+        "w": 1012,
+        "h": 222
     },
     {
         "id": "b3771d986777a428",
@@ -357,7 +361,9 @@
             "b0afd849b2fe92e1"
         ],
         "x": 434,
-        "y": 219
+        "y": 219,
+        "w": 1552,
+        "h": 522
     },
     {
         "id": "fc1dd592.319c58",
@@ -389,7 +395,9 @@
             "6f16a75f82923f0f"
         ],
         "x": 434,
-        "y": 759
+        "y": 759,
+        "w": 1472,
+        "h": 382
     },
     {
         "id": "88967f27835024c3",
@@ -408,7 +416,9 @@
             "d23df1927731c182"
         ],
         "x": 2174,
-        "y": 4219
+        "y": 4219,
+        "w": 972,
+        "h": 162
     },
     {
         "id": "463e1cfb0b0e88d4",
@@ -495,7 +505,9 @@
         ],
         "env": [],
         "x": 534,
-        "y": 19
+        "y": 19,
+        "w": 1512,
+        "h": 202
     },
     {
         "id": "c49070f4e172b4d7",
@@ -2279,6 +2291,77 @@
         "y": 39,
         "w": 842,
         "h": 122
+    },
+    {
+        "id": "7ef726cc13ce45a5",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "75dd83f5efbac9e2",
+            "2ff3c55a76208c41",
+            "3776cb2add2e07ca",
+            "d1c296abc3add300",
+            "68e3337f0a11fc18",
+            "2d5bf19d798f1668",
+            "0b4e893baa86ab2f",
+            "716548062938ab8b"
+        ],
+        "x": 184,
+        "y": 1859,
+        "w": 722,
+        "h": 222
+    },
+    {
+        "id": "8740c6edb68106b0",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Video i rum 1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3483ea16b9adb4ba",
+            "280f24a616f77cbd",
+            "c4067b8b7e4b0667",
+            "a06245ff7e10d6d4",
+            "8ef02ffee422d874",
+            "c5aa31034b7e45d2",
+            "45f778e9551ebc3e",
+            "6aaa4ddc2c1defdc",
+            "5da73f1026db4995",
+            "1a9d51c74b067b9b",
+            "707fb68872494820",
+            "13aa2791971549ec",
+            "2fcc460a141c6536",
+            "3c917c2662a15096",
+            "9ef3c8dc04bcc118",
+            "feaf86f3f566bdc0",
+            "1ea7844b7ecc83b1",
+            "6d17bc5693a42c8b",
+            "b3cf25d2d81fb835",
+            "5f5f14adc9f54f60",
+            "9124461a126fb6ce",
+            "57f72fa83d875213",
+            "e1fa57dbfa3e5c89",
+            "9dcce0d895dfc7ac",
+            "c4b44f86d146d9f8",
+            "9c16a210febf75c1",
+            "6f1729951cf28e94",
+            "c82fcf67a19e204d"
+        ],
+        "x": 334,
+        "y": 839,
+        "w": 1552,
+        "h": 522
     },
     {
         "id": "82fd466d.f6c968",
@@ -25995,6 +26078,7 @@
         "id": "75dd83f5efbac9e2",
         "type": "change",
         "z": "42a18184186a4f43",
+        "g": "7ef726cc13ce45a5",
         "name": "Show knapper for klargørring",
         "rules": [
             {
@@ -26010,8 +26094,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
-        "y": 820,
+        "x": 620,
+        "y": 1940,
         "wires": [
             [
                 "3776cb2add2e07ca"
@@ -26036,7 +26120,9 @@
         "z": "42a18184186a4f43",
         "name": "Link til UI CONTROL node",
         "links": [
-            "3776cb2add2e07ca"
+            "3776cb2add2e07ca",
+            "07cfc246052c3c72",
+            "fecd2eca1285d476"
         ],
         "x": 165,
         "y": 60,
@@ -26050,12 +26136,13 @@
         "id": "2ff3c55a76208c41",
         "type": "link in",
         "z": "42a18184186a4f43",
+        "g": "7ef726cc13ce45a5",
         "name": "",
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 305,
-        "y": 820,
+        "x": 225,
+        "y": 1940,
         "wires": [
             [
                 "75dd83f5efbac9e2"
@@ -26066,19 +26153,21 @@
         "id": "3776cb2add2e07ca",
         "type": "link out",
         "z": "42a18184186a4f43",
+        "g": "7ef726cc13ce45a5",
         "name": "",
         "mode": "link",
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 945,
-        "y": 820,
+        "x": 865,
+        "y": 1940,
         "wires": []
     },
     {
         "id": "d1c296abc3add300",
         "type": "inject",
         "z": "42a18184186a4f43",
+        "g": "7ef726cc13ce45a5",
         "name": "",
         "props": [
             {
@@ -26095,8 +26184,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 420,
-        "y": 920,
+        "x": 340,
+        "y": 2040,
         "wires": [
             [
                 "2d5bf19d798f1668"
@@ -26107,16 +26196,18 @@
         "id": "68e3337f0a11fc18",
         "type": "comment",
         "z": "42a18184186a4f43",
+        "g": "7ef726cc13ce45a5",
         "name": "",
         "info": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}\n\n\n\n\n{\"group\":{\"hide\":[\"Nightmare _personale_Game\"]}}",
-        "x": 990,
-        "y": 620,
+        "x": 600,
+        "y": 1900,
         "wires": []
     },
     {
         "id": "2d5bf19d798f1668",
         "type": "change",
         "z": "42a18184186a4f43",
+        "g": "7ef726cc13ce45a5",
         "name": "Show spil start knapper",
         "rules": [
             {
@@ -26132,8 +26223,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
-        "y": 860,
+        "x": 610,
+        "y": 1980,
         "wires": [
             [
                 "3776cb2add2e07ca"
@@ -26144,12 +26235,13 @@
         "id": "0b4e893baa86ab2f",
         "type": "link in",
         "z": "42a18184186a4f43",
+        "g": "7ef726cc13ce45a5",
         "name": "",
         "links": [
             "7fc3fbad33439116"
         ],
-        "x": 305,
-        "y": 860,
+        "x": 225,
+        "y": 1980,
         "wires": [
             [
                 "2d5bf19d798f1668"
@@ -26160,6 +26252,7 @@
         "id": "716548062938ab8b",
         "type": "inject",
         "z": "42a18184186a4f43",
+        "g": "7ef726cc13ce45a5",
         "name": "",
         "props": [
             {
@@ -26176,13 +26269,933 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 400,
-        "y": 780,
+        "x": 320,
+        "y": 1900,
         "wires": [
             [
                 "75dd83f5efbac9e2"
             ]
         ]
+    },
+    {
+        "id": "3483ea16b9adb4ba",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "start billede",
+        "props": [
+            {
+                "p": "play",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 590,
+        "y": 1240,
+        "wires": [
+            [
+                "c4067b8b7e4b0667",
+                "c5aa31034b7e45d2"
+            ]
+        ]
+    },
+    {
+        "id": "280f24a616f77cbd",
+        "type": "ui_ui_control",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "events": "all",
+        "x": 1780,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4067b8b7e4b0667",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "Show video afspiller",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1360,
+        "y": 960,
+        "wires": [
+            [
+                "280f24a616f77cbd",
+                "c82fcf67a19e204d"
+            ]
+        ]
+    },
+    {
+        "id": "a06245ff7e10d6d4",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "Show timer",
+        "pauseType": "delay",
+        "timeout": "95",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1010,
+        "y": 920,
+        "wires": [
+            [
+                "8ef02ffee422d874"
+            ]
+        ]
+    },
+    {
+        "id": "8ef02ffee422d874",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "Show Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Escaperoom_Viborg_Timer\"],\"hide\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1270,
+        "y": 880,
+        "wires": [
+            [
+                "280f24a616f77cbd"
+            ]
+        ]
+    },
+    {
+        "id": "c5aa31034b7e45d2",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "Show start billede",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Billeder/IMG_0557.jpg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 1280,
+        "wires": [
+            [
+                "9124461a126fb6ce"
+            ]
+        ]
+    },
+    {
+        "id": "45f778e9551ebc3e",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "start video",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Billeder/Trailer.mp4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1550,
+        "y": 1020,
+        "wires": [
+            [
+                "9124461a126fb6ce"
+            ]
+        ]
+    },
+    {
+        "id": "6aaa4ddc2c1defdc",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "5da73f1026db4995",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "start video",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 460,
+        "y": 980,
+        "wires": [
+            [
+                "a06245ff7e10d6d4",
+                "45f778e9551ebc3e",
+                "9ef3c8dc04bcc118"
+            ]
+        ]
+    },
+    {
+        "id": "1a9d51c74b067b9b",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "Gameover video",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Billeder/Queen_new.mp4",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "play",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1320,
+        "y": 1240,
+        "wires": [
+            [
+                "9124461a126fb6ce"
+            ]
+        ]
+    },
+    {
+        "id": "707fb68872494820",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.60:1880/startvideo?video=start",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1490,
+        "y": 1060,
+        "wires": [
+            [
+                "9dcce0d895dfc7ac"
+            ]
+        ]
+    },
+    {
+        "id": "13aa2791971549ec",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "start video",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 780,
+        "y": 1320,
+        "wires": [
+            [
+                "6d17bc5693a42c8b"
+            ]
+        ]
+    },
+    {
+        "id": "2fcc460a141c6536",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "show video",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 1220,
+        "y": 920,
+        "wires": [
+            [
+                "c4067b8b7e4b0667"
+            ]
+        ]
+    },
+    {
+        "id": "3c917c2662a15096",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1280,
+        "y": 1060,
+        "wires": [
+            [
+                "707fb68872494820"
+            ]
+        ]
+    },
+    {
+        "id": "9ef3c8dc04bcc118",
+        "type": "switch",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "Tjekker om det er første gang video starter",
+        "property": "firsttimeplay",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 1120,
+        "wires": [
+            [],
+            [
+                "feaf86f3f566bdc0",
+                "b3cf25d2d81fb835"
+            ]
+        ]
+    },
+    {
+        "id": "feaf86f3f566bdc0",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "play",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1170,
+        "y": 1120,
+        "wires": [
+            [
+                "45f778e9551ebc3e",
+                "5f5f14adc9f54f60"
+            ]
+        ]
+    },
+    {
+        "id": "1ea7844b7ecc83b1",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1750,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "6d17bc5693a42c8b",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "socketid",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 1240,
+        "wires": [
+            [
+                "c4067b8b7e4b0667",
+                "1a9d51c74b067b9b"
+            ]
+        ]
+    },
+    {
+        "id": "b3cf25d2d81fb835",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1790,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "5f5f14adc9f54f60",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "timeon",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1560,
+        "y": 1240,
+        "wires": [
+            [
+                "b3cf25d2d81fb835"
+            ]
+        ]
+    },
+    {
+        "id": "9124461a126fb6ce",
+        "type": "ui_media",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "group": "8e533b621186201f",
+        "name": "",
+        "width": "24",
+        "height": "14",
+        "order": 0,
+        "category": "Billeder",
+        "file": "Queen_new.mp4",
+        "layout": "center",
+        "showcontrols": false,
+        "loop": false,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1750,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57f72fa83d875213",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "Klargørring",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 440,
+        "y": 1120,
+        "wires": [
+            [
+                "c4067b8b7e4b0667",
+                "c5aa31034b7e45d2"
+            ]
+        ]
+    },
+    {
+        "id": "e1fa57dbfa3e5c89",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "show video",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 980,
+        "y": 880,
+        "wires": [
+            [
+                "8ef02ffee422d874"
+            ]
+        ]
+    },
+    {
+        "id": "9dcce0d895dfc7ac",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "firsttimeplay-false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "firsttimeplay",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 1140,
+        "wires": [
+            [
+                "1ea7844b7ecc83b1"
+            ]
+        ]
+    },
+    {
+        "id": "c4b44f86d146d9f8",
+        "type": "ui_button",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "group": "117cda2a.43e596",
+        "order": 15,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Fullscreen",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 930,
+        "y": 1160,
+        "wires": [
+            [
+                "9c16a210febf75c1"
+            ]
+        ]
+    },
+    {
+        "id": "9c16a210febf75c1",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1150,
+        "y": 1160,
+        "wires": [
+            [
+                "707fb68872494820"
+            ]
+        ]
+    },
+    {
+        "id": "6f1729951cf28e94",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1080,
+        "wires": [
+            [
+                "3c917c2662a15096"
+            ]
+        ]
+    },
+    {
+        "id": "c82fcf67a19e204d",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "8740c6edb68106b0",
+        "name": "",
+        "mode": "link",
+        "links": [],
+        "x": 1635,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "31fe21a3176660ac",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "Show Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Escaperoom_Viborg_Timer\"],\"hide\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "07cfc246052c3c72"
+            ]
+        ]
+    },
+    {
+        "id": "0a2d8e8faec89334",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "name": "show video",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "1fa778b627f693b7"
+            ]
+        ]
+    },
+    {
+        "id": "07cfc246052c3c72",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 765,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "3bebbeb26f016ee2",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "links": [],
+        "x": 255,
+        "y": 400,
+        "wires": [
+            [
+                "1fa778b627f693b7"
+            ]
+        ]
+    },
+    {
+        "id": "1fa778b627f693b7",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "name": "Show timer",
+        "pauseType": "delay",
+        "timeout": "95",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 400,
+        "wires": [
+            [
+                "31fe21a3176660ac"
+            ]
+        ]
+    },
+    {
+        "id": "a1200c70914a7608",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "Show video afspiller",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3b8b77fa407b905",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "start video",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Billeder/Trailer.mp4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 620,
+        "wires": [
+            [
+                "aa30e7dc62991af8"
+            ]
+        ]
+    },
+    {
+        "id": "aa30e7dc62991af8",
+        "type": "ui_media",
+        "z": "42a18184186a4f43",
+        "group": "8e533b621186201f",
+        "name": "",
+        "width": "24",
+        "height": "14",
+        "order": 0,
+        "category": "Billeder",
+        "file": "Queen_new.mp4",
+        "layout": "center",
+        "showcontrols": false,
+        "loop": false,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 810,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2981395d53cb507",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "Hide Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 440,
+        "wires": [
+            [
+                "fecd2eca1285d476"
+            ]
+        ]
+    },
+    {
+        "id": "fecd2eca1285d476",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 765,
+        "y": 440,
+        "wires": []
     },
     {
         "id": "84e11b56.e27758",
@@ -33985,7 +34998,8 @@
             "3cdaad147b79de12",
             "7cf6443309b511f8",
             "3aeee5c9bee78e88",
-            "5de4499bfce766ba"
+            "5de4499bfce766ba",
+            "cf2c7d51e902e11b"
         ],
         "x": 735,
         "y": 140,
@@ -34046,7 +35060,8 @@
             "e26b7cac8b2be6d4",
             "11686ca5bf9fd695",
             "57a8de12e1ec4afc",
-            "92ec8656354ba768"
+            "92ec8656354ba768",
+            "9360362679c328b6"
         ],
         "x": 575,
         "y": 580,
