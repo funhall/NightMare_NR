@@ -27208,7 +27208,8 @@
         "wires": [
             [
                 "a1200c70914a7608",
-                "e3b8b77fa407b905"
+                "e3b8b77fa407b905",
+                "38fdefcfbcaf5971"
             ]
         ]
     },
@@ -27240,6 +27241,28 @@
         "x": 575,
         "y": 800,
         "wires": []
+    },
+    {
+        "id": "38fdefcfbcaf5971",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.60:1880/startvideo?video=start",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 382.8958435058594,
+        "y": 893.3333129882812,
+        "wires": [
+            [
+                "8e95e3b21d3009a5"
+            ]
+        ]
     },
     {
         "id": "84e11b56.e27758",
