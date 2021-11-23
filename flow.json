@@ -11447,10 +11447,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "peter",
+        "payload": "peter, ole",
         "payloadType": "str",
-        "x": 1530,
-        "y": 1640,
+        "x": 1840,
+        "y": 1620,
         "wires": [
             [
                 "3e016537a79a1af4"
