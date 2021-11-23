@@ -11579,7 +11579,7 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
-        "count": "2",
+        "count": "1",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
@@ -11669,7 +11669,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2570,
+        "x": 2450,
         "y": 2060,
         "wires": []
     },
@@ -11879,7 +11879,6 @@
         "y": 2080,
         "wires": [
             [
-                "ee0cdbf2d74fd707",
                 "1dee1297c9b52aef"
             ]
         ]
