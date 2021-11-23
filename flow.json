@@ -11904,7 +11904,7 @@
             [
                 "7465bcf8f7f6bb65",
                 "1dee1297c9b52aef",
-                "58e5643332ef76f5"
+                "0dce08c43e55a255"
             ]
         ]
     },
@@ -11932,6 +11932,33 @@
         "y": 2040,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "0dce08c43e55a255",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[0]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2260,
+        "y": 1900,
+        "wires": [
+            [
+                "58e5643332ef76f5"
+            ]
         ]
     },
     {
