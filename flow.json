@@ -11563,7 +11563,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "[{\"title\":\"<b>Peter{{msg.name}}</b>\",\"description\":\"This is description of <font color=\\\"red\\\"><b>Apple</b></b>.\"},{\"title\":\"<b>Orange</b>\",\"description\":\"This is description of <font color=\\\"orange\\\"><b>Orange</b></font>.\"},{\"title\":\"<b>Watermelon : \",\"description\":\"This is description of <b>Watermelon</b></font>.\"}]",
+                "to": "[{\"title\":\"<b>Peter</b>\",\"description\":\"This is description of <font color=\\\"red\\\"><b>Apple</b></b>.\"},{\"title\":\"<b>Orange</b>\",\"description\":\"This is description of <font color=\\\"orange\\\"><b>Orange</b></font>.\"},{\"title\":\"<b>Watermelon : \",\"description\":\"This is description of <b>Watermelon</b></font>.\"}]",
                 "tot": "json"
             }
         ],
