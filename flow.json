@@ -11121,8 +11121,8 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2940,
-        "y": 2040,
+        "x": 2980,
+        "y": 2660,
         "wires": [
             []
         ]
@@ -11339,8 +11339,8 @@
         "ref": "Nighmare navn",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1780,
-        "y": 1780,
+        "x": 1900,
+        "y": 2420,
         "wires": [
             [
                 "baeae52a3c6c5b4c"
@@ -11481,11 +11481,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2010,
-        "y": 1780,
+        "x": 2110,
+        "y": 2440,
         "wires": [
             [
-                "1dee1297c9b52aef"
+                "3e016537a79a1af4"
             ]
         ]
     },
@@ -11582,46 +11582,7 @@
         "x": 1750,
         "y": 2180,
         "wires": [
-            [
-                "314dd0da7ef1efcb",
-                "831d27635fe6e8e9",
-                "dcc13e825599f24e",
-                "3d08a89d8e013d75"
-            ]
-        ]
-    },
-    {
-        "id": "314dd0da7ef1efcb",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "Title navn",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Navn",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "ggg",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2000,
-        "y": 2100,
-        "wires": [
-            [
-                "249b02d3c62a4004"
-            ]
+            []
         ]
     },
     {
@@ -11771,158 +11732,6 @@
         ]
     },
     {
-        "id": "67ac539c8b4ef42b",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2490,
-        "y": 1920,
-        "wires": []
-    },
-    {
-        "id": "249b02d3c62a4004",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2150,
-        "y": 2120,
-        "wires": [
-            [
-                "20cdd9a65b6ee9be",
-                "d612fdb218464712"
-            ]
-        ]
-    },
-    {
-        "id": "831d27635fe6e8e9",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "Title tid",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Tid",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "15:33",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2000,
-        "y": 2140,
-        "wires": [
-            [
-                "249b02d3c62a4004"
-            ]
-        ]
-    },
-    {
-        "id": "dcc13e825599f24e",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "highscore",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2000,
-        "y": 1940,
-        "wires": [
-            [
-                "230b3445e8c9d7e7"
-            ]
-        ]
-    },
-    {
-        "id": "20cdd9a65b6ee9be",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2410,
-        "y": 2200,
-        "wires": [
-            [
-                "e0219df3d93f7639"
-            ]
-        ]
-    },
-    {
-        "id": "230b3445e8c9d7e7",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2170,
-        "y": 1940,
-        "wires": []
-    },
-    {
         "id": "22db4a0f3d9138e9",
         "type": "inject",
         "z": "33e76285.1cd03e",
@@ -11987,174 +11796,6 @@
         ]
     },
     {
-        "id": "a61473013d1e2f2c",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "Title navn",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Navn",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "tyyu",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2000,
-        "y": 2200,
-        "wires": [
-            [
-                "f64f524843b0d10e"
-            ]
-        ]
-    },
-    {
-        "id": "f64f524843b0d10e",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2150,
-        "y": 2220,
-        "wires": [
-            [
-                "20cdd9a65b6ee9be"
-            ]
-        ]
-    },
-    {
-        "id": "3fb55a625d2dbde1",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "Title navn",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Tid",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "18:10",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2000,
-        "y": 2240,
-        "wires": [
-            [
-                "f64f524843b0d10e"
-            ]
-        ]
-    },
-    {
-        "id": "3d08a89d8e013d75",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "highscore",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2020,
-        "y": 2420,
-        "wires": [
-            [
-                "20cdd9a65b6ee9be"
-            ]
-        ]
-    },
-    {
-        "id": "3f7cd2c5a943cf4f",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "string",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2130,
-        "y": 2540,
-        "wires": [
-            [
-                "20cdd9a65b6ee9be"
-            ]
-        ]
-    },
-    {
-        "id": "e0219df3d93f7639",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2590,
-        "y": 2220,
-        "wires": []
-    },
-    {
         "id": "6a90c3ec489d6e18",
         "type": "debug",
         "z": "33e76285.1cd03e",
@@ -12208,7 +11849,6 @@
         "y": 2060,
         "wires": [
             [
-                "67ac539c8b4ef42b",
                 "8f89d29d99edf874"
             ]
         ]
@@ -12253,7 +11893,7 @@
         "y": 2640,
         "wires": [
             [
-                "3e016537a79a1af4"
+                "8f89d29d99edf874"
             ]
         ]
     },
