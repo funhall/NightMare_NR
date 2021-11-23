@@ -11404,6 +11404,294 @@
         "wires": []
     },
     {
+        "id": "6def0a28.c0dac4",
+        "type": "timed-counter",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "timelimit": "350",
+        "timeunit": "1",
+        "withhold": true,
+        "fixedtimeout": false,
+        "pertopic": false,
+        "x": 1780,
+        "y": 1720,
+        "wires": [
+            [
+                "40d79de.c9ef9e4"
+            ]
+        ]
+    },
+    {
+        "id": "4442ebe6.cbd40c",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 1630,
+        "y": 1740,
+        "wires": [
+            [
+                "6def0a28.c0dac4"
+            ],
+            [
+                "a4fade63.72ccd"
+            ]
+        ]
+    },
+    {
+        "id": "40d79de.c9ef9e4",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "Single/Double/Long",
+        "func": "var pressTime;\n\nif (msg.count >= 2 && msg.payload.value == '1')\n{\n    msg.payload = \"double\";\n    context.set('pressTime',null);\n    context.set('releaseTime',null);\n    return msg;\n}\nif (msg.count == 1){\n    if (msg.payload.value == '1') {   //Pressed\n        pressTime = Date.now(); \n        //node.send({payload:{pressTime}});\n        context.set('pressTime',pressTime);\n    }\n    pressTime = context.get('pressTime');\n    //node.send({payload:{pressTime}});\n    if (msg.payload.value === '0' && pressTime !== null) {  //Released\n        releaseTime = Date.now(); \n        \n        var timeDiff = releaseTime-pressTime;\n        //node.send({payload:{timeDiff}});\n        if (releaseTime-pressTime>350)  {msg.payload = \"long\";}\n        else {msg.payload = \"single\";}\n        context.set('pressTime',null);\n        context.set('releaseTime',null);\n        return msg;\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1980,
+        "y": 1740,
+        "wires": [
+            [
+                "93be91ac.a3d7e8"
+            ]
+        ]
+    },
+    {
+        "id": "93be91ac.a3d7e8",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 2176.250015258789,
+        "y": 1740.0000019073486,
+        "wires": []
+    },
+    {
+        "id": "a4fade63.72ccd",
+        "type": "timed-counter",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "timelimit": "350",
+        "timeunit": "1",
+        "withhold": true,
+        "fixedtimeout": false,
+        "pertopic": false,
+        "x": 1780,
+        "y": 1760,
+        "wires": [
+            [
+                "40d79de.c9ef9e4"
+            ]
+        ]
+    },
+    {
+        "id": "ba9d9965.589358",
+        "type": "delay",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "8",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 1470,
+        "y": 1700,
+        "wires": [
+            [
+                "4442ebe6.cbd40c"
+            ]
+        ]
+    },
+    {
+        "id": "47c4f184.73c2d8",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "Double",
+        "func": "node.send({ payload:    {\"value\":\"1\"}   });\nnode.send({ payload:    {\"value\":\"0\"}   });\nnode.send({ payload:    {\"value\":\"1\"}   });\nnode.send({ payload:    {\"value\":\"0\"}   });",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1320,
+        "y": 1700,
+        "wires": [
+            [
+                "ba9d9965.589358"
+            ]
+        ]
+    },
+    {
+        "id": "3f51bc93.7b1ec4",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "Single",
+        "func": "node.send({ payload:    {\"value\":\"1\"}   });\nnode.send({ payload:    {\"value\":\"0\"}   });",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1310,
+        "y": 1740,
+        "wires": [
+            [
+                "39aba5b6.6d3bc2"
+            ]
+        ]
+    },
+    {
+        "id": "b5ddd272.b5564",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "Long",
+        "func": "node.send({ payload:    {\"value\":\"1\"}   });\nnode.send({ payload:    {\"value\":\"0\"}   });",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1310,
+        "y": 1780,
+        "wires": [
+            [
+                "ab0da844.5ade48"
+            ]
+        ]
+    },
+    {
+        "id": "ab0da844.5ade48",
+        "type": "delay",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 1470,
+        "y": 1780,
+        "wires": [
+            [
+                "4442ebe6.cbd40c"
+            ]
+        ]
+    },
+    {
+        "id": "bb481312.8baad",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1180,
+        "y": 1700,
+        "wires": [
+            [
+                "47c4f184.73c2d8"
+            ]
+        ]
+    },
+    {
+        "id": "2e72cb09.7d773c",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1180,
+        "y": 1740,
+        "wires": [
+            [
+                "3f51bc93.7b1ec4"
+            ]
+        ]
+    },
+    {
+        "id": "1b11f668.944d2a",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1180,
+        "y": 1780,
+        "wires": [
+            [
+                "b5ddd272.b5564"
+            ]
+        ]
+    },
+    {
+        "id": "39aba5b6.6d3bc2",
+        "type": "delay",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "4",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 1470,
+        "y": 1740,
+        "wires": [
+            [
+                "4442ebe6.cbd40c"
+            ]
+        ]
+    },
+    {
+        "id": "e1561be4.c4a218",
+        "type": "comment",
+        "z": "33e76285.1cd03e",
+        "name": "Emulation of press/release events",
+        "info": "",
+        "x": 1400,
+        "y": 1660,
+        "wires": []
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
