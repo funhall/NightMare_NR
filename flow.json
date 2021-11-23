@@ -11841,7 +11841,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "ole",
+        "payload": "peter",
         "payloadType": "str",
         "x": 2010,
         "y": 1640,
@@ -11939,7 +11939,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "10:10",
+                "to": "10:20",
                 "tot": "str"
             }
         ],
