@@ -11343,7 +11343,7 @@
         "y": 1820,
         "wires": [
             [
-                "3e016537a79a1af4"
+                "baeae52a3c6c5b4c"
             ]
         ]
     },
@@ -11424,11 +11424,11 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\" }]",
         "payloadType": "str",
-        "x": 1890,
-        "y": 1700,
+        "x": 1830,
+        "y": 1660,
         "wires": [
             [
-                "8c3d69fae59a3873"
+                "4d4a6534b17ba7e3"
             ]
         ]
     },
@@ -11453,11 +11453,11 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\"} ,{\"Navn\": \"Martin\",\"Tid\": \"30:40\" }]",
         "payloadType": "json",
-        "x": 1910,
-        "y": 1520,
+        "x": 1810,
+        "y": 1440,
         "wires": [
             [
-                "8f89d29d99edf874"
+                "02a27c66b85348f3"
             ]
         ]
     },
@@ -11499,17 +11499,114 @@
         "wires": []
     },
     {
-        "id": "8c3d69fae59a3873",
-        "type": "json",
+        "id": "baeae52a3c6c5b4c",
+        "type": "change",
         "z": "33e76285.1cd03e",
         "name": "",
-        "property": "payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "highscore",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
         "action": "",
-        "pretty": false,
-        "x": 2090,
-        "y": 1680,
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1970,
+        "y": 1840,
         "wires": [
-            []
+            [
+                "3e016537a79a1af4"
+            ]
+        ]
+    },
+    {
+        "id": "02a27c66b85348f3",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2250,
+        "y": 1640,
+        "wires": [
+            [
+                "8f89d29d99edf874"
+            ]
+        ]
+    },
+    {
+        "id": "4d4a6534b17ba7e3",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "highscore",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2030,
+        "y": 1660,
+        "wires": [
+            [
+                "02a27c66b85348f3"
+            ]
+        ]
+    },
+    {
+        "id": "84e645f32658d5c1",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
+        "payloadType": "json",
+        "x": 1810,
+        "y": 1600,
+        "wires": [
+            [
+                "02a27c66b85348f3"
+            ]
         ]
     },
     {
