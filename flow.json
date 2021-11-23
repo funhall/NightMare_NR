@@ -26998,7 +26998,8 @@
         "y": 620,
         "wires": [
             [
-                "07cfc246052c3c72"
+                "07cfc246052c3c72",
+                "d97e73d4748e3c22"
             ]
         ]
     },
@@ -27084,7 +27085,8 @@
         "name": "Media rum 1",
         "links": [
             "8e95e3b21d3009a5",
-            "e91ee7488c3ae977"
+            "e91ee7488c3ae977",
+            "d5ca4e9187bf4236"
         ],
         "x": 165,
         "y": 100,
@@ -27616,7 +27618,7 @@
             "e8ba061f5f8c7fec",
             "b5f0a04d4130ba89"
         ],
-        "x": 335,
+        "x": 275,
         "y": 620,
         "wires": [
             [
@@ -27635,6 +27637,46 @@
         ],
         "x": 325,
         "y": 680,
+        "wires": []
+    },
+    {
+        "id": "d97e73d4748e3c22",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "start video",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Billeder/Trailer.mp4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 660,
+        "wires": [
+            [
+                "d5ca4e9187bf4236"
+            ]
+        ]
+    },
+    {
+        "id": "d5ca4e9187bf4236",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "61b2c0553b7bbcc3"
+        ],
+        "x": 755,
+        "y": 660,
         "wires": []
     },
     {
