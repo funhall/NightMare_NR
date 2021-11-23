@@ -12081,7 +12081,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2490,
+        "x": 2290,
         "y": 2000,
         "wires": []
     },
@@ -12285,8 +12285,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2630,
-        "y": 2100,
+        "x": 2390,
+        "y": 2120,
         "wires": []
     },
     {
@@ -12536,13 +12536,13 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
-        "count": "2",
+        "count": "1",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2530,
+        "x": 2590,
         "y": 2140,
         "wires": [
             [
