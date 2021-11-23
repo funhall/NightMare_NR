@@ -11420,12 +11420,14 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[\"{{msg.name}}\",\"Item2\",\"Item3\"]",
-        "payloadType": "str",
-        "x": 1530,
+        "payload": "[     {         \"Name\": \"Kazuhito Yokoi\",         \"Age\": \"35\",         \"Favourite Color\": \"red\",         \"Date Of Birth\": \"12/09/1983\"     },     {         \"Name\": \"Oli Bob\",         \"Age\": \"12\",         \"Favourite Color\": \"cyan\",         \"Date Of Birth\": \"12/08/2017\"     } ]",
+        "payloadType": "json",
+        "x": 1890,
         "y": 1740,
         "wires": [
-            []
+            [
+                "3e016537a79a1af4"
+            ]
         ]
     },
     {
@@ -11490,7 +11492,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 2210,
+        "x": 2290,
         "y": 1620,
         "wires": []
     },
@@ -11505,9 +11507,7 @@
         "x": 2010,
         "y": 1620,
         "wires": [
-            [
-                "3e016537a79a1af4"
-            ]
+            []
         ]
     },
     {
