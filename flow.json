@@ -11189,10 +11189,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[{\"title\":\"<b>Peter</b>\",\"description\":\"This is description of <font color=\\\"red\\\"><b>Apple</b></b>.\"},{\"title\":\"<b>Orange</b>\",\"description\":\"This is description of <font color=\\\"orange\\\"><b>Orange</b></font>.\"},{\"title\":\"<b>Watermelon</b>\",\"description\":\"This is description of <font color=\\\"green\\\"><b>Watermelon</b></font>.\"}]",
+        "payload": "[{\"title\":\"<b>Peter</b>\",\"description\":\"This is description of <font color=\\\"red\\\"><b>Apple</b></b>.\"},{\"title\":\"<b>Orange</b>\",\"description\":\"This is description of <font color=\\\"orange\\\"><b>Orange</b></font>.\"},{\"title\":\"<b>Watermelon : \",\"description\":\"This is description of <font color=\\\"green\\\"><b>Watermelon</b></font>.\"}]",
         "payloadType": "json",
         "x": 1790,
-        "y": 1640,
+        "y": 1680,
         "wires": [
             [
                 "54885517ca6a9dc8"
