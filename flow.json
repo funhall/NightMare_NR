@@ -11661,7 +11661,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "{\"Navn\": \"lærke\",\"Tid\": \"41:20\" }",
-                "tot": "str"
+                "tot": "json"
             },
             {
                 "t": "set",
