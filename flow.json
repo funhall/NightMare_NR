@@ -26977,6 +26977,11 @@
         "name": "Hide Timer",
         "rules": [
             {
+                "t": "delete",
+                "p": "socketid",
+                "pt": "msg"
+            },
+            {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
