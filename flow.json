@@ -11121,7 +11121,7 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 3000,
+        "x": 2840,
         "y": 2140,
         "wires": [
             []
@@ -11537,7 +11537,7 @@
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
         "payloadType": "json",
         "x": 2630,
-        "y": 1960,
+        "y": 2000,
         "wires": [
             [
                 "8f89d29d99edf874"
@@ -11561,35 +11561,6 @@
         "wires": []
     },
     {
-        "id": "ee0cdbf2d74fd707",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\",\"",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2490,
-        "y": 2140,
-        "wires": [
-            [
-                "1dee1297c9b52aef",
-                "8f89d29d99edf874"
-            ]
-        ]
-    },
-    {
         "id": "49900ae8663ef0bc",
         "type": "inject",
         "z": "33e76285.1cd03e",
@@ -11606,7 +11577,7 @@
         "topic": "",
         "payload": "60:15",
         "payloadType": "str",
-        "x": 1770,
+        "x": 1710,
         "y": 2120,
         "wires": [
             [
@@ -11642,8 +11613,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2080,
-        "y": 2120,
+        "x": 2000,
+        "y": 2100,
         "wires": [
             [
                 "249b02d3c62a4004"
@@ -11662,8 +11633,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2630,
-        "y": 2080,
+        "x": 2230,
+        "y": 1960,
         "wires": []
     },
     {
@@ -11814,12 +11785,12 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2270,
-        "y": 2160,
+        "x": 2150,
+        "y": 2120,
         "wires": [
             [
                 "67ac539c8b4ef42b",
-                "ee0cdbf2d74fd707"
+                "8f89d29d99edf874"
             ]
         ]
     },
@@ -11849,8 +11820,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2080,
-        "y": 2160,
+        "x": 2000,
+        "y": 2140,
         "wires": [
             [
                 "249b02d3c62a4004"
@@ -11890,13 +11861,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2020,
-        "y": 2040,
+        "x": 1940,
+        "y": 1920,
         "wires": [
             [
                 "230b3445e8c9d7e7",
-                "58e5643332ef76f5",
-                "ee0cdbf2d74fd707"
+                "58e5643332ef76f5"
             ]
         ]
     },
