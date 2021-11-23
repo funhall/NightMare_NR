@@ -12087,7 +12087,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2370,
+        "x": 2470,
         "y": 2000,
         "wires": []
     },
@@ -12116,6 +12116,34 @@
         "action": "",
         "pretty": false,
         "x": 2210,
+        "y": 2000,
+        "wires": [
+            [
+                "ee0cdbf2d74fd707"
+            ]
+        ]
+    },
+    {
+        "id": "ee0cdbf2d74fd707",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ",",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2330,
         "y": 2000,
         "wires": [
             [
