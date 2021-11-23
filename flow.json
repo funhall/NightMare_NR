@@ -11456,8 +11456,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 3030,
-        "y": 2080,
+        "x": 2970,
+        "y": 2100,
         "wires": []
     },
     {
@@ -11539,8 +11539,8 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
         "payloadType": "json",
-        "x": 2690,
-        "y": 1940,
+        "x": 2630,
+        "y": 1960,
         "wires": [
             [
                 "3e016537a79a1af4"
@@ -11559,8 +11559,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3030,
-        "y": 2160,
+        "x": 3010,
+        "y": 2220,
         "wires": []
     },
     {
@@ -11599,8 +11599,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2650,
-        "y": 2220,
+        "x": 2590,
+        "y": 2240,
         "wires": [
             [
                 "1dee1297c9b52aef",
@@ -11628,8 +11628,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1880,
-        "y": 2140,
+        "x": 1820,
+        "y": 2160,
         "wires": [
             [
                 "94db998415901b36",
@@ -11656,8 +11656,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2190,
-        "y": 2160,
+        "x": 2130,
+        "y": 2180,
         "wires": [
             [
                 "356bbeb89b48d904"
@@ -11683,8 +11683,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2200,
-        "y": 2100,
+        "x": 2140,
+        "y": 2120,
         "wires": [
             [
                 "356bbeb89b48d904"
@@ -11711,8 +11711,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2450,
-        "y": 2140,
+        "x": 2390,
+        "y": 2160,
         "wires": [
             [
                 "ee0cdbf2d74fd707",
@@ -11732,8 +11732,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2910,
-        "y": 2220,
+        "x": 2830,
+        "y": 2300,
         "wires": []
     },
     {
@@ -11749,8 +11749,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2630,
-        "y": 2140,
+        "x": 2570,
+        "y": 2160,
         "wires": []
     },
     {
@@ -11770,8 +11770,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2050,
-        "y": 2180,
+        "x": 1990,
+        "y": 2200,
         "wires": [
             [
                 "4373f3c7f57d5764"
@@ -11798,8 +11798,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1940,
-        "y": 2300,
+        "x": 1880,
+        "y": 2320,
         "wires": [
             [
                 "24bc28defc8deb3f",
@@ -11826,8 +11826,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2290,
-        "y": 2320,
+        "x": 2230,
+        "y": 2340,
         "wires": [
             [
                 "b0d9e7bf907150a4"
@@ -11853,8 +11853,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2280,
-        "y": 2260,
+        "x": 2220,
+        "y": 2280,
         "wires": [
             [
                 "b0d9e7bf907150a4"
@@ -11881,8 +11881,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2490,
-        "y": 2280,
+        "x": 2430,
+        "y": 2300,
         "wires": [
             [
                 "ee0cdbf2d74fd707"
@@ -11906,8 +11906,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2130,
-        "y": 2320,
+        "x": 2070,
+        "y": 2340,
         "wires": [
             [
                 "049a1264a48fc1fb"
@@ -11931,8 +11931,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2050,
-        "y": 2120,
+        "x": 1990,
+        "y": 2140,
         "wires": [
             [
                 "314dd0da7ef1efcb"
@@ -11959,8 +11959,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2730,
-        "y": 2020,
+        "x": 2670,
+        "y": 2040,
         "wires": [
             [
                 "3e016537a79a1af4"
@@ -11975,8 +11975,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": true,
-        "x": 2830,
-        "y": 2160,
+        "x": 2770,
+        "y": 2220,
         "wires": [
             [
                 "8f4cfc0552705f78",
@@ -11990,8 +11990,8 @@
         "z": "33e76285.1cd03e",
         "name": "Skal joines med de \"gamle\" tider herfra",
         "info": "",
-        "x": 2490,
-        "y": 2020,
+        "x": 2430,
+        "y": 2040,
         "wires": []
     },
     {
