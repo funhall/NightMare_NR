@@ -11559,7 +11559,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3010,
+        "x": 3090,
         "y": 2220,
         "wires": []
     },
@@ -11964,7 +11964,7 @@
         "wires": [
             [
                 "3e016537a79a1af4",
-                "70a8689abb773ccd"
+                "62527b26d9a582ee"
             ]
         ]
     },
@@ -11977,6 +11977,22 @@
         "x": 2430,
         "y": 2040,
         "wires": []
+    },
+    {
+        "id": "62527b26d9a582ee",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 2920,
+        "y": 2220,
+        "wires": [
+            [
+                "70a8689abb773ccd"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
