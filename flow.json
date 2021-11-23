@@ -11045,7 +11045,7 @@
         "type": "firebase out",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "Nighmare navn",
+        "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
         "x": 2760,
@@ -11404,8 +11404,8 @@
         "label": "High Score",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 2270,
-        "y": 1820,
+        "x": 2310,
+        "y": 1840,
         "wires": []
     },
     {
@@ -11549,8 +11549,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2030,
-        "y": 1820,
+        "x": 2090,
+        "y": 1900,
         "wires": [
             [
                 "b900bb35164133db"
