@@ -11031,8 +11031,8 @@
         "delay": 300,
         "topic": "topic",
         "topicType": "msg",
-        "x": 2120,
-        "y": 1660,
+        "x": 2320,
+        "y": 1600,
         "wires": [
             [
                 "40814ccb4fdf9d15"
@@ -11127,7 +11127,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "time",
+                "v": "",
+                "vt": "date"
             },
             {
                 "p": "topic",
@@ -11139,8 +11141,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payloadType": "date",
-        "x": 1720,
+        "x": 1710,
         "y": 1560,
         "wires": [
             [
@@ -11453,7 +11454,7 @@
                 "t": "set",
                 "p": "timer",
                 "pt": "flow",
-                "to": "payload",
+                "to": "time",
                 "tot": "msg"
             }
         ],
