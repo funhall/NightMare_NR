@@ -11471,7 +11471,7 @@
         "columns": [
             {
                 "field": "High score list",
-                "title": "Navn",
+                "title": "Name",
                 "width": "100",
                 "align": "left",
                 "formatter": "plaintext",
@@ -11481,7 +11481,7 @@
             },
             {
                 "field": "msg.payload",
-                "title": "Tid",
+                "title": "Age",
                 "width": "100",
                 "align": "left",
                 "formatter": "plaintext",
