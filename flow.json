@@ -11690,7 +11690,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Navn",
-        "payload": "ole",
+        "payload": "peter",
         "payloadType": "str",
         "x": 1890,
         "y": 2700,
