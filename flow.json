@@ -11679,7 +11679,8 @@
         "y": 1700,
         "wires": [
             [
-                "1d3bbda15d7d01eb"
+                "1d3bbda15d7d01eb",
+                "06c928c296be8faf"
             ]
         ]
     },
