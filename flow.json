@@ -11572,8 +11572,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2000,
-        "y": 1620,
+        "x": 1940,
+        "y": 1600,
         "wires": [
             [
                 "54885517ca6a9dc8"
@@ -11599,10 +11599,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "ole",
+        "payload": "ole, peter",
         "payloadType": "str",
-        "x": 1740,
-        "y": 1660,
+        "x": 1720,
+        "y": 1640,
         "wires": [
             [
                 "e0f34a25be156511"
@@ -11617,7 +11617,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1960,
+        "x": 1910,
         "y": 1660,
         "wires": [
             [
