@@ -12221,8 +12221,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 2590,
-        "y": 2540,
+        "x": 2530,
+        "y": 2380,
         "wires": [
             [
                 "3e016537a79a1af4"
@@ -12235,7 +12235,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "string",
+        "build": "array",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
