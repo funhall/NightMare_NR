@@ -12012,6 +12012,78 @@
         ]
     },
     {
+        "id": "81f2cd6406515b1a",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\"} ,{\"Navn\": \"Martin\",\"Tid\": \"30:40\" }]",
+        "payloadType": "json",
+        "x": 1790,
+        "y": 2000,
+        "wires": [
+            [
+                "3cd55b67f24fee22"
+            ]
+        ]
+    },
+    {
+        "id": "3cd55b67f24fee22",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "highscore",
+                "pt": "flow",
+                "to": "\"lærke,10:25\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2020,
+        "y": 2000,
+        "wires": [
+            [
+                "334831c5d277fc4e"
+            ]
+        ]
+    },
+    {
+        "id": "334831c5d277fc4e",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2270,
+        "y": 2000,
+        "wires": []
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
