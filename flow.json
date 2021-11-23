@@ -31123,34 +31123,6 @@
         ]
     },
     {
-        "id": "a07db7603114a3ab",
-        "type": "ui_button",
-        "z": "5b3651b.92335b",
-        "g": "b3771d986777a428",
-        "name": "",
-        "group": "117cda2a.43e596",
-        "order": 16,
-        "width": 2,
-        "height": 1,
-        "passthru": false,
-        "label": "Fullscreenffd",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1030,
-        "y": 540,
-        "wires": [
-            [
-                "980a6acd8593bc09"
-            ]
-        ]
-    },
-    {
         "id": "980a6acd8593bc09",
         "type": "delay",
         "z": "5b3651b.92335b",
