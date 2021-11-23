@@ -11691,8 +11691,8 @@
         "z": "33e76285.1cd03e",
         "name": "Skal joines med de \"gamle\" tider herfra",
         "info": "",
-        "x": 2430,
-        "y": 2040,
+        "x": 2270,
+        "y": 1980,
         "wires": []
     },
     {
@@ -11819,8 +11819,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2470,
-        "y": 2040,
+        "x": 2430,
+        "y": 1980,
         "wires": []
     },
     {
@@ -11893,9 +11893,9 @@
         "name": "",
         "property": "payload",
         "action": "",
-        "pretty": false,
-        "x": 2660,
-        "y": 2100,
+        "pretty": true,
+        "x": 2630,
+        "y": 2120,
         "wires": [
             [
                 "3e016537a79a1af4",
