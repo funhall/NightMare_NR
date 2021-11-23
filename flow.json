@@ -12528,7 +12528,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "array",
+        "build": "object",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -12543,7 +12543,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 2590,
-        "y": 2140,
+        "y": 2060,
         "wires": [
             [
                 "04c54f87b653d58b"
