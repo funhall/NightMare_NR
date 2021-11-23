@@ -11045,7 +11045,7 @@
         "type": "firebase out",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "Nighmare navn/Game tider",
+        "ref": "Nighmare navn/{{msg.name}}",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
         "x": 2840,
@@ -11106,6 +11106,13 @@
                 "pt": "msg",
                 "to": "timer",
                 "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "msg",
+                "to": "peter",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -11466,12 +11473,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1910,
+        "x": 2050,
         "y": 1600,
         "wires": [
-            [
-                "54c1ab4b77af5c94"
-            ]
+            []
         ]
     },
     {
