@@ -11585,8 +11585,7 @@
                 "314dd0da7ef1efcb",
                 "831d27635fe6e8e9",
                 "dcc13e825599f24e",
-                "3fb55a625d2dbde1",
-                "a61473013d1e2f2c"
+                "3d08a89d8e013d75"
             ]
         ]
     },
@@ -11764,8 +11763,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2930,
-        "y": 2320,
+        "x": 2570,
+        "y": 2240,
         "wires": []
     },
     {
@@ -12075,6 +12074,33 @@
         "wires": [
             [
                 "f64f524843b0d10e"
+            ]
+        ]
+    },
+    {
+        "id": "3d08a89d8e013d75",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "highscore",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2020,
+        "y": 2200,
+        "wires": [
+            [
+                "20cdd9a65b6ee9be"
             ]
         ]
     },
