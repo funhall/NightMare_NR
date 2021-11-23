@@ -11191,8 +11191,8 @@
         "topic": "",
         "payload": "[{\"title\":\"<b>Peter</b>\",\"description\":\"This is description of <font color=\\\"red\\\"><b>Apple</b></b>.\"},{\"title\":\"<b>Orange</b>\",\"description\":\"This is description of <font color=\\\"orange\\\"><b>Orange</b></font>.\"},{\"title\":\"<b>Watermelon : \",\"description\":\"This is description of <b>Watermelon</b></font>.\"}]",
         "payloadType": "json",
-        "x": 1770,
-        "y": 1640,
+        "x": 1730,
+        "y": 1560,
         "wires": [
             [
                 "3e2f506a8c7f381e"
@@ -11578,6 +11578,33 @@
             [
                 "54885517ca6a9dc8"
             ]
+        ]
+    },
+    {
+        "id": "131cd30c8e3fd520",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ole",
+        "payloadType": "str",
+        "x": 1740,
+        "y": 1660,
+        "wires": [
+            []
         ]
     },
     {
