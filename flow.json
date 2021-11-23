@@ -11569,7 +11569,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "string",
+        "build": "array",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -11577,16 +11577,18 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
-        "count": "2",
+        "count": "1",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2590,
-        "y": 2240,
+        "x": 2550,
+        "y": 2120,
         "wires": [
-            []
+            [
+                "3e016537a79a1af4"
+            ]
         ]
     },
     {
@@ -11848,7 +11850,7 @@
         "wires": [
             [
                 "67ac539c8b4ef42b",
-                "3e016537a79a1af4"
+                "ee0cdbf2d74fd707"
             ]
         ]
     },
