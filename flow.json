@@ -12418,30 +12418,10 @@
         "arraySplt": 1,
         "arraySpltType": "len",
         "stream": false,
-        "addname": "",
+        "addname": "trest",
         "x": 2810,
         "y": 3120,
         "wires": [
-            [
-                "f574c054f3ad108d"
-            ]
-        ]
-    },
-    {
-        "id": "f574c054f3ad108d",
-        "type": "Message Counter",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "units": "minutes",
-        "interval": 1,
-        "alignToClock": true,
-        "generator": "external",
-        "x": 3010,
-        "y": 3120,
-        "wires": [
-            [
-                "b62790d3e57eaa91"
-            ],
             [
                 "9f01379ab3522a20"
             ]
@@ -12456,10 +12436,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3270,
+        "x": 3250,
         "y": 3120,
         "wires": []
     },
