@@ -11844,12 +11844,13 @@
         "topic": "",
         "payload": "ole",
         "payloadType": "str",
-        "x": 2090,
+        "x": 2010,
         "y": 1640,
         "wires": [
             [
                 "a14790f0b4e6f930",
-                "4d4e89ebcb7b1f5f"
+                "4d4e89ebcb7b1f5f",
+                "6549d7c512f29794"
             ]
         ]
     },
@@ -11925,7 +11926,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2740,
+        "x": 2810,
         "y": 1680,
         "wires": []
     },
@@ -11948,7 +11949,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2280,
+        "x": 2180,
         "y": 1600,
         "wires": [
             [
@@ -11978,6 +11979,33 @@
         "reduceFixup": "",
         "x": 2410,
         "y": 1640,
+        "wires": [
+            [
+                "acf70433a1ce3ac6"
+            ]
+        ]
+    },
+    {
+        "id": "6549d7c512f29794",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "highscore",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2200,
+        "y": 1680,
         "wires": [
             [
                 "acf70433a1ce3ac6"
