@@ -11451,7 +11451,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"35\" },{\"Navn\": \"Oli Bob\",\"Tid\": \"12\"},{\"Navn\": \"martin\",\"Tid\": \"60:12\"}]",
+        "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\" }]",
         "payloadType": "json",
         "x": 1910,
         "y": 1520,
