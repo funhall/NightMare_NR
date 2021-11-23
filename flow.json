@@ -11589,8 +11589,7 @@
         "y": 2140,
         "wires": [
             [
-                "8f89d29d99edf874",
-                "1dee1297c9b52aef"
+                "8f89d29d99edf874"
             ]
         ]
     },
@@ -11670,8 +11669,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3070,
-        "y": 2320,
+        "x": 2350,
+        "y": 2040,
         "wires": []
     },
     {
@@ -11808,8 +11807,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2470,
-        "y": 2240,
+        "x": 2410,
+        "y": 2260,
         "wires": []
     },
     {
@@ -11832,7 +11831,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2290,
+        "x": 2270,
         "y": 2160,
         "wires": [
             [
@@ -11908,11 +11907,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2250,
-        "y": 2060,
+        "x": 2080,
+        "y": 2040,
         "wires": [
             [
-                "ee0cdbf2d74fd707"
+                "ee0cdbf2d74fd707",
+                "1dee1297c9b52aef"
             ]
         ]
     },
