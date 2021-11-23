@@ -11682,7 +11682,7 @@
         "wires": [
             [
                 "9798cb76c80c759e",
-                "26a856db6c16956b"
+                "02a27c66b85348f3"
             ]
         ]
     },
@@ -11795,20 +11795,138 @@
         "wires": []
     },
     {
-        "id": "26a856db6c16956b",
-        "type": "json",
+        "id": "acf70433a1ce3ac6",
+        "type": "join",
         "z": "33e76285.1cd03e",
         "name": "",
+        "mode": "custom",
+        "build": "array",
         "property": "payload",
-        "action": "str",
-        "pretty": false,
-        "x": 2190,
-        "y": 1460,
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ",",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2550,
+        "y": 1680,
         "wires": [
             [
-                "02a27c66b85348f3"
+                "58e5643332ef76f5"
             ]
         ]
+    },
+    {
+        "id": "191e82bc67ccf1be",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "ole",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ole",
+        "payloadType": "str",
+        "x": 2370,
+        "y": 1660,
+        "wires": [
+            [
+                "acf70433a1ce3ac6"
+            ]
+        ]
+    },
+    {
+        "id": "68962933b9850372",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "lærke",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "lærke",
+        "payloadType": "str",
+        "x": 2370,
+        "y": 1700,
+        "wires": [
+            [
+                "acf70433a1ce3ac6"
+            ]
+        ]
+    },
+    {
+        "id": "21ecdbf83389e718",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "ole",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "martin",
+        "payloadType": "str",
+        "x": 2350,
+        "y": 1740,
+        "wires": [
+            [
+                "acf70433a1ce3ac6"
+            ]
+        ]
+    },
+    {
+        "id": "58e5643332ef76f5",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2740,
+        "y": 1680,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
