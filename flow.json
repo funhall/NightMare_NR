@@ -11191,11 +11191,11 @@
         "topic": "",
         "payload": "[{\"title\":\"<b>Peter</b>\",\"description\":\"This is description of <font color=\\\"red\\\"><b>Apple</b></b>.\"},{\"title\":\"<b>Orange</b>\",\"description\":\"This is description of <font color=\\\"orange\\\"><b>Orange</b></font>.\"},{\"title\":\"<b>Watermelon : \",\"description\":\"This is description of <b>Watermelon</b></font>.\"}]",
         "payloadType": "json",
-        "x": 1790,
-        "y": 1680,
+        "x": 1770,
+        "y": 1640,
         "wires": [
             [
-                "54885517ca6a9dc8"
+                "3e2f506a8c7f381e"
             ]
         ]
     },
@@ -11552,6 +11552,33 @@
         "x": 2150,
         "y": 1780,
         "wires": []
+    },
+    {
+        "id": "3e2f506a8c7f381e",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{\"title\":\"<b>Peter{{msg.name}}</b>\",\"description\":\"This is description of <font color=\\\"red\\\"><b>Apple</b></b>.\"},{\"title\":\"<b>Orange</b>\",\"description\":\"This is description of <font color=\\\"orange\\\"><b>Orange</b></font>.\"},{\"title\":\"<b>Watermelon : \",\"description\":\"This is description of <b>Watermelon</b></font>.\"}]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2040,
+        "y": 1660,
+        "wires": [
+            [
+                "54885517ca6a9dc8"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
