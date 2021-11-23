@@ -11695,11 +11695,11 @@
         "topic": "Navn",
         "payload": "ole",
         "payloadType": "str",
-        "x": 1810,
+        "x": 1970,
         "y": 2700,
         "wires": [
             [
-                "91485baebabc934d"
+                "47b769c5.cb0e28"
             ]
         ]
     },
@@ -11724,11 +11724,11 @@
         "topic": "Tid",
         "payload": "60:55",
         "payloadType": "str",
-        "x": 1810,
+        "x": 1970,
         "y": 2740,
         "wires": [
             [
-                "b66c0bc09a06c91a"
+                "47b769c5.cb0e28"
             ]
         ]
     },
@@ -12308,62 +12308,6 @@
         "wires": [
             [
                 "bb098b10833b5da5"
-            ]
-        ]
-    },
-    {
-        "id": "91485baebabc934d",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": ",",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1970,
-        "y": 2700,
-        "wires": [
-            [
-                "47b769c5.cb0e28"
-            ]
-        ]
-    },
-    {
-        "id": "b66c0bc09a06c91a",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": ",",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1970,
-        "y": 2740,
-        "wires": [
-            [
-                "47b769c5.cb0e28"
             ]
         ]
     },
