@@ -3028,17 +3028,10 @@
         "id": "fca18ac4.088f68",
         "type": "ui_group",
         "name": "H801",
-        "tab": "92b25a8d.c33e18",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "6"
-    },
-    {
-        "id": "92b25a8d.c33e18",
-        "type": "ui_tab",
-        "name": "Test",
-        "icon": "dashboard",
-        "order": 4
     },
     {
         "id": "f2d1649946d0b11c",
@@ -3089,19 +3082,11 @@
         "id": "8b5cde76.edd58",
         "type": "ui_group",
         "name": "",
-        "tab": "8f03e639.85956",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "12",
         "collapse": false
-    },
-    {
-        "id": "8f03e639.85956",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "27b65cf1.24c8e4",
@@ -11376,225 +11361,6 @@
         "x": 615,
         "y": 3260,
         "wires": []
-    },
-    {
-        "id": "e94468b6.358e18",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "Clicked",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2360,
-        "y": 1980,
-        "wires": []
-    },
-    {
-        "id": "4bc6d6f0.115498",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "Inject 0",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "ZERO",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 1730,
-        "y": 1960,
-        "wires": [
-            [
-                "f1211d0a8bc55346"
-            ]
-        ]
-    },
-    {
-        "id": "c6658632.447978",
-        "type": "button-events",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "outputs": 3,
-        "inputField": "payload",
-        "inputFieldType": "msg",
-        "outputField": "payload",
-        "outputFieldType": "msg",
-        "downValue": "0",
-        "downValueType": "num",
-        "upValue": "1",
-        "upValueType": "num",
-        "idleValue": "1",
-        "clickedInterval": "2000",
-        "pressedInterval": "5000",
-        "debounceInterval": "200",
-        "events": [
-            {
-                "type": "clicked"
-            },
-            {
-                "type": "pressed"
-            },
-            {
-                "type": "double_clicked"
-            }
-        ],
-        "x": 2120,
-        "y": 2000,
-        "wires": [
-            [
-                "e94468b6.358e18"
-            ],
-            [
-                "625d6be5.811694"
-            ],
-            [
-                "b0bd0d59.bc7cf"
-            ]
-        ]
-    },
-    {
-        "id": "9130e7a8.87df08",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "Inject 1",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "ONE",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 1750,
-        "y": 2020,
-        "wires": [
-            [
-                "c6658632.447978"
-            ]
-        ]
-    },
-    {
-        "id": "3ac673fa.12ef9c",
-        "type": "ui_chart",
-        "z": "33e76285.1cd03e",
-        "name": "Poor man oscilloscope",
-        "group": "27b65cf1.24c8e4",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "Poor man oscilloscope",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "step",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "2",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "x": 2140,
-        "y": 2100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b0bd0d59.bc7cf",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "Double clicked",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2380,
-        "y": 2060,
-        "wires": []
-    },
-    {
-        "id": "625d6be5.811694",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "Pressed",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2360,
-        "y": 2020,
-        "wires": []
-    },
-    {
-        "id": "f1211d0a8bc55346",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "delete",
-                "p": "socketid",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1910,
-        "y": 1940,
-        "wires": [
-            [
-                "c6658632.447978"
-            ]
-        ]
     },
     {
         "id": "25b0621fbdbd0e71",
