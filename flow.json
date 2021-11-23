@@ -11470,7 +11470,7 @@
         "height": 0,
         "columns": [
             {
-                "field": "High score list",
+                "field": "Navn",
                 "title": "Name",
                 "width": "100",
                 "align": "left",
@@ -11480,7 +11480,7 @@
                 }
             },
             {
-                "field": "msg.payload",
+                "field": "Tid",
                 "title": "Age",
                 "width": "100",
                 "align": "left",
@@ -11507,7 +11507,9 @@
         "x": 2010,
         "y": 1620,
         "wires": [
-            []
+            [
+                "3e016537a79a1af4"
+            ]
         ]
     },
     {
@@ -11521,9 +11523,7 @@
         "x": 2110,
         "y": 1680,
         "wires": [
-            [
-                "3e016537a79a1af4"
-            ]
+            []
         ]
     },
     {
