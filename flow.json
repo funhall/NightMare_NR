@@ -12242,8 +12242,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 3130,
-        "y": 3140,
+        "x": 3270,
+        "y": 3080,
         "wires": []
     },
     {
@@ -12324,8 +12324,8 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 2770,
-        "y": 3100,
+        "x": 2670,
+        "y": 3120,
         "wires": [
             [
                 "2e8998fa8a812fd8"
@@ -12372,7 +12372,7 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 2570,
+        "x": 2510,
         "y": 3120,
         "wires": [
             [
@@ -12419,13 +12419,49 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 2930,
+        "x": 2810,
+        "y": 3120,
+        "wires": [
+            [
+                "f574c054f3ad108d"
+            ]
+        ]
+    },
+    {
+        "id": "f574c054f3ad108d",
+        "type": "Message Counter",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "units": "minutes",
+        "interval": 1,
+        "alignToClock": true,
+        "generator": "internal",
+        "x": 3010,
         "y": 3120,
         "wires": [
             [
                 "b62790d3e57eaa91"
+            ],
+            [
+                "9f01379ab3522a20"
             ]
         ]
+    },
+    {
+        "id": "9f01379ab3522a20",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3270,
+        "y": 3120,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
