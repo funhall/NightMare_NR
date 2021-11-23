@@ -11669,8 +11669,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2350,
-        "y": 2040,
+        "x": 2570,
+        "y": 2060,
         "wires": []
     },
     {
@@ -11880,12 +11880,14 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "property": "payload",
-        "action": "",
+        "action": "str",
         "pretty": true,
-        "x": 3110,
-        "y": 2380,
+        "x": 2270,
+        "y": 2080,
         "wires": [
-            []
+            [
+                "ee0cdbf2d74fd707"
+            ]
         ]
     },
     {
@@ -11911,8 +11913,8 @@
         "y": 2040,
         "wires": [
             [
-                "ee0cdbf2d74fd707",
-                "1dee1297c9b52aef"
+                "1dee1297c9b52aef",
+                "7465bcf8f7f6bb65"
             ]
         ]
     },
