@@ -11336,10 +11336,10 @@
         "type": "firebase in",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "Nighmare navn/Game tider",
+        "ref": "Nighmare navn/",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1790,
+        "x": 1760,
         "y": 1820,
         "wires": [
             [
