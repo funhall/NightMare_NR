@@ -12050,7 +12050,7 @@
                 "t": "set",
                 "p": "highscore",
                 "pt": "flow",
-                "to": "\"lærke,10:25\"",
+                "to": "\"lærke\",\"10:25\"",
                 "tot": "str"
             },
             {
@@ -12115,7 +12115,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 2210,
+        "x": 2170,
         "y": 2000,
         "wires": [
             [
