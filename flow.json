@@ -2424,8 +2424,8 @@
             "1eddee0bdcf3b51a"
         ],
         "env": [],
-        "x": 1854,
-        "y": 3159,
+        "x": 1754,
+        "y": 2599,
         "w": 612,
         "h": 122
     },
@@ -11539,8 +11539,8 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
         "payloadType": "json",
-        "x": 2450,
-        "y": 2260,
+        "x": 2650,
+        "y": 2240,
         "wires": [
             [
                 "8f89d29d99edf874"
@@ -11623,8 +11623,8 @@
         "topic": "navn",
         "payload": "12:22",
         "payloadType": "str",
-        "x": 1970,
-        "y": 3120,
+        "x": 1870,
+        "y": 2560,
         "wires": [
             [
                 "78df0264f1c44820"
@@ -11885,8 +11885,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2370,
-        "y": 2340,
+        "x": 2430,
+        "y": 2160,
         "wires": [
             []
         ]
@@ -11910,8 +11910,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2200,
-        "y": 3120,
+        "x": 2100,
+        "y": 2560,
         "wires": [
             [
                 "b62790d3e57eaa91"
@@ -11939,8 +11939,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2090,
-        "y": 3200,
+        "x": 1990,
+        "y": 2640,
         "wires": [
             [
                 "b127db85dc55eca4",
@@ -11970,8 +11970,8 @@
         "topic": "Navn",
         "payload": "peter",
         "payloadType": "str",
-        "x": 1950,
-        "y": 3200,
+        "x": 1850,
+        "y": 2640,
         "wires": [
             [
                 "4d6373135b143922"
@@ -12000,8 +12000,8 @@
         "topic": "Tid",
         "payload": "60:51",
         "payloadType": "str",
-        "x": 1950,
-        "y": 3240,
+        "x": 1850,
+        "y": 2680,
         "wires": [
             [
                 "4d6373135b143922"
@@ -12107,25 +12107,9 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2490,
+        "x": 2590,
         "y": 2400,
         "wires": []
-    },
-    {
-        "id": "53d3c377726e4424",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 2230,
-        "y": 2440,
-        "wires": [
-            [
-                "7bd2efa15de13b27"
-            ]
-        ]
     },
     {
         "id": "b127db85dc55eca4",
@@ -12138,8 +12122,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2350,
-        "y": 3240,
+        "x": 2250,
+        "y": 2680,
         "wires": []
     },
     {
@@ -12152,8 +12136,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2190,
-        "y": 2300,
+        "x": 2230,
+        "y": 2320,
         "wires": []
     },
     {
@@ -12208,7 +12192,7 @@
         "y": 2460,
         "wires": [
             [
-                "53d3c377726e4424"
+                "7bd2efa15de13b27"
             ]
         ]
     },
@@ -12222,8 +12206,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2650,
-        "y": 3120,
+        "x": 2310,
+        "y": 2560,
         "wires": []
     },
     {
@@ -12246,8 +12230,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2320,
-        "y": 3200,
+        "x": 2220,
+        "y": 2640,
         "wires": [
             []
         ]
@@ -12320,7 +12304,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "merged",
+        "build": "string",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -12334,7 +12318,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2330,
+        "x": 2410,
         "y": 2400,
         "wires": [
             [
