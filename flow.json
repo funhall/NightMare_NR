@@ -11481,8 +11481,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2110,
-        "y": 2440,
+        "x": 2130,
+        "y": 2420,
         "wires": [
             [
                 "3e016537a79a1af4"
@@ -11622,10 +11622,12 @@
         "topic": "navn",
         "payload": "12:22",
         "payloadType": "str",
-        "x": 1870,
-        "y": 2840,
+        "x": 1910,
+        "y": 2900,
         "wires": [
-            []
+            [
+                "78df0264f1c44820"
+            ]
         ]
     },
     {
@@ -11648,12 +11650,12 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2130,
-        "y": 2700,
+        "x": 2070,
+        "y": 2720,
         "wires": [
             [
                 "f9afb265.b11b7",
-                "fdc0324e81619720"
+                "0d099896abb6fecc"
             ]
         ]
     },
@@ -11667,8 +11669,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2550,
-        "y": 2740,
+        "x": 1930,
+        "y": 2620,
         "wires": []
     },
     {
@@ -11690,7 +11692,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Navn",
-        "payload": "peter",
+        "payload": "ole",
         "payloadType": "str",
         "x": 1890,
         "y": 2700,
@@ -11865,14 +11867,14 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
-        "count": "1",
+        "count": "2",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2470,
-        "y": 2640,
+        "x": 2450,
+        "y": 2700,
         "wires": [
             [
                 "8f89d29d99edf874"
@@ -11891,6 +11893,60 @@
         "y": 2380,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "0d099896abb6fecc",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "highscore",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2270,
+        "y": 2600,
+        "wires": [
+            [
+                "fdc0324e81619720"
+            ]
+        ]
+    },
+    {
+        "id": "78df0264f1c44820",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "highscore",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2120,
+        "y": 2900,
+        "wires": [
+            [
+                "fdc0324e81619720"
+            ]
         ]
     },
     {
