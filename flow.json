@@ -11790,7 +11790,7 @@
         "wires": [
             [
                 "67ac539c8b4ef42b",
-                "8f89d29d99edf874"
+                "20cdd9a65b6ee9be"
             ]
         ]
     },
@@ -11876,7 +11876,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "merged",
+        "build": "array",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -11890,10 +11890,12 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2770,
-        "y": 2280,
+        "x": 2370,
+        "y": 2120,
         "wires": [
-            []
+            [
+                "8f89d29d99edf874"
+            ]
         ]
     },
     {
