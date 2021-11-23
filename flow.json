@@ -11667,16 +11667,6 @@
         "wires": []
     },
     {
-        "id": "4044abd23e2a0b76",
-        "type": "comment",
-        "z": "33e76285.1cd03e",
-        "name": "Skal joines med de \"gamle\" tider herfra",
-        "info": "",
-        "x": 2270,
-        "y": 1980,
-        "wires": []
-    },
-    {
         "id": "8ccddb9a.a55f38",
         "type": "inject",
         "z": "33e76285.1cd03e",
@@ -11904,8 +11894,9 @@
         "y": 2040,
         "wires": [
             [
-                "0dce08c43e55a255",
-                "230b3445e8c9d7e7"
+                "230b3445e8c9d7e7",
+                "58e5643332ef76f5",
+                "ee0cdbf2d74fd707"
             ]
         ]
     },
@@ -11933,34 +11924,6 @@
         "y": 2280,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "0dce08c43e55a255",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload[0]",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2240,
-        "y": 2040,
-        "wires": [
-            [
-                "58e5643332ef76f5",
-                "ee0cdbf2d74fd707"
-            ]
         ]
     },
     {
