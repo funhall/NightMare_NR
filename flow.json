@@ -1793,8 +1793,7 @@
             "334626ad32a91919",
             "e87f139c66187ed8",
             "dc15a294901f18c5",
-            "79e37f03118231ed",
-            "3f73821671c0a461"
+            "79e37f03118231ed"
         ],
         "env": [],
         "x": 74,
@@ -2278,8 +2277,8 @@
             "6f1729951cf28e94",
             "c82fcf67a19e204d"
         ],
-        "x": 134,
-        "y": 1579,
+        "x": 174,
+        "y": 1859,
         "w": 1552,
         "h": 522
     },
@@ -2328,8 +2327,8 @@
             "13ca3fedfd43a2e1"
         ],
         "env": [],
-        "x": 254,
-        "y": 1099,
+        "x": 214,
+        "y": 1039,
         "w": 582,
         "h": 222
     },
@@ -2352,8 +2351,8 @@
             "e89aa0349c5a6710"
         ],
         "env": [],
-        "x": 254,
-        "y": 1379,
+        "x": 214,
+        "y": 1299,
         "w": 582,
         "h": 175.33331298828125
     },
@@ -2404,6 +2403,33 @@
         "x": 194,
         "y": 539,
         "w": 592,
+        "h": 202
+    },
+    {
+        "id": "76a42ecf9d41a454",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Start game over musik i rum 3",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a80cad1f0cf96591",
+            "8695a12d73bb7884",
+            "343dac8fb5437975",
+            "9c890612f5548c0b",
+            "ab948a4205be96be",
+            "5573d64c86b78991",
+            "8de04b5ff64663a1",
+            "df77329f3f35ce83",
+            "6a110378ca0a323b",
+            "290de3e57a55714a",
+            "5da02af61c9d5326"
+        ],
+        "env": [],
+        "x": 154,
+        "y": 1559,
+        "w": 1272,
         "h": 202
     },
     {
@@ -25944,27 +25970,6 @@
         ]
     },
     {
-        "id": "3f73821671c0a461",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "6bba046dfe50c527",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 490,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "75dd83f5efbac9e2",
         "type": "change",
         "z": "42a18184186a4f43",
@@ -26188,8 +26193,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 390,
-        "y": 1980,
+        "x": 430,
+        "y": 2260,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26217,8 +26222,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1160,
-        "y": 1700,
+        "x": 1200,
+        "y": 1980,
         "wires": [
             [
                 "c82fcf67a19e204d"
@@ -26243,8 +26248,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 810,
-        "y": 1660,
+        "x": 850,
+        "y": 1940,
         "wires": [
             [
                 "8ef02ffee422d874"
@@ -26271,8 +26276,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1070,
-        "y": 1620,
+        "x": 1110,
+        "y": 1900,
         "wires": [
             []
         ]
@@ -26297,8 +26302,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 830,
-        "y": 2020,
+        "x": 870,
+        "y": 2300,
         "wires": [
             []
         ]
@@ -26323,8 +26328,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1350,
-        "y": 1760,
+        "x": 1390,
+        "y": 2040,
         "wires": [
             []
         ]
@@ -26342,8 +26347,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 390,
-        "y": 1900,
+        "x": 430,
+        "y": 2180,
         "wires": []
     },
     {
@@ -26363,8 +26368,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 260,
-        "y": 1720,
+        "x": 300,
+        "y": 2000,
         "wires": [
             [
                 "a06245ff7e10d6d4",
@@ -26400,8 +26405,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1120,
-        "y": 1980,
+        "x": 1160,
+        "y": 2260,
         "wires": [
             []
         ]
@@ -26421,8 +26426,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1290,
-        "y": 1800,
+        "x": 1330,
+        "y": 2080,
         "wires": [
             [
                 "9dcce0d895dfc7ac"
@@ -26446,8 +26451,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 580,
-        "y": 2060,
+        "x": 620,
+        "y": 2340,
         "wires": [
             [
                 "6d17bc5693a42c8b"
@@ -26471,8 +26476,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1020,
-        "y": 1660,
+        "x": 1060,
+        "y": 1940,
         "wires": [
             [
                 "c4067b8b7e4b0667"
@@ -26497,8 +26502,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1080,
-        "y": 1800,
+        "x": 1120,
+        "y": 2080,
         "wires": [
             [
                 "707fb68872494820"
@@ -26524,8 +26529,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 650,
-        "y": 1860,
+        "x": 690,
+        "y": 2140,
         "wires": [
             [],
             [
@@ -26554,8 +26559,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 1860,
+        "x": 1010,
+        "y": 2140,
         "wires": [
             [
                 "45f778e9551ebc3e",
@@ -26577,8 +26582,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1550,
-        "y": 1880,
+        "x": 1590,
+        "y": 2160,
         "wires": []
     },
     {
@@ -26599,8 +26604,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
-        "y": 1980,
+        "x": 860,
+        "y": 2260,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26622,8 +26627,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1590,
-        "y": 1960,
+        "x": 1630,
+        "y": 2240,
         "wires": []
     },
     {
@@ -26646,8 +26651,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1360,
-        "y": 1980,
+        "x": 1400,
+        "y": 2260,
         "wires": [
             [
                 "b3cf25d2d81fb835"
@@ -26694,8 +26699,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 240,
-        "y": 1860,
+        "x": 280,
+        "y": 2140,
         "wires": [
             [
                 "c4067b8b7e4b0667",
@@ -26720,8 +26725,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 780,
-        "y": 1620,
+        "x": 820,
+        "y": 1900,
         "wires": [
             [
                 "8ef02ffee422d874"
@@ -26748,8 +26753,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1270,
-        "y": 1880,
+        "x": 1310,
+        "y": 2160,
         "wires": [
             [
                 "1ea7844b7ecc83b1"
@@ -26776,8 +26781,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 730,
-        "y": 1900,
+        "x": 770,
+        "y": 2180,
         "wires": [
             [
                 "9c16a210febf75c1"
@@ -26802,8 +26807,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 950,
-        "y": 1900,
+        "x": 990,
+        "y": 2180,
         "wires": [
             [
                 "707fb68872494820"
@@ -26830,8 +26835,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 1820,
+        "x": 770,
+        "y": 2100,
         "wires": [
             [
                 "3c917c2662a15096"
@@ -26846,8 +26851,8 @@
         "name": "",
         "mode": "link",
         "links": [],
-        "x": 1435,
-        "y": 1680,
+        "x": 1475,
+        "y": 1960,
         "wires": []
     },
     {
@@ -27169,8 +27174,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 580,
-        "y": 1140,
+        "x": 540,
+        "y": 1080,
         "wires": [
             [
                 "c8f61e30db3fc5b4"
@@ -27197,8 +27202,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 1180,
+        "x": 550,
+        "y": 1120,
         "wires": [
             [
                 "e91ee7488c3ae977"
@@ -27215,8 +27220,8 @@
         "links": [
             "61b2c0553b7bbcc3"
         ],
-        "x": 795,
-        "y": 1180,
+        "x": 755,
+        "y": 1120,
         "wires": []
     },
     {
@@ -27241,8 +27246,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 360,
-        "y": 1140,
+        "x": 320,
+        "y": 1080,
         "wires": [
             [
                 "84778e98d4f91f0e",
@@ -27261,8 +27266,8 @@
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 795,
-        "y": 1140,
+        "x": 755,
+        "y": 1080,
         "wires": []
     },
     {
@@ -27280,8 +27285,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 602.8958435058594,
-        "y": 1233.3333129882812,
+        "x": 562.8958435058594,
+        "y": 1173.3333129882812,
         "wires": [
             [
                 "e91ee7488c3ae977"
@@ -27310,8 +27315,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 360,
-        "y": 1280,
+        "x": 320,
+        "y": 1220,
         "wires": [
             [
                 "64a589e68bc0371f"
@@ -27336,8 +27341,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 440,
-        "y": 1220,
+        "x": 400,
+        "y": 1160,
         "wires": [
             [
                 "64a589e68bc0371f"
@@ -27390,8 +27395,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 580,
-        "y": 1420,
+        "x": 540,
+        "y": 1340,
         "wires": [
             [
                 "84a73a05a0c97f14"
@@ -27418,8 +27423,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 1460,
+        "x": 550,
+        "y": 1380,
         "wires": [
             [
                 "87a2c2dac5306bc3"
@@ -27436,8 +27441,8 @@
         "links": [
             "def5ec1223d561e3"
         ],
-        "x": 795,
-        "y": 1460,
+        "x": 755,
+        "y": 1380,
         "wires": []
     },
     {
@@ -27462,8 +27467,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 360,
-        "y": 1420,
+        "x": 320,
+        "y": 1340,
         "wires": [
             [
                 "ca227d8b89cf86e1",
@@ -27482,8 +27487,8 @@
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 795,
-        "y": 1420,
+        "x": 755,
+        "y": 1340,
         "wires": []
     },
     {
@@ -27501,8 +27506,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 602.8958435058594,
-        "y": 1513.3333129882812,
+        "x": 562.8958435058594,
+        "y": 1433.3333129882812,
         "wires": [
             [
                 "87a2c2dac5306bc3"
@@ -27527,8 +27532,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 440,
-        "y": 1500,
+        "x": 400,
+        "y": 1420,
         "wires": [
             [
                 "1a7d871de19df5a6"
@@ -27581,8 +27586,8 @@
         "g": "6188f0082d3cd712",
         "name": "",
         "links": [],
-        "x": 295,
-        "y": 1460,
+        "x": 255,
+        "y": 1380,
         "wires": [
             [
                 "ca227d8b89cf86e1",
@@ -27598,8 +27603,8 @@
         "g": "6150c52ec6fe7e34",
         "name": "",
         "links": [],
-        "x": 295,
-        "y": 1200,
+        "x": 255,
+        "y": 1140,
         "wires": [
             [
                 "36ea3b67c66cd355",
@@ -27745,6 +27750,290 @@
             [
                 "f3bd7cc286241bf3"
             ]
+        ]
+    },
+    {
+        "id": "a80cad1f0cf96591",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 1600,
+        "wires": [
+            [
+                "5da02af61c9d5326"
+            ]
+        ]
+    },
+    {
+        "id": "8695a12d73bb7884",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=http://stream.vinylhits.dk/vinylmp3",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 750,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "343dac8fb5437975",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1290,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c890612f5548c0b",
+        "type": "ui_slider",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "label": "Radio",
+        "tooltip": "",
+        "group": "117cda2a.43e596",
+        "order": 26,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "250",
+        "step": 1,
+        "x": 410,
+        "y": 1720,
+        "wires": [
+            [
+                "ab948a4205be96be",
+                "6a110378ca0a323b"
+            ]
+        ]
+    },
+    {
+        "id": "ab948a4205be96be",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1700,
+        "wires": [
+            [
+                "5573d64c86b78991"
+            ]
+        ]
+    },
+    {
+        "id": "5573d64c86b78991",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=100",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1720,
+        "wires": [
+            [
+                "df77329f3f35ce83"
+            ]
+        ]
+    },
+    {
+        "id": "8de04b5ff64663a1",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "df77329f3f35ce83",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1070,
+        "y": 1700,
+        "wires": [
+            [
+                "343dac8fb5437975"
+            ]
+        ]
+    },
+    {
+        "id": "6a110378ca0a323b",
+        "type": "switch",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 590,
+        "y": 1660,
+        "wires": [
+            [],
+            [
+                "8695a12d73bb7884"
+            ]
+        ]
+    },
+    {
+        "id": "290de3e57a55714a",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 1720,
+        "wires": [
+            [
+                "9c890612f5548c0b"
+            ]
+        ]
+    },
+    {
+        "id": "5da02af61c9d5326",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "76a42ecf9d41a454",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 1680,
+        "wires": [
+            []
         ]
     },
     {
