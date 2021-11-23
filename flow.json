@@ -11532,7 +11532,7 @@
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
-        "joiner": "\\n",
+        "joiner": ",",
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
@@ -11624,7 +11624,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" },",
+                "to": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }",
                 "tot": "str"
             }
         ],
