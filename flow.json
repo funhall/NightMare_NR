@@ -12052,6 +12052,13 @@
                 "pt": "flow",
                 "to": "\"lærke,10:25\"",
                 "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "highscore",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -12059,7 +12066,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2020,
+        "x": 2010,
         "y": 2000,
         "wires": [
             [
