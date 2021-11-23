@@ -11420,8 +11420,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[     {         \"Name\": \"Kazuhito Yokoi\",         \"Age\": \"35\",         \"Favourite Color\": \"red\",         \"Date Of Birth\": \"12/09/1983\"     },     {         \"Name\": \"Oli Bob\",         \"Age\": \"12\",         \"Favourite Color\": \"cyan\",         \"Date Of Birth\": \"12/08/2017\"     } ]",
-        "payloadType": "json",
+        "payload": "ole : 35",
+        "payloadType": "str",
         "x": 1930,
         "y": 1720,
         "wires": [
@@ -11451,8 +11451,8 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"35\" },{\"Navn\": \"Oli Bob\",\"Tid\": \"12\"}]",
         "payloadType": "json",
-        "x": 2090,
-        "y": 1620,
+        "x": 2050,
+        "y": 1600,
         "wires": [
             [
                 "3e016537a79a1af4"
@@ -11492,8 +11492,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 2350,
-        "y": 1620,
+        "x": 2430,
+        "y": 1580,
         "wires": []
     },
     {
@@ -11504,10 +11504,12 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 2390,
-        "y": 1780,
+        "x": 2190,
+        "y": 1700,
         "wires": [
-            []
+            [
+                "3e016537a79a1af4"
+            ]
         ]
     },
     {
