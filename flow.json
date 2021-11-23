@@ -11549,7 +11549,7 @@
         "y": 1640,
         "wires": [
             [
-                "8f89d29d99edf874"
+                "4bcebce27d8ca056"
             ]
         ]
     },
@@ -11613,6 +11613,22 @@
         "wires": [
             [
                 "02a27c66b85348f3"
+            ]
+        ]
+    },
+    {
+        "id": "4bcebce27d8ca056",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 2450,
+        "y": 1720,
+        "wires": [
+            [
+                "8f89d29d99edf874"
             ]
         ]
     },
