@@ -11045,11 +11045,11 @@
         "type": "firebase out",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "{{msg.name}}",
+        "ref": "Nighmare navn",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2780,
-        "y": 1840,
+        "x": 2760,
+        "y": 1780,
         "wires": [
             []
         ]
@@ -11150,13 +11150,13 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1720,
-        "y": 1560,
+        "x": 1760,
+        "y": 1600,
         "wires": [
             [
                 "d44be0e2f07cdf26",
                 "b9e077410fcf5de5",
-                "8f89d29d99edf874"
+                "e5401a0bc2c90518"
             ]
         ]
     },
@@ -11404,7 +11404,7 @@
         "label": "High Score",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 2130,
+        "x": 2270,
         "y": 1820,
         "wires": []
     },
@@ -11416,11 +11416,12 @@
         "ref": "Nighmare navn/Game tider",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1870,
+        "x": 1790,
         "y": 1820,
         "wires": [
             [
-                "b900bb35164133db"
+                "a591d7e3562b814d",
+                "e5401a0bc2c90518"
             ]
         ]
     },
@@ -11528,6 +11529,61 @@
         "x": 2750,
         "y": 1500,
         "wires": []
+    },
+    {
+        "id": "a591d7e3562b814d",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "highscore",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2030,
+        "y": 1820,
+        "wires": [
+            [
+                "b900bb35164133db"
+            ]
+        ]
+    },
+    {
+        "id": "e5401a0bc2c90518",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": " : ",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2270,
+        "y": 1700,
+        "wires": [
+            [
+                "8f89d29d99edf874"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
