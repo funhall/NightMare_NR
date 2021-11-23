@@ -11954,7 +11954,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "concat",
-        "func": "let pay = msg.payload;\nreturn {\"value\" : [...pay[0], ...pay[1], ...pay[2], ...pay[3], ...pay[4]]};",
+        "func": "let pay = msg.payload;\nreturn {\"value\" : [...pay[0], ...pay[1]]};",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
