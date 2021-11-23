@@ -11494,8 +11494,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 2190,
-        "y": 1880,
+        "x": 2210,
+        "y": 1860,
         "wires": []
     },
     {
@@ -11532,7 +11532,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "string",
+        "build": "object",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
