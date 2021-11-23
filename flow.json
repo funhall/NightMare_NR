@@ -11912,7 +11912,7 @@
         "type": "join",
         "z": "33e76285.1cd03e",
         "name": "",
-        "mode": "custom",
+        "mode": "auto",
         "build": "object",
         "property": "payload",
         "propertyType": "msg",
