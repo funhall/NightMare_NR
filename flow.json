@@ -11692,7 +11692,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Navn",
-        "payload": "lene",
+        "payload": "martin",
         "payloadType": "str",
         "x": 1930,
         "y": 2700,
