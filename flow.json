@@ -11479,7 +11479,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2050,
+        "x": 2010,
         "y": 1780,
         "wires": [
             [
@@ -11942,6 +11942,63 @@
         "x": 2240,
         "y": 1920,
         "wires": []
+    },
+    {
+        "id": "22db4a0f3d9138e9",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\" }]",
+        "payloadType": "str",
+        "x": 1650,
+        "y": 1620,
+        "wires": [
+            [
+                "f6792c1ead82bb96"
+            ]
+        ]
+    },
+    {
+        "id": "f6792c1ead82bb96",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "highscore",
+                "pt": "flow",
+                "to": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1930,
+        "y": 1620,
+        "wires": [
+            [
+                "58e5643332ef76f5"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
