@@ -27135,7 +27135,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://192.168.1.32:1880/startvideo?video=start",
+        "url": "http://192.168.1.60:1880/startvideo?video=start",
         "tls": "",
         "persist": false,
         "proxy": "",
