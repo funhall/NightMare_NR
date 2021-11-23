@@ -11915,7 +11915,7 @@
         "wires": [
             [
                 "b62790d3e57eaa91",
-                "8f89d29d99edf874"
+                "76755c790c0729cd"
             ]
         ]
     },
@@ -12207,8 +12207,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2310,
-        "y": 2560,
+        "x": 2510,
+        "y": 2600,
         "wires": []
     },
     {
@@ -12333,7 +12333,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "object",
+        "build": "array",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -12347,10 +12347,12 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 3250,
-        "y": 2860,
+        "x": 2370,
+        "y": 2540,
         "wires": [
-            []
+            [
+                "8f89d29d99edf874"
+            ]
         ]
     },
     {
