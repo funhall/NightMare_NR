@@ -11624,7 +11624,7 @@
         "payload": "12:22",
         "payloadType": "str",
         "x": 1970,
-        "y": 3020,
+        "y": 3120,
         "wires": [
             [
                 "78df0264f1c44820"
@@ -11912,7 +11912,7 @@
         "to": "",
         "reg": false,
         "x": 2200,
-        "y": 3020,
+        "y": 3120,
         "wires": [
             [
                 "b62790d3e57eaa91"
@@ -11954,7 +11954,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "concat",
-        "func": "let pay = msg.payload;\nreturn {\"value\" : [...pay[0], ...pay[1], ...pay[2]]};",
+        "func": "let pay = msg.payload;\nreturn {\"value\" : [...pay[0], ...pay[1]]};",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12271,7 +12271,7 @@
         "tostatus": false,
         "complete": "false",
         "x": 2370,
-        "y": 3020,
+        "y": 3120,
         "wires": []
     },
     {
