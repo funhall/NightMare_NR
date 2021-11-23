@@ -11610,7 +11610,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "wwww",
+                "to": "erer",
                 "tot": "str"
             }
         ],
@@ -11804,7 +11804,7 @@
         "id": "831d27635fe6e8e9",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Title navn",
+        "name": "Title tid",
         "rules": [
             {
                 "t": "set",
@@ -12115,7 +12115,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 2170,
-        "y": 2520,
+        "y": 2460,
         "wires": [
             [
                 "20cdd9a65b6ee9be",
