@@ -11623,8 +11623,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }",
-                "tot": "str"
+                "to": "highscore",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -11650,7 +11650,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"Navn\": \"Martin\",\"Tid\": \"41:20\" }]",
+                "to": "{\"Navn\": \"Marererern\",\"Tid\": \"41:20\" }]",
                 "tot": "str"
             }
         ],
