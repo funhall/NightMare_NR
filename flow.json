@@ -11469,7 +11469,7 @@
         "columns": [
             {
                 "field": "High score list",
-                "title": "nummer 1",
+                "title": "Navn",
                 "width": "100",
                 "align": "left",
                 "formatter": "plaintext",
@@ -11479,7 +11479,7 @@
             },
             {
                 "field": "",
-                "title": "Nr2",
+                "title": "Tid",
                 "width": "100",
                 "align": "left",
                 "formatter": "plaintext",
