@@ -11718,7 +11718,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2010,
+        "x": 1980,
         "y": 1940,
         "wires": [
             [
@@ -12065,7 +12065,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2010,
+        "x": 1980,
         "y": 2000,
         "wires": [
             [
@@ -12112,7 +12112,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "property": "payload",
-        "action": "",
+        "action": "obj",
         "pretty": false,
         "x": 2170,
         "y": 2000,
