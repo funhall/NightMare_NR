@@ -11852,13 +11852,6 @@
                 "pt": "msg",
                 "to": "Tid",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "30:30",
-                "tot": "str"
             }
         ],
         "action": "",
