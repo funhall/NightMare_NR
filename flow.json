@@ -11565,6 +11565,13 @@
                 "pt": "msg",
                 "to": "highscore",
                 "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
             }
         ],
         "action": "",
