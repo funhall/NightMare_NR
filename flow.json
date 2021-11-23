@@ -12070,7 +12070,7 @@
         "y": 2000,
         "wires": [
             [
-                "334831c5d277fc4e"
+                "ea45c3688d16f5de"
             ]
         ]
     },
@@ -12086,7 +12086,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2270,
+        "x": 2390,
         "y": 2000,
         "wires": []
     },
@@ -12103,6 +12103,22 @@
         "wires": [
             [
                 "70a8689abb773ccd"
+            ]
+        ]
+    },
+    {
+        "id": "ea45c3688d16f5de",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 2210,
+        "y": 2000,
+        "wires": [
+            [
+                "334831c5d277fc4e"
             ]
         ]
     },
