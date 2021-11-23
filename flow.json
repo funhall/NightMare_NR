@@ -11630,7 +11630,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2070,
+        "x": 1990,
         "y": 2720,
         "wires": [
             [
@@ -11649,8 +11649,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 1930,
-        "y": 2620,
+        "x": 2430,
+        "y": 2700,
         "wires": []
     },
     {
@@ -11674,7 +11674,7 @@
         "topic": "Navn",
         "payload": "hhhhh",
         "payloadType": "str",
-        "x": 1890,
+        "x": 1810,
         "y": 2700,
         "wires": [
             [
@@ -11703,7 +11703,7 @@
         "topic": "Tid",
         "payload": "60:55",
         "payloadType": "str",
-        "x": 1890,
+        "x": 1810,
         "y": 2740,
         "wires": [
             [
@@ -11853,8 +11853,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2530,
-        "y": 2680,
+        "x": 2830,
+        "y": 2820,
         "wires": [
             [
                 "8f89d29d99edf874",
@@ -11926,6 +11926,51 @@
             [
                 "fdc0324e81619720"
             ]
+        ]
+    },
+    {
+        "id": "9844bea2c8f7c10d",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2190,
+        "y": 2640,
+        "wires": [
+            [
+                "9d44bd77ed42b861"
+            ]
+        ]
+    },
+    {
+        "id": "9d44bd77ed42b861",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "concat",
+        "func": "let pay = msg.payload;\nreturn {\"value\" : [...pay[0], ...pay[1], ...pay[2], ...pay[3], ...pay[4]]};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2320,
+        "y": 2640,
+        "wires": [
+            []
         ]
     },
     {
@@ -44610,6 +44655,9 @@
         "func": "let pay = msg.payload;\nreturn {\"value\" : [...pay[0], ...pay[1], ...pay[2], ...pay[3], ...pay[4]]};",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 690,
         "y": 280,
         "wires": [
