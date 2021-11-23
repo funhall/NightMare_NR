@@ -11599,6 +11599,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
+        "payload": "[\"Item1\",\"Item2\",\"Item3\"]",
         "payloadType": "str",
         "x": 1630,
         "y": 1660,
