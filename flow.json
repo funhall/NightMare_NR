@@ -11149,8 +11149,8 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 3080,
-        "y": 2800,
+        "x": 2540,
+        "y": 2420,
         "wires": [
             []
         ]
@@ -11371,7 +11371,8 @@
         "y": 2420,
         "wires": [
             [
-                "3e016537a79a1af4"
+                "3e016537a79a1af4",
+                "939e11f8998c212e"
             ]
         ]
     },
@@ -11485,7 +11486,7 @@
         "outputs": 1,
         "cts": true,
         "x": 2150,
-        "y": 2420,
+        "y": 2520,
         "wires": [
             []
         ]
@@ -11539,8 +11540,8 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
         "payloadType": "json",
-        "x": 2910,
-        "y": 2560,
+        "x": 2490,
+        "y": 2360,
         "wires": [
             [
                 "8f89d29d99edf874"
@@ -11652,7 +11653,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 2030,
-        "y": 2720,
+        "y": 2340,
         "wires": [
             [
                 "939e11f8998c212e",
@@ -11696,7 +11697,7 @@
         "payload": "ole",
         "payloadType": "str",
         "x": 1850,
-        "y": 2700,
+        "y": 2320,
         "wires": [
             [
                 "47b769c5.cb0e28"
@@ -11725,7 +11726,7 @@
         "payload": "60:55",
         "payloadType": "str",
         "x": 1850,
-        "y": 2740,
+        "y": 2360,
         "wires": [
             [
                 "47b769c5.cb0e28"
@@ -11860,8 +11861,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 2830,
-        "y": 2380,
+        "x": 3030,
+        "y": 2460,
         "wires": [
             []
         ]
@@ -11885,8 +11886,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2590,
-        "y": 2680,
+        "x": 2270,
+        "y": 2440,
         "wires": [
             []
         ]
@@ -12127,8 +12128,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2810,
-        "y": 2760,
+        "x": 2850,
+        "y": 2840,
         "wires": []
     },
     {
@@ -12139,8 +12140,8 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 2030,
-        "y": 2500,
+        "x": 2190,
+        "y": 3000,
         "wires": [
             []
         ]
@@ -12170,8 +12171,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2050,
-        "y": 2620,
+        "x": 2190,
+        "y": 2300,
         "wires": []
     },
     {
@@ -12195,8 +12196,8 @@
         "topic": "Navn",
         "payload": "q",
         "payloadType": "str",
-        "x": 1870,
-        "y": 2840,
+        "x": 1810,
+        "y": 3020,
         "wires": [
             [
                 "4cbec79dc0f091e1"
@@ -12222,11 +12223,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2100,
-        "y": 2840,
+        "x": 2020,
+        "y": 3020,
         "wires": [
             [
-                "939e11f8998c212e",
                 "7fc4619310be3688"
             ]
         ]
@@ -12303,8 +12303,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2430,
-        "y": 2760,
+        "x": 2190,
+        "y": 2360,
         "wires": [
             [
                 "bb098b10833b5da5",
