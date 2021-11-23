@@ -2539,8 +2539,8 @@
     {
         "id": "1a7f6b0.0560695",
         "type": "ui_group",
-        "name": "Performance",
-        "tab": "",
+        "name": "High score",
+        "tab": "82fd466d.f6c968",
         "order": 1,
         "disp": true,
         "width": "6",
@@ -11360,6 +11360,22 @@
         ],
         "x": 615,
         "y": 3260,
+        "wires": []
+    },
+    {
+        "id": "b900bb35164133db",
+        "type": "ui_text",
+        "z": "33e76285.1cd03e",
+        "group": "1a7f6b0.0560695",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "High Score",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2300,
+        "y": 1760,
         "wires": []
     },
     {
