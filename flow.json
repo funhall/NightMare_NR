@@ -11456,7 +11456,7 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 2810,
+        "x": 2350,
         "y": 2440,
         "wires": [
             []
@@ -11538,8 +11538,8 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
         "payloadType": "json",
-        "x": 2950,
-        "y": 1920,
+        "x": 2910,
+        "y": 2560,
         "wires": [
             [
                 "8f89d29d99edf874"
@@ -11622,12 +11622,10 @@
         "topic": "navn",
         "payload": "12:22",
         "payloadType": "str",
-        "x": 1910,
-        "y": 2660,
+        "x": 1870,
+        "y": 2840,
         "wires": [
-            [
-                "47b769c5.cb0e28"
-            ]
+            []
         ]
     },
     {
@@ -11650,8 +11648,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2330,
-        "y": 2720,
+        "x": 2130,
+        "y": 2700,
         "wires": [
             [
                 "f9afb265.b11b7",
@@ -11854,22 +11852,6 @@
         ]
     },
     {
-        "id": "16a955bfd8f15514",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 2530,
-        "y": 2380,
-        "wires": [
-            [
-                "3e016537a79a1af4"
-            ]
-        ]
-    },
-    {
         "id": "fdc0324e81619720",
         "type": "join",
         "z": "33e76285.1cd03e",
@@ -11895,6 +11877,20 @@
             [
                 "8f89d29d99edf874"
             ]
+        ]
+    },
+    {
+        "id": "5ef41d7c683eb55a",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 2830,
+        "y": 2380,
+        "wires": [
+            []
         ]
     },
     {
