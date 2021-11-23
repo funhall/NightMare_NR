@@ -11045,10 +11045,10 @@
         "type": "firebase out",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "Nighmare navn/{{msg.name}}",
+        "ref": "{msg.name}}",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2820,
+        "x": 2770,
         "y": 1840,
         "wires": [
             []
