@@ -11675,7 +11675,23 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1750,
+        "x": 1770,
+        "y": 1700,
+        "wires": [
+            [
+                "1d3bbda15d7d01eb"
+            ]
+        ]
+    },
+    {
+        "id": "1d3bbda15d7d01eb",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1970,
         "y": 1700,
         "wires": [
             [
