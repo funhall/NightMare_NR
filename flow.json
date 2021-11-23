@@ -11425,7 +11425,7 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\" }]",
         "payloadType": "str",
-        "x": 1690,
+        "x": 1470,
         "y": 1660,
         "wires": [
             [
@@ -11579,7 +11579,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1900,
+        "x": 1640,
         "y": 1660,
         "wires": [
             []
@@ -11808,7 +11808,7 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
-        "count": "3",
+        "count": "2",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
@@ -11875,8 +11875,8 @@
         "topic": "",
         "payload": "lærke",
         "payloadType": "str",
-        "x": 2210,
-        "y": 1700,
+        "x": 2290,
+        "y": 1780,
         "wires": [
             [
                 "acf70433a1ce3ac6"
@@ -11905,8 +11905,8 @@
         "topic": "",
         "payload": "martin",
         "payloadType": "str",
-        "x": 2210,
-        "y": 1740,
+        "x": 2290,
+        "y": 1820,
         "wires": [
             [
                 "acf70433a1ce3ac6"
@@ -11980,7 +11980,7 @@
         "y": 1640,
         "wires": [
             [
-                "58e5643332ef76f5"
+                "acf70433a1ce3ac6"
             ]
         ]
     },
