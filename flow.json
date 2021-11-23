@@ -11916,7 +11916,7 @@
         "y": 3120,
         "wires": [
             [
-                "38acb54c3a98aacf"
+                "b62790d3e57eaa91"
             ]
         ]
     },
@@ -12242,8 +12242,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 3270,
-        "y": 3080,
+        "x": 2430,
+        "y": 3120,
         "wires": []
     },
     {
@@ -12314,25 +12314,6 @@
         ]
     },
     {
-        "id": "8f47715b5e913347",
-        "type": "split",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "splt": "[",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 2670,
-        "y": 3120,
-        "wires": [
-            [
-                "2e8998fa8a812fd8"
-            ]
-        ]
-    },
-    {
         "id": "5934d5d0ca1ea64a",
         "type": "debug",
         "z": "33e76285.1cd03e",
@@ -12361,69 +12342,6 @@
         "wires": [
             [
                 "5934d5d0ca1ea64a"
-            ]
-        ]
-    },
-    {
-        "id": "5d5c1a4724c4fc21",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "str",
-        "pretty": false,
-        "x": 2510,
-        "y": 3120,
-        "wires": [
-            [
-                "8f47715b5e913347"
-            ]
-        ]
-    },
-    {
-        "id": "38acb54c3a98aacf",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2370,
-        "y": 3120,
-        "wires": [
-            [
-                "5d5c1a4724c4fc21"
-            ]
-        ]
-    },
-    {
-        "id": "2e8998fa8a812fd8",
-        "type": "split",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "splt": "]",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "trest",
-        "x": 2810,
-        "y": 3120,
-        "wires": [
-            [
-                "9f01379ab3522a20"
             ]
         ]
     },
