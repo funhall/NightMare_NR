@@ -11449,7 +11449,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\" ,\"Navn\": \"Martin\",\"Tid\": \"30:40\" }]",
+        "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\"} ,{\"Navn\": \"Martin\",\"Tid\": \"30:40\" }]",
         "payloadType": "json",
         "x": 1910,
         "y": 1520,
