@@ -11343,7 +11343,7 @@
         "y": 2420,
         "wires": [
             [
-                "baeae52a3c6c5b4c"
+                "3e016537a79a1af4"
             ]
         ]
     },
@@ -11456,37 +11456,10 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 2350,
-        "y": 2440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "baeae52a3c6c5b4c",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "highscore",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2130,
+        "x": 2090,
         "y": 2420,
         "wires": [
-            [
-                "3e016537a79a1af4"
-            ]
+            []
         ]
     },
     {
