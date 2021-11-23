@@ -11609,7 +11609,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "60:10",
+        "payload": "60:15",
         "payloadType": "str",
         "x": 1770,
         "y": 2120,
@@ -11638,7 +11638,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "lene",
+                "to": "olfert",
                 "tot": "str"
             }
         ],
