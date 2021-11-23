@@ -11902,7 +11902,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "\"martin\",\"30:30\"",
+        "payload": "martin\",\"30:30",
         "payloadType": "str",
         "x": 2230,
         "y": 1840,
