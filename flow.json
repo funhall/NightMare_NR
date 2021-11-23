@@ -11548,7 +11548,7 @@
         "y": 1420,
         "wires": [
             [
-                "c1eb7a0f6d3128a7"
+                "9e7604059bb3f1ea"
             ]
         ]
     },
@@ -11670,26 +11670,14 @@
         ]
     },
     {
-        "id": "c1eb7a0f6d3128a7",
-        "type": "join",
+        "id": "9e7604059bb3f1ea",
+        "type": "json",
         "z": "33e76285.1cd03e",
         "name": "",
-        "mode": "custom",
-        "build": "string",
         "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2560,
+        "action": "",
+        "pretty": false,
+        "x": 2580,
         "y": 1440,
         "wires": [
             [
