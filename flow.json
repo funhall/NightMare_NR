@@ -11045,10 +11045,10 @@
         "type": "firebase out",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "{msg.name}}",
+        "ref": "{{msg.name}}",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2770,
+        "x": 2780,
         "y": 1840,
         "wires": [
             []
