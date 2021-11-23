@@ -11636,7 +11636,8 @@
             [
                 "fdc0324e81619720",
                 "9844bea2c8f7c10d",
-                "e5d8b6e880615ee6"
+                "e5d8b6e880615ee6",
+                "ca46fe4f46018fa5"
             ]
         ]
     },
@@ -12172,13 +12173,29 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 2070,
-        "y": 2640,
+        "x": 2050,
+        "y": 2620,
         "wires": [
             [
                 "f9afb265.b11b7"
             ]
         ]
+    },
+    {
+        "id": "ca46fe4f46018fa5",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2220,
+        "y": 2680,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
