@@ -12228,7 +12228,7 @@
         "wires": [
             [
                 "939e11f8998c212e",
-                "5934d5d0ca1ea64a"
+                "7fc4619310be3688"
             ]
         ]
     },
@@ -12342,9 +12342,25 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2340,
+        "x": 2570,
         "y": 2900,
         "wires": []
+    },
+    {
+        "id": "7fc4619310be3688",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 2310,
+        "y": 2860,
+        "wires": [
+            [
+                "5934d5d0ca1ea64a"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
