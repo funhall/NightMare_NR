@@ -11983,41 +11983,13 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "property": "payload",
-        "action": "obj",
+        "action": "str",
         "pretty": false,
-        "x": 2870,
+        "x": 2850,
         "y": 2200,
         "wires": [
             [
-                "70a8689abb773ccd",
-                "eeda0f5a2534ddff"
-            ]
-        ]
-    },
-    {
-        "id": "eeda0f5a2534ddff",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2960,
-        "y": 2100,
-        "wires": [
-            [
-                "3e016537a79a1af4"
+                "70a8689abb773ccd"
             ]
         ]
     },
