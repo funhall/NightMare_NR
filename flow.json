@@ -11605,6 +11605,22 @@
         "y": 1660,
         "wires": [
             [
+                "e0f34a25be156511"
+            ]
+        ]
+    },
+    {
+        "id": "e0f34a25be156511",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1960,
+        "y": 1660,
+        "wires": [
+            [
                 "54885517ca6a9dc8"
             ]
         ]
