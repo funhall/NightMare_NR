@@ -11625,8 +11625,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" },{\"Navn\": \"Martin\",\"Tid\": \"41:20\" }",
-                "tot": "str"
+                "to": "highscore",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -11652,7 +11652,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"Navn\": \"Marererern\",\"Tid\": \"41:20\" }]",
+                "to": "{\"Navn\": \"lærke\",\"Tid\": \"41:20\" }]",
                 "tot": "str"
             }
         ],
@@ -11726,8 +11726,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2280,
-        "y": 1960,
+        "x": 2270,
+        "y": 1940,
         "wires": []
     },
     {
