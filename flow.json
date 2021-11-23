@@ -11339,8 +11339,8 @@
         "ref": "Nighmare navn/",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1760,
-        "y": 1820,
+        "x": 1640,
+        "y": 1840,
         "wires": [
             [
                 "baeae52a3c6c5b4c"
@@ -11424,7 +11424,7 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\" }]",
         "payloadType": "str",
-        "x": 1830,
+        "x": 1690,
         "y": 1660,
         "wires": [
             [
@@ -11572,7 +11572,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2030,
+        "x": 1980,
         "y": 1660,
         "wires": [
             [
@@ -11601,8 +11601,8 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
         "payloadType": "json",
-        "x": 1810,
-        "y": 1600,
+        "x": 1690,
+        "y": 1580,
         "wires": [
             [
                 "02a27c66b85348f3"
