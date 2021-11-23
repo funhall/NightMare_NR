@@ -11634,9 +11634,9 @@
         "y": 2720,
         "wires": [
             [
-                "f9afb265.b11b7",
                 "fdc0324e81619720",
-                "9844bea2c8f7c10d"
+                "9844bea2c8f7c10d",
+                "e5d8b6e880615ee6"
             ]
         ]
     },
@@ -11650,8 +11650,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 1990,
-        "y": 2620,
+        "x": 2190,
+        "y": 2580,
         "wires": []
     },
     {
@@ -11949,7 +11949,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2150,
+        "x": 2170,
         "y": 2820,
         "wires": [
             [
@@ -11968,7 +11968,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2270,
+        "x": 2330,
         "y": 2820,
         "wires": [
             [
@@ -12163,6 +12163,22 @@
         "x": 2480,
         "y": 2820,
         "wires": []
+    },
+    {
+        "id": "e5d8b6e880615ee6",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 2070,
+        "y": 2640,
+        "wires": [
+            [
+                "f9afb265.b11b7"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -44700,6 +44716,15 @@
         "type": "inject",
         "z": "9709bc5b.dc8c9",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
