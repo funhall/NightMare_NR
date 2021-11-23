@@ -11048,8 +11048,8 @@
         "ref": "Nighmare navn/{{msg.name}}",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2840,
-        "y": 1580,
+        "x": 2820,
+        "y": 1840,
         "wires": [
             []
         ]
@@ -11136,9 +11136,7 @@
         "name": "",
         "props": [
             {
-                "p": "time",
-                "v": "",
-                "vt": "date"
+                "p": "payload"
             },
             {
                 "p": "name",
@@ -11151,7 +11149,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1710,
+        "payloadType": "date",
+        "x": 1720,
         "y": 1560,
         "wires": [
             [
@@ -11185,7 +11184,6 @@
         "y": 1540,
         "wires": [
             [
-                "8f89d29d99edf874",
                 "94cb5627992e999d"
             ]
         ]
