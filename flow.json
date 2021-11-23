@@ -12138,7 +12138,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 2390,
-        "y": 2120,
+        "y": 2240,
         "wires": [
             [
                 "1dee1297c9b52aef",
@@ -12194,7 +12194,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1960,
+        "x": 1980,
         "y": 2140,
         "wires": [
             [
@@ -12212,7 +12212,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "\"10:29",
+                "to": "\"Navn",
                 "tot": "str"
             }
         ],
@@ -12253,7 +12253,8 @@
         "y": 2120,
         "wires": [
             [
-                "ee0cdbf2d74fd707"
+                "ee0cdbf2d74fd707",
+                "4c8eabff0ca5b697"
             ]
         ]
     },
