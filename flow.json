@@ -11634,7 +11634,6 @@
         "y": 2720,
         "wires": [
             [
-                "fdc0324e81619720",
                 "9844bea2c8f7c10d",
                 "ca46fe4f46018fa5"
             ]
@@ -11650,8 +11649,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2310,
-        "y": 2900,
+        "x": 2150,
+        "y": 3000,
         "wires": []
     },
     {
@@ -11835,35 +11834,6 @@
         ]
     },
     {
-        "id": "fdc0324e81619720",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": ",",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 3090,
-        "y": 2820,
-        "wires": [
-            [
-                "8f89d29d99edf874",
-                "0d099896abb6fecc"
-            ]
-        ]
-    },
-    {
         "id": "5ef41d7c683eb55a",
         "type": "json",
         "z": "33e76285.1cd03e",
@@ -11924,9 +11894,7 @@
         "x": 2780,
         "y": 3120,
         "wires": [
-            [
-                "fdc0324e81619720"
-            ]
+            []
         ]
     },
     {
@@ -11954,7 +11922,8 @@
         "wires": [
             [
                 "9d44bd77ed42b861",
-                "758716588e736702"
+                "758716588e736702",
+                "8f89d29d99edf874"
             ]
         ]
     },
@@ -11969,7 +11938,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2590,
+        "x": 2430,
         "y": 2820,
         "wires": [
             [
@@ -12235,8 +12204,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2310,
-        "y": 2780,
+        "x": 2190,
+        "y": 2760,
         "wires": []
     },
     {
