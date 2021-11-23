@@ -11672,7 +11672,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "topic",
                 "pt": "msg",
                 "to": "Navn",
                 "tot": "str"
@@ -11842,7 +11842,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "topic",
                 "pt": "msg",
                 "to": "Tid",
                 "tot": "str"
@@ -11931,8 +11931,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1990,
-        "y": 2140,
+        "x": 1950,
+        "y": 2120,
         "wires": [
             [
                 "314dd0da7ef1efcb"
@@ -11998,6 +11998,15 @@
         "type": "inject",
         "z": "33e76285.1cd03e",
         "name": "temperature",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
