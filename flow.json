@@ -2417,8 +2417,6 @@
             "a80cad1f0cf96591",
             "8695a12d73bb7884",
             "343dac8fb5437975",
-            "9c890612f5548c0b",
-            "ab948a4205be96be",
             "5573d64c86b78991",
             "8de04b5ff64663a1",
             "df77329f3f35ce83",
@@ -27778,7 +27776,7 @@
         "y": 1600,
         "wires": [
             [
-                "5da02af61c9d5326"
+                "5573d64c86b78991"
             ]
         ]
     },
@@ -27821,62 +27819,6 @@
         "y": 1720,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "9c890612f5548c0b",
-        "type": "ui_slider",
-        "z": "42a18184186a4f43",
-        "g": "76a42ecf9d41a454",
-        "name": "",
-        "label": "Radio",
-        "tooltip": "",
-        "group": "117cda2a.43e596",
-        "order": 26,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "250",
-        "step": 1,
-        "x": 410,
-        "y": 1720,
-        "wires": [
-            [
-                "ab948a4205be96be",
-                "6a110378ca0a323b"
-            ]
-        ]
-    },
-    {
-        "id": "ab948a4205be96be",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "76a42ecf9d41a454",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "value",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 1700,
-        "wires": [
-            [
-                "5573d64c86b78991"
-            ]
         ]
     },
     {
@@ -28005,9 +27947,7 @@
         "x": 260,
         "y": 1720,
         "wires": [
-            [
-                "9c890612f5548c0b"
-            ]
+            []
         ]
     },
     {
