@@ -11149,8 +11149,8 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2560,
-        "y": 2380,
+        "x": 2800,
+        "y": 2340,
         "wires": [
             []
         ]
@@ -11656,7 +11656,7 @@
         "wires": [
             [
                 "758716588e736702",
-                "dc447e03c395c2ec"
+                "7bd2efa15de13b27"
             ]
         ]
     },
@@ -12107,8 +12107,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2570,
-        "y": 2440,
+        "x": 2490,
+        "y": 2400,
         "wires": []
     },
     {
@@ -12206,7 +12206,7 @@
         "y": 2460,
         "wires": [
             [
-                "dc447e03c395c2ec"
+                "7bd2efa15de13b27"
             ]
         ]
     },
@@ -12248,20 +12248,6 @@
         "y": 3200,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "dc447e03c395c2ec",
-        "type": "merge",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "timeout": "2",
-        "x": 2290,
-        "y": 2400,
-        "wires": [
-            [
-                "bb098b10833b5da5"
-            ]
         ]
     },
     {
@@ -12312,6 +12298,46 @@
         "y": 2660,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "57146ffdb8015f03",
+        "type": "merge",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "timeout": "2",
+        "x": 3250,
+        "y": 2720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7bd2efa15de13b27",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ",",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2250,
+        "y": 2400,
+        "wires": [
+            [
+                "bb098b10833b5da5"
+            ]
         ]
     },
     {
