@@ -11585,7 +11585,8 @@
                 "314dd0da7ef1efcb",
                 "831d27635fe6e8e9",
                 "dcc13e825599f24e",
-                "3d08a89d8e013d75"
+                "a61473013d1e2f2c",
+                "3fb55a625d2dbde1"
             ]
         ]
     },
@@ -11998,7 +11999,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "lene",
+                "to": "tyyu",
                 "tot": "str"
             }
         ],
@@ -12097,7 +12098,7 @@
         "to": "",
         "reg": false,
         "x": 2020,
-        "y": 2200,
+        "y": 2480,
         "wires": [
             [
                 "3f7cd2c5a943cf4f"
@@ -12125,11 +12126,9 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 2170,
-        "y": 2180,
+        "y": 2480,
         "wires": [
-            [
-                "20cdd9a65b6ee9be"
-            ]
+            []
         ]
     },
     {
