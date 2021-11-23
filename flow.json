@@ -11470,7 +11470,17 @@
             {
                 "field": "High score list",
                 "title": "nummer 1",
-                "width": "",
+                "width": "5",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Nr2",
+                "width": "10",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
