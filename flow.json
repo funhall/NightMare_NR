@@ -11149,7 +11149,7 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2460,
+        "x": 2560,
         "y": 2380,
         "wires": [
             []
@@ -11367,8 +11367,8 @@
         "ref": "Nighmare navn",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1860,
-        "y": 2440,
+        "x": 1780,
+        "y": 2800,
         "wires": [
             [
                 "3e016537a79a1af4"
@@ -11484,8 +11484,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 2150,
-        "y": 2520,
+        "x": 1950,
+        "y": 2800,
         "wires": [
             []
         ]
@@ -11655,8 +11655,8 @@
         "y": 2340,
         "wires": [
             [
-                "939e11f8998c212e",
-                "758716588e736702"
+                "758716588e736702",
+                "dc447e03c395c2ec"
             ]
         ]
     },
@@ -11860,8 +11860,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 3030,
-        "y": 2460,
+        "x": 3270,
+        "y": 2480,
         "wires": [
             []
         ]
@@ -11885,8 +11885,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2210,
-        "y": 2440,
+        "x": 2370,
+        "y": 2340,
         "wires": [
             []
         ]
@@ -11914,27 +11914,7 @@
         "y": 3120,
         "wires": [
             [
-                "b62790d3e57eaa91",
-                "df581a3ddfc12801"
-            ]
-        ]
-    },
-    {
-        "id": "9d44bd77ed42b861",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "name": "concat",
-        "func": "let pay = msg.payload;\nreturn {\"value\" : [...pay[0], ...pay[1]]};",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2510,
-        "y": 2800,
-        "wires": [
-            [
-                "bb098b10833b5da5"
+                "b62790d3e57eaa91"
             ]
         ]
     },
@@ -12127,8 +12107,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2850,
-        "y": 2840,
+        "x": 2570,
+        "y": 2440,
         "wires": []
     },
     {
@@ -12139,8 +12119,8 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 2190,
-        "y": 3000,
+        "x": 3270,
+        "y": 2600,
         "wires": [
             []
         ]
@@ -12195,8 +12175,8 @@
         "topic": "Navn",
         "payload": "q",
         "payloadType": "str",
-        "x": 1810,
-        "y": 3020,
+        "x": 1850,
+        "y": 2460,
         "wires": [
             [
                 "4cbec79dc0f091e1"
@@ -12222,11 +12202,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2020,
-        "y": 3020,
+        "x": 2060,
+        "y": 2460,
         "wires": [
             [
-                "7fc4619310be3688"
+                "dc447e03c395c2ec"
             ]
         ]
     },
@@ -12276,39 +12256,11 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "timeout": "2",
-        "x": 2890,
-        "y": 3000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "939e11f8998c212e",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2190,
-        "y": 2360,
+        "x": 2290,
+        "y": 2400,
         "wires": [
             [
-                "bb098b10833b5da5",
-                "0d099896abb6fecc",
-                "8f89d29d99edf874"
+                "bb098b10833b5da5"
             ]
         ]
     },
@@ -12324,25 +12276,9 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2570,
-        "y": 2900,
+        "x": 3190,
+        "y": 2780,
         "wires": []
-    },
-    {
-        "id": "7fc4619310be3688",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "str",
-        "pretty": false,
-        "x": 2310,
-        "y": 2860,
-        "wires": [
-            [
-                "5934d5d0ca1ea64a"
-            ]
-        ]
     },
     {
         "id": "9f01379ab3522a20",
@@ -12357,54 +12293,25 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2710,
-        "y": 3040,
+        "x": 2470,
+        "y": 3000,
         "wires": []
     },
     {
-        "id": "67637527be5e9350",
-        "type": "json",
+        "id": "426a4d445a9eec91",
+        "type": "function",
         "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 2510,
-        "y": 3040,
+        "name": "concat",
+        "func": "let pay = msg.payload;\nreturn {\"value\" : [...pay[0], ...pay[1]]};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3290,
+        "y": 2660,
         "wires": [
-            [
-                "9f01379ab3522a20",
-                "5934d5d0ca1ea64a"
-            ]
-        ]
-    },
-    {
-        "id": "df581a3ddfc12801",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2350,
-        "y": 3060,
-        "wires": [
-            [
-                "67637527be5e9350",
-                "8f89d29d99edf874"
-            ]
+            []
         ]
     },
     {
