@@ -11988,7 +11988,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Navn",
-        "payload": "ole",
+        "payload": "peter",
         "payloadType": "str",
         "x": 1950,
         "y": 3200,
