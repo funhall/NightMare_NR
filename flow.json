@@ -11948,8 +11948,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2260,
-        "y": 1620,
+        "x": 2280,
+        "y": 1600,
         "wires": [
             [
                 "4d4e89ebcb7b1f5f"
@@ -11970,7 +11970,7 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
-        "count": "3",
+        "count": "2",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
