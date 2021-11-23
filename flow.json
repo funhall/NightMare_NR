@@ -11149,8 +11149,8 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2800,
-        "y": 2340,
+        "x": 2860,
+        "y": 2520,
         "wires": [
             []
         ]
@@ -11539,7 +11539,7 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
         "payloadType": "json",
-        "x": 2650,
+        "x": 2990,
         "y": 2240,
         "wires": [
             [
@@ -11914,7 +11914,8 @@
         "y": 2560,
         "wires": [
             [
-                "b62790d3e57eaa91"
+                "b62790d3e57eaa91",
+                "8f89d29d99edf874"
             ]
         ]
     },
