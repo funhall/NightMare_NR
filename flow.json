@@ -12117,12 +12117,14 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "property": "payload",
-        "action": "str",
+        "action": "obj",
         "pretty": false,
-        "x": 3270,
-        "y": 2600,
+        "x": 2230,
+        "y": 2440,
         "wires": [
-            []
+            [
+                "7bd2efa15de13b27"
+            ]
         ]
     },
     {
@@ -12206,7 +12208,7 @@
         "y": 2460,
         "wires": [
             [
-                "a7a0b222c446e8c9"
+                "53d3c377726e4424"
             ]
         ]
     },
@@ -12341,7 +12343,7 @@
         ]
     },
     {
-        "id": "a7a0b222c446e8c9",
+        "id": "76755c790c0729cd",
         "type": "join",
         "z": "33e76285.1cd03e",
         "name": "",
@@ -12360,12 +12362,10 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2230,
-        "y": 2460,
+        "x": 3250,
+        "y": 2860,
         "wires": [
-            [
-                "7bd2efa15de13b27"
-            ]
+            []
         ]
     },
     {
