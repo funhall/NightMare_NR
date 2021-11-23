@@ -11084,11 +11084,12 @@
         "delay": 300,
         "topic": "topic",
         "topicType": "msg",
-        "x": 2100,
+        "x": 2000,
         "y": 1560,
         "wires": [
             [
-                "40814ccb4fdf9d15"
+                "40814ccb4fdf9d15",
+                "54885517ca6a9dc8"
             ]
         ]
     },
@@ -11166,8 +11167,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 2060,
-        "y": 1660,
+        "x": 1880,
+        "y": 1640,
         "wires": [
             [
                 "54885517ca6a9dc8"
