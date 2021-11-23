@@ -28015,7 +28015,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Spejl\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Spejl_Spejl\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
                 "tot": "json"
             }
         ],
