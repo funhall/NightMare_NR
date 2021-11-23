@@ -11548,22 +11548,6 @@
         ]
     },
     {
-        "id": "70a8689abb773ccd",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3090,
-        "y": 2220,
-        "wires": []
-    },
-    {
         "id": "58e5643332ef76f5",
         "type": "debug",
         "z": "33e76285.1cd03e",
@@ -11603,8 +11587,7 @@
         "y": 2240,
         "wires": [
             [
-                "1dee1297c9b52aef",
-                "8f4cfc0552705f78"
+                "1dee1297c9b52aef"
             ]
         ]
     },
@@ -11628,12 +11611,12 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1820,
-        "y": 2160,
+        "x": 1840,
+        "y": 2140,
         "wires": [
             [
-                "94db998415901b36",
-                "9303673c75dcd4c1"
+                "314dd0da7ef1efcb",
+                "4373f3c7f57d5764"
             ]
         ]
     },
@@ -11657,7 +11640,7 @@
         "to": "",
         "reg": false,
         "x": 2130,
-        "y": 2180,
+        "y": 2160,
         "wires": [
             [
                 "356bbeb89b48d904"
@@ -11711,8 +11694,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2390,
-        "y": 2160,
+        "x": 2330,
+        "y": 2140,
         "wires": [
             [
                 "ee0cdbf2d74fd707",
@@ -11752,31 +11735,6 @@
         "x": 2570,
         "y": 2160,
         "wires": []
-    },
-    {
-        "id": "94db998415901b36",
-        "type": "delay",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "200",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1990,
-        "y": 2200,
-        "wires": [
-            [
-                "4373f3c7f57d5764"
-            ]
-        ]
     },
     {
         "id": "c4ef2da83093a66b",
@@ -11915,59 +11873,6 @@
         ]
     },
     {
-        "id": "9303673c75dcd4c1",
-        "type": "delay",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "100",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1950,
-        "y": 2120,
-        "wires": [
-            [
-                "314dd0da7ef1efcb"
-            ]
-        ]
-    },
-    {
-        "id": "8f4cfc0552705f78",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\",\"",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2830,
-        "y": 2120,
-        "wires": [
-            [
-                "62527b26d9a582ee"
-            ]
-        ]
-    },
-    {
         "id": "4044abd23e2a0b76",
         "type": "comment",
         "z": "33e76285.1cd03e",
@@ -11976,22 +11881,6 @@
         "x": 2430,
         "y": 2040,
         "wires": []
-    },
-    {
-        "id": "62527b26d9a582ee",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 2910,
-        "y": 2240,
-        "wires": [
-            [
-                "70a8689abb773ccd"
-            ]
-        ]
     },
     {
         "id": "8ccddb9a.a55f38",
@@ -12014,8 +11903,8 @@
         "topic": "temperature",
         "payload": "10",
         "payloadType": "num",
-        "x": 2130,
-        "y": 2680,
+        "x": 1910,
+        "y": 2660,
         "wires": [
             [
                 "47b769c5.cb0e28"
@@ -12076,8 +11965,8 @@
         "topic": "humidity",
         "payload": "",
         "payloadType": "num",
-        "x": 2120,
-        "y": 2720,
+        "x": 1900,
+        "y": 2700,
         "wires": [
             [
                 "47b769c5.cb0e28"
@@ -12096,8 +11985,8 @@
         "topic": "pressure",
         "payload": "999",
         "payloadType": "num",
-        "x": 2120,
-        "y": 2760,
+        "x": 1900,
+        "y": 2740,
         "wires": [
             [
                 "47b769c5.cb0e28"
