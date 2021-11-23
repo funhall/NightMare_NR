@@ -11604,7 +11604,7 @@
         "wires": [
             [
                 "1dee1297c9b52aef",
-                "ff4012e959ca8bd8"
+                "8f4cfc0552705f78"
             ]
         ]
     },
@@ -11959,28 +11959,11 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2670,
-        "y": 2040,
+        "x": 2770,
+        "y": 2200,
         "wires": [
             [
                 "3e016537a79a1af4"
-            ]
-        ]
-    },
-    {
-        "id": "ff4012e959ca8bd8",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": true,
-        "x": 2770,
-        "y": 2220,
-        "wires": [
-            [
-                "8f4cfc0552705f78",
-                "70a8689abb773ccd"
             ]
         ]
     },
