@@ -11697,7 +11697,7 @@
         "wires": [
             [
                 "f9afb265.b11b7",
-                "3e016537a79a1af4"
+                "16a955bfd8f15514"
             ]
         ]
     },
@@ -12214,6 +12214,22 @@
             [
                 "67ac539c8b4ef42b",
                 "8f89d29d99edf874"
+            ]
+        ]
+    },
+    {
+        "id": "16a955bfd8f15514",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 2470,
+        "y": 2600,
+        "wires": [
+            [
+                "3e016537a79a1af4"
             ]
         ]
     },
