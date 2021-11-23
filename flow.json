@@ -26013,12 +26013,12 @@
         "z": "42a18184186a4f43",
         "name": "Link til UI CONTROL node",
         "links": [
-            "3776cb2add2e07ca",
             "07cfc246052c3c72",
-            "fecd2eca1285d476",
             "18e4191c70ae0a3c",
+            "3776cb2add2e07ca",
+            "84a73a05a0c97f14",
             "c8f61e30db3fc5b4",
-            "84a73a05a0c97f14"
+            "b56072908ff51099"
         ],
         "x": 165,
         "y": 60,
@@ -27975,6 +27975,75 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "9b37082d1f8cf850",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 1520,
+        "wires": [
+            [
+                "104e3e20f1198f36"
+            ]
+        ]
+    },
+    {
+        "id": "104e3e20f1198f36",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "Show video afspiller",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Spejl\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 1520,
+        "wires": [
+            [
+                "b56072908ff51099"
+            ]
+        ]
+    },
+    {
+        "id": "b56072908ff51099",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 655,
+        "y": 1520,
+        "wires": []
     },
     {
         "id": "84e11b56.e27758",
