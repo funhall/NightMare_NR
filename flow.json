@@ -11367,8 +11367,8 @@
         "ref": "Nighmare navn",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1900,
-        "y": 2420,
+        "x": 1860,
+        "y": 2440,
         "wires": [
             [
                 "3e016537a79a1af4",
@@ -11694,7 +11694,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Navn",
-        "payload": "eee",
+        "payload": "rrr",
         "payloadType": "str",
         "x": 1850,
         "y": 2320,
