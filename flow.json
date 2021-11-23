@@ -11602,8 +11602,8 @@
         "topic": "navn",
         "payload": "12:22",
         "payloadType": "str",
-        "x": 2390,
-        "y": 3120,
+        "x": 2370,
+        "y": 3060,
         "wires": [
             [
                 "78df0264f1c44820"
@@ -11971,7 +11971,8 @@
         "y": 3200,
         "wires": [
             [
-                "b127db85dc55eca4"
+                "b127db85dc55eca4",
+                "1eddee0bdcf3b51a"
             ]
         ]
     },
@@ -12159,7 +12160,7 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2170,
+        "x": 2230,
         "y": 3240,
         "wires": []
     },
@@ -12246,6 +12247,31 @@
         "x": 2770,
         "y": 3120,
         "wires": []
+    },
+    {
+        "id": "1eddee0bdcf3b51a",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "highscore",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2200,
+        "y": 3200,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
