@@ -11626,7 +11626,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
-                "tot": "json"
+                "tot": "str"
             }
         ],
         "action": "",
@@ -11653,7 +11653,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "[{\"Navn\": \"Martin\",\"Tid\": \"41:20\" }]",
-                "tot": "json"
+                "tot": "str"
             }
         ],
         "action": "",
