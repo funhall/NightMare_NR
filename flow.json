@@ -12140,7 +12140,7 @@
         "wires": [
             [
                 "1dee1297c9b52aef",
-                "3e016537a79a1af4"
+                "04c54f87b653d58b"
             ]
         ]
     },
@@ -12325,7 +12325,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "property": "payload",
-        "action": "",
+        "action": "obj",
         "pretty": true,
         "x": 2610,
         "y": 1860,
