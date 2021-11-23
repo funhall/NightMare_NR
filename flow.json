@@ -11350,8 +11350,8 @@
         "withhold": false,
         "fixedtimeout": true,
         "pertopic": false,
-        "x": 1400,
-        "y": 1820,
+        "x": 1380,
+        "y": 1940,
         "wires": [
             [
                 "6f8002713e36e1b9"
@@ -11379,8 +11379,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1190,
-        "y": 1820,
+        "x": 1170,
+        "y": 1940,
         "wires": [
             [
                 "20176568a167545f"
@@ -11399,8 +11399,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1640,
-        "y": 1820,
+        "x": 1620,
+        "y": 1940,
         "wires": []
     },
     {
@@ -11570,12 +11570,13 @@
         "func": "node.send({ payload:    {\"value\":\"1\"}   });\nnode.send({ payload:    {\"value\":\"0\"}   });",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 1310,
         "y": 1780,
         "wires": [
-            [
-                "ab0da844.5ade48"
-            ]
+            []
         ]
     },
     {
@@ -11596,7 +11597,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 1470,
-        "y": 1780,
+        "y": 1840,
         "wires": [
             [
                 "6f8002713e36e1b9"
@@ -11653,11 +11654,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1180,
-        "y": 1780,
+        "x": 1160,
+        "y": 1820,
         "wires": [
             [
-                "b5ddd272.b5564"
+                "ab0da844.5ade48"
             ]
         ]
     },
