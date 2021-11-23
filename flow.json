@@ -11615,35 +11615,7 @@
         "y": 2140,
         "wires": [
             [
-                "314dd0da7ef1efcb",
-                "4373f3c7f57d5764"
-            ]
-        ]
-    },
-    {
-        "id": "4373f3c7f57d5764",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "Navn",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Ole",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2130,
-        "y": 2160,
-        "wires": [
-            [
-                "356bbeb89b48d904"
+                "314dd0da7ef1efcb"
             ]
         ]
     },
@@ -11659,6 +11631,13 @@
                 "pt": "msg",
                 "to": "Navn",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ole",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -11670,7 +11649,8 @@
         "y": 2120,
         "wires": [
             [
-                "356bbeb89b48d904"
+                "356bbeb89b48d904",
+                "67ac539c8b4ef42b"
             ]
         ]
     },
@@ -11694,7 +11674,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2330,
+        "x": 2370,
         "y": 2140,
         "wires": [
             [
@@ -11733,7 +11713,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2570,
-        "y": 2160,
+        "y": 2120,
         "wires": []
     },
     {
@@ -11992,6 +11972,23 @@
                 "47b769c5.cb0e28"
             ]
         ]
+    },
+    {
+        "id": "67ac539c8b4ef42b",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2550,
+        "y": 2080,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
