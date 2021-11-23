@@ -11636,7 +11636,7 @@
             [
                 "fdc0324e81619720",
                 "7d090548e361a4ed",
-                "a830e822594c6eeb"
+                "9844bea2c8f7c10d"
             ]
         ]
     },
@@ -11949,7 +11949,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2390,
+        "x": 2170,
         "y": 2820,
         "wires": [
             [
@@ -12001,7 +12001,7 @@
         "y": 2820,
         "wires": [
             [
-                "6c90da8784836bc4"
+                "9844bea2c8f7c10d"
             ]
         ]
     },
@@ -12087,7 +12087,7 @@
         "y": 2920,
         "wires": [
             [
-                "8de8ecca2e9ce3c3"
+                "9844bea2c8f7c10d"
             ]
         ]
     },
@@ -12220,92 +12220,6 @@
         "wires": [
             [
                 "ca46fe4f46018fa5"
-            ]
-        ]
-    },
-    {
-        "id": "a830e822594c6eeb",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": ",",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2130,
-        "y": 2760,
-        "wires": [
-            [
-                "9844bea2c8f7c10d"
-            ]
-        ]
-    },
-    {
-        "id": "6c90da8784836bc4",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": ",",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2130,
-        "y": 2820,
-        "wires": [
-            [
-                "9844bea2c8f7c10d",
-                "b127db85dc55eca4"
-            ]
-        ]
-    },
-    {
-        "id": "8de8ecca2e9ce3c3",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": ",",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2150,
-        "y": 2880,
-        "wires": [
-            [
-                "9844bea2c8f7c10d",
-                "f9afb265.b11b7"
             ]
         ]
     },
