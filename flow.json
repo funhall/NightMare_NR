@@ -11590,7 +11590,7 @@
         "wires": [
             [
                 "1dee1297c9b52aef",
-                "3e016537a79a1af4"
+                "8f89d29d99edf874"
             ]
         ]
     },
@@ -11602,10 +11602,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
@@ -11613,8 +11609,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payloadType": "date",
-        "x": 1780,
+        "payload": "60:10",
+        "payloadType": "str",
+        "x": 1770,
         "y": 2120,
         "wires": [
             [
