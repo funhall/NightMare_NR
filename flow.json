@@ -11651,7 +11651,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2150,
+        "x": 2030,
         "y": 2720,
         "wires": [
             [
@@ -11695,7 +11695,7 @@
         "topic": "Navn",
         "payload": "ole",
         "payloadType": "str",
-        "x": 1970,
+        "x": 1850,
         "y": 2700,
         "wires": [
             [
@@ -11724,7 +11724,7 @@
         "topic": "Tid",
         "payload": "60:55",
         "payloadType": "str",
-        "x": 1970,
+        "x": 1850,
         "y": 2740,
         "wires": [
             [
@@ -11887,8 +11887,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2490,
-        "y": 2700,
+        "x": 2590,
+        "y": 2680,
         "wires": [
             []
         ]
@@ -12227,7 +12227,8 @@
         "y": 2840,
         "wires": [
             [
-                "939e11f8998c212e"
+                "939e11f8998c212e",
+                "5934d5d0ca1ea64a"
             ]
         ]
     },
@@ -12303,7 +12304,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2320,
+        "x": 2430,
         "y": 2760,
         "wires": [
             [
@@ -12328,6 +12329,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "5934d5d0ca1ea64a",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2340,
+        "y": 2900,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
