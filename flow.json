@@ -11808,7 +11808,7 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
-        "count": "",
+        "count": "3",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
