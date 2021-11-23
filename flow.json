@@ -12125,7 +12125,7 @@
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
-        "joiner": ",",
+        "joiner": "\",\"",
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
