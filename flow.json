@@ -12318,7 +12318,7 @@
         "type": "split",
         "z": "33e76285.1cd03e",
         "name": "",
-        "splt": "\\n",
+        "splt": ",",
         "spltType": "str",
         "arraySplt": 1,
         "arraySpltType": "len",
