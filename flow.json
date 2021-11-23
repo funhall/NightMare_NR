@@ -496,26 +496,6 @@
         "y": 19
     },
     {
-        "id": "c49070f4e172b4d7",
-        "type": "group",
-        "z": "33e76285.1cd03e",
-        "name": "Hjælpe komandoer",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "4bae206c110fb2aa",
-            "18c23a7ad0079988",
-            "b7606efe5db45a72",
-            "d9d31740559369aa",
-            "82832cd98a10278c"
-        ],
-        "x": 194,
-        "y": 3479,
-        "w": 912,
-        "h": 182
-    },
-    {
         "id": "31a7d742fc6bb0db",
         "type": "group",
         "z": "416eda1d3361af12",
@@ -6983,102 +6963,6 @@
         "x": 3090,
         "y": 80,
         "wires": []
-    },
-    {
-        "id": "4bae206c110fb2aa",
-        "type": "ui_text",
-        "z": "33e76285.1cd03e",
-        "g": "c49070f4e172b4d7",
-        "group": "117cda2a.43e596",
-        "order": 19,
-        "width": 2,
-        "height": 1,
-        "name": "temp",
-        "label": "fgfg",
-        "format": "<font size = 6> {{msg.payload}}",
-        "layout": "row-left",
-        "x": 1030,
-        "y": 3520,
-        "wires": []
-    },
-    {
-        "id": "18c23a7ad0079988",
-        "type": "link in",
-        "z": "33e76285.1cd03e",
-        "g": "c49070f4e172b4d7",
-        "name": "Help instrukser",
-        "links": [
-            "7ce4a2f9.9437dc"
-        ],
-        "x": 235,
-        "y": 3520,
-        "wires": [
-            [
-                "b7606efe5db45a72",
-                "d9d31740559369aa",
-                "82832cd98a10278c"
-            ]
-        ]
-    },
-    {
-        "id": "b7606efe5db45a72",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "g": "c49070f4e172b4d7",
-        "name": "doorroom2- open , kistestate- closed",
-        "func": "if ( global.get(\"doorroom2\") === \"closed\" && global.get(\"kistestate\") === \"closed\") { \n  msg.payload = \"så skal du bøvse\";\n} else {\n  msg.payload = \"have you seen the crosses on the wall\";\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 590,
-        "y": 3520,
-        "wires": [
-            [
-                "4bae206c110fb2aa"
-            ]
-        ]
-    },
-    {
-        "id": "d9d31740559369aa",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "g": "c49070f4e172b4d7",
-        "name": "doorroom2-open , gavle_vaek-true",
-        "func": "if ( global.get(\"doorroom2\") === \"open\" && global.get(\"gavle_vaek\") === \"true\") { \n  msg.payload = \"Du skal måske kikke lidt på kiste enderne i rum 2\";\n} else {\n  msg.payload = \"have you seen the crosses on the wall\";\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 3560,
-        "wires": [
-            [
-                "4bae206c110fb2aa"
-            ]
-        ]
-    },
-    {
-        "id": "82832cd98a10278c",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "g": "c49070f4e172b4d7",
-        "name": "kisteforladt-true , doorroom2-closed",
-        "func": "if ( global.get(\"kisteforladt\") === \"true\" && global.get(\"doorroom2\") === \"closed\") { \n  msg.payload = \"Have you seen the crosses on the wall\";\n} else {\n  msg.payload = \"\";\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 3620,
-        "wires": [
-            [
-                "4bae206c110fb2aa"
-            ]
-        ]
     },
     {
         "id": "d24900139e445a93",
