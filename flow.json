@@ -3173,6 +3173,21 @@
         "icon": "dashboard"
     },
     {
+        "id": "53cf504.e9555b",
+        "type": "ui_group",
+        "name": "test",
+        "tab": "52aaa596.768b7c",
+        "order": 1,
+        "disp": true,
+        "width": "12"
+    },
+    {
+        "id": "52aaa596.768b7c",
+        "type": "ui_tab",
+        "name": "Test",
+        "icon": "dashboard"
+    },
+    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
@@ -43744,143 +43759,129 @@
         ]
     },
     {
-        "id": "7f00657a.81e08c",
-        "type": "ui_colour_picker",
+        "id": "3568474e.c4c9b8",
+        "type": "ui_template",
         "z": "36ab324353c918b6",
-        "name": "",
-        "label": "Colour",
-        "group": "944f725.afd9f9",
-        "format": "hex",
-        "outformat": "string",
-        "showSwatch": true,
-        "showPicker": false,
-        "showValue": false,
-        "showHue": false,
-        "showAlpha": false,
-        "showLightness": true,
-        "dynOutput": "true",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "topic": "",
-        "x": 550,
-        "y": 480,
-        "wires": [
-            [
-                "f0ce5ae7.ded9e8"
-            ]
-        ]
-    },
-    {
-        "id": "e98132b4.7db35",
-        "type": "ui_numeric",
-        "z": "36ab324353c918b6",
-        "name": "",
-        "label": "User input",
-        "tooltip": "",
-        "group": "944f725.afd9f9",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "65535",
-        "step": 1,
-        "x": 572,
-        "y": 539,
-        "wires": [
-            [
-                "5d5f5b14.451214"
-            ]
-        ]
-    },
-    {
-        "id": "6aa8fdf8.e91994",
-        "type": "ui_text",
-        "z": "36ab324353c918b6",
-        "group": "944f725.afd9f9",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Result",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 1110,
+        "group": "53cf504.e9555b",
+        "name": "user input validate",
+        "order": 4,
+        "width": "7",
+        "height": "2",
+        "format": "<md-input-container  style=\"overflow:hidden;\">\n    <span> \n    <input ng-model=\"user.input\" style=\"width:150px\" placeholder={{msg.topic}}><button class=\"bluebutton\" ng-click=\"msg.payload = user.input; send(msg)\" ng-keypress=\"($event.charCode==13)?msg.payload = user.input; send(msg)\" ngstyle=\"{background-color: #008CBA;}\" style=\"\n    color: #fff;\n    background-color: #5bc0de;\n    border-color: #46b8da;\">Ok</button></span>\n</md-input-container>\n    ",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 610,
         "y": 520,
+        "wires": [
+            [
+                "77f708e7.52d828",
+                "2a2db3f8.64ff1c"
+            ]
+        ]
+    },
+    {
+        "id": "77f708e7.52d828",
+        "type": "debug",
+        "z": "36ab324353c918b6",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 845,
+        "y": 505,
         "wires": []
     },
     {
-        "id": "f0ce5ae7.ded9e8",
-        "type": "change",
+        "id": "328882f5.827d9e",
+        "type": "ui_template",
         "z": "36ab324353c918b6",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "colourval",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 750,
-        "y": 480,
+        "group": "53cf504.e9555b",
+        "name": "user input",
+        "order": 6,
+        "width": "7",
+        "height": "2",
+        "format": "<md-input-container  style=\"overflow:hidden;\">\n    <span> \n    <input ng-model=\"user.input\" style=\"width:150px\" placeholder=\"{{msg.topic}}\" ng-change=\"msg.payload = user.input; send(msg)\"></span>\n</md-input-container>\n    ",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 635,
+        "y": 570,
         "wires": [
             [
-                "938fd014.3ee43"
+                "77f708e7.52d828",
+                "cf78039a.54ab3"
             ]
         ]
     },
     {
-        "id": "938fd014.3ee43",
-        "type": "function",
+        "id": "e86c3bfa.5943e8",
+        "type": "inject",
         "z": "36ab324353c918b6",
-        "name": "add",
-        "func": "var colourval = parseInt((flow.get(\"colourval\") || \"0\"), 16);\nmsg.payload = parseInt(flow.get(\"userinput\") || \"0\") + colourval;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 970,
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "topic": "Name",
+        "payload": "",
+        "payloadType": "date",
+        "x": 415,
         "y": 520,
         "wires": [
             [
-                "6aa8fdf8.e91994"
+                "3568474e.c4c9b8"
             ]
         ]
     },
     {
-        "id": "5d5f5b14.451214",
-        "type": "change",
+        "id": "d3468d1.929f77",
+        "type": "inject",
         "z": "36ab324353c918b6",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "userinput",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 750,
-        "y": 540,
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "topic": "Topic",
+        "payload": "",
+        "payloadType": "date",
+        "x": 405,
+        "y": 570,
         "wires": [
             [
-                "938fd014.3ee43"
+                "328882f5.827d9e"
             ]
         ]
+    },
+    {
+        "id": "cf78039a.54ab3",
+        "type": "ui_text",
+        "z": "36ab324353c918b6",
+        "group": "53cf504.e9555b",
+        "order": 7,
+        "width": "7",
+        "height": "1",
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 825,
+        "y": 575,
+        "wires": []
+    },
+    {
+        "id": "2a2db3f8.64ff1c",
+        "type": "ui_text",
+        "z": "36ab324353c918b6",
+        "group": "53cf504.e9555b",
+        "order": 5,
+        "width": "7",
+        "height": "1",
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 830,
+        "y": 540,
+        "wires": []
     }
 ]
