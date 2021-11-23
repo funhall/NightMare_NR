@@ -11661,9 +11661,9 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "temperature",
-        "payload": "10",
-        "payloadType": "num",
+        "topic": "navn",
+        "payload": "12:22",
+        "payloadType": "str",
         "x": 1910,
         "y": 2660,
         "wires": [
@@ -11686,7 +11686,7 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
-        "count": "3",
+        "count": "2",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
@@ -11710,23 +11710,32 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2490,
-        "y": 2720,
+        "x": 2550,
+        "y": 2740,
         "wires": []
     },
     {
         "id": "2d269127.4f04ce",
         "type": "inject",
         "z": "33e76285.1cd03e",
-        "name": "humidity",
+        "name": "navn",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "humidity",
-        "payload": "",
-        "payloadType": "num",
-        "x": 1900,
+        "topic": "Navn",
+        "payload": "45:44",
+        "payloadType": "str",
+        "x": 1890,
         "y": 2700,
         "wires": [
             [
@@ -11738,15 +11747,24 @@
         "id": "d6fbe805.0e4628",
         "type": "inject",
         "z": "33e76285.1cd03e",
-        "name": "pressure",
+        "name": "Tid",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "pressure",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 1900,
+        "topic": "Tid",
+        "payload": "60:55",
+        "payloadType": "str",
+        "x": 1890,
         "y": 2740,
         "wires": [
             [
