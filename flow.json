@@ -11607,8 +11607,8 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
         "payloadType": "json",
-        "x": 1690,
-        "y": 1540,
+        "x": 1570,
+        "y": 1480,
         "wires": [
             [
                 "47dad15766d2da77",
@@ -11628,6 +11628,13 @@
                 "pt": "msg",
                 "to": "highscore",
                 "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
             }
         ],
         "action": "",
@@ -11655,6 +11662,13 @@
                 "pt": "msg",
                 "to": "{\"Navn\": \"lærke\",\"Tid\": \"41:20\" }]",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "2",
+                "tot": "num"
             }
         ],
         "action": "",
@@ -11662,8 +11676,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2200,
-        "y": 1480,
+        "x": 2000,
+        "y": 1500,
         "wires": [
             [
                 "02a27c66b85348f3"
