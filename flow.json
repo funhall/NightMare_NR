@@ -11451,7 +11451,7 @@
         "topic": "",
         "payload": "[     {         \"Navn\": \"Ole\",         \"Tid\": \"35\" },     {         \"Navn\": \"Oli Bob\",         \"Tid\": \"12\"  } ]",
         "payloadType": "json",
-        "x": 1830,
+        "x": 1990,
         "y": 1620,
         "wires": [
             [
@@ -11471,8 +11471,8 @@
         "columns": [
             {
                 "field": "Navn",
-                "title": "Name",
-                "width": "100",
+                "title": "Navn",
+                "width": "200",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -11481,7 +11481,7 @@
             },
             {
                 "field": "Tid",
-                "title": "Age",
+                "title": "Tid",
                 "width": "100",
                 "align": "left",
                 "formatter": "plaintext",
@@ -11492,7 +11492,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 2290,
+        "x": 2350,
         "y": 1620,
         "wires": []
     },
