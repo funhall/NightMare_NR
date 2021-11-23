@@ -11585,7 +11585,7 @@
         "id": "8ccddb9a.a55f38",
         "type": "inject",
         "z": "33e76285.1cd03e",
-        "name": "temperature",
+        "name": "Skriv gemt highscore VAR",
         "props": [
             {
                 "p": "payload"
@@ -11602,7 +11602,7 @@
         "topic": "navn",
         "payload": "12:22",
         "payloadType": "str",
-        "x": 2350,
+        "x": 2390,
         "y": 3120,
         "wires": [
             [
@@ -11890,10 +11890,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2780,
+        "x": 2600,
         "y": 3120,
         "wires": [
-            []
+            [
+                "b62790d3e57eaa91"
+            ]
         ]
     },
     {
@@ -12230,6 +12232,20 @@
                 "9844bea2c8f7c10d"
             ]
         ]
+    },
+    {
+        "id": "b62790d3e57eaa91",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 2770,
+        "y": 3120,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
