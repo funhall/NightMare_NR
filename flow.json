@@ -87,13 +87,6 @@
         "env": []
     },
     {
-        "id": "e5e03e58.27ca4",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "195c9babcf1455a4",
         "type": "subflow",
         "name": "Hjælp knap lys",
@@ -43733,91 +43726,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "73623a38.af8454",
-        "type": "ui_button",
-        "z": "e5e03e58.27ca4",
-        "name": "",
-        "group": "117cda2a.43e596",
-        "order": 28,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "topicType": "str",
-        "x": 480,
-        "y": 700,
-        "wires": [
-            [
-                "4e2e9bd0.471994"
-            ]
-        ]
-    },
-    {
-        "id": "da86512d.2f4bd",
-        "type": "ui_text_input",
-        "z": "e5e03e58.27ca4",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "group": "117cda2a.43e596",
-        "order": 27,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "",
-        "topicType": "str",
-        "x": 460,
-        "y": 640,
-        "wires": [
-            [
-                "4e2e9bd0.471994"
-            ]
-        ]
-    },
-    {
-        "id": "4e2e9bd0.471994",
-        "type": "function",
-        "z": "e5e03e58.27ca4",
-        "name": "",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 720,
-        "y": 700,
-        "wires": [
-            [
-                "54b13780.debd08"
-            ]
-        ]
-    },
-    {
-        "id": "54b13780.debd08",
-        "type": "ui_text",
-        "z": "e5e03e58.27ca4",
-        "group": "117cda2a.43e596",
-        "order": 29,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 960,
-        "y": 720,
-        "wires": []
     }
 ]
