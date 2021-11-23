@@ -2409,6 +2409,27 @@
         "y": 1559
     },
     {
+        "id": "88ab5be51ed3f71d",
+        "type": "group",
+        "z": "33e76285.1cd03e",
+        "name": "GEM NY HIGHSCORE I RIGTIG FORMAT",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4d6373135b143922",
+            "9b2c5ba8876141e5",
+            "757b22c4790a896a",
+            "b127db85dc55eca4",
+            "1eddee0bdcf3b51a"
+        ],
+        "env": [],
+        "x": 1734,
+        "y": 3159,
+        "w": 612,
+        "h": 122
+    },
+    {
         "id": "82fd466d.f6c968",
         "type": "ui_tab",
         "name": "Nightmare personale",
@@ -11602,8 +11623,8 @@
         "topic": "navn",
         "payload": "12:22",
         "payloadType": "str",
-        "x": 2370,
-        "y": 3060,
+        "x": 1850,
+        "y": 3020,
         "wires": [
             [
                 "78df0264f1c44820"
@@ -11648,8 +11669,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2170,
-        "y": 3380,
+        "x": 2150,
+        "y": 3520,
         "wires": []
     },
     {
@@ -11890,8 +11911,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2600,
-        "y": 3120,
+        "x": 2080,
+        "y": 3020,
         "wires": [
             [
                 "b62790d3e57eaa91"
@@ -11951,6 +11972,7 @@
         "id": "4d6373135b143922",
         "type": "join",
         "z": "33e76285.1cd03e",
+        "g": "88ab5be51ed3f71d",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -11980,6 +12002,7 @@
         "id": "9b2c5ba8876141e5",
         "type": "inject",
         "z": "33e76285.1cd03e",
+        "g": "88ab5be51ed3f71d",
         "name": "navn",
         "props": [
             {
@@ -12009,6 +12032,7 @@
         "id": "757b22c4790a896a",
         "type": "inject",
         "z": "33e76285.1cd03e",
+        "g": "88ab5be51ed3f71d",
         "name": "Tid",
         "props": [
             {
@@ -12054,8 +12078,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2010,
-        "y": 3300,
+        "x": 1990,
+        "y": 3440,
         "wires": [
             [
                 "f9afb265.b11b7"
@@ -12083,8 +12107,8 @@
         "topic": "Navn",
         "payload": "uuuuuu",
         "payloadType": "str",
-        "x": 1830,
-        "y": 3280,
+        "x": 1810,
+        "y": 3420,
         "wires": [
             [
                 "80b4851336df4b9c"
@@ -12112,8 +12136,8 @@
         "topic": "Tid",
         "payload": "20:55",
         "payloadType": "str",
-        "x": 1830,
-        "y": 3320,
+        "x": 1810,
+        "y": 3460,
         "wires": [
             [
                 "80b4851336df4b9c"
@@ -12154,6 +12178,7 @@
         "id": "b127db85dc55eca4",
         "type": "debug",
         "z": "33e76285.1cd03e",
+        "g": "88ab5be51ed3f71d",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -12244,14 +12269,15 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2770,
-        "y": 3120,
+        "x": 2250,
+        "y": 3020,
         "wires": []
     },
     {
         "id": "1eddee0bdcf3b51a",
         "type": "change",
         "z": "33e76285.1cd03e",
+        "g": "88ab5be51ed3f71d",
         "name": "",
         "rules": [
             {
