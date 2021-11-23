@@ -11599,13 +11599,14 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "ole, peter",
+        "payload": "ole",
         "payloadType": "str",
-        "x": 1720,
-        "y": 1640,
+        "x": 1630,
+        "y": 1660,
         "wires": [
             [
-                "e0f34a25be156511"
+                "e0f34a25be156511",
+                "4118fbce0d23221f"
             ]
         ]
     },
@@ -11619,6 +11620,63 @@
         "pretty": false,
         "x": 1910,
         "y": 1660,
+        "wires": [
+            [
+                "54885517ca6a9dc8"
+            ]
+        ]
+    },
+    {
+        "id": "98a111cd9f7dfd3f",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "peter",
+        "payloadType": "str",
+        "x": 1630,
+        "y": 1720,
+        "wires": [
+            [
+                "4118fbce0d23221f"
+            ]
+        ]
+    },
+    {
+        "id": "4118fbce0d23221f",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": " : ",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1750,
+        "y": 1700,
         "wires": [
             [
                 "54885517ca6a9dc8"
