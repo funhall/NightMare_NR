@@ -11462,6 +11462,9 @@
         "func": "var pressTime;\n\nif (msg.count >= 2 && msg.payload.value == '1')\n{\n    msg.payload = \"double\";\n    context.set('pressTime',null);\n    context.set('releaseTime',null);\n    return msg;\n}\nif (msg.count == 1){\n    if (msg.payload.value == '1') {   //Pressed\n        pressTime = Date.now(); \n        //node.send({payload:{pressTime}});\n        context.set('pressTime',pressTime);\n    }\n    pressTime = context.get('pressTime');\n    //node.send({payload:{pressTime}});\n    if (msg.payload.value === '0' && pressTime !== null) {  //Released\n        releaseTime = Date.now(); \n        \n        var timeDiff = releaseTime-pressTime;\n        //node.send({payload:{timeDiff}});\n        if (releaseTime-pressTime>350)  {msg.payload = \"long\";}\n        else {msg.payload = \"single\";}\n        context.set('pressTime',null);\n        context.set('releaseTime',null);\n        return msg;\n    }\n}",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 1980,
         "y": 1740,
         "wires": [
@@ -11590,12 +11593,13 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
+        "allowrate": false,
         "outputs": 1,
         "x": 1470,
         "y": 1780,
         "wires": [
             [
-                "4442ebe6.cbd40c"
+                "6f8002713e36e1b9"
             ]
         ]
     },
