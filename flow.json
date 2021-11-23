@@ -11913,7 +11913,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "string",
+        "build": "merged",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
