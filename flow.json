@@ -11623,7 +11623,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" },{\"Navn\": \"Martin\",\"Tid\": \"41:20\" }]",
+                "to": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" },{\"Navn\": \"Martin\",\"Tid\": \"41:20\" }",
                 "tot": "str"
             }
         ],
