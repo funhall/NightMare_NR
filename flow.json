@@ -12187,6 +12187,13 @@
                 "pt": "msg",
                 "to": "Ole\"",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
             }
         ],
         "action": "",
@@ -12214,6 +12221,13 @@
                 "pt": "msg",
                 "to": "\"Navn",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
             }
         ],
         "action": "",
