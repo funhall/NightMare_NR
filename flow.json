@@ -11484,7 +11484,7 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 2090,
+        "x": 2150,
         "y": 2420,
         "wires": [
             []
@@ -12310,6 +12310,23 @@
                 "bb098b10833b5da5",
                 "0d099896abb6fecc"
             ]
+        ]
+    },
+    {
+        "id": "8f47715b5e913347",
+        "type": "split",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 2310,
+        "y": 2960,
+        "wires": [
+            []
         ]
     },
     {
