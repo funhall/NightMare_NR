@@ -11430,13 +11430,15 @@
         "type": "firebase in",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "",
+        "ref": "Nighmare navn/Game tider",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1970,
+        "x": 2020,
         "y": 1760,
         "wires": [
-            []
+            [
+                "b900bb35164133db"
+            ]
         ]
     },
     {
