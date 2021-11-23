@@ -86,6 +86,13 @@
         "info": ""
     },
     {
+        "id": "9709bc5b.dc8c9",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "195c9babcf1455a4",
         "type": "subflow",
         "name": "Hjælp knap lys",
@@ -11920,67 +11927,6 @@
                 "fdc0324e81619720"
             ]
         ]
-    },
-    {
-        "id": "12ee2679.01330a",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "str",
-        "x": 3110,
-        "y": 2120,
-        "wires": [
-            [
-                "6d4603bd.67f33c"
-            ]
-        ]
-    },
-    {
-        "id": "6d4603bd.67f33c",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "func": "msg.payload = {\n    input: [17354, 784],\n}\n\nmsg.payload.output = `0x${msg.payload.input[0].toString(16)}${msg.payload.input[1].toString(16)}`\n\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 3250,
-        "y": 2120,
-        "wires": [
-            [
-                "d73f8f6e.e183c"
-            ]
-        ]
-    },
-    {
-        "id": "d73f8f6e.e183c",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 3470,
-        "y": 2120,
-        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -44512,5 +44458,164 @@
         "x": 450,
         "y": 420,
         "wires": []
+    },
+    {
+        "id": "14f6b95b.3a14c7",
+        "type": "inject",
+        "z": "9709bc5b.dc8c9",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[-8192, 17418]",
+        "payloadType": "json",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "404f4a70.9c6de4"
+            ]
+        ]
+    },
+    {
+        "id": "323110fa.1ee8b",
+        "type": "inject",
+        "z": "9709bc5b.dc8c9",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[-13107, 17143]",
+        "payloadType": "json",
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "404f4a70.9c6de4"
+            ]
+        ]
+    },
+    {
+        "id": "a982d18e.638d4",
+        "type": "inject",
+        "z": "9709bc5b.dc8c9",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[-15856, 18725]",
+        "payloadType": "json",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "404f4a70.9c6de4"
+            ]
+        ]
+    },
+    {
+        "id": "292bf366.07d3cc",
+        "type": "inject",
+        "z": "9709bc5b.dc8c9",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[0, 18725]",
+        "payloadType": "json",
+        "x": 280,
+        "y": 300,
+        "wires": [
+            [
+                "404f4a70.9c6de4"
+            ]
+        ]
+    },
+    {
+        "id": "a3694647.dce098",
+        "type": "inject",
+        "z": "9709bc5b.dc8c9",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[0, 16320]",
+        "payloadType": "json",
+        "x": 280,
+        "y": 340,
+        "wires": [
+            [
+                "404f4a70.9c6de4"
+            ]
+        ]
+    },
+    {
+        "id": "7afc4c37.a2f9c4",
+        "type": "debug",
+        "z": "9709bc5b.dc8c9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 850,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "404f4a70.9c6de4",
+        "type": "join",
+        "z": "9709bc5b.dc8c9",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 560,
+        "y": 280,
+        "wires": [
+            [
+                "16ec7547.e7d6eb"
+            ]
+        ]
+    },
+    {
+        "id": "16ec7547.e7d6eb",
+        "type": "function",
+        "z": "9709bc5b.dc8c9",
+        "name": "concat",
+        "func": "let pay = msg.payload;\nreturn {\"value\" : [...pay[0], ...pay[1], ...pay[2], ...pay[3], ...pay[4]]};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "7afc4c37.a2f9c4"
+            ]
+        ]
     }
 ]
