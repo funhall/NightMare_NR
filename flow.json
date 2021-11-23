@@ -12051,7 +12051,7 @@
                 "p": "highscore",
                 "pt": "flow",
                 "to": "\"lærke,10:25\"",
-                "tot": "str"
+                "tot": "json"
             }
         ],
         "action": "",
