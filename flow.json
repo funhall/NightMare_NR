@@ -11456,8 +11456,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 2850,
-        "y": 1880,
+        "x": 3030,
+        "y": 2080,
         "wires": []
     },
     {
@@ -11521,7 +11521,7 @@
         "id": "84e645f32658d5c1",
         "type": "inject",
         "z": "33e76285.1cd03e",
-        "name": "ole",
+        "name": "Rigtige format",
         "props": [
             {
                 "p": "payload"
@@ -11539,8 +11539,8 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
         "payloadType": "json",
-        "x": 2010,
-        "y": 1700,
+        "x": 2690,
+        "y": 1940,
         "wires": [
             [
                 "3e016537a79a1af4"
@@ -11559,8 +11559,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2810,
-        "y": 2020,
+        "x": 3030,
+        "y": 2160,
         "wires": []
     },
     {
@@ -11599,8 +11599,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2410,
-        "y": 2200,
+        "x": 2650,
+        "y": 2220,
         "wires": [
             [
                 "1dee1297c9b52aef",
@@ -11628,8 +11628,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1640,
-        "y": 2120,
+        "x": 1880,
+        "y": 2140,
         "wires": [
             [
                 "94db998415901b36",
@@ -11641,7 +11641,7 @@
         "id": "4373f3c7f57d5764",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Navn",
         "rules": [
             {
                 "t": "set",
@@ -11656,8 +11656,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1980,
-        "y": 2140,
+        "x": 2190,
+        "y": 2160,
         "wires": [
             [
                 "356bbeb89b48d904"
@@ -11668,7 +11668,7 @@
         "id": "314dd0da7ef1efcb",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Title navn",
         "rules": [
             {
                 "t": "set",
@@ -11683,8 +11683,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1980,
-        "y": 2080,
+        "x": 2200,
+        "y": 2100,
         "wires": [
             [
                 "356bbeb89b48d904"
@@ -11711,8 +11711,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2210,
-        "y": 2120,
+        "x": 2450,
+        "y": 2140,
         "wires": [
             [
                 "ee0cdbf2d74fd707",
@@ -11732,8 +11732,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2750,
-        "y": 2200,
+        "x": 2910,
+        "y": 2220,
         "wires": []
     },
     {
@@ -11749,8 +11749,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2390,
-        "y": 2120,
+        "x": 2630,
+        "y": 2140,
         "wires": []
     },
     {
@@ -11770,8 +11770,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1810,
-        "y": 2160,
+        "x": 2050,
+        "y": 2180,
         "wires": [
             [
                 "4373f3c7f57d5764"
@@ -11798,8 +11798,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1700,
-        "y": 2280,
+        "x": 1940,
+        "y": 2300,
         "wires": [
             [
                 "24bc28defc8deb3f",
@@ -11811,7 +11811,7 @@
         "id": "049a1264a48fc1fb",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "10:20",
         "rules": [
             {
                 "t": "set",
@@ -11826,8 +11826,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2060,
-        "y": 2280,
+        "x": 2290,
+        "y": 2320,
         "wires": [
             [
                 "b0d9e7bf907150a4"
@@ -11838,7 +11838,7 @@
         "id": "24bc28defc8deb3f",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Tiltle tid",
         "rules": [
             {
                 "t": "set",
@@ -11853,8 +11853,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2060,
-        "y": 2220,
+        "x": 2280,
+        "y": 2260,
         "wires": [
             [
                 "b0d9e7bf907150a4"
@@ -11881,8 +11881,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2250,
-        "y": 2260,
+        "x": 2490,
+        "y": 2280,
         "wires": [
             [
                 "ee0cdbf2d74fd707"
@@ -11906,8 +11906,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1890,
-        "y": 2300,
+        "x": 2130,
+        "y": 2320,
         "wires": [
             [
                 "049a1264a48fc1fb"
@@ -11931,8 +11931,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1810,
-        "y": 2100,
+        "x": 2050,
+        "y": 2120,
         "wires": [
             [
                 "314dd0da7ef1efcb"
@@ -11959,8 +11959,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2610,
-        "y": 2000,
+        "x": 2730,
+        "y": 2020,
         "wires": [
             [
                 "3e016537a79a1af4"
@@ -11975,14 +11975,24 @@
         "property": "payload",
         "action": "obj",
         "pretty": true,
-        "x": 2570,
-        "y": 2140,
+        "x": 2830,
+        "y": 2160,
         "wires": [
             [
                 "8f4cfc0552705f78",
                 "70a8689abb773ccd"
             ]
         ]
+    },
+    {
+        "id": "4044abd23e2a0b76",
+        "type": "comment",
+        "z": "33e76285.1cd03e",
+        "name": "Skal joines med de \"gamle\" tider herfra",
+        "info": "",
+        "x": 2490,
+        "y": 2020,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
