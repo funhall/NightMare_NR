@@ -11478,7 +11478,7 @@
                 }
             },
             {
-                "field": "",
+                "field": "msg.payload",
                 "title": "Tid",
                 "width": "100",
                 "align": "left",
