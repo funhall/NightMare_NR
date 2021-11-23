@@ -11455,7 +11455,7 @@
         "y": 1620,
         "wires": [
             [
-                "d7c4f1b78b951fb0"
+                "3e016537a79a1af4"
             ]
         ]
     },
@@ -11495,22 +11495,6 @@
         "x": 2290,
         "y": 1620,
         "wires": []
-    },
-    {
-        "id": "d7c4f1b78b951fb0",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 2010,
-        "y": 1620,
-        "wires": [
-            [
-                "3e016537a79a1af4"
-            ]
-        ]
     },
     {
         "id": "8c3d69fae59a3873",
