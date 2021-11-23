@@ -12185,15 +12185,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Ole\"",
+                "to": "Ole",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "1",
-                "tot": "num"
             }
         ],
         "action": "",
@@ -12219,15 +12212,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "\"Navn",
+                "to": "Navn",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "0",
-                "tot": "num"
             }
         ],
         "action": "",
@@ -12284,8 +12270,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2810,
-        "y": 2120,
+        "x": 2750,
+        "y": 2200,
         "wires": []
     },
     {
@@ -12301,8 +12287,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2610,
-        "y": 2180,
+        "x": 2630,
+        "y": 2100,
         "wires": []
     },
     {
