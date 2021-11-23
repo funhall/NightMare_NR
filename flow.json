@@ -11902,13 +11902,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "martin",
+        "payload": "\"martin\",\"30:30\"",
         "payloadType": "str",
-        "x": 2290,
-        "y": 1820,
+        "x": 2230,
+        "y": 1840,
         "wires": [
             [
-                "acf70433a1ce3ac6"
+                "3e016537a79a1af4"
             ]
         ]
     },
