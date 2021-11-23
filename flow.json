@@ -11454,10 +11454,12 @@
         "topic": "",
         "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"20:20\"} ,{\"Navn\": \"Martin\",\"Tid\": \"30:40\" }]",
         "payloadType": "json",
-        "x": 1810,
-        "y": 1440,
+        "x": 1790,
+        "y": 1940,
         "wires": [
-            []
+            [
+                "e8c55262682aac8a"
+            ]
         ]
     },
     {
@@ -11684,6 +11686,49 @@
                 "8f89d29d99edf874"
             ]
         ]
+    },
+    {
+        "id": "e8c55262682aac8a",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "highscore",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2010,
+        "y": 1940,
+        "wires": [
+            [
+                "70a8689abb773ccd"
+            ]
+        ]
+    },
+    {
+        "id": "70a8689abb773ccd",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2280,
+        "y": 1960,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
