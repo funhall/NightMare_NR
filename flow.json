@@ -2501,7 +2501,7 @@
         "type": "ui_group",
         "name": "Batteri ",
         "tab": "82fd466d.f6c968",
-        "order": 10,
+        "order": 9,
         "disp": true,
         "width": "6",
         "collapse": true
@@ -2541,7 +2541,7 @@
         "type": "ui_group",
         "name": "High score",
         "tab": "82fd466d.f6c968",
-        "order": 9,
+        "order": 10,
         "disp": true,
         "width": "6",
         "collapse": false
