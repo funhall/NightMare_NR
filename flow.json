@@ -11922,6 +11922,67 @@
         ]
     },
     {
+        "id": "12ee2679.01330a",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "str",
+        "x": 3110,
+        "y": 2120,
+        "wires": [
+            [
+                "6d4603bd.67f33c"
+            ]
+        ]
+    },
+    {
+        "id": "6d4603bd.67f33c",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "func": "msg.payload = {\n    input: [17354, 784],\n}\n\nmsg.payload.output = `0x${msg.payload.input[0].toString(16)}${msg.payload.input[1].toString(16)}`\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3250,
+        "y": 2120,
+        "wires": [
+            [
+                "d73f8f6e.e183c"
+            ]
+        ]
+    },
+    {
+        "id": "d73f8f6e.e183c",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 3470,
+        "y": 2120,
+        "wires": []
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
