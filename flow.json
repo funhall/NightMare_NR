@@ -12233,7 +12233,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "merged",
+        "build": "object",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
