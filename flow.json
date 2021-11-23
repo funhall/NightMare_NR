@@ -11871,7 +11871,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "property": "payload",
-        "action": "str",
+        "action": "obj",
         "pretty": true,
         "x": 2270,
         "y": 2080,
