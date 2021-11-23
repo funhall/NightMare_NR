@@ -11456,12 +11456,10 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 2730,
-        "y": 1900,
+        "x": 2810,
+        "y": 2440,
         "wires": [
-            [
-                "6a90c3ec489d6e18"
-            ]
+            []
         ]
     },
     {
@@ -11487,7 +11485,6 @@
         "y": 1780,
         "wires": [
             [
-                "3e016537a79a1af4",
                 "1dee1297c9b52aef"
             ]
         ]
@@ -11678,7 +11675,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "object",
+        "build": "array",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -11985,8 +11982,7 @@
         "y": 1620,
         "wires": [
             [
-                "58e5643332ef76f5",
-                "3e016537a79a1af4"
+                "58e5643332ef76f5"
             ]
         ]
     },
