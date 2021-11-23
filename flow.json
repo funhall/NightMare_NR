@@ -11509,13 +11509,15 @@
         "width": 0,
         "height": 0,
         "lineType": "two",
-        "actionType": "none",
+        "actionType": "click",
         "allowHTML": false,
-        "outputs": 0,
+        "outputs": 1,
         "topic": "",
         "x": 2320,
         "y": 1660,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
