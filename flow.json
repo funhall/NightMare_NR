@@ -11640,7 +11640,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "ole",
+                "to": "martin",
                 "tot": "str"
             }
         ],
@@ -11807,8 +11807,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2430,
-        "y": 2020,
+        "x": 2470,
+        "y": 2240,
         "wires": []
     },
     {
@@ -11857,7 +11857,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "30:20",
+                "to": "30:25",
                 "tot": "str"
             }
         ],
