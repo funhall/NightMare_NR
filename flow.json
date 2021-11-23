@@ -11841,7 +11841,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "lærke",
+        "payload": "ole",
         "payloadType": "str",
         "x": 2010,
         "y": 1640,
@@ -11939,7 +11939,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "10:25",
+                "to": "10:29",
                 "tot": "str"
             }
         ],
