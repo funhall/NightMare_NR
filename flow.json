@@ -11544,11 +11544,12 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2390,
+        "x": 2430,
         "y": 1420,
         "wires": [
             [
-                "9e7604059bb3f1ea"
+                "9e7604059bb3f1ea",
+                "94cb5627992e999d"
             ]
         ]
     },
@@ -11677,8 +11678,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 2580,
-        "y": 1440,
+        "x": 2530,
+        "y": 1520,
         "wires": [
             [
                 "94cb5627992e999d"
