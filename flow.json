@@ -11399,7 +11399,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "info": "",
-        "x": 2150,
+        "x": 1860,
         "y": 1780,
         "wires": []
     },
@@ -11844,11 +11844,12 @@
         "topic": "",
         "payload": "ole",
         "payloadType": "str",
-        "x": 2370,
-        "y": 1660,
+        "x": 2090,
+        "y": 1640,
         "wires": [
             [
-                "acf70433a1ce3ac6"
+                "a14790f0b4e6f930",
+                "4d4e89ebcb7b1f5f"
             ]
         ]
     },
@@ -11874,7 +11875,7 @@
         "topic": "",
         "payload": "lærke",
         "payloadType": "str",
-        "x": 2370,
+        "x": 2210,
         "y": 1700,
         "wires": [
             [
@@ -11904,7 +11905,7 @@
         "topic": "",
         "payload": "martin",
         "payloadType": "str",
-        "x": 2350,
+        "x": 2210,
         "y": 1740,
         "wires": [
             [
@@ -11927,6 +11928,61 @@
         "x": 2740,
         "y": 1680,
         "wires": []
+    },
+    {
+        "id": "a14790f0b4e6f930",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "10:10",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2260,
+        "y": 1620,
+        "wires": [
+            [
+                "4d4e89ebcb7b1f5f"
+            ]
+        ]
+    },
+    {
+        "id": "4d4e89ebcb7b1f5f",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ",",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2410,
+        "y": 1640,
+        "wires": [
+            [
+                "58e5643332ef76f5"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
