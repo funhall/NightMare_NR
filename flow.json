@@ -11031,11 +11031,11 @@
         "delay": 300,
         "topic": "topic",
         "topicType": "msg",
-        "x": 2140,
-        "y": 1600,
+        "x": 2120,
+        "y": 1660,
         "wires": [
             [
-                "730db2c1a50adf75"
+                "40814ccb4fdf9d15"
             ]
         ]
     },
@@ -11141,7 +11141,7 @@
         "topic": "",
         "payloadType": "date",
         "x": 1720,
-        "y": 1620,
+        "y": 1560,
         "wires": [
             [
                 "d44be0e2f07cdf26",
@@ -11174,33 +11174,6 @@
         "wires": [
             [
                 "8f89d29d99edf874"
-            ]
-        ]
-    },
-    {
-        "id": "730db2c1a50adf75",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "timer",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2320,
-        "y": 1600,
-        "wires": [
-            [
-                "40814ccb4fdf9d15"
             ]
         ]
     },
@@ -11420,8 +11393,8 @@
         "label": "High Score",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 2250,
-        "y": 1740,
+        "x": 2130,
+        "y": 1820,
         "wires": []
     },
     {
@@ -11432,8 +11405,8 @@
         "ref": "Nighmare navn/Game tider",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 2020,
-        "y": 1760,
+        "x": 1870,
+        "y": 1820,
         "wires": [
             [
                 "b900bb35164133db"
@@ -11490,7 +11463,7 @@
         "to": "",
         "reg": false,
         "x": 1910,
-        "y": 1620,
+        "y": 1600,
         "wires": [
             [
                 "54c1ab4b77af5c94"
