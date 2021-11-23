@@ -11031,7 +11031,7 @@
         "delay": 300,
         "topic": "topic",
         "topicType": "msg",
-        "x": 2040,
+        "x": 2060,
         "y": 1540,
         "wires": [
             [
@@ -11201,7 +11201,8 @@
         "y": 1560,
         "wires": [
             [
-                "40814ccb4fdf9d15"
+                "40814ccb4fdf9d15",
+                "8f89d29d99edf874"
             ]
         ]
     },
@@ -11421,8 +11422,8 @@
         "label": "High Score",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 2300,
-        "y": 1760,
+        "x": 2250,
+        "y": 1740,
         "wires": []
     },
     {
