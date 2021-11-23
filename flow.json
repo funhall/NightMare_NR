@@ -12100,6 +12100,34 @@
         "y": 2200,
         "wires": [
             [
+                "3f7cd2c5a943cf4f"
+            ]
+        ]
+    },
+    {
+        "id": "3f7cd2c5a943cf4f",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2170,
+        "y": 2180,
+        "wires": [
+            [
                 "20cdd9a65b6ee9be"
             ]
         ]
