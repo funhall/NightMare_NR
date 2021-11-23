@@ -10972,7 +10972,7 @@
         "id": "54c1ab4b77af5c94",
         "type": "ui_text_input",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Hold navn",
         "label": "Hold navn: ",
         "tooltip": "",
         "group": "117cda2a.43e596",
@@ -10984,7 +10984,7 @@
         "delay": 300,
         "topic": "topic",
         "topicType": "msg",
-        "x": 2050,
+        "x": 2040,
         "y": 1540,
         "wires": [
             [
