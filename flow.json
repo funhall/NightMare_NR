@@ -11336,14 +11336,15 @@
         "type": "firebase in",
         "z": "33e76285.1cd03e",
         "name": "",
-        "ref": "Nighmare navn/",
+        "ref": "Nighmare navn",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
         "x": 1780,
         "y": 1780,
         "wires": [
             [
-                "baeae52a3c6c5b4c"
+                "baeae52a3c6c5b4c",
+                "30d4e90c88638d32"
             ]
         ]
     },
@@ -12130,6 +12131,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "30d4e90c88638d32",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1980,
+        "y": 1740,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
