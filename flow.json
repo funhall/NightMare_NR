@@ -12251,7 +12251,7 @@
         "y": 2120,
         "wires": [
             [
-                "1dee1297c9b52aef"
+                "303842b5c81937cb"
             ]
         ]
     },
@@ -12267,7 +12267,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2490,
+        "x": 2610,
         "y": 2120,
         "wires": []
     },
@@ -12284,9 +12284,25 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2530,
+        "x": 2610,
         "y": 2180,
         "wires": []
+    },
+    {
+        "id": "303842b5c81937cb",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 2390,
+        "y": 2120,
+        "wires": [
+            [
+                "1dee1297c9b52aef"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
