@@ -11734,7 +11734,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Navn",
-        "payload": "45:44",
+        "payload": "ole",
         "payloadType": "str",
         "x": 1890,
         "y": 2700,
