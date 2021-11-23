@@ -11602,8 +11602,8 @@
         "topic": "navn",
         "payload": "12:22",
         "payloadType": "str",
-        "x": 1910,
-        "y": 2900,
+        "x": 2350,
+        "y": 3120,
         "wires": [
             [
                 "78df0264f1c44820"
@@ -11635,7 +11635,8 @@
         "wires": [
             [
                 "f9afb265.b11b7",
-                "fdc0324e81619720"
+                "fdc0324e81619720",
+                "9844bea2c8f7c10d"
             ]
         ]
     },
@@ -11649,8 +11650,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2430,
-        "y": 2700,
+        "x": 1990,
+        "y": 2620,
         "wires": []
     },
     {
@@ -11920,8 +11921,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2120,
-        "y": 2900,
+        "x": 2780,
+        "y": 3120,
         "wires": [
             [
                 "fdc0324e81619720"
@@ -11942,14 +11943,14 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
-        "count": "5",
+        "count": "3",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2190,
-        "y": 2640,
+        "x": 2150,
+        "y": 2820,
         "wires": [
             [
                 "9d44bd77ed42b861"
@@ -11967,10 +11968,182 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2320,
-        "y": 2640,
+        "x": 2270,
+        "y": 2820,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "4d6373135b143922",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ",",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1990,
+        "y": 2820,
+        "wires": [
+            [
+                "9844bea2c8f7c10d"
+            ]
+        ]
+    },
+    {
+        "id": "9b2c5ba8876141e5",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "navn",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Navn",
+        "payload": "fffff",
+        "payloadType": "str",
+        "x": 1810,
+        "y": 2800,
+        "wires": [
+            [
+                "4d6373135b143922"
+            ]
+        ]
+    },
+    {
+        "id": "757b22c4790a896a",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "Tid",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Tid",
+        "payload": "60:51",
+        "payloadType": "str",
+        "x": 1810,
+        "y": 2840,
+        "wires": [
+            [
+                "4d6373135b143922"
+            ]
+        ]
+    },
+    {
+        "id": "80b4851336df4b9c",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ",",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1990,
+        "y": 2920,
+        "wires": [
+            [
+                "9844bea2c8f7c10d"
+            ]
+        ]
+    },
+    {
+        "id": "e0e94976be72bbd3",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "navn",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Navn",
+        "payload": "uuuuuu",
+        "payloadType": "str",
+        "x": 1810,
+        "y": 2900,
+        "wires": [
+            [
+                "80b4851336df4b9c"
+            ]
+        ]
+    },
+    {
+        "id": "a19a02d21c7e73b6",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "Tid",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Tid",
+        "payload": "20:55",
+        "payloadType": "str",
+        "x": 1810,
+        "y": 2940,
+        "wires": [
+            [
+                "80b4851336df4b9c"
+            ]
         ]
     },
     {
