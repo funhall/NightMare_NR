@@ -11107,8 +11107,8 @@
         "delay": 300,
         "topic": "topic",
         "topicType": "msg",
-        "x": 2000,
-        "y": 1560,
+        "x": 2200,
+        "y": 1460,
         "wires": [
             []
         ]
@@ -11449,9 +11449,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[     {         \"Navn\": \"Ole\",         \"Tid\": \"35\" },     {         \"Navn\": \"Oli Bob\",         \"Tid\": \"12\"  } ]",
+        "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"35\" },{\"Navn\": \"Oli Bob\",\"Tid\": \"12\"}]",
         "payloadType": "json",
-        "x": 1990,
+        "x": 2090,
         "y": 1620,
         "wires": [
             [
@@ -11504,8 +11504,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 2110,
-        "y": 1680,
+        "x": 2390,
+        "y": 1780,
         "wires": [
             []
         ]
