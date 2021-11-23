@@ -11599,14 +11599,12 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[\"Item1\",\"Item2\",\"Item3\"]",
+        "payload": "[\"{{msg.name}}\",\"Item2\",\"Item3\"]",
         "payloadType": "str",
-        "x": 1630,
-        "y": 1660,
+        "x": 1530,
+        "y": 1500,
         "wires": [
-            [
-                "e0f34a25be156511"
-            ]
+            []
         ]
     },
     {
@@ -11617,7 +11615,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1990,
+        "x": 1950,
         "y": 1660,
         "wires": [
             [
@@ -11632,7 +11630,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "name",
+                "v": "peter",
+                "vt": "str"
             },
             {
                 "p": "topic",
@@ -11644,13 +11644,11 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "peter",
-        "payloadType": "str",
-        "x": 1630,
-        "y": 1720,
+        "x": 1550,
+        "y": 1640,
         "wires": [
             [
-                "4118fbce0d23221f"
+                "8b585bef8d5caf09"
             ]
         ]
     },
@@ -11674,8 +11672,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1830,
-        "y": 1700,
+        "x": 1810,
+        "y": 1720,
         "wires": [
             [
                 "1d3bbda15d7d01eb",
@@ -11692,10 +11690,37 @@
         "action": "",
         "pretty": false,
         "x": 1970,
-        "y": 1700,
+        "y": 1720,
         "wires": [
             [
                 "54885517ca6a9dc8"
+            ]
+        ]
+    },
+    {
+        "id": "8b585bef8d5caf09",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\"{{msg.name}}\",\"Item2\",\"Item3\"]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1800,
+        "y": 1660,
+        "wires": [
+            [
+                "e0f34a25be156511"
             ]
         ]
     },
