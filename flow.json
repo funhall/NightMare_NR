@@ -11637,7 +11637,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "array",
+        "build": "object",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
