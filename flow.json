@@ -11941,9 +11941,7 @@
         "name": "navn",
         "props": [
             {
-                "p": "navn",
-                "v": "ole",
-                "vt": "str"
+                "p": "payload"
             }
         ],
         "repeat": "",
@@ -11951,6 +11949,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
+        "payload": "w",
+        "payloadType": "str",
         "x": 1310,
         "y": 3000,
         "wires": [
@@ -12280,8 +12280,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1690,
-        "y": 3060,
+        "x": 1670,
+        "y": 3140,
         "wires": []
     },
     {
