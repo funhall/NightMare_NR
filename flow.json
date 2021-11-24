@@ -12526,7 +12526,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var name = msg.navn;\nvar time = msg.tid;\n\nmsg.payload = { \"navn\": name, \"tid\": time };\n\nreturn msg;",
+        "func": "var name = msg.navn;\nvar time = msg.tid;\n\nmsg.payload = { \"Navn\": name, \"Tid\": time };\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
