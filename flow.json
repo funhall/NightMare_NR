@@ -12286,7 +12286,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var value = []\n\nvalue.push(msg.navn, msg.tid)\n\nmsg.payload = value\nreturn msg;",
+        "func": "var value = []\n\nvalue.push(\"msg.navn, msg.tid\")\n\nmsg.payload = value\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
