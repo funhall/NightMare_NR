@@ -12286,7 +12286,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var fruits = ['Apple', 'Banana']\n\n//console.log(fruits.length)\n// 2\nreturn msg;",
+        "func": "msg.payload = {\n                            \"Navn\": martin,\n                            \"Tid\": \"12:23\"\n                            }\n\n//console.log(fruits.length)\n// 2\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
