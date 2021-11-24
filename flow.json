@@ -12472,8 +12472,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "array",
-                "tot": "flow"
+                "to": "[{\"Navn\": \"lene\",\"Tid\": \"60:23\"}]",
+                "tot": "str"
             }
         ],
         "action": "",
