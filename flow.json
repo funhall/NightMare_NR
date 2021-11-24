@@ -12348,13 +12348,6 @@
         "rules": [
             {
                 "t": "set",
-                "p": "array",
-                "pt": "flow",
-                "to": "[{\"Navn\": \"martin\",\"Tid\": \"40:20\"}]",
-                "tot": "json"
-            },
-            {
-                "t": "set",
                 "p": "payload",
                 "pt": "msg",
                 "to": "array",
@@ -12456,40 +12449,6 @@
         ]
     },
     {
-        "id": "db3fa110246a0c2f",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "virker med joine t x array",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "[{\"Navn\": \"martin\",\"Tid\": \"40:23\"}]",
-                "tot": "json"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "[{\"Navn\": \"lene\",\"Tid\": \"60:23\"}]",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1490,
-        "y": 3480,
-        "wires": [
-            [
-                "fec0a9aaebec5e81"
-            ]
-        ]
-    },
-    {
         "id": "e7f09c951af944f6",
         "type": "debug",
         "z": "33e76285.1cd03e",
@@ -12560,23 +12519,6 @@
                 "15ec271b7bfbdc40"
             ]
         ]
-    },
-    {
-        "id": "fec0a9aaebec5e81",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1870,
-        "y": 3480,
-        "wires": []
     },
     {
         "id": "59c537e3b7a29c28",
@@ -12759,155 +12701,6 @@
         "y": 3300,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "59145f3c1973b95d",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[{\"Navn\": \"martin\",\"Tid\": \"40:23\"}]",
-        "payloadType": "str",
-        "x": 1170,
-        "y": 3480,
-        "wires": [
-            [
-                "db3fa110246a0c2f"
-            ]
-        ]
-    },
-    {
-        "id": "f0432e1f38353b5d",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[{\"Navn\": \"martin\",\"Tid\": \"40:23\"}]",
-        "payloadType": "str",
-        "x": 2470,
-        "y": 3220,
-        "wires": [
-            [
-                "2784cff26b30d10d"
-            ]
-        ]
-    },
-    {
-        "id": "b85e28500fafa846",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"40:23\"}]",
-        "payloadType": "str",
-        "x": 2470,
-        "y": 3280,
-        "wires": [
-            [
-                "2784cff26b30d10d"
-            ]
-        ]
-    },
-    {
-        "id": "332e808f1dd714ef",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[{\"Navn\": \"martin\",\"Tid\": \"40:23\"}]",
-        "payloadType": "str",
-        "x": 2470,
-        "y": 3340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5f389099f247ad3d",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2870,
-        "y": 3280,
-        "wires": []
-    },
-    {
-        "id": "2784cff26b30d10d",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2660,
-        "y": 3240,
-        "wires": [
-            [
-                "5f389099f247ad3d"
-            ]
         ]
     },
     {
