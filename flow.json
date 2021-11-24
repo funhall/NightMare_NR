@@ -13188,7 +13188,7 @@
         "adjAmount": 0,
         "adjType": "days",
         "adjDir": "add",
-        "format": "D/M/yy",
+        "format": "D.M.yy kl. HH:MM",
         "locale": "en-US",
         "output": "payload",
         "outputType": "msg",
