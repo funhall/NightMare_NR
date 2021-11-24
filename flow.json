@@ -11955,7 +11955,7 @@
         "y": 3000,
         "wires": [
             [
-                "511906100b4e8123"
+                "1bb778ed85f5040e"
             ]
         ]
     },
@@ -12286,49 +12286,6 @@
         "wires": []
     },
     {
-        "id": "511906100b4e8123",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "array",
-                "tot": "flow"
-            },
-            {
-                "t": "delete",
-                "p": "navn",
-                "pt": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "payload.undefined",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1480,
-        "y": 3000,
-        "wires": [
-            [
-                "552309860288910c",
-                "5f33065ce7119f26"
-            ]
-        ]
-    },
-    {
         "id": "f7b09c195a1f913b",
         "type": "join",
         "z": "33e76285.1cd03e",
@@ -12561,33 +12518,6 @@
         "wires": []
     },
     {
-        "id": "d6623238066d5254",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "array",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1550,
-        "y": 3540,
-        "wires": [
-            [
-                "8f1557fd4bc05352"
-            ]
-        ]
-    },
-    {
         "id": "c4b11e1ff0f3e801",
         "type": "inject",
         "z": "33e76285.1cd03e",
@@ -12611,9 +12541,7 @@
         "x": 1350,
         "y": 3540,
         "wires": [
-            [
-                "d6623238066d5254"
-            ]
+            []
         ]
     },
     {
@@ -12631,6 +12559,34 @@
         "x": 1800,
         "y": 3540,
         "wires": []
+    },
+    {
+        "id": "1bb778ed85f5040e",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "array",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1500,
+        "y": 3000,
+        "wires": [
+            [
+                "5f33065ce7119f26",
+                "552309860288910c"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
