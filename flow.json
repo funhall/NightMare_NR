@@ -11751,22 +11751,6 @@
         ]
     },
     {
-        "id": "d612fdb218464712",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 1910,
-        "y": 3240,
-        "wires": [
-            [
-                "fec0a9aaebec5e81"
-            ]
-        ]
-    },
-    {
         "id": "5ef41d7c683eb55a",
         "type": "json",
         "z": "33e76285.1cd03e",
@@ -12587,8 +12571,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2110,
-        "y": 3280,
+        "x": 2130,
+        "y": 3240,
         "wires": []
     },
     {
@@ -12746,8 +12730,8 @@
         "y": 3260,
         "wires": [
             [
-                "d612fdb218464712",
-                "e7f09c951af944f6"
+                "e7f09c951af944f6",
+                "73958342361cacea"
             ]
         ]
     },
@@ -12760,6 +12744,48 @@
         "x": 2640,
         "y": 3500,
         "wires": []
+    },
+    {
+        "id": "efd7df3029f2e674",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 2510,
+        "y": 3360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73958342361cacea",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\",\"",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1870,
+        "y": 3260,
+        "wires": [
+            [
+                "fec0a9aaebec5e81"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
