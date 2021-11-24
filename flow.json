@@ -12754,7 +12754,7 @@
         "build": "object",
         "property": "payload",
         "propertyType": "msg",
-        "key": "topic",
+        "key": "payload",
         "joiner": "\",\"",
         "joinerType": "str",
         "accumulate": false,
