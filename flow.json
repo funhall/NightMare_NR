@@ -12276,7 +12276,7 @@
         "props": [
             {
                 "p": "new",
-                "v": "{\"Navn\": \"carsdfdften\",\"Tid\": \"40:23\"}",
+                "v": "{\"Navn\":\"hold carsten\",\"Tid\":\"12:12\"}",
                 "vt": "json"
             }
         ],
