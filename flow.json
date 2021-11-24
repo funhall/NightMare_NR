@@ -12348,11 +12348,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2150,
+        "x": 2170,
         "y": 3260,
         "wires": []
     },
@@ -12466,7 +12466,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1820,
+        "x": 1740,
         "y": 3240,
         "wires": [
             [
