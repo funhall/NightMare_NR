@@ -11944,11 +11944,6 @@
                 "p": "navn",
                 "v": "ole",
                 "vt": "str"
-            },
-            {
-                "p": "newname",
-                "v": "Olfert",
-                "vt": "str"
             }
         ],
         "repeat": "",
@@ -11986,7 +11981,7 @@
         "wires": [
             [
                 "e23bb66b687d6bea",
-                "511906100b4e8123"
+                "49a57bd30351c69b"
             ]
         ]
     },
@@ -12464,6 +12459,31 @@
         "x": 1510,
         "y": 3280,
         "wires": []
+    },
+    {
+        "id": "49a57bd30351c69b",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "array",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1510,
+        "y": 3220,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
