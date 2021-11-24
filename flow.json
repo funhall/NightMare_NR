@@ -11446,9 +11446,19 @@
         "height": "6",
         "columns": [
             {
+                "field": "Dato",
+                "title": "Dato",
+                "width": "120",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
                 "field": "Navn",
                 "title": "Navn",
-                "width": "200",
+                "width": "150",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -11458,17 +11468,7 @@
             {
                 "field": "Tid",
                 "title": "Tid",
-                "width": "100",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Dato",
-                "title": "Dato",
-                "width": "120",
+                "width": "60",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
