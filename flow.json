@@ -12654,8 +12654,7 @@
         "y": 3180,
         "wires": [
             [
-                "76612f1a5422fd15",
-                "152e4c1830cabb46"
+                "76612f1a5422fd15"
             ]
         ]
     },
@@ -12677,30 +12676,49 @@
         "wires": []
     },
     {
-        "id": "152e4c1830cabb46",
-        "type": "join",
+        "id": "8c3c26f26fd9598e",
+        "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\",\"",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 2050,
-        "y": 3260,
+        "func": "var liste = []\n\n//array.push(msg.new)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = liste\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2120,
+        "y": 3320,
         "wires": [
             [
                 "7cc00c1b0eb53c32"
+            ]
+        ]
+    },
+    {
+        "id": "9ac10a6a89581d69",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 1920,
+        "y": 3320,
+        "wires": [
+            [
+                "8c3c26f26fd9598e"
             ]
         ]
     },
