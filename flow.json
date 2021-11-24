@@ -12623,7 +12623,7 @@
         "type": "change",
         "z": "33e76285.1cd03e",
         "g": "e65de7a09ca7b27e",
-        "name": "",
+        "name": "tom",
         "rules": [
             {
                 "t": "set",
@@ -12638,7 +12638,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1300,
+        "x": 1270,
         "y": 3160,
         "wires": [
             [
