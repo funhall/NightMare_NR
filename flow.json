@@ -11058,12 +11058,11 @@
         "delay": "2000",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1100,
-        "y": 3160,
+        "x": 1380,
+        "y": 3180,
         "wires": [
             [
-                "5392944a49477afb",
-                "59c537e3b7a29c28"
+                "c41d91d5e288f379"
             ]
         ]
     },
@@ -12327,87 +12326,6 @@
         "wires": []
     },
     {
-        "id": "15ec271b7bfbdc40",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "string",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\":\"",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1490,
-        "y": 3180,
-        "wires": [
-            [
-                "3d2c655483adc7c4",
-                "c41d91d5e288f379"
-            ]
-        ]
-    },
-    {
-        "id": "5392944a49477afb",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Navn",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1340,
-        "y": 3140,
-        "wires": [
-            [
-                "15ec271b7bfbdc40"
-            ]
-        ]
-    },
-    {
-        "id": "59c537e3b7a29c28",
-        "type": "delay",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "5",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1320,
-        "y": 3180,
-        "wires": [
-            [
-                "15ec271b7bfbdc40"
-            ]
-        ]
-    },
-    {
         "id": "b0fd9bd6a72edf05",
         "type": "inject",
         "z": "33e76285.1cd03e",
@@ -12424,92 +12342,10 @@
         "topic": "",
         "payload": "12:12",
         "payloadType": "str",
-        "x": 1110,
+        "x": 1410,
         "y": 3260,
         "wires": [
             [
-                "e85a3c2f5acb5cd7",
-                "f75b3697e5e381eb"
-            ]
-        ]
-    },
-    {
-        "id": "e85a3c2f5acb5cd7",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Tid",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1340,
-        "y": 3240,
-        "wires": [
-            [
-                "3dbd1b2e351ef10a"
-            ]
-        ]
-    },
-    {
-        "id": "f75b3697e5e381eb",
-        "type": "delay",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "5",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1320,
-        "y": 3300,
-        "wires": [
-            [
-                "3dbd1b2e351ef10a"
-            ]
-        ]
-    },
-    {
-        "id": "3dbd1b2e351ef10a",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "string",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\":\"",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1510,
-        "y": 3260,
-        "wires": [
-            [
-                "bb387266cbb92b0a",
                 "c8b1a55c539bd3ea"
             ]
         ]
