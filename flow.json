@@ -12654,7 +12654,8 @@
         "y": 3180,
         "wires": [
             [
-                "76612f1a5422fd15"
+                "76612f1a5422fd15",
+                "8c3c26f26fd9598e"
             ]
         ]
     },
@@ -12680,7 +12681,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var liste = []\n\n//array.push(msg.new)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = liste\n\nreturn msg;",
+        "func": "var liste = msg.new\n//array.push(msg.new)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = liste\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
