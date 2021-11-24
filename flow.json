@@ -11448,7 +11448,7 @@
             {
                 "field": "Dato",
                 "title": "Dato",
-                "width": "120",
+                "width": "80",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
