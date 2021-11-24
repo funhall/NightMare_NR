@@ -11449,7 +11449,7 @@
             {
                 "field": "Dato",
                 "title": "Dato",
-                "width": "70",
+                "width": "75",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
