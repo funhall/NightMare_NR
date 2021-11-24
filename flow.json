@@ -12023,7 +12023,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
         "x": 1020,
         "y": 2380,
@@ -12111,7 +12110,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "",
+                "to": "[{ \"Dato\": \"24.11.2021\", \"Navn\": \"peterdd\", \"Tid\": \"60:51\" }]",
                 "tot": "str"
             }
         ],
@@ -12120,7 +12119,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1170,
+        "x": 1100,
         "y": 2920,
         "wires": [
             [
@@ -12149,8 +12148,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 950,
-        "y": 2940,
+        "x": 860,
+        "y": 2920,
         "wires": [
             [
                 "cbfb7be13cb84b69"
