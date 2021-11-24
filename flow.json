@@ -12292,6 +12292,11 @@
         "name": "",
         "rules": [
             {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
