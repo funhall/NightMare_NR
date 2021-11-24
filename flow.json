@@ -12362,7 +12362,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var inp = msg.payload\n\ninp.pop(msg.navn)\n\nmsg.payload = value\nreturn msg;",
+        "func": "var inp = msg.payload\n\ninp.pop(msg.navn)\n\nmsg.payload = inp\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
