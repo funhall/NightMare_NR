@@ -12538,9 +12538,8 @@
         "y": 3220,
         "wires": [
             [
-                "302736f46ffec6e3",
-                "04c65a8c80a7cf53",
-                "c300119efa6cb5f0"
+                "c300119efa6cb5f0",
+                "76612f1a5422fd15"
             ]
         ]
     },
@@ -12612,8 +12611,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1590,
-        "y": 3120,
+        "x": 1630,
+        "y": 3100,
         "wires": []
     },
     {
@@ -12629,8 +12628,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1610,
-        "y": 3340,
+        "x": 1630,
+        "y": 3360,
         "wires": []
     },
     {
@@ -12674,139 +12673,6 @@
         ]
     },
     {
-        "id": "5c686e688a481c29",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "string",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "3",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "num",
-        "reduceFixup": "",
-        "x": 2130,
-        "y": 3220,
-        "wires": [
-            [
-                "76612f1a5422fd15"
-            ]
-        ]
-    },
-    {
-        "id": "302736f46ffec6e3",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1940,
-        "y": 3180,
-        "wires": [
-            [
-                "5c686e688a481c29"
-            ]
-        ]
-    },
-    {
-        "id": "04c65a8c80a7cf53",
-        "type": "delay",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "100",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1870,
-        "y": 3220,
-        "wires": [
-            [
-                "5c686e688a481c29",
-                "4bfa1d1f4cea01be"
-            ]
-        ]
-    },
-    {
-        "id": "d9eadacc6eba3ca5",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "}",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1960,
-        "y": 3280,
-        "wires": [
-            [
-                "5c686e688a481c29"
-            ]
-        ]
-    },
-    {
-        "id": "4bfa1d1f4cea01be",
-        "type": "delay",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "100",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1770,
-        "y": 3280,
-        "wires": [
-            [
-                "d9eadacc6eba3ca5"
-            ]
-        ]
-    },
-    {
         "id": "c300119efa6cb5f0",
         "type": "debug",
         "z": "33e76285.1cd03e",
@@ -12820,8 +12686,22 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1750,
-        "y": 3160,
+        "y": 3140,
         "wires": []
+    },
+    {
+        "id": "f3974aa001cbc7c5",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 2040,
+        "y": 3440,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
