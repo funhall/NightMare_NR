@@ -12194,7 +12194,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var array = msg.payload\n\narray.push(msg.new)\n\n//msg.payload = array\n\nmsg.arrayLength = array.length\nmsg.payload = array\n\nreturn msg;",
+        "func": "var array = msg.payload\n\n//array.push(msg.new)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = array\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12320,8 +12320,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"Navn\": \"lene\",\"Tid\": \"40:23\"}",
-        "payloadType": "json",
+        "payload": "v",
+        "payloadType": "str",
         "x": 1290,
         "y": 3020,
         "wires": [
@@ -12478,8 +12478,8 @@
         "topic": "",
         "payload": "12:12",
         "payloadType": "str",
-        "x": 1110,
-        "y": 3300,
+        "x": 1150,
+        "y": 3280,
         "wires": [
             [
                 "e85a3c2f5acb5cd7",
@@ -12613,10 +12613,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "new",
+                "p": "payload",
                 "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
+                "to": "array",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -12624,7 +12624,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1470,
+        "x": 1500,
         "y": 3020,
         "wires": [
             [
