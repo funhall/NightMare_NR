@@ -12594,7 +12594,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "topic",
+                "v": "",
+                "vt": "date"
             }
         ],
         "repeat": "",
@@ -12602,8 +12604,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payloadType": "date",
-        "x": 1340,
+        "x": 1330,
         "y": 3000,
         "wires": [
             [
