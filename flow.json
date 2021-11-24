@@ -12397,11 +12397,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1700,
-        "y": 3660,
+        "x": 1830,
+        "y": 3680,
         "wires": []
     },
     {
@@ -12554,7 +12555,7 @@
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
-        "joiner": "\",\"",
+        "joiner": "\":\"",
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
@@ -12710,8 +12711,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1300,
-        "y": 3300,
+        "x": 1260,
+        "y": 3320,
         "wires": [
             [
                 "3dbd1b2e351ef10a"
@@ -12728,7 +12729,7 @@
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
-        "joiner": "\",\"",
+        "joiner": "\":\"",
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
@@ -12756,7 +12757,7 @@
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
-        "joiner": "",
+        "joiner": ",",
         "joinerType": "str",
         "accumulate": false,
         "timeout": "",
@@ -12773,6 +12774,16 @@
                 "fec0a9aaebec5e81"
             ]
         ]
+    },
+    {
+        "id": "ebaaf0cb04bf7889",
+        "type": "comment",
+        "z": "33e76285.1cd03e",
+        "name": "[{\"Navn\":\"martin\",\"Tid\":\"40:20\"}]",
+        "info": "",
+        "x": 2640,
+        "y": 3500,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
