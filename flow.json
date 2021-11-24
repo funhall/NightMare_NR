@@ -12252,7 +12252,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var array = msg.payload\n\nmsg.arrayLength = array.length+1\n\nreturn msg;",
+        "func": "var array = msg.payload\n\nmsg.arrayLength = array.length\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
