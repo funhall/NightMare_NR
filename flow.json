@@ -12605,11 +12605,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2270,
+        "x": 2250,
         "y": 3260,
         "wires": []
     },
@@ -12670,9 +12670,27 @@
         "y": 3180,
         "wires": [
             [
-                "5ef41d7c683eb55a"
+                "5ef41d7c683eb55a",
+                "76612f1a5422fd15"
             ]
         ]
+    },
+    {
+        "id": "76612f1a5422fd15",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2130,
+        "y": 3180,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
