@@ -12418,9 +12418,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[{\"Navn\": \"Ole\",\"Tid\": \"40:20\" }]",
-        "payloadType": "json",
-        "x": 1330,
+        "payload": "array",
+        "payloadType": "flow",
+        "x": 1300,
         "y": 3000,
         "wires": [
             [
