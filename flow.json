@@ -11075,8 +11075,8 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 1960,
-        "y": 3120,
+        "x": 1920,
+        "y": 2920,
         "wires": [
             []
         ]
@@ -12209,42 +12209,6 @@
         ]
     },
     {
-        "id": "ca45692f4dbfee5d",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2450,
-        "y": 3000,
-        "wires": []
-    },
-    {
-        "id": "9f065fdf5415445c",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "func": "var inp = msg.payload\n\ninp [msg.arrayLength] = msg.newname\n\nmsg.payload = inp\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2200,
-        "y": 3020,
-        "wires": [
-            [
-                "ca45692f4dbfee5d"
-            ]
-        ]
-    },
-    {
         "id": "c8b55137b91d3c86",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -12267,48 +12231,6 @@
         "y": 2880,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "839f0e1d050f9e5c",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2410,
-        "y": 3120,
-        "wires": []
-    },
-    {
-        "id": "e72d24ad06b4394a",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "delete",
-                "p": "payload.payload",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2200,
-        "y": 3100,
-        "wires": [
-            [
-                "839f0e1d050f9e5c"
-            ]
         ]
     },
     {
@@ -12441,8 +12363,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1880,
-        "y": 3180,
+        "x": 2740,
+        "y": 3200,
         "wires": [
             []
         ]
@@ -12459,8 +12381,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2090,
-        "y": 3380,
+        "x": 1910,
+        "y": 3280,
         "wires": []
     },
     {
@@ -12687,20 +12609,6 @@
         "x": 2640,
         "y": 3500,
         "wires": []
-    },
-    {
-        "id": "4ea65712fe29f07b",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 2270,
-        "y": 3300,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "25b0621fbdbd0e71",
