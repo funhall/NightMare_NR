@@ -12363,10 +12363,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "array",
-                "tot": "flow"
+                "p": "array",
+                "pt": "flow",
+                "to": "{\"Navn\": \"martin\",\"Tid\": \"40:20\"}",
+                "tot": "json"
             }
         ],
         "action": "",
@@ -12374,7 +12374,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1480,
+        "x": 1470,
         "y": 3680,
         "wires": [
             [
