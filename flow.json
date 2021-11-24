@@ -11464,6 +11464,16 @@
                 "formatterParams": {
                     "target": "_blank"
                 }
+            },
+            {
+                "field": "Dato",
+                "title": "Dato",
+                "width": "120",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
             }
         ],
         "outputs": 1,
