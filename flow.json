@@ -12312,7 +12312,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "new",
+                "v": "[{\"Navn\": \"martin\",\"Tid\": \"40:23\"}]",
+                "vt": "json"
             }
         ],
         "repeat": "",
@@ -12320,8 +12322,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "v",
-        "payloadType": "str",
         "x": 1290,
         "y": 3020,
         "wires": [
@@ -12343,8 +12343,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2010,
-        "y": 3000,
+        "x": 1910,
+        "y": 3020,
         "wires": []
     },
     {
