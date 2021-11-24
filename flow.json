@@ -12296,6 +12296,11 @@
                 "pt": "msg",
                 "to": "array",
                 "tot": "flow"
+            },
+            {
+                "t": "delete",
+                "p": "navn",
+                "pt": "msg"
             }
         ],
         "action": "",
