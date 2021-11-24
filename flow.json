@@ -12261,11 +12261,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1960,
+        "x": 1760,
         "y": 3020,
         "wires": [
             [
-                "9f01379ab3522a20"
+                "bd4f8aca80e0ac19",
+                "552309860288910c"
             ]
         ]
     },
@@ -12299,7 +12300,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2310,
+        "x": 1930,
         "y": 3080,
         "wires": []
     },
@@ -12320,8 +12321,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1730,
-        "y": 2960,
+        "x": 1590,
+        "y": 2900,
         "wires": [
             [
                 "4d531907fa95de70"
@@ -12349,10 +12350,29 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 1830,
-        "y": 3140,
+        "y": 3260,
         "wires": [
             [
                 "f9afb265.b11b7"
+            ]
+        ]
+    },
+    {
+        "id": "bd4f8aca80e0ac19",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "func": "var inp = msg.payload\n\ninp.pop(msg.navn)\n\nmsg.payload = value\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 3020,
+        "wires": [
+            [
+                "9f01379ab3522a20"
             ]
         ]
     },
