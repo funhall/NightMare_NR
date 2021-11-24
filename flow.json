@@ -11933,35 +11933,6 @@
         ]
     },
     {
-        "id": "80b4851336df4b9c",
-        "type": "join",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "string",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": ",",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1630,
-        "y": 3060,
-        "wires": [
-            [
-                "4d531907fa95de70",
-                "f7b09c195a1f913b"
-            ]
-        ]
-    },
-    {
         "id": "e0e94976be72bbd3",
         "type": "inject",
         "z": "33e76285.1cd03e",
@@ -11986,7 +11957,7 @@
         "y": 3040,
         "wires": [
             [
-                "80b4851336df4b9c"
+                "4d531907fa95de70"
             ]
         ]
     },
@@ -12014,9 +11985,7 @@
         "x": 1430,
         "y": 3120,
         "wires": [
-            [
-                "80b4851336df4b9c"
-            ]
+            []
         ]
     },
     {
@@ -12286,7 +12255,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var value = []\n\nvalue.push(msg.payload)\n\nmsg.payload = value\nreturn msg;",
+        "func": "var value = []\n\nvalue.push(4)\nvalue.push(5)\nvalue.push(6)\n\nmsg.payload = value\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
