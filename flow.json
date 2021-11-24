@@ -12644,28 +12644,9 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2130,
-        "y": 3180,
+        "x": 1870,
+        "y": 3220,
         "wires": []
-    },
-    {
-        "id": "8c3c26f26fd9598e",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "func": "var liste = msg.new\n//array.push(msg.new)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = liste\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2120,
-        "y": 3320,
-        "wires": [
-            [
-                "7cc00c1b0eb53c32"
-            ]
-        ]
     },
     {
         "id": "9ac10a6a89581d69",
@@ -12674,10 +12655,8 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
+                "p": "payload1",
+                "v": "\"Navn\":\"hold carsten\",\"Tid\":\"12:12\"",
                 "vt": "str"
             }
         ],
@@ -12686,13 +12665,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payloadType": "date",
-        "x": 1920,
-        "y": 3320,
+        "x": 2350,
+        "y": 3340,
         "wires": [
-            [
-                "8c3c26f26fd9598e"
-            ]
+            []
         ]
     },
     {
