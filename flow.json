@@ -12185,12 +12185,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2470,
-        "y": 3000,
+        "x": 2250,
+        "y": 3020,
         "wires": []
     },
     {
