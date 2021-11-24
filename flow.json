@@ -12253,7 +12253,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var array = msg.payload\n\nmsg.arrayLength = array.length\n\nreturn msg;",
+        "func": "var array = msg.payload\n\nmsg.arrayLength = array.length+1\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12263,7 +12263,7 @@
         "y": 3000,
         "wires": [
             [
-                "ca45692f4dbfee5d"
+                "9f065fdf5415445c"
             ]
         ]
     },
@@ -12362,16 +12362,18 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var inp = msg.payload\n\ninp[msg.valuelength] = msg.navn1\n\nmsg.payload = inp\nreturn msg;",
+        "func": "var inp = msg.payload\n\ninp[msg.valuelength] = lene\n\nmsg.payload = inp\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1860,
-        "y": 3120,
+        "x": 1900,
+        "y": 3000,
         "wires": [
-            []
+            [
+                "ca45692f4dbfee5d"
+            ]
         ]
     },
     {
