@@ -12463,7 +12463,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "layload",
+                "p": "payload",
                 "pt": "msg",
                 "to": "[{\"Navn\": \"martin\",\"Tid\": \"40:23\"}]",
                 "tot": "json"
