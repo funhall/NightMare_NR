@@ -12647,7 +12647,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2330,
-        "y": 3180,
+        "y": 3200,
         "wires": []
     },
     {
@@ -12679,7 +12679,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "string",
+        "build": "array",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
