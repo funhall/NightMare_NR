@@ -12534,12 +12534,13 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1650,
+        "x": 1630,
         "y": 3220,
         "wires": [
             [
                 "302736f46ffec6e3",
-                "04c65a8c80a7cf53"
+                "04c65a8c80a7cf53",
+                "c300119efa6cb5f0"
             ]
         ]
     },
@@ -12719,7 +12720,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1840,
+        "x": 1940,
         "y": 3180,
         "wires": [
             [
@@ -12744,7 +12745,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1810,
+        "x": 1870,
         "y": 3220,
         "wires": [
             [
@@ -12804,6 +12805,23 @@
                 "d9eadacc6eba3ca5"
             ]
         ]
+    },
+    {
+        "id": "c300119efa6cb5f0",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1750,
+        "y": 3160,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
