@@ -11938,7 +11938,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "object",
+        "build": "array",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -11952,11 +11952,12 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1990,
-        "y": 3440,
+        "x": 1630,
+        "y": 3060,
         "wires": [
             [
-                "f9afb265.b11b7"
+                "f9afb265.b11b7",
+                "4d531907fa95de70"
             ]
         ]
     },
@@ -11972,8 +11973,7 @@
                 "vt": "str"
             },
             {
-                "p": "tid",
-                "v": "13:12",
+                "p": "topic",
                 "vt": "str"
             }
         ],
@@ -11981,12 +11981,12 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
-        "x": 1590,
+        "topic": "Navn",
+        "x": 1390,
         "y": 3020,
         "wires": [
             [
-                "511906100b4e8123"
+                "80b4851336df4b9c"
             ]
         ]
     },
@@ -12011,8 +12011,8 @@
         "topic": "Tid",
         "payload": "20:55",
         "payloadType": "str",
-        "x": 1810,
-        "y": 3460,
+        "x": 1430,
+        "y": 3120,
         "wires": [
             [
                 "80b4851336df4b9c"
@@ -12286,7 +12286,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var value = []\n\nvalue.push(\"msg.navn, msg.tid\")\n\nmsg.payload = value\nreturn msg;",
+        "func": "var value = []\n\nvalue.push(\"msg.payload\")\n\nmsg.payload = value\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12351,8 +12351,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1770,
-        "y": 3020,
+        "x": 1790,
+        "y": 2980,
         "wires": [
             [
                 "4d531907fa95de70"
