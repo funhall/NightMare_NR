@@ -12473,7 +12473,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "[{\"Navn\": \"lene\",\"Tid\": \"60:23\"}]",
-                "tot": "str"
+                "tot": "json"
             }
         ],
         "action": "",
