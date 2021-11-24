@@ -11971,8 +11971,7 @@
         "name": "Tid",
         "props": [
             {
-                "p": "topic",
-                "vt": "str"
+                "p": "payload"
             },
             {
                 "p": "navn1",
@@ -11984,11 +11983,15 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "Tid",
-        "x": 1430,
-        "y": 3120,
+        "topic": "",
+        "payload": "{\"_msgid\":\"34ec6f39788c208a\",\"navn\":\"ole\",\"newname\":\"Olfert\",\"payload\":[{\"Navn\":\"peterdd\",\"Tid\":\"60:53\"},{\"Navn\":\"Ole\",\"Tid\":\"13:14\"}]}",
+        "payloadType": "json",
+        "x": 1330,
+        "y": 3280,
         "wires": [
-            []
+            [
+                "e23bb66b687d6bea"
+            ]
         ]
     },
     {
@@ -12416,7 +12419,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1660,
+        "x": 1940,
         "y": 3140,
         "wires": [
             []
@@ -12448,6 +12451,23 @@
                 "f9afb265.b11b7"
             ]
         ]
+    },
+    {
+        "id": "e23bb66b687d6bea",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1490,
+        "y": 3280,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
