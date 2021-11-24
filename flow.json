@@ -12256,8 +12256,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1660,
-        "y": 2980,
+        "x": 1640,
+        "y": 3000,
         "wires": [
             [
                 "74dcd3a515b6ba1a"
@@ -12620,8 +12620,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1630,
-        "y": 3040,
+        "x": 1610,
+        "y": 3060,
         "wires": []
     },
     {
@@ -12633,10 +12633,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2050,
+        "x": 2030,
         "y": 3040,
         "wires": []
     },
