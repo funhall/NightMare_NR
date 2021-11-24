@@ -12210,13 +12210,13 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var array = msg.payload\n\n//msg.payload = array\n\nmsg.arrayLength = array.length\n\nreturn msg;",
+        "func": "var array = msg.payload\n\nvalue.push(msg.new)\n\n//msg.payload = array\n\nmsg.arrayLength = array.length\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1820,
+        "x": 1600,
         "y": 3000,
         "wires": [
             [
@@ -12281,23 +12281,6 @@
         "reg": false,
         "x": 1750,
         "y": 2880,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3953cad93981de30",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "func": "var value = \n\nvalue.push(4)\nvalue.push(5)\nvalue.push(msg.navn)\n\nmsg.payload = value\n\nmsg.valuelength = value.length\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2240,
-        "y": 3160,
         "wires": [
             []
         ]
@@ -12425,8 +12408,9 @@
                 "p": "payload"
             },
             {
-                "p": "topic",
-                "vt": "str"
+                "p": "new",
+                "v": "[{\"Navn\": \"Martin\",\"Tid\": \"30:20\" }]",
+                "vt": "json"
             }
         ],
         "repeat": "",
@@ -12463,8 +12447,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1540,
-        "y": 3120,
+        "x": 1740,
+        "y": 3400,
         "wires": [
             [
                 "143ded9690e41efa"
@@ -12483,8 +12467,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1850,
-        "y": 3060,
+        "x": 2010,
+        "y": 3380,
         "wires": []
     },
     {
@@ -12500,9 +12484,26 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2330,
-        "y": 3060,
+        "x": 1830,
+        "y": 3000,
         "wires": []
+    },
+    {
+        "id": "09c0ca274e690618",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "func": "var value = msg.payload\n\nvalue.push(4)\nvalue.push(5)\nvalue.push(msg.navn)\n\nmsg.payload = value\n\nmsg.valuelength = value.length\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1880,
+        "y": 3180,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
