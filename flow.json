@@ -12627,7 +12627,7 @@
         "z": "33e76285.1cd03e",
         "g": "e65de7a09ca7b27e",
         "name": "create payload",
-        "func": "// Get flow variables\nvar name = flow.get(\"navn\");\nvar time = flow.get(\"tid\");\nvar date = flow.get(\"date\");\n\n// Create payload\nmsg.new = { \"Dato\": date, \"Navn\": name, \"Tid\": time };\n\n// Reset flow variables\nflow.set(\"Navn\",\"\");\nflow.set(\"Tid\",\"\");\nflow.set(\"Dato\",\"\");\n\n// Return\nreturn msg;\n\n\n\n\n\n\n\n\n\n",
+        "func": "// Get flow variables\nvar name = flow.get(\"navn\");\nvar time = flow.get(\"tid\");\nvar date = flow.get(\"date\");\n\n// Create payload\nmsg.new = { \"Dato\": date, \"Navn\": name, \"Tid\": time };\n\n// Reset flow variables\nflow.set(\"Navn\",\"\");\nflow.set(\"Tid\",\"\");\nflow.set(\"Dato\",\"\");\n\n// Return\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
