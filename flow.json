@@ -11980,11 +11980,12 @@
         "topic": "Navn",
         "payload": "uuuuuu",
         "payloadType": "str",
-        "x": 1810,
-        "y": 3420,
+        "x": 1690,
+        "y": 3020,
         "wires": [
             [
-                "80b4851336df4b9c"
+                "80b4851336df4b9c",
+                "4d531907fa95de70"
             ]
         ]
     },
@@ -12276,6 +12277,25 @@
         "wires": [
             [
                 "8f89d29d99edf874"
+            ]
+        ]
+    },
+    {
+        "id": "4d531907fa95de70",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "func": "let fruits = ['Apple', 'Banana']\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1960,
+        "y": 3020,
+        "wires": [
+            [
+                "9f01379ab3522a20"
             ]
         ]
     },
