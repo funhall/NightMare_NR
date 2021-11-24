@@ -11593,8 +11593,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2150,
-        "y": 3520,
+        "x": 2070,
+        "y": 3240,
         "wires": []
     },
     {
@@ -11938,7 +11938,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "string",
+        "build": "object",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -11968,12 +11968,12 @@
         "name": "navn",
         "props": [
             {
-                "p": "navn",
-                "v": "ole",
+                "p": "topic",
                 "vt": "str"
             },
             {
-                "p": "topic",
+                "p": "navn",
+                "v": "ole",
                 "vt": "str"
             }
         ],
@@ -11997,11 +11997,11 @@
         "name": "Tid",
         "props": [
             {
-                "p": "payload"
-            },
-            {
                 "p": "topic",
                 "vt": "str"
+            },
+            {
+                "p": "payload"
             }
         ],
         "repeat": "",
