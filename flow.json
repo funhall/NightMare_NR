@@ -12746,28 +12746,12 @@
         "wires": []
     },
     {
-        "id": "efd7df3029f2e674",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 2110,
-        "y": 3260,
-        "wires": [
-            [
-                "fec0a9aaebec5e81"
-            ]
-        ]
-    },
-    {
         "id": "73958342361cacea",
         "type": "join",
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "array",
+        "build": "object",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -12786,8 +12770,22 @@
         "wires": [
             [
                 "3e016537a79a1af4",
-                "efd7df3029f2e674"
+                "fec0a9aaebec5e81"
             ]
+        ]
+    },
+    {
+        "id": "4ea65712fe29f07b",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 2350,
+        "y": 3360,
+        "wires": [
+            []
         ]
     },
     {
