@@ -12696,7 +12696,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "property": "payload",
-        "action": "str",
+        "action": "obj",
         "pretty": true,
         "x": 1990,
         "y": 3200,
