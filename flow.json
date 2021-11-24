@@ -11979,7 +11979,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"_msgid\":\"34ec6f39788c208a\",\"navn\":\"ole\",\"newname\":\"Olfert\",\"payload\":[{\"Navn\":\"peterdd\",\"Tid\":\"60:53\"},{\"Navn\":\"Ole\",\"Tid\":\"13:14\"}]}",
+        "payload": "{\"payload\":[{\"Navn\":\"peterdd\",\"Tid\":\"60:53\"},{\"Navn\":\"Ole\",\"Tid\":\"13:14\"}]}",
         "payloadType": "json",
         "x": 1330,
         "y": 3280,
