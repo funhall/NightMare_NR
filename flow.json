@@ -12552,7 +12552,7 @@
         "y": 3220,
         "wires": [
             [
-                "7cc00c1b0eb53c32"
+                "6c374afdd1b0a6c5"
             ]
         ]
     },
@@ -12607,7 +12607,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1830,
+        "x": 2090,
         "y": 3220,
         "wires": []
     },
@@ -12644,6 +12644,33 @@
         "x": 1610,
         "y": 3340,
         "wires": []
+    },
+    {
+        "id": "6c374afdd1b0a6c5",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "new",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1830,
+        "y": 3180,
+        "wires": [
+            [
+                "7cc00c1b0eb53c32"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
