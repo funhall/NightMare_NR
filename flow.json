@@ -11293,8 +11293,8 @@
         "ref": "Nighmare navn",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1620,
-        "y": 2800,
+        "x": 1700,
+        "y": 2780,
         "wires": [
             [
                 "3e016537a79a1af4",
@@ -11412,8 +11412,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 2070,
-        "y": 2800,
+        "x": 1990,
+        "y": 2780,
         "wires": [
             []
         ]
@@ -12200,8 +12200,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1740,
-        "y": 3000,
+        "x": 1700,
+        "y": 3020,
         "wires": [
             [
                 "74dcd3a515b6ba1a"
@@ -12227,8 +12227,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1750,
-        "y": 2880,
+        "x": 1670,
+        "y": 2840,
         "wires": [
             []
         ]
@@ -12313,11 +12313,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "newww",
-                "v": "{\"Navn\": \"lene\",\"Tid\": \"40:23\"}",
-                "vt": "json"
             }
         ],
         "repeat": "",
@@ -12325,10 +12320,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "array",
-        "payloadType": "flow",
-        "x": 1300,
-        "y": 3000,
+        "payload": "{\"Navn\": \"lene\",\"Tid\": \"40:23\"}",
+        "payloadType": "json",
+        "x": 1290,
+        "y": 3020,
         "wires": [
             [
                 "3268670f7f8b0b71"
@@ -12406,7 +12401,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 1510,
-        "y": 3200,
+        "y": 3180,
         "wires": [
             [
                 "3fcbbaec5ed427b9",
@@ -12511,8 +12506,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1300,
-        "y": 3260,
+        "x": 1340,
+        "y": 3240,
         "wires": [
             [
                 "3dbd1b2e351ef10a"
@@ -12536,8 +12531,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1260,
-        "y": 3320,
+        "x": 1320,
+        "y": 3300,
         "wires": [
             [
                 "3dbd1b2e351ef10a"
@@ -12564,8 +12559,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1490,
-        "y": 3300,
+        "x": 1510,
+        "y": 3260,
         "wires": [
             [
                 "3fcbbaec5ed427b9"
@@ -12596,8 +12591,7 @@
         "y": 3260,
         "wires": [
             [
-                "e7f09c951af944f6",
-                "3268670f7f8b0b71"
+                "e7f09c951af944f6"
             ]
         ]
     },
@@ -12607,8 +12601,8 @@
         "z": "33e76285.1cd03e",
         "name": "[{\"Navn\":\"martin\",\"Tid\":\"40:20\"}]",
         "info": "",
-        "x": 2640,
-        "y": 3500,
+        "x": 2650,
+        "y": 3480,
         "wires": []
     },
     {
@@ -12630,8 +12624,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1510,
-        "y": 3060,
+        "x": 1530,
+        "y": 3020,
         "wires": [
             [
                 "5f33065ce7119f26"
