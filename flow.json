@@ -12102,6 +12102,118 @@
         "wires": []
     },
     {
+        "id": "cbfb7be13cb84b69",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1170,
+        "y": 2920,
+        "wires": [
+            [
+                "3e016537a79a1af4"
+            ]
+        ]
+    },
+    {
+        "id": "796633a29d43d03a",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 950,
+        "y": 2940,
+        "wires": [
+            [
+                "cbfb7be13cb84b69"
+            ]
+        ]
+    },
+    {
+        "id": "6e8312e0.2cba2c",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "ui_control",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control",
+                "pt": "msg",
+                "to": "{\"tabulator\":{\"columns\":[{\"title\":\"Subsystem\",\"field\":\"SUBSYSTEM\",\"width\":100,\"align\":\"left\"},{\"title\":\"Jobname\",\"field\":\"JOB_NAME\",\"width\":200,\"align\":\"left\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Jobstatus\",\"field\":\"JOB_STATUS\",\"width\":100,\"align\":\"left\",\"color\":\"ff0000\",\"formatter\":\"function(cell, formatterParams, onRendered) {var status = cell.getValue(); if(status == 'MSGW') {cell.getElement().style.backgroundColor=\\\"#ff0000\\\";}else{cell.getElement().style.backgroundColor=\\\"#39ff14\\\";} return status;}\"}],\"layout\":\"fitColumns\",\"movableColumns\":true,\"groupBy\":\"\"}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1440,
+        "y": 3000,
+        "wires": [
+            [
+                "3e016537a79a1af4"
+            ]
+        ]
+    },
+    {
+        "id": "2030f58120e2d06c",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1250,
+        "y": 3000,
+        "wires": [
+            [
+                "6e8312e0.2cba2c"
+            ]
+        ]
+    },
+    {
         "id": "25b0621fbdbd0e71",
         "type": "debug",
         "z": "c39524c2016c8df2",
