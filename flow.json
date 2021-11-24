@@ -11055,7 +11055,7 @@
         "height": 1,
         "passthru": true,
         "mode": "text",
-        "delay": 300,
+        "delay": "2000",
         "topic": "topic",
         "topicType": "msg",
         "x": 1120,
