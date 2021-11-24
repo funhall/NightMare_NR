@@ -2389,7 +2389,8 @@
             "7240d36498d6e962",
             "9caa27f3280f5022",
             "d28ba8b6d563887c",
-            "3c8024969493ec9e"
+            "3c8024969493ec9e",
+            "c332e824c8eafe98"
         ],
         "env": [],
         "x": 314,
@@ -11471,7 +11472,8 @@
         "wires": [
             [
                 "74dcd3a515b6ba1a",
-                "8f89d29d99edf874"
+                "8f89d29d99edf874",
+                "c332e824c8eafe98"
             ]
         ]
     },
@@ -11932,7 +11934,8 @@
         "g": "e65de7a09ca7b27e",
         "name": "Reseter hold navn og tid",
         "links": [
-            "2b480c9c40b1ae41"
+            "2b480c9c40b1ae41",
+            "c332e824c8eafe98"
         ],
         "x": 375,
         "y": 2520,
@@ -12083,6 +12086,20 @@
                 "8f89d29d99edf874"
             ]
         ]
+    },
+    {
+        "id": "c332e824c8eafe98",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "e65de7a09ca7b27e",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "ded690629d639c1f"
+        ],
+        "x": 1765,
+        "y": 2740,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
