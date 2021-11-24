@@ -12255,7 +12255,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var value = []\n\nvalue.push(4)\nvalue.push(5)\nvalue.push(msg.navn)\n\nmsg.payload = value\n\nmsg.valuelength = value.length\nreturn msg;",
+        "func": "var value = []\n\nvalue.push(4)\nvalue.push(5)\nvalue.push(msg.navn)\n\nmsg.payload = value\n\nmsg.valuelength = value.length+1\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
