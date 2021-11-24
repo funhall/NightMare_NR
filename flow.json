@@ -12285,7 +12285,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "let fruits = ['Apple', 'Banana']\nreturn msg;",
+        "func": "let fruits = ['Apple', 'Banana']\n\nconsole.log(fruits.length)\n// 2\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
