@@ -11756,12 +11756,14 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "property": "payload",
-        "action": "str",
+        "action": "",
         "pretty": false,
-        "x": 2320,
-        "y": 2060,
+        "x": 1850,
+        "y": 3260,
         "wires": [
-            []
+            [
+                "fec0a9aaebec5e81"
+            ]
         ]
     },
     {
@@ -12513,8 +12515,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2130,
-        "y": 3280,
+        "x": 2250,
+        "y": 3460,
         "wires": []
     },
     {
@@ -12612,8 +12614,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1910,
-        "y": 3260,
+        "x": 2110,
+        "y": 3280,
         "wires": []
     },
     {
@@ -12771,7 +12773,7 @@
         "y": 3260,
         "wires": [
             [
-                "fec0a9aaebec5e81"
+                "d612fdb218464712"
             ]
         ]
     },
