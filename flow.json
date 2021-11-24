@@ -12285,7 +12285,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "msg.fruits = ['Apple', 'Banana']\n\nconsole.log(fruits.length)\n// 2\n",
+        "func": "msg.fruits = ['Apple', 'Banana']\n\nconsole.log(fruits.length)\n// 2\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12297,6 +12297,23 @@
             [
                 "9f01379ab3522a20"
             ]
+        ]
+    },
+    {
+        "id": "5f33065ce7119f26",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2330,
+        "y": 3280,
+        "wires": [
+            []
         ]
     },
     {
