@@ -12348,11 +12348,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
+        "complete": "new",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2170,
+        "x": 2160,
         "y": 3260,
         "wires": []
     },
