@@ -5091,7 +5091,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 2900,
@@ -12285,7 +12286,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "msg.fruits = ['Apple', 'Banana']\n\nconsole.log(fruits.length)\n// 2\nreturn msg;",
+        "func": "var fruits = ['Apple', 'Banana']\n\nconsole.log(fruits.length)\n// 2\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12295,7 +12296,8 @@
         "y": 3020,
         "wires": [
             [
-                "9f01379ab3522a20"
+                "9f01379ab3522a20",
+                "51561ed441e142c9"
             ]
         ]
     },
@@ -12315,6 +12317,47 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "51561ed441e142c9",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "fruits",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2130,
+        "y": 3080,
+        "wires": [
+            [
+                "552309860288910c"
+            ]
+        ]
+    },
+    {
+        "id": "552309860288910c",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 2330,
+        "y": 3080,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
