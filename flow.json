@@ -11938,7 +11938,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "mode": "custom",
-        "build": "array",
+        "build": "string",
         "property": "payload",
         "propertyType": "msg",
         "key": "topic",
@@ -11982,8 +11982,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Navn",
-        "x": 1390,
-        "y": 3020,
+        "x": 1430,
+        "y": 3040,
         "wires": [
             [
                 "80b4851336df4b9c"
@@ -12286,7 +12286,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var value = []\n\nvalue.push(\"msg.payload\")\n\nmsg.payload = value\nreturn msg;",
+        "func": "var value = []\n\nvalue.push(msg.payload)\n\nmsg.payload = value\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12351,8 +12351,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1790,
-        "y": 2980,
+        "x": 1730,
+        "y": 2960,
         "wires": [
             [
                 "4d531907fa95de70"
