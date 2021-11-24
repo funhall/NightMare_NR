@@ -11050,8 +11050,8 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 1920,
-        "y": 2920,
+        "x": 2360,
+        "y": 3020,
         "wires": [
             []
         ]
@@ -12097,7 +12097,8 @@
         "y": 3080,
         "wires": [
             [
-                "74dcd3a515b6ba1a"
+                "74dcd3a515b6ba1a",
+                "8f89d29d99edf874"
             ]
         ]
     },
@@ -12236,7 +12237,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2250,
+        "x": 2290,
         "y": 3100,
         "wires": []
     },
