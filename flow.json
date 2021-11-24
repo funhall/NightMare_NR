@@ -12755,8 +12755,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 2350,
-        "y": 3360,
+        "x": 2270,
+        "y": 3300,
         "wires": [
             []
         ]
@@ -12780,13 +12780,133 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
+        "payload": "[{\"Navn\": \"martin\",\"Tid\": \"40:23\"}]",
+        "payloadType": "str",
         "x": 1170,
-        "y": 3460,
+        "y": 3480,
         "wires": [
             [
                 "db3fa110246a0c2f"
+            ]
+        ]
+    },
+    {
+        "id": "f0432e1f38353b5d",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"Navn\": \"martin\",\"Tid\": \"40:23\"}]",
+        "payloadType": "str",
+        "x": 2470,
+        "y": 3220,
+        "wires": [
+            [
+                "2784cff26b30d10d"
+            ]
+        ]
+    },
+    {
+        "id": "b85e28500fafa846",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"Navn\": \"Lene\",\"Tid\": \"40:23\"}]",
+        "payloadType": "str",
+        "x": 2470,
+        "y": 3280,
+        "wires": [
+            [
+                "2784cff26b30d10d"
+            ]
+        ]
+    },
+    {
+        "id": "332e808f1dd714ef",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"Navn\": \"martin\",\"Tid\": \"40:23\"}]",
+        "payloadType": "str",
+        "x": 2470,
+        "y": 3340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f389099f247ad3d",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2870,
+        "y": 3280,
+        "wires": []
+    },
+    {
+        "id": "2784cff26b30d10d",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2660,
+        "y": 3240,
+        "wires": [
+            [
+                "5f389099f247ad3d"
             ]
         ]
     },
