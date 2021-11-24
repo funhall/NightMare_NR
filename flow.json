@@ -11043,30 +11043,6 @@
         ]
     },
     {
-        "id": "54c1ab4b77af5c94",
-        "type": "ui_text_input",
-        "z": "33e76285.1cd03e",
-        "name": "Hold navn",
-        "label": "Hold navn: ",
-        "tooltip": "",
-        "group": "117cda2a.43e596",
-        "order": 23,
-        "width": 4,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "2000",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1380,
-        "y": 3180,
-        "wires": [
-            [
-                "c41d91d5e288f379"
-            ]
-        ]
-    },
-    {
         "id": "8f89d29d99edf874",
         "type": "firebase out",
         "z": "33e76285.1cd03e",
@@ -12326,31 +12302,6 @@
         "wires": []
     },
     {
-        "id": "b0fd9bd6a72edf05",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "12:12",
-        "payloadType": "str",
-        "x": 1390,
-        "y": 3260,
-        "wires": [
-            [
-                "c8b1a55c539bd3ea"
-            ]
-        ]
-    },
-    {
         "id": "ebaaf0cb04bf7889",
         "type": "comment",
         "z": "33e76285.1cd03e",
@@ -12423,23 +12374,6 @@
         "wires": []
     },
     {
-        "id": "bb387266cbb92b0a",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1870,
-        "y": 3300,
-        "wires": []
-    },
-    {
         "id": "76612f1a5422fd15",
         "type": "debug",
         "z": "33e76285.1cd03e",
@@ -12504,8 +12438,8 @@
         "rules": [
             {
                 "t": "set",
-                "p": "new",
-                "pt": "msg",
+                "p": "navn",
+                "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
             }
@@ -12515,8 +12449,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1890,
-        "y": 3100,
+        "x": 1470,
+        "y": 3180,
         "wires": [
             []
         ]
@@ -12532,65 +12466,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1920,
-        "y": 3200,
-        "wires": [
-            [
-                "7cc00c1b0eb53c32"
-            ]
-        ]
-    },
-    {
-        "id": "c41d91d5e288f379",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "navn",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1570,
-        "y": 3180,
-        "wires": [
-            [
-                "31da552b6bd2d6fe"
-            ]
-        ]
-    },
-    {
-        "id": "c8b1a55c539bd3ea",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "tid",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1570,
+        "x": 1820,
         "y": 3240,
         "wires": [
             [
-                "31da552b6bd2d6fe"
+                "7cc00c1b0eb53c32"
             ]
         ]
     },
@@ -12623,32 +12503,111 @@
         ]
     },
     {
-        "id": "31da552b6bd2d6fe",
-        "type": "join",
+        "id": "54c1ab4b77af5c94",
+        "type": "ui_text_input",
         "z": "33e76285.1cd03e",
-        "name": "",
-        "mode": "custom",
-        "build": "merged",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": ",",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1730,
-        "y": 3200,
+        "name": "Hold navn",
+        "label": "Hold navn: ",
+        "tooltip": "",
+        "group": "117cda2a.43e596",
+        "order": 23,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "2000",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1280,
+        "y": 3180,
         "wires": [
             [
-                "82a882c8113dc970",
-                "bb387266cbb92b0a"
+                "161980f1e3d50b92"
             ]
+        ]
+    },
+    {
+        "id": "b0fd9bd6a72edf05",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "12:12",
+        "payloadType": "str",
+        "x": 1290,
+        "y": 3240,
+        "wires": [
+            [
+                "c8b1a55c539bd3ea"
+            ]
+        ]
+    },
+    {
+        "id": "c8b1a55c539bd3ea",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "tid",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "navn",
+                "pt": "msg",
+                "to": "navn",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1480,
+        "y": 3240,
+        "wires": [
+            [
+                "82a882c8113dc970"
+            ]
+        ]
+    },
+    {
+        "id": "f7b58814358fed54",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "navn",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1510,
+        "y": 3380,
+        "wires": [
+            []
         ]
     },
     {
