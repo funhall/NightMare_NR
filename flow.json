@@ -12539,9 +12539,9 @@
         "wires": [
             [
                 "c300119efa6cb5f0",
-                "f3974aa001cbc7c5",
                 "7cc00c1b0eb53c32",
-                "161980f1e3d50b92"
+                "161980f1e3d50b92",
+                "82a882c8113dc970"
             ]
         ]
     },
@@ -12692,22 +12692,6 @@
         "wires": []
     },
     {
-        "id": "f3974aa001cbc7c5",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": true,
-        "x": 1990,
-        "y": 3200,
-        "wires": [
-            [
-                "76612f1a5422fd15"
-            ]
-        ]
-    },
-    {
         "id": "161980f1e3d50b92",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -12729,8 +12713,24 @@
         "x": 1890,
         "y": 3100,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82a882c8113dc970",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "func": "msg.payload1=Json.parse(`{${msg.payload}}`)\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 3220,
+        "wires": [
             [
-                "3268670f7f8b0b71",
                 "76612f1a5422fd15"
             ]
         ]
