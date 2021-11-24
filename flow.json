@@ -11751,22 +11751,6 @@
         ]
     },
     {
-        "id": "5ef41d7c683eb55a",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 2050,
-        "y": 3240,
-        "wires": [
-            [
-                "7cc00c1b0eb53c32"
-            ]
-        ]
-    },
-    {
         "id": "0d099896abb6fecc",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -12609,7 +12593,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2250,
+        "x": 2330,
         "y": 3260,
         "wires": []
     },
@@ -12670,8 +12654,8 @@
         "y": 3180,
         "wires": [
             [
-                "5ef41d7c683eb55a",
-                "76612f1a5422fd15"
+                "76612f1a5422fd15",
+                "152e4c1830cabb46"
             ]
         ]
     },
@@ -12691,6 +12675,34 @@
         "x": 2130,
         "y": 3180,
         "wires": []
+    },
+    {
+        "id": "152e4c1830cabb46",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\",\"",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2050,
+        "y": 3260,
+        "wires": [
+            [
+                "7cc00c1b0eb53c32"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
