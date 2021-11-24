@@ -12200,7 +12200,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1560,
+        "x": 1740,
         "y": 3000,
         "wires": [
             [
@@ -12315,7 +12315,7 @@
                 "p": "payload"
             },
             {
-                "p": "new",
+                "p": "newww",
                 "v": "{\"Navn\": \"lene\",\"Tid\": \"40:23\"}",
                 "vt": "json"
             }
@@ -12331,7 +12331,7 @@
         "y": 3000,
         "wires": [
             [
-                "5f33065ce7119f26"
+                "3268670f7f8b0b71"
             ]
         ]
     },
@@ -12348,7 +12348,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1890,
+        "x": 2010,
         "y": 3000,
         "wires": []
     },
@@ -12596,7 +12596,8 @@
         "y": 3260,
         "wires": [
             [
-                "e7f09c951af944f6"
+                "e7f09c951af944f6",
+                "3268670f7f8b0b71"
             ]
         ]
     },
@@ -12609,6 +12610,33 @@
         "x": 2640,
         "y": 3500,
         "wires": []
+    },
+    {
+        "id": "3268670f7f8b0b71",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "new",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1510,
+        "y": 3060,
+        "wires": [
+            [
+                "5f33065ce7119f26"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
