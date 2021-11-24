@@ -11972,11 +11972,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "navn1",
-                "v": "ole peter",
-                "vt": "str"
             }
         ],
         "repeat": "",
