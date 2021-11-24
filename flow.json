@@ -11058,8 +11058,8 @@
         "delay": 300,
         "topic": "topic",
         "topicType": "msg",
-        "x": 1260,
-        "y": 3120,
+        "x": 1340,
+        "y": 3180,
         "wires": [
             [
                 "e7f09c951af944f6"
@@ -12503,8 +12503,8 @@
         "rules": [
             {
                 "t": "set",
-                "p": "array",
-                "pt": "flow",
+                "p": "layload",
+                "pt": "msg",
                 "to": "[{\"Navn\": \"martin\",\"Tid\": \"40:20\"}]",
                 "tot": "json"
             },
@@ -12521,7 +12521,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1540,
+        "x": 1620,
         "y": 3280,
         "wires": [
             [
@@ -12541,7 +12541,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2050,
+        "x": 2130,
         "y": 3280,
         "wires": []
     },
