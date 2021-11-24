@@ -2371,9 +2371,7 @@
             "3268670f7f8b0b71",
             "161980f1e3d50b92",
             "54c1ab4b77af5c94",
-            "e91e2d9906a60871",
             "e3f184ef59c19e90",
-            "aff78bd4414aa84c",
             "cf6d1b5fa664b752",
             "ba3e327bfb85b965",
             "2f75074c9af4cd0f",
@@ -2381,10 +2379,12 @@
             "351cdc8ce2b23ebf",
             "dc9a5f2c6181e733",
             "4c9307a2d2c16991",
-            "995fef40ec09764c"
+            "995fef40ec09764c",
+            "ded690629d639c1f",
+            "2352660ed972459b"
         ],
         "env": [],
-        "x": 1064,
+        "x": 1124,
         "y": 3119,
         "w": 1622,
         "h": 442
@@ -9407,7 +9407,8 @@
         "links": [
             "b41f9f2bfad990e4",
             "bdf8cec0e1a2db9f",
-            "814c356d347004e6"
+            "814c356d347004e6",
+            "ded690629d639c1f"
         ],
         "x": 595,
         "y": 520,
@@ -11089,7 +11090,7 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 2580,
+        "x": 2640,
         "y": 3440,
         "wires": [
             []
@@ -11308,8 +11309,8 @@
         "ref": "Nighmare navn",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1640,
-        "y": 3180,
+        "x": 2020,
+        "y": 3200,
         "wires": [
             [
                 "3e016537a79a1af4",
@@ -11428,8 +11429,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 1930,
-        "y": 3180,
+        "x": 2310,
+        "y": 3200,
         "wires": [
             []
         ]
@@ -12065,8 +12066,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2070,
-        "y": 3240,
+        "x": 2450,
+        "y": 3260,
         "wires": []
     },
     {
@@ -12136,7 +12137,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2380,
+        "x": 2440,
         "y": 3420,
         "wires": [
             [
@@ -12165,8 +12166,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1630,
-        "y": 3240,
+        "x": 2010,
+        "y": 3260,
         "wires": [
             []
         ]
@@ -12257,7 +12258,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2530,
+        "x": 2590,
         "y": 3360,
         "wires": []
     },
@@ -12274,7 +12275,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2350,
+        "x": 2410,
         "y": 3520,
         "wires": []
     },
@@ -12308,7 +12309,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2180,
+        "x": 2240,
         "y": 3420,
         "wires": [
             [
@@ -12337,7 +12338,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1350,
+        "x": 1670,
         "y": 3160,
         "wires": [
             []
@@ -12360,38 +12361,12 @@
         "delay": "2000",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1180,
+        "x": 1480,
         "y": 3160,
         "wires": [
             [
                 "161980f1e3d50b92"
             ]
-        ]
-    },
-    {
-        "id": "e91e2d9906a60871",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "e65de7a09ca7b27e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "navn",
-                "pt": "flow",
-                "to": "carsten",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1350,
-        "y": 3380,
-        "wires": [
-            []
         ]
     },
     {
@@ -12414,40 +12389,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1350,
+        "x": 1410,
         "y": 3440,
         "wires": [
             [
                 "ba3e327bfb85b965"
-            ]
-        ]
-    },
-    {
-        "id": "aff78bd4414aa84c",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "g": "e65de7a09ca7b27e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 1180,
-        "y": 3380,
-        "wires": [
-            [
-                "e91e2d9906a60871"
             ]
         ]
     },
@@ -12472,7 +12418,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1170,
+        "x": 1230,
         "y": 3440,
         "wires": [
             [
@@ -12498,7 +12444,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1590,
+        "x": 1650,
         "y": 3420,
         "wires": [
             [
@@ -12524,7 +12470,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1770,
+        "x": 1830,
         "y": 3420,
         "wires": [
             [
@@ -12553,12 +12499,13 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1170,
-        "y": 3240,
+        "x": 1230,
+        "y": 3360,
         "wires": [
             [
                 "351cdc8ce2b23ebf",
-                "dc9a5f2c6181e733"
+                "dc9a5f2c6181e733",
+                "2352660ed972459b"
             ]
         ]
     },
@@ -12582,7 +12529,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1350,
+        "x": 1410,
         "y": 3220,
         "wires": [
             []
@@ -12608,7 +12555,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1350,
+        "x": 1410,
         "y": 3280,
         "wires": [
             []
@@ -12626,7 +12573,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1960,
+        "x": 2020,
         "y": 3420,
         "wires": [
             [
@@ -12649,9 +12596,55 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2130,
+        "x": 2190,
         "y": 3480,
         "wires": []
+    },
+    {
+        "id": "ded690629d639c1f",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "e65de7a09ca7b27e",
+        "name": "Reseter hold navn og tid",
+        "links": [
+            "2b480c9c40b1ae41"
+        ],
+        "x": 1195,
+        "y": 3240,
+        "wires": [
+            [
+                "351cdc8ce2b23ebf",
+                "dc9a5f2c6181e733"
+            ]
+        ]
+    },
+    {
+        "id": "2352660ed972459b",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "e65de7a09ca7b27e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1300,
+        "y": 3160,
+        "wires": [
+            [
+                "54c1ab4b77af5c94"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
