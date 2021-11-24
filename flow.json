@@ -11972,7 +11972,9 @@
                 "vt": "str"
             },
             {
-                "p": "payload"
+                "p": "navn",
+                "v": "ole peter",
+                "vt": "str"
             }
         ],
         "repeat": "",
@@ -11980,12 +11982,12 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Tid",
-        "payload": "20:55",
-        "payloadType": "str",
         "x": 1430,
         "y": 3120,
         "wires": [
-            []
+            [
+                "4d531907fa95de70"
+            ]
         ]
     },
     {
@@ -12362,7 +12364,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var inp = msg.payload\n\ninp[3] = 20\n\nmsg.payload = inp\nreturn msg;",
+        "func": "var inp = msg.payload\n\ninp[msg.valuelength] = msg.navn\n\nmsg.payload = inp\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
