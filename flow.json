@@ -13220,10 +13220,12 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1250,
-        "y": 2900,
+        "x": 1800,
+        "y": 2960,
         "wires": [
-            []
+            [
+                "d28ba8b6d563887c"
+            ]
         ]
     },
     {
@@ -13295,6 +13297,33 @@
         "wires": [
             [
                 "4d6373135b143922"
+            ]
+        ]
+    },
+    {
+        "id": "d28ba8b6d563887c",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{ \"Dato\": \"24.11.2021\", \"Navn\": \"peterdd\", \"Tid\": \"60:51\" }]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2070,
+        "y": 2900,
+        "wires": [
+            [
+                "8f89d29d99edf874"
             ]
         ]
     },
