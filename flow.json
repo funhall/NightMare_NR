@@ -12365,7 +12365,7 @@
                 "t": "set",
                 "p": "array",
                 "pt": "flow",
-                "to": "{\"Navn\": \"martin\",\"Tid\": \"40:20\"}",
+                "to": "[{\"Navn\": \"martin\",\"Tid\": \"40:20\"}]",
                 "tot": "json"
             },
             {
