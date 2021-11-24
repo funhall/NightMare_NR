@@ -12342,7 +12342,7 @@
         "topic": "",
         "payload": "12:12",
         "payloadType": "str",
-        "x": 1410,
+        "x": 1390,
         "y": 3260,
         "wires": [
             [
@@ -12431,12 +12431,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1690,
-        "y": 3320,
+        "x": 1870,
+        "y": 3300,
         "wires": []
     },
     {
@@ -12532,7 +12532,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1860,
+        "x": 1920,
         "y": 3200,
         "wires": [
             [
@@ -12559,11 +12559,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1660,
+        "x": 1570,
         "y": 3180,
         "wires": [
             [
-                "82a882c8113dc970"
+                "31da552b6bd2d6fe"
             ]
         ]
     },
@@ -12586,11 +12586,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1670,
-        "y": 3260,
+        "x": 1570,
+        "y": 3240,
         "wires": [
             [
-                "82a882c8113dc970"
+                "31da552b6bd2d6fe"
             ]
         ]
     },
@@ -12619,6 +12619,35 @@
             [
                 "76612f1a5422fd15",
                 "5f33065ce7119f26"
+            ]
+        ]
+    },
+    {
+        "id": "31da552b6bd2d6fe",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ",",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1730,
+        "y": 3200,
+        "wires": [
+            [
+                "82a882c8113dc970",
+                "bb387266cbb92b0a"
             ]
         ]
     },
