@@ -2408,7 +2408,6 @@
             "6226ce87a975b955",
             "0f089b9a54a556fe",
             "d91823859dd616fb",
-            "ac50a0e84cc490c0",
             "7b47051275094992",
             "d95fbcf152844733",
             "a18b05418d50301a",
@@ -12894,31 +12893,6 @@
         ]
     },
     {
-        "id": "ac50a0e84cc490c0",
-        "type": "ui_text_input",
-        "z": "33e76285.1cd03e",
-        "g": "5935ae429d11b9b9",
-        "name": "Hold navn",
-        "label": "Hold navn: ",
-        "tooltip": "",
-        "group": "117cda2a.43e596",
-        "order": 23,
-        "width": 4,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "2000",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 3220,
-        "y": 2700,
-        "wires": [
-            [
-                "d91823859dd616fb"
-            ]
-        ]
-    },
-    {
         "id": "7b47051275094992",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -13191,9 +13165,7 @@
         "x": 3010,
         "y": 2700,
         "wires": [
-            [
-                "ac50a0e84cc490c0"
-            ]
+            []
         ]
     },
     {
