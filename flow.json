@@ -11295,7 +11295,8 @@
         "wires": [
             [
                 "3e016537a79a1af4",
-                "9f01379ab3522a20"
+                "9f01379ab3522a20",
+                "c8b55137b91d3c86"
             ]
         ]
     },
@@ -11950,11 +11951,11 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1410,
-        "y": 3020,
+        "x": 1310,
+        "y": 3000,
         "wires": [
             [
-                "4d531907fa95de70"
+                "511906100b4e8123"
             ]
         ]
     },
@@ -12248,40 +12249,22 @@
         ]
     },
     {
-        "id": "4d531907fa95de70",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "func": "var value = []\n\nvalue.push(4)\nvalue.push(5)\nvalue.push(msg.navn)\n\nmsg.payload = value\n\nmsg.valuelength = value.length\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1680,
-        "y": 3000,
-        "wires": [
-            [
-                "9f065fdf5415445c",
-                "c8b55137b91d3c86"
-            ]
-        ]
-    },
-    {
         "id": "5f33065ce7119f26",
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "\nreturn msg;",
+        "func": "var inp = msg.payload\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2330,
-        "y": 3280,
+        "x": 1700,
+        "y": 3000,
         "wires": [
-            []
+            [
+                "ca45692f4dbfee5d"
+            ]
         ]
     },
     {
@@ -12297,8 +12280,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2170,
-        "y": 2960,
+        "x": 2070,
+        "y": 3120,
         "wires": []
     },
     {
@@ -12308,9 +12291,11 @@
         "name": "",
         "rules": [
             {
-                "t": "delete",
-                "p": "_msgid",
-                "pt": "msg"
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "array",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -12318,11 +12303,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1490,
-        "y": 2880,
+        "x": 1480,
+        "y": 3000,
         "wires": [
             [
-                "4d531907fa95de70"
+                "5f33065ce7119f26"
             ]
         ]
     },
@@ -12367,8 +12352,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2050,
-        "y": 3120,
+        "x": 1950,
+        "y": 2980,
         "wires": []
     },
     {
@@ -12382,8 +12367,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1900,
-        "y": 3000,
+        "x": 1860,
+        "y": 3120,
         "wires": [
             [
                 "552309860288910c"
@@ -12398,9 +12383,9 @@
         "rules": [
             {
                 "t": "set",
-                "p": "valuelength",
+                "p": "array",
                 "pt": "flow",
-                "to": "msg.valuelength",
+                "to": "payload",
                 "tot": "msg"
             }
         ],
@@ -12409,8 +12394,25 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1930,
-        "y": 2900,
+        "x": 1810,
+        "y": 2840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3953cad93981de30",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "func": "var value = \n\nvalue.push(4)\nvalue.push(5)\nvalue.push(msg.navn)\n\nmsg.payload = value\n\nmsg.valuelength = value.length\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1660,
+        "y": 3140,
         "wires": [
             []
         ]
