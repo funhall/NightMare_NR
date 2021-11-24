@@ -11469,7 +11469,7 @@
             {
                 "field": "Tid",
                 "title": "Tid",
-                "width": "60",
+                "width": "50",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
