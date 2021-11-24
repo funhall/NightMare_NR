@@ -2346,8 +2346,8 @@
             "1eddee0bdcf3b51a"
         ],
         "env": [],
-        "x": 1754,
-        "y": 2599,
+        "x": 1634,
+        "y": 2619,
         "w": 612,
         "h": 122
     },
@@ -11862,8 +11862,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1990,
-        "y": 2640,
+        "x": 1870,
+        "y": 2660,
         "wires": [
             [
                 "b127db85dc55eca4",
@@ -11891,10 +11891,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Navn",
-        "payload": "peter",
+        "payload": "peterdd",
         "payloadType": "str",
-        "x": 1850,
-        "y": 2640,
+        "x": 1730,
+        "y": 2660,
         "wires": [
             [
                 "4d6373135b143922"
@@ -11923,8 +11923,8 @@
         "topic": "Tid",
         "payload": "60:51",
         "payloadType": "str",
-        "x": 1850,
-        "y": 2680,
+        "x": 1730,
+        "y": 2700,
         "wires": [
             [
                 "4d6373135b143922"
@@ -12045,8 +12045,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 2250,
-        "y": 2680,
+        "x": 2130,
+        "y": 2700,
         "wires": []
     },
     {
@@ -12153,8 +12153,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2220,
-        "y": 2640,
+        "x": 2100,
+        "y": 2660,
         "wires": [
             []
         ]
