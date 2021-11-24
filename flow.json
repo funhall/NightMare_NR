@@ -11939,10 +11939,6 @@
         "name": "navn",
         "props": [
             {
-                "p": "topic",
-                "vt": "str"
-            },
-            {
                 "p": "navn",
                 "v": "ole",
                 "vt": "str"
@@ -11952,9 +11948,9 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "Navn",
-        "x": 1430,
-        "y": 3040,
+        "topic": "",
+        "x": 1410,
+        "y": 3020,
         "wires": [
             [
                 "4d531907fa95de70"
@@ -11972,7 +11968,7 @@
                 "vt": "str"
             },
             {
-                "p": "navn",
+                "p": "navn1",
                 "v": "ole peter",
                 "vt": "str"
             }
@@ -12257,7 +12253,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var value = []\n\nvalue.push(4)\nvalue.push(5)\nvalue.push(msg.navn)\n\nmsg.payload = value\n\nmsg.valuelength = value.length+1\nreturn msg;",
+        "func": "var value = []\n\nvalue.push(4)\nvalue.push(5)\nvalue.push(msg.navn)\n\nmsg.payload = value\n\nmsg.valuelength = value.length\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12364,7 +12360,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var inp = msg.payload\n\ninp[msg.valuelength] = msg.navn\n\nmsg.payload = inp\nreturn msg;",
+        "func": "var inp = msg.payload\n\ninp[msg.valuelength] = msg.navn1\n\nmsg.payload = inp\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
