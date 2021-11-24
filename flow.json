@@ -12607,7 +12607,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "\"Navn\",\"",
+                "to": "\"Navn\"",
                 "tot": "str"
             }
         ],
