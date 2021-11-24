@@ -11967,10 +11967,13 @@
         "name": "navn",
         "props": [
             {
-                "p": "payload"
+                "p": "navn",
+                "v": "ole",
+                "vt": "str"
             },
             {
-                "p": "topic",
+                "p": "tid",
+                "v": "13:12",
                 "vt": "str"
             }
         ],
@@ -11978,10 +11981,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "Navn",
-        "payload": "uuuuuu",
-        "payloadType": "str",
-        "x": 1690,
+        "topic": "",
+        "x": 1590,
         "y": 3020,
         "wires": [
             [
@@ -12286,7 +12287,7 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "name": "",
-        "func": "var value = []\n\nmsg.payload = value\nreturn msg;",
+        "func": "var value = []\n\nvalue.push(msg.navn, msg.tid)\n\nmsg.payload = value\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12296,8 +12297,7 @@
         "y": 3020,
         "wires": [
             [
-                "9f01379ab3522a20",
-                "51561ed441e142c9"
+                "9f01379ab3522a20"
             ]
         ]
     },
@@ -12316,33 +12316,6 @@
         "y": 3280,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "51561ed441e142c9",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "fruits",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2130,
-        "y": 3080,
-        "wires": [
-            [
-                "552309860288910c"
-            ]
         ]
     },
     {
