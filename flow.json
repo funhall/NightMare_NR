@@ -11459,7 +11459,7 @@
             {
                 "field": "Navn",
                 "title": "Navn",
-                "width": "150",
+                "width": "160",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
