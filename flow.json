@@ -12367,6 +12367,13 @@
                 "pt": "flow",
                 "to": "{\"Navn\": \"martin\",\"Tid\": \"40:20\"}",
                 "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "array",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -12374,7 +12381,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1470,
+        "x": 1480,
         "y": 3680,
         "wires": [
             [
