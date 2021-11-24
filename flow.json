@@ -11290,11 +11290,12 @@
         "ref": "Nighmare navn",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 1780,
+        "x": 1620,
         "y": 2800,
         "wires": [
             [
-                "3e016537a79a1af4"
+                "3e016537a79a1af4",
+                "9f01379ab3522a20"
             ]
         ]
     },
@@ -11981,9 +11982,7 @@
         "x": 1430,
         "y": 3120,
         "wires": [
-            [
-                "2e123740068ef51c"
-            ]
+            []
         ]
     },
     {
@@ -12157,8 +12156,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2250,
-        "y": 3020,
+        "x": 2130,
+        "y": 2840,
         "wires": []
     },
     {
@@ -12259,11 +12258,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1760,
-        "y": 3020,
+        "x": 1680,
+        "y": 3000,
         "wires": [
             [
-                "552309860288910c"
+                "9f065fdf5415445c",
+                "c8b55137b91d3c86"
             ]
         ]
     },
@@ -12297,8 +12297,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2050,
-        "y": 3020,
+        "x": 2170,
+        "y": 2960,
         "wires": []
     },
     {
@@ -12318,8 +12318,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1590,
-        "y": 2900,
+        "x": 1490,
+        "y": 2880,
         "wires": [
             [
                 "4d531907fa95de70"
@@ -12355,25 +12355,6 @@
         ]
     },
     {
-        "id": "2e123740068ef51c",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "func": "var inp = msg.payload\n\ninp[msg.valuelength] = msg.navn1\n\nmsg.payload = inp\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1760,
-        "y": 3120,
-        "wires": [
-            [
-                "ca45692f4dbfee5d"
-            ]
-        ]
-    },
-    {
         "id": "ca45692f4dbfee5d",
         "type": "debug",
         "z": "33e76285.1cd03e",
@@ -12389,6 +12370,50 @@
         "x": 2050,
         "y": 3120,
         "wires": []
+    },
+    {
+        "id": "9f065fdf5415445c",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "func": "var inp = msg.payload\n\ninp[msg.valuelength] = msg.navn1\n\nmsg.payload = inp\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1900,
+        "y": 3000,
+        "wires": [
+            [
+                "552309860288910c"
+            ]
+        ]
+    },
+    {
+        "id": "c8b55137b91d3c86",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "valuelength",
+                "pt": "flow",
+                "to": "msg.valuelength",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1930,
+        "y": 2900,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
