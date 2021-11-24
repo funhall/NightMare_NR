@@ -13183,7 +13183,7 @@
         "adjAmount": 0,
         "adjType": "days",
         "adjDir": "add",
-        "format": "D.M.yy - HH:mm",
+        "format": "D.M.yy",
         "locale": "en-US",
         "output": "date",
         "outputType": "flow",
