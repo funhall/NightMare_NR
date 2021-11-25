@@ -2440,8 +2440,8 @@
             "9667910b6b191207"
         ],
         "env": [],
-        "x": 1424,
-        "y": 1459,
+        "x": 1044,
+        "y": 1839,
         "w": 602,
         "h": 142
     },
@@ -10590,8 +10590,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1710,
-        "y": 1560,
+        "x": 1330,
+        "y": 1940,
         "wires": [
             [
                 "12f3863bb52d5acd"
@@ -10625,8 +10625,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1920,
-        "y": 1560,
+        "x": 1540,
+        "y": 1940,
         "wires": [
             [
                 "eaae9386cab4227e"
@@ -10651,8 +10651,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1520,
-        "y": 1540,
+        "x": 1140,
+        "y": 1920,
         "wires": [
             [
                 "eaae9386cab4227e"
@@ -10765,8 +10765,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1670,
-        "y": 1500,
+        "x": 1290,
+        "y": 1880,
         "wires": [
             [
                 "eaae9386cab4227e"
@@ -10782,8 +10782,8 @@
         "links": [
             "2216095b02d3c520"
         ],
-        "x": 1545,
-        "y": 1500,
+        "x": 1165,
+        "y": 1880,
         "wires": [
             [
                 "42af591ee57e36a8"
@@ -12175,6 +12175,439 @@
                 "3e016537a79a1af4"
             ]
         ]
+    },
+    {
+        "id": "47f8333.7595f4c",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "foo",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2230,
+        "y": 1540,
+        "wires": [
+            [
+                "baa481f7.8c92f"
+            ]
+        ]
+    },
+    {
+        "id": "46bb072c.9ab548",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "Reset",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2050,
+        "y": 1580,
+        "wires": [
+            [
+                "47f8333.7595f4c"
+            ]
+        ]
+    },
+    {
+        "id": "6419695d.f444a8",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "Four presses",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 2820,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "9a9ece0e.e21968",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "Start",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2053.3333129882812,
+        "y": 1491.111083984375,
+        "wires": [
+            [
+                "baa481f7.8c92f",
+                "d4d7fd43.e18b5"
+            ]
+        ]
+    },
+    {
+        "id": "baa481f7.8c92f",
+        "type": "counter",
+        "z": "33e76285.1cd03e",
+        "inc": "1",
+        "name": "",
+        "x": 2240,
+        "y": 1490,
+        "wires": [
+            [
+                "eeab3859.a0a81",
+                "1ccfa267.6709d6"
+            ]
+        ]
+    },
+    {
+        "id": "cdc2f3f7.8cd668",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "count presses",
+        "property": "count",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 2440,
+        "y": 1600,
+        "wires": [
+            [
+                "c3a6c0e7.e7824"
+            ],
+            [
+                "1939c1b3.49b2c6"
+            ],
+            [
+                "7bfb6bfb.a555f4"
+            ],
+            [
+                "c75d22c1.43a18"
+            ]
+        ],
+        "info": "Just expand the flow.count to how ever many\npresses you want/need."
+    },
+    {
+        "id": "d4d7fd43.e18b5",
+        "type": "trigger",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "op1": "",
+        "op2": "0",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "6",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 2060,
+        "y": 1540,
+        "wires": [
+            [
+                "47f8333.7595f4c"
+            ]
+        ]
+    },
+    {
+        "id": "1ccfa267.6709d6",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Flow set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "count",
+                "pt": "flow",
+                "to": "count",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2420,
+        "y": 1450,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5ec0e6d.65fe68",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "Tripple press",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 2820,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "a4900536.188a4",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "Double press",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 2820,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "f7ea3f92.56f1b",
+        "type": "delay",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 2420,
+        "y": 1540,
+        "wires": [
+            [
+                "cdc2f3f7.8cd668"
+            ]
+        ]
+    },
+    {
+        "id": "eaa4f15.17e7a9",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "Single Press",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 2820,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "eeab3859.a0a81",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "count",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2410,
+        "y": 1490,
+        "wires": [
+            [
+                "f7ea3f92.56f1b"
+            ]
+        ]
+    },
+    {
+        "id": "c3a6c0e7.e7824",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Single Press",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Single Press",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2640,
+        "y": 1540,
+        "wires": [
+            [
+                "eaa4f15.17e7a9"
+            ]
+        ]
+    },
+    {
+        "id": "1939c1b3.49b2c6",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Double Press",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Double Press",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2650,
+        "y": 1580,
+        "wires": [
+            [
+                "a4900536.188a4"
+            ]
+        ]
+    },
+    {
+        "id": "7bfb6bfb.a555f4",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Tripple Press",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Tripple Press",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2640,
+        "y": 1620,
+        "wires": [
+            [
+                "d5ec0e6d.65fe68"
+            ]
+        ]
+    },
+    {
+        "id": "c75d22c1.43a18",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Four Press",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Four Press",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2640,
+        "y": 1660,
+        "wires": [
+            [
+                "6419695d.f444a8"
+            ]
+        ]
+    },
+    {
+        "id": "c0dd4310.43d0a8",
+        "type": "comment",
+        "z": "33e76285.1cd03e",
+        "name": "DELAY - Readme",
+        "info": "The DELAY time has to be a bit longer than how\nlong it takes you to press the button the\nmaximum number of times.\nRead information in the SWITCH node too!",
+        "x": 2440,
+        "y": 1410,
+        "wires": []
+    },
+    {
+        "id": "8caf97b8.187508",
+        "type": "comment",
+        "z": "33e76285.1cd03e",
+        "name": "Input",
+        "info": "",
+        "x": 2050,
+        "y": 1450,
+        "wires": []
+    },
+    {
+        "id": "70b7384.c5ce6c8",
+        "type": "comment",
+        "z": "33e76285.1cd03e",
+        "name": "Outputs",
+        "info": "Debug nodes are here now, but just connect\nthem to what ever you want.\nThe messages sent are in the nodes just before\nthe debug nodes.\n",
+        "x": 2800,
+        "y": 1500,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
