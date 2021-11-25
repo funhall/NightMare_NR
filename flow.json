@@ -12283,7 +12283,8 @@
         "wires": [
             [
                 "eeab3859.a0a81",
-                "1ccfa267.6709d6"
+                "1ccfa267.6709d6",
+                "4dcd25bdb4a1cf21"
             ]
         ]
     },
@@ -12618,6 +12619,22 @@
         "info": "Debug nodes are here now, but just connect\nthem to what ever you want.\nThe messages sent are in the nodes just before\nthe debug nodes.\n",
         "x": 2800,
         "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "4dcd25bdb4a1cf21",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2440,
+        "y": 1340,
         "wires": []
     },
     {
