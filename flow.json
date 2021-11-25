@@ -45861,5 +45861,46 @@
         "x": 1080,
         "y": 680,
         "wires": []
+    },
+    {
+        "id": "24579bcb.5c9814",
+        "type": "inject",
+        "z": "c524d8189961167d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 16 * * 1,2,3,4,5",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "It is 4pm on a weekday!",
+        "payloadType": "str",
+        "x": 1430,
+        "y": 740,
+        "wires": [
+            [
+                "145b508a.f3325f"
+            ]
+        ]
+    },
+    {
+        "id": "145b508a.f3325f",
+        "type": "debug",
+        "z": "c524d8189961167d",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 1650,
+        "y": 740,
+        "wires": []
     }
 ]
