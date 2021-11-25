@@ -45736,7 +45736,7 @@
         "type": "function",
         "z": "c524d8189961167d",
         "name": "",
-        "func": "var ipToSearch = \"192.168.1.31\"\n\nvar found = msg.payload.find(element => element.ip === ipToSearch)// returns object if exists, undefined otherwise\nif(found){\n    msg.payload = found\n    return msg;  \n}else{\n    node.warn(ipToSearch+\" is not found\")\n}\n",
+        "func": "var ipToSearch = \"Børn\"\n\nvar found = msg.payload.find(element => element.ip === ipToSearch)// returns object if exists, undefined otherwise\nif(found){\n    msg.payload = found\n    return msg;  \n}else{\n    node.warn(ipToSearch+\" is not found\")\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
