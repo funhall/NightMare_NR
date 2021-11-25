@@ -12145,7 +12145,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 860,
+        "x": 780,
         "y": 2920,
         "wires": [
             [
@@ -12167,11 +12167,11 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1110,
+        "x": 970,
         "y": 2920,
         "wires": [
             [
-                "3937b9046f02d3e9"
+                "131b118ed64d9cc6"
             ]
         ]
     },
@@ -12187,9 +12187,37 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1450,
-        "y": 2940,
+        "x": 1350,
+        "y": 2920,
         "wires": []
+    },
+    {
+        "id": "131b118ed64d9cc6",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1140,
+        "y": 2920,
+        "wires": [
+            [
+                "3937b9046f02d3e9"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
