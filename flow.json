@@ -45806,8 +45806,8 @@
             {
                 "name": "schedule1",
                 "topic": "schedule1",
-                "payloadType": "flow",
-                "payload": "charge",
+                "payloadType": "str",
+                "payload": "payload",
                 "expressionType": "cron",
                 "expression": "0 * * * * * *",
                 "location": "",
@@ -45904,11 +45904,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1340,
+        "x": 1260,
         "y": 540,
         "wires": [
             [
-                "b07b52047a89162e"
+                "b07b52047a89162e",
+                "b785ca9fea1d4140"
             ]
         ]
     }
