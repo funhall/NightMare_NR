@@ -45621,6 +45621,78 @@
         ]
     },
     {
+        "id": "6df4d520e123bf99",
+        "type": "inject",
+        "z": "c524d8189961167d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "e4e6ff0f5674b8e0"
+            ]
+        ]
+    },
+    {
+        "id": "fedc8cdad904451d",
+        "type": "debug",
+        "z": "c524d8189961167d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e4e6ff0f5674b8e0",
+        "type": "change",
+        "z": "c524d8189961167d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "calender",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 140,
+        "wires": [
+            [
+                "fedc8cdad904451d"
+            ]
+        ]
+    },
+    {
         "id": "8e2174d6.8ba838",
         "type": "inject",
         "z": "e7d8edec.a0fdd",
