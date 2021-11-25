@@ -45661,7 +45661,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1030,
+        "x": 1350,
         "y": 140,
         "wires": []
     },
@@ -45685,6 +45685,22 @@
         "to": "",
         "reg": false,
         "x": 850,
+        "y": 140,
+        "wires": [
+            [
+                "c6a004717995c943"
+            ]
+        ]
+    },
+    {
+        "id": "c6a004717995c943",
+        "type": "json",
+        "z": "c524d8189961167d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1100,
         "y": 140,
         "wires": [
             [
