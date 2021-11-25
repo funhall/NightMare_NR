@@ -45638,7 +45638,7 @@
         "y": 480,
         "wires": [
             [
-                "3b721dc0ccc06d13"
+                "1853b73a7ba5c17b"
             ]
         ]
     },
@@ -45657,31 +45657,6 @@
         "x": 1130,
         "y": 480,
         "wires": []
-    },
-    {
-        "id": "3b721dc0ccc06d13",
-        "type": "switch",
-        "z": "c524d8189961167d",
-        "name": "",
-        "property": "calender",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "Børn",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 870,
-        "y": 480,
-        "wires": [
-            [
-                "fedc8cdad904451d"
-            ]
-        ]
     },
     {
         "id": "39d57941.2edb76",
@@ -45871,6 +45846,33 @@
             [
                 "9ba70e96.98a9d",
                 "4443f46a.0a113c"
+            ]
+        ]
+    },
+    {
+        "id": "1853b73a7ba5c17b",
+        "type": "change",
+        "z": "c524d8189961167d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "calendar",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "fedc8cdad904451d"
             ]
         ]
     }
