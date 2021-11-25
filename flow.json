@@ -45845,7 +45845,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "msg.payload.ontime",
                 "pt": "msg",
                 "to": "payload.date",
                 "tot": "msg"
@@ -45856,7 +45856,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1260,
+        "x": 1300,
         "y": 540,
         "wires": [
             [
