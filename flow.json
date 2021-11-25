@@ -83,7 +83,8 @@
         "type": "tab",
         "label": "Example of ui-list",
         "disabled": false,
-        "info": ""
+        "info": "",
+        "env": []
     },
     {
         "id": "9709bc5b.dc8c9",
@@ -3233,48 +3234,30 @@
         "id": "944f725.afd9f9",
         "type": "ui_group",
         "name": "Default",
-        "tab": "e252a1c5.e286",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false
     },
     {
-        "id": "e252a1c5.e286",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard"
-    },
-    {
         "id": "53cf504.e9555b",
         "type": "ui_group",
         "name": "test",
-        "tab": "52aaa596.768b7c",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "12"
     },
     {
-        "id": "52aaa596.768b7c",
-        "type": "ui_tab",
-        "name": "Test",
-        "icon": "dashboard"
-    },
-    {
         "id": "7e4c65d6.0419cc",
         "type": "ui_group",
         "name": "Default",
-        "tab": "2f52ec48.3a82cc",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "12",
         "collapse": false
-    },
-    {
-        "id": "2f52ec48.3a82cc",
-        "type": "ui_tab",
-        "name": "List",
-        "icon": "dashboard"
     },
     {
         "id": "c2eb3b8a24a6ca54",
@@ -45072,6 +45055,7 @@
         "actionType": "menu",
         "allowHTML": false,
         "outputs": 1,
+        "topic": "",
         "x": 290,
         "y": 420,
         "wires": [
@@ -45085,6 +45069,15 @@
         "type": "inject",
         "z": "ee47c5e8.e17bd",
         "name": "Move",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
