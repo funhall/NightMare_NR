@@ -45634,7 +45634,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 660,
+        "x": 600,
         "y": 480,
         "wires": [
             [
@@ -45655,7 +45655,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1130,
+        "x": 1210,
         "y": 480,
         "wires": []
     },
@@ -45750,19 +45750,19 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "192.168.1.31",
+                "v": "børn",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "192.168.1.32",
+                "v": "",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 860,
+        "x": 830,
         "y": 880,
         "wires": [
             [
@@ -45784,7 +45784,7 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 740,
+        "x": 630,
         "y": 880,
         "wires": [
             [
@@ -45869,7 +45869,26 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 880,
+        "x": 820,
+        "y": 480,
+        "wires": [
+            [
+                "6cb26287981f5480"
+            ]
+        ]
+    },
+    {
+        "id": "6cb26287981f5480",
+        "type": "split",
+        "z": "c524d8189961167d",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 1010,
         "y": 480,
         "wires": [
             [
