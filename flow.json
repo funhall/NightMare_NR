@@ -45228,7 +45228,7 @@
         "offset": "",
         "endpreview": "",
         "endpreviewUnits": "",
-        "preview": "5",
+        "preview": "0",
         "previewUnits": "days",
         "pastview": "4",
         "pastviewUnits": "days",
@@ -45338,7 +45338,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 460,
+        "x": 400,
         "y": 480,
         "wires": [
             [
