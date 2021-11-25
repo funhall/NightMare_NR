@@ -45793,38 +45793,6 @@
         ]
     },
     {
-        "id": "b785ca9fea1d4140",
-        "type": "cronplus",
-        "z": "c524d8189961167d",
-        "name": "",
-        "outputField": "payload",
-        "timeZone": "",
-        "persistDynamic": false,
-        "commandResponseMsgOutput": "output1",
-        "outputs": 1,
-        "options": [
-            {
-                "name": "schedule1",
-                "topic": "schedule1",
-                "payloadType": "str",
-                "payload": "payload",
-                "expressionType": "cron",
-                "expression": "0 * * * * * *",
-                "location": "",
-                "offset": "0",
-                "solarType": "all",
-                "solarEvents": "sunrise,sunset"
-            }
-        ],
-        "x": 490,
-        "y": 680,
-        "wires": [
-            [
-                "0757542300f23c0b"
-            ]
-        ]
-    },
-    {
         "id": "7de3e87a4b43a8a5",
         "type": "change",
         "z": "c524d8189961167d",
@@ -45851,22 +45819,6 @@
                 "238d2eedfc8bb4e2"
             ]
         ]
-    },
-    {
-        "id": "0757542300f23c0b",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 810,
-        "y": 680,
-        "wires": []
     },
     {
         "id": "b07b52047a89162e",
@@ -45909,8 +45861,61 @@
         "wires": [
             [
                 "b07b52047a89162e",
-                "b785ca9fea1d4140"
+                "7dced921d27f6b3e"
             ]
+        ]
+    },
+    {
+        "id": "7dced921d27f6b3e",
+        "type": "eztimer",
+        "z": "c524d8189961167d",
+        "name": "",
+        "debug": false,
+        "autoname": "",
+        "tag": "eztimer",
+        "topic": "",
+        "suspended": false,
+        "sendEventsOnSuspend": false,
+        "latLongSource": "manual",
+        "latLongHaZone": "zone.home",
+        "lat": "56.15674",
+        "lon": "10.21076",
+        "timerType": "1",
+        "startupMessage": true,
+        "ontype": "9",
+        "ontimesun": "dawn",
+        "ontimetod": "17:00",
+        "onpropertytype": "msg",
+        "onproperty": "payload",
+        "onvaluetype": "num",
+        "onvalue": 1,
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "onsuppressrepeats": false,
+        "offtype": "9",
+        "offtimesun": "dusk",
+        "offtimetod": "dusk",
+        "offduration": "00:01:00",
+        "offpropertytype": "msg",
+        "offproperty": "payload",
+        "offvaluetype": "num",
+        "offvalue": 0,
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "offsuppressrepeats": false,
+        "resend": false,
+        "resendInterval": "0s",
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 870,
+        "y": 700,
+        "wires": [
+            []
         ]
     }
 ]
