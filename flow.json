@@ -12463,8 +12463,8 @@
         "type": "switch",
         "z": "33e76285.1cd03e",
         "name": "",
-        "property": "count",
-        "propertyType": "flow",
+        "property": "payload",
+        "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
