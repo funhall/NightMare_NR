@@ -45785,6 +45785,15 @@
         "type": "inject",
         "z": "48ddfa0a.46dd14",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
