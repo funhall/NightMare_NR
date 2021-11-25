@@ -20224,9 +20224,9 @@
         "firebaseconfig": "c898b9e64977521d",
         "childpath": "Nighmare navn",
         "repeatifnull": false,
-        "eventType": "child_changed",
+        "eventType": "value",
         "queries": [],
-        "x": 3270,
+        "x": 3250,
         "y": 4020,
         "wires": [
             [
@@ -20246,7 +20246,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3610,
+        "x": 3650,
         "y": 4020,
         "wires": []
     },
