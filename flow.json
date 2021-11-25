@@ -102,20 +102,6 @@
         "env": []
     },
     {
-        "id": "e7d8edec.a0fdd",
-        "type": "tab",
-        "label": "Flow 6",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "48ddfa0a.46dd14",
-        "type": "tab",
-        "label": "Flow 9",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "195c9babcf1455a4",
         "type": "subflow",
         "name": "Hjælp knap lys",
@@ -45621,7 +45607,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
+        "x": 770,
         "y": 200,
         "wires": [
             []
@@ -45648,11 +45634,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 600,
-        "y": 120,
+        "x": 480,
+        "y": 460,
         "wires": [
             [
-                "e4e6ff0f5674b8e0"
+                "3b721dc0ccc06d13"
             ]
         ]
     },
@@ -45668,185 +45654,32 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1350,
-        "y": 140,
+        "x": 1130,
+        "y": 480,
         "wires": []
     },
     {
-        "id": "e4e6ff0f5674b8e0",
-        "type": "change",
+        "id": "3b721dc0ccc06d13",
+        "type": "switch",
         "z": "c524d8189961167d",
         "name": "",
+        "property": "calender",
+        "propertyType": "global",
         "rules": [
             {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "calender",
-                "tot": "global"
+                "t": "cont",
+                "v": "Børn",
+                "vt": "str"
             }
         ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 850,
-        "y": 140,
-        "wires": [
-            [
-                "c6a004717995c943"
-            ]
-        ]
-    },
-    {
-        "id": "c6a004717995c943",
-        "type": "json",
-        "z": "c524d8189961167d",
-        "name": "",
-        "property": "payload",
-        "action": "str",
-        "pretty": false,
-        "x": 1100,
-        "y": 140,
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 870,
+        "y": 480,
         "wires": [
             [
                 "fedc8cdad904451d"
-            ]
-        ]
-    },
-    {
-        "id": "8e2174d6.8ba838",
-        "type": "inject",
-        "z": "e7d8edec.a0fdd",
-        "name": "",
-        "props": [
-            {
-                "p": "calender",
-                "v": "calender",
-                "vt": "global"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 190,
-        "y": 140,
-        "wires": [
-            [
-                "c54e814b.1a87"
-            ]
-        ]
-    },
-    {
-        "id": "cc78d184.6d6a58",
-        "type": "debug",
-        "z": "e7d8edec.a0fdd",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "c54e814b.1a87",
-        "type": "function",
-        "z": "e7d8edec.a0fdd",
-        "name": "",
-        "func": "msg.disease = \"Børne\";\n\nfor (var key in msg.dbase) {\n   if(msg.calender[key].includes(msg.disease)){\n       return {\"key\":key};\n   }\n}\nreturn;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 140,
-        "wires": [
-            [
-                "cc78d184.6d6a58"
-            ]
-        ]
-    },
-    {
-        "id": "1a72ae34.a7b9c2",
-        "type": "inject",
-        "z": "48ddfa0a.46dd14",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "METAR KABC 121755Z AUTO 21016G24KT 180V240 1SM R11/P6000FT -RA BR BKN015 OVC025 06/04 A2990 RMK AO2 PK WND 20032/25 WSHFT 1715 VIS 3/4V1 1/2 VIS 3/4 RWY11 RAB07 CIG 013V017 CIG 017 RWY11 PRESFR SLP125 P0003 60009 T00640036 10066 21012 58033 TSNO",
-        "payloadType": "str",
-        "x": 190,
-        "y": 280,
-        "wires": [
-            [
-                "ffe1aa8d.390ad8"
-            ]
-        ]
-    },
-    {
-        "id": "bc18901.a1abc7",
-        "type": "debug",
-        "z": "48ddfa0a.46dd14",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "result",
-        "x": 570,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "ffe1aa8d.390ad8",
-        "type": "change",
-        "z": "48ddfa0a.46dd14",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "result",
-                "pt": "msg",
-                "to": "$match(payload,/A\\d{4}/)",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 380,
-        "y": 280,
-        "wires": [
-            [
-                "bc18901.a1abc7"
             ]
         ]
     }
