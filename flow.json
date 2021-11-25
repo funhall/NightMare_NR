@@ -20259,7 +20259,38 @@
         "x": 3270,
         "y": 4160,
         "wires": [
-            []
+            [
+                "14d8b0a007898cb6"
+            ]
+        ]
+    },
+    {
+        "id": "79f3e06ea25cec5d",
+        "type": "inject",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2780,
+        "y": 4160,
+        "wires": [
+            [
+                "897e22b4be2b11af"
+            ]
         ]
     },
     {
