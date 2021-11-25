@@ -45651,7 +45651,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 1130,
@@ -45831,7 +45832,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "calendar",
+                "to": "calender",
                 "tot": "global"
             }
         ],
@@ -45859,7 +45860,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "calendar",
+                "to": "calender",
                 "tot": "global"
             }
         ],
