@@ -3255,6 +3255,22 @@
         "displayName": "Google"
     },
     {
+        "id": "567e72afe6ba6dcd",
+        "type": "ical-config",
+        "url": "https://calendar.google.com/calendar/ical/e05rajqpji2kpfnlg4f4osk7es%40group.calendar.google.com/private-d205b2ea6f10962e73986d7d8aa92b75/basic.ics",
+        "caldav": "",
+        "caltype": "ical",
+        "name": "test",
+        "replacedates": false,
+        "usecache": false,
+        "username": "",
+        "includeTodo": false,
+        "password": "",
+        "calendar": "",
+        "pastWeeks": "0",
+        "futureWeeks": "4"
+    },
+    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
@@ -45526,30 +45542,79 @@
         "wires": []
     },
     {
-        "id": "c310ca4f63621927",
-        "type": "addEvent",
+        "id": "0962f71225ebc344",
+        "type": "ical-upcoming",
         "z": "c524d8189961167d",
-        "google": "aa7c2c7cf1d211db",
-        "calendarId2": "",
-        "tittle": "",
-        "description": "",
-        "location": "",
-        "time": "",
-        "attend": "",
-        "email1": "",
-        "name1": "",
-        "email2": "",
-        "name2": "",
-        "email3": "",
-        "name3": "",
-        "email4": "",
-        "name4": "",
-        "email5": "",
-        "name5": "",
-        "x": 740,
+        "confignode": "567e72afe6ba6dcd",
+        "checkall": false,
+        "cron": "",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "name": "",
+        "offset": "",
+        "endpreview": "",
+        "endpreviewUnits": "",
+        "preview": "5",
+        "previewUnits": "days",
+        "pastview": "4",
+        "pastviewUnits": "days",
+        "trigger": "always",
+        "timezone": "",
+        "filterProperty": "summary",
+        "filterOperator": "between",
+        "filter2": "",
+        "filter": "",
+        "x": 520,
         "y": 280,
         "wires": [
-            []
+            [
+                "7d998b1fc1912edd"
+            ]
         ]
+    },
+    {
+        "id": "577d60599efc8e2d",
+        "type": "inject",
+        "z": "c524d8189961167d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "0962f71225ebc344"
+            ]
+        ]
+    },
+    {
+        "id": "7d998b1fc1912edd",
+        "type": "debug",
+        "z": "c524d8189961167d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 300,
+        "wires": []
     }
 ]
