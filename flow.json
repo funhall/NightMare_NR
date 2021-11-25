@@ -45413,13 +45413,13 @@
         "id": "19bbec6c1066f785",
         "type": "switch",
         "z": "c524d8189961167d",
-        "name": "",
+        "name": "Juvel-kuppet",
         "property": "payload.description",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "cont",
-                "v": "Juvel-kuppet ",
+                "v": "Promille Hockey ",
                 "vt": "str"
             },
             {
@@ -45429,7 +45429,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 890,
+        "x": 910,
         "y": 480,
         "wires": [
             [
