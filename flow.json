@@ -45359,8 +45359,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1110,
-        "y": 480,
+        "x": 1370,
+        "y": 460,
         "wires": []
     },
     {
@@ -45433,63 +45433,9 @@
         "y": 480,
         "wires": [
             [
-                "fedc8cdad904451d"
+                "7de3e87a4b43a8a5"
             ],
             []
-        ]
-    },
-    {
-        "id": "be63becfd68e3402",
-        "type": "light-scheduler",
-        "z": "c524d8189961167d",
-        "settings": "6871a700.1c4708",
-        "events": "[]",
-        "topic": "",
-        "name": "",
-        "onPayload": "ON",
-        "onPayloadType": "str",
-        "offPayload": "OFF",
-        "offPayloadType": "str",
-        "onlyWhenDark": true,
-        "scheduleRndMax": 0,
-        "sunElevationThreshold": 6,
-        "sunShowElevationInStatus": false,
-        "outputfreq": "output.statechange.startup",
-        "x": 820,
-        "y": 660,
-        "wires": [
-            [
-                "e29c9a1e5de22933"
-            ]
-        ]
-    },
-    {
-        "id": "049ac321736c978a",
-        "type": "inject",
-        "z": "c524d8189961167d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "on",
-        "payload": "23.11.2021 16:30",
-        "payloadType": "str",
-        "x": 500,
-        "y": 660,
-        "wires": [
-            [
-                "be63becfd68e3402"
-            ]
         ]
     },
     {
@@ -45847,7 +45793,66 @@
         ]
     },
     {
-        "id": "e29c9a1e5de22933",
+        "id": "b785ca9fea1d4140",
+        "type": "cronplus",
+        "z": "c524d8189961167d",
+        "name": "",
+        "outputField": "payload",
+        "timeZone": "",
+        "persistDynamic": false,
+        "commandResponseMsgOutput": "output1",
+        "outputs": 1,
+        "options": [
+            {
+                "name": "schedule1",
+                "topic": "schedule1",
+                "payloadType": "flow",
+                "payload": "charge",
+                "expressionType": "dates",
+                "expression": "0 * * * * * *",
+                "location": "",
+                "offset": "0",
+                "solarType": "all",
+                "solarEvents": "sunrise,sunset"
+            }
+        ],
+        "x": 490,
+        "y": 680,
+        "wires": [
+            [
+                "0757542300f23c0b"
+            ]
+        ]
+    },
+    {
+        "id": "7de3e87a4b43a8a5",
+        "type": "change",
+        "z": "c524d8189961167d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "charge",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1100,
+        "y": 460,
+        "wires": [
+            [
+                "fedc8cdad904451d"
+            ]
+        ]
+    },
+    {
+        "id": "0757542300f23c0b",
         "type": "debug",
         "z": "c524d8189961167d",
         "name": "",
@@ -45858,49 +45863,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "24579bcb.5c9814",
-        "type": "inject",
-        "z": "c524d8189961167d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "00 16 * * 1,2,3,4,5",
-        "once": false,
-        "onceDelay": "",
-        "topic": "",
-        "payload": "It is 4pm on a weekday!",
-        "payloadType": "str",
-        "x": 1430,
-        "y": 740,
-        "wires": [
-            [
-                "145b508a.f3325f"
-            ]
-        ]
-    },
-    {
-        "id": "145b508a.f3325f",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "name": "",
-        "active": true,
-        "console": "false",
-        "complete": "false",
-        "x": 1650,
-        "y": 740,
+        "x": 740,
+        "y": 700,
         "wires": []
     }
 ]
