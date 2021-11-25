@@ -3275,6 +3275,12 @@
         "icon": "dashboard"
     },
     {
+        "id": "c898b9e64977521d",
+        "type": "firebase config",
+        "firebaseurl": "funhallproject",
+        "loginType": "email"
+    },
+    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
@@ -20207,6 +20213,69 @@
         "wires": [
             [
                 "909e990e761b5f68"
+            ]
+        ]
+    },
+    {
+        "id": "e04dd392443671e8",
+        "type": "firebase.once",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "firebaseconfig": "c898b9e64977521d",
+        "childpath": "Nighmare navn",
+        "repeatifnull": false,
+        "eventType": "value",
+        "queries": [],
+        "x": 3250,
+        "y": 4020,
+        "wires": [
+            [
+                "7ed97553c3b84a08"
+            ]
+        ]
+    },
+    {
+        "id": "7ed97553c3b84a08",
+        "type": "debug",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3610,
+        "y": 4020,
+        "wires": []
+    },
+    {
+        "id": "fe1a91f60d670d0a",
+        "type": "inject",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2830,
+        "y": 4020,
+        "wires": [
+            [
+                "e04dd392443671e8"
             ]
         ]
     },
