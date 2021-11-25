@@ -45712,7 +45712,7 @@
         "type": "function",
         "z": "c524d8189961167d",
         "name": "",
-        "func": "var ipToSearch = \"Børn\"\n\nvar found = msg.payload.find(element => element.ip === ipToSearch)// returns object if exists, undefined otherwise\nif(found){\n    msg.payload = found\n    return msg;  \n}else{\n    node.warn(ipToSearch+\" is not found\")\n}\n",
+        "func": "var ipToSearch = \"Intern Besked: Kundens Besked: De tager kagemand med selv Kim Poulsen Telefon: +4551844579  alt. tlf: Mail: kpoulsen@grundfos.com  14:30 - 17:30 Konference  15,00 stk Børne Fødselsdag   199,00 kr/stk.  Sum kr. 2.985,00 15,00 stk Vælg antal prs. i alt   0,00 kr/stk.  Sum kr. 0,00 Total pris: kr. 2.985,00 Opdateret d. 21-11-2021 - 17:46 ID: fb3022\"\n\nvar found = msg.payload.find(element => element.ip === ipToSearch)// returns object if exists, undefined otherwise\nif(found){\n    msg.payload = found\n    return msg;  \n}else{\n    node.warn(ipToSearch+\" is not found\")\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
