@@ -45641,8 +45641,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 120,
-        "y": 160,
+        "x": 190,
+        "y": 140,
         "wires": [
             [
                 "c54e814b.1a87"
@@ -45671,7 +45671,7 @@
         "type": "function",
         "z": "e7d8edec.a0fdd",
         "name": "",
-        "func": "msg.disease = \"test2\";\n\nfor (var key in msg.dbase) {\n   if(msg.calender[key].includes(msg.disease)){\n       return {\"key\":key};\n   }\n}\nreturn;",
+        "func": "msg.disease = \"Kørestol\";\n\nfor (var key in msg.dbase) {\n   if(msg.calender[key].includes(msg.disease)){\n       return {\"key\":key};\n   }\n}\nreturn;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
