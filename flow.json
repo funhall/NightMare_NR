@@ -109,6 +109,13 @@
         "info": ""
     },
     {
+        "id": "48ddfa0a.46dd14",
+        "type": "tab",
+        "label": "Flow 9",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "195c9babcf1455a4",
         "type": "subflow",
         "name": "Hjælp knap lys",
@@ -45770,6 +45777,67 @@
         "wires": [
             [
                 "cc78d184.6d6a58"
+            ]
+        ]
+    },
+    {
+        "id": "1a72ae34.a7b9c2",
+        "type": "inject",
+        "z": "48ddfa0a.46dd14",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "METAR KABC 121755Z AUTO 21016G24KT 180V240 1SM R11/P6000FT -RA BR BKN015 OVC025 06/04 A2990 RMK AO2 PK WND 20032/25 WSHFT 1715 VIS 3/4V1 1/2 VIS 3/4 RWY11 RAB07 CIG 013V017 CIG 017 RWY11 PRESFR SLP125 P0003 60009 T00640036 10066 21012 58033 TSNO",
+        "payloadType": "str",
+        "x": 190,
+        "y": 280,
+        "wires": [
+            [
+                "ffe1aa8d.390ad8"
+            ]
+        ]
+    },
+    {
+        "id": "bc18901.a1abc7",
+        "type": "debug",
+        "z": "48ddfa0a.46dd14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "result",
+        "x": 570,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ffe1aa8d.390ad8",
+        "type": "change",
+        "z": "48ddfa0a.46dd14",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "result",
+                "pt": "msg",
+                "to": "$match(payload,/A\\d{4}/)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "bc18901.a1abc7"
             ]
         ]
     }
