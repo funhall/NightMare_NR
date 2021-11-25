@@ -3242,11 +3242,6 @@
         "height": 1
     },
     {
-        "id": "4150635d68d14b4f",
-        "type": "google-credentials",
-        "displayName": ""
-    },
-    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
