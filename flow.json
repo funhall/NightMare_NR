@@ -20330,7 +20330,7 @@
         "z": "c39524c2016c8df2",
         "name": "",
         "firebaseconfig": "c898b9e64977521d",
-        "childpath": "Nighmare navn",
+        "childpath": "Nighmare navn/",
         "method": "set",
         "value": "msg.payload",
         "priority": "msg.priority",
