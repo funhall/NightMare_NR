@@ -94,6 +94,14 @@
         "info": ""
     },
     {
+        "id": "c524d8189961167d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "195c9babcf1455a4",
         "type": "subflow",
         "name": "Hjælp knap lys",
@@ -3240,6 +3248,11 @@
         "order": 7,
         "width": 2,
         "height": 1
+    },
+    {
+        "id": "aa7c2c7cf1d211db",
+        "type": "google-credentials",
+        "displayName": "Google"
     },
     {
         "id": "31558c33.837ac4",
@@ -45511,5 +45524,32 @@
         "x": 750,
         "y": 880,
         "wires": []
+    },
+    {
+        "id": "c310ca4f63621927",
+        "type": "addEvent",
+        "z": "c524d8189961167d",
+        "google": "aa7c2c7cf1d211db",
+        "calendarId2": "",
+        "tittle": "",
+        "description": "",
+        "location": "",
+        "time": "",
+        "attend": "",
+        "email1": "",
+        "name1": "",
+        "email2": "",
+        "name2": "",
+        "email3": "",
+        "name3": "",
+        "email4": "",
+        "name4": "",
+        "email5": "",
+        "name5": "",
+        "x": 740,
+        "y": 280,
+        "wires": [
+            []
+        ]
     }
 ]
