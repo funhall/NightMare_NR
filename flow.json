@@ -3278,7 +3278,7 @@
         "id": "c898b9e64977521d",
         "type": "firebase config",
         "firebaseurl": "funhallproject",
-        "loginType": "jwt"
+        "loginType": "none"
     },
     {
         "id": "31558c33.837ac4",
