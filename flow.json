@@ -45228,9 +45228,9 @@
         "offset": "",
         "endpreview": "",
         "endpreviewUnits": "",
-        "preview": "0",
+        "preview": "4",
         "previewUnits": "days",
-        "pastview": "4",
+        "pastview": "0",
         "pastviewUnits": "days",
         "trigger": "always",
         "timezone": "",
@@ -45419,7 +45419,7 @@
         "rules": [
             {
                 "t": "cont",
-                "v": "Kørestols Rugby ",
+                "v": "juvel",
                 "vt": "str"
             },
             {
