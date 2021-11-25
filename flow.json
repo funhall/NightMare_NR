@@ -45759,13 +45759,13 @@
         "type": "function",
         "z": "e7d8edec.a0fdd",
         "name": "",
-        "func": "msg.disease = \"fb3022@google.com\";\n\nfor (var key in msg.dbase) {\n   if(msg.calender[key].includes(msg.disease)){\n       return {\"key\":key};\n   }\n}\nreturn;",
+        "func": "msg.disease = \"Børne\";\n\nfor (var key in msg.dbase) {\n   if(msg.calender[key].includes(msg.disease)){\n       return {\"key\":key};\n   }\n}\nreturn;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 420,
         "y": 140,
         "wires": [
             [
