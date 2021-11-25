@@ -45818,7 +45818,7 @@
         "type": "debug",
         "z": "c524d8189961167d",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -45856,7 +45856,7 @@
         "rules": [
             {
                 "t": "lt",
-                "v": "4",
+                "v": "15",
                 "vt": "num"
             },
             {
