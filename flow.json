@@ -20267,11 +20267,11 @@
         "z": "c39524c2016c8df2",
         "name": "",
         "firebaseconfig": "c898b9e64977521d",
-        "childpath": "Nighmare navn",
+        "childpath": "Nighmare navn/0",
         "method": "update",
         "value": "msg.payload",
         "priority": "msg.priority",
-        "x": 3280,
+        "x": 3290,
         "y": 4140,
         "wires": [
             [
