@@ -3278,7 +3278,7 @@
         "id": "c898b9e64977521d",
         "type": "firebase config",
         "firebaseurl": "funhallproject",
-        "loginType": "email"
+        "loginType": "jwt"
     },
     {
         "id": "31558c33.837ac4",
@@ -20214,6 +20214,52 @@
             [
                 "909e990e761b5f68"
             ]
+        ]
+    },
+    {
+        "id": "d083bd1ceaece800",
+        "type": "firebase auth",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "firebaseconfig": "c898b9e64977521d",
+        "x": 3250,
+        "y": 4000,
+        "wires": [
+            [
+                "14d8b0a007898cb6"
+            ]
+        ]
+    },
+    {
+        "id": "14d8b0a007898cb6",
+        "type": "debug",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3550,
+        "y": 4000,
+        "wires": []
+    },
+    {
+        "id": "897e22b4be2b11af",
+        "type": "firebase.once",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "firebaseconfig": "c898b9e64977521d",
+        "childpath": "Nighmare navn",
+        "repeatifnull": false,
+        "eventType": "value",
+        "queries": [],
+        "x": 3270,
+        "y": 4160,
+        "wires": [
+            []
         ]
     },
     {
