@@ -45912,8 +45912,8 @@
         "fri": true,
         "sat": true,
         "sun": true,
-        "x": 870,
-        "y": 700,
+        "x": 860,
+        "y": 760,
         "wires": [
             []
         ]
@@ -45960,5 +45960,69 @@
         "x": 1650,
         "y": 580,
         "wires": []
+    },
+    {
+        "id": "d165e24c29c8cfb7",
+        "type": "time-controller",
+        "z": "c524d8189961167d",
+        "data": "{\"start\":{\"time\":\"19:05:10\",\"value\":0}}",
+        "dataType": "json",
+        "interval": 1,
+        "lat": "",
+        "lng": "",
+        "outputAsRgbValue": false,
+        "usePreviousEventOnReload": true,
+        "x": 730,
+        "y": 640,
+        "wires": [
+            [
+                "c911d739df5427bf"
+            ]
+        ]
+    },
+    {
+        "id": "c911d739df5427bf",
+        "type": "debug",
+        "z": "c524d8189961167d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "a6c4a152f2ddb005",
+        "type": "inject",
+        "z": "c524d8189961167d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 510,
+        "y": 660,
+        "wires": [
+            [
+                "d165e24c29c8cfb7"
+            ]
+        ]
     }
 ]
