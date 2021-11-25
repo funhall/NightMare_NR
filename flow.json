@@ -3275,12 +3275,6 @@
         "icon": "dashboard"
     },
     {
-        "id": "c898b9e64977521d",
-        "type": "firebase config",
-        "firebaseurl": "funhallproject",
-        "loginType": "none"
-    },
-    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
@@ -20213,83 +20207,6 @@
         "wires": [
             [
                 "909e990e761b5f68"
-            ]
-        ]
-    },
-    {
-        "id": "d083bd1ceaece800",
-        "type": "firebase auth",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "firebaseconfig": "c898b9e64977521d",
-        "x": 3250,
-        "y": 4000,
-        "wires": [
-            [
-                "14d8b0a007898cb6"
-            ]
-        ]
-    },
-    {
-        "id": "14d8b0a007898cb6",
-        "type": "debug",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3550,
-        "y": 4000,
-        "wires": []
-    },
-    {
-        "id": "897e22b4be2b11af",
-        "type": "firebase.once",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "firebaseconfig": "c898b9e64977521d",
-        "childpath": "Nighmare navn",
-        "repeatifnull": false,
-        "eventType": "value",
-        "queries": [],
-        "x": 3270,
-        "y": 4160,
-        "wires": [
-            [
-                "14d8b0a007898cb6"
-            ]
-        ]
-    },
-    {
-        "id": "79f3e06ea25cec5d",
-        "type": "inject",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 2780,
-        "y": 4160,
-        "wires": [
-            [
-                "897e22b4be2b11af"
             ]
         ]
     },
