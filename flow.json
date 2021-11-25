@@ -20280,6 +20280,69 @@
         ]
     },
     {
+        "id": "dea71bae48b21870",
+        "type": "firebase modify",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "firebaseconfig": "c898b9e64977521d",
+        "childpath": "Nighmare navn",
+        "method": "update",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 3280,
+        "y": 4140,
+        "wires": [
+            [
+                "910d4f1c4cc93bdd"
+            ]
+        ]
+    },
+    {
+        "id": "910d4f1c4cc93bdd",
+        "type": "debug",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3650,
+        "y": 4140,
+        "wires": []
+    },
+    {
+        "id": "9b7b3829355de4e4",
+        "type": "inject",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2900,
+        "y": 4140,
+        "wires": [
+            [
+                "dea71bae48b21870"
+            ]
+        ]
+    },
+    {
         "id": "80a868808fc1a091",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
