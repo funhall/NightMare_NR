@@ -45871,9 +45871,36 @@
         "wires": [
             [
                 "f6a3b9dbd4fb914f",
-                "df06448f10d82e1d"
+                "e81fd0aaf944b09a"
             ],
             []
+        ]
+    },
+    {
+        "id": "e81fd0aaf944b09a",
+        "type": "change",
+        "z": "c524d8189961167d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "oplader",
+                "pt": "flow",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 700,
+        "wires": [
+            [
+                "2c70d4f8e7cb067f"
+            ]
         ]
     }
 ]
