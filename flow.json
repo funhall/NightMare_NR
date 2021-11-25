@@ -45655,200 +45655,9 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1430,
-        "y": 440,
+        "x": 1150,
+        "y": 500,
         "wires": []
-    },
-    {
-        "id": "39d57941.2edb76",
-        "type": "function",
-        "z": "c524d8189961167d",
-        "name": "",
-        "func": "var p = [\n   {\n      \"ip\":\"192.168.1.67\",\n      \"mac\":\"cc:50:e3:0c:6e:00\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.31\",\n      \"mac\":\"c4:1c:ff:13:9e:61\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.4\",\n      \"mac\":\"dc:a6:32:09:22:a1\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.42\",\n      \"mac\":\"bc:dd:c2:25:9a:0f\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.19\",\n      \"mac\":\"14:91:38:8f:71:68\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.57\",\n      \"mac\":\"98:5f:d3:e6:aa:9b\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.23\",\n      \"mac\":\"1c:69:7a:0a:62:c6\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.61\",\n      \"mac\":\"a4:ba:db:b8:96:45\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.34\",\n      \"mac\":\"68:54:fd:33:c2:79\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.101\",\n      \"mac\":\"8c:7f:3b:76:18:c8\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.11\",\n      \"mac\":\"00:bb:3a:e4:77:0c\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.49\",\n      \"mac\":\"a0:20:a6:30:de:20\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.204\",\n      \"mac\":\"60:01:94:86:74:b8\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.49\",\n      \"mac\":\"a0:20:a6:30:de:20\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.204\",\n      \"mac\":\"60:01:94:86:74:b8\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.15\",\n      \"mac\":\"2c:3a:e8:11:8e:2e\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.53\",\n      \"mac\":\"78:0f:77:5a:e3:f0\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.26\",\n      \"mac\":\"0c:ee:99:07:df:08\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.41\",\n      \"mac\":\"ec:fa:bc:06:6d:93\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.30\",\n      \"mac\":\"dc:a6:32:09:22:a1\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.7\",\n      \"mac\":\"d0:e7:82:f0:c4:57\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.70\",\n      \"mac\":\"50:02:91:68:ea:7f\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.18\",\n      \"mac\":\"ec:fa:bc:06:80:d2\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.56\",\n      \"mac\":\"dc:ef:ca:bc:96:c3\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.33\",\n      \"mac\":\"6c:ad:f8:61:b6:ad\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.22\",\n      \"mac\":\"84:0d:8e:ad:ad:c1\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.37\",\n      \"mac\":\"b0:35:b5:b6:fe:bd\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.203\",\n      \"mac\":\"84:0d:8e:44:2f:a2\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.100\",\n      \"mac\":\"3c:df:a9:6c:bf:de\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.10\",\n      \"mac\":\"b4:e6:2d:67:b7:d0\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.48\",\n      \"mac\":\"5c:cf:7f:fa:b7:45\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.230\",\n      \"mac\":\"00:01:fb:00:1f:41\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.25\",\n      \"mac\":\"44:65:0d:5f:a5:9d\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.14\",\n      \"mac\":\"8c:f5:a3:68:55:0f\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.52\",\n      \"mac\":\"2c:3a:e8:01:1f:0f\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.65\",\n      \"mac\":\"1c:69:7a:0f:87:76\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.2\",\n      \"mac\":\"00:d0:2d:43:8d:62\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.17\",\n      \"mac\":\"60:38:e0:5c:3f:85\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.6\",\n      \"mac\":\"60:01:94:69:2d:b5\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.21\",\n      \"mac\":\"9c:8e:cd:0e:98:51\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.59\",\n      \"mac\":\"50:02:91:69:78:9c\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.32\",\n      \"mac\":\"50:e5:49:56:4c:87\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.9\",\n      \"mac\":\"60:01:94:66:ad:29\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.63\",\n      \"mac\":\"3c:5c:c4:31:59:d5\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.72\",\n      \"mac\":\"a4:ba:db:b8:96:45\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.36\",\n      \"mac\":\"cc:50:e3:5b:66:8a\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.202\",\n      \"mac\":\"60:01:94:ab:45:90\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.13\",\n      \"mac\":\"30:95:e3:24:03:fd\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.143\",\n      \"mac\":\"a0:20:a6:0f:38:fa\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.24\",\n      \"mac\":\"80:7d:3a:7f:e8:f3\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.1\",\n      \"mac\":\"18:1b:eb:7b:0d:df\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.55\",\n      \"mac\":\"00:18:dd:06:9a:fd\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.64\",\n      \"mac\":\"1c:69:7a:0f:87:76\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.131\",\n      \"mac\":\"b8:27:eb:66:72:3b\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.28\",\n      \"mac\":\"6c:ad:f8:30:a9:f7\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.5\",\n      \"mac\":\"60:01:94:51:d1:25\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.43\",\n      \"mac\":\"a4:ee:57:5b:e2:87\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.16\",\n      \"mac\":\"60:01:94:69:36:df\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.47\",\n      \"mac\":\"24:4c:e3:ec:a1:c2\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.20\",\n      \"mac\":\"5c:cf:7f:b4:61:a3\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.58\",\n      \"mac\":\"3c:5c:c4:0f:40:8e\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.35\",\n      \"mac\":\"d8:f1:5b:c6:4f:48\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.201\",\n      \"mac\":\"60:01:94:ab:53:2b\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.8\",\n      \"mac\":\"7c:a7:b0:9b:a5:d8\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.62\",\n      \"mac\":\"10:ae:60:a7:2a:48\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.39\",\n      \"mac\":\"00:d0:2d:b2:52:c5\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.50\",\n      \"mac\":\"4c:11:ae:0d:81:ef\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.27\",\n      \"mac\":\"84:0d:8e:ad:a7:5b\",\n      \"iface\":\"eth0\"\n   },\n   {\n      \"ip\":\"192.168.1.54\",\n      \"mac\":\"1c:69:7a:0a:62:c6\",\n      \"iface\":\"eth0\"\n   }\n]\nmsg.payload = p\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 720,
-        "wires": [
-            [
-                "9ba70e96.98a9d",
-                "4443f46a.0a113c"
-            ]
-        ]
-    },
-    {
-        "id": "8801ffd1.1b616",
-        "type": "inject",
-        "z": "c524d8189961167d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 860,
-        "wires": [
-            [
-                "eb3dde4b2d8f6a18"
-            ]
-        ]
-    },
-    {
-        "id": "9ba70e96.98a9d",
-        "type": "function",
-        "z": "c524d8189961167d",
-        "name": "",
-        "func": "var ipToSearch = \"Intern Besked: Kundens Besked: De tager kagemand med selv Kim Poulsen Telefon: +4551844579  alt. tlf: Mail: kpoulsen@grundfos.com  14:30 - 17:30 Konference  15,00 stk Børne Fødselsdag   199,00 kr/stk.  Sum kr. 2.985,00 15,00 stk Vælg antal prs. i alt   0,00 kr/stk.  Sum kr. 0,00 Total pris: kr. 2.985,00 Opdateret d. 21-11-2021 - 17:46 ID: fb3022\"\n\nvar found = msg.payload.find(element => element.ip === ipToSearch)// returns object if exists, undefined otherwise\nif(found){\n    msg.payload = found\n    return msg;  \n}else{\n    node.warn(ipToSearch+\" is not found\")\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 740,
-        "y": 820,
-        "wires": [
-            [
-                "b4b8c730.eb1218"
-            ]
-        ]
-    },
-    {
-        "id": "b4b8c730.eb1218",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 920,
-        "y": 820,
-        "wires": []
-    },
-    {
-        "id": "56dcfafb.27b7f4",
-        "type": "switch",
-        "z": "c524d8189961167d",
-        "name": "",
-        "property": "payload.ip",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "børn",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 830,
-        "y": 880,
-        "wires": [
-            [
-                "fe3d2b2.a9ed9d8"
-            ],
-            [
-                "865f4948.1202e8"
-            ]
-        ]
-    },
-    {
-        "id": "4443f46a.0a113c",
-        "type": "split",
-        "z": "c524d8189961167d",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 630,
-        "y": 880,
-        "wires": [
-            [
-                "56dcfafb.27b7f4"
-            ]
-        ]
-    },
-    {
-        "id": "fe3d2b2.a9ed9d8",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "name": "31",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "x": 980,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "865f4948.1202e8",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "name": "32",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "x": 980,
-        "y": 900,
-        "wires": []
-    },
-    {
-        "id": "eb3dde4b2d8f6a18",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "calender",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 340,
-        "y": 860,
-        "wires": [
-            [
-                "9ba70e96.98a9d",
-                "4443f46a.0a113c"
-            ]
-        ]
     },
     {
         "id": "1853b73a7ba5c17b",
@@ -45869,7 +45678,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
+        "x": 620,
         "y": 480,
         "wires": [
             [
@@ -45888,7 +45697,7 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 910,
+        "x": 770,
         "y": 480,
         "wires": [
             [
@@ -45916,7 +45725,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1110,
+        "x": 890,
         "y": 480,
         "wires": [
             [
@@ -45926,20 +45735,55 @@
         ]
     },
     {
-        "id": "c796a4035eda339b",
-        "type": "debug",
+        "id": "be63becfd68e3402",
+        "type": "light-scheduler",
+        "z": "c524d8189961167d",
+        "settings": "6871a700.1c4708",
+        "events": "[]",
+        "topic": "",
+        "name": "",
+        "onPayload": "ON",
+        "onPayloadType": "str",
+        "offPayload": "OFF",
+        "offPayloadType": "str",
+        "onlyWhenDark": true,
+        "scheduleRndMax": 0,
+        "sunElevationThreshold": 6,
+        "sunShowElevationInStatus": false,
+        "outputfreq": "output.statechange.startup",
+        "x": 900,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "049ac321736c978a",
+        "type": "inject",
         "z": "c524d8189961167d",
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1410,
-        "y": 520,
-        "wires": []
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 470,
+        "y": 660,
+        "wires": [
+            [
+                "be63becfd68e3402"
+            ]
+        ]
     }
 ]
