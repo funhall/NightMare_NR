@@ -45812,7 +45812,7 @@
         "to": "",
         "reg": false,
         "x": 1100,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
                 "fedc8cdad904451d",
@@ -45834,7 +45834,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1590,
-        "y": 540,
+        "y": 720,
         "wires": []
     },
     {
@@ -45856,12 +45856,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1300,
-        "y": 540,
+        "x": 1340,
+        "y": 580,
         "wires": [
             [
-                "b07b52047a89162e",
-                "7dced921d27f6b3e"
+                "b25ac812ee07b7f4"
             ]
         ]
     },
@@ -45916,6 +45915,32 @@
         "y": 700,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "b25ac812ee07b7f4",
+        "type": "moment",
+        "z": "c524d8189961167d",
+        "name": "",
+        "topic": "",
+        "input": "payload.date",
+        "inputType": "msg",
+        "inTz": "Europe/Copenhagen",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "hh.mm.ss",
+        "locale": "en-US",
+        "output": "payload.date",
+        "outputType": "msg",
+        "outTz": "Europe/Copenhagen",
+        "x": 1200,
+        "y": 680,
+        "wires": [
+            [
+                "7dced921d27f6b3e",
+                "b07b52047a89162e"
+            ]
         ]
     }
 ]
