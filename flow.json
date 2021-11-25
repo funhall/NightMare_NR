@@ -2414,7 +2414,10 @@
             "9caa27f3280f5022",
             "d28ba8b6d563887c",
             "3c8024969493ec9e",
-            "c332e824c8eafe98"
+            "c332e824c8eafe98",
+            "48c1baa9010ec9e9",
+            "18cf6ed67b81c1bc",
+            "796633a29d43d03a"
         ],
         "env": [],
         "x": 214,
@@ -11373,7 +11376,6 @@
         "y": 2440,
         "wires": [
             [
-                "3e016537a79a1af4",
                 "9f01379ab3522a20",
                 "c8b55137b91d3c86"
             ]
@@ -12128,7 +12130,8 @@
         "id": "796633a29d43d03a",
         "type": "inject",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "g": "e65de7a09ca7b27e",
+        "name": "opdater highscore liste fra Firebase",
         "props": [
             {
                 "p": "payload"
@@ -12140,13 +12143,12 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
-        "x": 780,
-        "y": 2920,
+        "x": 800,
+        "y": 2560,
         "wires": [
             [
                 "18cf6ed67b81c1bc"
@@ -12157,6 +12159,7 @@
         "id": "18cf6ed67b81c1bc",
         "type": "http request",
         "z": "33e76285.1cd03e",
+        "g": "e65de7a09ca7b27e",
         "name": "",
         "method": "GET",
         "ret": "txt",
@@ -12167,29 +12170,13 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 970,
-        "y": 2920,
+        "x": 1050,
+        "y": 2560,
         "wires": [
             [
                 "48c1baa9010ec9e9"
             ]
         ]
-    },
-    {
-        "id": "3937b9046f02d3e9",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1350,
-        "y": 2920,
-        "wires": []
     },
     {
         "id": "c64082cca896506e",
@@ -12217,15 +12204,16 @@
         "id": "48c1baa9010ec9e9",
         "type": "json",
         "z": "33e76285.1cd03e",
+        "g": "e65de7a09ca7b27e",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1160,
-        "y": 2940,
+        "x": 1210,
+        "y": 2560,
         "wires": [
             [
-                "3937b9046f02d3e9"
+                "3e016537a79a1af4"
             ]
         ]
     },
