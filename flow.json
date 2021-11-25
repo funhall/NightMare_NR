@@ -7492,7 +7492,7 @@
         "name": "Tænd lader",
         "group": "117cda2a.43e596",
         "order": 19,
-        "width": 3,
+        "width": "2",
         "height": 1,
         "passthru": false,
         "label": "Oplader {{msg.opladertext}}",
