@@ -45634,7 +45634,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 600,
+        "x": 460,
         "y": 480,
         "wires": [
             [
@@ -45655,8 +45655,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1210,
-        "y": 480,
+        "x": 1430,
+        "y": 440,
         "wires": []
     },
     {
@@ -45869,7 +45869,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 700,
         "y": 480,
         "wires": [
             [
@@ -45888,12 +45888,60 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 1010,
+        "x": 910,
+        "y": 480,
+        "wires": [
+            [
+                "19bbec6c1066f785"
+            ]
+        ]
+    },
+    {
+        "id": "19bbec6c1066f785",
+        "type": "switch",
+        "z": "c524d8189961167d",
+        "name": "",
+        "property": "payload.description",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Børn",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1110,
         "y": 480,
         "wires": [
             [
                 "fedc8cdad904451d"
+            ],
+            [
+                "c796a4035eda339b"
             ]
         ]
+    },
+    {
+        "id": "c796a4035eda339b",
+        "type": "debug",
+        "z": "c524d8189961167d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1410,
+        "y": 520,
+        "wires": []
     }
 ]
