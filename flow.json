@@ -12248,15 +12248,23 @@
         "type": "inject",
         "z": "33e76285.1cd03e",
         "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
-        "x": 1930,
-        "y": 1480,
+        "x": 1910,
+        "y": 1460,
         "wires": [
             [
                 "baa481f7.8c92f",
@@ -12270,8 +12278,8 @@
         "z": "33e76285.1cd03e",
         "inc": "1",
         "name": "",
-        "x": 2240,
-        "y": 1490,
+        "x": 2220,
+        "y": 1460,
         "wires": [
             [
                 "eeab3859.a0a81",
