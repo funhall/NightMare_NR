@@ -45698,7 +45698,7 @@
         "z": "c524d8189961167d",
         "name": "",
         "property": "payload",
-        "action": "",
+        "action": "str",
         "pretty": false,
         "x": 1100,
         "y": 140,
