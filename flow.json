@@ -1907,7 +1907,8 @@
             "a7d78d76559a4524",
             "cfc30d8cfe56d483",
             "49095ecf9ab1fd70",
-            "2216095b02d3c520"
+            "2216095b02d3c520",
+            "0694531c991e32c6"
         ],
         "env": [],
         "x": 34,
@@ -8157,9 +8158,8 @@
         "y": 1300,
         "wires": [
             [
-                "a96c954c12b092ec",
                 "a7d78d76559a4524",
-                "cfc30d8cfe56d483"
+                "0694531c991e32c6"
             ]
         ]
     },
@@ -8383,8 +8383,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
-        "y": 1380,
+        "x": 510,
+        "y": 1420,
         "wires": [
             []
         ]
@@ -8539,8 +8539,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 370,
-        "y": 1340,
+        "x": 490,
+        "y": 1380,
         "wires": []
     },
     {
@@ -8561,7 +8561,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
+        "x": 490,
         "y": 1300,
         "wires": [
             [
@@ -12578,124 +12578,22 @@
         ]
     },
     {
-        "id": "6419695d.f444a8",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "Four presses",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "x": 2820,
-        "y": 1660,
-        "wires": []
-    },
-    {
-        "id": "9a9ece0e.e21968",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "Start",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 1810,
-        "y": 1460,
-        "wires": [
-            [
-                "0694531c991e32c6"
-            ]
-        ]
-    },
-    {
-        "id": "d5ec0e6d.65fe68",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "Tripple press",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "x": 2820,
-        "y": 1620,
-        "wires": []
-    },
-    {
-        "id": "a4900536.188a4",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "Double press",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "x": 2820,
-        "y": 1580,
-        "wires": []
-    },
-    {
-        "id": "eaa4f15.17e7a9",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "Single Press",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "x": 2830,
-        "y": 1540,
-        "wires": []
-    },
-    {
-        "id": "70b7384.c5ce6c8",
-        "type": "comment",
-        "z": "33e76285.1cd03e",
-        "name": "Outputs",
-        "info": "Debug nodes are here now, but just connect\nthem to what ever you want.\nThe messages sent are in the nodes just before\nthe debug nodes.\n",
-        "x": 2800,
-        "y": 1500,
-        "wires": []
-    },
-    {
         "id": "0694531c991e32c6",
         "type": "subflow:d8dbfa496c5848bc",
         "z": "33e76285.1cd03e",
+        "g": "7ba464075860abd5",
         "name": "",
         "env": [],
-        "x": 2380,
-        "y": 1540,
+        "x": 340,
+        "y": 1220,
         "wires": [
+            [],
             [
-                "eaa4f15.17e7a9"
+                "cfc30d8cfe56d483",
+                "a96c954c12b092ec"
             ],
-            [
-                "a4900536.188a4"
-            ],
-            [
-                "d5ec0e6d.65fe68"
-            ],
-            [
-                "6419695d.f444a8"
-            ]
+            [],
+            []
         ]
     },
     {
