@@ -20217,24 +20217,6 @@
         ]
     },
     {
-        "id": "e04dd392443671e8",
-        "type": "firebase.once",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "firebaseconfig": "c898b9e64977521d",
-        "childpath": "Nighmare navn",
-        "repeatifnull": false,
-        "eventType": "value",
-        "queries": [],
-        "x": 3250,
-        "y": 4020,
-        "wires": [
-            [
-                "7ed97553c3b84a08"
-            ]
-        ]
-    },
-    {
         "id": "7ed97553c3b84a08",
         "type": "debug",
         "z": "c39524c2016c8df2",
@@ -20275,7 +20257,7 @@
         "y": 4020,
         "wires": [
             [
-                "e04dd392443671e8"
+                "a32d3f996b83c068"
             ]
         ]
     },
@@ -20341,6 +20323,20 @@
                 "dea71bae48b21870"
             ]
         ]
+    },
+    {
+        "id": "a32d3f996b83c068",
+        "type": "firebase ondisconnect",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "firebaseconfig": "c898b9e64977521d",
+        "childpath": "Nighmare navn",
+        "method": "set",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 3350,
+        "y": 3960,
+        "wires": []
     },
     {
         "id": "80a868808fc1a091",
