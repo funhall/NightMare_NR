@@ -45419,7 +45419,7 @@
         "rules": [
             {
                 "t": "cont",
-                "v": "juvel",
+                "v": "Juvel-kuppet ",
                 "vt": "str"
             },
             {
@@ -45865,6 +45865,23 @@
         "statusType": "auto",
         "x": 810,
         "y": 680,
+        "wires": []
+    },
+    {
+        "id": "b07b52047a89162e",
+        "type": "debug",
+        "z": "c524d8189961167d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 520,
         "wires": []
     }
 ]
