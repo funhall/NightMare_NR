@@ -102,6 +102,13 @@
         "env": []
     },
     {
+        "id": "e7d8edec.a0fdd",
+        "type": "tab",
+        "label": "Flow 6",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "195c9babcf1455a4",
         "type": "subflow",
         "name": "Hjælp knap lys",
@@ -45593,7 +45600,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 250,
+        "x": 300,
         "y": 280,
         "wires": [
             [
@@ -45613,8 +45620,72 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
-        "y": 300,
+        "x": 770,
+        "y": 280,
         "wires": []
+    },
+    {
+        "id": "8e2174d6.8ba838",
+        "type": "inject",
+        "z": "e7d8edec.a0fdd",
+        "name": "",
+        "props": [
+            {
+                "p": "dbase",
+                "v": "{\"0\":[\"test1\",\"test2\",\"test3\",\"test4\"],\"1\":[\"test5\"],\"2\":[\"test6\"],\"3\":[\"tesat7\"]}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "c54e814b.1a87"
+            ]
+        ]
+    },
+    {
+        "id": "cc78d184.6d6a58",
+        "type": "debug",
+        "z": "e7d8edec.a0fdd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c54e814b.1a87",
+        "type": "function",
+        "z": "e7d8edec.a0fdd",
+        "name": "",
+        "func": "msg.disease = \"test2\";\n\nfor (var key in msg.dbase) {\n   if(msg.dbase[key].includes(msg.disease)){\n       return {\"key\":key};\n   }\n}\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "cc78d184.6d6a58"
+            ]
+        ]
     }
 ]
