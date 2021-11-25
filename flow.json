@@ -45629,7 +45629,7 @@
             {
                 "p": "calender",
                 "v": "calender",
-                "vt": "flow"
+                "vt": "global"
             },
             {
                 "p": "topic",
@@ -45671,7 +45671,7 @@
         "type": "function",
         "z": "e7d8edec.a0fdd",
         "name": "",
-        "func": "msg.disease = \"Kørestol\";\n\nfor (var key in msg.dbase) {\n   if(msg.calender[key].includes(msg.disease)){\n       return {\"key\":key};\n   }\n}\nreturn;",
+        "func": "msg.disease = \"fb3022@google.com\";\n\nfor (var key in msg.dbase) {\n   if(msg.calender[key].includes(msg.disease)){\n       return {\"key\":key};\n   }\n}\nreturn;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
