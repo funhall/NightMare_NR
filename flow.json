@@ -2389,13 +2389,14 @@
             "79cd14873b4c71a4",
             "be019fe271949e3e",
             "07f32e4d0b0b8c91",
-            "d9c30e5407d9e6a3"
+            "d9c30e5407d9e6a3",
+            "b820200a15d20076"
         ],
         "env": [],
         "x": 1804,
         "y": 1439,
         "w": 1442,
-        "h": 522
+        "h": 502
     },
     {
         "id": "859c1b3f452f477f",
@@ -11845,7 +11846,8 @@
         "y": 1640,
         "wires": [
             [
-                "057bebcc2973ab90"
+                "057bebcc2973ab90",
+                "333de98b0c0f63b5"
             ]
         ]
     },
@@ -11870,7 +11872,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2690,
+        "x": 2730,
         "y": 1640,
         "wires": [
             [
@@ -11921,8 +11923,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2680,
-        "y": 1820,
+        "x": 2310,
+        "y": 1840,
         "wires": []
     },
     {
@@ -11952,8 +11954,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2250,
-        "y": 1920,
+        "x": 2060,
+        "y": 1900,
         "wires": [
             [
                 "20ac2f52f42a70db"
@@ -12021,8 +12023,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2260,
-        "y": 1840,
+        "x": 2070,
+        "y": 1860,
         "wires": [
             [
                 "20ac2f52f42a70db"
@@ -12185,8 +12187,7 @@
         "wires": [
             [
                 "20ac2f52f42a70db",
-                "0362e1d3de8f94d2",
-                "333de98b0c0f63b5"
+                "0362e1d3de8f94d2"
             ]
         ]
     },
@@ -12210,7 +12211,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2860,
+        "x": 2900,
         "y": 1640,
         "wires": [
             [
@@ -12229,11 +12230,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
+        "complete": "payload.summary",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2740,
+        "x": 2770,
         "y": 1760,
         "wires": []
     },
@@ -13371,12 +13372,63 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2400,
+        "x": 2490,
         "y": 1700,
         "wires": []
+    },
+    {
+        "id": "b820200a15d20076",
+        "type": "ui_table",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "group": "117cda2a.43e596",
+        "name": "",
+        "order": 28,
+        "width": 6,
+        "height": 6,
+        "columns": [
+            {
+                "field": "Start tid",
+                "title": "Start_tid",
+                "width": "80",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Navn",
+                "title": "Navn",
+                "width": "160",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Antal prs.",
+                "title": "antal",
+                "width": "70",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 3050,
+        "y": 1860,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
