@@ -5968,12 +5968,9 @@
         "id": "369f293e.f63406",
         "type": "link out",
         "z": "33e76285.1cd03e",
-        "name": "Huston placeret",
-        "links": [
-            "451f5d27.059b74",
-            "6a6f2508b3b2e1a2",
-            "07d6c1fdab504f56"
-        ],
+        "name": "Huston vaek",
+        "mode": "link",
+        "links": [],
         "x": 1835,
         "y": 4820,
         "wires": []
