@@ -2400,7 +2400,7 @@
         "env": [],
         "x": 1764,
         "y": 1439,
-        "w": 1442,
+        "w": 1502,
         "h": 502
     },
     {
@@ -12259,8 +12259,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3010,
-        "y": 1540,
+        "x": 3150,
+        "y": 1520,
         "wires": []
     },
     {
@@ -13532,7 +13532,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payloadbooking",
+                "p": "booking",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
@@ -13543,7 +13543,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2890,
+        "x": 2860,
         "y": 1520,
         "wires": [
             [
