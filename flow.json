@@ -3330,9 +3330,9 @@
         "name": "Lys og radio",
         "tab": "82fd466d.f6c968",
         "order": 5,
-        "disp": false,
+        "disp": true,
         "width": "6",
-        "collapse": false
+        "collapse": true
     },
     {
         "id": "31558c33.837ac4",
@@ -13870,78 +13870,6 @@
         "wires": [
             [
                 "9370a2eafdb7e967"
-            ]
-        ]
-    },
-    {
-        "id": "6ad728d347452058",
-        "type": "link in",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "links": [
-            "e8ba061f5f8c7fec"
-        ],
-        "x": 1075,
-        "y": 2680,
-        "wires": [
-            [
-                "b9326129c129b447"
-            ]
-        ]
-    },
-    {
-        "id": "b9326129c129b447",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "Sætter personale app",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_High_score\"],\"show\":[\"Nightmare_personale_Lys_og_radio\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1250,
-        "y": 2680,
-        "wires": [
-            [
-                "9b64b4f1edca7f7e"
-            ]
-        ]
-    },
-    {
-        "id": "6f0e7e1f5742b26e",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1100,
-        "y": 2620,
-        "wires": [
-            [
-                "b9326129c129b447"
             ]
         ]
     },
