@@ -11359,8 +11359,8 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "cont",
-                "v": "High",
+                "t": "eq",
+                "v": "Besked1High",
                 "vt": "str"
             }
         ],
