@@ -45881,8 +45881,8 @@
         "priority": 0,
         "sound": "persistent",
         "url": "http://192.168.1.82:1880/ui/#!/2",
-        "url_title": "",
-        "html": false,
+        "url_title": "Gå til",
+        "html": true,
         "x": 1200,
         "y": 640,
         "wires": []
