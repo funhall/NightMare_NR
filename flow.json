@@ -45846,5 +45846,52 @@
         "x": 1460,
         "y": 1080,
         "wires": []
+    },
+    {
+        "id": "b965ed544d946ccd",
+        "type": "ui_toast",
+        "z": "c524d8189961167d",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 710,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "c48bb539ed720417",
+        "type": "inject",
+        "z": "c524d8189961167d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 700,
+        "wires": [
+            [
+                "b965ed544d946ccd"
+            ]
+        ]
     }
 ]
