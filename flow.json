@@ -13578,7 +13578,7 @@
         "type": "string",
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
-        "name": "",
+        "name": "payload.summary",
         "methods": [
             {
                 "name": "split",
@@ -13598,7 +13598,7 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2610,
+        "x": 2650,
         "y": 1740,
         "wires": [
             [
