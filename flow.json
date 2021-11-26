@@ -2390,7 +2390,9 @@
             "be019fe271949e3e",
             "07f32e4d0b0b8c91",
             "d9c30e5407d9e6a3",
-            "b820200a15d20076"
+            "b820200a15d20076",
+            "8f440d448e8ae171",
+            "ce3df7c829af8028"
         ],
         "env": [],
         "x": 1804,
@@ -11711,7 +11713,9 @@
         "x": 2490,
         "y": 1520,
         "wires": [
-            []
+            [
+                "8f440d448e8ae171"
+            ]
         ]
     },
     {
@@ -11789,7 +11793,7 @@
         "wires": [
             [
                 "4ae0494d4a89e8a4",
-                "333de98b0c0f63b5"
+                "ce3df7c829af8028"
             ],
             []
         ]
@@ -12252,7 +12256,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2790,
+        "x": 2930,
         "y": 1520,
         "wires": []
     },
@@ -13428,6 +13432,44 @@
         "y": 1860,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "8f440d448e8ae171",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "opret tom liste",
+        "func": "var booking = msg.payload\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2700,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce3df7c829af8028",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "func": "//var array = msg.payload\n\nbooking.push(msg.payload)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = booking\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2680,
+        "y": 1820,
+        "wires": [
+            [
+                "333de98b0c0f63b5"
+            ]
         ]
     },
     {
