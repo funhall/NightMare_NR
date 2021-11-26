@@ -28143,9 +28143,7 @@
         "x": 350,
         "y": 340,
         "wires": [
-            [
-                "15239578b2c72d37"
-            ]
+            []
         ]
     },
     {
@@ -29423,10 +29421,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "url",
+                "p": "payload",
                 "pt": "msg",
-                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=99",
-                "tot": "str"
+                "to": "100",
+                "tot": "num"
             }
         ],
         "action": "",
@@ -29434,7 +29432,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 250,
+        "x": 260,
         "y": 400,
         "wires": [
             [
