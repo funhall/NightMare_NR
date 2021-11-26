@@ -6662,13 +6662,6 @@
                 "pt": "msg",
                 "to": "",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "game",
-                "pt": "global",
-                "to": "off",
-                "tot": "str"
             }
         ],
         "action": "",
@@ -13289,7 +13282,7 @@
         "y": 2120,
         "wires": [
             [
-                "d4d2aeec1061c558"
+                "3ec27a962d094fc2"
             ]
         ]
     },
