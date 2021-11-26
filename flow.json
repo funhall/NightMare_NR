@@ -2397,7 +2397,7 @@
             "d6ac51117485fe32",
             "11425201571a27c1",
             "6c4ff8f3a68aedb2",
-            "7e0fb1a3f5e5127b"
+            "7d60b4bf50a6f1db"
         ],
         "env": [],
         "x": 1764,
@@ -11798,7 +11798,7 @@
             [
                 "4ae0494d4a89e8a4",
                 "ce3df7c829af8028",
-                "7e0fb1a3f5e5127b"
+                "7d60b4bf50a6f1db"
             ],
             []
         ]
@@ -13565,8 +13565,8 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 2670,
-        "y": 1740,
+        "x": 2690,
+        "y": 1700,
         "wires": [
             [
                 "333de98b0c0f63b5"
@@ -13574,30 +13574,21 @@
         ]
     },
     {
-        "id": "7e0fb1a3f5e5127b",
-        "type": "change",
+        "id": "7d60b4bf50a6f1db",
+        "type": "string",
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.summary",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2450,
+        "methods": [],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 2490,
         "y": 1740,
         "wires": [
             [
-                "6c4ff8f3a68aedb2"
+                "333de98b0c0f63b5"
             ]
         ]
     },
