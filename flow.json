@@ -4617,8 +4617,7 @@
         "wires": [
             [
                 "69e8dc7.805d424",
-                "b54e6ce887843346",
-                "eea91a67d8108908"
+                "b54e6ce887843346"
             ]
         ]
     },
@@ -4676,7 +4675,8 @@
                 "99b68ef9.8c0da"
             ],
             [
-                "70dee1e0.7c7bc"
+                "70dee1e0.7c7bc",
+                "4da0a01d.355f7"
             ]
         ]
     },
@@ -4733,6 +4733,13 @@
                 "p": "background",
                 "pt": "msg",
                 "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Corwin",
+                "pt": "global",
+                "to": "false",
                 "tot": "str"
             }
         ],
@@ -6025,7 +6032,7 @@
         "name": "Corwin vaek",
         "mode": "link",
         "links": [],
-        "x": 1835,
+        "x": 1895,
         "y": 4440,
         "wires": []
     },
@@ -11328,8 +11335,7 @@
         "wires": [
             [],
             [
-                "ebeb2e150d4a8bcc",
-                "4da0a01d.355f7"
+                "ebeb2e150d4a8bcc"
             ]
         ]
     },
@@ -13444,8 +13450,8 @@
         "z": "33e76285.1cd03e",
         "name": "der må være noget galt i koden da den ændre status hele tiden når den er placeret og den blinker rød",
         "info": "",
-        "x": 1810,
-        "y": 4460,
+        "x": 1740,
+        "y": 4500,
         "wires": []
     },
     {
