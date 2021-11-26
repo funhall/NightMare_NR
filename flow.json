@@ -13643,6 +13643,13 @@
                 "pt": "flow",
                 "to": "payload.Navn",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Navn",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -13650,10 +13657,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2910,
+        "x": 2920,
         "y": 1980,
         "wires": [
-            []
+            [
+                "1da573418b56bd31"
+            ]
         ]
     },
     {
