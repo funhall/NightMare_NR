@@ -46058,11 +46058,11 @@
         "name": "",
         "device": "",
         "title": "",
-        "priority": 0,
+        "priority": "2",
         "sound": "persistent",
         "url": "http://192.168.1.82:1880/ui/#!/2",
         "url_title": "Gå til",
-        "html": true,
+        "html": false,
         "x": 1140,
         "y": 640,
         "wires": []
