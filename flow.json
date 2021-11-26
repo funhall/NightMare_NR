@@ -21293,7 +21293,7 @@
         "g": "549daca12e284a9c",
         "name": "",
         "links": [
-            "ec67e6f0513072c5"
+            "6fef9e47ae94c9c4"
         ],
         "x": 215,
         "y": 2460,
@@ -23419,7 +23419,8 @@
         "name": "Kiste forladt og exit lukket",
         "mode": "link",
         "links": [
-            "fc9b6aa8fa506d52"
+            "fc9b6aa8fa506d52",
+            "03f227ed4e40bdb8"
         ],
         "x": 2875,
         "y": 200,
@@ -25390,7 +25391,6 @@
         "name": "Exit closed 2 gang",
         "mode": "link",
         "links": [
-            "03f227ed4e40bdb8",
             "c8aa8feef584e35c"
         ],
         "x": 895,
