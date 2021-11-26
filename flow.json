@@ -1905,13 +1905,14 @@
             "79e37f03118231ed",
             "d853366775888253",
             "ef1755dd6fd2af35",
-            "6dcefe303fdbc50e"
+            "6dcefe303fdbc50e",
+            "1365a9c1632482e0"
         ],
         "env": [],
         "x": 94,
-        "y": 259,
+        "y": 239,
         "w": 1572,
-        "h": 202
+        "h": 222
     },
     {
         "id": "7ba464075860abd5",
@@ -27902,8 +27903,8 @@
         "min": 0,
         "max": "250",
         "step": 1,
-        "x": 410,
-        "y": 420,
+        "x": 430,
+        "y": 400,
         "wires": [
             [
                 "6901acc273a3b8f8",
@@ -28144,7 +28145,8 @@
         "y": 340,
         "wires": [
             [
-                "15239578b2c72d37"
+                "15239578b2c72d37",
+                "1365a9c1632482e0"
             ]
         ]
     },
@@ -29406,8 +29408,8 @@
         "links": [
             "3f275e5d73da77dc"
         ],
-        "x": 165,
-        "y": 360,
+        "x": 155,
+        "y": 320,
         "wires": [
             [
                 "79e37f03118231ed"
@@ -29438,7 +29440,8 @@
         "y": 400,
         "wires": [
             [
-                "15239578b2c72d37"
+                "15239578b2c72d37",
+                "47d56951dee6605d"
             ]
         ]
     },
@@ -29458,6 +29461,39 @@
                 "ef1755dd6fd2af35"
             ]
         ]
+    },
+    {
+        "id": "1365a9c1632482e0",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "47d56951dee6605d",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 300,
+        "wires": []
     },
     {
         "id": "84e11b56.e27758",
