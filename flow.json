@@ -13397,7 +13397,7 @@
         "group": "c8a900d5.b5a2",
         "name": "",
         "order": 28,
-        "width": "4",
+        "width": "6",
         "height": "3",
         "columns": [
             {
@@ -13413,7 +13413,7 @@
             {
                 "field": "Tid",
                 "title": "Tid",
-                "width": "150",
+                "width": "2",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
