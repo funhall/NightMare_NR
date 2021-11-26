@@ -2399,7 +2399,8 @@
             "7d60b4bf50a6f1db",
             "7e29ad2b2f4d0d2f",
             "5c038d6738360fb5",
-            "22e76de465be6176"
+            "22e76de465be6176",
+            "f42151a3b495fa41"
         ],
         "env": [],
         "x": 1824,
@@ -13542,10 +13543,6 @@
                         "value": "- "
                     }
                 ]
-            },
-            {
-                "name": "lines",
-                "params": []
             }
         ],
         "prop": "payload.summary",
@@ -13558,7 +13555,7 @@
             [
                 "333de98b0c0f63b5",
                 "ce3df7c829af8028",
-                "22e76de465be6176"
+                "f42151a3b495fa41"
             ]
         ]
     },
@@ -13638,6 +13635,26 @@
         "wires": [
             [
                 "7e29ad2b2f4d0d2f"
+            ]
+        ]
+    },
+    {
+        "id": "f42151a3b495fa41",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "func": "msg.payload = {\"Navn\": \"{{payload}}\"};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2710,
+        "y": 1840,
+        "wires": [
+            [
+                "22e76de465be6176"
             ]
         ]
     },
