@@ -2442,47 +2442,47 @@
         "y": 2119
     },
     {
-        "id": "3b53e00703358c1f",
+        "id": "cae032f2d30f959c",
         "type": "group",
-        "z": "da226c7b38dd5723",
+        "z": "33e76285.1cd03e",
         "name": "Sætter game time ind i high score listen",
         "style": {
             "label": true
         },
         "nodes": [
-            "a399f9664089b304",
-            "0790bd46f4ed2de8",
-            "7dc941642e75fd4b",
-            "f2034449652c840f",
-            "4bd8b80be2fa6ddb",
-            "13e56853a26e3472",
-            "54a802679e69a58c",
-            "c7b89ec87dbd58e8",
-            "f752df62f73a4c58",
-            "b30c49dfa56b7877",
-            "6744845e03598f7c",
-            "6b2693726444d3b3",
-            "49017902693cae47",
-            "3c3b2eea3cb3716c",
-            "508639fdededbcad",
-            "79ec541356a3656d",
-            "c249fb3e8db81ba9",
-            "068ff31323420e95",
-            "5beeda7a08b2307f",
-            "d91fb92afa7df4b3",
-            "ee784a0476a50ed9",
-            "dfebbcec242423fa",
-            "4a88d592a29879d8",
-            "cd502ad539bfbb54",
-            "5fcbf6a487e142b3",
-            "ff5848f537b095aa",
-            "4a4a51b5509aa599",
-            "3c4aa3b1c29a551b",
-            "0b750cf052183fbc"
+            "f6deb1b06ccc62fe",
+            "de048bfe93853608",
+            "79cf012eb6bc9c38",
+            "eb9ca46212edf838",
+            "3125e691d2056e14",
+            "70cbd01a0156406e",
+            "690c7a1e4bc860ba",
+            "d98dd2ef6c61359c",
+            "b0217ae2a9c80f1b",
+            "1da573418b56bd31",
+            "556b53fde4f86578",
+            "5381492a8ab41334",
+            "efcf62b5a44643b5",
+            "871ec625768688ca",
+            "b08ea4337eadc2dd",
+            "5fd70f7a28021fba",
+            "466d7655f846c331",
+            "c2fe5c7a490e966e",
+            "c8a05da36e5cea55",
+            "40eb4cf3fc9f0d59",
+            "72b75b446f93bc9e",
+            "7e5cf0e8621bcaee",
+            "021d0d0bda0c8128",
+            "92b223dc0a3d2442",
+            "f8d35d7dce613657",
+            "bdf8bba337e4c42d",
+            "e9a728488b9b47cd",
+            "3cf712873e81d4bc",
+            "dcc19e838c676beb"
         ],
         "env": [],
-        "x": 374,
-        "y": 119,
+        "x": 1634,
+        "y": 2419,
         "w": 1692,
         "h": 502
     },
@@ -9648,7 +9648,8 @@
             "bdf8cec0e1a2db9f",
             "ded690629d639c1f",
             "826b95112c8631bf",
-            "d91fb92afa7df4b3"
+            "d91fb92afa7df4b3",
+            "40eb4cf3fc9f0d59"
         ],
         "x": 935,
         "y": 520,
@@ -12629,6 +12630,733 @@
         "x": 2950,
         "y": 1520,
         "wires": []
+    },
+    {
+        "id": "f6deb1b06ccc62fe",
+        "type": "firebase out",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "ref": "Nighmare navn/",
+        "operation": "set",
+        "admin": "f2d1649946d0b11c",
+        "x": 3220,
+        "y": 2760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de048bfe93853608",
+        "type": "firebase in",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "ref": "Nighmare navn",
+        "dataAtStart": true,
+        "admin": "f2d1649946d0b11c",
+        "x": 2540,
+        "y": 2540,
+        "wires": [
+            [
+                "3125e691d2056e14",
+                "79cf012eb6bc9c38"
+            ]
+        ]
+    },
+    {
+        "id": "79cf012eb6bc9c38",
+        "type": "ui_table",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "group": "117cda2a.43e596",
+        "name": "",
+        "order": 28,
+        "width": 6,
+        "height": 6,
+        "columns": [
+            {
+                "field": "Dato",
+                "title": "Dato",
+                "width": "80",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Navn",
+                "title": "Navn",
+                "width": "160",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Tid",
+                "title": "Tid",
+                "width": "70",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 2830,
+        "y": 2540,
+        "wires": [
+            [
+                "c8a05da36e5cea55"
+            ]
+        ]
+    },
+    {
+        "id": "eb9ca46212edf838",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "func": "var array = msg.payload\n\narray.push(msg.new)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = array\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2960,
+        "y": 2760,
+        "wires": [
+            [
+                "70cbd01a0156406e",
+                "f6deb1b06ccc62fe",
+                "bdf8bba337e4c42d"
+            ]
+        ]
+    },
+    {
+        "id": "3125e691d2056e14",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "array",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2530,
+        "y": 2600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70cbd01a0156406e",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3110,
+        "y": 2700,
+        "wires": []
+    },
+    {
+        "id": "690c7a1e4bc860ba",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2910,
+        "y": 2880,
+        "wires": []
+    },
+    {
+        "id": "d98dd2ef6c61359c",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "array",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2760,
+        "y": 2760,
+        "wires": [
+            [
+                "eb9ca46212edf838"
+            ]
+        ]
+    },
+    {
+        "id": "b0217ae2a9c80f1b",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "navn",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2190,
+        "y": 2500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1da573418b56bd31",
+        "type": "ui_text_input",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "Hold navn",
+        "label": "Hold navn: ",
+        "tooltip": "",
+        "group": "117cda2a.43e596",
+        "order": 22,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "2000",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 2000,
+        "y": 2500,
+        "wires": [
+            [
+                "b0217ae2a9c80f1b"
+            ]
+        ]
+    },
+    {
+        "id": "556b53fde4f86578",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "tid",
+                "pt": "flow",
+                "to": "88:33",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "date",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1920,
+        "y": 2760,
+        "wires": [
+            [
+                "021d0d0bda0c8128"
+            ]
+        ]
+    },
+    {
+        "id": "5381492a8ab41334",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 1750,
+        "y": 2780,
+        "wires": [
+            [
+                "556b53fde4f86578"
+            ]
+        ]
+    },
+    {
+        "id": "efcf62b5a44643b5",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "navn not empty",
+        "property": "navn",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2170,
+        "y": 2760,
+        "wires": [
+            [
+                "871ec625768688ca"
+            ]
+        ]
+    },
+    {
+        "id": "871ec625768688ca",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "tid not empty",
+        "property": "tid",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2350,
+        "y": 2760,
+        "wires": [
+            [
+                "c2fe5c7a490e966e"
+            ]
+        ]
+    },
+    {
+        "id": "b08ea4337eadc2dd",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "reset",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 1730,
+        "y": 2640,
+        "wires": [
+            [
+                "5fd70f7a28021fba",
+                "466d7655f846c331",
+                "72b75b446f93bc9e",
+                "7e5cf0e8621bcaee"
+            ]
+        ]
+    },
+    {
+        "id": "5fd70f7a28021fba",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "navn",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1930,
+        "y": 2560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "466d7655f846c331",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "tid",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1930,
+        "y": 2620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2fe5c7a490e966e",
+        "type": "function",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "create payload",
+        "func": "// Get flow variables\nvar name = flow.get(\"navn\");\nvar time = flow.get(\"tid\");\nvar date = flow.get(\"date\");\n\n// Create payload\nmsg.new = { \"Dato\": date, \"Navn\": name, \"Tid\": time };\n\n// Reset flow variables\nflow.set(\"Navn\",\"\");\nflow.set(\"Tid\",\"\");\nflow.set(\"Dato\",\"\");\n\n// Return\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 2760,
+        "wires": [
+            [
+                "d98dd2ef6c61359c"
+            ]
+        ]
+    },
+    {
+        "id": "c8a05da36e5cea55",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3010,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "40eb4cf3fc9f0d59",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "Reseter hold navn og tid",
+        "links": [
+            "2b480c9c40b1ae41",
+            "bdf8bba337e4c42d"
+        ],
+        "x": 1695,
+        "y": 2600,
+        "wires": [
+            [
+                "5fd70f7a28021fba",
+                "466d7655f846c331",
+                "72b75b446f93bc9e",
+                "7e5cf0e8621bcaee",
+                "556b53fde4f86578"
+            ]
+        ]
+    },
+    {
+        "id": "72b75b446f93bc9e",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "tom",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1790,
+        "y": 2500,
+        "wires": [
+            [
+                "1da573418b56bd31"
+            ]
+        ]
+    },
+    {
+        "id": "7e5cf0e8621bcaee",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "date",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1930,
+        "y": 2660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "021d0d0bda0c8128",
+        "type": "moment",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "topic": "",
+        "input": "date",
+        "inputType": "msg",
+        "inTz": "Europe/Copenhagen",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "D.M.yy",
+        "locale": "en-US",
+        "output": "date",
+        "outputType": "flow",
+        "outTz": "Europe/Copenhagen",
+        "x": 2000,
+        "y": 2840,
+        "wires": [
+            [
+                "efcf62b5a44643b5"
+            ]
+        ]
+    },
+    {
+        "id": "92b223dc0a3d2442",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "Rigtig format for ny start efter slet af firebase highscore liste",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{ \"Dato\": \"24.11.2021\", \"Navn\": \"peterdd\", \"Tid\": \"60:51\" }]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2740,
+        "y": 2460,
+        "wires": [
+            [
+                "f6deb1b06ccc62fe"
+            ]
+        ]
+    },
+    {
+        "id": "f8d35d7dce613657",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 2340,
+        "y": 2460,
+        "wires": [
+            [
+                "92b223dc0a3d2442"
+            ]
+        ]
+    },
+    {
+        "id": "bdf8bba337e4c42d",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "40eb4cf3fc9f0d59"
+        ],
+        "x": 3085,
+        "y": 2820,
+        "wires": []
+    },
+    {
+        "id": "e9a728488b9b47cd",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 2630,
+        "y": 2660,
+        "wires": [
+            [
+                "79cf012eb6bc9c38"
+            ]
+        ]
+    },
+    {
+        "id": "3cf712873e81d4bc",
+        "type": "http request",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://funhallproject.firebaseio.com/Nighmare navn.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2470,
+        "y": 2660,
+        "wires": [
+            [
+                "e9a728488b9b47cd"
+            ]
+        ]
+    },
+    {
+        "id": "dcc19e838c676beb",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "opdater highscore liste fra Firebase",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 2220,
+        "y": 2660,
+        "wires": [
+            [
+                "3cf712873e81d4bc"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -45429,732 +46157,5 @@
         "x": 450,
         "y": 420,
         "wires": []
-    },
-    {
-        "id": "a399f9664089b304",
-        "type": "firebase out",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "ref": "Nighmare navn/",
-        "operation": "set",
-        "admin": "f2d1649946d0b11c",
-        "x": 1960,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0790bd46f4ed2de8",
-        "type": "firebase in",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "ref": "Nighmare navn",
-        "dataAtStart": true,
-        "admin": "f2d1649946d0b11c",
-        "x": 1280,
-        "y": 240,
-        "wires": [
-            [
-                "4bd8b80be2fa6ddb",
-                "7dc941642e75fd4b"
-            ]
-        ]
-    },
-    {
-        "id": "7dc941642e75fd4b",
-        "type": "ui_table",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "group": "117cda2a.43e596",
-        "name": "",
-        "order": 28,
-        "width": 6,
-        "height": 6,
-        "columns": [
-            {
-                "field": "Dato",
-                "title": "Dato",
-                "width": "80",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Navn",
-                "title": "Navn",
-                "width": "160",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Tid",
-                "title": "Tid",
-                "width": "70",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 1,
-        "cts": true,
-        "x": 1570,
-        "y": 240,
-        "wires": [
-            [
-                "5beeda7a08b2307f"
-            ]
-        ]
-    },
-    {
-        "id": "f2034449652c840f",
-        "type": "function",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "func": "var array = msg.payload\n\narray.push(msg.new)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = array\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1700,
-        "y": 460,
-        "wires": [
-            [
-                "13e56853a26e3472",
-                "a399f9664089b304",
-                "ff5848f537b095aa"
-            ]
-        ]
-    },
-    {
-        "id": "4bd8b80be2fa6ddb",
-        "type": "change",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "array",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1270,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "13e56853a26e3472",
-        "type": "debug",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1850,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "54a802679e69a58c",
-        "type": "debug",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1650,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "c7b89ec87dbd58e8",
-        "type": "change",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "array",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1500,
-        "y": 460,
-        "wires": [
-            [
-                "f2034449652c840f"
-            ]
-        ]
-    },
-    {
-        "id": "f752df62f73a4c58",
-        "type": "change",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "navn",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 930,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b30c49dfa56b7877",
-        "type": "ui_text_input",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "Hold navn",
-        "label": "Hold navn: ",
-        "tooltip": "",
-        "group": "117cda2a.43e596",
-        "order": 22,
-        "width": 4,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "2000",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 740,
-        "y": 200,
-        "wires": [
-            [
-                "f752df62f73a4c58"
-            ]
-        ]
-    },
-    {
-        "id": "6744845e03598f7c",
-        "type": "change",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "tid",
-                "pt": "flow",
-                "to": "88:33",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "date",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 660,
-        "y": 460,
-        "wires": [
-            [
-                "4a88d592a29879d8"
-            ]
-        ]
-    },
-    {
-        "id": "6b2693726444d3b3",
-        "type": "inject",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 490,
-        "y": 480,
-        "wires": [
-            [
-                "6744845e03598f7c"
-            ]
-        ]
-    },
-    {
-        "id": "49017902693cae47",
-        "type": "switch",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "navn not empty",
-        "property": "navn",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 910,
-        "y": 460,
-        "wires": [
-            [
-                "3c3b2eea3cb3716c"
-            ]
-        ]
-    },
-    {
-        "id": "3c3b2eea3cb3716c",
-        "type": "switch",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "tid not empty",
-        "property": "tid",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1090,
-        "y": 460,
-        "wires": [
-            [
-                "068ff31323420e95"
-            ]
-        ]
-    },
-    {
-        "id": "508639fdededbcad",
-        "type": "inject",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "reset",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 470,
-        "y": 340,
-        "wires": [
-            [
-                "79ec541356a3656d",
-                "c249fb3e8db81ba9",
-                "ee784a0476a50ed9",
-                "dfebbcec242423fa"
-            ]
-        ]
-    },
-    {
-        "id": "79ec541356a3656d",
-        "type": "change",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "navn",
-                "pt": "flow",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 670,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c249fb3e8db81ba9",
-        "type": "change",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "tid",
-                "pt": "flow",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 670,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "068ff31323420e95",
-        "type": "function",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "create payload",
-        "func": "// Get flow variables\nvar name = flow.get(\"navn\");\nvar time = flow.get(\"tid\");\nvar date = flow.get(\"date\");\n\n// Create payload\nmsg.new = { \"Dato\": date, \"Navn\": name, \"Tid\": time };\n\n// Reset flow variables\nflow.set(\"Navn\",\"\");\nflow.set(\"Tid\",\"\");\nflow.set(\"Dato\",\"\");\n\n// Return\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1280,
-        "y": 460,
-        "wires": [
-            [
-                "c7b89ec87dbd58e8"
-            ]
-        ]
-    },
-    {
-        "id": "5beeda7a08b2307f",
-        "type": "debug",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1750,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "d91fb92afa7df4b3",
-        "type": "link in",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "Reseter hold navn og tid",
-        "links": [
-            "2b480c9c40b1ae41",
-            "ff5848f537b095aa"
-        ],
-        "x": 435,
-        "y": 300,
-        "wires": [
-            [
-                "79ec541356a3656d",
-                "c249fb3e8db81ba9",
-                "ee784a0476a50ed9",
-                "dfebbcec242423fa",
-                "6744845e03598f7c"
-            ]
-        ]
-    },
-    {
-        "id": "ee784a0476a50ed9",
-        "type": "change",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "tom",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 530,
-        "y": 200,
-        "wires": [
-            [
-                "b30c49dfa56b7877"
-            ]
-        ]
-    },
-    {
-        "id": "dfebbcec242423fa",
-        "type": "change",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "date",
-                "pt": "flow",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 670,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4a88d592a29879d8",
-        "type": "moment",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "topic": "",
-        "input": "date",
-        "inputType": "msg",
-        "inTz": "Europe/Copenhagen",
-        "adjAmount": 0,
-        "adjType": "days",
-        "adjDir": "add",
-        "format": "D.M.yy",
-        "locale": "en-US",
-        "output": "date",
-        "outputType": "flow",
-        "outTz": "Europe/Copenhagen",
-        "x": 740,
-        "y": 540,
-        "wires": [
-            [
-                "49017902693cae47"
-            ]
-        ]
-    },
-    {
-        "id": "cd502ad539bfbb54",
-        "type": "change",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "Rigtig format for ny start efter slet af firebase highscore liste",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "[{ \"Dato\": \"24.11.2021\", \"Navn\": \"peterdd\", \"Tid\": \"60:51\" }]",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1480,
-        "y": 160,
-        "wires": [
-            [
-                "a399f9664089b304"
-            ]
-        ]
-    },
-    {
-        "id": "5fcbf6a487e142b3",
-        "type": "inject",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 1080,
-        "y": 160,
-        "wires": [
-            [
-                "cd502ad539bfbb54"
-            ]
-        ]
-    },
-    {
-        "id": "ff5848f537b095aa",
-        "type": "link out",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "mode": "link",
-        "links": [
-            "d91fb92afa7df4b3"
-        ],
-        "x": 1825,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "4a4a51b5509aa599",
-        "type": "json",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1370,
-        "y": 360,
-        "wires": [
-            [
-                "7dc941642e75fd4b"
-            ]
-        ]
-    },
-    {
-        "id": "3c4aa3b1c29a551b",
-        "type": "http request",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "https://funhallproject.firebaseio.com/Nighmare navn.json",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 1210,
-        "y": 360,
-        "wires": [
-            [
-                "4a4a51b5509aa599"
-            ]
-        ]
-    },
-    {
-        "id": "0b750cf052183fbc",
-        "type": "inject",
-        "z": "da226c7b38dd5723",
-        "g": "3b53e00703358c1f",
-        "name": "opdater highscore liste fra Firebase",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 960,
-        "y": 360,
-        "wires": [
-            [
-                "3c4aa3b1c29a551b"
-            ]
-        ]
     }
 ]
