@@ -2392,13 +2392,10 @@
             "d9c30e5407d9e6a3",
             "b820200a15d20076",
             "8f440d448e8ae171",
-            "ce3df7c829af8028",
-            "d6ac51117485fe32",
             "11425201571a27c1",
             "6c4ff8f3a68aedb2",
             "7d60b4bf50a6f1db",
             "7e29ad2b2f4d0d2f",
-            "5c038d6738360fb5",
             "22e76de465be6176",
             "f42151a3b495fa41"
         ],
@@ -11800,7 +11797,8 @@
         "wires": [
             [
                 "4ae0494d4a89e8a4",
-                "7d60b4bf50a6f1db"
+                "7d60b4bf50a6f1db",
+                "d9c30e5407d9e6a3"
             ],
             []
         ]
@@ -11829,8 +11827,7 @@
         "y": 1660,
         "wires": [
             [
-                "18405f2e2a253dda",
-                "d9c30e5407d9e6a3"
+                "18405f2e2a253dda"
             ]
         ]
     },
@@ -13380,7 +13377,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -13441,42 +13438,6 @@
                 "11425201571a27c1"
             ]
         ]
-    },
-    {
-        "id": "ce3df7c829af8028",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "func": "var navne = flow.get(\"navn\");\n\n\n// Create payload\nmsg.new = { \"Navn\": navne };\n\nflow.set(\"Navn\",\"\");\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2660,
-        "y": 1960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d6ac51117485fe32",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3110,
-        "y": 1840,
-        "wires": []
     },
     {
         "id": "11425201571a27c1",
@@ -13552,7 +13513,6 @@
         "wires": [
             [
                 "333de98b0c0f63b5",
-                "ce3df7c829af8028",
                 "f42151a3b495fa41"
             ]
         ]
@@ -13590,24 +13550,6 @@
         ]
     },
     {
-        "id": "5c038d6738360fb5",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2990,
-        "y": 1980,
-        "wires": []
-    },
-    {
         "id": "22e76de465be6176",
         "type": "join",
         "z": "33e76285.1cd03e",
@@ -13629,7 +13571,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 2850,
-        "y": 1860,
+        "y": 1840,
         "wires": [
             [
                 "7e29ad2b2f4d0d2f",
@@ -13649,7 +13591,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2710,
+        "x": 2680,
         "y": 1840,
         "wires": [
             [
