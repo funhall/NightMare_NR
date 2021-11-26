@@ -24630,7 +24630,7 @@
                 "t": "set",
                 "p": "kisteexit",
                 "pt": "global",
-                "to": "closed1",
+                "to": "closed",
                 "tot": "str"
             }
         ],
