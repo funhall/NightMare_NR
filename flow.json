@@ -2401,8 +2401,6 @@
             "9ffb909658d0ec8b",
             "7e29ad2b2f4d0d2f",
             "8aee8b7021372cfe",
-            "e3d72809a9603b5e",
-            "89e6039d8daaf948",
             "5c038d6738360fb5"
         ],
         "env": [],
@@ -13586,9 +13584,7 @@
         "y": 1740,
         "wires": [
             [
-                "333de98b0c0f63b5",
-                "e3d72809a9603b5e",
-                "89e6039d8daaf948"
+                "333de98b0c0f63b5"
             ]
         ]
     },
@@ -13659,50 +13655,6 @@
         "wires": [
             [
                 "7e29ad2b2f4d0d2f"
-            ]
-        ]
-    },
-    {
-        "id": "e3d72809a9603b5e",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "navn",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2550,
-        "y": 1800,
-        "wires": [
-            [
-                "ce3df7c829af8028"
-            ]
-        ]
-    },
-    {
-        "id": "89e6039d8daaf948",
-        "type": "mergeTopic",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "timeout": "2",
-        "msglimit": 0,
-        "x": 2590,
-        "y": 1920,
-        "wires": [
-            [
-                "5c038d6738360fb5"
             ]
         ]
     },
