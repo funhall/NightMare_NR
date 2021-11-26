@@ -330,7 +330,7 @@
         ],
         "x": 2404,
         "y": 4119,
-        "w": 892,
+        "w": 842,
         "h": 342
     },
     {
@@ -10736,8 +10736,8 @@
         "constant": "1",
         "round": false,
         "decimals": 0,
-        "x": 3200,
-        "y": 4180,
+        "x": 3070,
+        "y": 4220,
         "wires": [
             [
                 "543c5fae.b45d1"
@@ -13230,6 +13230,60 @@
             [
                 "72dcf5244567f182"
             ]
+        ]
+    },
+    {
+        "id": "94cab8be1a2b9873",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2450,
+        "y": 4060,
+        "wires": [
+            [
+                "48012f70981f6674"
+            ]
+        ]
+    },
+    {
+        "id": "48012f70981f6674",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Tæller til 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter",
+                "pt": "flow",
+                "to": "9",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2670,
+        "y": 4040,
+        "wires": [
+            []
         ]
     },
     {
