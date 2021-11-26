@@ -531,7 +531,7 @@
         "id": "8a907ee3e43a8bdb",
         "type": "group",
         "z": "33e76285.1cd03e",
-        "name": "Tjekker om alle byster er på plads",
+        "name": "Tjekker om alle byster er på plads for game over",
         "style": {
             "label": true
         },
@@ -557,6 +557,7 @@
             "ce4fc7ded40fa986",
             "21e8b613b412765b"
         ],
+        "env": [],
         "x": 254,
         "y": 2039,
         "w": 1752,
@@ -6375,7 +6376,7 @@
         "z": "33e76285.1cd03e",
         "g": "463e1cfb0b0e88d4",
         "name": "Tjekker om alle byster er klar til spil",
-        "func": "if ( global.get(\"Cartmell\") === \"false\" && global.get(\"Huston\") === \"false\" && global.get(\"Corwin\") === \"true\" && global.get(\"Nellie\") === \"false\" && global.get(\"Clingar\") === \"false\" && global.get(\"Connel\") === \"false\") { \n  msg.payload = \"Alle_klar\";\n} else {\n  msg.payload = \"Nogen er væk\";\n}\nreturn msg;",
+        "func": "if ( global.get(\"Cartmell\") === \"false\" && global.get(\"Huston\") === \"true\" && global.get(\"Corwin\") === \"false\" && global.get(\"Nellie\") === \"false\" && global.get(\"Clingar\") === \"false\" && global.get(\"Connel\") === \"false\") { \n  msg.payload = \"Alle_klar\";\n} else {\n  msg.payload = \"Nogen er væk\";\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
