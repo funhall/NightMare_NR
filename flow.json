@@ -13575,7 +13575,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "msg.payload = {\"Navn\": msg.payload};\nreturn msg;\n",
+        "func": "msg.navn = {\"Navn\": msg.navn};\nmsg.tid = {\"Tid\": msg.tid};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13616,14 +13616,15 @@
             }
         ],
         "prop": "payload.description",
-        "propout": "payload",
+        "propout": "tid",
         "object": "msg",
         "objectout": "msg",
         "x": 2550,
         "y": 1820,
         "wires": [
             [
-                "333de98b0c0f63b5"
+                "333de98b0c0f63b5",
+                "f42151a3b495fa41"
             ]
         ]
     },
