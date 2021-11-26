@@ -13442,7 +13442,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "opret tom liste",
-        "func": "var booking = []\n\n\nreturn msg;",
+        "func": "var booking = [5,6]\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
