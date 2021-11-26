@@ -10736,7 +10736,7 @@
         "type": "link in",
         "z": "33e76285.1cd03e",
         "g": "8a907ee3e43a8bdb",
-        "name": "Åbner udgang og lys når game over",
+        "name": "Åbner udgang ",
         "links": [
             "2b480c9c40b1ae41"
         ],
