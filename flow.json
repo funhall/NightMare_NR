@@ -3282,6 +3282,30 @@
         "futureWeeks": "4"
     },
     {
+        "id": "ea8e8d704ea41775",
+        "type": "telegram bot",
+        "botname": "Nightmare",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
@@ -45848,24 +45872,6 @@
         "wires": []
     },
     {
-        "id": "b965ed544d946ccd",
-        "type": "ui_toast",
-        "z": "c524d8189961167d",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "topic": "",
-        "name": "",
-        "x": 710,
-        "y": 660,
-        "wires": []
-    },
-    {
         "id": "c48bb539ed720417",
         "type": "inject",
         "z": "c524d8189961167d",
@@ -45884,14 +45890,28 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 330,
-        "y": 700,
+        "payload": "/newbot",
+        "payloadType": "str",
+        "x": 930,
+        "y": 660,
         "wires": [
             [
-                "b965ed544d946ccd"
+                "e740f6d552db8d29"
             ]
+        ]
+    },
+    {
+        "id": "e740f6d552db8d29",
+        "type": "telegram sender",
+        "z": "c524d8189961167d",
+        "name": "",
+        "bot": "ea8e8d704ea41775",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1260,
+        "y": 680,
+        "wires": [
+            []
         ]
     }
 ]
