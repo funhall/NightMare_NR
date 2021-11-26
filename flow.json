@@ -13432,8 +13432,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 3010,
-        "y": 1860,
+        "x": 2890,
+        "y": 1900,
         "wires": [
             []
         ]
@@ -13464,7 +13464,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "var booking = flow.get(\"booking\");\n\n\nbooking.push(msg.payload)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = booking\n\nreturn msg;",
+        "func": "var booking = flow.get(\"booking\");\n\n\nbooking.push(msg.payload)\n\n// Create payload\nmsg.payload = { \"Navn\": booking };\n\n//msg.arrayLength = array.length\n//msg.payload = booking\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13502,7 +13502,8 @@
         "y": 1820,
         "wires": [
             [
-                "d6ac51117485fe32"
+                "d6ac51117485fe32",
+                "b820200a15d20076"
             ]
         ]
     },
