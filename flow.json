@@ -13413,7 +13413,7 @@
             {
                 "field": "Tid",
                 "title": "Tid",
-                "width": "2",
+                "width": "150",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
