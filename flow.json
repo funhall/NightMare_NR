@@ -2398,7 +2398,8 @@
             "6c4ff8f3a68aedb2",
             "7d60b4bf50a6f1db",
             "7e29ad2b2f4d0d2f",
-            "5c038d6738360fb5"
+            "5c038d6738360fb5",
+            "22e76de465be6176"
         ],
         "env": [],
         "x": 1824,
@@ -13452,8 +13453,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2580,
-        "y": 1900,
+        "x": 2660,
+        "y": 1960,
         "wires": [
             [
                 "b820200a15d20076"
@@ -13552,7 +13553,8 @@
         "wires": [
             [
                 "333de98b0c0f63b5",
-                "ce3df7c829af8028"
+                "ce3df7c829af8028",
+                "22e76de465be6176"
             ]
         ]
     },
@@ -13605,6 +13607,35 @@
         "x": 2990,
         "y": 1980,
         "wires": []
+    },
+    {
+        "id": "22e76de465be6176",
+        "type": "join",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2730,
+        "y": 1840,
+        "wires": [
+            [
+                "7e29ad2b2f4d0d2f"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
