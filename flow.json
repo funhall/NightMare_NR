@@ -2397,8 +2397,7 @@
             "7e29ad2b2f4d0d2f",
             "22e76de465be6176",
             "f42151a3b495fa41",
-            "0083324598d89708",
-            "c1b3620840bc445f"
+            "0083324598d89708"
         ],
         "env": [],
         "x": 1864,
@@ -13497,14 +13496,14 @@
             }
         ],
         "prop": "payload.summary",
-        "propout": "payload",
+        "propout": "navn",
         "object": "msg",
         "objectout": "msg",
         "x": 2540,
         "y": 1780,
         "wires": [
             [
-                "c1b3620840bc445f"
+                "f42151a3b495fa41"
             ]
         ]
     },
@@ -13625,32 +13624,6 @@
         "wires": [
             [
                 "333de98b0c0f63b5",
-                "c1b3620840bc445f"
-            ]
-        ]
-    },
-    {
-        "id": "c1b3620840bc445f",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "rules": [
-            {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2770,
-        "y": 1780,
-        "wires": [
-            [
                 "f42151a3b495fa41"
             ]
         ]
