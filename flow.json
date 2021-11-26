@@ -2446,32 +2446,41 @@
         "h": 142
     },
     {
-        "id": "1cb51646b2535df1",
+        "id": "508a8821b425bd77",
         "type": "group",
         "z": "c524d8189961167d",
-        "name": "Tænd /sluk batteriopladere",
+        "name": "Tænd /sluk batteriopladere tjekker kalender for booking",
         "style": {
             "label": true
         },
         "nodes": [
+            "0962f71225ebc344",
+            "577d60599efc8e2d",
+            "c6c71944fc51665a",
+            "1853b73a7ba5c17b",
+            "6cb26287981f5480",
+            "19bbec6c1066f785",
+            "7de3e87a4b43a8a5",
+            "238d2eedfc8bb4e2",
+            "49b73e8e6319bc1e",
+            "49492ad41fe427ab",
             "f9305af09f2885c6",
             "a4e4bdaf645ba1cb",
             "1d78786d96eb2a97",
             "8c01d61809fea2d7",
             "dcd8ef157d53d4cc",
             "6b2f5a68037de872",
-            "e2f991de3eadd5f7",
-            "ec3d519b6f0af92a",
-            "3f7b2d7a25b7090a",
             "2c70d4f8e7cb067f",
             "ebe52c01f1d00116",
-            "df06448f10d82e1d"
+            "df06448f10d82e1d",
+            "e81fd0aaf944b09a",
+            "1337c5423c0b46a9"
         ],
         "env": [],
-        "x": 154,
-        "y": 839,
-        "w": 1012,
-        "h": 322
+        "x": 404,
+        "y": 619,
+        "w": 1162,
+        "h": 482
     },
     {
         "id": "82fd466d.f6c968",
@@ -45195,6 +45204,7 @@
         "id": "0962f71225ebc344",
         "type": "ical-upcoming",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "confignode": "567e72afe6ba6dcd",
         "checkall": false,
         "cron": "",
@@ -45214,8 +45224,8 @@
         "filterOperator": "between",
         "filter2": "",
         "filter": "",
-        "x": 520,
-        "y": 280,
+        "x": 830,
+        "y": 720,
         "wires": [
             [
                 "c6c71944fc51665a",
@@ -45227,6 +45237,7 @@
         "id": "577d60599efc8e2d",
         "type": "inject",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
         "props": [
             {
@@ -45243,8 +45254,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 310,
-        "y": 280,
+        "x": 570,
+        "y": 720,
         "wires": [
             [
                 "0962f71225ebc344"
@@ -45255,6 +45266,7 @@
         "id": "c6c71944fc51665a",
         "type": "change",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
         "rules": [
             {
@@ -45270,33 +45282,17 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 200,
+        "x": 1090,
+        "y": 660,
         "wires": [
             []
         ]
     },
     {
-        "id": "fedc8cdad904451d",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1350,
-        "y": 360,
-        "wires": []
-    },
-    {
         "id": "1853b73a7ba5c17b",
         "type": "change",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
         "rules": [
             {
@@ -45312,8 +45308,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 480,
+        "x": 1220,
+        "y": 720,
         "wires": [
             [
                 "6cb26287981f5480"
@@ -45324,6 +45320,7 @@
         "id": "6cb26287981f5480",
         "type": "split",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
         "splt": "\\n",
         "spltType": "str",
@@ -45331,8 +45328,8 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 770,
-        "y": 480,
+        "x": 1450,
+        "y": 720,
         "wires": [
             [
                 "19bbec6c1066f785"
@@ -45343,6 +45340,7 @@
         "id": "19bbec6c1066f785",
         "type": "switch",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "Juvel-kuppet",
         "property": "payload.description",
         "propertyType": "msg",
@@ -45359,22 +45357,20 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 910,
-        "y": 480,
+        "x": 710,
+        "y": 780,
         "wires": [
             [
                 "7de3e87a4b43a8a5"
             ],
-            [
-                "e950c2ae8a286ef0"
-            ]
+            []
         ]
     },
     {
         "id": "f9305af09f2885c6",
         "type": "mqtt out",
         "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
+        "g": "508a8821b425bd77",
         "name": "",
         "topic": "opladerStyrring/output/D5",
         "qos": "",
@@ -45385,15 +45381,15 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1030,
-        "y": 1020,
+        "x": 1280,
+        "y": 960,
         "wires": []
     },
     {
         "id": "a4e4bdaf645ba1cb",
         "type": "change",
         "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
+        "g": "508a8821b425bd77",
         "name": "Tænd oplader",
         "rules": [
             {
@@ -45416,8 +45412,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
-        "y": 1120,
+        "x": 850,
+        "y": 1060,
         "wires": [
             [
                 "f9305af09f2885c6"
@@ -45428,13 +45424,13 @@
         "id": "1d78786d96eb2a97",
         "type": "link in",
         "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
+        "g": "508a8821b425bd77",
         "name": "Oplader tænd",
         "links": [
             "2216095b02d3c520"
         ],
-        "x": 395,
-        "y": 920,
+        "x": 645,
+        "y": 860,
         "wires": [
             [
                 "df06448f10d82e1d"
@@ -45445,13 +45441,13 @@
         "id": "8c01d61809fea2d7",
         "type": "link in",
         "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
+        "g": "508a8821b425bd77",
         "name": "Oplader sluk",
         "links": [
             "49095ecf9ab1fd70"
         ],
-        "x": 455,
-        "y": 1020,
+        "x": 705,
+        "y": 960,
         "wires": [
             [
                 "ebe52c01f1d00116"
@@ -45462,7 +45458,7 @@
         "id": "dcd8ef157d53d4cc",
         "type": "change",
         "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
+        "g": "508a8821b425bd77",
         "name": "Sluk oplader",
         "rules": [
             {
@@ -45485,8 +45481,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 1040,
+        "x": 860,
+        "y": 980,
         "wires": [
             [
                 "f9305af09f2885c6"
@@ -45497,7 +45493,7 @@
         "id": "6b2f5a68037de872",
         "type": "ui_button",
         "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
+        "g": "508a8821b425bd77",
         "name": "Tænd lader",
         "group": "117cda2a.43e596",
         "order": 19,
@@ -45513,8 +45509,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 250,
-        "y": 960,
+        "x": 500,
+        "y": 900,
         "wires": [
             [
                 "2c70d4f8e7cb067f"
@@ -45522,81 +45518,10 @@
         ]
     },
     {
-        "id": "e2f991de3eadd5f7",
-        "type": "ping",
-        "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
-        "protocol": "Automatic",
-        "mode": "timed",
-        "name": "",
-        "host": "192.168.10.1",
-        "timer": "5",
-        "inputs": 0,
-        "x": 270,
-        "y": 880,
-        "wires": [
-            [
-                "ec3d519b6f0af92a"
-            ]
-        ]
-    },
-    {
-        "id": "ec3d519b6f0af92a",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "oplader",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 460,
-        "y": 880,
-        "wires": [
-            [
-                "3f7b2d7a25b7090a"
-            ]
-        ]
-    },
-    {
-        "id": "3f7b2d7a25b7090a",
-        "type": "switch",
-        "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 750,
-        "y": 880,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "2c70d4f8e7cb067f",
         "type": "switch",
         "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
+        "g": "508a8821b425bd77",
         "name": "",
         "property": "oplader",
         "propertyType": "flow",
@@ -45613,8 +45538,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 410,
-        "y": 960,
+        "x": 660,
+        "y": 900,
         "wires": [
             [
                 "df06448f10d82e1d"
@@ -45628,7 +45553,7 @@
         "id": "ebe52c01f1d00116",
         "type": "change",
         "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
+        "g": "508a8821b425bd77",
         "name": "off",
         "rules": [
             {
@@ -45665,8 +45590,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 980,
+        "x": 840,
+        "y": 920,
         "wires": [
             [
                 "f9305af09f2885c6",
@@ -45678,7 +45603,7 @@
         "id": "df06448f10d82e1d",
         "type": "change",
         "z": "c524d8189961167d",
-        "g": "1cb51646b2535df1",
+        "g": "508a8821b425bd77",
         "name": "on",
         "rules": [
             {
@@ -45715,8 +45640,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 940,
+        "x": 840,
+        "y": 880,
         "wires": [
             [
                 "f9305af09f2885c6",
@@ -45729,6 +45654,7 @@
         "id": "7de3e87a4b43a8a5",
         "type": "change",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
         "rules": [
             {
@@ -45744,36 +45670,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1100,
-        "y": 440,
+        "x": 920,
+        "y": 780,
         "wires": [
             [
-                "fedc8cdad904451d",
                 "238d2eedfc8bb4e2"
             ]
         ]
     },
     {
-        "id": "b07b52047a89162e",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1590,
-        "y": 720,
-        "wires": []
-    },
-    {
         "id": "238d2eedfc8bb4e2",
         "type": "change",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
         "rules": [
             {
@@ -45789,8 +45698,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1320,
-        "y": 460,
+        "x": 1140,
+        "y": 780,
         "wires": [
             [
                 "49b73e8e6319bc1e"
@@ -45798,59 +45707,10 @@
         ]
     },
     {
-        "id": "f6a3b9dbd4fb914f",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1530,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "e950c2ae8a286ef0",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1110,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "674eab5354731270",
-        "type": "timed-counter",
-        "z": "c524d8189961167d",
-        "name": "",
-        "timelimit": 350,
-        "timeunit": 1,
-        "withhold": true,
-        "fixedtimeout": false,
-        "pertopic": false,
-        "x": 130,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "49b73e8e6319bc1e",
         "type": "switch",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -45867,11 +45727,10 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1310,
-        "y": 520,
+        "x": 1290,
+        "y": 780,
         "wires": [
             [
-                "f6a3b9dbd4fb914f",
                 "e81fd0aaf944b09a"
             ],
             []
@@ -45881,6 +45740,7 @@
         "id": "e81fd0aaf944b09a",
         "type": "change",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
         "rules": [
             {
@@ -45896,11 +45756,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1050,
-        "y": 700,
+        "x": 1460,
+        "y": 780,
         "wires": [
             [
-                "b07b52047a89162e",
                 "df06448f10d82e1d"
             ]
         ]
@@ -45909,8 +45768,9 @@
         "id": "1337c5423c0b46a9",
         "type": "debug",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -45918,14 +45778,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1330,
-        "y": 920,
+        "x": 1340,
+        "y": 900,
         "wires": []
     },
     {
         "id": "49492ad41fe427ab",
         "type": "switch",
         "z": "c524d8189961167d",
+        "g": "508a8821b425bd77",
         "name": "",
         "property": "oplader",
         "propertyType": "flow",
@@ -45939,8 +45800,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 560,
-        "y": 400,
+        "x": 1030,
+        "y": 720,
         "wires": [
             [
                 "1853b73a7ba5c17b"
