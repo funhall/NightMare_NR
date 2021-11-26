@@ -3332,7 +3332,7 @@
         "order": 11,
         "disp": true,
         "width": "6",
-        "collapse": true
+        "collapse": false
     },
     {
         "id": "3cfae606a285ac43",
@@ -3342,7 +3342,7 @@
         "order": 12,
         "disp": true,
         "width": "6",
-        "collapse": true
+        "collapse": false
     },
     {
         "id": "31558c33.837ac4",
