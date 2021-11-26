@@ -11796,7 +11796,8 @@
         "wires": [
             [
                 "4ae0494d4a89e8a4",
-                "6c4ff8f3a68aedb2"
+                "6c4ff8f3a68aedb2",
+                "ce3df7c829af8028"
             ],
             []
         ]
@@ -13469,8 +13470,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 1800,
+        "x": 2500,
+        "y": 1820,
         "wires": [
             [
                 "5d1ac28aa4fbdfc2"
@@ -13557,7 +13558,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "splt": " - ",
+        "splt": "/n",
         "spltType": "str",
         "arraySplt": 1,
         "arraySpltType": "len",
@@ -13567,7 +13568,6 @@
         "y": 1740,
         "wires": [
             [
-                "ce3df7c829af8028",
                 "333de98b0c0f63b5"
             ]
         ]
