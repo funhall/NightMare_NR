@@ -13575,13 +13575,13 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "msg.navn = {\"Navn\": msg.navn};\nmsg.tid = {\"Tid\": msg.tid};\nreturn msg;\n",
+        "func": "msg.payload = {\"Navn\": msg.navn,\"Tid\": msg.tid};\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2880,
+        "x": 2800,
         "y": 1780,
         "wires": [
             [
