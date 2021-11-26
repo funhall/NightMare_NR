@@ -13741,7 +13741,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_High_score\"],\"show\":[\"Nightmare_personale_Dagens_spillere\"],\"close\":[\"Nightmare_personale_Lys_og_radio\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_High_score\"],\"show\":[\"Nightmare_personale_Dagens_spillere\"],\"hide\":[\"Nightmare_personale_Lys_og_radio\"]}}",
                 "tot": "json"
             }
         ],
