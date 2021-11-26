@@ -21474,12 +21474,12 @@
         "z": "c39524c2016c8df2",
         "g": "549daca12e284a9c",
         "name": "",
-        "property": "payload",
-        "propertyType": "msg",
+        "property": "counter",
+        "propertyType": "global",
         "rules": [
             {
-                "t": "eq",
-                "v": "",
+                "t": "neq",
+                "v": "1",
                 "vt": "str"
             }
         ],
