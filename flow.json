@@ -2706,16 +2706,6 @@
         "collapse": true
     },
     {
-        "id": "7c54006e.2e54c",
-        "type": "ui_group",
-        "name": "Lys",
-        "tab": "82fd466d.f6c968",
-        "order": 10,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
         "id": "1a7f6b0.0560695",
         "type": "ui_group",
         "name": "High score",
@@ -13761,7 +13751,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_High_score\"],\"show\":[\"Nightmare_personale_Dagens_spillere\"],\"collapse\":[\"Nightmare_personale_Lys\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_High_score\"],\"show\":[\"Nightmare_personale_Dagens_spillere\"],\"collapse\":[\"Nightmare_personale_Lys_og_radio\"]}}",
                 "tot": "json"
             }
         ],
