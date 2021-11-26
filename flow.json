@@ -13542,6 +13542,15 @@
                         "value": "- "
                     }
                 ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "dsdfsdfsf\""
+                    }
+                ]
             }
         ],
         "prop": "payload.summary",
@@ -13572,7 +13581,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2990,
+        "x": 3070,
         "y": 1900,
         "wires": []
     },
@@ -13629,8 +13638,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 2730,
-        "y": 1840,
+        "x": 2850,
+        "y": 1860,
         "wires": [
             [
                 "7e29ad2b2f4d0d2f"
