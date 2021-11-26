@@ -2678,7 +2678,7 @@
     {
         "id": "c8a900d5.b5a2",
         "type": "ui_group",
-        "name": "Batteri ",
+        "name": "Batteri",
         "tab": "82fd466d.f6c968",
         "order": 11,
         "disp": true,
