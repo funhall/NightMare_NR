@@ -516,14 +516,15 @@
             "1507c4ef88339a79",
             "1c5ccd78c67f12cb",
             "2e2a42b0eb8f9385",
-            "3410181cefca3bdf",
             "d61c7a90577dda4a",
-            "b71bafe8e5381546"
+            "b71bafe8e5381546",
+            "ed8eb34386c31deb",
+            "81b545f505ab2030"
         ],
-        "x": 2134,
+        "x": 2114,
         "y": 319,
-        "w": 1292,
-        "h": 202
+        "w": 1312,
+        "h": 222
     },
     {
         "id": "8a907ee3e43a8bdb",
@@ -1452,13 +1453,15 @@
             "4c54c6a3d168acbb",
             "b1c144db8add45ef",
             "25c83829ad0b8eb2",
-            "498b2f4e4bcdf879"
+            "498b2f4e4bcdf879",
+            "b5eafdbecd239cf1",
+            "e1c374ee343391e3"
         ],
         "env": [],
         "x": 2114,
         "y": 579,
         "w": 1452,
-        "h": 362
+        "h": 402
     },
     {
         "id": "7dc6faf4bc4659f0",
@@ -7168,32 +7171,6 @@
         ]
     },
     {
-        "id": "3410181cefca3bdf",
-        "type": "switch",
-        "z": "33e76285.1cd03e",
-        "g": "463e1cfb0b0e88d4",
-        "name": "",
-        "property": "bysterplaceret",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "true",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 2250,
-        "y": 480,
-        "wires": [
-            [
-                "1507c4ef88339a79"
-            ]
-        ]
-    },
-    {
         "id": "26a7b9ea531781b4",
         "type": "function",
         "z": "33e76285.1cd03e",
@@ -9705,7 +9682,9 @@
             "814c356d347004e6",
             "ded690629d639c1f",
             "221d91faf8e001bc",
-            "65b88c9947fd1cca"
+            "65b88c9947fd1cca",
+            "b5eafdbecd239cf1",
+            "81b545f505ab2030"
         ],
         "x": 595,
         "y": 520,
@@ -12295,6 +12274,96 @@
         "wires": [
             [
                 "4adbd161b3e6510c"
+            ]
+        ]
+    },
+    {
+        "id": "b5eafdbecd239cf1",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "5e203e809c0bd87a",
+        "name": "Reset",
+        "links": [
+            "2b480c9c40b1ae41"
+        ],
+        "x": 2155,
+        "y": 940,
+        "wires": [
+            [
+                "e1c374ee343391e3"
+            ]
+        ]
+    },
+    {
+        "id": "e1c374ee343391e3",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "5e203e809c0bd87a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2340,
+        "y": 940,
+        "wires": [
+            [
+                "a4a8d9fc3b12fa39"
+            ]
+        ]
+    },
+    {
+        "id": "81b545f505ab2030",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "463e1cfb0b0e88d4",
+        "name": "Reset",
+        "links": [
+            "2b480c9c40b1ae41"
+        ],
+        "x": 2155,
+        "y": 480,
+        "wires": [
+            [
+                "ed8eb34386c31deb"
+            ]
+        ]
+    },
+    {
+        "id": "ed8eb34386c31deb",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "463e1cfb0b0e88d4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2280,
+        "y": 500,
+        "wires": [
+            [
+                "1507c4ef88339a79"
             ]
         ]
     },
