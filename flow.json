@@ -3345,6 +3345,16 @@
         "collapse": false
     },
     {
+        "id": "43b4f7524f5eadc0",
+        "type": "ui_group",
+        "name": "Lys og radio",
+        "tab": "82fd466d.f6c968",
+        "order": 13,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
