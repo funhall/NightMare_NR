@@ -9745,7 +9745,8 @@
             "b41f9f2bfad990e4",
             "b5eafdbecd239cf1",
             "bdf8cec0e1a2db9f",
-            "ded690629d639c1f"
+            "ded690629d639c1f",
+            "826b95112c8631bf"
         ],
         "x": 935,
         "y": 520,
@@ -10013,7 +10014,7 @@
         "type": "link out",
         "z": "33e76285.1cd03e",
         "g": "1d4f38fd430a0ca5",
-        "name": "",
+        "name": "Kiste lukket delay til exit open",
         "mode": "link",
         "links": [
             "826b95112c8631bf"
@@ -25246,6 +25247,7 @@
         "g": "821e49952fadaf78",
         "name": "Open exit",
         "links": [
+            "2b480c9c40b1ae41",
             "4dfaf3a5efda95b4"
         ],
         "x": 955,
