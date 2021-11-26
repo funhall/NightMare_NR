@@ -3306,11 +3306,6 @@
         "verboselogging": false
     },
     {
-        "id": "e171d957c7dee8a3",
-        "type": "pushbullet-config",
-        "name": ""
-    },
-    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
@@ -45877,7 +45872,23 @@
         "wires": []
     },
     {
-        "id": "c48bb539ed720417",
+        "id": "b28ab0b136d92f94",
+        "type": "pushover",
+        "z": "c524d8189961167d",
+        "name": "",
+        "device": "",
+        "title": "",
+        "priority": 0,
+        "sound": "",
+        "url": "",
+        "url_title": "",
+        "html": false,
+        "x": 1040,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "3f498f80b701ef88",
         "type": "inject",
         "z": "c524d8189961167d",
         "name": "",
@@ -45895,27 +45906,14 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "/newbot",
-        "payloadType": "str",
-        "x": 930,
-        "y": 660,
+        "payload": "",
+        "payloadType": "date",
+        "x": 570,
+        "y": 520,
         "wires": [
             [
-                "f6e9c4001a8fd64e"
+                "b28ab0b136d92f94"
             ]
         ]
-    },
-    {
-        "id": "f6e9c4001a8fd64e",
-        "type": "pushbullet",
-        "z": "c524d8189961167d",
-        "config": "e171d957c7dee8a3",
-        "pushtype": "note",
-        "title": "",
-        "chan": "",
-        "name": "",
-        "x": 1220,
-        "y": 720,
-        "wires": []
     }
 ]
