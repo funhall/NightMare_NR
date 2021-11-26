@@ -2393,15 +2393,12 @@
             "b820200a15d20076",
             "8f440d448e8ae171",
             "ce3df7c829af8028",
-            "5d1ac28aa4fbdfc2",
             "d6ac51117485fe32",
             "11425201571a27c1",
             "6c4ff8f3a68aedb2",
             "7d60b4bf50a6f1db",
-            "9ffb909658d0ec8b",
             "7e29ad2b2f4d0d2f",
-            "5c038d6738360fb5",
-            "6de1cd2dbd63cc33"
+            "5c038d6738360fb5"
         ],
         "env": [],
         "x": 1824,
@@ -13459,37 +13456,7 @@
         "y": 1900,
         "wires": [
             [
-                "b820200a15d20076",
-                "5d1ac28aa4fbdfc2"
-            ]
-        ]
-    },
-    {
-        "id": "5d1ac28aa4fbdfc2",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "booking",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2820,
-        "y": 1820,
-        "wires": [
-            [
-                "d6ac51117485fe32",
-                "6de1cd2dbd63cc33"
+                "b820200a15d20076"
             ]
         ]
     },
@@ -13577,33 +13544,15 @@
             }
         ],
         "prop": "payload.summary",
-        "propout": "navn",
+        "propout": "payload",
         "object": "msg",
-        "objectout": "flow",
+        "objectout": "msg",
         "x": 2510,
         "y": 1780,
         "wires": [
             [
                 "333de98b0c0f63b5",
                 "ce3df7c829af8028"
-            ]
-        ]
-    },
-    {
-        "id": "9ffb909658d0ec8b",
-        "type": "json",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 2670,
-        "y": 2060,
-        "wires": [
-            [
-                "b820200a15d20076",
-                "7e29ad2b2f4d0d2f"
             ]
         ]
     },
@@ -13656,26 +13605,6 @@
         "x": 2990,
         "y": 1980,
         "wires": []
-    },
-    {
-        "id": "6de1cd2dbd63cc33",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "func": "var array = msg.payload\n\narray.push(msg.new)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = array\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2820,
-        "y": 1900,
-        "wires": [
-            [
-                "5c038d6738360fb5"
-            ]
-        ]
     },
     {
         "id": "25b0621fbdbd0e71",
