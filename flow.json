@@ -9504,7 +9504,8 @@
         "name": "Klargørrring sat",
         "mode": "link",
         "links": [
-            "a422065c72ada863"
+            "a422065c72ada863",
+            "adc106bfbddb767e"
         ],
         "x": 1355,
         "y": 260,
@@ -9966,7 +9967,8 @@
             "d7f19ce2accbaa81",
             "a1af2809e73bca7d",
             "0b4e893baa86ab2f",
-            "941d9d2157c2785d"
+            "941d9d2157c2785d",
+            "adc106bfbddb767e"
         ],
         "x": 715,
         "y": 820,
@@ -13314,6 +13316,23 @@
         "wires": [
             [
                 "d4d2aeec1061c558"
+            ]
+        ]
+    },
+    {
+        "id": "adc106bfbddb767e",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "links": [
+            "3f275e5d73da77dc",
+            "7fc3fbad33439116"
+        ],
+        "x": 2405,
+        "y": 4040,
+        "wires": [
+            [
+                "48012f70981f6674"
             ]
         ]
     },
