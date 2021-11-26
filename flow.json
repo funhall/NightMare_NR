@@ -551,12 +551,13 @@
             "0d5cbafad6f33ae1",
             "6eb8430c101c731d",
             "bdf8cec0e1a2db9f",
-            "42a17f01bd1dc813"
+            "42a17f01bd1dc813",
+            "b76452b54ee6e58f"
         ],
         "x": 254,
-        "y": 2059,
-        "w": 1612,
-        "h": 242
+        "y": 2039,
+        "w": 1632,
+        "h": 262
     },
     {
         "id": "bd662a4f36edc960",
@@ -9731,18 +9732,16 @@
         "name": "Game over",
         "mode": "link",
         "links": [
-            "b41f9f2bfad990e4",
-            "bdf8cec0e1a2db9f",
-            "814c356d347004e6",
-            "ded690629d639c1f",
-            "221d91faf8e001bc",
+            "167b5e205f71449f",
             "65b88c9947fd1cca",
-            "b5eafdbecd239cf1",
-            "81b545f505ab2030",
-            "8e8b1784d846f246",
             "80a868808fc1a091",
+            "81b545f505ab2030",
             "89ad1d9c38dd82a8",
-            "167b5e205f71449f"
+            "8e8b1784d846f246",
+            "b41f9f2bfad990e4",
+            "b5eafdbecd239cf1",
+            "bdf8cec0e1a2db9f",
+            "ded690629d639c1f"
         ],
         "x": 935,
         "y": 520,
@@ -10657,8 +10656,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1770,
-        "y": 2160,
+        "x": 1790,
+        "y": 2140,
         "wires": []
     },
     {
@@ -10745,7 +10744,7 @@
         "y": 2100,
         "wires": [
             [
-                "4f17f4badd740b98"
+                "b76452b54ee6e58f"
             ]
         ]
     },
@@ -13088,6 +13087,34 @@
         "x": 3220,
         "y": 1760,
         "wires": []
+    },
+    {
+        "id": "b76452b54ee6e58f",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "8a907ee3e43a8bdb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1620,
+        "y": 2080,
+        "wires": [
+            [
+                "6eb8430c101c731d"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
