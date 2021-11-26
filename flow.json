@@ -13594,11 +13594,11 @@
                 ]
             }
         ],
-        "prop": "payload",
+        "prop": "payload.summary",
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2490,
+        "x": 2610,
         "y": 1740,
         "wires": [
             [
