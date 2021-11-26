@@ -46058,12 +46058,12 @@
         "name": "",
         "device": "",
         "title": "",
-        "priority": "2",
+        "priority": "0",
         "sound": "persistent",
         "url": "http://192.168.1.82:1880/ui/#!/2",
         "url_title": "Gå til",
         "html": false,
-        "x": 1140,
+        "x": 1120,
         "y": 640,
         "wires": []
     },
@@ -46134,7 +46134,36 @@
         "x": 465,
         "y": 760,
         "wires": [
-            []
+            [
+                "d0c478a4eb20e843"
+            ]
+        ]
+    },
+    {
+        "id": "d0c478a4eb20e843",
+        "type": "change",
+        "z": "c524d8189961167d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 740,
+        "wires": [
+            [
+                "b28ab0b136d92f94"
+            ]
         ]
     }
 ]
