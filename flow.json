@@ -2400,7 +2400,6 @@
             "7d60b4bf50a6f1db",
             "9ffb909658d0ec8b",
             "7e29ad2b2f4d0d2f",
-            "8aee8b7021372cfe",
             "5c038d6738360fb5"
         ],
         "env": [],
@@ -13461,7 +13460,7 @@
             [
                 "b820200a15d20076",
                 "5d1ac28aa4fbdfc2",
-                "8aee8b7021372cfe"
+                "5c038d6738360fb5"
             ]
         ]
     },
@@ -13637,26 +13636,6 @@
         "y": 1740,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "8aee8b7021372cfe",
-        "type": "function",
-        "z": "33e76285.1cd03e",
-        "g": "25201c18524fdbea",
-        "name": "",
-        "func": "var array = msg.payload\n\narray.push(msg.new)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = array\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2780,
-        "y": 1860,
-        "wires": [
-            [
-                "7e29ad2b2f4d0d2f"
-            ]
         ]
     },
     {
