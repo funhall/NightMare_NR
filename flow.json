@@ -13644,7 +13644,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "msg.payload = {\"Navn\": \"{{msg.payload}}\"};\nreturn msg;\n",
+        "func": "msg.payload = {\"Navn\": msg.payload};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
