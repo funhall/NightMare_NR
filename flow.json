@@ -22336,7 +22336,6 @@
         "g": "851cbb45b48af626",
         "name": "Blinker rum 4 rød i 60sek",
         "links": [
-            "825efcab7f6c5dff",
             "4c19d7e11514d75d"
         ],
         "x": 195,
@@ -22788,7 +22787,8 @@
         "y": 1260,
         "wires": [
             [
-                "d8877d8bced65375"
+                "d8877d8bced65375",
+                "a6b700e996acba10"
             ]
         ]
     },
@@ -23209,7 +23209,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 140,
+        "x": 100,
         "y": 1180,
         "wires": [
             [
