@@ -2399,7 +2399,8 @@
             "6c4ff8f3a68aedb2",
             "7d60b4bf50a6f1db",
             "9ffb909658d0ec8b",
-            "7e29ad2b2f4d0d2f"
+            "7e29ad2b2f4d0d2f",
+            "76c222982c4ad9af"
         ],
         "env": [],
         "x": 1804,
@@ -13577,12 +13578,12 @@
         "propout": "payload",
         "object": "msg",
         "objectout": "msg",
-        "x": 2550,
+        "x": 2490,
         "y": 1740,
         "wires": [
             [
                 "333de98b0c0f63b5",
-                "ce3df7c829af8028"
+                "76c222982c4ad9af"
             ]
         ]
     },
@@ -13621,6 +13622,23 @@
         "x": 2950,
         "y": 1840,
         "wires": []
+    },
+    {
+        "id": "76c222982c4ad9af",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 2590,
+        "y": 1760,
+        "wires": [
+            [
+                "ce3df7c829af8028"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
