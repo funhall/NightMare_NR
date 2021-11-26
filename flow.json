@@ -9258,7 +9258,8 @@
             "2ff3c55a76208c41",
             "a4c2d19254deeb69",
             "0f861fd31991428a",
-            "4134cf0cf89825e9"
+            "4134cf0cf89825e9",
+            "a78a85fd12df27e0"
         ],
         "x": 855,
         "y": 320,
@@ -10741,8 +10742,8 @@
         "links": [
             "2b480c9c40b1ae41"
         ],
-        "x": 1315,
-        "y": 2100,
+        "x": 1475,
+        "y": 2080,
         "wires": [
             [
                 "b76452b54ee6e58f"
@@ -13111,6 +13112,49 @@
         "reg": false,
         "x": 1620,
         "y": 2080,
+        "wires": [
+            [
+                "6eb8430c101c731d"
+            ]
+        ]
+    },
+    {
+        "id": "a78a85fd12df27e0",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "Åbner udgang ",
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 1535,
+        "y": 2180,
+        "wires": [
+            [
+                "72dcf5244567f182"
+            ]
+        ]
+    },
+    {
+        "id": "72dcf5244567f182",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 2180,
         "wires": [
             [
                 "6eb8430c101c731d"
