@@ -2495,43 +2495,64 @@
         "h": 142
     },
     {
-        "id": "508a8821b425bd77",
+        "id": "25201c18524fdbea",
         "type": "group",
-        "z": "c524d8189961167d",
+        "z": "33e76285.1cd03e",
         "name": "Tænd /sluk batteriopladere tjekker kalender for booking",
         "style": {
             "label": true
         },
         "nodes": [
-            "0962f71225ebc344",
-            "577d60599efc8e2d",
-            "c6c71944fc51665a",
-            "1853b73a7ba5c17b",
-            "6cb26287981f5480",
-            "19bbec6c1066f785",
-            "7de3e87a4b43a8a5",
-            "238d2eedfc8bb4e2",
-            "49b73e8e6319bc1e",
-            "49492ad41fe427ab",
-            "f9305af09f2885c6",
-            "a4e4bdaf645ba1cb",
-            "1d78786d96eb2a97",
-            "8c01d61809fea2d7",
-            "dcd8ef157d53d4cc",
-            "6b2f5a68037de872",
-            "2c70d4f8e7cb067f",
-            "ebe52c01f1d00116",
-            "df06448f10d82e1d",
-            "e81fd0aaf944b09a",
-            "1337c5423c0b46a9",
-            "8023b8c1e8821a9b",
-            "5b55fa9f2e09d4a4"
+            "0665b668bb866e87",
+            "6efdad84e7315c2e",
+            "4fbc9ec883fbfa81",
+            "f0cbd13f05ab1e92",
+            "ca402c2102638e0e",
+            "495c69bdf3cf96de",
+            "4ae0494d4a89e8a4",
+            "18405f2e2a253dda",
+            "057bebcc2973ab90",
+            "0665b86da855fd4a",
+            "20ac2f52f42a70db",
+            "184ad76430f3c1a2",
+            "4c2e0f39c455554a",
+            "b61fbab2d31b723c",
+            "a82b1898aa677cab",
+            "0362e1d3de8f94d2",
+            "9e7ffc16e98977a5",
+            "c9074484ba8d971a",
+            "0d0d41d9b83d46fa",
+            "11c73c4d192fee9a",
+            "333de98b0c0f63b5",
+            "79cd14873b4c71a4",
+            "be019fe271949e3e"
         ],
         "env": [],
-        "x": 364,
-        "y": 839,
+        "x": 2124,
+        "y": 1519,
         "w": 1212,
         "h": 482
+    },
+    {
+        "id": "859c1b3f452f477f",
+        "type": "group",
+        "z": "33e76285.1cd03e",
+        "name": "Sender notifikationer",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "167cd1fcb00b7af1",
+            "f320eff144b1b328",
+            "97e9bf42edc3c753",
+            "035027083d77f7fb",
+            "56eae146e18bb638"
+        ],
+        "env": [],
+        "x": 2114,
+        "y": 1139,
+        "w": 832,
+        "h": 242
     },
     {
         "id": "82fd466d.f6c968",
@@ -8412,7 +8433,8 @@
         "links": [
             "e0282cf331829ce9",
             "e487c8e0.af6ef8",
-            "8c01d61809fea2d7"
+            "8c01d61809fea2d7",
+            "b61fbab2d31b723c"
         ],
         "x": 1515,
         "y": 1300,
@@ -8433,7 +8455,8 @@
             "57497eed3fc9e7b3",
             "7c80187aa04495c0",
             "9667910b6b191207",
-            "1d78786d96eb2a97"
+            "1d78786d96eb2a97",
+            "4c2e0f39c455554a"
         ],
         "x": 1515,
         "y": 1340,
@@ -12414,6 +12437,771 @@
                 "ddfc4ff3b60682f8"
             ]
         ]
+    },
+    {
+        "id": "167cd1fcb00b7af1",
+        "type": "pushover",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "",
+        "device": "",
+        "title": "",
+        "priority": "0",
+        "sound": "persistent",
+        "url": "http://192.168.1.82:1880/ui/#!/2",
+        "url_title": "Gå til",
+        "html": false,
+        "x": 2860,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "f320eff144b1b328",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Alarm fra NightMare",
+        "payloadType": "str",
+        "x": 2250,
+        "y": 1180,
+        "wires": [
+            [
+                "167cd1fcb00b7af1"
+            ]
+        ]
+    },
+    {
+        "id": "97e9bf42edc3c753",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "Set device",
+        "props": [
+            {
+                "p": "device",
+                "v": "unfdzBnxCxbKLPaJNCQfXf4YWwGZB2",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 2220,
+        "y": 1240,
+        "wires": [
+            [
+                "167cd1fcb00b7af1"
+            ]
+        ]
+    },
+    {
+        "id": "035027083d77f7fb",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "",
+        "links": [],
+        "x": 2205,
+        "y": 1340,
+        "wires": [
+            [
+                "56eae146e18bb638"
+            ]
+        ]
+    },
+    {
+        "id": "56eae146e18bb638",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2540,
+        "y": 1280,
+        "wires": [
+            [
+                "167cd1fcb00b7af1"
+            ]
+        ]
+    },
+    {
+        "id": "0665b668bb866e87",
+        "type": "ical-upcoming",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "confignode": "567e72afe6ba6dcd",
+        "checkall": false,
+        "cron": "",
+        "timeout": "1",
+        "timeoutUnits": "hours",
+        "name": "",
+        "offset": "",
+        "endpreview": "",
+        "endpreviewUnits": "",
+        "preview": "24",
+        "previewUnits": "hours",
+        "pastview": "0",
+        "pastviewUnits": "days",
+        "trigger": "always",
+        "timezone": "",
+        "filterProperty": "summary",
+        "filterOperator": "between",
+        "filter2": "",
+        "filter": "",
+        "x": 2550,
+        "y": 1620,
+        "wires": [
+            [
+                "4fbc9ec883fbfa81",
+                "0665b86da855fd4a"
+            ]
+        ]
+    },
+    {
+        "id": "6efdad84e7315c2e",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 2290,
+        "y": 1620,
+        "wires": [
+            [
+                "0665b668bb866e87"
+            ]
+        ]
+    },
+    {
+        "id": "4fbc9ec883fbfa81",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "calender",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2810,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0cbd13f05ab1e92",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "calender",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2940,
+        "y": 1620,
+        "wires": [
+            [
+                "ca402c2102638e0e",
+                "79cd14873b4c71a4"
+            ]
+        ]
+    },
+    {
+        "id": "ca402c2102638e0e",
+        "type": "split",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 3170,
+        "y": 1620,
+        "wires": [
+            [
+                "495c69bdf3cf96de"
+            ]
+        ]
+    },
+    {
+        "id": "495c69bdf3cf96de",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "Juvel-kuppet",
+        "property": "payload.description",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Juvel-kuppet ",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2430,
+        "y": 1680,
+        "wires": [
+            [
+                "4ae0494d4a89e8a4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4ae0494d4a89e8a4",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "charge",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2640,
+        "y": 1680,
+        "wires": [
+            [
+                "18405f2e2a253dda"
+            ]
+        ]
+    },
+    {
+        "id": "18405f2e2a253dda",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.countdown.hours",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2860,
+        "y": 1680,
+        "wires": [
+            [
+                "057bebcc2973ab90"
+            ]
+        ]
+    },
+    {
+        "id": "057bebcc2973ab90",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "4",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3010,
+        "y": 1680,
+        "wires": [
+            [
+                "11c73c4d192fee9a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "0665b86da855fd4a",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "property": "oplader",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2750,
+        "y": 1620,
+        "wires": [
+            [
+                "f0cbd13f05ab1e92"
+            ]
+        ]
+    },
+    {
+        "id": "20ac2f52f42a70db",
+        "type": "mqtt out",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "topic": "opladerStyrring/output/D5",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 3000,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "184ad76430f3c1a2",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "Tænd oplader",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "oplader",
+                "pt": "flow",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2570,
+        "y": 1960,
+        "wires": [
+            [
+                "20ac2f52f42a70db"
+            ]
+        ]
+    },
+    {
+        "id": "4c2e0f39c455554a",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "Oplader tænd",
+        "links": [
+            "2216095b02d3c520"
+        ],
+        "x": 2365,
+        "y": 1760,
+        "wires": [
+            [
+                "0d0d41d9b83d46fa"
+            ]
+        ]
+    },
+    {
+        "id": "b61fbab2d31b723c",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "Oplader sluk",
+        "links": [
+            "49095ecf9ab1fd70"
+        ],
+        "x": 2425,
+        "y": 1860,
+        "wires": [
+            [
+                "c9074484ba8d971a"
+            ]
+        ]
+    },
+    {
+        "id": "a82b1898aa677cab",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "Sluk oplader",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "oplader",
+                "pt": "flow",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2580,
+        "y": 1880,
+        "wires": [
+            [
+                "20ac2f52f42a70db"
+            ]
+        ]
+    },
+    {
+        "id": "0362e1d3de8f94d2",
+        "type": "ui_button",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "Tænd lader",
+        "group": "117cda2a.43e596",
+        "order": 19,
+        "width": "2",
+        "height": 1,
+        "passthru": false,
+        "label": "Oplader {{msg.opladertext}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.opladerbackground}}",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 2220,
+        "y": 1800,
+        "wires": [
+            [
+                "9e7ffc16e98977a5"
+            ]
+        ]
+    },
+    {
+        "id": "9e7ffc16e98977a5",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "property": "oplader",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2380,
+        "y": 1800,
+        "wires": [
+            [
+                "0d0d41d9b83d46fa"
+            ],
+            [
+                "c9074484ba8d971a"
+            ]
+        ]
+    },
+    {
+        "id": "c9074484ba8d971a",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "oplader",
+                "pt": "flow",
+                "to": "off",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "opladerbackground",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "opladertext",
+                "pt": "msg",
+                "to": "slukket",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2560,
+        "y": 1820,
+        "wires": [
+            [
+                "20ac2f52f42a70db",
+                "0362e1d3de8f94d2"
+            ]
+        ]
+    },
+    {
+        "id": "0d0d41d9b83d46fa",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "oplader",
+                "pt": "flow",
+                "to": "on",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "opladerbackground",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "opladertext",
+                "pt": "msg",
+                "to": "tændt",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2560,
+        "y": 1780,
+        "wires": [
+            [
+                "20ac2f52f42a70db",
+                "0362e1d3de8f94d2",
+                "333de98b0c0f63b5"
+            ]
+        ]
+    },
+    {
+        "id": "11c73c4d192fee9a",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "oplader",
+                "pt": "flow",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3180,
+        "y": 1680,
+        "wires": [
+            [
+                "0d0d41d9b83d46fa",
+                "be019fe271949e3e"
+            ]
+        ]
+    },
+    {
+        "id": "333de98b0c0f63b5",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3060,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "79cd14873b4c71a4",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3110,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "be019fe271949e3e",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3220,
+        "y": 1760,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -45405,765 +46193,5 @@
         "x": 750,
         "y": 880,
         "wires": []
-    },
-    {
-        "id": "0962f71225ebc344",
-        "type": "ical-upcoming",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "confignode": "567e72afe6ba6dcd",
-        "checkall": false,
-        "cron": "",
-        "timeout": "1",
-        "timeoutUnits": "hours",
-        "name": "",
-        "offset": "",
-        "endpreview": "",
-        "endpreviewUnits": "",
-        "preview": "24",
-        "previewUnits": "hours",
-        "pastview": "0",
-        "pastviewUnits": "days",
-        "trigger": "always",
-        "timezone": "",
-        "filterProperty": "summary",
-        "filterOperator": "between",
-        "filter2": "",
-        "filter": "",
-        "x": 790,
-        "y": 940,
-        "wires": [
-            [
-                "c6c71944fc51665a",
-                "49492ad41fe427ab"
-            ]
-        ]
-    },
-    {
-        "id": "577d60599efc8e2d",
-        "type": "inject",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 530,
-        "y": 940,
-        "wires": [
-            [
-                "0962f71225ebc344"
-            ]
-        ]
-    },
-    {
-        "id": "c6c71944fc51665a",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "calender",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1050,
-        "y": 880,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1853b73a7ba5c17b",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "calender",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1180,
-        "y": 940,
-        "wires": [
-            [
-                "6cb26287981f5480",
-                "8023b8c1e8821a9b"
-            ]
-        ]
-    },
-    {
-        "id": "6cb26287981f5480",
-        "type": "split",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 1410,
-        "y": 940,
-        "wires": [
-            [
-                "19bbec6c1066f785"
-            ]
-        ]
-    },
-    {
-        "id": "19bbec6c1066f785",
-        "type": "switch",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "Juvel-kuppet",
-        "property": "payload.description",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "Juvel-kuppet ",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 670,
-        "y": 1000,
-        "wires": [
-            [
-                "7de3e87a4b43a8a5"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "f9305af09f2885c6",
-        "type": "mqtt out",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "topic": "opladerStyrring/output/D5",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dca8425b.8fb18",
-        "x": 1240,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "a4e4bdaf645ba1cb",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "Tænd oplader",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "LOW",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "oplader",
-                "pt": "flow",
-                "to": "on",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 810,
-        "y": 1280,
-        "wires": [
-            [
-                "f9305af09f2885c6"
-            ]
-        ]
-    },
-    {
-        "id": "1d78786d96eb2a97",
-        "type": "link in",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "Oplader tænd",
-        "links": [
-            "2216095b02d3c520"
-        ],
-        "x": 605,
-        "y": 1080,
-        "wires": [
-            [
-                "df06448f10d82e1d"
-            ]
-        ]
-    },
-    {
-        "id": "8c01d61809fea2d7",
-        "type": "link in",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "Oplader sluk",
-        "links": [
-            "49095ecf9ab1fd70"
-        ],
-        "x": 665,
-        "y": 1180,
-        "wires": [
-            [
-                "ebe52c01f1d00116"
-            ]
-        ]
-    },
-    {
-        "id": "dcd8ef157d53d4cc",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "Sluk oplader",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "HIGH",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "oplader",
-                "pt": "flow",
-                "to": "off",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 820,
-        "y": 1200,
-        "wires": [
-            [
-                "f9305af09f2885c6"
-            ]
-        ]
-    },
-    {
-        "id": "6b2f5a68037de872",
-        "type": "ui_button",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "Tænd lader",
-        "group": "117cda2a.43e596",
-        "order": 19,
-        "width": "2",
-        "height": 1,
-        "passthru": false,
-        "label": "Oplader {{msg.opladertext}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.opladerbackground}}",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 1120,
-        "wires": [
-            [
-                "2c70d4f8e7cb067f"
-            ]
-        ]
-    },
-    {
-        "id": "2c70d4f8e7cb067f",
-        "type": "switch",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "property": "oplader",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "off",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 620,
-        "y": 1120,
-        "wires": [
-            [
-                "df06448f10d82e1d"
-            ],
-            [
-                "ebe52c01f1d00116"
-            ]
-        ]
-    },
-    {
-        "id": "ebe52c01f1d00116",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "off",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "HIGH",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "oplader",
-                "pt": "flow",
-                "to": "off",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "opladerbackground",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "opladertext",
-                "pt": "msg",
-                "to": "slukket",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 800,
-        "y": 1140,
-        "wires": [
-            [
-                "f9305af09f2885c6",
-                "6b2f5a68037de872"
-            ]
-        ]
-    },
-    {
-        "id": "df06448f10d82e1d",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "on",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "LOW",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "oplader",
-                "pt": "flow",
-                "to": "on",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "opladerbackground",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "opladertext",
-                "pt": "msg",
-                "to": "tændt",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 800,
-        "y": 1100,
-        "wires": [
-            [
-                "f9305af09f2885c6",
-                "6b2f5a68037de872",
-                "1337c5423c0b46a9"
-            ]
-        ]
-    },
-    {
-        "id": "7de3e87a4b43a8a5",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "charge",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 880,
-        "y": 1000,
-        "wires": [
-            [
-                "238d2eedfc8bb4e2"
-            ]
-        ]
-    },
-    {
-        "id": "238d2eedfc8bb4e2",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.countdown.hours",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1100,
-        "y": 1000,
-        "wires": [
-            [
-                "49b73e8e6319bc1e"
-            ]
-        ]
-    },
-    {
-        "id": "49b73e8e6319bc1e",
-        "type": "switch",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "lt",
-                "v": "4",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1250,
-        "y": 1000,
-        "wires": [
-            [
-                "e81fd0aaf944b09a"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "e81fd0aaf944b09a",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "oplader",
-                "pt": "flow",
-                "to": "off",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1420,
-        "y": 1000,
-        "wires": [
-            [
-                "df06448f10d82e1d",
-                "5b55fa9f2e09d4a4"
-            ]
-        ]
-    },
-    {
-        "id": "1337c5423c0b46a9",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1300,
-        "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "49492ad41fe427ab",
-        "type": "switch",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "property": "oplader",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "on",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 990,
-        "y": 940,
-        "wires": [
-            [
-                "1853b73a7ba5c17b"
-            ]
-        ]
-    },
-    {
-        "id": "8023b8c1e8821a9b",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1350,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "5b55fa9f2e09d4a4",
-        "type": "debug",
-        "z": "c524d8189961167d",
-        "g": "508a8821b425bd77",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1460,
-        "y": 1080,
-        "wires": []
-    },
-    {
-        "id": "b28ab0b136d92f94",
-        "type": "pushover",
-        "z": "c524d8189961167d",
-        "name": "",
-        "device": "",
-        "title": "",
-        "priority": "0",
-        "sound": "persistent",
-        "url": "http://192.168.1.82:1880/ui/#!/2",
-        "url_title": "Gå til",
-        "html": false,
-        "x": 1120,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "3f498f80b701ef88",
-        "type": "inject",
-        "z": "c524d8189961167d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Alarm fra NightMare",
-        "payloadType": "str",
-        "x": 510,
-        "y": 600,
-        "wires": [
-            [
-                "b28ab0b136d92f94"
-            ]
-        ]
-    },
-    {
-        "id": "83d05c788ea03b83",
-        "type": "inject",
-        "z": "c524d8189961167d",
-        "name": "Set device",
-        "props": [
-            {
-                "p": "device",
-                "v": "unfdzBnxCxbKLPaJNCQfXf4YWwGZB2",
-                "vt": "str"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 480,
-        "y": 660,
-        "wires": [
-            [
-                "b28ab0b136d92f94"
-            ]
-        ]
-    },
-    {
-        "id": "4d31aaf2c1e98828",
-        "type": "link in",
-        "z": "c524d8189961167d",
-        "name": "",
-        "links": [],
-        "x": 465,
-        "y": 760,
-        "wires": [
-            [
-                "d0c478a4eb20e843"
-            ]
-        ]
-    },
-    {
-        "id": "d0c478a4eb20e843",
-        "type": "change",
-        "z": "c524d8189961167d",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 800,
-        "y": 700,
-        "wires": [
-            [
-                "b28ab0b136d92f94"
-            ]
-        ]
     }
 ]
