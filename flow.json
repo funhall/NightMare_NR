@@ -3330,7 +3330,7 @@
         "name": "Dagens spillere",
         "tab": "82fd466d.f6c968",
         "order": 11,
-        "disp": true,
+        "disp": false,
         "width": "6",
         "collapse": false
     },
@@ -3340,7 +3340,7 @@
         "name": "High score",
         "tab": "82fd466d.f6c968",
         "order": 12,
-        "disp": true,
+        "disp": false,
         "width": "6",
         "collapse": false
     },
