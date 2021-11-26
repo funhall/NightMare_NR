@@ -45880,7 +45880,7 @@
         "title": "",
         "priority": 0,
         "sound": "persistent",
-        "url": "",
+        "url": "http://192.168.1.82:1880/ui/#!/2",
         "url_title": "",
         "html": false,
         "x": 1200,
