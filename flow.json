@@ -21477,8 +21477,8 @@
         "propertyType": "global",
         "rules": [
             {
-                "t": "neq",
-                "v": "1",
+                "t": "eq",
+                "v": "0",
                 "vt": "str"
             }
         ],
