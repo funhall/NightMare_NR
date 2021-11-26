@@ -28129,10 +28129,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "url",
+                "p": "payload",
                 "pt": "msg",
-                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=0",
-                "tot": "str"
+                "to": "1",
+                "tot": "num"
             }
         ],
         "action": "",
@@ -28140,10 +28140,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
+        "x": 360,
         "y": 340,
         "wires": [
-            []
+            [
+                "15239578b2c72d37"
+            ]
         ]
     },
     {
