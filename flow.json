@@ -13752,7 +13752,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "{\"group\":{\"hide\":[\"Nightmare_personale_High_score\"],\"show\":[\"Nightmare_personale_Dagens_spillere\"]}}",
-                "tot": "str"
+                "tot": "json"
             }
         ],
         "action": "",
@@ -13779,7 +13779,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "{\"group\":{\"show\":[\"Nightmare_personale_High_score\"],\"hide\":[\"Nightmare_personale_Dagens_spillere\"]}}",
-                "tot": "str"
+                "tot": "json"
             }
         ],
         "action": "",
