@@ -9741,7 +9741,8 @@
             "b41f9f2bfad990e4",
             "b5eafdbecd239cf1",
             "bdf8cec0e1a2db9f",
-            "ded690629d639c1f"
+            "ded690629d639c1f",
+            "826b95112c8631bf"
         ],
         "x": 935,
         "y": 520,
@@ -25156,8 +25157,8 @@
         "g": "821e49952fadaf78",
         "name": "Open exit",
         "links": [
-            "4dfaf3a5efda95b4",
-            "ce4649c03bbc3e2f"
+            "2b480c9c40b1ae41",
+            "4dfaf3a5efda95b4"
         ],
         "x": 955,
         "y": 1040,
