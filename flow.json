@@ -13581,15 +13581,11 @@
         "name": "payload.summary",
         "methods": [
             {
-                "name": "split",
+                "name": "getLeftMost",
                 "params": [
                     {
                         "type": "str",
-                        "value": " - "
-                    },
-                    {
-                        "type": "msg",
-                        "value": "payload"
+                        "value": "- "
                     }
                 ]
             }
