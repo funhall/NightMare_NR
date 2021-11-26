@@ -13448,14 +13448,14 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "var navn = flow.get(\"booking\");\n\n\nbooking.push(msg.payload)\n\n// Create payload\nmsg.payload = { \"Navn\": navn };\n\n//msg.arrayLength = array.length\n//msg.payload = booking\n\nreturn msg;",
+        "func": "var navn = flow.get(\"booking\");\n\n\nnavn.push(msg.payload)\n\n// Create payload\nmsg.payload = { \"Navn\": navn };\n\n//msg.arrayLength = array.length\n//msg.payload = booking\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 1800,
+        "x": 2560,
+        "y": 1840,
         "wires": [
             [
                 "b820200a15d20076",
@@ -13632,8 +13632,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 2590,
-        "y": 1760,
+        "x": 2570,
+        "y": 1780,
         "wires": [
             [
                 "ce3df7c829af8028"
