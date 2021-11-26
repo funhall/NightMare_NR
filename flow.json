@@ -6020,9 +6020,7 @@
         "z": "33e76285.1cd03e",
         "name": "Corwin vaek",
         "mode": "link",
-        "links": [
-            "9c117b22ce846f1d"
-        ],
+        "links": [],
         "x": 1955,
         "y": 4420,
         "wires": []
@@ -21429,9 +21427,7 @@
         "z": "c39524c2016c8df2",
         "g": "549daca12e284a9c",
         "name": "",
-        "links": [
-            "4da0a01d.355f7"
-        ],
+        "links": [],
         "x": 155,
         "y": 2560,
         "wires": [
