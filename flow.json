@@ -45879,12 +45879,12 @@
         "device": "",
         "title": "",
         "priority": 0,
-        "sound": "",
+        "sound": "persistent",
         "url": "",
         "url_title": "",
         "html": false,
-        "x": 1040,
-        "y": 560,
+        "x": 1200,
+        "y": 640,
         "wires": []
     },
     {
@@ -45906,10 +45906,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 660,
-        "y": 560,
+        "payload": "Alarm fra NightMare",
+        "payloadType": "str",
+        "x": 550,
+        "y": 640,
         "wires": [
             [
                 "b28ab0b136d92f94"
