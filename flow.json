@@ -3306,6 +3306,11 @@
         "verboselogging": false
     },
     {
+        "id": "e171d957c7dee8a3",
+        "type": "pushbullet-config",
+        "name": ""
+    },
+    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
@@ -45896,22 +45901,21 @@
         "y": 660,
         "wires": [
             [
-                "e740f6d552db8d29"
+                "f6e9c4001a8fd64e"
             ]
         ]
     },
     {
-        "id": "e740f6d552db8d29",
-        "type": "telegram sender",
+        "id": "f6e9c4001a8fd64e",
+        "type": "pushbullet",
         "z": "c524d8189961167d",
+        "config": "e171d957c7dee8a3",
+        "pushtype": "note",
+        "title": "",
+        "chan": "",
         "name": "",
-        "bot": "ea8e8d704ea41775",
-        "haserroroutput": false,
-        "outputs": 1,
-        "x": 1260,
-        "y": 680,
-        "wires": [
-            []
-        ]
+        "x": 1220,
+        "y": 720,
+        "wires": []
     }
 ]
