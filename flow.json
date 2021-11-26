@@ -13449,7 +13449,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "var navne = flow.get(\"navn\");\n\n\nnavne.push(msg.payload)\n\n// Create payload\nmsg.new = { \"Navn\": navne };\n\n//msg.arrayLength = array.length\n//msg.payload = booking\n\nreturn msg;",
+        "func": "var navne = flow.get(\"booking\");\n\n\nnavne.push(msg.payload)\n\n// Create payload\nmsg.new = { \"Navn\": navne };\n\n//msg.arrayLength = array.length\n//msg.payload = booking\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13584,7 +13584,8 @@
         "y": 1740,
         "wires": [
             [
-                "333de98b0c0f63b5"
+                "333de98b0c0f63b5",
+                "ce3df7c829af8028"
             ]
         ]
     },
