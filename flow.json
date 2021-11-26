@@ -6308,7 +6308,9 @@
         "g": "5e203e809c0bd87a",
         "name": "Klarjort",
         "mode": "link",
-        "links": [],
+        "links": [
+            "582290900a2b1e8b"
+        ],
         "x": 3295,
         "y": 800,
         "wires": []
@@ -13758,11 +13760,69 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 2540,
+        "x": 520,
+        "y": 2520,
         "wires": [
-            []
+            [
+                "9b64b4f1edca7f7e"
+            ]
         ]
+    },
+    {
+        "id": "9370a2eafdb7e967",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Sætter personale app til playing",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Nightmare_personale_High_score\"],\"hide\":[\"Nightmare_personale_Dagens_spillere\"]}}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 2600,
+        "wires": [
+            [
+                "9b64b4f1edca7f7e"
+            ]
+        ]
+    },
+    {
+        "id": "582290900a2b1e8b",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "links": [
+            "f90e4bdd6a364c9d"
+        ],
+        "x": 345,
+        "y": 2600,
+        "wires": [
+            [
+                "9370a2eafdb7e967"
+            ]
+        ]
+    },
+    {
+        "id": "9b64b4f1edca7f7e",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 765,
+        "y": 2600,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -28488,7 +28548,8 @@
             "3776cb2add2e07ca",
             "84a73a05a0c97f14",
             "c8f61e30db3fc5b4",
-            "b56072908ff51099"
+            "b56072908ff51099",
+            "9b64b4f1edca7f7e"
         ],
         "x": 165,
         "y": 60,
