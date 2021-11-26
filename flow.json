@@ -13535,15 +13535,6 @@
         "name": "payload.summary",
         "methods": [
             {
-                "name": "append",
-                "params": [
-                    {
-                        "type": "str",
-                        "value": "dsdfsdfsf\""
-                    }
-                ]
-            },
-            {
                 "name": "getLeftMost",
                 "params": [
                     {
@@ -13551,6 +13542,10 @@
                         "value": "- "
                     }
                 ]
+            },
+            {
+                "name": "lines",
+                "params": []
             }
         ],
         "prop": "payload.summary",
