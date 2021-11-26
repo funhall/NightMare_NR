@@ -2398,13 +2398,14 @@
             "22e76de465be6176",
             "f42151a3b495fa41",
             "0083324598d89708",
-            "b266a9086589b554"
+            "b266a9086589b554",
+            "db4bc79761d11f5d"
         ],
         "env": [],
         "x": 1924,
         "y": 1459,
         "w": 1502,
-        "h": 562
+        "h": 542
     },
     {
         "id": "859c1b3f452f477f",
@@ -2488,7 +2489,8 @@
             "bdf8bba337e4c42d",
             "e9a728488b9b47cd",
             "3cf712873e81d4bc",
-            "dcc19e838c676beb"
+            "dcc19e838c676beb",
+            "ccc3dbb0dc5fca59"
         ],
         "env": [],
         "x": 2114,
@@ -13424,8 +13426,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 2650,
-        "y": 1980,
+        "x": 2550,
+        "y": 1940,
         "wires": [
             [
                 "b266a9086589b554",
@@ -13657,8 +13659,39 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2920,
-        "y": 1980,
+        "x": 2780,
+        "y": 1940,
+        "wires": [
+            [
+                "db4bc79761d11f5d"
+            ]
+        ]
+    },
+    {
+        "id": "db4bc79761d11f5d",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "Vælger holdnavn",
+        "mode": "link",
+        "links": [
+            "ccc3dbb0dc5fca59"
+        ],
+        "x": 2945,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "ccc3dbb0dc5fca59",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "cae032f2d30f959c",
+        "name": "Skriver holdnavn",
+        "links": [
+            "db4bc79761d11f5d"
+        ],
+        "x": 2345,
+        "y": 2380,
         "wires": [
             [
                 "1da573418b56bd31"
