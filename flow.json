@@ -9694,7 +9694,7 @@
             "b5eafdbecd239cf1",
             "81b545f505ab2030",
             "8e8b1784d846f246",
-            "2312e95897747df3"
+            "80a868808fc1a091"
         ],
         "x": 935,
         "y": 520,
@@ -21226,6 +21226,7 @@
         "g": "50bee133c969308b",
         "name": "Klargørring",
         "links": [
+            "2b480c9c40b1ae41",
             "e8ba061f5f8c7fec"
         ],
         "x": 1395,
@@ -22558,7 +22559,6 @@
         "z": "2bdc58f37cbddb93",
         "name": "tænder lys rum 3 hvid langsomt",
         "links": [
-            "2b480c9c40b1ae41",
             "d4d2aeec1061c558"
         ],
         "x": 1295,
