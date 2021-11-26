@@ -557,7 +557,7 @@
         ],
         "x": 254,
         "y": 2039,
-        "w": 1632,
+        "w": 1752,
         "h": 262
     },
     {
@@ -6661,6 +6661,13 @@
                 "pt": "msg",
                 "to": "",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "game",
+                "pt": "global",
+                "to": "off",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -10661,7 +10668,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1790,
+        "x": 1910,
         "y": 2140,
         "wires": []
     },
@@ -13098,13 +13105,20 @@
         "type": "change",
         "z": "33e76285.1cd03e",
         "g": "8a907ee3e43a8bdb",
-        "name": "",
+        "name": "LOW",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
                 "to": "LOW",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "game",
+                "pt": "global",
+                "to": "off",
                 "tot": "str"
             }
         ],
@@ -13113,7 +13127,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1620,
+        "x": 1590,
         "y": 2080,
         "wires": [
             [
@@ -13141,7 +13155,7 @@
         "id": "72dcf5244567f182",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "HIGH",
         "rules": [
             {
                 "t": "set",
@@ -13156,7 +13170,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1680,
+        "x": 1650,
         "y": 2180,
         "wires": [
             [
