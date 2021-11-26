@@ -29425,7 +29425,7 @@
                 "t": "set",
                 "p": "url",
                 "pt": "msg",
-                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=100",
+                "to": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=99",
                 "tot": "str"
             }
         ],
