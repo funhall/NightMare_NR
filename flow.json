@@ -12238,8 +12238,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2770,
-        "y": 1760,
+        "x": 2820,
+        "y": 1800,
         "wires": []
     },
     {
@@ -13440,7 +13440,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "opret tom liste",
-        "func": "var booking = msg.payload\n\n\nreturn msg;",
+        "func": "var booking = []\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13458,13 +13458,13 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "//var array = msg.payload\n\nbooking.push(msg.payload)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = booking\n\nreturn msg;",
+        "func": "\n\nbooking.push(msg.payload)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = booking\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2680,
+        "x": 2600,
         "y": 1820,
         "wires": [
             [
