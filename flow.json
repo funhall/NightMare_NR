@@ -2706,16 +2706,6 @@
         "collapse": true
     },
     {
-        "id": "1a7f6b0.0560695",
-        "type": "ui_group",
-        "name": "High score",
-        "tab": "82fd466d.f6c968",
-        "order": 12,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
         "id": "117cda2a.43e596",
         "type": "ui_group",
         "name": "Klargørring",
@@ -2867,7 +2857,7 @@
         "id": "6e0e3f3cba3305ce",
         "type": "ui_link",
         "name": "Funhall Lys",
-        "link": "http://192.168.1.13:1880/ui/#!/0?socketid=Fv5ufQeTLPXiW8NSAAAQ",
+        "link": "http://192.168.1.13:1880/ui/#!/0",
         "icon": "open_in_browser",
         "target": "iframe",
         "order": 3
