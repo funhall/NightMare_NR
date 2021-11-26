@@ -13449,14 +13449,14 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "var navn = flow.get(\"navn\");\n\n\nnavn.push(msg.payload)\n\n// Create payload\nmsg.new = { \"Navn\": navn };\n\n//msg.arrayLength = array.length\n//msg.payload = booking\n\nreturn msg;",
+        "func": "var navne = flow.get(\"navn\");\n\n\nnavne.push(msg.payload)\n\n// Create payload\nmsg.new = { \"Navn\": navne };\n\n//msg.arrayLength = array.length\n//msg.payload = booking\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 2560,
-        "y": 1840,
+        "y": 1860,
         "wires": [
             [
                 "b820200a15d20076",
@@ -13651,8 +13651,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2760,
-        "y": 1840,
+        "x": 2780,
+        "y": 1860,
         "wires": [
             [
                 "7e29ad2b2f4d0d2f"
