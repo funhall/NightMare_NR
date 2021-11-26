@@ -2397,7 +2397,8 @@
             "d6ac51117485fe32",
             "11425201571a27c1",
             "6c4ff8f3a68aedb2",
-            "7d60b4bf50a6f1db"
+            "7d60b4bf50a6f1db",
+            "9ffb909658d0ec8b"
         ],
         "env": [],
         "x": 1764,
@@ -13476,7 +13477,7 @@
         "wires": [
             [
                 "5d1ac28aa4fbdfc2",
-                "b820200a15d20076"
+                "9ffb909658d0ec8b"
             ]
         ]
     },
@@ -13601,6 +13602,23 @@
             [
                 "333de98b0c0f63b5",
                 "ce3df7c829af8028"
+            ]
+        ]
+    },
+    {
+        "id": "9ffb909658d0ec8b",
+        "type": "json",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 2730,
+        "y": 1880,
+        "wires": [
+            [
+                "b820200a15d20076"
             ]
         ]
     },
