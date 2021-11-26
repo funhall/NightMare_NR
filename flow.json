@@ -45800,7 +45800,7 @@
         "name": "",
         "active": true,
         "tosidebar": true,
-        "console": false,
+        "console": true,
         "tostatus": false,
         "complete": "dddfd",
         "targetType": "msg",
