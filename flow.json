@@ -13553,7 +13553,7 @@
         "joiner": "\\n",
         "joinerType": "str",
         "accumulate": false,
-        "timeout": "2",
+        "timeout": "1",
         "count": "",
         "reduceRight": false,
         "reduceExp": "",
@@ -13623,7 +13623,8 @@
         "y": 1820,
         "wires": [
             [
-                "333de98b0c0f63b5"
+                "333de98b0c0f63b5",
+                "f42151a3b495fa41"
             ]
         ]
     },
