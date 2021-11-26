@@ -13639,10 +13639,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
+                "p": "navn",
+                "pt": "flow",
+                "to": "payload.Navn",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -13650,7 +13650,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2920,
+        "x": 2910,
         "y": 1980,
         "wires": [
             []
