@@ -3340,9 +3340,9 @@
         "name": "Lys og radio",
         "tab": "82fd466d.f6c968",
         "order": 5,
-        "disp": true,
+        "disp": false,
         "width": "6",
-        "collapse": true
+        "collapse": false
     },
     {
         "id": "31558c33.837ac4",
