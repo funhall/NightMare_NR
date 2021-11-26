@@ -13463,7 +13463,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "var booking = flow.get(\"booking\");\n\n\nbooking.push(msg.payload)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = booking\n\nreturn msg;",
+        "func": "var booking = flow.get(\"booking\");\n\n\nbooking.push(msg.payload.summary)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = booking\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
