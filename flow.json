@@ -6289,7 +6289,8 @@
         "name": "Klarjort",
         "mode": "link",
         "links": [
-            "582290900a2b1e8b"
+            "582290900a2b1e8b",
+            "ec269280c18f9e67"
         ],
         "x": 3295,
         "y": 800,
@@ -13726,13 +13727,13 @@
         "id": "b333007080507d20",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Sætter personale app",
+        "name": "Dashboard til klargørring",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_High_score\"],\"show\":[\"Nightmare_personale_Dagens_spillere\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Nightmare_personale_High_score\"],\"show\":[\"Nightmare_personale_Dagens_spillere\",\"Nightmare_personale_Batteri\"]}}",
                 "tot": "json"
             }
         ],
@@ -13741,7 +13742,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
+        "x": 530,
         "y": 2520,
         "wires": [
             [
@@ -13753,7 +13754,7 @@
         "id": "9370a2eafdb7e967",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "Sætter personale app til playing",
+        "name": "Dashboard til playing",
         "rules": [
             {
                 "t": "set",
@@ -13768,7 +13769,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
+        "x": 500,
         "y": 2600,
         "wires": [
             [
@@ -13855,11 +13856,96 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 340,
-        "y": 2640,
+        "x": 280,
+        "y": 2580,
         "wires": [
             [
                 "9370a2eafdb7e967"
+            ]
+        ]
+    },
+    {
+        "id": "8d20b148d8a98d7b",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "Dashboard til game over",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Nightmare_personale_High_score\"],\"hide\":[\"Nightmare_personale_Batteri\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 2660,
+        "wires": [
+            [
+                "52bb1b2a52bd7ce6"
+            ]
+        ]
+    },
+    {
+        "id": "ec269280c18f9e67",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "links": [
+            "f90e4bdd6a364c9d"
+        ],
+        "x": 345,
+        "y": 2660,
+        "wires": [
+            [
+                "8d20b148d8a98d7b"
+            ]
+        ]
+    },
+    {
+        "id": "52bb1b2a52bd7ce6",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 765,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "803fb408fb12ed26",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 2640,
+        "wires": [
+            [
+                "8d20b148d8a98d7b"
             ]
         ]
     },
@@ -28588,7 +28674,8 @@
             "84a73a05a0c97f14",
             "c8f61e30db3fc5b4",
             "b56072908ff51099",
-            "9b64b4f1edca7f7e"
+            "9b64b4f1edca7f7e",
+            "52bb1b2a52bd7ce6"
         ],
         "x": 165,
         "y": 60,
