@@ -2394,7 +2394,8 @@
             "8f440d448e8ae171",
             "ce3df7c829af8028",
             "5d1ac28aa4fbdfc2",
-            "d6ac51117485fe32"
+            "d6ac51117485fe32",
+            "11425201571a27c1"
         ],
         "env": [],
         "x": 1764,
@@ -2487,8 +2488,8 @@
             "dcc19e838c676beb"
         ],
         "env": [],
-        "x": 1634,
-        "y": 2419,
+        "x": 2134,
+        "y": 1979,
         "w": 1692,
         "h": 502
     },
@@ -12258,8 +12259,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2890,
-        "y": 1520,
+        "x": 3010,
+        "y": 1540,
         "wires": []
     },
     {
@@ -12650,8 +12651,8 @@
         "ref": "Nighmare navn/",
         "operation": "set",
         "admin": "f2d1649946d0b11c",
-        "x": 3220,
-        "y": 2760,
+        "x": 3720,
+        "y": 2320,
         "wires": [
             []
         ]
@@ -12665,8 +12666,8 @@
         "ref": "Nighmare navn",
         "dataAtStart": true,
         "admin": "f2d1649946d0b11c",
-        "x": 2540,
-        "y": 2540,
+        "x": 3040,
+        "y": 2100,
         "wires": [
             [
                 "3125e691d2056e14",
@@ -12718,8 +12719,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 2830,
-        "y": 2540,
+        "x": 3330,
+        "y": 2100,
         "wires": [
             [
                 "c8a05da36e5cea55"
@@ -12738,8 +12739,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2960,
-        "y": 2760,
+        "x": 3460,
+        "y": 2320,
         "wires": [
             [
                 "70cbd01a0156406e",
@@ -12768,8 +12769,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2530,
-        "y": 2600,
+        "x": 3030,
+        "y": 2160,
         "wires": [
             []
         ]
@@ -12788,8 +12789,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3110,
-        "y": 2700,
+        "x": 3610,
+        "y": 2260,
         "wires": []
     },
     {
@@ -12805,8 +12806,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2910,
-        "y": 2880,
+        "x": 3410,
+        "y": 2440,
         "wires": []
     },
     {
@@ -12829,8 +12830,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2760,
-        "y": 2760,
+        "x": 3260,
+        "y": 2320,
         "wires": [
             [
                 "eb9ca46212edf838"
@@ -12857,8 +12858,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2190,
-        "y": 2500,
+        "x": 2690,
+        "y": 2060,
         "wires": [
             []
         ]
@@ -12880,8 +12881,8 @@
         "delay": "2000",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2000,
-        "y": 2500,
+        "x": 2500,
+        "y": 2060,
         "wires": [
             [
                 "b0217ae2a9c80f1b"
@@ -12915,8 +12916,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1920,
-        "y": 2760,
+        "x": 2420,
+        "y": 2320,
         "wires": [
             [
                 "021d0d0bda0c8128"
@@ -12944,8 +12945,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1750,
-        "y": 2780,
+        "x": 2250,
+        "y": 2340,
         "wires": [
             [
                 "556b53fde4f86578"
@@ -12970,8 +12971,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2170,
-        "y": 2760,
+        "x": 2670,
+        "y": 2320,
         "wires": [
             [
                 "871ec625768688ca"
@@ -12996,8 +12997,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2350,
-        "y": 2760,
+        "x": 2850,
+        "y": 2320,
         "wires": [
             [
                 "c2fe5c7a490e966e"
@@ -13025,8 +13026,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1730,
-        "y": 2640,
+        "x": 2230,
+        "y": 2200,
         "wires": [
             [
                 "5fd70f7a28021fba",
@@ -13056,8 +13057,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1930,
-        "y": 2560,
+        "x": 2430,
+        "y": 2120,
         "wires": [
             []
         ]
@@ -13082,8 +13083,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1930,
-        "y": 2620,
+        "x": 2430,
+        "y": 2180,
         "wires": [
             []
         ]
@@ -13100,8 +13101,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 2760,
+        "x": 3040,
+        "y": 2320,
         "wires": [
             [
                 "d98dd2ef6c61359c"
@@ -13122,8 +13123,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3010,
-        "y": 2540,
+        "x": 3510,
+        "y": 2100,
         "wires": []
     },
     {
@@ -13136,8 +13137,8 @@
             "2b480c9c40b1ae41",
             "bdf8bba337e4c42d"
         ],
-        "x": 1695,
-        "y": 2600,
+        "x": 2195,
+        "y": 2160,
         "wires": [
             [
                 "5fd70f7a28021fba",
@@ -13168,8 +13169,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1790,
-        "y": 2500,
+        "x": 2290,
+        "y": 2060,
         "wires": [
             [
                 "1da573418b56bd31"
@@ -13196,8 +13197,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1930,
-        "y": 2660,
+        "x": 2430,
+        "y": 2220,
         "wires": [
             []
         ]
@@ -13220,8 +13221,8 @@
         "output": "date",
         "outputType": "flow",
         "outTz": "Europe/Copenhagen",
-        "x": 2000,
-        "y": 2840,
+        "x": 2500,
+        "y": 2400,
         "wires": [
             [
                 "efcf62b5a44643b5"
@@ -13248,8 +13249,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2740,
-        "y": 2460,
+        "x": 3240,
+        "y": 2020,
         "wires": [
             [
                 "f6deb1b06ccc62fe"
@@ -13277,8 +13278,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 2340,
-        "y": 2460,
+        "x": 2840,
+        "y": 2020,
         "wires": [
             [
                 "92b223dc0a3d2442"
@@ -13295,8 +13296,8 @@
         "links": [
             "40eb4cf3fc9f0d59"
         ],
-        "x": 3085,
-        "y": 2820,
+        "x": 3585,
+        "y": 2380,
         "wires": []
     },
     {
@@ -13308,8 +13309,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 2630,
-        "y": 2660,
+        "x": 3130,
+        "y": 2220,
         "wires": [
             [
                 "79cf012eb6bc9c38"
@@ -13331,8 +13332,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2470,
-        "y": 2660,
+        "x": 2970,
+        "y": 2220,
         "wires": [
             [
                 "e9a728488b9b47cd"
@@ -13360,8 +13361,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 2220,
-        "y": 2660,
+        "x": 2720,
+        "y": 2220,
         "wires": [
             [
                 "3cf712873e81d4bc"
@@ -13452,7 +13453,7 @@
         "y": 1520,
         "wires": [
             [
-                "79cd14873b4c71a4"
+                "11425201571a27c1"
             ]
         ]
     },
@@ -13462,7 +13463,7 @@
         "z": "33e76285.1cd03e",
         "g": "25201c18524fdbea",
         "name": "",
-        "func": "var booking = flow.get(\"booking\");\n\n\nbooking.push(msg.payload)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = booking\n\nreturn msg;",
+        "func": "var booking = flow.get(\"booking\");\n\n\n//booking.push(msg.payload)\n\n//msg.payload = array\n\n//msg.arrayLength = array.length\nmsg.payload = booking\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13521,6 +13522,34 @@
         "x": 2870,
         "y": 1820,
         "wires": []
+    },
+    {
+        "id": "11425201571a27c1",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadbooking",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2890,
+        "y": 1520,
+        "wires": [
+            [
+                "79cd14873b4c71a4"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
