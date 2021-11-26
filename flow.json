@@ -2396,7 +2396,8 @@
             "5d1ac28aa4fbdfc2",
             "d6ac51117485fe32",
             "11425201571a27c1",
-            "6c4ff8f3a68aedb2"
+            "6c4ff8f3a68aedb2",
+            "7e0fb1a3f5e5127b"
         ],
         "env": [],
         "x": 1764,
@@ -11796,8 +11797,8 @@
         "wires": [
             [
                 "4ae0494d4a89e8a4",
-                "6c4ff8f3a68aedb2",
-                "ce3df7c829af8028"
+                "ce3df7c829af8028",
+                "7e0fb1a3f5e5127b"
             ],
             []
         ]
@@ -12242,7 +12243,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2690,
+        "x": 2810,
         "y": 1740,
         "wires": []
     },
@@ -13564,11 +13565,39 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 2420,
+        "x": 2670,
         "y": 1740,
         "wires": [
             [
                 "333de98b0c0f63b5"
+            ]
+        ]
+    },
+    {
+        "id": "7e0fb1a3f5e5127b",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.summary",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1740,
+        "wires": [
+            [
+                "6c4ff8f3a68aedb2"
             ]
         ]
     },
