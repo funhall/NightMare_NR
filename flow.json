@@ -19314,7 +19314,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "HIGH",
         "payloadType": "str",
         "x": 310,
         "y": 1480,
