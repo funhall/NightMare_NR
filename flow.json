@@ -1678,13 +1678,14 @@
             "fa78055450a2acab",
             "be3c3aebc9ec5217",
             "1dd296e14fe25399",
-            "f7c4d22a636c8343"
+            "f7c4d22a636c8343",
+            "dfb9986747526d2d"
         ],
         "env": [],
         "x": 94,
         "y": 379,
         "w": 1192,
-        "h": 242
+        "h": 282
     },
     {
         "id": "821e49952fadaf78",
@@ -24633,7 +24634,7 @@
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
         "g": "f38486a5759666f0",
-        "name": " ",
+        "name": " Hjælpe knap",
         "topic": "boks6/input/D7",
         "qos": "2",
         "datatype": "auto",
@@ -24642,7 +24643,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 210,
+        "x": 230,
         "y": 500,
         "wires": [
             [
@@ -24663,8 +24664,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 310,
-        "y": 580,
+        "x": 390,
+        "y": 600,
         "wires": []
     },
     {
@@ -28573,6 +28574,28 @@
         "x": 300,
         "y": 560,
         "wires": []
+    },
+    {
+        "id": "dfb9986747526d2d",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "f38486a5759666f0",
+        "name": "Rum 4",
+        "topic": "boks6/input/D6",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 620,
+        "wires": [
+            [
+                "ca3c1420f19b6c23"
+            ]
+        ]
     },
     {
         "id": "dce242cef0b59c86",
