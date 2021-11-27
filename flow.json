@@ -2010,9 +2010,7 @@
             "6fef9e47ae94c9c4",
             "f547cd23c0796211",
             "795d082e4ddf8276",
-            "ddce14e70860f8c8",
-            "2b6ac3fdae9e74bb",
-            "ace4e8d29d9166af"
+            "ddce14e70860f8c8"
         ],
         "env": [],
         "x": 1334,
@@ -24125,62 +24123,7 @@
         "y": 320,
         "wires": [
             [
-                "795d082e4ddf8276",
-                "2b6ac3fdae9e74bb"
-            ]
-        ]
-    },
-    {
-        "id": "2b6ac3fdae9e74bb",
-        "type": "delay",
-        "z": "2bdc58f37cbddb93",
-        "g": "50bee133c969308b",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 2860,
-        "y": 280,
-        "wires": [
-            [
-                "ace4e8d29d9166af"
-            ]
-        ]
-    },
-    {
-        "id": "ace4e8d29d9166af",
-        "type": "change",
-        "z": "2bdc58f37cbddb93",
-        "g": "50bee133c969308b",
-        "name": "HIGH",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "HIGH",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 3000,
-        "y": 300,
-        "wires": [
-            [
-                "4d3749f1ee9a9522"
+                "795d082e4ddf8276"
             ]
         ]
     },
@@ -24534,7 +24477,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1130,
+        "x": 1030,
         "y": 260,
         "wires": [
             [
@@ -24993,7 +24936,7 @@
         "g": "821e49952fadaf78",
         "name": "",
         "pauseType": "delay",
-        "timeout": "2",
+        "timeout": "1",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
