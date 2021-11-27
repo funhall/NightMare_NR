@@ -14260,7 +14260,7 @@
         "title": "",
         "priority": "0",
         "sound": "pushover",
-        "url": "http://192.168.1.82:1880/ui/#!/1",
+        "url": "",
         "url_title": "Gå til",
         "html": true,
         "x": 2900,
