@@ -14016,7 +14016,7 @@
         "links": [
             "2b480c9c40b1ae41"
         ],
-        "x": 285,
+        "x": 195,
         "y": 540,
         "wires": [
             [
@@ -14049,9 +14049,11 @@
         "name": "",
         "rules": [
             {
-                "t": "delete",
+                "t": "set",
                 "p": "payload",
-                "pt": "msg"
+                "pt": "msg",
+                "to": "Game over",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -14059,7 +14061,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
+        "x": 340,
         "y": 540,
         "wires": [
             [
