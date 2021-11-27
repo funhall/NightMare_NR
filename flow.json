@@ -2466,7 +2466,8 @@
             "b266a9086589b554",
             "db4bc79761d11f5d",
             "c539f4c203e9cf7a",
-            "b76ad3a811f224cc"
+            "b76ad3a811f224cc",
+            "60aeb53867a647ab"
         ],
         "env": [],
         "x": 2124,
@@ -2489,13 +2490,16 @@
             "035027083d77f7fb",
             "56eae146e18bb638",
             "45f75d960d36a971",
-            "db023163f60d548e"
+            "db023163f60d548e",
+            "7dfb040ed93c1f77",
+            "7f62bcb41fb2f7b7",
+            "fe2b63bde6831ba4"
         ],
         "env": [],
         "x": 2074,
         "y": 1139,
         "w": 952,
-        "h": 242
+        "h": 202
     },
     {
         "id": "ef2a5747977267c9",
@@ -11610,11 +11614,11 @@
         "title": "",
         "priority": "0",
         "sound": "persistent",
-        "url": "http://192.168.1.82:1880/ui/#!/2",
+        "url": "http://192.168.1.82:1880/ui/#!/1",
         "url_title": "Gå til",
         "html": true,
         "x": 2900,
-        "y": 1220,
+        "y": 1180,
         "wires": []
     },
     {
@@ -11684,8 +11688,8 @@
         "g": "859c1b3f452f477f",
         "name": "",
         "links": [],
-        "x": 2205,
-        "y": 1340,
+        "x": 2455,
+        "y": 1220,
         "wires": [
             [
                 "56eae146e18bb638"
@@ -11712,8 +11716,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2540,
-        "y": 1280,
+        "x": 2600,
+        "y": 1220,
         "wires": [
             [
                 "167cd1fcb00b7af1"
@@ -11780,7 +11784,7 @@
         "y": 1580,
         "wires": [
             [
-                "c539f4c203e9cf7a"
+                "0665b668bb866e87"
             ]
         ]
     },
@@ -12019,7 +12023,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2630,
+        "x": 2710,
         "y": 1840,
         "wires": []
     },
@@ -12283,7 +12287,8 @@
         "wires": [
             [
                 "20ac2f52f42a70db",
-                "0362e1d3de8f94d2"
+                "0362e1d3de8f94d2",
+                "60aeb53867a647ab"
             ]
         ]
     },
@@ -14176,7 +14181,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2650,
+        "x": 2600,
         "y": 1180,
         "wires": [
             [
@@ -14244,6 +14249,82 @@
         "x": 2580,
         "y": 1540,
         "wires": []
+    },
+    {
+        "id": "7dfb040ed93c1f77",
+        "type": "pushover",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "Pushover til Nightmare",
+        "device": "",
+        "title": "",
+        "priority": "0",
+        "sound": "pushover",
+        "url": "http://192.168.1.82:1880/ui/#!/1",
+        "url_title": "Gå til",
+        "html": true,
+        "x": 2900,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "7f62bcb41fb2f7b7",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "",
+        "links": [
+            "60aeb53867a647ab"
+        ],
+        "x": 2525,
+        "y": 1260,
+        "wires": [
+            [
+                "fe2b63bde6831ba4"
+            ]
+        ]
+    },
+    {
+        "id": "60aeb53867a647ab",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "name": "Oplader tændt til byster",
+        "mode": "link",
+        "links": [
+            "7f62bcb41fb2f7b7"
+        ],
+        "x": 2705,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "fe2b63bde6831ba4",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Oplader til byster tændt",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2640,
+        "y": 1260,
+        "wires": [
+            [
+                "7dfb040ed93c1f77"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
