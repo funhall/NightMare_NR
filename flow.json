@@ -14293,6 +14293,13 @@
                 "pt": "msg",
                 "to": "Oplader til byster tændt",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "sound",
+                "pt": "msg",
+                "to": "pushover",
+                "tot": "str"
             }
         ],
         "action": "",
