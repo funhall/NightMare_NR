@@ -14128,6 +14128,13 @@
                 "pt": "msg",
                 "to": "Nightmare er GAMEOVER",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "http://192.168.1.82:1880/ui/#!/1",
+                "tot": "str"
             }
         ],
         "action": "",
