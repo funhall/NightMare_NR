@@ -2453,7 +2453,9 @@
             "f320eff144b1b328",
             "97e9bf42edc3c753",
             "035027083d77f7fb",
-            "56eae146e18bb638"
+            "56eae146e18bb638",
+            "45f75d960d36a971",
+            "db023163f60d548e"
         ],
         "env": [],
         "x": 2114,
@@ -11576,7 +11578,7 @@
         "sound": "persistent",
         "url": "http://192.168.1.82:1880/ui/#!/2",
         "url_title": "Gå til",
-        "html": false,
+        "html": true,
         "x": 2900,
         "y": 1220,
         "wires": []
@@ -14108,6 +14110,49 @@
         "wires": [
             [
                 "770a598c.8e9238"
+            ]
+        ]
+    },
+    {
+        "id": "45f75d960d36a971",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hjælp ønskes til Nightmare",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2650,
+        "y": 1180,
+        "wires": [
+            [
+                "167cd1fcb00b7af1"
+            ]
+        ]
+    },
+    {
+        "id": "db023163f60d548e",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "",
+        "links": [],
+        "x": 2445,
+        "y": 1180,
+        "wires": [
+            [
+                "45f75d960d36a971"
             ]
         ]
     },
