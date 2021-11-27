@@ -13900,7 +13900,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"show\":[\"Nightmare_personale_High_score\"],\"hide\":[\"Nightmare_personale_Batteri\"]}}",
+                "to": "{\"group\":{\"show\":[\"Nightmare_personale_High_score\"],\"hide\":[\"Nightmare_personale_Batteri\",\"Nightmare_personale_Dagens_spillere\"]}}",
                 "tot": "json"
             }
         ],
