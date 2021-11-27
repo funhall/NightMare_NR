@@ -2491,7 +2491,6 @@
             "56eae146e18bb638",
             "45f75d960d36a971",
             "db023163f60d548e",
-            "7dfb040ed93c1f77",
             "7f62bcb41fb2f7b7",
             "fe2b63bde6831ba4"
         ],
@@ -14251,23 +14250,6 @@
         "wires": []
     },
     {
-        "id": "7dfb040ed93c1f77",
-        "type": "pushover",
-        "z": "33e76285.1cd03e",
-        "g": "859c1b3f452f477f",
-        "name": "Pushover til Nightmare",
-        "device": "",
-        "title": "",
-        "priority": "0",
-        "sound": "pushover",
-        "url": "",
-        "url_title": "Gå til",
-        "html": true,
-        "x": 2900,
-        "y": 1240,
-        "wires": []
-    },
-    {
         "id": "7f62bcb41fb2f7b7",
         "type": "link in",
         "z": "33e76285.1cd03e",
@@ -14322,8 +14304,8 @@
         "y": 1260,
         "wires": [
             [
-                "7dfb040ed93c1f77",
-                "d9c30e5407d9e6a3"
+                "d9c30e5407d9e6a3",
+                "167cd1fcb00b7af1"
             ]
         ]
     },
