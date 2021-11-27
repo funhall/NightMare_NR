@@ -11612,7 +11612,7 @@
         "device": "",
         "title": "",
         "priority": "0",
-        "sound": "persistent",
+        "sound": "",
         "url": "http://192.168.1.82:1880/ui/#!/1",
         "url_title": "Gå til",
         "html": true,
