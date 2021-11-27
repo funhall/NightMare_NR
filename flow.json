@@ -542,7 +542,8 @@
             "ce4fc7ded40fa986",
             "21e8b613b412765b",
             "ead3f015f1a8ef52",
-            "9267aaf0dfa06598"
+            "9267aaf0dfa06598",
+            "d2fb2fb9926fbc1b"
         ],
         "env": [],
         "x": 254,
@@ -2530,12 +2531,13 @@
             "f37bfbaa98e665f0",
             "0f861fd31991428a",
             "38801871fbc76583",
-            "1d5b82de58df5d90"
+            "1d5b82de58df5d90",
+            "3a6371f6bef649a5"
         ],
         "env": [],
         "x": 434,
         "y": 2119,
-        "w": 892,
+        "w": 992,
         "h": 202
     },
     {
@@ -2583,6 +2585,29 @@
         "y": 2039,
         "w": 1692,
         "h": 502
+    },
+    {
+        "id": "98e6422418c9f0dd",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Dør rum 4",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "49ae5add6129b32d",
+            "787ede81e9283b1f",
+            "0985b4565a816f3d",
+            "661ab5cdc604dab1",
+            "d2efb048be1713b4",
+            "5465c818a2e1c3c1",
+            "93901b49945f0dd7"
+        ],
+        "env": [],
+        "x": 2134,
+        "y": 1919,
+        "w": 762,
+        "h": 122
     },
     {
         "id": "82fd466d.f6c968",
@@ -12425,7 +12450,7 @@
         "id": "a78a85fd12df27e0",
         "type": "link in",
         "z": "33e76285.1cd03e",
-        "name": "Åbner udgang ",
+        "name": "låser udgang ",
         "links": [
             "e8ba061f5f8c7fec"
         ],
@@ -14332,6 +14357,21 @@
             [
                 "d9c30e5407d9e6a3",
                 "167cd1fcb00b7af1"
+            ]
+        ]
+    },
+    {
+        "id": "d2fb2fb9926fbc1b",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "8a907ee3e43a8bdb",
+        "name": "til udgangs dør",
+        "links": [],
+        "x": 1795,
+        "y": 2180,
+        "wires": [
+            [
+                "6eb8430c101c731d"
             ]
         ]
     },
@@ -28599,7 +28639,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1240,
+        "x": 1340,
         "y": 2180,
         "wires": []
     },
@@ -28625,7 +28665,7 @@
         "type": "change",
         "z": "e21f6458e5ab1eb6",
         "g": "ef2a5747977267c9",
-        "name": "",
+        "name": "HIGH",
         "rules": [
             {
                 "t": "set",
@@ -28640,7 +28680,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1110,
+        "x": 1080,
         "y": 2220,
         "wires": [
             [
@@ -28737,6 +28777,7 @@
         "id": "49ae5add6129b32d",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "98e6422418c9f0dd",
         "name": "",
         "property": "doorroom1",
         "propertyType": "global",
@@ -28753,8 +28794,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2310,
-        "y": 2200,
+        "x": 2350,
+        "y": 1980,
         "wires": [
             [
                 "787ede81e9283b1f"
@@ -28768,6 +28809,7 @@
         "id": "787ede81e9283b1f",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "98e6422418c9f0dd",
         "name": "Rum 4 lukket",
         "rules": [
             {
@@ -28797,11 +28839,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2530,
-        "y": 2180,
+        "x": 2570,
+        "y": 1960,
         "wires": [
             [
-                "661ab5cdc604dab1"
+                "661ab5cdc604dab1",
+                "5465c818a2e1c3c1"
             ]
         ]
     },
@@ -28809,6 +28852,7 @@
         "id": "0985b4565a816f3d",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "98e6422418c9f0dd",
         "name": "Rum 1 åben",
         "rules": [
             {
@@ -28838,11 +28882,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2530,
-        "y": 2220,
+        "x": 2570,
+        "y": 2000,
         "wires": [
             [
-                "661ab5cdc604dab1"
+                "661ab5cdc604dab1",
+                "93901b49945f0dd7"
             ]
         ]
     },
@@ -28850,6 +28895,7 @@
         "id": "661ab5cdc604dab1",
         "type": "ui_button",
         "z": "e21f6458e5ab1eb6",
+        "g": "98e6422418c9f0dd",
         "name": "",
         "group": "117cda2a.43e596",
         "order": 14,
@@ -28865,11 +28911,98 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2170,
-        "y": 2200,
+        "x": 2210,
+        "y": 1980,
         "wires": [
             [
                 "49ae5add6129b32d"
+            ]
+        ]
+    },
+    {
+        "id": "d2efb048be1713b4",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "g": "98e6422418c9f0dd",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "3a6371f6bef649a5"
+        ],
+        "x": 2855,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "5465c818a2e1c3c1",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "98e6422418c9f0dd",
+        "name": "HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2730,
+        "y": 1960,
+        "wires": [
+            [
+                "d2efb048be1713b4"
+            ]
+        ]
+    },
+    {
+        "id": "93901b49945f0dd7",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "g": "98e6422418c9f0dd",
+        "name": "LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2730,
+        "y": 2000,
+        "wires": [
+            [
+                "d2efb048be1713b4"
+            ]
+        ]
+    },
+    {
+        "id": "3a6371f6bef649a5",
+        "type": "link in",
+        "z": "e21f6458e5ab1eb6",
+        "g": "ef2a5747977267c9",
+        "name": "Dør rum 4",
+        "links": [
+            "d2efb048be1713b4"
+        ],
+        "x": 1215,
+        "y": 2160,
+        "wires": [
+            [
+                "f37bfbaa98e665f0"
             ]
         ]
     },
