@@ -357,7 +357,9 @@
             "3893ba8f.390a76"
         ],
         "x": 2114,
-        "y": 3359
+        "y": 3359,
+        "w": 1632,
+        "h": 502
     },
     {
         "id": "2316e898.9addc8",
@@ -380,7 +382,9 @@
             "8e13249fac38c5db"
         ],
         "x": 2154,
-        "y": 3939
+        "y": 3939,
+        "w": 1012,
+        "h": 222
     },
     {
         "id": "b3771d986777a428",
@@ -421,7 +425,9 @@
             "b0afd849b2fe92e1"
         ],
         "x": 434,
-        "y": 219
+        "y": 219,
+        "w": 1552,
+        "h": 522
     },
     {
         "id": "fc1dd592.319c58",
@@ -453,7 +459,9 @@
             "6f16a75f82923f0f"
         ],
         "x": 434,
-        "y": 759
+        "y": 759,
+        "w": 1472,
+        "h": 382
     },
     {
         "id": "88967f27835024c3",
@@ -472,7 +480,9 @@
             "d23df1927731c182"
         ],
         "x": 2174,
-        "y": 4219
+        "y": 4219,
+        "w": 972,
+        "h": 162
     },
     {
         "id": "463e1cfb0b0e88d4",
@@ -566,7 +576,9 @@
         ],
         "env": [],
         "x": 534,
-        "y": 19
+        "y": 19,
+        "w": 1512,
+        "h": 202
     },
     {
         "id": "31a7d742fc6bb0db",
@@ -3305,7 +3317,7 @@
         "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "117cda2a.43e596",
-        "order": 16,
+        "order": 17,
         "width": 3,
         "height": 1
     },
@@ -6027,7 +6039,7 @@
         "g": "dbe01fce1c4844e0",
         "name": "Start spil/Playing",
         "group": "117cda2a.43e596",
-        "order": 18,
+        "order": 19,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -8018,7 +8030,7 @@
         "g": "7ba464075860abd5",
         "name": "Power on/off",
         "group": "117cda2a.43e596",
-        "order": 20,
+        "order": 21,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -9101,7 +9113,7 @@
         "g": "f4e5ec1eb5ea4c59",
         "name": "Game over",
         "group": "117cda2a.43e596",
-        "order": 17,
+        "order": 18,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -12137,7 +12149,7 @@
         "g": "25201c18524fdbea",
         "name": "Tænd lader",
         "group": "117cda2a.43e596",
-        "order": 19,
+        "order": 20,
         "width": "2",
         "height": 1,
         "passthru": false,
@@ -25388,7 +25400,7 @@
         "g": "1c3803be18092683",
         "name": "",
         "group": "117cda2a.43e596",
-        "order": 14,
+        "order": 15,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -28718,6 +28730,146 @@
         "wires": [
             [
                 "ca3c1420f19b6c23"
+            ]
+        ]
+    },
+    {
+        "id": "49ae5add6129b32d",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "property": "doorroom1",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "open",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2310,
+        "y": 2200,
+        "wires": [
+            [
+                "787ede81e9283b1f"
+            ],
+            [
+                "0985b4565a816f3d"
+            ]
+        ]
+    },
+    {
+        "id": "787ede81e9283b1f",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Rum 4 lukket",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Lukket",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "doorroom4",
+                "pt": "global",
+                "to": "closed",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "rum4background",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2530,
+        "y": 2180,
+        "wires": [
+            [
+                "661ab5cdc604dab1"
+            ]
+        ]
+    },
+    {
+        "id": "0985b4565a816f3d",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Rum 1 åben",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Åben",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "doorroom4",
+                "pt": "global",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "rum4background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2530,
+        "y": 2220,
+        "wires": [
+            [
+                "661ab5cdc604dab1"
+            ]
+        ]
+    },
+    {
+        "id": "661ab5cdc604dab1",
+        "type": "ui_button",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "group": "117cda2a.43e596",
+        "order": 14,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "Rum 4",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.rum4background}}",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 2170,
+        "y": 2200,
+        "wires": [
+            [
+                "49ae5add6129b32d"
             ]
         ]
     },
@@ -37382,7 +37534,7 @@
         "g": "a754c23b5706b2d4",
         "name": "Start spil",
         "group": "117cda2a.43e596",
-        "order": 15,
+        "order": 16,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -37521,7 +37673,7 @@
         "label": "Game time",
         "tooltip": "Indstiller spilletiden i Min.",
         "group": "117cda2a.43e596",
-        "order": 21,
+        "order": 22,
         "width": 6,
         "height": 1,
         "passthru": true,
