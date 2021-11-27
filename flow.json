@@ -14391,7 +14391,9 @@
         "z": "33e76285.1cd03e",
         "g": "8a907ee3e43a8bdb",
         "name": "til udgangs dør",
-        "links": [],
+        "links": [
+            "cde729dffce70c3f"
+        ],
         "x": 1795,
         "y": 2180,
         "wires": [
@@ -29021,8 +29023,7 @@
         "g": "ef2a5747977267c9",
         "name": "Dør rum 4",
         "links": [
-            "d2efb048be1713b4",
-            "cde729dffce70c3f"
+            "d2efb048be1713b4"
         ],
         "x": 1215,
         "y": 2160,
@@ -29215,7 +29216,7 @@
         "name": "",
         "mode": "link",
         "links": [
-            "3a6371f6bef649a5"
+            "d2fb2fb9926fbc1b"
         ],
         "x": 2855,
         "y": 2200,
