@@ -2458,9 +2458,9 @@
             "db023163f60d548e"
         ],
         "env": [],
-        "x": 2114,
+        "x": 2074,
         "y": 1139,
-        "w": 912,
+        "w": 952,
         "h": 242
     },
     {
@@ -11591,7 +11591,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "url",
+                "v": "http://192.168.1.111/",
+                "vt": "str"
             },
             {
                 "p": "topic",
@@ -11603,10 +11605,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Alarm fra NightMare",
-        "payloadType": "str",
-        "x": 2250,
-        "y": 1180,
+        "x": 2170,
+        "y": 1260,
         "wires": [
             [
                 "167cd1fcb00b7af1"
@@ -11635,8 +11635,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 2220,
-        "y": 1240,
+        "x": 2200,
+        "y": 1300,
         "wires": [
             [
                 "167cd1fcb00b7af1"
@@ -14126,7 +14126,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Hjælp ønskes til Nightmare",
+                "to": "Nightmare er GAMEOVER",
                 "tot": "str"
             }
         ],
