@@ -10345,7 +10345,7 @@
         "id": "0514d6460be9c5ef",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "locked",
+        "name": "open",
         "rules": [
             {
                 "t": "set",
@@ -10368,7 +10368,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 3640,
+        "y": 3680,
         "wires": [
             [
                 "407c6cf130e625d7",
@@ -10380,7 +10380,7 @@
         "id": "2df2b85bbf3da8db",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "open",
+        "name": "locked",
         "rules": [
             {
                 "t": "set",
@@ -10403,7 +10403,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 3680,
+        "y": 3640,
         "wires": [
             [
                 "8138ecba75709a9a"
@@ -10455,26 +10455,26 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "Besked2Low",
+                "v": "Besked2High",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Besked2High",
+                "v": "Besked2Low",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 3640,
+        "x": 490,
+        "y": 3660,
         "wires": [
             [
-                "0514d6460be9c5ef"
+                "2df2b85bbf3da8db"
             ],
             [
-                "2df2b85bbf3da8db"
+                "0514d6460be9c5ef"
             ]
         ]
     },
