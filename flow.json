@@ -2464,7 +2464,8 @@
             "f42151a3b495fa41",
             "0083324598d89708",
             "b266a9086589b554",
-            "db4bc79761d11f5d"
+            "db4bc79761d11f5d",
+            "c539f4c203e9cf7a"
         ],
         "env": [],
         "x": 2124,
@@ -11726,8 +11727,8 @@
         "confignode": "567e72afe6ba6dcd",
         "checkall": false,
         "cron": "",
-        "timeout": "1",
-        "timeoutUnits": "hours",
+        "timeout": "0",
+        "timeoutUnits": "seconds",
         "name": "",
         "offset": "",
         "endpreview": "",
@@ -11737,7 +11738,7 @@
         "pastview": "0",
         "pastviewUnits": "seconds",
         "trigger": "always",
-        "timezone": "",
+        "timezone": "Europe/Copenhagen",
         "filterProperty": "summary",
         "filterOperator": "between",
         "filter2": "",
@@ -14197,6 +14198,30 @@
             [
                 "45f75d960d36a971"
             ]
+        ]
+    },
+    {
+        "id": "c539f4c203e9cf7a",
+        "type": "light-scheduler",
+        "z": "33e76285.1cd03e",
+        "g": "25201c18524fdbea",
+        "settings": "6871a700.1c4708",
+        "events": "[{\"start\":{\"dow\":1,\"mod\":75},\"end\":{\"dow\":1,\"mod\":80}},{\"start\":{\"dow\":2,\"mod\":75},\"end\":{\"dow\":2,\"mod\":80}},{\"start\":{\"dow\":3,\"mod\":70},\"end\":{\"dow\":3,\"mod\":75}},{\"start\":{\"dow\":4,\"mod\":75},\"end\":{\"dow\":4,\"mod\":80}},{\"start\":{\"dow\":5,\"mod\":75},\"end\":{\"dow\":5,\"mod\":80}},{\"start\":{\"dow\":6,\"mod\":70},\"end\":{\"dow\":6,\"mod\":75}},{\"start\":{\"dow\":0,\"mod\":75},\"end\":{\"dow\":0,\"mod\":80}}]",
+        "topic": "",
+        "name": "",
+        "onPayload": "ON",
+        "onPayloadType": "str",
+        "offPayload": "OFF",
+        "offPayloadType": "str",
+        "onlyWhenDark": false,
+        "scheduleRndMax": 0,
+        "sunElevationThreshold": 6,
+        "sunShowElevationInStatus": false,
+        "outputfreq": "output.statechange.startup",
+        "x": 2310,
+        "y": 1520,
+        "wires": [
+            []
         ]
     },
     {
