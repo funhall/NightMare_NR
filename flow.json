@@ -24642,6 +24642,191 @@
         ]
     },
     {
+        "id": "30451aa57add8fcf",
+        "type": "mqtt out",
+        "z": "2bdc58f37cbddb93",
+        "name": "Krypt - Rød",
+        "topic": "boks9/output/D3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 2050,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "b59c9fe5405260d4",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "name": "Krypt rød HIGH",
+        "links": [],
+        "x": 1495,
+        "y": 1560,
+        "wires": [
+            [
+                "4fada3a3a4cbd3f5"
+            ]
+        ]
+    },
+    {
+        "id": "904e0f4957f51f2a",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1780,
+        "y": 1560,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "0b7a3e6985c967c2",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "name": "Krypt rød LOW",
+        "links": [
+            "dcda2e3ca6ad94be",
+            "d0db6f812a7972aa"
+        ],
+        "x": 1615,
+        "y": 1520,
+        "wires": [
+            [
+                "fbabc0cc0b49b0e0"
+            ]
+        ]
+    },
+    {
+        "id": "fbabc0cc0b49b0e0",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1770,
+        "y": 1520,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "2b8afb1a491d2fd5",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1620,
+        "y": 1620,
+        "wires": [
+            [
+                "904e0f4957f51f2a"
+            ]
+        ]
+    },
+    {
+        "id": "3302cab0746fabdb",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 1760,
+        "y": 1460,
+        "wires": [
+            [
+                "fbabc0cc0b49b0e0"
+            ]
+        ]
+    },
+    {
+        "id": "4fada3a3a4cbd3f5",
+        "type": "delay",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1600,
+        "y": 1560,
+        "wires": [
+            [
+                "904e0f4957f51f2a"
+            ]
+        ]
+    },
+    {
         "id": "12696b2c777c71a4",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
@@ -39010,7 +39195,8 @@
             "7cf6443309b511f8",
             "3aeee5c9bee78e88",
             "5de4499bfce766ba",
-            "cf2c7d51e902e11b"
+            "cf2c7d51e902e11b",
+            "0b7a3e6985c967c2"
         ],
         "x": 735,
         "y": 140,
