@@ -2032,7 +2032,7 @@
             "ec0e8fdae98a04c8"
         ],
         "env": [],
-        "x": 1254,
+        "x": 1154,
         "y": 79,
         "w": 1932,
         "h": 1062
@@ -22311,7 +22311,7 @@
             "2b480c9c40b1ae41",
             "e8ba061f5f8c7fec"
         ],
-        "x": 1395,
+        "x": 1295,
         "y": 140,
         "wires": [
             [
@@ -22334,7 +22334,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2270,
+        "x": 2170,
         "y": 260,
         "wires": []
     },
@@ -22358,7 +22358,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1800,
+        "x": 1700,
         "y": 280,
         "wires": [
             [
@@ -22386,7 +22386,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1800,
+        "x": 1700,
         "y": 180,
         "wires": [
             [
@@ -22414,7 +22414,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1790,
+        "x": 1690,
         "y": 240,
         "wires": [
             [
@@ -22437,7 +22437,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1750,
+        "x": 1650,
         "y": 980,
         "wires": []
     },
@@ -22459,7 +22459,7 @@
         "topic": "",
         "payload": "1024",
         "payloadType": "num",
-        "x": 1550,
+        "x": 1450,
         "y": 920,
         "wires": [
             [
@@ -22485,7 +22485,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1520,
+        "x": 1420,
         "y": 1060,
         "wires": [
             [
@@ -22511,7 +22511,7 @@
         "topic": "",
         "payload": "300",
         "payloadType": "str",
-        "x": 1530,
+        "x": 1430,
         "y": 980,
         "wires": [
             [
@@ -22537,7 +22537,7 @@
         "topic": "",
         "payload": "10",
         "payloadType": "num",
-        "x": 1530,
+        "x": 1430,
         "y": 1020,
         "wires": [
             [
@@ -22563,7 +22563,7 @@
         "topic": "",
         "payload": "FLASH",
         "payloadType": "str",
-        "x": 1520,
+        "x": 1420,
         "y": 1100,
         "wires": [
             [
@@ -22589,7 +22589,7 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 1540,
+        "x": 1440,
         "y": 860,
         "wires": [
             [
@@ -22615,7 +22615,7 @@
         "topic": "",
         "payload": "HIGh",
         "payloadType": "str",
-        "x": 1540,
+        "x": 1440,
         "y": 820,
         "wires": [
             [
@@ -22638,7 +22638,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 3090,
+        "x": 2990,
         "y": 320,
         "wires": []
     },
@@ -22699,7 +22699,7 @@
         "min": 0,
         "max": "1024",
         "step": "10",
-        "x": 2060,
+        "x": 1960,
         "y": 260,
         "wires": [
             [
@@ -22829,7 +22829,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2850,
+        "x": 2750,
         "y": 420,
         "wires": [
             [
@@ -22854,7 +22854,7 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 3010,
+        "x": 2910,
         "y": 520,
         "wires": [
             []
@@ -22948,7 +22948,7 @@
         "g": "50bee133c969308b",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 1880,
+        "x": 1780,
         "y": 520,
         "wires": [
             [
@@ -23068,7 +23068,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2910,
+        "x": 2810,
         "y": 240,
         "wires": [
             [
@@ -23096,7 +23096,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1800,
+        "x": 1700,
         "y": 340,
         "wires": [
             [
@@ -23148,7 +23148,7 @@
         "topic": "",
         "payload": "FLASH",
         "payloadType": "str",
-        "x": 2750,
+        "x": 2650,
         "y": 380,
         "wires": [
             [
@@ -23174,7 +23174,7 @@
         "topic": "",
         "payload": "30",
         "payloadType": "num",
-        "x": 2870,
+        "x": 2770,
         "y": 120,
         "wires": [
             [
@@ -23232,7 +23232,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1360,
+        "x": 1260,
         "y": 280,
         "wires": [
             [
@@ -23341,7 +23341,7 @@
         "links": [
             "ec67e6f0513072c5"
         ],
-        "x": 2495,
+        "x": 2395,
         "y": 220,
         "wires": [
             [
@@ -23356,9 +23356,10 @@
         "g": "50bee133c969308b",
         "name": "Slukker lys rum 3 hvid",
         "links": [
+            "22140f781deb3af3",
             "7fc3fbad33439116"
         ],
-        "x": 1405,
+        "x": 1305,
         "y": 220,
         "wires": [
             [
@@ -24113,7 +24114,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2770,
+        "x": 2670,
         "y": 240,
         "wires": [
             [
@@ -24148,7 +24149,7 @@
             "2b480c9c40b1ae41",
             "e8ba061f5f8c7fec"
         ],
-        "x": 2675,
+        "x": 2575,
         "y": 420,
         "wires": [
             [
@@ -24331,7 +24332,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2630,
+        "x": 2530,
         "y": 240,
         "wires": [
             [
@@ -24350,7 +24351,7 @@
             "fc9b6aa8fa506d52",
             "03f227ed4e40bdb8"
         ],
-        "x": 2835,
+        "x": 2735,
         "y": 200,
         "wires": []
     },
@@ -24376,7 +24377,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 2460,
+        "x": 2360,
         "y": 380,
         "wires": [
             [
@@ -24404,7 +24405,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2790,
+        "x": 2690,
         "y": 320,
         "wires": [
             [
@@ -24421,7 +24422,7 @@
         "links": [
             "1fb00f59406653d8"
         ],
-        "x": 2695,
+        "x": 2595,
         "y": 320,
         "wires": [
             [
@@ -24434,14 +24435,16 @@
         "type": "link in",
         "z": "2bdc58f37cbddb93",
         "g": "50bee133c969308b",
-        "name": "",
+        "name": "Blinker rum 3 rød",
         "links": [
             "22140f781deb3af3"
         ],
-        "x": 2635,
+        "x": 2535,
         "y": 540,
         "wires": [
-            []
+            [
+                "ec0e8fdae98a04c8"
+            ]
         ]
     },
     {
@@ -24451,7 +24454,7 @@
         "g": "50bee133c969308b",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 2720,
+        "x": 2620,
         "y": 480,
         "wires": [
             [
@@ -29347,7 +29350,8 @@
         "mode": "link",
         "links": [
             "2ebb1946ee7ffcc6",
-            "36121eda307d82d2"
+            "36121eda307d82d2",
+            "5959dd7045e731d3"
         ],
         "x": 835,
         "y": 1900,
