@@ -357,7 +357,9 @@
             "3893ba8f.390a76"
         ],
         "x": 2114,
-        "y": 3359
+        "y": 3359,
+        "w": 1632,
+        "h": 502
     },
     {
         "id": "2316e898.9addc8",
@@ -379,8 +381,10 @@
             "07db0b34cd8ddedc",
             "8e13249fac38c5db"
         ],
-        "x": 2154,
-        "y": 3939
+        "x": 1874,
+        "y": 3919,
+        "w": 1012,
+        "h": 222
     },
     {
         "id": "b3771d986777a428",
@@ -421,7 +425,9 @@
             "b0afd849b2fe92e1"
         ],
         "x": 434,
-        "y": 219
+        "y": 219,
+        "w": 1552,
+        "h": 522
     },
     {
         "id": "fc1dd592.319c58",
@@ -453,7 +459,9 @@
             "6f16a75f82923f0f"
         ],
         "x": 434,
-        "y": 759
+        "y": 759,
+        "w": 1472,
+        "h": 382
     },
     {
         "id": "88967f27835024c3",
@@ -472,7 +480,9 @@
             "d23df1927731c182"
         ],
         "x": 2174,
-        "y": 4219
+        "y": 4219,
+        "w": 972,
+        "h": 162
     },
     {
         "id": "463e1cfb0b0e88d4",
@@ -567,7 +577,9 @@
         ],
         "env": [],
         "x": 534,
-        "y": 19
+        "y": 19,
+        "w": 1512,
+        "h": 202
     },
     {
         "id": "31a7d742fc6bb0db",
@@ -1620,7 +1632,9 @@
             "76d47205b68c9455"
         ],
         "x": 114,
-        "y": 59
+        "y": 59,
+        "w": 1352,
+        "h": 242
     },
     {
         "id": "f38486a5759666f0",
@@ -1652,7 +1666,9 @@
         ],
         "env": [],
         "x": 94,
-        "y": 379
+        "y": 379,
+        "w": 1192,
+        "h": 282
     },
     {
         "id": "821e49952fadaf78",
@@ -1687,7 +1703,9 @@
         ],
         "env": [],
         "x": 114,
-        "y": 999
+        "y": 999,
+        "w": 1272,
+        "h": 362
     },
     {
         "id": "1c3803be18092683",
@@ -1722,7 +1740,9 @@
             "489ee8a4591406f3"
         ],
         "x": 134,
-        "y": 659
+        "y": 659,
+        "w": 1172,
+        "h": 302
     },
     {
         "id": "9d6515b12fd52c73",
@@ -1768,7 +1788,9 @@
             "74561f5408223569"
         ],
         "x": 74,
-        "y": 1379
+        "y": 1379,
+        "w": 1772,
+        "h": 402
     },
     {
         "id": "96be5e73cc5cc970",
@@ -2103,10 +2125,13 @@
             "64425d5c0234515c",
             "29fdd270df48f8f7",
             "c3b549a116f391b2",
-            "8454f2119aa96ad7"
+            "8454f2119aa96ad7",
+            "22140f781deb3af3"
         ],
         "x": 94,
-        "y": 1859
+        "y": 1859,
+        "w": 782,
+        "h": 142
     },
     {
         "id": "639befce27376865",
@@ -2131,7 +2156,9 @@
             "fa85f5aea340a7f6"
         ],
         "x": 1234,
-        "y": 2559
+        "y": 2559,
+        "w": 822,
+        "h": 302
     },
     {
         "id": "851cbb45b48af626",
@@ -2470,7 +2497,9 @@
         ],
         "env": [],
         "x": 434,
-        "y": 2119
+        "y": 2119,
+        "w": 992,
+        "h": 202
     },
     {
         "id": "cae032f2d30f959c",
@@ -2538,7 +2567,9 @@
         ],
         "env": [],
         "x": 2094,
-        "y": 1879
+        "y": 1879,
+        "w": 802,
+        "h": 162
     },
     {
         "id": "d44402f242fe1973",
@@ -2560,7 +2591,33 @@
         ],
         "env": [],
         "x": 2094,
-        "y": 2099
+        "y": 2099,
+        "w": 802,
+        "h": 162
+    },
+    {
+        "id": "bbd4e40c062e81e6",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Skriger når dukken røres",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5dcbbca61cc4569f",
+            "bdd99e813bcd034d",
+            "a926601f2e4039ea",
+            "954310af0e684e1e",
+            "624dd6b2578797a0",
+            "2ebb1946ee7ffcc6",
+            "2e9ca7269c80cf60",
+            "250234e882b74c25",
+            "bedc926fcb82674b"
+        ],
+        "x": 994,
+        "y": 519,
+        "w": 1012,
+        "h": 202
     },
     {
         "id": "82fd466d.f6c968",
@@ -26399,7 +26456,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 730,
+        "x": 690,
         "y": 1960,
         "wires": []
     },
@@ -26484,7 +26541,9 @@
         "x": 650,
         "y": 1900,
         "wires": [
-            []
+            [
+                "22140f781deb3af3"
+            ]
         ]
     },
     {
@@ -29236,6 +29295,20 @@
         ]
     },
     {
+        "id": "22140f781deb3af3",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "g": "7a5fe20602228ef8",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "2ebb1946ee7ffcc6"
+        ],
+        "x": 835,
+        "y": 1900,
+        "wires": []
+    },
+    {
         "id": "dce242cef0b59c86",
         "type": "inject",
         "z": "42a18184186a4f43",
@@ -30947,6 +31020,210 @@
         ]
     },
     {
+        "id": "5dcbbca61cc4569f",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "go",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 1090,
+        "y": 560,
+        "wires": [
+            [
+                "250234e882b74c25",
+                "624dd6b2578797a0"
+            ]
+        ]
+    },
+    {
+        "id": "bdd99e813bcd034d",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Afspil Scream",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=/home/pi/DullScream.mp3",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1900,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a926601f2e4039ea",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Pause",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1750,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "954310af0e684e1e",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 1580,
+        "y": 620,
+        "wires": [
+            [
+                "a926601f2e4039ea"
+            ]
+        ]
+    },
+    {
+        "id": "624dd6b2578797a0",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=250",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1450,
+        "y": 560,
+        "wires": [
+            [
+                "2e9ca7269c80cf60"
+            ]
+        ]
+    },
+    {
+        "id": "2ebb1946ee7ffcc6",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Dukke skrig",
+        "links": [
+            "22140f781deb3af3"
+        ],
+        "x": 1035,
+        "y": 660,
+        "wires": [
+            [
+                "2e9ca7269c80cf60",
+                "624dd6b2578797a0",
+                "250234e882b74c25",
+                "954310af0e684e1e"
+            ]
+        ]
+    },
+    {
+        "id": "2e9ca7269c80cf60",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "250234e882b74c25",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1660,
+        "y": 580,
+        "wires": [
+            [
+                "bdd99e813bcd034d"
+            ]
+        ]
+    },
+    {
+        "id": "bedc926fcb82674b",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Pause",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_play",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1090,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "84e11b56.e27758",
         "type": "inject",
         "z": "5b3651b.92335b",
@@ -32223,8 +32500,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 2250,
-        "y": 3980,
+        "x": 1970,
+        "y": 3960,
         "wires": [
             [
                 "3099f199.cb2ade",
@@ -32246,8 +32523,8 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 3060,
-        "y": 4000,
+        "x": 2780,
+        "y": 3980,
         "wires": [
             []
         ]
@@ -32266,8 +32543,8 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 2910,
-        "y": 4040,
+        "x": 2630,
+        "y": 4020,
         "wires": [
             []
         ]
@@ -32289,8 +32566,8 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 2740,
-        "y": 4040,
+        "x": 2460,
+        "y": 4020,
         "wires": [
             [
                 "aaf35f0b.e5617"
@@ -32311,8 +32588,8 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 2610,
-        "y": 3980,
+        "x": 2330,
+        "y": 3960,
         "wires": [
             [
                 "45041ff7.8f663"
@@ -32329,8 +32606,8 @@
             "e31a61e6.09726",
             "6b8a5bb477a416c1"
         ],
-        "x": 2195,
-        "y": 4080,
+        "x": 1915,
+        "y": 4060,
         "wires": [
             [
                 "45041ff7.8f663",
@@ -32354,8 +32631,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2720,
-        "y": 4100,
+        "x": 2440,
+        "y": 4080,
         "wires": []
     },
     {
@@ -32378,8 +32655,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2820,
-        "y": 4000,
+        "x": 2540,
+        "y": 3980,
         "wires": [
             [
                 "486273cd.c2d36c"
@@ -33306,8 +33583,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2350,
-        "y": 4120,
+        "x": 2070,
+        "y": 4100,
         "wires": [
             [],
             []
@@ -33327,8 +33604,8 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 2250,
-        "y": 4020,
+        "x": 1970,
+        "y": 4000,
         "wires": [
             []
         ]
