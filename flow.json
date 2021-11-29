@@ -2029,7 +2029,8 @@
             "795d082e4ddf8276",
             "ddce14e70860f8c8",
             "36121eda307d82d2",
-            "ec0e8fdae98a04c8"
+            "ec0e8fdae98a04c8",
+            "b888a6aa85f77736"
         ],
         "env": [],
         "x": 1154,
@@ -9317,7 +9318,9 @@
             "9667910b6b191207",
             "05c863f7945792c1",
             "1dd296e14fe25399",
-            "71bdd19e51a7ce13"
+            "71bdd19e51a7ce13",
+            "312c9e2f5e5b603c",
+            "7b4fb3e02bff15d4"
         ],
         "x": 755,
         "y": 340,
@@ -9807,7 +9810,9 @@
             "b41f9f2bfad990e4",
             "b5eafdbecd239cf1",
             "bdf8cec0e1a2db9f",
-            "ec269280c18f9e67"
+            "ec269280c18f9e67",
+            "312c9e2f5e5b603c",
+            "7b4fb3e02bff15d4"
         ],
         "x": 835,
         "y": 540,
@@ -9996,7 +10001,8 @@
             "a1af2809e73bca7d",
             "0b4e893baa86ab2f",
             "941d9d2157c2785d",
-            "adc106bfbddb767e"
+            "adc106bfbddb767e",
+            "64e295fe15b64253"
         ],
         "x": 715,
         "y": 820,
@@ -10123,7 +10129,8 @@
         "g": "8a907ee3e43a8bdb",
         "name": "",
         "links": [
-            "6fef9e47ae94c9c4"
+            "6fef9e47ae94c9c4",
+            "c24c1d88f1dabc1b"
         ],
         "x": 295,
         "y": 2200,
@@ -22220,7 +22227,8 @@
         "g": "377ac035b96a41de",
         "name": "",
         "links": [
-            "6fef9e47ae94c9c4"
+            "6fef9e47ae94c9c4",
+            "c24c1d88f1dabc1b"
         ],
         "x": 235,
         "y": 2080,
@@ -24461,6 +24469,36 @@
         ]
     },
     {
+        "id": "b888a6aa85f77736",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2300,
+        "y": 500,
+        "wires": [
+            [
+                "ec0e8fdae98a04c8"
+            ]
+        ]
+    },
+    {
         "id": "12696b2c777c71a4",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
@@ -26427,7 +26465,8 @@
         "name": "Exit closed 2 gang",
         "mode": "link",
         "links": [
-            "c8aa8feef584e35c"
+            "c8aa8feef584e35c",
+            "7dc2982f6866be7b"
         ],
         "x": 895,
         "y": 1280,
@@ -26441,7 +26480,8 @@
         "name": "Exit open",
         "mode": "link",
         "links": [
-            "ddce14e70860f8c8"
+            "ddce14e70860f8c8",
+            "981596aad3567008"
         ],
         "x": 655,
         "y": 1320,
@@ -29349,7 +29389,9 @@
         "links": [
             "2ebb1946ee7ffcc6",
             "36121eda307d82d2",
-            "5959dd7045e731d3"
+            "5959dd7045e731d3",
+            "64e295fe15b64253",
+            "27b3fb81529ec226"
         ],
         "x": 835,
         "y": 1900,
