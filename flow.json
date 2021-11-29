@@ -31064,6 +31064,7 @@
         "persist": false,
         "proxy": "",
         "authType": "",
+        "senderr": false,
         "x": 1900,
         "y": 580,
         "wires": [
@@ -31124,11 +31125,12 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=250",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=100",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
+        "senderr": false,
         "x": 1450,
         "y": 560,
         "wires": [
