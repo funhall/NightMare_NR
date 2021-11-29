@@ -6048,7 +6048,8 @@
         "name": "Huston vaek",
         "mode": "link",
         "links": [
-            "9c117b22ce846f1d"
+            "9c117b22ce846f1d",
+            "b59c9fe5405260d4"
         ],
         "x": 1835,
         "y": 4820,
@@ -9343,7 +9344,8 @@
             "1dd296e14fe25399",
             "71bdd19e51a7ce13",
             "312c9e2f5e5b603c",
-            "7b4fb3e02bff15d4"
+            "7b4fb3e02bff15d4",
+            "0b7a3e6985c967c2"
         ],
         "x": 755,
         "y": 340,
@@ -9557,7 +9559,8 @@
             "a422065c72ada863",
             "adc106bfbddb767e",
             "d853366775888253",
-            "fd6ee23692604dd3"
+            "fd6ee23692604dd3",
+            "0b7a3e6985c967c2"
         ],
         "x": 1335,
         "y": 280,
@@ -24664,7 +24667,9 @@
         "type": "link in",
         "z": "2bdc58f37cbddb93",
         "name": "Krypt rød HIGH",
-        "links": [],
+        "links": [
+            "369f293e.f63406"
+        ],
         "x": 1495,
         "y": 1560,
         "wires": [
@@ -24706,8 +24711,9 @@
         "z": "2bdc58f37cbddb93",
         "name": "Krypt rød LOW",
         "links": [
-            "dcda2e3ca6ad94be",
-            "d0db6f812a7972aa"
+            "3f275e5d73da77dc",
+            "d0db6f812a7972aa",
+            "e8ba061f5f8c7fec"
         ],
         "x": 1615,
         "y": 1520,
