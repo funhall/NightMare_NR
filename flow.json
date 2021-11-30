@@ -23229,8 +23229,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "FLASH",
-        "payloadType": "str",
+        "payload": "0",
+        "payloadType": "num",
         "x": 2730,
         "y": 340,
         "wires": [
