@@ -30184,7 +30184,7 @@
         "outs": "end",
         "topic": "topic",
         "topicType": "msg",
-        "min": "47",
+        "min": "44",
         "max": "110",
         "step": 1,
         "x": 890,
