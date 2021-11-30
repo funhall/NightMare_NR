@@ -2236,7 +2236,8 @@
             "3b491f6589b03130",
             "fd6ee23692604dd3",
             "71bdd19e51a7ce13",
-            "737ff51954cfa6d5"
+            "737ff51954cfa6d5",
+            "598a659abc1f427b"
         ],
         "env": [],
         "x": 124,
@@ -24106,7 +24107,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
+        "x": 510,
         "y": 860,
         "wires": [
             [
@@ -24155,8 +24156,7 @@
         "y": 860,
         "wires": [
             [
-                "203a8c4b782d1ab6",
-                "737ff51954cfa6d5"
+                "598a659abc1f427b"
             ]
         ]
     },
@@ -24927,6 +24927,32 @@
         "x": 580,
         "y": 840,
         "wires": []
+    },
+    {
+        "id": "598a659abc1f427b",
+        "type": "switch",
+        "z": "2bdc58f37cbddb93",
+        "g": "c0aa0eaa7e4416d0",
+        "name": "",
+        "property": "klargorring",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Færdig",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 860,
+        "wires": [
+            [
+                "203a8c4b782d1ab6"
+            ]
+        ]
     },
     {
         "id": "12696b2c777c71a4",
