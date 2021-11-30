@@ -1686,7 +1686,8 @@
             "f7c4d22a636c8343",
             "dfb9986747526d2d",
             "4a5b311906d648a8",
-            "6bcd968a83cc2e5c"
+            "6bcd968a83cc2e5c",
+            "18b70d3b9041ad2e"
         ],
         "env": [],
         "x": 94,
@@ -28997,49 +28998,6 @@
         ]
     },
     {
-        "id": "ca94fcd584223615",
-        "type": "change",
-        "z": "e21f6458e5ab1eb6",
-        "name": "Ved power on",
-        "rules": [
-            {
-                "t": "set",
-                "p": "rum1background",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 420,
-        "wires": [
-            [
-                "041810b00b0117e0"
-            ]
-        ]
-    },
-    {
-        "id": "57497eed3fc9e7b3",
-        "type": "link in",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "links": [
-            "2216095b02d3c520"
-        ],
-        "x": 475,
-        "y": 420,
-        "wires": [
-            [
-                "ca94fcd584223615"
-            ]
-        ]
-    },
-    {
         "id": "0e049be05df83b6d",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
@@ -30082,6 +30040,36 @@
         "wires": [
             [
                 "70be23919371d3af"
+            ]
+        ]
+    },
+    {
+        "id": "18b70d3b9041ad2e",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "g": "f38486a5759666f0",
+        "name": "",
+        "props": [
+            {
+                "p": "rum1background",
+                "v": "red",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 500,
+        "y": 440,
+        "wires": [
+            [
+                "041810b00b0117e0"
             ]
         ]
     },
