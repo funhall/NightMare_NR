@@ -24961,7 +24961,7 @@
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
         "name": "Kiste rød",
-        "topic": "belysning/output/D4",
+        "topic": "belysning/output/D5",
         "qos": "",
         "retain": "",
         "respTopic": "",
