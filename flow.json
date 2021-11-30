@@ -2503,7 +2503,8 @@
             "45f75d960d36a971",
             "db023163f60d548e",
             "7f62bcb41fb2f7b7",
-            "fe2b63bde6831ba4"
+            "fe2b63bde6831ba4",
+            "c522bcfc4d6cebda"
         ],
         "env": [],
         "x": 2074,
@@ -14437,6 +14438,36 @@
         "wires": [
             [
                 "6eb8430c101c731d"
+            ]
+        ]
+    },
+    {
+        "id": "c522bcfc4d6cebda",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "g": "859c1b3f452f477f",
+        "name": "",
+        "props": [
+            {
+                "p": "url",
+                "v": "http://192.168.1.111/",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 2190,
+        "y": 1200,
+        "wires": [
+            [
+                "56eae146e18bb638"
             ]
         ]
     },
