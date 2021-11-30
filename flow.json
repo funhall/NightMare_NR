@@ -1765,11 +1765,12 @@
             "f7e5ca754bce7495",
             "489ee8a4591406f3",
             "abbdb48d58a134f3",
-            "4c7635bd77117228"
+            "4c7635bd77117228",
+            "5e4926451de02828"
         ],
-        "x": 134,
+        "x": 114,
         "y": 699,
-        "w": 1172,
+        "w": 1192,
         "h": 302
     },
     {
@@ -8577,7 +8578,8 @@
             "7c80187aa04495c0",
             "9667910b6b191207",
             "1d78786d96eb2a97",
-            "4c2e0f39c455554a"
+            "4c2e0f39c455554a",
+            "f2a246bb07f04912"
         ],
         "x": 1495,
         "y": 1340,
@@ -9361,7 +9363,8 @@
             "312c9e2f5e5b603c",
             "7b4fb3e02bff15d4",
             "0b7a3e6985c967c2",
-            "269fb8c0bc98db40"
+            "269fb8c0bc98db40",
+            "e9bffacdd063c056"
         ],
         "x": 755,
         "y": 340,
@@ -9856,7 +9859,8 @@
             "312c9e2f5e5b603c",
             "7b4fb3e02bff15d4",
             "fa78055450a2acab",
-            "1557677d6ac3f118"
+            "1557677d6ac3f118",
+            "9aaf11136db3b282"
         ],
         "x": 835,
         "y": 540,
@@ -10129,7 +10133,8 @@
         "name": "Kiste lukket delay til exit open",
         "mode": "link",
         "links": [
-            "826b95112c8631bf"
+            "826b95112c8631bf",
+            "9aaf11136db3b282"
         ],
         "x": 885,
         "y": 1860,
@@ -10161,7 +10166,8 @@
         "mode": "link",
         "links": [
             "4134cf0cf89825e9",
-            "10895e061de3f851"
+            "10895e061de3f851",
+            "e9bffacdd063c056"
         ],
         "x": 575,
         "y": 1980,
@@ -24828,7 +24834,8 @@
         "g": "50bee133c969308b",
         "name": "Tænder rum 3 rød efter exit forladt",
         "links": [
-            "ec67e6f0513072c5"
+            "ec67e6f0513072c5",
+            "1c8a8a900eda16c8"
         ],
         "x": 2695,
         "y": 140,
@@ -25008,7 +25015,8 @@
         "g": "50bee133c969308b",
         "name": "",
         "links": [
-            "1fb00f59406653d8"
+            "1fb00f59406653d8",
+            "032cbde1499b5d89"
         ],
         "x": 2895,
         "y": 240,
@@ -26039,12 +26047,13 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 240,
+        "x": 220,
         "y": 820,
         "wires": [
             [
                 "aea609932bb77faa",
-                "489ee8a4591406f3"
+                "489ee8a4591406f3",
+                "5e4926451de02828"
             ]
         ]
     },
@@ -26291,8 +26300,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 520,
-        "y": 1080,
+        "x": 300,
+        "y": 1260,
         "wires": []
     },
     {
@@ -30187,6 +30196,24 @@
         "statusType": "auto",
         "x": 1070,
         "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5e4926451de02828",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "g": "1c3803be18092683",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 260,
+        "y": 900,
         "wires": []
     },
     {
