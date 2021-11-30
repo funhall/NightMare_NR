@@ -1668,7 +1668,6 @@
         },
         "nodes": [
             "404da8613a7deae9",
-            "ca3c1420f19b6c23",
             "a295d28dab58e60d",
             "142b6c9babab35ef",
             "78b0531f780cfaee",
@@ -1684,7 +1683,6 @@
             "be3c3aebc9ec5217",
             "1dd296e14fe25399",
             "f7c4d22a636c8343",
-            "dfb9986747526d2d",
             "4a5b311906d648a8",
             "6bcd968a83cc2e5c",
             "18b70d3b9041ad2e",
@@ -25601,23 +25599,6 @@
         ]
     },
     {
-        "id": "ca3c1420f19b6c23",
-        "type": "debug",
-        "z": "e21f6458e5ab1eb6",
-        "g": "f38486a5759666f0",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 390,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "a295d28dab58e60d",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
@@ -29491,28 +29472,6 @@
         "wires": []
     },
     {
-        "id": "dfb9986747526d2d",
-        "type": "mqtt in",
-        "z": "e21f6458e5ab1eb6",
-        "g": "f38486a5759666f0",
-        "name": "Rum 4",
-        "topic": "boks6/input/D6",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "dca8425b.8fb18",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 170,
-        "y": 620,
-        "wires": [
-            [
-                "ca3c1420f19b6c23"
-            ]
-        ]
-    },
-    {
         "id": "49ae5add6129b32d",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
@@ -30215,6 +30174,43 @@
         "x": 260,
         "y": 900,
         "wires": []
+    },
+    {
+        "id": "f871f7c183e16a65",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 2360,
+        "wires": []
+    },
+    {
+        "id": "1fe2b426184207cb",
+        "type": "mqtt in",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Rum 4",
+        "topic": "boks6/input/D6",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "dca8425b.8fb18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 690,
+        "y": 2360,
+        "wires": [
+            [
+                "f871f7c183e16a65"
+            ]
+        ]
     },
     {
         "id": "dce242cef0b59c86",
