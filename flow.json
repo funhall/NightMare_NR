@@ -2650,9 +2650,10 @@
             "954310af0e684e1e",
             "624dd6b2578797a0",
             "2ebb1946ee7ffcc6",
-            "2e9ca7269c80cf60",
             "250234e882b74c25",
-            "bedc926fcb82674b"
+            "bedc926fcb82674b",
+            "443d6d4b3a9ed466",
+            "62a609d360d1bb90"
         ],
         "x": 994,
         "y": 519,
@@ -31680,9 +31681,7 @@
         "x": 1450,
         "y": 560,
         "wires": [
-            [
-                "2e9ca7269c80cf60"
-            ]
+            []
         ]
     },
     {
@@ -31698,30 +31697,12 @@
         "y": 660,
         "wires": [
             [
-                "2e9ca7269c80cf60",
                 "624dd6b2578797a0",
                 "250234e882b74c25",
-                "954310af0e684e1e"
+                "954310af0e684e1e",
+                "443d6d4b3a9ed466"
             ]
         ]
-    },
-    {
-        "id": "2e9ca7269c80cf60",
-        "type": "debug",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1560,
-        "y": 680,
-        "wires": []
     },
     {
         "id": "250234e882b74c25",
@@ -31770,6 +31751,44 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "443d6d4b3a9ed466",
+        "type": "Message Counter",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "units": "minutes",
+        "interval": 1,
+        "alignToClock": true,
+        "generator": "internal",
+        "x": 1250,
+        "y": 680,
+        "wires": [
+            [
+                "62a609d360d1bb90"
+            ],
+            [
+                "62a609d360d1bb90"
+            ]
+        ]
+    },
+    {
+        "id": "62a609d360d1bb90",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 680,
+        "wires": []
     },
     {
         "id": "84e11b56.e27758",
