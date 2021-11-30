@@ -1763,7 +1763,9 @@
             "aa1d5e0da6c5b1f3",
             "a1af2809e73bca7d",
             "f7e5ca754bce7495",
-            "489ee8a4591406f3"
+            "489ee8a4591406f3",
+            "abbdb48d58a134f3",
+            "4c7635bd77117228"
         ],
         "x": 134,
         "y": 659,
@@ -2489,7 +2491,7 @@
             "3a6371f6bef649a5"
         ],
         "env": [],
-        "x": 434,
+        "x": 494,
         "y": 2119,
         "w": 992,
         "h": 202
@@ -10125,8 +10127,7 @@
         "name": "Kiste lukket delay til exit open",
         "mode": "link",
         "links": [
-            "826b95112c8631bf",
-            "653557ba9ee1c78b"
+            "826b95112c8631bf"
         ],
         "x": 885,
         "y": 1860,
@@ -25101,7 +25102,7 @@
         "g": "50bee133c969308b",
         "name": "Tænd lys exit",
         "links": [
-            "4dfaf3a5efda95b4"
+            "4c7635bd77117228"
         ],
         "x": 2095,
         "y": 840,
@@ -26050,11 +26051,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 430,
+        "x": 390,
         "y": 780,
         "wires": [
             [
-                "5b7cfa19a9a51b86"
+                "5b7cfa19a9a51b86",
+                "abbdb48d58a134f3"
             ],
             [
                 "9acbf97818726d0c"
@@ -26095,8 +26097,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 740,
+        "x": 570,
+        "y": 760,
         "wires": [
             [
                 "7f44533ac0b79782",
@@ -26138,8 +26140,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 780,
+        "x": 570,
+        "y": 840,
         "wires": [
             [
                 "7f44533ac0b79782",
@@ -29192,7 +29194,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 530,
+        "x": 590,
         "y": 2180,
         "wires": [
             [
@@ -29216,7 +29218,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
+        "x": 830,
         "y": 2160,
         "wires": []
     },
@@ -29238,7 +29240,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 580,
+        "x": 640,
         "y": 2260,
         "wires": [
             [
@@ -29266,7 +29268,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
+        "x": 810,
         "y": 2280,
         "wires": [
             []
@@ -29290,7 +29292,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 750,
+        "x": 810,
         "y": 2200,
         "wires": [
             [
@@ -29309,7 +29311,7 @@
         "links": [
             "fb18325475db6d6f"
         ],
-        "x": 855,
+        "x": 915,
         "y": 2220,
         "wires": []
     },
@@ -29328,7 +29330,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1340,
+        "x": 1400,
         "y": 2180,
         "wires": []
     },
@@ -29341,7 +29343,7 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 965,
+        "x": 1025,
         "y": 2280,
         "wires": [
             [
@@ -29369,7 +29371,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1080,
+        "x": 1140,
         "y": 2220,
         "wires": [
             [
@@ -29397,7 +29399,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1000,
+        "x": 1060,
         "y": 2180,
         "wires": [
             [
@@ -29687,7 +29689,7 @@
         "links": [
             "d2efb048be1713b4"
         ],
-        "x": 1215,
+        "x": 1275,
         "y": 2160,
         "wires": [
             [
@@ -30092,6 +30094,44 @@
         "statusType": "auto",
         "x": 1190,
         "y": 420,
+        "wires": []
+    },
+    {
+        "id": "abbdb48d58a134f3",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "g": "1c3803be18092683",
+        "name": "",
+        "property": "kistetom",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 900,
+        "wires": [
+            [
+                "4c7635bd77117228"
+            ]
+        ]
+    },
+    {
+        "id": "4c7635bd77117228",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "g": "1c3803be18092683",
+        "name": "Kiste låst og kiste fuld",
+        "mode": "link",
+        "links": [
+            "653557ba9ee1c78b"
+        ],
+        "x": 535,
+        "y": 900,
         "wires": []
     },
     {
