@@ -11809,6 +11809,13 @@
                 "pt": "msg",
                 "to": "http://192.168.1.82:1880/ui/#!/1",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "sound",
+                "pt": "msg",
+                "to": "persistent",
+                "tot": "str"
             }
         ],
         "action": "",
