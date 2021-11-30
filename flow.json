@@ -25758,7 +25758,7 @@
         "type": "mqtt out",
         "z": "e21f6458e5ab1eb6",
         "g": "f38486a5759666f0",
-        "name": "Lås til rum 1",
+        "name": "Lås til rum 4",
         "topic": "boks5/output/D2",
         "qos": "",
         "retain": "",
