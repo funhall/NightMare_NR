@@ -14766,11 +14766,12 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 850,
+        "x": 910,
         "y": 1420,
         "wires": [
             [
-                "6ec4dcf3d1452e11"
+                "6ec4dcf3d1452e11",
+                "0d5a3412a809c7c0"
             ]
         ]
     },
@@ -14800,7 +14801,8 @@
         "y": 1460,
         "wires": [
             [
-                "6ec4dcf3d1452e11"
+                "6ec4dcf3d1452e11",
+                "0d5a3412a809c7c0"
             ]
         ]
     },
