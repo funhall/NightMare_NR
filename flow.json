@@ -10771,7 +10771,7 @@
         "z": "33e76285.1cd03e",
         "g": "8a907ee3e43a8bdb",
         "name": "Udgangs dør",
-        "topic": "boks5/output/D",
+        "topic": "boks5/output/D4",
         "qos": "",
         "retain": "",
         "respTopic": "",
@@ -24049,8 +24049,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1620,
-        "y": 1240,
+        "x": 1580,
+        "y": 1460,
         "wires": [
             [
                 "fbabc0cc0b49b0e0"
@@ -25045,8 +25045,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2880,
-        "y": 1140,
+        "x": 2220,
+        "y": 1180,
         "wires": []
     },
     {
@@ -25070,8 +25070,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 2530,
-        "y": 1100,
+        "x": 1870,
+        "y": 1140,
         "wires": [
             [
                 "d7186285ab67fe7c"
@@ -25099,8 +25099,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 2530,
-        "y": 1160,
+        "x": 1870,
+        "y": 1200,
         "wires": [
             [
                 "d7186285ab67fe7c"
