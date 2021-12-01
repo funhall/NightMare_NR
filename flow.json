@@ -11558,15 +11558,24 @@
         "type": "inject",
         "z": "33e76285.1cd03e",
         "name": "Reset",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "0.5",
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1590,
-        "y": 1620,
+        "payload": "LOW",
+        "payloadType": "str",
+        "x": 1450,
+        "y": 1600,
         "wires": [
             []
         ]
@@ -14762,7 +14771,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "HIGH",
+                "to": "LOW",
                 "tot": "str"
             }
         ],
