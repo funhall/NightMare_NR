@@ -14955,7 +14955,7 @@
         "z": "c39524c2016c8df2",
         "g": "56a2f6be993fbac7",
         "name": "Clingar MSG",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14963,8 +14963,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2820,
-        "y": 3100,
+        "x": 2970,
+        "y": 3140,
         "wires": []
     },
     {
@@ -22801,8 +22801,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3030,
-        "y": 3140,
+        "x": 3430,
+        "y": 2960,
         "wires": []
     },
     {
@@ -22832,10 +22832,12 @@
         "y": 3020,
         "wires": [
             [
-                "2ecee52b158e1bc7"
+                "2ecee52b158e1bc7",
+                "84744d2365363019"
             ],
             [
-                "df376134961d088b"
+                "df376134961d088b",
+                "06053da46d5f66df"
             ]
         ]
     },
@@ -22855,8 +22857,7 @@
         "y": 3020,
         "wires": [
             [
-                "32e390951e2048f0",
-                "06053da46d5f66df"
+                "32e390951e2048f0"
             ]
         ]
     },
@@ -22969,7 +22970,6 @@
         "y": 3000,
         "wires": [
             [
-                "84744d2365363019",
                 "5f7926e1b90f4fdd"
             ]
         ]
