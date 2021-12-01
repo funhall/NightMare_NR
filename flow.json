@@ -17763,7 +17763,7 @@
         "height": 2,
         "gtype": "gage",
         "title": "{{msg.ladestatus}}",
-        "label": "{{msg.state}}",
+        "label": "{{msg.ladestatus}}",
         "format": "{{value}}",
         "min": "600",
         "max": "950",
