@@ -23051,8 +23051,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1550,
-        "y": 460,
+        "x": 1830,
+        "y": 440,
         "wires": [
             [
                 "01f184af2c9210b3"
@@ -23076,8 +23076,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1410,
-        "y": 460,
+        "x": 1690,
+        "y": 440,
         "wires": [
             [
                 "c5f7975a30a0884a",
@@ -23098,8 +23098,8 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 1740,
-        "y": 460,
+        "x": 2020,
+        "y": 440,
         "wires": [
             [
                 "f91b84881f96290d"
@@ -23125,8 +23125,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1530,
-        "y": 500,
+        "x": 1810,
+        "y": 480,
         "wires": [
             [
                 "01f184af2c9210b3"
@@ -23141,8 +23141,8 @@
         "links": [
             "d4d2aeec1061c558"
         ],
-        "x": 1295,
-        "y": 460,
+        "x": 1575,
+        "y": 440,
         "wires": [
             [
                 "bc5581aed29adaf5"
@@ -30247,7 +30247,7 @@
         "wires": [
             [
                 "133b96fab803dfbd",
-                "c3111f9ba2a05816"
+                "432a109396b75036"
             ]
         ]
     },
@@ -30258,12 +30258,64 @@
         "name": "Hjælp",
         "mode": "link",
         "links": [
-            "80a868808fc1a091",
-            "035027083d77f7fb"
+            "035027083d77f7fb",
+            "80a868808fc1a091"
         ],
-        "x": 285,
+        "x": 655,
         "y": 2420,
         "wires": []
+    },
+    {
+        "id": "ba24192078e47253",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "help",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 2420,
+        "wires": [
+            [
+                "c3111f9ba2a05816"
+            ]
+        ]
+    },
+    {
+        "id": "432a109396b75036",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked3High",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 2400,
+        "wires": [
+            [
+                "ba24192078e47253"
+            ]
+        ]
     },
     {
         "id": "dce242cef0b59c86",
