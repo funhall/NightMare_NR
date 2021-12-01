@@ -14796,8 +14796,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 900,
-        "y": 1480,
+        "x": 990,
+        "y": 1460,
         "wires": [
             [
                 "6ec4dcf3d1452e11"
