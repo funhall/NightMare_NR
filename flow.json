@@ -2679,7 +2679,9 @@
             "a06e64ee456de322",
             "a16f2274d093cf3c",
             "2c78f9aaa1f30226",
-            "df40bd17d9357a9f"
+            "df40bd17d9357a9f",
+            "bb9751caf3556eb3",
+            "09f59d6845ab1ef5"
         ],
         "env": [],
         "x": 1474,
@@ -8747,7 +8749,7 @@
             "4c2e0f39c455554a",
             "f2a246bb07f04912",
             "cbd3d4ca31844c3b",
-            "80a868808fc1a091"
+            "bb9751caf3556eb3"
         ],
         "x": 1495,
         "y": 1340,
@@ -24884,13 +24886,12 @@
         "name": "Klargørring",
         "links": [
             "18779454fc783361",
-            "2216095b02d3c520",
             "2b480c9c40b1ae41",
             "c3111f9ba2a05816",
             "e8ba061f5f8c7fec"
         ],
-        "x": 1615,
-        "y": 60,
+        "x": 1635,
+        "y": 100,
         "wires": [
             [
                 "2f9f9a0afba2d10f"
@@ -25547,7 +25548,7 @@
         "g": "26046f160ae182f7",
         "name": "",
         "links": [],
-        "x": 345,
+        "x": 235,
         "y": 220,
         "wires": [
             [
@@ -25573,11 +25574,54 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 470,
+        "x": 420,
         "y": 220,
         "wires": [
             [
                 "91966b424e9124b3"
+            ]
+        ]
+    },
+    {
+        "id": "bb9751caf3556eb3",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "",
+        "links": [
+            "2216095b02d3c520"
+        ],
+        "x": 1625,
+        "y": 40,
+        "wires": [
+            [
+                "09f59d6845ab1ef5"
+            ]
+        ]
+    },
+    {
+        "id": "09f59d6845ab1ef5",
+        "type": "delay",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1750,
+        "y": 40,
+        "wires": [
+            [
+                "2f9f9a0afba2d10f"
             ]
         ]
     },
