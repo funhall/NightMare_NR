@@ -8633,6 +8633,13 @@
                 "pt": "msg",
                 "to": "LOW",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "game",
+                "pt": "global",
+                "to": "off",
+                "tot": "str"
             }
         ],
         "action": "",
