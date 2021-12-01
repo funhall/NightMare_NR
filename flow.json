@@ -8536,7 +8536,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 650,
+        "x": 570,
         "y": 1360,
         "wires": [
             [
@@ -8696,7 +8696,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
+        "x": 360,
         "y": 1360,
         "wires": [
             [
