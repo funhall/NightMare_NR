@@ -1282,7 +1282,6 @@
             "2ecee52b158e1bc7",
             "df376134961d088b",
             "b36bd1201a0be188",
-            "5f7926e1b90f4fdd",
             "58632a1d3ae28e31"
         ],
         "x": 2624,
@@ -22966,11 +22965,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3260,
+        "x": 3280,
         "y": 3000,
         "wires": [
             [
-                "5f7926e1b90f4fdd"
+                "f3e5442882848d98"
             ]
         ]
     },
@@ -22992,13 +22991,6 @@
                 "t": "delete",
                 "p": "payload",
                 "pt": "msg"
-            },
-            {
-                "t": "set",
-                "p": "reset",
-                "pt": "msg",
-                "to": "STOP",
-                "tot": "str"
             }
         ],
         "action": "",
@@ -23010,34 +23002,6 @@
         "y": 3040,
         "wires": [
             [
-                "f3e5442882848d98",
-                "5f7926e1b90f4fdd"
-            ]
-        ]
-    },
-    {
-        "id": "5f7926e1b90f4fdd",
-        "type": "trigger",
-        "z": "c39524c2016c8df2",
-        "g": "56a2f6be993fbac7",
-        "name": "",
-        "op1": "Oplader",
-        "op2": "0",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "0",
-        "extend": false,
-        "overrideDelay": false,
-        "units": "ms",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 3130,
-        "y": 2940,
-        "wires": [
-            [
-                "724678be3951149e",
                 "f3e5442882848d98"
             ]
         ]
