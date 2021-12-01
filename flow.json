@@ -23626,7 +23626,7 @@
         "z": "c39524c2016c8df2",
         "g": "9c63b62bda5fa857",
         "name": "",
-        "func": "msg.state = msg.payload - msg.ClingarV ; \n\nreturn msg;\n",
+        "func": "msg.state = msg.payload - msg.CorwinV ; \n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23677,7 +23677,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarV",
+                "p": "CorwinV",
                 "pt": "flow",
                 "to": "$number(payload)",
                 "tot": "jsonata"
