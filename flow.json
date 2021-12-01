@@ -4219,8 +4219,8 @@
         "type": "switch",
         "z": "d8dbfa496c5848bc",
         "name": "count presses",
-        "property": "count",
-        "propertyType": "flow",
+        "property": "payload",
+        "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
