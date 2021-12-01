@@ -4274,7 +4274,7 @@
         "name": "",
         "op1": "",
         "op2": "0",
-        "op1type": "str",
+        "op1type": "nul",
         "op2type": "str",
         "duration": "1500",
         "extend": false,
