@@ -22819,7 +22819,9 @@
                 "vt": "num"
             },
             {
-                "t": "else"
+                "t": "lt",
+                "v": "-10",
+                "vt": "str"
             }
         ],
         "checkall": "true",
@@ -23025,7 +23027,7 @@
         "extend": false,
         "overrideDelay": false,
         "units": "ms",
-        "reset": "STOP",
+        "reset": "",
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
