@@ -14953,7 +14953,7 @@
         "z": "c39524c2016c8df2",
         "g": "56a2f6be993fbac7",
         "name": "Clingar MSG",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -23025,7 +23025,8 @@
         "y": 2880,
         "wires": [
             [
-                "f3e5442882848d98"
+                "f3e5442882848d98",
+                "06053da46d5f66df"
             ]
         ]
     },
