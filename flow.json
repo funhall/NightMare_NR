@@ -1999,7 +1999,6 @@
             "54c83c00ac584f00",
             "ce74e291796fd569",
             "4904644ae19bf16a",
-            "ea9dd1feba1f638a",
             "a1aa32c4949c4fe3",
             "b9b0ee2e1cb21624",
             "20d689c8b00d2164",
@@ -2014,9 +2013,9 @@
             "782323ae665624f6"
         ],
         "x": 34,
-        "y": 139,
+        "y": 179,
         "w": 1132,
-        "h": 562
+        "h": 522
     },
     {
         "id": "1d4f38fd430a0ca5",
@@ -11596,15 +11595,17 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": "0.5",
         "topic": "",
-        "payload": "LOW",
+        "payload": "on",
         "payloadType": "str",
-        "x": 1450,
-        "y": 1600,
+        "x": 1410,
+        "y": 1620,
         "wires": [
-            []
+            [
+                "fdf099ba30f3cc34"
+            ]
         ]
     },
     {
@@ -14816,6 +14817,50 @@
         "wires": [
             [
                 "0d5a3412a809c7c0"
+            ]
+        ]
+    },
+    {
+        "id": "fdf099ba30f3cc34",
+        "type": "ewelink-power-state-write",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "deviceId": "10005e9aba",
+        "channel": 1,
+        "auth": "7fff307a232ab69e",
+        "x": 1675,
+        "y": 1620,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "81d1e9b7378364dd",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "Reset",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 1410,
+        "y": 1680,
+        "wires": [
+            [
+                "fdf099ba30f3cc34"
             ]
         ]
     },
@@ -23058,36 +23103,6 @@
         ]
     },
     {
-        "id": "ea9dd1feba1f638a",
-        "type": "inject",
-        "z": "2bdc58f37cbddb93",
-        "g": "26046f160ae182f7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "HIGH",
-        "payloadType": "str",
-        "x": 550,
-        "y": 180,
-        "wires": [
-            [
-                "91966b424e9124b3"
-            ]
-        ]
-    },
-    {
         "id": "a1aa32c4949c4fe3",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
@@ -25723,79 +25738,6 @@
         "x": 1860,
         "y": 140,
         "wires": []
-    },
-    {
-        "id": "eb09e3eacab8a8ff",
-        "type": "inject",
-        "z": "2bdc58f37cbddb93",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "on",
-        "payloadType": "str",
-        "x": 450,
-        "y": 1720,
-        "wires": [
-            [
-                "00efabcc7e9057bb"
-            ]
-        ]
-    },
-    {
-        "id": "a1ec31c964e227bb",
-        "type": "inject",
-        "z": "2bdc58f37cbddb93",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "off",
-        "payloadType": "str",
-        "x": 455,
-        "y": 1766,
-        "wires": [
-            [
-                "00efabcc7e9057bb"
-            ]
-        ]
-    },
-    {
-        "id": "00efabcc7e9057bb",
-        "type": "ewelink-power-state-write",
-        "z": "2bdc58f37cbddb93",
-        "name": "",
-        "deviceId": "1000c81063",
-        "channel": 1,
-        "auth": "7fff307a232ab69e",
-        "x": 655,
-        "y": 1700,
-        "wires": [
-            []
-        ],
-        "l": false
     },
     {
         "id": "12696b2c777c71a4",
