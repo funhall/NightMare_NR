@@ -1975,7 +1975,6 @@
             "838bc03649f7c918",
             "f51d408db856e1dc",
             "f6da3ededc910c6b",
-            "a0962a7c1c1b67dc",
             "011d71bd028f4985",
             "5801dd6cddafa481",
             "18fca4cd232def7d",
@@ -2007,7 +2006,8 @@
             "fcb04237c2802b48",
             "fa89b915191dbcaf",
             "f40a824f6022965f",
-            "054ad0b29e4bbca8"
+            "054ad0b29e4bbca8",
+            "a695d9e3afc641fb"
         ],
         "env": [],
         "x": 34,
@@ -8737,28 +8737,6 @@
         ]
     },
     {
-        "id": "a0962a7c1c1b67dc",
-        "type": "mqtt in",
-        "z": "33e76285.1cd03e",
-        "g": "dbe01fce1c4844e0",
-        "name": "Nødstop",
-        "topic": "boks5/input/D5",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "dca8425b.8fb18",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 700,
-        "y": 1100,
-        "wires": [
-            [
-                "5801dd6cddafa481"
-            ]
-        ]
-    },
-    {
         "id": "011d71bd028f4985",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -9181,7 +9159,7 @@
             "6ae7dc55b448fca2",
             "2935d54e90314012"
         ],
-        "x": 475,
+        "x": 515,
         "y": 740,
         "wires": [
             [
@@ -14650,6 +14628,23 @@
         "wires": [
             [
                 "56eae146e18bb638"
+            ]
+        ]
+    },
+    {
+        "id": "a695d9e3afc641fb",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
+        "name": "Sender nødstop videre i spil",
+        "links": [
+            "18779454fc783361"
+        ],
+        "x": 735,
+        "y": 1100,
+        "wires": [
+            [
+                "5801dd6cddafa481"
             ]
         ]
     },
@@ -28678,7 +28673,8 @@
         "y": 2340,
         "wires": [
             [
-                "ecb52a5b9e7536c7"
+                "ecb52a5b9e7536c7",
+                "18779454fc783361"
             ]
         ]
     },
@@ -30488,6 +30484,19 @@
         "statusType": "auto",
         "x": 440,
         "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "18779454fc783361",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Nødstop knap",
+        "mode": "link",
+        "links": [
+            "a695d9e3afc641fb"
+        ],
+        "x": 325,
+        "y": 2360,
         "wires": []
     },
     {
