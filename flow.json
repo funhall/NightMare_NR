@@ -22921,6 +22921,7 @@
         "g": "26046f160ae182f7",
         "name": "Klargørring",
         "links": [
+            "18779454fc783361",
             "e8ba061f5f8c7fec"
         ],
         "x": 535,
@@ -24788,6 +24789,7 @@
         "g": "50bee133c969308b",
         "name": "Klargørring",
         "links": [
+            "18779454fc783361",
             "2b480c9c40b1ae41",
             "c3111f9ba2a05816",
             "e8ba061f5f8c7fec"
@@ -30493,7 +30495,9 @@
         "name": "Nødstop knap",
         "mode": "link",
         "links": [
-            "a695d9e3afc641fb"
+            "a695d9e3afc641fb",
+            "80a868808fc1a091",
+            "a1aa32c4949c4fe3"
         ],
         "x": 325,
         "y": 2360,
