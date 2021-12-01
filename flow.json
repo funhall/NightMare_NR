@@ -15156,8 +15156,8 @@
         "width": 2,
         "height": 2,
         "gtype": "gage",
-        "title": "Cartmell {{msg.ladestatus}}",
-        "label": "% opladt",
+        "title": "Cartmell",
+        "label": "{{ladestatus}}",
         "format": "{{value}}",
         "min": "600",
         "max": "950",
@@ -15192,7 +15192,8 @@
             [
                 "e9fd225ffec14d32",
                 "3e59a70c74105661",
-                "a4f7fc9006c40774"
+                "a4f7fc9006c40774",
+                "68e7639bcf6f778f"
             ]
         ]
     },
@@ -15272,12 +15273,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3170,
-        "y": 2360,
+        "x": 3080,
+        "y": 2320,
         "wires": [
             [
                 "f65a1a3cb4944d44",
-                "9fc86791ec1eecbe"
+                "9fc86791ec1eecbe",
+                "772828d0eb0b52f1"
             ]
         ]
     },
@@ -23430,7 +23432,7 @@
         "z": "c39524c2016c8df2",
         "g": "7d1829a2ea116c1d",
         "name": "",
-        "func": "msg.state = msg.payload - msg.ClingarV ; \n\nreturn msg;\n",
+        "func": "msg.state = msg.payload - msg.CartmellV ; \n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23453,9 +23455,9 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarV",
+                "p": "CartmellV",
                 "pt": "msg",
-                "to": "ClingarV",
+                "to": "CartmellV",
                 "tot": "flow"
             }
         ],
@@ -23481,7 +23483,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarV",
+                "p": "CartmellV",
                 "pt": "flow",
                 "to": "$number(payload)",
                 "tot": "jsonata"
@@ -23552,7 +23554,9 @@
         "x": 3120,
         "y": 2600,
         "wires": [
-            []
+            [
+                "3e59a70c74105661"
+            ]
         ]
     },
     {
