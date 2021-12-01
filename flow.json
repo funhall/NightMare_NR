@@ -25248,8 +25248,8 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 1870,
-        "y": 1140,
+        "x": 1770,
+        "y": 1120,
         "wires": [
             [
                 "d7186285ab67fe7c"
@@ -25348,13 +25348,13 @@
         "id": "1a6389a07eebfdb9",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "name": "",
+        "name": "Tænd lys",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "",
+                "to": "LOW",
                 "tot": "str"
             }
         ],
@@ -25363,11 +25363,27 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2060,
+        "x": 2040,
         "y": 1080,
         "wires": [
             [
                 "d7186285ab67fe7c"
+            ]
+        ]
+    },
+    {
+        "id": "cbd3d4ca31844c3b",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "name": "Tænd lys over skænk",
+        "links": [
+            "d6903db4074da266"
+        ],
+        "x": 1915,
+        "y": 1080,
+        "wires": [
+            [
+                "1a6389a07eebfdb9"
             ]
         ]
     },
@@ -41584,7 +41600,8 @@
         "z": "416eda1d3361af12",
         "name": "Power ON",
         "links": [
-            "db96da4950130d36"
+            "db96da4950130d36",
+            "cbd3d4ca31844c3b"
         ],
         "x": 1075,
         "y": 4520,
