@@ -1272,7 +1272,8 @@
             "0d9e88199dc75c24",
             "6bafe551de43859f",
             "fa486b66b21c8d8d",
-            "84744d2365363019"
+            "84744d2365363019",
+            "32e390951e2048f0"
         ],
         "x": 2604,
         "y": 2719,
@@ -17839,8 +17840,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 3200,
-        "y": 2940,
+        "x": 3210,
+        "y": 2920,
         "wires": [
             [
                 "eb1df5ed224eda39"
@@ -17860,6 +17861,13 @@
                 "pt": "msg",
                 "to": "$number(payload)",
                 "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "ClingarV",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -17867,13 +17875,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3010,
+        "x": 2880,
         "y": 2940,
         "wires": [
             [
                 "c0fe1a0a03c96855",
                 "27174f169b0497ac",
-                "84744d2365363019"
+                "32e390951e2048f0"
             ]
         ]
     },
@@ -22791,6 +22799,32 @@
         "x": 3000,
         "y": 3020,
         "wires": []
+    },
+    {
+        "id": "32e390951e2048f0",
+        "type": "switch",
+        "z": "c39524c2016c8df2",
+        "g": "56a2f6be993fbac7",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "ClingarV",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3090,
+        "y": 2960,
+        "wires": [
+            [
+                "84744d2365363019"
+            ]
+        ]
     },
     {
         "id": "54706de9e7f6afc3",
