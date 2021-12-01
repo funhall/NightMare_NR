@@ -2079,12 +2079,14 @@
             "01dac7b97282ed65",
             "3e86871486d1741a",
             "af823658e7727418",
-            "d6b40e3e7cdcd52b"
+            "d6b40e3e7cdcd52b",
+            "4b9fe11ca561240d",
+            "782323ae665624f6"
         ],
         "x": 34,
-        "y": 159,
+        "y": 139,
         "w": 1132,
-        "h": 542
+        "h": 562
     },
     {
         "id": "1d4f38fd430a0ca5",
@@ -8743,8 +8745,7 @@
             "4c2e0f39c455554a",
             "f2a246bb07f04912",
             "cbd3d4ca31844c3b",
-            "80a868808fc1a091",
-            "a1aa32c4949c4fe3"
+            "80a868808fc1a091"
         ],
         "x": 1495,
         "y": 1340,
@@ -22980,8 +22981,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 590,
-        "y": 200,
+        "x": 550,
+        "y": 180,
         "wires": [
             [
                 "91966b424e9124b3"
@@ -22996,7 +22997,6 @@
         "name": "Klargørring",
         "links": [
             "18779454fc783361",
-            "2216095b02d3c520",
             "e8ba061f5f8c7fec"
         ],
         "x": 515,
@@ -25518,6 +25518,47 @@
         "wires": [
             [
                 "af823658e7727418"
+            ]
+        ]
+    },
+    {
+        "id": "4b9fe11ca561240d",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "26046f160ae182f7",
+        "name": "",
+        "links": [],
+        "x": 345,
+        "y": 220,
+        "wires": [
+            [
+                "782323ae665624f6"
+            ]
+        ]
+    },
+    {
+        "id": "782323ae665624f6",
+        "type": "delay",
+        "z": "2bdc58f37cbddb93",
+        "g": "26046f160ae182f7",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 220,
+        "wires": [
+            [
+                "91966b424e9124b3"
             ]
         ]
     },
