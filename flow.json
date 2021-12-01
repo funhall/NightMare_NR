@@ -17871,8 +17871,8 @@
                 "t": "set",
                 "p": "ClingarV",
                 "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
+                "to": "$number(payload)",
+                "tot": "jsonata"
             }
         ],
         "action": "",
@@ -22829,9 +22829,7 @@
         "x": 3110,
         "y": 2980,
         "wires": [
-            [
-                "84744d2365363019"
-            ],
+            [],
             []
         ]
     },
