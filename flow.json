@@ -548,9 +548,9 @@
         ],
         "env": [],
         "x": 254,
-        "y": 2019,
+        "y": 1979,
         "w": 1752,
-        "h": 282
+        "h": 322
     },
     {
         "id": "bd662a4f36edc960",
@@ -10772,7 +10772,7 @@
         "z": "33e76285.1cd03e",
         "g": "8a907ee3e43a8bdb",
         "name": "Udgangs dør",
-        "topic": "boks5/output/D4",
+        "topic": "boks5/output/D5",
         "qos": "",
         "retain": "",
         "respTopic": "",
@@ -14524,8 +14524,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1590,
-        "y": 2060,
+        "x": 1620,
+        "y": 2020,
         "wires": [
             [
                 "b76452b54ee6e58f"
