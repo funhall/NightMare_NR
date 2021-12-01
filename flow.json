@@ -17860,13 +17860,6 @@
                 "pt": "msg",
                 "to": "$number(payload)",
                 "tot": "jsonata"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
             }
         ],
         "action": "",
