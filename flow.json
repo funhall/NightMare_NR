@@ -17764,7 +17764,7 @@
         "height": 2,
         "gtype": "gage",
         "title": "{{msg.ladestatus}}",
-        "label": "{{msg.ladestatus}}",
+        "label": "{{msg.payload}}",
         "format": "{{value}}",
         "min": "600",
         "max": "950",
@@ -23023,7 +23023,8 @@
         "y": 2940,
         "wires": [
             [
-                "724678be3951149e"
+                "724678be3951149e",
+                "f3e5442882848d98"
             ]
         ]
     },
