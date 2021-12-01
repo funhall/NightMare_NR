@@ -8706,7 +8706,8 @@
             "e0282cf331829ce9",
             "e487c8e0.af6ef8",
             "8c01d61809fea2d7",
-            "b61fbab2d31b723c"
+            "b61fbab2d31b723c",
+            "112adcce0b71b305"
         ],
         "x": 1495,
         "y": 1300,
@@ -25308,8 +25309,8 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 1870,
-        "y": 1200,
+        "x": 1790,
+        "y": 1180,
         "wires": [
             [
                 "d7186285ab67fe7c"
@@ -25408,14 +25409,56 @@
         "z": "2bdc58f37cbddb93",
         "name": "Tænd lys over skænk",
         "links": [
-            "2216095b02d3c520",
-            "d6903db4074da266"
+            "2216095b02d3c520"
         ],
         "x": 1915,
         "y": 1080,
         "wires": [
             [
                 "1a6389a07eebfdb9"
+            ]
+        ]
+    },
+    {
+        "id": "4198284d16b025d6",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "Sluk lys",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2040,
+        "y": 1220,
+        "wires": [
+            [
+                "d7186285ab67fe7c"
+            ]
+        ]
+    },
+    {
+        "id": "112adcce0b71b305",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "name": "Tænd lys over skænk",
+        "links": [
+            "49095ecf9ab1fd70"
+        ],
+        "x": 1915,
+        "y": 1220,
+        "wires": [
+            [
+                "4198284d16b025d6"
             ]
         ]
     },
@@ -41632,8 +41675,7 @@
         "z": "416eda1d3361af12",
         "name": "Power ON",
         "links": [
-            "db96da4950130d36",
-            "cbd3d4ca31844c3b"
+            "db96da4950130d36"
         ],
         "x": 1075,
         "y": 4520,
