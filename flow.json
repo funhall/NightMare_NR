@@ -8323,6 +8323,7 @@
         "persist": false,
         "proxy": "",
         "authType": "",
+        "senderr": false,
         "x": 1350,
         "y": 1300,
         "wires": [
@@ -14647,6 +14648,73 @@
                 "5801dd6cddafa481"
             ]
         ]
+    },
+    {
+        "id": "3bc1a6480e8e2f58",
+        "type": "inject",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2610,
+        "y": 2700,
+        "wires": [
+            [
+                "9d838728a2e24516"
+            ]
+        ]
+    },
+    {
+        "id": "9d838728a2e24516",
+        "type": "http request",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "192.168.1.82:1883",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2810,
+        "y": 2700,
+        "wires": [
+            [
+                "f80d5bcba3ba88f5"
+            ]
+        ]
+    },
+    {
+        "id": "f80d5bcba3ba88f5",
+        "type": "debug",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3020,
+        "y": 2700,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -24839,8 +24907,7 @@
         "g": "50bee133c969308b",
         "name": "Tænder rum 3 rød efter exit forladt",
         "links": [
-            "ec67e6f0513072c5",
-            "1c8a8a900eda16c8"
+            "ec67e6f0513072c5"
         ],
         "x": 2715,
         "y": 140,
