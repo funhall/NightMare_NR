@@ -25175,6 +25175,82 @@
         "wires": []
     },
     {
+        "id": "d7186285ab67fe7c",
+        "type": "mqtt out",
+        "z": "2bdc58f37cbddb93",
+        "name": "230V fordeler",
+        "topic": "opladerStyrring/output/D4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 2880,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "f1c9631123655b38",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "name": "HIGH",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "HIGH",
+        "payloadType": "str",
+        "x": 2530,
+        "y": 1100,
+        "wires": [
+            [
+                "d7186285ab67fe7c"
+            ]
+        ]
+    },
+    {
+        "id": "021f4cd44da42c17",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "name": "LOW",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "LOW",
+        "payloadType": "str",
+        "x": 2530,
+        "y": 1160,
+        "wires": [
+            [
+                "d7186285ab67fe7c"
+            ]
+        ]
+    },
+    {
         "id": "12696b2c777c71a4",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
