@@ -2492,8 +2492,8 @@
             "3a6371f6bef649a5"
         ],
         "env": [],
-        "x": 434,
-        "y": 2119,
+        "x": 454,
+        "y": 2059,
         "w": 1052,
         "h": 202
     },
@@ -2670,6 +2670,50 @@
         "y": -1,
         "w": 1942,
         "h": 982
+    },
+    {
+        "id": "b155502214061fe5",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3f398b6e018b7a68",
+            "11a30b89acaec2f3",
+            "f2c935c6cc9ec96a"
+        ],
+        "x": 1034,
+        "y": 1859,
+        "w": 352,
+        "h": 142
+    },
+    {
+        "id": "2049c8be1ea9c55d",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Hjælp knap",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "133b96fab803dfbd",
+            "3ac12d159e9c2588",
+            "c3111f9ba2a05816",
+            "ba24192078e47253",
+            "432a109396b75036"
+        ],
+        "env": [],
+        "x": 94,
+        "y": 2319,
+        "w": 602,
+        "h": 142
     },
     {
         "id": "82fd466d.f6c968",
@@ -28487,6 +28531,7 @@
         "id": "3f398b6e018b7a68",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
+        "g": "b155502214061fe5",
         "name": "Kors i serie",
         "topic": "boks5/input/D6",
         "qos": "2",
@@ -28496,8 +28541,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 2200,
+        "x": 1120,
+        "y": 1940,
         "wires": [
             [
                 "11a30b89acaec2f3",
@@ -28509,6 +28554,7 @@
         "id": "11a30b89acaec2f3",
         "type": "debug",
         "z": "e21f6458e5ab1eb6",
+        "g": "b155502214061fe5",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -28518,22 +28564,23 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 350,
-        "y": 2160,
+        "x": 1290,
+        "y": 1900,
         "wires": []
     },
     {
         "id": "f2c935c6cc9ec96a",
         "type": "link out",
         "z": "e21f6458e5ab1eb6",
+        "g": "b155502214061fe5",
         "name": "Kors i serie",
         "mode": "link",
         "links": [
             "5e6b985193ffd5f4",
             "71bdd19e51a7ce13"
         ],
-        "x": 355,
-        "y": 2220,
+        "x": 1295,
+        "y": 1960,
         "wires": []
     },
     {
@@ -29251,8 +29298,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 530,
-        "y": 2160,
+        "x": 550,
+        "y": 2100,
         "wires": [
             [
                 "70e7cf8d9bbc019b",
@@ -29275,8 +29322,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 2160,
+        "x": 850,
+        "y": 2100,
         "wires": []
     },
     {
@@ -29297,8 +29344,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 640,
-        "y": 2260,
+        "x": 660,
+        "y": 2200,
         "wires": [
             [
                 "71157c3451515196"
@@ -29325,8 +29372,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
-        "y": 2280,
+        "x": 830,
+        "y": 2220,
         "wires": [
             []
         ]
@@ -29349,8 +29396,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 810,
-        "y": 2200,
+        "x": 830,
+        "y": 2140,
         "wires": [
             [
                 "4c19d7e11514d75d",
@@ -29368,8 +29415,8 @@
         "links": [
             "fb18325475db6d6f"
         ],
-        "x": 915,
-        "y": 2220,
+        "x": 935,
+        "y": 2160,
         "wires": []
     },
     {
@@ -29387,8 +29434,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1400,
-        "y": 2180,
+        "x": 1420,
+        "y": 2120,
         "wires": []
     },
     {
@@ -29400,8 +29447,8 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 1025,
-        "y": 2280,
+        "x": 1045,
+        "y": 2220,
         "wires": [
             [
                 "38801871fbc76583"
@@ -29428,8 +29475,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
-        "y": 2220,
+        "x": 1160,
+        "y": 2160,
         "wires": [
             [
                 "f37bfbaa98e665f0"
@@ -29456,8 +29503,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1060,
-        "y": 2180,
+        "x": 1080,
+        "y": 2120,
         "wires": [
             [
                 "f37bfbaa98e665f0"
@@ -29724,8 +29771,8 @@
         "links": [
             "d2efb048be1713b4"
         ],
-        "x": 1275,
-        "y": 2160,
+        "x": 1295,
+        "y": 2100,
         "wires": [
             [
                 "f37bfbaa98e665f0"
@@ -30215,8 +30262,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 870,
-        "y": 2360,
+        "x": 1210,
+        "y": 2400,
         "wires": []
     },
     {
@@ -30232,8 +30279,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 690,
-        "y": 2360,
+        "x": 1030,
+        "y": 2400,
         "wires": [
             [
                 "f871f7c183e16a65"
@@ -30244,6 +30291,7 @@
         "id": "133b96fab803dfbd",
         "type": "debug",
         "z": "e21f6458e5ab1eb6",
+        "g": "2049c8be1ea9c55d",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -30260,6 +30308,7 @@
         "id": "3ac12d159e9c2588",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
+        "g": "2049c8be1ea9c55d",
         "name": "Hjælp",
         "topic": "boks9/input/D7",
         "qos": "0",
@@ -30282,6 +30331,7 @@
         "id": "c3111f9ba2a05816",
         "type": "link out",
         "z": "e21f6458e5ab1eb6",
+        "g": "2049c8be1ea9c55d",
         "name": "Hjælp",
         "mode": "link",
         "links": [
@@ -30296,6 +30346,7 @@
         "id": "ba24192078e47253",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "2049c8be1ea9c55d",
         "name": "",
         "rules": [
             {
@@ -30323,6 +30374,7 @@
         "id": "432a109396b75036",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "2049c8be1ea9c55d",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
