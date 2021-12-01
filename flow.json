@@ -17763,7 +17763,7 @@
         "width": 2,
         "height": 2,
         "gtype": "gage",
-        "title": "{{msg.ladestatus}}",
+        "title": "Clingar",
         "label": "{{msg.payload}}",
         "format": "{{value}}",
         "min": "600",
