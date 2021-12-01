@@ -19636,8 +19636,8 @@
         "width": 2,
         "height": 2,
         "gtype": "gage",
-        "title": "Huston {{msg.ladestatus}}",
-        "label": "% opladt",
+        "title": "Huston",
+        "label": "{{ladestatus}}",
         "format": "{{value}}",
         "min": "600",
         "max": "950",
@@ -19666,13 +19666,14 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 2840,
-        "y": 2960,
+        "x": 2710,
+        "y": 2980,
         "wires": [
             [
                 "16c59aebbaeb1267",
                 "f2ea9fab51d78df1",
-                "2411b1b26f124808"
+                "2411b1b26f124808",
+                "291a50899a102882"
             ]
         ]
     },
@@ -19752,12 +19753,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3170,
-        "y": 3020,
+        "x": 3020,
+        "y": 3000,
         "wires": [
             [
                 "981f35aaa00bbac8",
-                "affccc0c13245b24"
+                "affccc0c13245b24",
+                "c6ed1d2b1dd2ac4e"
             ]
         ]
     },
@@ -23236,7 +23238,7 @@
         "z": "c39524c2016c8df2",
         "g": "74a93054e49f848d",
         "name": "",
-        "func": "msg.state = msg.payload - msg.ClingarV ; \n\nreturn msg;\n",
+        "func": "msg.state = msg.payload - msg.HustonV ; \n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23259,9 +23261,9 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarV",
+                "p": "HustonV",
                 "pt": "msg",
-                "to": "ClingarV",
+                "to": "HustonV",
                 "tot": "flow"
             }
         ],
@@ -23287,7 +23289,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarV",
+                "p": "HustonV",
                 "pt": "flow",
                 "to": "$number(payload)",
                 "tot": "jsonata"
@@ -23358,7 +23360,9 @@
         "x": 3210,
         "y": 3260,
         "wires": [
-            []
+            [
+                "16c59aebbaeb1267"
+            ]
         ]
     },
     {
@@ -23389,7 +23393,9 @@
         "x": 3200,
         "y": 3300,
         "wires": [
-            []
+            [
+                "16c59aebbaeb1267"
+            ]
         ]
     },
     {
