@@ -1278,7 +1278,9 @@
             "06053da46d5f66df",
             "a36450a99015e3ed",
             "0273790d203afeaf",
-            "c8d332a30c4d8894"
+            "c8d332a30c4d8894",
+            "5689a4109386849f",
+            "491e805d55781b49"
         ],
         "x": 2594,
         "y": 2719,
@@ -17794,7 +17796,8 @@
         "wires": [
             [
                 "7aa6647e8c2332c5",
-                "f3e5442882848d98"
+                "f3e5442882848d98",
+                "491e805d55781b49"
             ]
         ]
     },
@@ -17865,13 +17868,6 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(payload)",
-                "tot": "jsonata"
-            },
-            {
-                "t": "set",
-                "p": "ClingarV",
-                "pt": "flow",
                 "to": "$number(payload)",
                 "tot": "jsonata"
             }
@@ -22846,7 +22842,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2920,
+        "x": 2960,
         "y": 2980,
         "wires": [
             [
@@ -22892,8 +22888,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2710,
-        "y": 2980,
+        "x": 2750,
+        "y": 3000,
         "wires": [
             [
                 "a36450a99015e3ed",
@@ -22908,7 +22904,7 @@
         "z": "c39524c2016c8df2",
         "g": "56a2f6be993fbac7",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -22916,8 +22912,60 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 3010,
-        "y": 3020,
+        "y": 3080,
         "wires": []
+    },
+    {
+        "id": "5689a4109386849f",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "g": "56a2f6be993fbac7",
+        "name": "Gem VAR",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ClingarV",
+                "pt": "flow",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2860,
+        "y": 2940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "491e805d55781b49",
+        "type": "delay",
+        "z": "c39524c2016c8df2",
+        "g": "56a2f6be993fbac7",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2690,
+        "y": 2940,
+        "wires": [
+            [
+                "5689a4109386849f"
+            ]
+        ]
     },
     {
         "id": "54706de9e7f6afc3",
