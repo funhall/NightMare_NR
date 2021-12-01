@@ -30231,7 +30231,7 @@
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
         "name": "Hjælp",
-        "topic": "boks5/input/D7",
+        "topic": "boks5/input/D6",
         "qos": "0",
         "datatype": "auto",
         "broker": "dca8425b.8fb18",
