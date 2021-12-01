@@ -5467,8 +5467,7 @@
         "y": 4920,
         "wires": [
             [
-                "7b83e097.a1a2a",
-                "4a7c682c.6f5538"
+                "7b83e097.a1a2a"
             ],
             [
                 "51e1a5aa.586c4c"
@@ -6162,20 +6161,6 @@
         "seg2": "",
         "x": 1720,
         "y": 820,
-        "wires": []
-    },
-    {
-        "id": "4a7c682c.6f5538",
-        "type": "link out",
-        "z": "33e76285.1cd03e",
-        "name": "Clingar placeret",
-        "links": [
-            "48666c92.6abcf4",
-            "99cb10cc7559926c",
-            "afb0532228793a44"
-        ],
-        "x": 1835,
-        "y": 4980,
         "wires": []
     },
     {
@@ -14846,7 +14831,9 @@
         "z": "33e76285.1cd03e",
         "name": "Clingar placeret",
         "mode": "link",
-        "links": [],
+        "links": [
+            "fe3c5239f9d3d177"
+        ],
         "x": 1695,
         "y": 4960,
         "wires": []
@@ -22753,6 +22740,38 @@
                 "4798beb270bfd716"
             ]
         ]
+    },
+    {
+        "id": "fe3c5239f9d3d177",
+        "type": "link in",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "links": [
+            "d25e0510be528d87"
+        ],
+        "x": 145,
+        "y": 2640,
+        "wires": [
+            [
+                "51c755e5e85b33bf"
+            ]
+        ]
+    },
+    {
+        "id": "51c755e5e85b33bf",
+        "type": "debug",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 2640,
+        "wires": []
     },
     {
         "id": "54706de9e7f6afc3",
