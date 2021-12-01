@@ -2660,7 +2660,8 @@
             "6796c49a496367b3",
             "c881f4f624bf3172",
             "a06e64ee456de322",
-            "a16f2274d093cf3c"
+            "a16f2274d093cf3c",
+            "2c78f9aaa1f30226"
         ],
         "env": [],
         "x": 1454,
@@ -25247,6 +25248,36 @@
         "wires": [
             [
                 "d7186285ab67fe7c"
+            ]
+        ]
+    },
+    {
+        "id": "2c78f9aaa1f30226",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "20",
+        "payloadType": "num",
+        "x": 2180,
+        "y": 320,
+        "wires": [
+            [
+                "ea8102888f0cc01d"
             ]
         ]
     },
