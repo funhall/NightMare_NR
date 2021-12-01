@@ -14764,13 +14764,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 860,
+        "payload": "HIGH",
+        "payloadType": "str",
+        "x": 850,
         "y": 1420,
         "wires": [
             [
-                "0f7a8868f4e92bdd"
+                "6ec4dcf3d1452e11"
             ]
         ]
     },
@@ -14794,13 +14794,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 910,
+        "payload": "LOW",
+        "payloadType": "str",
+        "x": 900,
         "y": 1480,
         "wires": [
             [
-                "37a436d54c77f495"
+                "6ec4dcf3d1452e11"
             ]
         ]
     },
