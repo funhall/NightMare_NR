@@ -22953,11 +22953,6 @@
                 "pt": "flow",
                 "to": "Opader",
                 "tot": "str"
-            },
-            {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
             }
         ],
         "action": "",
@@ -22986,11 +22981,6 @@
                 "pt": "flow",
                 "to": "% opladt",
                 "tot": "str"
-            },
-            {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
             }
         ],
         "action": "",
