@@ -2121,6 +2121,7 @@
         "id": "639befce27376865",
         "type": "group",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "",
         "style": {
             "label": true
@@ -2139,8 +2140,8 @@
             "9d7f12bb0656b299",
             "fa85f5aea340a7f6"
         ],
-        "x": 1234,
-        "y": 2559,
+        "x": 1174,
+        "y": 3199,
         "w": 822,
         "h": 302
     },
@@ -2711,9 +2712,56 @@
         ],
         "env": [],
         "x": 94,
-        "y": 2319,
+        "y": 2679,
         "w": 602,
         "h": 142
+    },
+    {
+        "id": "6bfc6e805841182b",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Gavle placeret",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a7264893ecb26a71",
+            "e80c03e02d11a5f4",
+            "df2bcf846cc7c192",
+            "0ba66c09122ef496",
+            "9b356a3f555e7f34",
+            "d6b1919b6f79f14f",
+            "742deb38d57cdc50",
+            "eca16a60c37bff03",
+            "fde6d8cc0237e16b",
+            "d1f6d04b8cdca968",
+            "029266d81c7e9406",
+            "2248455fc3791317",
+            "1de1bd04f7a3989f",
+            "e7a6640e9506382e",
+            "017ab502422f3dcc",
+            "64701d83a2df564b",
+            "c9b2cc7b980e6bba",
+            "6deb56863457b537",
+            "92b92f5ffcb60b9a",
+            "a9cf352411dbe350",
+            "5defb80adf0bc8eb",
+            "156699430e1d8077",
+            "0df8f0b1e924892c",
+            "9f018f1a2493409c",
+            "d4dd73f66756c51c",
+            "198fa221994f13b6",
+            "264827d6edc8f660",
+            "6e6654287c6cbd57",
+            "1c461ec79b4cd391",
+            "3d35d0470a384350",
+            "639befce27376865"
+        ],
+        "env": [],
+        "x": 234,
+        "y": 3099,
+        "w": 1788,
+        "h": 562
     },
     {
         "id": "82fd466d.f6c968",
@@ -27364,6 +27412,7 @@
         "id": "a7264893ecb26a71",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "",
         "topic": "gavle/input/D0",
         "qos": "2",
@@ -27372,8 +27421,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 390,
-        "y": 2520,
+        "x": 330,
+        "y": 3160,
         "wires": [
             [
                 "e80c03e02d11a5f4"
@@ -27384,6 +27433,7 @@
         "id": "e80c03e02d11a5f4",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "Hvis kiste 1",
         "property": "payload",
         "propertyType": "msg",
@@ -27402,8 +27452,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 570,
-        "y": 2520,
+        "x": 510,
+        "y": 3160,
         "wires": [
             [
                 "d1f6d04b8cdca968",
@@ -27418,6 +27468,7 @@
         "id": "df2bcf846cc7c192",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "Hvis kiste 2",
         "property": "payload",
         "propertyType": "msg",
@@ -27436,8 +27487,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 590,
-        "y": 2600,
+        "x": 530,
+        "y": 3240,
         "wires": [
             [
                 "0ba66c09122ef496",
@@ -27452,6 +27503,7 @@
         "id": "0ba66c09122ef496",
         "type": "ui_text",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "group": "58682796.70d078",
         "order": 2,
         "width": 0,
@@ -27460,14 +27512,15 @@
         "label": "2",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 970,
-        "y": 2600,
+        "x": 910,
+        "y": 3240,
         "wires": []
     },
     {
         "id": "9b356a3f555e7f34",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": " ",
         "rules": [
             {
@@ -27490,8 +27543,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2540,
+        "x": 690,
+        "y": 3180,
         "wires": [
             [
                 "d1f6d04b8cdca968",
@@ -27503,6 +27556,7 @@
         "id": "d6b1919b6f79f14f",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": " ",
         "rules": [
             {
@@ -27525,8 +27579,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2620,
+        "x": 690,
+        "y": 3260,
         "wires": [
             [
                 "0ba66c09122ef496",
@@ -27538,6 +27592,7 @@
         "id": "742deb38d57cdc50",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "Hvis kiste 3",
         "property": "payload",
         "propertyType": "msg",
@@ -27556,8 +27611,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 590,
-        "y": 2700,
+        "x": 530,
+        "y": 3340,
         "wires": [
             [
                 "029266d81c7e9406"
@@ -27571,6 +27626,7 @@
         "id": "eca16a60c37bff03",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": " ",
         "rules": [
             {
@@ -27593,8 +27649,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2720,
+        "x": 690,
+        "y": 3360,
         "wires": [
             [
                 "fde6d8cc0237e16b",
@@ -27606,6 +27662,7 @@
         "id": "fde6d8cc0237e16b",
         "type": "ui_text",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "group": "58682796.70d078",
         "order": 3,
         "width": 0,
@@ -27614,14 +27671,15 @@
         "label": "3",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 970,
-        "y": 2720,
+        "x": 910,
+        "y": 3360,
         "wires": []
     },
     {
         "id": "d1f6d04b8cdca968",
         "type": "ui_text",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "group": "58682796.70d078",
         "order": 1,
         "width": 0,
@@ -27630,14 +27688,15 @@
         "label": "1",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 970,
-        "y": 2520,
+        "x": 910,
+        "y": 3160,
         "wires": []
     },
     {
         "id": "029266d81c7e9406",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "kiste3",
         "rules": [
             {
@@ -27660,8 +27719,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2680,
+        "x": 690,
+        "y": 3320,
         "wires": [
             [
                 "fde6d8cc0237e16b",
@@ -27673,6 +27732,7 @@
         "id": "2248455fc3791317",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "Hvis kiste 4",
         "property": "payload",
         "propertyType": "msg",
@@ -27691,8 +27751,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 590,
-        "y": 2800,
+        "x": 530,
+        "y": 3440,
         "wires": [
             [
                 "017ab502422f3dcc"
@@ -27706,6 +27766,7 @@
         "id": "1de1bd04f7a3989f",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": " ",
         "rules": [
             {
@@ -27728,8 +27789,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2820,
+        "x": 690,
+        "y": 3460,
         "wires": [
             [
                 "e7a6640e9506382e",
@@ -27741,6 +27802,7 @@
         "id": "e7a6640e9506382e",
         "type": "ui_text",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "group": "58682796.70d078",
         "order": 4,
         "width": 0,
@@ -27749,14 +27811,15 @@
         "label": "4",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 970,
-        "y": 2800,
+        "x": 910,
+        "y": 3440,
         "wires": []
     },
     {
         "id": "017ab502422f3dcc",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "kiste4",
         "rules": [
             {
@@ -27779,8 +27842,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2780,
+        "x": 690,
+        "y": 3420,
         "wires": [
             [
                 "e7a6640e9506382e",
@@ -27792,6 +27855,7 @@
         "id": "64701d83a2df564b",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "Hvis kiste 5",
         "property": "payload",
         "propertyType": "msg",
@@ -27810,8 +27874,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 590,
-        "y": 2880,
+        "x": 530,
+        "y": 3520,
         "wires": [
             [
                 "92b92f5ffcb60b9a"
@@ -27825,6 +27889,7 @@
         "id": "c9b2cc7b980e6bba",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": " ",
         "rules": [
             {
@@ -27847,8 +27912,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2900,
+        "x": 690,
+        "y": 3540,
         "wires": [
             [
                 "6deb56863457b537",
@@ -27860,6 +27925,7 @@
         "id": "6deb56863457b537",
         "type": "ui_text",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "group": "58682796.70d078",
         "order": 5,
         "width": 0,
@@ -27868,14 +27934,15 @@
         "label": "5",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 970,
-        "y": 2880,
+        "x": 910,
+        "y": 3520,
         "wires": []
     },
     {
         "id": "92b92f5ffcb60b9a",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "kiste5",
         "rules": [
             {
@@ -27898,8 +27965,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2860,
+        "x": 690,
+        "y": 3500,
         "wires": [
             [
                 "6deb56863457b537",
@@ -27911,6 +27978,7 @@
         "id": "a9cf352411dbe350",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "Hvis kiste 6",
         "property": "payload",
         "propertyType": "msg",
@@ -27929,8 +27997,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 590,
-        "y": 2960,
+        "x": 530,
+        "y": 3600,
         "wires": [
             [
                 "0df8f0b1e924892c"
@@ -27944,6 +28012,7 @@
         "id": "5defb80adf0bc8eb",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": " ",
         "rules": [
             {
@@ -27966,8 +28035,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2980,
+        "x": 690,
+        "y": 3620,
         "wires": [
             [
                 "156699430e1d8077",
@@ -27979,6 +28048,7 @@
         "id": "156699430e1d8077",
         "type": "ui_text",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "group": "58682796.70d078",
         "order": 6,
         "width": 0,
@@ -27987,14 +28057,15 @@
         "label": "6",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 970,
-        "y": 2960,
+        "x": 910,
+        "y": 3600,
         "wires": []
     },
     {
         "id": "0df8f0b1e924892c",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "kiste6",
         "rules": [
             {
@@ -28017,8 +28088,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2940,
+        "x": 690,
+        "y": 3580,
         "wires": [
             [
                 "156699430e1d8077",
@@ -28030,6 +28101,7 @@
         "id": "9f018f1a2493409c",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "",
         "topic": "gavle/input/D1",
         "qos": "2",
@@ -28038,8 +28110,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 390,
-        "y": 2600,
+        "x": 330,
+        "y": 3240,
         "wires": [
             [
                 "df2bcf846cc7c192"
@@ -28050,6 +28122,7 @@
         "id": "d4dd73f66756c51c",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "",
         "topic": "gavle/input/D2",
         "qos": "2",
@@ -28058,8 +28131,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 390,
-        "y": 2700,
+        "x": 330,
+        "y": 3340,
         "wires": [
             [
                 "742deb38d57cdc50"
@@ -28070,6 +28143,7 @@
         "id": "198fa221994f13b6",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "",
         "topic": "gavle/input/D7",
         "qos": "2",
@@ -28078,8 +28152,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 390,
-        "y": 2960,
+        "x": 330,
+        "y": 3600,
         "wires": [
             [
                 "a9cf352411dbe350"
@@ -28090,6 +28164,7 @@
         "id": "264827d6edc8f660",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "",
         "topic": "gavle/input/D6",
         "qos": "2",
@@ -28098,8 +28173,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 390,
-        "y": 2880,
+        "x": 330,
+        "y": 3520,
         "wires": [
             [
                 "64701d83a2df564b"
@@ -28110,6 +28185,7 @@
         "id": "6e6654287c6cbd57",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "",
         "topic": "gavle/input/D5",
         "qos": "2",
@@ -28118,8 +28194,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 390,
-        "y": 2800,
+        "x": 330,
+        "y": 3440,
         "wires": [
             [
                 "2248455fc3791317"
@@ -28130,6 +28206,7 @@
         "id": "1c461ec79b4cd391",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "Kiste 1",
         "rules": [
             {
@@ -28152,8 +28229,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2500,
+        "x": 690,
+        "y": 3140,
         "wires": [
             [
                 "d1f6d04b8cdca968",
@@ -28165,6 +28242,7 @@
         "id": "3d35d0470a384350",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "6bfc6e805841182b",
         "name": "Kiste 2",
         "rules": [
             {
@@ -28187,8 +28265,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2580,
+        "x": 690,
+        "y": 3220,
         "wires": [
             [
                 "0ba66c09122ef496",
@@ -28218,8 +28296,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 1350,
-        "y": 2700,
+        "x": 1290,
+        "y": 3340,
         "wires": [
             [
                 "76e390f2b52af6b6"
@@ -28239,8 +28317,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1810,
-        "y": 2720,
+        "x": 1750,
+        "y": 3360,
         "wires": []
     },
     {
@@ -28255,8 +28333,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1530,
-        "y": 2700,
+        "x": 1470,
+        "y": 3340,
         "wires": [
             [
                 "081f2f1feb0890bd",
@@ -28277,8 +28355,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1530,
-        "y": 2780,
+        "x": 1470,
+        "y": 3420,
         "wires": [
             [
                 "081f2f1feb0890bd",
@@ -28309,8 +28387,8 @@
         "topic": "reset",
         "payload": "reset",
         "payloadType": "str",
-        "x": 1340,
-        "y": 2820,
+        "x": 1280,
+        "y": 3460,
         "wires": [
             [
                 "76e390f2b52af6b6"
@@ -28339,8 +28417,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 1340,
-        "y": 2760,
+        "x": 1280,
+        "y": 3400,
         "wires": [
             [
                 "83e011912e761703"
@@ -28356,8 +28434,8 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 1275,
-        "y": 2600,
+        "x": 1215,
+        "y": 3240,
         "wires": [
             [
                 "71a2516ae58d6f73"
@@ -28384,8 +28462,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1410,
-        "y": 2600,
+        "x": 1350,
+        "y": 3240,
         "wires": [
             [
                 "76e390f2b52af6b6",
@@ -28416,8 +28494,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 1980,
-        "y": 2640,
+        "x": 1920,
+        "y": 3280,
         "wires": []
     },
     {
@@ -28443,8 +28521,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1730,
-        "y": 2800,
+        "x": 1670,
+        "y": 3440,
         "wires": [
             [
                 "9d7f12bb0656b299"
@@ -28460,8 +28538,8 @@
         "name": "Alle gavle placeret",
         "mode": "link",
         "links": [],
-        "x": 1935,
-        "y": 2780,
+        "x": 1875,
+        "y": 3420,
         "wires": []
     },
     {
@@ -28484,8 +28562,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1770,
-        "y": 2640,
+        "x": 1710,
+        "y": 3280,
         "wires": [
             [
                 "351e054b23c3245f"
@@ -28597,10 +28675,10 @@
         "rh": 0,
         "inputs": 0,
         "x": 180,
-        "y": 2320,
+        "y": 2340,
         "wires": [
             [
-                "133b96fab803dfbd"
+                "ecb52a5b9e7536c7"
             ]
         ]
     },
@@ -30301,7 +30379,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 470,
-        "y": 2360,
+        "y": 2720,
         "wires": []
     },
     {
@@ -30319,7 +30397,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 170,
-        "y": 2380,
+        "y": 2740,
         "wires": [
             [
                 "133b96fab803dfbd",
@@ -30339,7 +30417,7 @@
             "80a868808fc1a091"
         ],
         "x": 655,
-        "y": 2420,
+        "y": 2780,
         "wires": []
     },
     {
@@ -30363,7 +30441,7 @@
         "to": "",
         "reg": false,
         "x": 500,
-        "y": 2420,
+        "y": 2780,
         "wires": [
             [
                 "c3111f9ba2a05816"
@@ -30389,12 +30467,28 @@
         "repair": false,
         "outputs": 1,
         "x": 310,
-        "y": 2400,
+        "y": 2760,
         "wires": [
             [
                 "ba24192078e47253"
             ]
         ]
+    },
+    {
+        "id": "ecb52a5b9e7536c7",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 2320,
+        "wires": []
     },
     {
         "id": "dce242cef0b59c86",
