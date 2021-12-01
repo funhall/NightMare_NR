@@ -4484,6 +4484,35 @@
         "wires": []
     },
     {
+        "id": "04a6f96c2832f715",
+        "type": "inject",
+        "z": "d8dbfa496c5848bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 360,
+        "wires": [
+            [
+                "47f8333.7595f4c"
+            ]
+        ]
+    },
+    {
         "id": "174b209f.447edf",
         "type": "inject",
         "z": "33e76285.1cd03e",
