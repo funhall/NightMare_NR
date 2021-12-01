@@ -23826,7 +23826,7 @@
         "z": "c39524c2016c8df2",
         "g": "ec0b0362cc35fc8b",
         "name": "",
-        "func": "msg.state = msg.payload - msg.ClingarV ; \n\nreturn msg;\n",
+        "func": "msg.state = msg.payload - msg.NellieV ; \n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -23849,9 +23849,9 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarV",
+                "p": "NellieV",
                 "pt": "msg",
-                "to": "ClingarV",
+                "to": "NellieV",
                 "tot": "flow"
             }
         ],
@@ -23860,7 +23860,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2660,
+        "x": 2650,
         "y": 1120,
         "wires": [
             [
@@ -23877,7 +23877,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarV",
+                "p": "NellieV",
                 "pt": "flow",
                 "to": "$number(payload)",
                 "tot": "jsonata"
