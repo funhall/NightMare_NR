@@ -17762,7 +17762,7 @@
         "width": 2,
         "height": 2,
         "gtype": "gage",
-        "title": "Clingar {{msg.ladestatus}}",
+        "title": "{{msg.ladestatus}}",
         "label": "{{msg.state}}",
         "format": "{{value}}",
         "min": "600",
