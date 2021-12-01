@@ -22810,7 +22810,7 @@
         "z": "c39524c2016c8df2",
         "g": "56a2f6be993fbac7",
         "name": "",
-        "property": "payload",
+        "property": "state",
         "propertyType": "msg",
         "rules": [
             {
@@ -22846,7 +22846,7 @@
         "z": "c39524c2016c8df2",
         "g": "56a2f6be993fbac7",
         "name": "",
-        "func": "msg.payload = msg.payload - msg.ClingarV ; \n\nreturn msg;\n",
+        "func": "msg.state = msg.payload - msg.ClingarV ; \n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -22953,6 +22953,11 @@
                 "pt": "flow",
                 "to": "Opader",
                 "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
             }
         ],
         "action": "",
@@ -22981,6 +22986,11 @@
                 "pt": "flow",
                 "to": "% opladt",
                 "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
             }
         ],
         "action": "",
