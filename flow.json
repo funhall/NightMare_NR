@@ -1273,12 +1273,16 @@
             "6bafe551de43859f",
             "fa486b66b21c8d8d",
             "84744d2365363019",
-            "32e390951e2048f0"
+            "32e390951e2048f0",
+            "83585472bf1c4f08",
+            "06053da46d5f66df",
+            "a36450a99015e3ed",
+            "0273790d203afeaf"
         ],
-        "x": 2604,
+        "x": 2594,
         "y": 2719,
-        "w": 2172,
-        "h": 402
+        "w": 2182,
+        "h": 462
     },
     {
         "id": "1f4e2aa155dc0a1c",
@@ -14943,8 +14947,9 @@
         "id": "06053da46d5f66df",
         "type": "debug",
         "z": "c39524c2016c8df2",
+        "g": "56a2f6be993fbac7",
         "name": "Clingar MSG",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14953,7 +14958,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2790,
-        "y": 3020,
+        "y": 3100,
         "wires": []
     },
     {
@@ -17875,13 +17880,14 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2880,
-        "y": 2940,
+        "x": 2860,
+        "y": 2900,
         "wires": [
             [
                 "c0fe1a0a03c96855",
                 "27174f169b0497ac",
-                "32e390951e2048f0"
+                "32e390951e2048f0",
+                "0273790d203afeaf"
             ]
         ]
     },
@@ -17933,8 +17939,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3180,
-        "y": 3020,
+        "x": 3210,
+        "y": 3080,
         "wires": [
             [
                 "cdb45038e037b752",
@@ -18195,8 +18201,8 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 3350,
-        "y": 3080,
+        "x": 3380,
+        "y": 3140,
         "wires": [
             [
                 "dd64fbc50f380971"
@@ -18215,8 +18221,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3360,
-        "y": 3020,
+        "x": 3390,
+        "y": 3080,
         "wires": [
             [
                 "cdb45038e037b752",
@@ -22795,8 +22801,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3000,
-        "y": 3020,
+        "x": 3030,
+        "y": 3080,
         "wires": []
     },
     {
@@ -22820,14 +22826,78 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 3090,
-        "y": 2960,
+        "x": 3110,
+        "y": 2980,
         "wires": [
             [
                 "84744d2365363019"
             ],
+            []
+        ]
+    },
+    {
+        "id": "a36450a99015e3ed",
+        "type": "function",
+        "z": "c39524c2016c8df2",
+        "g": "56a2f6be993fbac7",
+        "name": "",
+        "func": "msg.payload = msg.payload + msg.ClingarV ; return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2920,
+        "y": 2980,
+        "wires": [
             [
                 "06053da46d5f66df"
+            ]
+        ]
+    },
+    {
+        "id": "83585472bf1c4f08",
+        "type": "calculator",
+        "z": "c39524c2016c8df2",
+        "g": "56a2f6be993fbac7",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "",
+        "constant": null,
+        "round": false,
+        "decimals": 0,
+        "x": 3260,
+        "y": 3000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0273790d203afeaf",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "g": "56a2f6be993fbac7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ClingarV",
+                "pt": "msg",
+                "to": "ClingarV",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2710,
+        "y": 2980,
+        "wires": [
+            [
+                "a36450a99015e3ed"
             ]
         ]
     },
