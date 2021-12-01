@@ -17764,7 +17764,7 @@
         "height": 2,
         "gtype": "gage",
         "title": "Clingar",
-        "label": "{{msg.ladestatus}}",
+        "label": "{{ladestatus}}",
         "format": "{{value}}",
         "min": "600",
         "max": "950",
