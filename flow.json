@@ -23092,7 +23092,7 @@
         "name": "",
         "interval": "30",
         "step": "10",
-        "minValue": "20",
+        "minValue": "400",
         "maxValue": "1024",
         "startIncCommand": "start_op",
         "stopIncCommand": "stop_op",
