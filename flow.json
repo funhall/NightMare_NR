@@ -14955,7 +14955,7 @@
         "z": "c39524c2016c8df2",
         "g": "56a2f6be993fbac7",
         "name": "Clingar MSG",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -22822,7 +22822,7 @@
             {
                 "t": "lt",
                 "v": "-10",
-                "vt": "str"
+                "vt": "num"
             }
         ],
         "checkall": "true",
