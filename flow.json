@@ -22949,8 +22949,8 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarLadeStatus",
-                "pt": "flow",
+                "p": "ladestatus",
+                "pt": "msg",
                 "to": "Opader",
                 "tot": "str"
             },
@@ -22982,8 +22982,8 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarLadeStatus",
-                "pt": "flow",
+                "p": "ladestatus",
+                "pt": "msg",
                 "to": "% opladt",
                 "tot": "str"
             },
