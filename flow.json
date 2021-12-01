@@ -25179,7 +25179,7 @@
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
         "name": "Lys over skænk",
-        "topic": "opladerStyrring/output/D5",
+        "topic": "opladerStyrring/output/D6",
         "qos": "",
         "retain": "",
         "respTopic": "",
