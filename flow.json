@@ -23939,7 +23939,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "HIGH",
+                "to": "800",
                 "tot": "str"
             }
         ],
@@ -24050,8 +24050,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 1760,
-        "y": 1460,
+        "x": 1620,
+        "y": 1240,
         "wires": [
             [
                 "fbabc0cc0b49b0e0"
@@ -24124,149 +24124,6 @@
         "wires": [
             [
                 "203a8c4b782d1ab6"
-            ]
-        ]
-    },
-    {
-        "id": "63e9886ad90c2504",
-        "type": "mqtt out",
-        "z": "2bdc58f37cbddb93",
-        "name": "Kiste rød",
-        "topic": "belysning/output/D0",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dca8425b.8fb18",
-        "x": 1900,
-        "y": 1280,
-        "wires": []
-    },
-    {
-        "id": "8d5b30b02536a1a1",
-        "type": "inject",
-        "z": "2bdc58f37cbddb93",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1024",
-        "payloadType": "num",
-        "x": 1710,
-        "y": 1220,
-        "wires": [
-            [
-                "63e9886ad90c2504"
-            ]
-        ]
-    },
-    {
-        "id": "a5c93dfe122a349f",
-        "type": "inject",
-        "z": "2bdc58f37cbddb93",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 1680,
-        "y": 1360,
-        "wires": [
-            [
-                "63e9886ad90c2504"
-            ]
-        ]
-    },
-    {
-        "id": "a16de5d9ab7d9ad5",
-        "type": "inject",
-        "z": "2bdc58f37cbddb93",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "300",
-        "payloadType": "str",
-        "x": 1690,
-        "y": 1280,
-        "wires": [
-            [
-                "63e9886ad90c2504"
-            ]
-        ]
-    },
-    {
-        "id": "4bd06177cf5be753",
-        "type": "inject",
-        "z": "2bdc58f37cbddb93",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "10",
-        "payloadType": "num",
-        "x": 1690,
-        "y": 1320,
-        "wires": [
-            [
-                "63e9886ad90c2504"
-            ]
-        ]
-    },
-    {
-        "id": "a713216a4f7b8620",
-        "type": "inject",
-        "z": "2bdc58f37cbddb93",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "FLASH",
-        "payloadType": "str",
-        "x": 1680,
-        "y": 1400,
-        "wires": [
-            [
-                "63e9886ad90c2504"
             ]
         ]
     },
