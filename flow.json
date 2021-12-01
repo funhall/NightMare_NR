@@ -1837,7 +1837,9 @@
         ],
         "env": [],
         "x": 394,
-        "y": 199
+        "y": 199,
+        "w": 1732,
+        "h": 222
     },
     {
         "id": "7ba464075860abd5",
@@ -1876,7 +1878,7 @@
         "x": -6,
         "y": 1179,
         "w": 1712,
-        "h": 362
+        "h": 382
     },
     {
         "id": "f4e5ec1eb5ea4c59",
@@ -2201,7 +2203,9 @@
         ],
         "env": [],
         "x": 204,
-        "y": 799
+        "y": 799,
+        "w": 752,
+        "h": 202
     },
     {
         "id": "6150c52ec6fe7e34",
@@ -2224,7 +2228,9 @@
         ],
         "env": [],
         "x": 214,
-        "y": 1039
+        "y": 1039,
+        "w": 582,
+        "h": 222
     },
     {
         "id": "6188f0082d3cd712",
@@ -2246,7 +2252,9 @@
         ],
         "env": [],
         "x": 134,
-        "y": 1299
+        "y": 1299,
+        "w": 782,
+        "h": 162
     },
     {
         "id": "a6cfbf982760de76",
@@ -2270,7 +2278,9 @@
         ],
         "env": [],
         "x": 194,
-        "y": 539
+        "y": 539,
+        "w": 592,
+        "h": 202
     },
     {
         "id": "76a42ecf9d41a454",
@@ -2293,7 +2303,9 @@
         ],
         "env": [],
         "x": 154,
-        "y": 1559
+        "y": 1559,
+        "w": 1272,
+        "h": 202
     },
     {
         "id": "a6f421fadc3317ef",
@@ -2511,7 +2523,9 @@
             "c703ac26ef2d16b2"
         ],
         "x": 974,
-        "y": 499
+        "y": 499,
+        "w": 1012,
+        "h": 202
     },
     {
         "id": "50bee133c969308b",
@@ -11580,35 +11594,6 @@
         "wires": []
     },
     {
-        "id": "46bb072c.9ab548",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "Reset",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "0.5",
-        "topic": "",
-        "payload": "on",
-        "payloadType": "str",
-        "x": 1410,
-        "y": 1620,
-        "wires": [
-            [
-                "fdf099ba30f3cc34"
-            ]
-        ]
-    },
-    {
         "id": "0694531c991e32c6",
         "type": "subflow:d8dbfa496c5848bc",
         "z": "33e76285.1cd03e",
@@ -14753,12 +14738,12 @@
         "type": "ewelink-power-state-write",
         "z": "33e76285.1cd03e",
         "g": "7ba464075860abd5",
-        "name": "",
+        "name": "Tænder 230v Fordeler boks",
         "deviceId": "1000c81063",
         "channel": 1,
         "auth": "7fff307a232ab69e",
-        "x": 1495,
-        "y": 1480,
+        "x": 1555,
+        "y": 1520,
         "wires": [
             []
         ],
@@ -14817,50 +14802,6 @@
         "wires": [
             [
                 "0d5a3412a809c7c0"
-            ]
-        ]
-    },
-    {
-        "id": "fdf099ba30f3cc34",
-        "type": "ewelink-power-state-write",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "deviceId": "10005e9aba",
-        "channel": 1,
-        "auth": "7fff307a232ab69e",
-        "x": 1675,
-        "y": 1620,
-        "wires": [
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "81d1e9b7378364dd",
-        "type": "inject",
-        "z": "33e76285.1cd03e",
-        "name": "Reset",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "0.5",
-        "topic": "",
-        "payload": "off",
-        "payloadType": "str",
-        "x": 1410,
-        "y": 1680,
-        "wires": [
-            [
-                "fdf099ba30f3cc34"
             ]
         ]
     },
