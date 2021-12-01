@@ -22797,7 +22797,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 3030,
@@ -22854,7 +22855,8 @@
         "y": 3020,
         "wires": [
             [
-                "32e390951e2048f0"
+                "32e390951e2048f0",
+                "06053da46d5f66df"
             ]
         ]
     },
