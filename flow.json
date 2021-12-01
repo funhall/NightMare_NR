@@ -25243,7 +25243,7 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "LOW",
@@ -25341,6 +25341,33 @@
         "wires": [
             [
                 "2f9f9a0afba2d10f"
+            ]
+        ]
+    },
+    {
+        "id": "1a6389a07eebfdb9",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2060,
+        "y": 1080,
+        "wires": [
+            [
+                "d7186285ab67fe7c"
             ]
         ]
     },
