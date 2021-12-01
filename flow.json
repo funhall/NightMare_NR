@@ -24544,8 +24544,8 @@
         "g": "50bee133c969308b",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 2100,
-        "y": 440,
+        "x": 1940,
+        "y": 320,
         "wires": [
             [
                 "ea8102888f0cc01d"
@@ -24673,6 +24673,7 @@
         "name": "Klargørring",
         "links": [
             "2b480c9c40b1ae41",
+            "c3111f9ba2a05816",
             "e8ba061f5f8c7fec"
         ],
         "x": 1615,
@@ -30222,7 +30223,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 380,
+        "x": 470,
         "y": 2360,
         "wires": []
     },
@@ -30243,9 +30244,23 @@
         "y": 2380,
         "wires": [
             [
-                "133b96fab803dfbd"
+                "133b96fab803dfbd",
+                "c3111f9ba2a05816"
             ]
         ]
+    },
+    {
+        "id": "c3111f9ba2a05816",
+        "type": "link out",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Hjælp",
+        "mode": "link",
+        "links": [
+            "80a868808fc1a091"
+        ],
+        "x": 285,
+        "y": 2420,
+        "wires": []
     },
     {
         "id": "dce242cef0b59c86",
