@@ -1271,7 +1271,8 @@
             "bd0937edd17ade5a",
             "0d9e88199dc75c24",
             "6bafe551de43859f",
-            "fa486b66b21c8d8d"
+            "fa486b66b21c8d8d",
+            "84744d2365363019"
         ],
         "x": 2604,
         "y": 2719,
@@ -17859,6 +17860,13 @@
                 "pt": "msg",
                 "to": "$number(payload)",
                 "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -17871,7 +17879,8 @@
         "wires": [
             [
                 "c0fe1a0a03c96855",
-                "27174f169b0497ac"
+                "27174f169b0497ac",
+                "84744d2365363019"
             ]
         ]
     },
@@ -22771,6 +22780,23 @@
         "statusType": "auto",
         "x": 320,
         "y": 2640,
+        "wires": []
+    },
+    {
+        "id": "84744d2365363019",
+        "type": "debug",
+        "z": "c39524c2016c8df2",
+        "g": "56a2f6be993fbac7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3000,
+        "y": 3020,
         "wires": []
     },
     {
