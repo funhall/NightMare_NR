@@ -23010,7 +23010,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "ClingarLadeStatus",
+                "p": "LadeStatus",
                 "pt": "msg",
                 "to": "ClingarLadeStatus",
                 "tot": "flow"
@@ -23021,7 +23021,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3000,
+        "x": 2940,
         "y": 2880,
         "wires": [
             [
