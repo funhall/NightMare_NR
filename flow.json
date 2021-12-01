@@ -1272,9 +1272,7 @@
             "0d9e88199dc75c24",
             "6bafe551de43859f",
             "fa486b66b21c8d8d",
-            "84744d2365363019",
             "32e390951e2048f0",
-            "06053da46d5f66df",
             "a36450a99015e3ed",
             "0273790d203afeaf",
             "5689a4109386849f",
@@ -1284,9 +1282,9 @@
             "b36bd1201a0be188",
             "58632a1d3ae28e31"
         ],
-        "x": 2624,
+        "x": 2634,
         "y": 2699,
-        "w": 2182,
+        "w": 2172,
         "h": 482
     },
     {
@@ -14867,38 +14865,6 @@
         "wires": []
     },
     {
-        "id": "5e852946e3ad668f",
-        "type": "nbrowser",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "methods": [
-            {
-                "name": "gotoURL",
-                "func": "goto",
-                "params": [
-                    {
-                        "type": "msg",
-                        "value": "payload",
-                        "typeDefault": "str"
-                    }
-                ]
-            }
-        ],
-        "prop": "nbrowser",
-        "propout": "payload",
-        "object": "msg",
-        "objectout": "msg",
-        "close": false,
-        "show": true,
-        "ssl": false,
-        "outputs": 1,
-        "x": 2960,
-        "y": 3600,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "5cbe7ee91a54670e",
         "type": "debug",
         "z": "c39524c2016c8df2",
@@ -14946,40 +14912,6 @@
         "statusType": "auto",
         "x": 2840,
         "y": 2520,
-        "wires": []
-    },
-    {
-        "id": "06053da46d5f66df",
-        "type": "debug",
-        "z": "c39524c2016c8df2",
-        "g": "56a2f6be993fbac7",
-        "name": "Clingar MSG",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "ladestatus",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2970,
-        "y": 3120,
-        "wires": []
-    },
-    {
-        "id": "793934b3c2e24d94",
-        "type": "debug",
-        "z": "c39524c2016c8df2",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2910,
-        "y": 3520,
         "wires": []
     },
     {
@@ -17937,8 +17869,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3240,
-        "y": 3060,
+        "x": 3290,
+        "y": 3140,
         "wires": [
             [
                 "cdb45038e037b752",
@@ -18199,7 +18131,7 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 3410,
+        "x": 3460,
         "y": 3120,
         "wires": [
             [
@@ -18219,8 +18151,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3420,
-        "y": 3060,
+        "x": 3450,
+        "y": 3080,
         "wires": [
             [
                 "cdb45038e037b752",
@@ -18599,7 +18531,7 @@
         "height": 2,
         "gtype": "gage",
         "title": "Connel {{msg.ladestatus}}",
-        "label": "% opladt",
+        "label": "{{ladestatus}}",
         "format": "{{value}}",
         "min": "600",
         "max": "950",
@@ -18634,7 +18566,7 @@
             [
                 "ee790007d5c22bfc",
                 "7a1b47bdd9096bba",
-                "793934b3c2e24d94"
+                "19ea3ad911d50f27"
             ]
         ]
     },
@@ -18712,12 +18644,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3270,
-        "y": 3440,
+        "x": 3140,
+        "y": 3420,
         "wires": [
             [
                 "d5a2a9a8303107d9",
-                "55e287a0a4febdf8"
+                "55e287a0a4febdf8",
+                "eab821ee909cbaea"
             ]
         ]
     },
@@ -18769,8 +18702,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3280,
-        "y": 3520,
+        "x": 3590,
+        "y": 3640,
         "wires": [
             [
                 "9a153f71499ddf6e"
@@ -18784,8 +18717,8 @@
         "g": "1f4e2aa155dc0a1c",
         "name": "",
         "topic": "",
-        "x": 3610,
-        "y": 3520,
+        "x": 3920,
+        "y": 3640,
         "wires": [
             [
                 "ded45130eaa4be44",
@@ -18992,8 +18925,8 @@
         "randomUnits": "seconds",
         "drop": false,
         "outputs": 1,
-        "x": 3550,
-        "y": 3600,
+        "x": 3860,
+        "y": 3720,
         "wires": [
             [
                 "795d262b0945c982"
@@ -19012,8 +18945,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3540,
-        "y": 3560,
+        "x": 3850,
+        "y": 3680,
         "wires": [
             [
                 "9a153f71499ddf6e",
@@ -19395,8 +19328,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3810,
-        "y": 3620,
+        "x": 4120,
+        "y": 3740,
         "wires": []
     },
     {
@@ -19419,8 +19352,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3890,
-        "y": 3540,
+        "x": 4200,
+        "y": 3660,
         "wires": [
             [
                 "9c696163278633a1"
@@ -19447,8 +19380,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3890,
-        "y": 3500,
+        "x": 4200,
+        "y": 3620,
         "wires": [
             [
                 "e64b37917bb3ab40"
@@ -22787,24 +22720,6 @@
         "wires": []
     },
     {
-        "id": "84744d2365363019",
-        "type": "debug",
-        "z": "c39524c2016c8df2",
-        "g": "56a2f6be993fbac7",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "ladestatus",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3420,
-        "y": 2900,
-        "wires": []
-    },
-    {
         "id": "32e390951e2048f0",
         "type": "switch",
         "z": "c39524c2016c8df2",
@@ -22906,7 +22821,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2890,
+        "x": 2960,
         "y": 2920,
         "wires": [
             []
@@ -22930,7 +22845,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2720,
+        "x": 2770,
         "y": 2920,
         "wires": [
             [
@@ -22949,7 +22864,7 @@
                 "t": "set",
                 "p": "ladestatus",
                 "pt": "msg",
-                "to": "Opader",
+                "to": "Oplader",
                 "tot": "str"
             },
             {
@@ -22967,8 +22882,7 @@
         "y": 2980,
         "wires": [
             [
-                "f3e5442882848d98",
-                "84744d2365363019"
+                "f3e5442882848d98"
             ]
         ]
     },
@@ -23001,8 +22915,7 @@
         "y": 3020,
         "wires": [
             [
-                "f3e5442882848d98",
-                "06053da46d5f66df"
+                "f3e5442882848d98"
             ]
         ]
     },
@@ -23032,6 +22945,199 @@
         "y": 3140,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "b06695ef3ab5f5b9",
+        "type": "switch",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "property": "state",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "10",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "-10",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3370,
+        "y": 3540,
+        "wires": [
+            [
+                "516ff946069188bf"
+            ],
+            [
+                "1868e400555d734a"
+            ]
+        ]
+    },
+    {
+        "id": "9fadaaed75f3bb75",
+        "type": "function",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "func": "msg.state = msg.payload - msg.ClingarV ; \n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3230,
+        "y": 3540,
+        "wires": [
+            [
+                "b06695ef3ab5f5b9"
+            ]
+        ]
+    },
+    {
+        "id": "eab821ee909cbaea",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ClingarV",
+                "pt": "msg",
+                "to": "ClingarV",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3020,
+        "y": 3560,
+        "wires": [
+            [
+                "9fadaaed75f3bb75"
+            ]
+        ]
+    },
+    {
+        "id": "c1ab8e4f023dd317",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "Gem VAR",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ClingarV",
+                "pt": "flow",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3220,
+        "y": 3460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19ea3ad911d50f27",
+        "type": "delay",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 3030,
+        "y": 3460,
+        "wires": [
+            [
+                "c1ab8e4f023dd317"
+            ]
+        ]
+    },
+    {
+        "id": "516ff946069188bf",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "Oplader",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ladestatus",
+                "pt": "msg",
+                "to": "Oplader",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3540,
+        "y": 3520,
+        "wires": [
+            [
+                "7a1b47bdd9096bba"
+            ]
+        ]
+    },
+    {
+        "id": "1868e400555d734a",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "Oplader ikke",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ladestatus",
+                "pt": "msg",
+                "to": "% opladt",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3530,
+        "y": 3560,
+        "wires": [
+            [
+                "7a1b47bdd9096bba"
+            ]
         ]
     },
     {
