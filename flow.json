@@ -27122,12 +27122,10 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1010,
-        "y": 800,
+        "x": 960,
+        "y": 740,
         "wires": [
-            [
-                "5b7cfa19a9a51b86"
-            ],
+            [],
             [
                 "9acbf97818726d0c"
             ]
