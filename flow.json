@@ -1770,9 +1770,9 @@
             "4c7635bd77117228",
             "5e4926451de02828"
         ],
-        "x": 114,
+        "x": 54,
         "y": 699,
-        "w": 1192,
+        "w": 1252,
         "h": 302
     },
     {
@@ -26146,7 +26146,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 220,
+        "x": 160,
         "y": 820,
         "wires": [
             [
@@ -29329,8 +29329,8 @@
         "name": "Kiste lås status",
         "mode": "link",
         "links": [],
-        "x": 405,
-        "y": 880,
+        "x": 335,
+        "y": 860,
         "wires": []
     },
     {
@@ -30317,11 +30317,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 260,
+        "x": 280,
         "y": 900,
         "wires": []
     },
