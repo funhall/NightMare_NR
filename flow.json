@@ -23014,6 +23014,11 @@
                 "pt": "msg",
                 "to": "ClingarLadeStatus",
                 "tot": "flow"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
             }
         ],
         "action": "",
@@ -23021,7 +23026,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2930,
+        "x": 2920,
         "y": 2880,
         "wires": [
             [
