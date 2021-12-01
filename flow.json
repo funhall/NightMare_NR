@@ -22840,7 +22840,7 @@
         "z": "c39524c2016c8df2",
         "g": "56a2f6be993fbac7",
         "name": "",
-        "func": "msg.payload = msg.payload - msg.ClingarV ; return msg;\n",
+        "func": "msg.payload = msg.payload + msg.ClingarV ; \n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
