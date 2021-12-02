@@ -2867,7 +2867,8 @@
             "214a5c9e5ff6d042",
             "92391051f73c0484",
             "c7030f227c970e79",
-            "37230a6eb083dae0"
+            "37230a6eb083dae0",
+            "e4403d44e45a07c3"
         ],
         "env": [],
         "x": 2214,
@@ -34535,7 +34536,6 @@
         "y": 520,
         "wires": [
             [
-                "92391051f73c0484",
                 "a2d03487e12c569b"
             ]
         ]
@@ -34589,17 +34589,17 @@
         "type": "http request",
         "z": "42a18184186a4f43",
         "g": "1585a1b00ddf0369",
-        "name": "",
+        "name": "Play",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=volume&val=220",
+        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=pl_play",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2670,
+        "x": 2650,
         "y": 460,
         "wires": [
             []
@@ -34638,7 +34638,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2750,
+        "x": 2830,
         "y": 520,
         "wires": [
             []
@@ -34680,6 +34680,36 @@
         "y": 420,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "e4403d44e45a07c3",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "1585a1b00ddf0369",
+        "name": "go",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 2310,
+        "y": 440,
+        "wires": [
+            [
+                "51154fc736916e3a"
+            ]
         ]
     },
     {
