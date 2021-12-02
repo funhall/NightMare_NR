@@ -34534,7 +34534,9 @@
         "x": 2580,
         "y": 520,
         "wires": [
-            []
+            [
+                "92391051f73c0484"
+            ]
         ]
     },
     {
@@ -34631,13 +34633,14 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_play",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 2310,
-        "y": 540,
+        "senderr": false,
+        "x": 2750,
+        "y": 520,
         "wires": [
             []
         ]
