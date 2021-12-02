@@ -2864,21 +2864,19 @@
         "nodes": [
             "ed3a81289b4ed29f",
             "dad7a883ce69f9fe",
-            "b2306b7d319f8fc2",
-            "a2d03487e12c569b",
             "51154fc736916e3a",
             "214a5c9e5ff6d042",
             "92391051f73c0484",
-            "c7030f227c970e79",
             "37230a6eb083dae0",
             "e4403d44e45a07c3",
-            "2de31bae10a60452"
+            "2de31bae10a60452",
+            "6f22a71841f1bb91"
         ],
         "env": [],
-        "x": 2214,
+        "x": 2234,
         "y": 379,
-        "w": 832,
-        "h": 282
+        "w": 712,
+        "h": 262
     },
     {
         "id": "82fd466d.f6c968",
@@ -9778,7 +9776,8 @@
             "d853366775888253",
             "0b7a3e6985c967c2",
             "10895e061de3f851",
-            "a59e66d55d8a62c8"
+            "a59e66d55d8a62c8",
+            "6f22a71841f1bb91"
         ],
         "x": 1335,
         "y": 280,
@@ -34471,7 +34470,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 2310,
+        "x": 2330,
         "y": 500,
         "wires": [
             [
@@ -34494,57 +34493,12 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2580,
+        "x": 2600,
         "y": 520,
         "wires": [
             [
-                "a2d03487e12c569b",
                 "92391051f73c0484"
             ]
-        ]
-    },
-    {
-        "id": "b2306b7d319f8fc2",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "1585a1b00ddf0369",
-        "name": "Pause",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 2970,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a2d03487e12c569b",
-        "type": "delay",
-        "z": "42a18184186a4f43",
-        "g": "1585a1b00ddf0369",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 2560,
-        "y": 580,
-        "wires": [
-            []
         ]
     },
     {
@@ -34562,10 +34516,12 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2650,
+        "x": 2670,
         "y": 460,
         "wires": [
-            []
+            [
+                "37230a6eb083dae0"
+            ]
         ]
     },
     {
@@ -34578,11 +34534,11 @@
             "435332b4bc93c875",
             "76d47205b68c9455"
         ],
-        "x": 2335,
-        "y": 600,
+        "x": 2475,
+        "y": 480,
         "wires": [
             [
-                "dad7a883ce69f9fe"
+                "51154fc736916e3a"
             ]
         ]
     },
@@ -34601,46 +34557,29 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2830,
+        "x": 2850,
         "y": 520,
         "wires": [
             []
         ]
     },
     {
-        "id": "c7030f227c970e79",
-        "type": "debug",
-        "z": "42a18184186a4f43",
-        "g": "1585a1b00ddf0369",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2700,
-        "y": 620,
-        "wires": []
-    },
-    {
         "id": "37230a6eb083dae0",
         "type": "http request",
         "z": "42a18184186a4f43",
         "g": "1585a1b00ddf0369",
-        "name": "",
+        "name": "Volume 220",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=volume&val=200",
+        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=volume&val=220",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2670,
-        "y": 420,
+        "x": 2850,
+        "y": 440,
         "wires": [
             []
         ]
@@ -34667,7 +34606,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 2310,
+        "x": 2330,
         "y": 440,
         "wires": [
             [
@@ -34697,7 +34636,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 2430,
+        "x": 2450,
         "y": 420,
         "wires": [
             [
@@ -34794,6 +34733,23 @@
         "y": 520,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "6f22a71841f1bb91",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "1585a1b00ddf0369",
+        "name": "Henter film til loft rum 2",
+        "links": [
+            "3f275e5d73da77dc"
+        ],
+        "x": 2305,
+        "y": 600,
+        "wires": [
+            [
+                "dad7a883ce69f9fe"
+            ]
         ]
     },
     {
