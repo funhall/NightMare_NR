@@ -2341,11 +2341,12 @@
             "c703ac26ef2d16b2",
             "0de9eab863997cfc",
             "a59e66d55d8a62c8",
-            "b7ce3672a74b263a"
+            "b7ce3672a74b263a",
+            "6d1786f0e16c4b70"
         ],
         "x": 1014,
         "y": 419,
-        "w": 1012,
+        "w": 832,
         "h": 242
     },
     {
@@ -34266,8 +34267,7 @@
         "y": 560,
         "wires": [
             [
-                "250234e882b74c25",
-                "624dd6b2578797a0"
+                "250234e882b74c25"
             ]
         ]
     },
@@ -34286,8 +34286,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1920,
-        "y": 520,
+        "x": 1720,
+        "y": 620,
         "wires": [
             []
         ]
@@ -34343,7 +34343,7 @@
         "type": "http request",
         "z": "42a18184186a4f43",
         "g": "bbd4e40c062e81e6",
-        "name": "",
+        "name": "Vol 220",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
@@ -34353,8 +34353,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1470,
-        "y": 500,
+        "x": 1640,
+        "y": 460,
         "wires": [
             []
         ]
@@ -34396,11 +34396,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1680,
+        "x": 1440,
         "y": 520,
         "wires": [
             [
-                "bdd99e813bcd034d"
+                "6d1786f0e16c4b70"
             ]
         ]
     },
@@ -34422,7 +34422,9 @@
         "x": 1490,
         "y": 460,
         "wires": [
-            []
+            [
+                "624dd6b2578797a0"
+            ]
         ]
     },
     {
@@ -34464,7 +34466,6 @@
         "y": 600,
         "wires": [
             [
-                "624dd6b2578797a0",
                 "250234e882b74c25",
                 "954310af0e684e1e"
             ]
@@ -34794,6 +34795,27 @@
             [
                 "0de9eab863997cfc"
             ]
+        ]
+    },
+    {
+        "id": "6d1786f0e16c4b70",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Pause",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_play",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1670,
+        "y": 520,
+        "wires": [
+            []
         ]
     },
     {
