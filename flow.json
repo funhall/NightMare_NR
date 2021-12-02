@@ -34413,12 +34413,13 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_play",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 1750,
+        "senderr": false,
+        "x": 1490,
         "y": 460,
         "wires": [
             []
@@ -34734,7 +34735,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_pause&input=/home/pi/DullScream.mp3",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=/home/pi/DullScream.mp3",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -34743,7 +34744,9 @@
         "x": 1330,
         "y": 460,
         "wires": [
-            []
+            [
+                "bedc926fcb82674b"
+            ]
         ]
     },
     {
