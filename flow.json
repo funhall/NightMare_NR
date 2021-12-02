@@ -34320,8 +34320,8 @@
         "g": "bbd4e40c062e81e6",
         "name": "",
         "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
+        "timeout": "1500",
+        "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
@@ -34331,7 +34331,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1600,
+        "x": 1620,
         "y": 560,
         "wires": [
             [
