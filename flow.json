@@ -1644,7 +1644,6 @@
         "nodes": [
             "0d5a3412a809c7c0",
             "8b9bfac458be4957",
-            "6ec4dcf3d1452e11",
             "e092439690e79b56",
             "d7638f88152afda5",
             "5c5514b89c316c0b",
@@ -1664,13 +1663,13 @@
             "8e57d8cd5d2584da",
             "0e003c0511679609",
             "24a658ecf5c30ec5",
-            "72bb79309020f295",
-            "c7ef8cd761f3971c"
+            "c7ef8cd761f3971c",
+            "6ec4dcf3d1452e11"
         ],
         "env": [],
         "x": -6,
         "y": 1179,
-        "w": 1712,
+        "w": 1692,
         "h": 402
     },
     {
@@ -8236,7 +8235,7 @@
         "type": "mqtt out",
         "z": "33e76285.1cd03e",
         "g": "7ba464075860abd5",
-        "name": "12V boks",
+        "name": "Bruges ikke",
         "topic": "opladerStyrring/output/D3",
         "qos": "",
         "retain": "",
@@ -8246,7 +8245,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1580,
+        "x": 1590,
         "y": 1440,
         "wires": []
     },
@@ -8279,25 +8278,6 @@
         ]
     },
     {
-        "id": "6ec4dcf3d1452e11",
-        "type": "mqtt out",
-        "z": "33e76285.1cd03e",
-        "g": "7ba464075860abd5",
-        "name": "230V fordeler",
-        "topic": "opladerStyrring/output/D4",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dca8425b.8fb18",
-        "x": 1600,
-        "y": 1380,
-        "wires": []
-    },
-    {
         "id": "e092439690e79b56",
         "type": "change",
         "z": "33e76285.1cd03e",
@@ -8321,8 +8301,7 @@
         "y": 1500,
         "wires": [
             [
-                "0e003c0511679609",
-                "72bb79309020f295"
+                "0e003c0511679609"
             ]
         ]
     },
@@ -8399,9 +8378,7 @@
         "y": 1360,
         "wires": [
             [
-                "6ec4dcf3d1452e11",
-                "24a658ecf5c30ec5",
-                "0d5a3412a809c7c0"
+                "24a658ecf5c30ec5"
             ]
         ]
     },
@@ -8645,7 +8622,6 @@
         "wires": [
             [
                 "8b9bfac458be4957",
-                "6ec4dcf3d1452e11",
                 "2216095b02d3c520",
                 "e092439690e79b56"
             ]
@@ -14819,34 +14795,6 @@
         ]
     },
     {
-        "id": "72bb79309020f295",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "g": "7ba464075860abd5",
-        "name": "on",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "LOW",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1430,
-        "y": 1440,
-        "wires": [
-            [
-                "0d5a3412a809c7c0"
-            ]
-        ]
-    },
-    {
         "id": "4ef5f48e214b820c",
         "type": "link out",
         "z": "33e76285.1cd03e",
@@ -14886,6 +14834,25 @@
                 "0e003c0511679609"
             ]
         ]
+    },
+    {
+        "id": "6ec4dcf3d1452e11",
+        "type": "mqtt out",
+        "z": "33e76285.1cd03e",
+        "g": "7ba464075860abd5",
+        "name": "Bruges ikke",
+        "topic": "opladerStyrring/output/D4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1590,
+        "y": 1380,
+        "wires": []
     },
     {
         "id": "25b0621fbdbd0e71",
