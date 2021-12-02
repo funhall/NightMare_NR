@@ -34322,7 +34322,7 @@
         "g": "bbd4e40c062e81e6",
         "name": "",
         "pauseType": "delay",
-        "timeout": "800",
+        "timeout": "900",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
