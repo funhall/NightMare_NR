@@ -2868,7 +2868,8 @@
             "92391051f73c0484",
             "c7030f227c970e79",
             "37230a6eb083dae0",
-            "e4403d44e45a07c3"
+            "e4403d44e45a07c3",
+            "2de31bae10a60452"
         ],
         "env": [],
         "x": 2214,
@@ -34710,6 +34711,36 @@
         "wires": [
             [
                 "51154fc736916e3a"
+            ]
+        ]
+    },
+    {
+        "id": "2de31bae10a60452",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "1585a1b00ddf0369",
+        "name": "go",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 2430,
+        "y": 420,
+        "wires": [
+            [
+                "92391051f73c0484"
             ]
         ]
     },
