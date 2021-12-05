@@ -10009,13 +10009,6 @@
         "rules": [
             {
                 "t": "set",
-                "p": "gavle_vaek",
-                "pt": "global",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
                 "p": "klargorring",
                 "pt": "global",
                 "to": "Ikke klar",
