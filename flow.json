@@ -15359,7 +15359,7 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "eq",
+                "t": "gt",
                 "v": "2",
                 "vt": "num"
             },
