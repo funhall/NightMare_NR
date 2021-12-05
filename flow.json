@@ -15210,7 +15210,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 210,
+        "x": 290,
         "y": 3580,
         "wires": []
     },
@@ -15239,7 +15239,34 @@
         "y": 3420,
         "wires": [
             [
-                "4d888df517efa04e"
+                "7a04bf53ddeddac7"
+            ]
+        ]
+    },
+    {
+        "id": "7a04bf53ddeddac7",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "venstre",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 3440,
+        "wires": [
+            [
+                "a6e73a26aa4cd9ac"
             ]
         ]
     },
