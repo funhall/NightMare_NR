@@ -10574,28 +10574,8 @@
         "x": 450,
         "y": 3300,
         "wires": [
-            [
-                "edf166990d4453c0"
-            ]
+            []
         ]
-    },
-    {
-        "id": "8dc25fc08918c0ad",
-        "type": "mqtt out",
-        "z": "33e76285.1cd03e",
-        "name": "Magnet stang",
-        "topic": "boks8/output/D1",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dca8425b.8fb18",
-        "x": 1200,
-        "y": 3340,
-        "wires": []
     },
     {
         "id": "1e61d73aa48c4701",
@@ -10617,9 +10597,7 @@
         "x": 470,
         "y": 3360,
         "wires": [
-            [
-                "0a4371ce3110aae8"
-            ]
+            []
         ]
     },
     {
@@ -10663,60 +10641,6 @@
             [
                 "45757e9ba1b7a65a",
                 "6b2f5f61299a75c6"
-            ]
-        ]
-    },
-    {
-        "id": "edf166990d4453c0",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "Venstre magnet stang HIGH",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "HIGH",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 860,
-        "y": 3300,
-        "wires": [
-            [
-                "8dc25fc08918c0ad"
-            ]
-        ]
-    },
-    {
-        "id": "0a4371ce3110aae8",
-        "type": "change",
-        "z": "33e76285.1cd03e",
-        "name": "Venstre magnet stang low",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "LOW",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 830,
-        "y": 3360,
-        "wires": [
-            [
-                "8dc25fc08918c0ad"
             ]
         ]
     },
@@ -15570,7 +15494,7 @@
         "z": "33e76285.1cd03e",
         "name": "Venstre magnet stang LOW",
         "links": [
-            "dbb22315.74583"
+            "9d7f12bb0656b299"
         ],
         "x": 1255,
         "y": 3600,
@@ -31189,7 +31113,9 @@
         "g": "639befce27376865",
         "name": "Alle gavle placeret",
         "mode": "link",
-        "links": [],
+        "links": [
+            "4f6a27fb1252664d"
+        ],
         "x": 1875,
         "y": 3420,
         "wires": []
@@ -31286,7 +31212,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "b155502214061fe5",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
