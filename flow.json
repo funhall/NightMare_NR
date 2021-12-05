@@ -10463,8 +10463,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 110,
-        "y": 3500,
+        "x": 90,
+        "y": 3480,
         "wires": [
             [
                 "72d4c76aaddbc089",
@@ -10679,12 +10679,12 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "Besked3High",
+                "v": "Besked3Low",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Besked3Low",
+                "v": "Besked3High",
                 "vt": "str"
             }
         ],
@@ -10816,12 +10816,12 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "Besked2High",
+                "v": "Besked2Low",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Besked2Low",
+                "v": "Besked2High",
                 "vt": "str"
             }
         ],
@@ -31823,7 +31823,7 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "Besked1High",
+                "v": "Besked1low",
                 "vt": "str"
             },
             {
