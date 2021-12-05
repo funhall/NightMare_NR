@@ -10734,7 +10734,7 @@
         "id": "a26e8c105759a46e",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "locked",
+        "name": "op",
         "rules": [
             {
                 "t": "set",
@@ -10769,7 +10769,7 @@
         "id": "43ab5b7a7b9c4a75",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "open",
+        "name": "ned",
         "rules": [
             {
                 "t": "set",
@@ -10873,7 +10873,7 @@
         "id": "0514d6460be9c5ef",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "open",
+        "name": "ned",
         "rules": [
             {
                 "t": "set",
@@ -10908,7 +10908,7 @@
         "id": "2df2b85bbf3da8db",
         "type": "change",
         "z": "33e76285.1cd03e",
-        "name": "locked",
+        "name": "op",
         "rules": [
             {
                 "t": "set",
@@ -14553,12 +14553,12 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 515,
+        "x": 415,
         "y": 3560,
         "wires": [
             [
-                "2df2b85bbf3da8db",
-                "a26e8c105759a46e"
+                "753fc85b048c659d",
+                "e3df391e37f713be"
             ]
         ]
     },
@@ -15267,6 +15267,68 @@
         "wires": [
             [
                 "a6e73a26aa4cd9ac"
+            ]
+        ]
+    },
+    {
+        "id": "753fc85b048c659d",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "hvis left",
+        "property": "left",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "op",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 520,
+        "y": 3600,
+        "wires": [
+            [
+                "2df2b85bbf3da8db"
+            ],
+            [
+                "0514d6460be9c5ef"
+            ]
+        ]
+    },
+    {
+        "id": "e3df391e37f713be",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "hvis right",
+        "property": "right",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "op",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 520,
+        "y": 3540,
+        "wires": [
+            [
+                "a26e8c105759a46e"
+            ],
+            [
+                "43ab5b7a7b9c4a75"
             ]
         ]
     },
