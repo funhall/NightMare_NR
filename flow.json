@@ -15012,11 +15012,11 @@
         "topic": "",
         "payload": "high",
         "payloadType": "str",
-        "x": 130,
-        "y": 3920,
+        "x": 170,
+        "y": 3840,
         "wires": [
             [
-                "432f00fae80fb15f"
+                "30380aa00836833c"
             ]
         ]
     },
@@ -15153,8 +15153,8 @@
         "pauseActionName": "PAUSE",
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
-        "x": 450,
-        "y": 3960,
+        "x": 400,
+        "y": 3940,
         "wires": [
             [
                 "c79e0d95242e9da7"
@@ -15353,6 +15353,55 @@
         "x": 300,
         "y": 3600,
         "wires": []
+    },
+    {
+        "id": "0913ec52a1a3e49c",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 610,
+        "y": 3860,
+        "wires": [
+            [
+                "c79e0d95242e9da7"
+            ],
+            [
+                "a25c15f7106393b2"
+            ]
+        ]
+    },
+    {
+        "id": "30380aa00836833c",
+        "type": "Message Counter",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "units": "seconds",
+        "interval": 1,
+        "alignToClock": true,
+        "generator": "internal",
+        "x": 440,
+        "y": 3840,
+        "wires": [
+            [
+                "0913ec52a1a3e49c"
+            ],
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -32367,7 +32416,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "f38486a5759666f0",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -32421,7 +32470,7 @@
         "type": "debug",
         "z": "e21f6458e5ab1eb6",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
