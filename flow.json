@@ -10649,26 +10649,9 @@
         "y": 3480,
         "wires": [
             [
-                "72d4c76aaddbc089",
-                "872d98df894d9bc2"
+                "4d888df517efa04e"
             ]
         ]
-    },
-    {
-        "id": "e2b396c7159876d0",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 470,
-        "y": 3540,
-        "wires": []
     },
     {
         "id": "e25fe2ca674576d0",
@@ -10687,7 +10670,7 @@
         "y": 3660,
         "wires": [
             [
-                "0b2907ef792dcd5e"
+                "1be875d48405ab6e"
             ]
         ]
     },
@@ -15124,19 +15107,6 @@
         ]
     },
     {
-        "id": "86eb7d49fddb57bd",
-        "type": "subflow:8024cbb444499846",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "x": 260,
-        "y": 3420,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
         "id": "52385b88128eba9f",
         "type": "switch",
         "z": "33e76285.1cd03e",
@@ -15187,134 +15157,6 @@
         ]
     },
     {
-        "id": "72d4c76aaddbc089",
-        "type": "controltimer",
-        "z": "33e76285.1cd03e",
-        "name": "noice",
-        "timerType": "delay",
-        "timerDurationUnit": "second",
-        "timerDurationType": "num",
-        "timerDuration": 2,
-        "timerLoopTimeoutUnit": "second",
-        "timerLoopTimeoutType": "num",
-        "timerLoopTimeout": 0,
-        "loopTimeoutMessageType": "str",
-        "loopTimeoutMessage": "LOOP_TIMEOUT",
-        "timerMaxLoopIterationsType": "num",
-        "timerMaxLoopIterations": 0,
-        "loopMaxIterationsMessageType": "str",
-        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
-        "isConsecutiveStartActionTimerResetAllowed": false,
-        "isRunningTimerProgressVisible": false,
-        "outputReceivedMessageOnTimerTrigger": true,
-        "outputReceivedMessageOnTimerHalt": false,
-        "startTimerOnReceivalOfUnknownMessage": true,
-        "resetTimerOnReceivalOfUnknownMessage": true,
-        "isDebugModeEnabled": false,
-        "timerTriggeredMessageType": "str",
-        "timerTriggeredMessage": "TIMER_TRIGGERED",
-        "timerHaltedMessageType": "str",
-        "timerHaltedMessage": "TIMER_HALTED",
-        "isStartActionEnabled": true,
-        "isStopActionEnabled": true,
-        "isResetActionEnabled": true,
-        "isPauseActionEnabled": true,
-        "isContinueActionEnabled": true,
-        "actionPropertyNameType": "str",
-        "actionPropertyName": "payload",
-        "startActionNameType": "str",
-        "startActionName": "START",
-        "stopActionNameType": "str",
-        "stopActionName": "STOP",
-        "resetActionNameType": "str",
-        "resetActionName": "RESET",
-        "pauseActionNameType": "str",
-        "pauseActionName": "PAUSE",
-        "continueActionNameType": "str",
-        "continueActionName": "CONTINUE",
-        "x": 270,
-        "y": 3480,
-        "wires": [
-            [
-                "9d0c7edf654580bb",
-                "e2b396c7159876d0"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "0b2907ef792dcd5e",
-        "type": "controltimer",
-        "z": "33e76285.1cd03e",
-        "name": "Noice",
-        "timerType": "delay",
-        "timerDurationUnit": "second",
-        "timerDurationType": "num",
-        "timerDuration": 2,
-        "timerLoopTimeoutUnit": "second",
-        "timerLoopTimeoutType": "num",
-        "timerLoopTimeout": 0,
-        "loopTimeoutMessageType": "str",
-        "loopTimeoutMessage": "LOOP_TIMEOUT",
-        "timerMaxLoopIterationsType": "num",
-        "timerMaxLoopIterations": 0,
-        "loopMaxIterationsMessageType": "str",
-        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
-        "isConsecutiveStartActionTimerResetAllowed": false,
-        "isRunningTimerProgressVisible": false,
-        "outputReceivedMessageOnTimerTrigger": true,
-        "outputReceivedMessageOnTimerHalt": false,
-        "startTimerOnReceivalOfUnknownMessage": true,
-        "resetTimerOnReceivalOfUnknownMessage": true,
-        "isDebugModeEnabled": false,
-        "timerTriggeredMessageType": "str",
-        "timerTriggeredMessage": "TIMER_TRIGGERED",
-        "timerHaltedMessageType": "str",
-        "timerHaltedMessage": "TIMER_HALTED",
-        "isStartActionEnabled": true,
-        "isStopActionEnabled": true,
-        "isResetActionEnabled": true,
-        "isPauseActionEnabled": true,
-        "isContinueActionEnabled": true,
-        "actionPropertyNameType": "str",
-        "actionPropertyName": "payload",
-        "startActionNameType": "str",
-        "startActionName": "START",
-        "stopActionNameType": "str",
-        "stopActionName": "STOP",
-        "resetActionNameType": "str",
-        "resetActionName": "RESET",
-        "pauseActionNameType": "str",
-        "pauseActionName": "PAUSE",
-        "continueActionNameType": "str",
-        "continueActionName": "CONTINUE",
-        "x": 270,
-        "y": 3660,
-        "wires": [
-            [
-                "768a50f820099ee7",
-                "b5d647f750761d06"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "872d98df894d9bc2",
-        "type": "debug",
-        "z": "33e76285.1cd03e",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 300,
-        "y": 3600,
-        "wires": []
-    },
-    {
         "id": "743b3e01d1fd00ff",
         "type": "subflow:e33dea2cf071ea8d",
         "z": "33e76285.1cd03e",
@@ -15324,6 +15166,32 @@
         "y": 3900,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "4d888df517efa04e",
+        "type": "subflow:e33dea2cf071ea8d",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "x": 260,
+        "y": 3500,
+        "wires": [
+            [
+                "9d0c7edf654580bb"
+            ]
+        ]
+    },
+    {
+        "id": "1be875d48405ab6e",
+        "type": "subflow:e33dea2cf071ea8d",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "x": 290,
+        "y": 3680,
+        "wires": [
+            [
+                "768a50f820099ee7"
+            ]
         ]
     },
     {
