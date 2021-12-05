@@ -1408,7 +1408,6 @@
             "label": true
         },
         "nodes": [
-            "404da8613a7deae9",
             "a295d28dab58e60d",
             "142b6c9babab35ef",
             "78b0531f780cfaee",
@@ -1423,7 +1422,6 @@
             "fa78055450a2acab",
             "be3c3aebc9ec5217",
             "1dd296e14fe25399",
-            "f7c4d22a636c8343",
             "4a5b311906d648a8",
             "6bcd968a83cc2e5c",
             "18b70d3b9041ad2e",
@@ -28080,28 +28078,6 @@
         "wires": []
     },
     {
-        "id": "404da8613a7deae9",
-        "type": "mqtt in",
-        "z": "e21f6458e5ab1eb6",
-        "g": "f38486a5759666f0",
-        "name": " Hjælpe knap",
-        "topic": "boks6/input/D7",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "dca8425b.8fb18",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 230,
-        "y": 500,
-        "wires": [
-            [
-                "f7c4d22a636c8343"
-            ]
-        ]
-    },
-    {
         "id": "a295d28dab58e60d",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
@@ -31990,23 +31966,6 @@
                 "78b0531f780cfaee"
             ]
         ]
-    },
-    {
-        "id": "f7c4d22a636c8343",
-        "type": "debug",
-        "z": "e21f6458e5ab1eb6",
-        "g": "f38486a5759666f0",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 300,
-        "y": 560,
-        "wires": []
     },
     {
         "id": "3a6371f6bef649a5",
