@@ -15370,7 +15370,7 @@
         "z": "33e76285.1cd03e",
         "name": "",
         "units": "seconds",
-        "interval": 1,
+        "interval": "2",
         "alignToClock": true,
         "generator": "internal",
         "x": 390,
