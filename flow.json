@@ -15016,7 +15016,8 @@
         "y": 3840,
         "wires": [
             [
-                "30380aa00836833c"
+                "30380aa00836833c",
+                "432f00fae80fb15f"
             ]
         ]
     },
@@ -15154,9 +15155,11 @@
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
         "x": 400,
-        "y": 3940,
+        "y": 3960,
         "wires": [
-            [],
+            [
+                "a25c15f7106393b2"
+            ],
             []
         ]
     },
@@ -15165,7 +15168,7 @@
         "type": "debug",
         "z": "33e76285.1cd03e",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -15200,7 +15203,6 @@
         "y": 4340,
         "wires": [
             [
-                "c79e0d95242e9da7",
                 "52385b88128eba9f"
             ]
         ]
@@ -15360,7 +15362,7 @@
         "rules": [
             {
                 "t": "gt",
-                "v": "2",
+                "v": "1",
                 "vt": "num"
             },
             {
@@ -15374,11 +15376,9 @@
         "y": 3840,
         "wires": [
             [
-                "c79e0d95242e9da7"
+                "113bcaf7e90e9b37"
             ],
-            [
-                "a25c15f7106393b2"
-            ]
+            []
         ]
     },
     {
@@ -15397,6 +15397,33 @@
                 "0913ec52a1a3e49c"
             ],
             []
+        ]
+    },
+    {
+        "id": "113bcaf7e90e9b37",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "STOP",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3900,
+        "wires": [
+            [
+                "432f00fae80fb15f"
+            ]
         ]
     },
     {
