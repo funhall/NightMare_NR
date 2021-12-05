@@ -15253,7 +15253,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "venstre",
+                "to": "right",
                 "tot": "global"
             }
         ],
