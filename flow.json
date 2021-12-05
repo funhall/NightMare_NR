@@ -1395,10 +1395,10 @@
             "65b88c9947fd1cca",
             "8a2162c7781ee641"
         ],
-        "x": 2104,
-        "y": 39,
+        "x": 2144,
+        "y": -1,
         "w": 1062,
-        "h": 242
+        "h": 282
     },
     {
         "id": "08b42802ab3938de",
@@ -7680,15 +7680,15 @@
         "type": "function",
         "z": "33e76285.1cd03e",
         "g": "3897bed133705e81",
-        "name": "",
+        "name": "er alle væk",
         "func": "if ( global.get(\"kiste1\") === \"vaek\" && global.get(\"kiste2\") === \"vaek\" && global.get(\"kiste3\") === \"vaek\" && global.get(\"kiste4\") === \"vaek\" && global.get(\"kiste5\") === \"vaek\" && global.get(\"kiste6\") === \"vaek\") { \n  msg.payload = \"Gavle fjernet\";\n} else {\n  msg.payload = \"Gavle placeret\";\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2740,
-        "y": 220,
+        "x": 2790,
+        "y": 200,
         "wires": [
             [
                 "f9296daf73054592",
@@ -7710,8 +7710,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2690,
-        "y": 80,
+        "x": 3030,
+        "y": 240,
         "wires": []
     },
     {
@@ -7748,8 +7748,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2990,
-        "y": 120,
+        "x": 2950,
+        "y": 40,
         "wires": [
             [
                 "4adbd161b3e6510c",
@@ -7785,8 +7785,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3000,
-        "y": 180,
+        "x": 2960,
+        "y": 120,
         "wires": [
             [
                 "85d6f0338a028c44"
@@ -7814,8 +7814,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2790,
-        "y": 120,
+        "x": 2810,
+        "y": 80,
         "wires": [
             [
                 "1b90c70b6cac61d5"
@@ -7834,8 +7834,8 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 2155,
-        "y": 160,
+        "x": 2195,
+        "y": 140,
         "wires": [
             [
                 "4adbd161b3e6510c"
@@ -7860,8 +7860,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 2540,
-        "y": 220,
+        "x": 2580,
+        "y": 200,
         "wires": [
             [
                 "26a7b9ea531781b4"
@@ -7882,8 +7882,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3070,
-        "y": 80,
+        "x": 3110,
+        "y": 60,
         "wires": []
     },
     {
@@ -8247,8 +8247,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2470,
-        "y": 140,
+        "x": 2530,
+        "y": 80,
         "wires": [
             [
                 "f9296daf73054592"
@@ -11763,8 +11763,8 @@
         "links": [
             "2b480c9c40b1ae41"
         ],
-        "x": 2145,
-        "y": 240,
+        "x": 2185,
+        "y": 220,
         "wires": [
             [
                 "8a2162c7781ee641"
@@ -11791,8 +11791,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2270,
-        "y": 240,
+        "x": 2310,
+        "y": 220,
         "wires": [
             [
                 "4adbd161b3e6510c"
