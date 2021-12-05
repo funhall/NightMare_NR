@@ -15354,7 +15354,7 @@
         "id": "72d4c76aaddbc089",
         "type": "controltimer",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "noice",
         "timerType": "delay",
         "timerDurationUnit": "second",
         "timerDurationType": "num",
@@ -15396,7 +15396,7 @@
         "pauseActionName": "PAUSE",
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
-        "x": 300,
+        "x": 270,
         "y": 3480,
         "wires": [
             [
@@ -15410,7 +15410,7 @@
         "id": "0b2907ef792dcd5e",
         "type": "controltimer",
         "z": "33e76285.1cd03e",
-        "name": "",
+        "name": "Noice",
         "timerType": "delay",
         "timerDurationUnit": "second",
         "timerDurationType": "num",
@@ -15452,7 +15452,7 @@
         "pauseActionName": "PAUSE",
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
-        "x": 300,
+        "x": 270,
         "y": 3660,
         "wires": [
             [
