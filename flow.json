@@ -30888,9 +30888,8 @@
         "name": "Kors i serie",
         "mode": "link",
         "links": [
-            "5e6b985193ffd5f4",
-            "71bdd19e51a7ce13",
-            "167b5e205f71449f"
+            "167b5e205f71449f",
+            "71bdd19e51a7ce13"
         ],
         "x": 1435,
         "y": 1960,
@@ -33096,7 +33095,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "ed32e1825c3141bb",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
