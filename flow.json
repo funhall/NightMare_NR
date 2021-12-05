@@ -15213,7 +15213,7 @@
         "isConsecutiveStartActionTimerResetAllowed": false,
         "isRunningTimerProgressVisible": false,
         "outputReceivedMessageOnTimerTrigger": true,
-        "outputReceivedMessageOnTimerHalt": true,
+        "outputReceivedMessageOnTimerHalt": false,
         "startTimerOnReceivalOfUnknownMessage": false,
         "resetTimerOnReceivalOfUnknownMessage": false,
         "isDebugModeEnabled": false,
