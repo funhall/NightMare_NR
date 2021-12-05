@@ -30231,7 +30231,7 @@
                 "t": "set",
                 "p": "kiste1",
                 "pt": "global",
-                "to": "vaek",
+                "to": "placeret",
                 "tot": "str"
             }
         ],
@@ -30268,7 +30268,7 @@
                 "t": "set",
                 "p": "kiste2",
                 "pt": "global",
-                "to": "vaek",
+                "to": "placeret",
                 "tot": "str"
             }
         ],
@@ -30339,7 +30339,7 @@
                 "t": "set",
                 "p": "kiste3",
                 "pt": "global",
-                "to": "vaek",
+                "to": "placeret",
                 "tot": "str"
             }
         ],
@@ -30410,7 +30410,7 @@
                 "t": "set",
                 "p": "kiste3",
                 "pt": "global",
-                "to": "placeret",
+                "to": "vaek",
                 "tot": "str"
             }
         ],
@@ -30481,7 +30481,7 @@
                 "t": "set",
                 "p": "kiste4",
                 "pt": "global",
-                "to": "vaek",
+                "to": "placeret",
                 "tot": "str"
             }
         ],
@@ -30534,7 +30534,7 @@
                 "t": "set",
                 "p": "kiste4",
                 "pt": "global",
-                "to": "placeret",
+                "to": "vaek",
                 "tot": "str"
             }
         ],
@@ -30604,7 +30604,7 @@
                 "t": "set",
                 "p": "kiste5",
                 "pt": "global",
-                "to": "vaek",
+                "to": "placeret",
                 "tot": "str"
             }
         ],
@@ -30657,7 +30657,7 @@
                 "t": "set",
                 "p": "kiste5",
                 "pt": "global",
-                "to": "placeret",
+                "to": "vaek",
                 "tot": "str"
             }
         ],
@@ -30727,7 +30727,7 @@
                 "t": "set",
                 "p": "kiste6",
                 "pt": "global",
-                "to": "vaek",
+                "to": "placeret",
                 "tot": "str"
             }
         ],
@@ -30780,7 +30780,7 @@
                 "t": "set",
                 "p": "kiste6",
                 "pt": "global",
-                "to": "placeret",
+                "to": "vaek",
                 "tot": "str"
             }
         ],
@@ -30926,7 +30926,7 @@
                 "t": "set",
                 "p": "kiste1",
                 "pt": "global",
-                "to": "placeret",
+                "to": "vaek",
                 "tot": "str"
             }
         ],
@@ -30963,7 +30963,7 @@
                 "t": "set",
                 "p": "kiste2",
                 "pt": "global",
-                "to": "placeret",
+                "to": "vaek",
                 "tot": "str"
             }
         ],
@@ -33830,7 +33830,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
+        "x": 910,
         "y": 3060,
         "wires": []
     },
