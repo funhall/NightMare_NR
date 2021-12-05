@@ -15109,8 +15109,8 @@
         "topic": "",
         "payload": "high",
         "payloadType": "str",
-        "x": 230,
-        "y": 3940,
+        "x": 130,
+        "y": 3920,
         "wires": [
             [
                 "432f00fae80fb15f",
@@ -15139,8 +15139,8 @@
         "topic": "",
         "payload": "low",
         "payloadType": "str",
-        "x": 230,
-        "y": 4020,
+        "x": 130,
+        "y": 4000,
         "wires": [
             [
                 "432f00fae80fb15f"
@@ -15228,7 +15228,7 @@
         "outputReceivedMessageOnTimerTrigger": true,
         "outputReceivedMessageOnTimerHalt": false,
         "startTimerOnReceivalOfUnknownMessage": true,
-        "resetTimerOnReceivalOfUnknownMessage": false,
+        "resetTimerOnReceivalOfUnknownMessage": true,
         "isDebugModeEnabled": false,
         "timerTriggeredMessageType": "str",
         "timerTriggeredMessage": "TIMER_TRIGGERED",
