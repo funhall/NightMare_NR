@@ -1510,11 +1510,12 @@
             "489ee8a4591406f3",
             "abbdb48d58a134f3",
             "4c7635bd77117228",
-            "5e4926451de02828"
+            "5e4926451de02828",
+            "cf2cd167d918feb9"
         ],
-        "x": -26,
+        "x": 54,
         "y": 699,
-        "w": 1332,
+        "w": 1412,
         "h": 302
     },
     {
@@ -28528,13 +28529,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 80,
-        "y": 800,
+        "x": 160,
+        "y": 820,
         "wires": [
             [
-                "aea609932bb77faa",
-                "489ee8a4591406f3",
-                "5e4926451de02828"
+                "cf2cd167d918feb9"
             ]
         ]
     },
@@ -28552,7 +28551,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 730,
+        "x": 890,
         "y": 940,
         "wires": []
     },
@@ -28579,7 +28578,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 390,
+        "x": 550,
         "y": 820,
         "wires": [
             [
@@ -28625,7 +28624,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
+        "x": 730,
         "y": 800,
         "wires": [
             [
@@ -28668,7 +28667,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
+        "x": 730,
         "y": 840,
         "wires": [
             [
@@ -28684,7 +28683,7 @@
         "g": "1c3803be18092683",
         "name": "flow.kistestate - open/closed",
         "info": "",
-        "x": 280,
+        "x": 440,
         "y": 780,
         "wires": []
     },
@@ -28708,7 +28707,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 790,
+        "x": 950,
         "y": 800,
         "wires": [
             [
@@ -28736,7 +28735,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 920,
+        "x": 1080,
         "y": 900,
         "wires": [
             [
@@ -29236,7 +29235,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1100,
+        "x": 1260,
         "y": 900,
         "wires": [
             [
@@ -29259,7 +29258,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1220,
+        "x": 1380,
         "y": 800,
         "wires": []
     },
@@ -29294,7 +29293,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 920,
+        "x": 1080,
         "y": 860,
         "wires": [
             [
@@ -29504,7 +29503,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 960,
+        "x": 1120,
         "y": 740,
         "wires": [
             [],
@@ -29531,7 +29530,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 270,
+        "x": 430,
         "y": 740,
         "wires": [
             [
@@ -29560,7 +29559,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
+        "x": 720,
         "y": 740,
         "wires": [
             []
@@ -30958,7 +30957,7 @@
             "7fc3fbad33439116",
             "ce4649c03bbc3e2f"
         ],
-        "x": 725,
+        "x": 885,
         "y": 860,
         "wires": [
             [
@@ -30975,7 +30974,7 @@
         "links": [
             "c75b7c1984573e27"
         ],
-        "x": 925,
+        "x": 1085,
         "y": 960,
         "wires": [
             [
@@ -31713,7 +31712,7 @@
         "name": "Kiste lås status",
         "mode": "link",
         "links": [],
-        "x": 335,
+        "x": 495,
         "y": 860,
         "wires": []
     },
@@ -32413,7 +32412,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 390,
+        "x": 550,
         "y": 940,
         "wires": [
             [
@@ -32431,7 +32430,7 @@
         "links": [
             "653557ba9ee1c78b"
         ],
-        "x": 535,
+        "x": 695,
         "y": 940,
         "wires": []
     },
@@ -32465,7 +32464,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 280,
+        "x": 440,
         "y": 900,
         "wires": []
     },
@@ -33424,6 +33423,64 @@
                 "ebdb8db0400aa58a",
                 "76d47205b68c9455",
                 "874af2dffc28cbec"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "cf2cd167d918feb9",
+        "type": "controltimer",
+        "z": "e21f6458e5ab1eb6",
+        "g": "1c3803be18092683",
+        "name": "Noice",
+        "timerType": "delay",
+        "timerDurationUnit": "second",
+        "timerDurationType": "num",
+        "timerDuration": 1,
+        "timerLoopTimeoutUnit": "second",
+        "timerLoopTimeoutType": "num",
+        "timerLoopTimeout": 0,
+        "loopTimeoutMessageType": "str",
+        "loopTimeoutMessage": "LOOP_TIMEOUT",
+        "timerMaxLoopIterationsType": "num",
+        "timerMaxLoopIterations": 0,
+        "loopMaxIterationsMessageType": "str",
+        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
+        "isConsecutiveStartActionTimerResetAllowed": false,
+        "isRunningTimerProgressVisible": false,
+        "outputReceivedMessageOnTimerTrigger": true,
+        "outputReceivedMessageOnTimerHalt": false,
+        "startTimerOnReceivalOfUnknownMessage": true,
+        "resetTimerOnReceivalOfUnknownMessage": true,
+        "isDebugModeEnabled": false,
+        "timerTriggeredMessageType": "str",
+        "timerTriggeredMessage": "TIMER_TRIGGERED",
+        "timerHaltedMessageType": "str",
+        "timerHaltedMessage": "TIMER_HALTED",
+        "isStartActionEnabled": true,
+        "isStopActionEnabled": true,
+        "isResetActionEnabled": true,
+        "isPauseActionEnabled": true,
+        "isContinueActionEnabled": true,
+        "actionPropertyNameType": "str",
+        "actionPropertyName": "payload",
+        "startActionNameType": "str",
+        "startActionName": "START",
+        "stopActionNameType": "str",
+        "stopActionName": "STOP",
+        "resetActionNameType": "str",
+        "resetActionName": "RESET",
+        "pauseActionNameType": "str",
+        "pauseActionName": "PAUSE",
+        "continueActionNameType": "str",
+        "continueActionName": "CONTINUE",
+        "x": 350,
+        "y": 820,
+        "wires": [
+            [
+                "aea609932bb77faa",
+                "489ee8a4591406f3",
+                "5e4926451de02828"
             ],
             []
         ]
