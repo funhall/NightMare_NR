@@ -2513,13 +2513,14 @@
         "nodes": [
             "ba5b4481155d1581",
             "ecb52a5b9e7536c7",
-            "18779454fc783361"
+            "18779454fc783361",
+            "12833a83ac6908fb"
         ],
         "env": [],
-        "x": 874,
-        "y": 2679,
-        "w": 462,
-        "h": 122
+        "x": 854,
+        "y": 2659,
+        "w": 572,
+        "h": 142
     },
     {
         "id": "ac2343a469473a1e",
@@ -31207,12 +31208,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 960,
-        "y": 2740,
+        "x": 940,
+        "y": 2720,
         "wires": [
             [
-                "ecb52a5b9e7536c7",
-                "18779454fc783361"
+                "12833a83ac6908fb"
             ]
         ]
     },
@@ -32787,8 +32787,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1220,
-        "y": 2720,
+        "x": 1310,
+        "y": 2700,
         "wires": []
     },
     {
@@ -32803,7 +32803,7 @@
             "80a868808fc1a091",
             "a1aa32c4949c4fe3"
         ],
-        "x": 1105,
+        "x": 1195,
         "y": 2760,
         "wires": []
     },
@@ -33334,6 +33334,63 @@
         "wires": [
             [
                 "beb1919cf9975282"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "12833a83ac6908fb",
+        "type": "controltimer",
+        "z": "e21f6458e5ab1eb6",
+        "g": "b6b801ca50a23b9c",
+        "name": "Noice",
+        "timerType": "delay",
+        "timerDurationUnit": "second",
+        "timerDurationType": "num",
+        "timerDuration": 1,
+        "timerLoopTimeoutUnit": "second",
+        "timerLoopTimeoutType": "num",
+        "timerLoopTimeout": 0,
+        "loopTimeoutMessageType": "str",
+        "loopTimeoutMessage": "LOOP_TIMEOUT",
+        "timerMaxLoopIterationsType": "num",
+        "timerMaxLoopIterations": 0,
+        "loopMaxIterationsMessageType": "str",
+        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
+        "isConsecutiveStartActionTimerResetAllowed": false,
+        "isRunningTimerProgressVisible": false,
+        "outputReceivedMessageOnTimerTrigger": true,
+        "outputReceivedMessageOnTimerHalt": false,
+        "startTimerOnReceivalOfUnknownMessage": true,
+        "resetTimerOnReceivalOfUnknownMessage": true,
+        "isDebugModeEnabled": false,
+        "timerTriggeredMessageType": "str",
+        "timerTriggeredMessage": "TIMER_TRIGGERED",
+        "timerHaltedMessageType": "str",
+        "timerHaltedMessage": "TIMER_HALTED",
+        "isStartActionEnabled": true,
+        "isStopActionEnabled": true,
+        "isResetActionEnabled": true,
+        "isPauseActionEnabled": true,
+        "isContinueActionEnabled": true,
+        "actionPropertyNameType": "str",
+        "actionPropertyName": "payload",
+        "startActionNameType": "str",
+        "startActionName": "START",
+        "stopActionNameType": "str",
+        "stopActionName": "STOP",
+        "resetActionNameType": "str",
+        "resetActionName": "RESET",
+        "pauseActionNameType": "str",
+        "pauseActionName": "PAUSE",
+        "continueActionNameType": "str",
+        "continueActionName": "CONTINUE",
+        "x": 1070,
+        "y": 2700,
+        "wires": [
+            [
+                "ecb52a5b9e7536c7",
+                "18779454fc783361"
             ],
             []
         ]
