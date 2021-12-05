@@ -300,8 +300,9 @@
     {
         "id": "e33dea2cf071ea8d",
         "type": "subflow",
-        "name": "Subflow 2",
+        "name": "Støjfilter",
         "info": "",
+        "category": "",
         "in": [
             {
                 "x": 260,
@@ -327,7 +328,10 @@
                     }
                 ]
             }
-        ]
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
     },
     {
         "id": "c4fe518a.1dca8",
