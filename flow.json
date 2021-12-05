@@ -2400,11 +2400,12 @@
         "nodes": [
             "3f398b6e018b7a68",
             "11a30b89acaec2f3",
-            "f2c935c6cc9ec96a"
+            "f2c935c6cc9ec96a",
+            "6d1e43d02be34176"
         ],
         "x": 1034,
         "y": 1859,
-        "w": 352,
+        "w": 512,
         "h": 142
     },
     {
@@ -31157,8 +31158,7 @@
         "y": 1940,
         "wires": [
             [
-                "11a30b89acaec2f3",
-                "f2c935c6cc9ec96a"
+                "6d1e43d02be34176"
             ]
         ]
     },
@@ -31176,7 +31176,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1290,
+        "x": 1450,
         "y": 1900,
         "wires": []
     },
@@ -31191,7 +31191,7 @@
             "5e6b985193ffd5f4",
             "71bdd19e51a7ce13"
         ],
-        "x": 1295,
+        "x": 1435,
         "y": 1960,
         "wires": []
     },
@@ -33448,6 +33448,63 @@
             [
                 "432a109396b75036",
                 "133b96fab803dfbd"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6d1e43d02be34176",
+        "type": "controltimer",
+        "z": "e21f6458e5ab1eb6",
+        "g": "b155502214061fe5",
+        "name": "Noice",
+        "timerType": "delay",
+        "timerDurationUnit": "second",
+        "timerDurationType": "num",
+        "timerDuration": 1,
+        "timerLoopTimeoutUnit": "second",
+        "timerLoopTimeoutType": "num",
+        "timerLoopTimeout": 0,
+        "loopTimeoutMessageType": "str",
+        "loopTimeoutMessage": "LOOP_TIMEOUT",
+        "timerMaxLoopIterationsType": "num",
+        "timerMaxLoopIterations": 0,
+        "loopMaxIterationsMessageType": "str",
+        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
+        "isConsecutiveStartActionTimerResetAllowed": false,
+        "isRunningTimerProgressVisible": false,
+        "outputReceivedMessageOnTimerTrigger": true,
+        "outputReceivedMessageOnTimerHalt": false,
+        "startTimerOnReceivalOfUnknownMessage": true,
+        "resetTimerOnReceivalOfUnknownMessage": true,
+        "isDebugModeEnabled": false,
+        "timerTriggeredMessageType": "str",
+        "timerTriggeredMessage": "TIMER_TRIGGERED",
+        "timerHaltedMessageType": "str",
+        "timerHaltedMessage": "TIMER_HALTED",
+        "isStartActionEnabled": true,
+        "isStopActionEnabled": true,
+        "isResetActionEnabled": true,
+        "isPauseActionEnabled": true,
+        "isContinueActionEnabled": true,
+        "actionPropertyNameType": "str",
+        "actionPropertyName": "payload",
+        "startActionNameType": "str",
+        "startActionName": "START",
+        "stopActionNameType": "str",
+        "stopActionName": "STOP",
+        "resetActionNameType": "str",
+        "resetActionName": "RESET",
+        "pauseActionNameType": "str",
+        "pauseActionName": "PAUSE",
+        "continueActionNameType": "str",
+        "continueActionName": "CONTINUE",
+        "x": 1290,
+        "y": 1920,
+        "wires": [
+            [
+                "11a30b89acaec2f3",
+                "f2c935c6cc9ec96a"
             ],
             []
         ]
