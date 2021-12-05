@@ -15183,7 +15183,7 @@
         "type": "timed-counter",
         "z": "33e76285.1cd03e",
         "name": "",
-        "timelimit": 350,
+        "timelimit": "1000",
         "timeunit": 1,
         "withhold": true,
         "fixedtimeout": false,
