@@ -1394,7 +1394,8 @@
             "85d6f0338a028c44",
             "65b88c9947fd1cca",
             "8a2162c7781ee641",
-            "7c7f2324350c4ef4"
+            "7c7f2324350c4ef4",
+            "3ec65ed497a81adb"
         ],
         "x": 2144,
         "y": -1,
@@ -8248,11 +8249,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2530,
+        "x": 2470,
         "y": 80,
         "wires": [
             [
-                "f9296daf73054592"
+                "3ec65ed497a81adb"
             ]
         ]
     },
@@ -15574,6 +15575,36 @@
             [
                 "85d6f0338a028c44"
             ]
+        ]
+    },
+    {
+        "id": "3ec65ed497a81adb",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "3897bed133705e81",
+        "name": "",
+        "property": "gavle_vaek",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2650,
+        "y": 80,
+        "wires": [
+            [
+                "f9296daf73054592"
+            ],
+            []
         ]
     },
     {
