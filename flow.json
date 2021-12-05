@@ -1537,9 +1537,9 @@
             "4c7635bd77117228",
             "5e4926451de02828"
         ],
-        "x": 54,
+        "x": -26,
         "y": 699,
-        "w": 1252,
+        "w": 1332,
         "h": 302
     },
     {
@@ -10609,12 +10609,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 250,
-        "y": 3480,
+        "x": 110,
+        "y": 3500,
         "wires": [
             [
-                "e2b396c7159876d0",
-                "9d0c7edf654580bb"
+                "72d4c76aaddbc089"
             ]
         ]
     },
@@ -10647,12 +10646,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 310,
+        "x": 110,
         "y": 3660,
         "wires": [
             [
-                "768a50f820099ee7",
-                "b5d647f750761d06"
+                "0b2907ef792dcd5e"
             ]
         ]
     },
@@ -15351,6 +15349,118 @@
         "x": 850,
         "y": 4260,
         "wires": []
+    },
+    {
+        "id": "72d4c76aaddbc089",
+        "type": "controltimer",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "timerType": "delay",
+        "timerDurationUnit": "second",
+        "timerDurationType": "num",
+        "timerDuration": 2,
+        "timerLoopTimeoutUnit": "second",
+        "timerLoopTimeoutType": "num",
+        "timerLoopTimeout": 0,
+        "loopTimeoutMessageType": "str",
+        "loopTimeoutMessage": "LOOP_TIMEOUT",
+        "timerMaxLoopIterationsType": "num",
+        "timerMaxLoopIterations": 0,
+        "loopMaxIterationsMessageType": "str",
+        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
+        "isConsecutiveStartActionTimerResetAllowed": false,
+        "isRunningTimerProgressVisible": false,
+        "outputReceivedMessageOnTimerTrigger": true,
+        "outputReceivedMessageOnTimerHalt": false,
+        "startTimerOnReceivalOfUnknownMessage": true,
+        "resetTimerOnReceivalOfUnknownMessage": true,
+        "isDebugModeEnabled": false,
+        "timerTriggeredMessageType": "str",
+        "timerTriggeredMessage": "TIMER_TRIGGERED",
+        "timerHaltedMessageType": "str",
+        "timerHaltedMessage": "TIMER_HALTED",
+        "isStartActionEnabled": true,
+        "isStopActionEnabled": true,
+        "isResetActionEnabled": true,
+        "isPauseActionEnabled": true,
+        "isContinueActionEnabled": true,
+        "actionPropertyNameType": "str",
+        "actionPropertyName": "payload",
+        "startActionNameType": "str",
+        "startActionName": "START",
+        "stopActionNameType": "str",
+        "stopActionName": "STOP",
+        "resetActionNameType": "str",
+        "resetActionName": "RESET",
+        "pauseActionNameType": "str",
+        "pauseActionName": "PAUSE",
+        "continueActionNameType": "str",
+        "continueActionName": "CONTINUE",
+        "x": 300,
+        "y": 3480,
+        "wires": [
+            [
+                "9d0c7edf654580bb",
+                "e2b396c7159876d0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "0b2907ef792dcd5e",
+        "type": "controltimer",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "timerType": "delay",
+        "timerDurationUnit": "second",
+        "timerDurationType": "num",
+        "timerDuration": 2,
+        "timerLoopTimeoutUnit": "second",
+        "timerLoopTimeoutType": "num",
+        "timerLoopTimeout": 0,
+        "loopTimeoutMessageType": "str",
+        "loopTimeoutMessage": "LOOP_TIMEOUT",
+        "timerMaxLoopIterationsType": "num",
+        "timerMaxLoopIterations": 0,
+        "loopMaxIterationsMessageType": "str",
+        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
+        "isConsecutiveStartActionTimerResetAllowed": false,
+        "isRunningTimerProgressVisible": false,
+        "outputReceivedMessageOnTimerTrigger": true,
+        "outputReceivedMessageOnTimerHalt": false,
+        "startTimerOnReceivalOfUnknownMessage": true,
+        "resetTimerOnReceivalOfUnknownMessage": true,
+        "isDebugModeEnabled": false,
+        "timerTriggeredMessageType": "str",
+        "timerTriggeredMessage": "TIMER_TRIGGERED",
+        "timerHaltedMessageType": "str",
+        "timerHaltedMessage": "TIMER_HALTED",
+        "isStartActionEnabled": true,
+        "isStopActionEnabled": true,
+        "isResetActionEnabled": true,
+        "isPauseActionEnabled": true,
+        "isContinueActionEnabled": true,
+        "actionPropertyNameType": "str",
+        "actionPropertyName": "payload",
+        "startActionNameType": "str",
+        "startActionName": "START",
+        "stopActionNameType": "str",
+        "stopActionName": "STOP",
+        "resetActionNameType": "str",
+        "resetActionName": "RESET",
+        "pauseActionNameType": "str",
+        "pauseActionName": "PAUSE",
+        "continueActionNameType": "str",
+        "continueActionName": "CONTINUE",
+        "x": 300,
+        "y": 3660,
+        "wires": [
+            [
+                "768a50f820099ee7",
+                "b5d647f750761d06"
+            ],
+            []
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
@@ -28555,8 +28665,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 160,
-        "y": 820,
+        "x": 80,
+        "y": 800,
         "wires": [
             [
                 "aea609932bb77faa",
