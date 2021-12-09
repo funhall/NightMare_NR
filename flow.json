@@ -37029,7 +37029,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_play",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=220",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -37118,6 +37118,26 @@
             [
                 "bdd99e813bcd034d"
             ]
+        ]
+    },
+    {
+        "id": "cf6a1fcbaa09b522",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "Play",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_play",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1430,
+        "y": 720,
+        "wires": [
+            []
         ]
     },
     {
