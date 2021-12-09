@@ -25832,7 +25832,7 @@
         "name": "",
         "interval": "30",
         "step": "10",
-        "minValue": "20",
+        "minValue": "10",
         "maxValue": "1024",
         "startIncCommand": "start_op",
         "stopIncCommand": "stop_op",
@@ -27383,7 +27383,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "90",
+                "to": "60",
                 "tot": "str"
             }
         ],
