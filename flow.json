@@ -3874,6 +3874,16 @@
         "type": "ewelink-credentials"
     },
     {
+        "id": "5c196d3faa28379d",
+        "type": "soundfile-directory",
+        "directory": "Horror sound"
+    },
+    {
+        "id": "e05ba92c86488d8b",
+        "type": "soundfile-directory",
+        "directory": "/home/pi/HorrorSound"
+    },
+    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
@@ -35066,7 +35076,7 @@
         "width": "24",
         "height": "14",
         "order": 0,
-        "category": "Billeder",
+        "category": "Sounds",
         "file": "Queen_new.mp4",
         "layout": "center",
         "showcontrols": true,
@@ -37092,6 +37102,49 @@
         "y": 720,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "573f0c82b4f34c11",
+        "type": "play-soundfile",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "directory": "e05ba92c86488d8b",
+        "file": "graveyard",
+        "allow_multiple": false,
+        "x": 1060,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20060fabebc3daa4",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 890,
+        "y": 1180,
+        "wires": [
+            [
+                "573f0c82b4f34c11"
+            ]
         ]
     },
     {
