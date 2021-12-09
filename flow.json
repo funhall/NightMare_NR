@@ -2365,7 +2365,7 @@
             "b7ce3672a74b263a",
             "6d1786f0e16c4b70"
         ],
-        "x": 1014,
+        "x": 954,
         "y": 419,
         "w": 832,
         "h": 242
@@ -35505,7 +35505,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 1130,
+        "x": 1070,
         "y": 560,
         "wires": [
             [
@@ -35529,7 +35529,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1720,
+        "x": 1660,
         "y": 620,
         "wires": [
             []
@@ -35550,7 +35550,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1770,
+        "x": 1710,
         "y": 560,
         "wires": [
             [
@@ -35576,7 +35576,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1610,
+        "x": 1550,
         "y": 560,
         "wires": [
             [
@@ -35594,13 +35594,13 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=220",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=120",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1640,
+        "x": 1580,
         "y": 460,
         "wires": [
             []
@@ -35615,7 +35615,7 @@
         "links": [
             "22140f781deb3af3"
         ],
-        "x": 1055,
+        "x": 995,
         "y": 600,
         "wires": [
             [
@@ -35638,7 +35638,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1490,
+        "x": 1430,
         "y": 460,
         "wires": [
             [
@@ -35660,7 +35660,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1480,
+        "x": 1420,
         "y": 620,
         "wires": []
     },
@@ -35682,7 +35682,7 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 1200,
+        "x": 1140,
         "y": 600,
         "wires": [
             [
@@ -35902,7 +35902,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1330,
+        "x": 1270,
         "y": 460,
         "wires": [
             [
@@ -35919,7 +35919,7 @@
         "links": [
             "3f275e5d73da77dc"
         ],
-        "x": 1085,
+        "x": 1025,
         "y": 460,
         "wires": [
             [
@@ -35949,7 +35949,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 1110,
+        "x": 1050,
         "y": 520,
         "wires": [
             [
@@ -35972,7 +35972,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1470,
+        "x": 1390,
         "y": 520,
         "wires": [
             []
