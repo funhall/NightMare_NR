@@ -3914,7 +3914,7 @@
         "directory": "/"
     },
     {
-        "id": "a6fc1f940e942e8e",
+        "id": "c3e025b87b6294d1",
         "type": "ui_spacer",
         "z": "2bdc58f37cbddb93",
         "name": "spacer",
@@ -3924,7 +3924,7 @@
         "height": 1
     },
     {
-        "id": "cb5b7537460318a4",
+        "id": "1a80a27b1e01ab16",
         "type": "ui_spacer",
         "z": "2bdc58f37cbddb93",
         "name": "spacer",
@@ -3934,7 +3934,7 @@
         "height": 1
     },
     {
-        "id": "12caba2c85e9d637",
+        "id": "c31c3402712f1df4",
         "type": "ui_spacer",
         "z": "2bdc58f37cbddb93",
         "name": "spacer",
@@ -42024,8 +42024,7 @@
         "y": 320,
         "wires": [
             [
-                "1be0e8ef4bf67a31",
-                "15dc6282362cec4b"
+                "1be0e8ef4bf67a31"
             ]
         ]
     },
@@ -42058,9 +42057,7 @@
         "x": 570,
         "y": 360,
         "wires": [
-            [
-                "15dc6282362cec4b"
-            ]
+            []
         ]
     },
     {
@@ -42074,31 +42071,6 @@
         "x": 745,
         "y": 300,
         "wires": []
-    },
-    {
-        "id": "15dc6282362cec4b",
-        "type": "ui_button",
-        "z": "f6bd50b9.85c27",
-        "name": "Venstre",
-        "group": "117cda2a.43e596",
-        "order": 2,
-        "width": 1,
-        "height": 1,
-        "passthru": false,
-        "label": "",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.venstrebackground}}",
-        "icon": "fa-arrow-left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 820,
-        "y": 340,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "30b5dacaf3892422",
@@ -42163,8 +42135,7 @@
         "y": 480,
         "wires": [
             [
-                "82fc8e4d663261bf",
-                "816804fe6b4369e6"
+                "82fc8e4d663261bf"
             ]
         ]
     },
@@ -42197,9 +42168,7 @@
         "x": 570,
         "y": 520,
         "wires": [
-            [
-                "816804fe6b4369e6"
-            ]
+            []
         ]
     },
     {
@@ -42211,31 +42180,6 @@
         "x": 745,
         "y": 460,
         "wires": []
-    },
-    {
-        "id": "816804fe6b4369e6",
-        "type": "ui_button",
-        "z": "f6bd50b9.85c27",
-        "name": "Højre",
-        "group": "117cda2a.43e596",
-        "order": 5,
-        "width": 1,
-        "height": 1,
-        "passthru": false,
-        "label": "2",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.hojrebackground}}",
-        "icon": "fa-arrow-right",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 810,
-        "y": 500,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "ccc4eb86c6597180",
