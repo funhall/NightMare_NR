@@ -37029,7 +37029,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=220",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_play",
         "tls": "",
         "persist": false,
         "proxy": "",
