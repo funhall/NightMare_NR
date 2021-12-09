@@ -10959,7 +10959,7 @@
         "width": 1,
         "height": 1,
         "passthru": false,
-        "label": "",
+        "label": "b",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.rightbackground}}",
