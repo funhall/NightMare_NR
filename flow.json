@@ -2433,7 +2433,8 @@
             "a9821c3b918a9495",
             "8ca92802d5f7868a",
             "f717cd59328601ef",
-            "9714ab8d0ce3ce94"
+            "9714ab8d0ce3ce94",
+            "6c3a5c6e10c46c75"
         ],
         "env": [],
         "x": 1414,
@@ -27888,11 +27889,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3650,
-        "y": 180,
+        "x": 3670,
+        "y": 160,
         "wires": [
             [
-                "4d3749f1ee9a9522"
+                "6c3a5c6e10c46c75"
             ]
         ]
     },
@@ -27978,7 +27979,7 @@
         "to": "",
         "reg": false,
         "x": 2310,
-        "y": 360,
+        "y": 340,
         "wires": [
             [
                 "9714ab8d0ce3ce94"
@@ -28106,6 +28107,26 @@
         "wires": [
             [
                 "f91b84881f96290d"
+            ]
+        ]
+    },
+    {
+        "id": "6c3a5c6e10c46c75",
+        "type": "calculator",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "sum",
+        "constant": "1",
+        "round": false,
+        "decimals": 0,
+        "x": 3730,
+        "y": 200,
+        "wires": [
+            [
+                "4d3749f1ee9a9522"
             ]
         ]
     },
