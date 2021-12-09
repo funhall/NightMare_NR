@@ -3876,7 +3876,7 @@
     {
         "id": "e05ba92c86488d8b",
         "type": "soundfile-directory",
-        "directory": "/pi"
+        "directory": "/pi/home"
     },
     {
         "id": "b0442a5f6abaea0c",
