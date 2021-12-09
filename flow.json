@@ -1716,9 +1716,9 @@
             "5b8a66c86345d9c0"
         ],
         "env": [],
-        "x": 694,
+        "x": 614,
         "y": 119,
-        "w": 1732,
+        "w": 1812,
         "h": 222
     },
     {
@@ -36449,12 +36449,10 @@
         "links": [
             "3f275e5d73da77dc"
         ],
-        "x": 775,
+        "x": 655,
         "y": 220,
         "wires": [
-            [
-                "5b8a66c86345d9c0"
-            ]
+            []
         ]
     },
     {
@@ -36498,9 +36496,7 @@
         "x": 735,
         "y": 280,
         "wires": [
-            [
-                "ef1755dd6fd2af35"
-            ]
+            []
         ]
     },
     {
@@ -37260,23 +37256,6 @@
         ]
     },
     {
-        "id": "573f0c82b4f34c11",
-        "type": "play-soundfile",
-        "z": "42a18184186a4f43",
-        "name": "",
-        "directory": "e05ba92c86488d8b",
-        "file": "graveyard.mp3",
-        "allow_multiple": false,
-        "x": 420,
-        "y": 220,
-        "wires": [
-            [
-                "cebc054ffd534624",
-                "56430465a04ee10d"
-            ]
-        ]
-    },
-    {
         "id": "20060fabebc3daa4",
         "type": "inject",
         "z": "42a18184186a4f43",
@@ -37302,22 +37281,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "56430465a04ee10d",
-        "type": "debug",
-        "z": "42a18184186a4f43",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 590,
-        "y": 240,
-        "wires": []
     },
     {
         "id": "756b44eb6abac07b",
