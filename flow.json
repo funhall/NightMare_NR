@@ -37423,9 +37423,7 @@
         "name": "",
         "props": [
             {
-                "p": "play",
-                "v": "Sounds/Scary clock Ambience.mp4",
-                "vt": "str"
+                "p": "payload"
             },
             {
                 "p": "topic",
@@ -37437,6 +37435,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
+        "payload": "Sounds/Scary clock Ambience.mp4",
+        "payloadType": "str",
         "x": 1560,
         "y": 1060,
         "wires": [
