@@ -25190,12 +25190,10 @@
         "topic": "",
         "payload": "Flash",
         "payloadType": "str",
-        "x": 1230,
+        "x": 1190,
         "y": 2480,
         "wires": [
             [
-                "c1c7c804341ff2ae",
-                "60082cef357258b9",
                 "da68da0a356402ed"
             ]
         ]
