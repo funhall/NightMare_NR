@@ -27957,14 +27957,14 @@
         "type": "change",
         "z": "2bdc58f37cbddb93",
         "g": "50bee133c969308b",
-        "name": "",
+        "name": "set white light back",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "",
-                "tot": "str"
+                "to": "light3white",
+                "tot": "global"
             }
         ],
         "action": "",
@@ -27972,11 +27972,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2590,
-        "y": 260,
+        "x": 2490,
+        "y": 300,
         "wires": [
             [
-                "ea8102888f0cc01d"
+                "f91b84881f96290d"
             ]
         ]
     },
@@ -27989,8 +27989,8 @@
         "links": [
             "2273f39bfd741825"
         ],
-        "x": 2475,
-        "y": 260,
+        "x": 2375,
+        "y": 380,
         "wires": [
             [
                 "3d7af265f3cffd02"
