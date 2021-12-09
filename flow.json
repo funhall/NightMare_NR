@@ -33474,6 +33474,78 @@
         "wires": []
     },
     {
+        "id": "670612a2ad818a6f",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 930,
+        "y": 2300,
+        "wires": [
+            [
+                "31f5c5491008b40a"
+            ]
+        ]
+    },
+    {
+        "id": "31f5c5491008b40a",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "doorroom4",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 2300,
+        "wires": [
+            [
+                "1abc5bcf38702db3"
+            ]
+        ]
+    },
+    {
+        "id": "1abc5bcf38702db3",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1360,
+        "y": 2300,
+        "wires": []
+    },
+    {
         "id": "dce242cef0b59c86",
         "type": "inject",
         "z": "42a18184186a4f43",
