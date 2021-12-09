@@ -3048,6 +3048,30 @@
         "h": 242
     },
     {
+        "id": "e135f3aea8f8fccc",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Start countdown clock video rum 1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "756b44eb6abac07b",
+            "c95cfc457130bed5",
+            "a74143d40870dc73",
+            "2f3df17f50177ddb",
+            "df30affa7b0635f8",
+            "100ab872668ccc8b",
+            "d4dc9c3aa0aa0259",
+            "d03e09e5aec12d86"
+        ],
+        "env": [],
+        "x": 854,
+        "y": 1039,
+        "w": 582,
+        "h": 222
+    },
+    {
         "id": "82fd466d.f6c968",
         "type": "ui_tab",
         "name": "Nightmare personale",
@@ -35057,7 +35081,8 @@
             "c8f61e30db3fc5b4",
             "b56072908ff51099",
             "9b64b4f1edca7f7e",
-            "52bb1b2a52bd7ce6"
+            "52bb1b2a52bd7ce6",
+            "2f3df17f50177ddb"
         ],
         "x": 165,
         "y": 60,
@@ -35077,7 +35102,7 @@
         "height": "14",
         "order": 0,
         "category": "Sounds",
-        "file": "Queen_new.mp4",
+        "file": "Scary clock Ambience.mp4",
         "layout": "center",
         "showcontrols": true,
         "loop": false,
@@ -35345,7 +35370,8 @@
         "links": [
             "8e95e3b21d3009a5",
             "e91ee7488c3ae977",
-            "d5ca4e9187bf4236"
+            "d5ca4e9187bf4236",
+            "c95cfc457130bed5"
         ],
         "x": 165,
         "y": 100,
@@ -35787,8 +35813,8 @@
         "width": "2",
         "height": "2",
         "order": 15,
-        "category": "",
-        "file": "Queen_new.mp4",
+        "category": "Sounds",
+        "file": "Scary clock Ambience.mp4",
         "layout": "adjust",
         "showcontrols": false,
         "loop": false,
@@ -37145,9 +37171,7 @@
         "x": 160,
         "y": 420,
         "wires": [
-            [
-                "a3ce0edb46e1fcc9"
-            ]
+            []
         ]
     },
     {
@@ -37167,80 +37191,184 @@
         "wires": []
     },
     {
-        "id": "9314ce5c6f9a1aa2",
-        "type": "http request",
+        "id": "756b44eb6abac07b",
+        "type": "change",
         "z": "42a18184186a4f43",
-        "name": "Play vol 220",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=pl_play",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 650,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "eb04f625d1c2756f",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "name": "Hent Scream",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=in_play&input=/home/pi/graveyard.wav",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 370,
-        "y": 380,
+        "g": "e135f3aea8f8fccc",
+        "name": "start video",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Sounds/Scary clock Ambience.mp4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1120,
         "wires": [
             [
-                "9e37ec310d361aa7"
+                "c95cfc457130bed5"
             ]
         ]
     },
     {
-        "id": "9e37ec310d361aa7",
+        "id": "c95cfc457130bed5",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "e135f3aea8f8fccc",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "61b2c0553b7bbcc3"
+        ],
+        "x": 1395,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "a74143d40870dc73",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "e135f3aea8f8fccc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 960,
+        "y": 1080,
+        "wires": [
+            [
+                "756b44eb6abac07b",
+                "d4dc9c3aa0aa0259"
+            ]
+        ]
+    },
+    {
+        "id": "2f3df17f50177ddb",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "e135f3aea8f8fccc",
+        "name": "Show timer",
+        "mode": "link",
+        "links": [
+            "42b9b5a5ccea135a"
+        ],
+        "x": 1395,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "df30affa7b0635f8",
         "type": "http request",
         "z": "42a18184186a4f43",
-        "name": "Vol 80",
+        "g": "e135f3aea8f8fccc",
+        "name": "",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=volume&val=160",
+        "url": "http://192.168.1.60:1880/startvideo?video=start",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 510,
-        "y": 440,
+        "x": 1230,
+        "y": 1160,
         "wires": [
-            []
+            [
+                "c95cfc457130bed5"
+            ]
         ]
     },
     {
-        "id": "a3ce0edb46e1fcc9",
-        "type": "play-soundfile",
+        "id": "100ab872668ccc8b",
+        "type": "inject",
         "z": "42a18184186a4f43",
+        "g": "e135f3aea8f8fccc",
         "name": "",
-        "directory": "e05ba92c86488d8b",
-        "file": "graveyard.wav",
-        "allow_multiple": false,
-        "x": 370,
-        "y": 300,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 960,
+        "y": 1220,
         "wires": [
             [
-                "cebc054ffd534624"
+                "df30affa7b0635f8"
+            ]
+        ]
+    },
+    {
+        "id": "d4dc9c3aa0aa0259",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "e135f3aea8f8fccc",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1040,
+        "y": 1160,
+        "wires": [
+            [
+                "df30affa7b0635f8"
+            ]
+        ]
+    },
+    {
+        "id": "d03e09e5aec12d86",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "e135f3aea8f8fccc",
+        "name": "",
+        "links": [],
+        "x": 895,
+        "y": 1140,
+        "wires": [
+            [
+                "d4dc9c3aa0aa0259",
+                "756b44eb6abac07b"
             ]
         ]
     },
