@@ -3063,7 +3063,8 @@
             "df30affa7b0635f8",
             "100ab872668ccc8b",
             "d4dc9c3aa0aa0259",
-            "d03e09e5aec12d86"
+            "d03e09e5aec12d86",
+            "b8980423d8f3724b"
         ],
         "env": [],
         "x": 854,
@@ -37259,7 +37260,8 @@
         "wires": [
             [
                 "756b44eb6abac07b",
-                "d4dc9c3aa0aa0259"
+                "d4dc9c3aa0aa0259",
+                "b8980423d8f3724b"
             ]
         ]
     },
@@ -37369,6 +37371,34 @@
             [
                 "d4dc9c3aa0aa0259",
                 "756b44eb6abac07b"
+            ]
+        ]
+    },
+    {
+        "id": "b8980423d8f3724b",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "e135f3aea8f8fccc",
+        "name": "Show video afspiller",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 1080,
+        "wires": [
+            [
+                "2f3df17f50177ddb"
             ]
         ]
     },
