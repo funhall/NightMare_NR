@@ -3879,6 +3879,11 @@
         "directory": "/HorrorSound"
     },
     {
+        "id": "b0442a5f6abaea0c",
+        "type": "soundfile-directory",
+        "directory": "/"
+    },
+    {
         "id": "31558c33.837ac4",
         "type": "change",
         "z": "195c9babcf1455a4",
@@ -37141,7 +37146,8 @@
         "y": 420,
         "wires": [
             [
-                "eb04f625d1c2756f"
+                "eb04f625d1c2756f",
+                "a3ce0edb46e1fcc9"
             ]
         ]
     },
@@ -37217,8 +37223,22 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 530,
-        "y": 420,
+        "x": 510,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3ce0edb46e1fcc9",
+        "type": "play-soundfile",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "directory": "b0442a5f6abaea0c",
+        "file": "graveyard.wav",
+        "allow_multiple": false,
+        "x": 370,
+        "y": 300,
         "wires": [
             []
         ]
