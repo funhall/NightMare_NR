@@ -2367,7 +2367,7 @@
         ],
         "x": 954,
         "y": 419,
-        "w": 832,
+        "w": 812,
         "h": 242
     },
     {
@@ -35550,11 +35550,12 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1710,
+        "x": 1670,
         "y": 560,
         "wires": [
             [
-                "0de9eab863997cfc"
+                "0de9eab863997cfc",
+                "441bdd1263ad26a7"
             ]
         ]
     },
@@ -35576,7 +35577,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1550,
+        "x": 1470,
         "y": 560,
         "wires": [
             [
@@ -36115,6 +36116,22 @@
                 "8d7f34cf946ffb55"
             ]
         ]
+    },
+    {
+        "id": "441bdd1263ad26a7",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1880,
+        "y": 620,
+        "wires": []
     },
     {
         "id": "84e11b56.e27758",
