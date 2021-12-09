@@ -37200,7 +37200,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "play",
                 "pt": "msg",
                 "to": "Sounds/Scary clock Ambience.mp4",
                 "tot": "str"
@@ -37383,7 +37383,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "play",
+                "p": "payload",
                 "pt": "msg",
                 "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
                 "tot": "json"
