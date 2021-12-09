@@ -3043,7 +3043,8 @@
             "c51321d5d83f97be",
             "bc35dc1a57d736c9",
             "5de243d9f1072e56",
-            "db2a6e4254fe9037"
+            "db2a6e4254fe9037",
+            "1f3d96baa5e3e4fa"
         ],
         "x": 814,
         "y": 2219,
@@ -24900,7 +24901,8 @@
         "name": "Clingar oplader",
         "mode": "link",
         "links": [
-            "d194274dee722122"
+            "d194274dee722122",
+            "0cd9ca416b986a7b"
         ],
         "x": 3325,
         "y": 3660,
@@ -25219,6 +25221,50 @@
             [
                 "69655eab84abe955",
                 "a5c9c59635375fc2"
+            ]
+        ]
+    },
+    {
+        "id": "0cd9ca416b986a7b",
+        "type": "link in",
+        "z": "c39524c2016c8df2",
+        "name": "ClingarFlash",
+        "links": [
+            "580bca76314ef748"
+        ],
+        "x": 975,
+        "y": 2360,
+        "wires": [
+            [
+                "1f3d96baa5e3e4fa"
+            ]
+        ]
+    },
+    {
+        "id": "1f3d96baa5e3e4fa",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "g": "fd4a637b64af5012",
+        "name": "Flash",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Flash",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1070,
+        "y": 2360,
+        "wires": [
+            [
+                "da68da0a356402ed"
             ]
         ]
     },
