@@ -27338,8 +27338,8 @@
         "g": "63074db08e166961",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 1880,
-        "y": 320,
+        "x": 1920,
+        "y": 360,
         "wires": [
             [
                 "ea8102888f0cc01d"
@@ -28970,6 +28970,37 @@
         "wires": [
             [
                 "13fbb4a9244f118e"
+            ]
+        ]
+    },
+    {
+        "id": "2c3e3a8069784ce5",
+        "type": "subflow:195c9babcf1455a4",
+        "z": "2bdc58f37cbddb93",
+        "name": "Lys blinker hvis Gameon == True ellers lys 100%",
+        "env": [],
+        "x": 980,
+        "y": 380,
+        "wires": [
+            [
+                "6410a3d409c65544"
+            ]
+        ]
+    },
+    {
+        "id": "e19726ddcedd252d",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "name": "Klargørring",
+        "links": [
+            "18779454fc783361",
+            "c3111f9ba2a05816"
+        ],
+        "x": 815,
+        "y": 320,
+        "wires": [
+            [
+                "2c3e3a8069784ce5"
             ]
         ]
     },
@@ -33826,7 +33857,8 @@
         "mode": "link",
         "links": [
             "035027083d77f7fb",
-            "80a868808fc1a091"
+            "80a868808fc1a091",
+            "e19726ddcedd252d"
         ],
         "x": 635,
         "y": 2800,
@@ -33913,7 +33945,8 @@
         "links": [
             "a695d9e3afc641fb",
             "80a868808fc1a091",
-            "a1aa32c4949c4fe3"
+            "a1aa32c4949c4fe3",
+            "e19726ddcedd252d"
         ],
         "x": 1215,
         "y": 2760,
