@@ -2931,12 +2931,13 @@
             "4198284d16b025d6",
             "112adcce0b71b305",
             "e99c76e2304792ae",
-            "1b3ffd5a5803d005"
+            "1b3ffd5a5803d005",
+            "1b0e30e3fefb921a"
         ],
         "x": 2374,
         "y": 1319,
         "w": 652,
-        "h": 282
+        "h": 322
     },
     {
         "id": "63074db08e166961",
@@ -28201,7 +28202,8 @@
         "g": "6927ca2700be82a1",
         "name": "Tænd lys over skænk",
         "links": [
-            "2216095b02d3c520"
+            "2216095b02d3c520",
+            "e15f3af25444b78c"
         ],
         "x": 2495,
         "y": 1420,
@@ -29375,10 +29377,11 @@
         "type": "link out",
         "z": "2bdc58f37cbddb93",
         "g": "e50812896c2c6ccf",
-        "name": "",
+        "name": "Tænder efter skrig og timer",
         "mode": "link",
         "links": [
-            "d3d06ee42bbf0a8b"
+            "d3d06ee42bbf0a8b",
+            "cbd3d4ca31844c3b"
         ],
         "x": 3275,
         "y": 660,
@@ -29409,6 +29412,23 @@
         "wires": [
             [
                 "e15f3af25444b78c"
+            ]
+        ]
+    },
+    {
+        "id": "1b0e30e3fefb921a",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "6927ca2700be82a1",
+        "name": "",
+        "links": [
+            "22140f781deb3af3"
+        ],
+        "x": 2615,
+        "y": 1600,
+        "wires": [
+            [
+                "4198284d16b025d6"
             ]
         ]
     },
@@ -33994,7 +34014,8 @@
             "5959dd7045e731d3",
             "64e295fe15b64253",
             "27b3fb81529ec226",
-            "36121eda307d82d2"
+            "36121eda307d82d2",
+            "1b0e30e3fefb921a"
         ],
         "x": 835,
         "y": 1900,
@@ -34853,7 +34874,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "821e49952fadaf78",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
