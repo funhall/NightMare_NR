@@ -2405,7 +2405,7 @@
         ],
         "x": 954,
         "y": 419,
-        "w": 812,
+        "w": 832,
         "h": 242
     },
     {
@@ -36509,13 +36509,13 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=120",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=220",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1580,
+        "x": 1700,
         "y": 460,
         "wires": [
             [
