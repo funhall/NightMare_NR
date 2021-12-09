@@ -2084,12 +2084,13 @@
             "f3bd7cc286241bf3",
             "941d9d2157c2785d",
             "819ef68957d8f110",
-            "2cb594d49f3902ca"
+            "2cb594d49f3902ca",
+            "187b5e35f48f575b"
         ],
         "env": [],
         "x": 184,
         "y": 759,
-        "w": 862,
+        "w": 802,
         "h": 202
     },
     {
@@ -35202,7 +35203,9 @@
         "z": "42a18184186a4f43",
         "g": "a6cfbf982760de76",
         "name": "",
-        "links": [],
+        "links": [
+            "187b5e35f48f575b"
+        ],
         "x": 215,
         "y": 560,
         "wires": [
@@ -35263,7 +35266,8 @@
         "y": 840,
         "wires": [
             [
-                "8e95e3b21d3009a5"
+                "8e95e3b21d3009a5",
+                "2cb594d49f3902ca"
             ]
         ]
     },
@@ -35311,7 +35315,7 @@
         "links": [
             "61b2c0553b7bbcc3"
         ],
-        "x": 995,
+        "x": 755,
         "y": 840,
         "wires": []
     },
@@ -37345,7 +37349,9 @@
         "z": "42a18184186a4f43",
         "g": "e135f3aea8f8fccc",
         "name": "",
-        "links": [],
+        "links": [
+            "187b5e35f48f575b"
+        ],
         "x": 1195,
         "y": 960,
         "wires": [
@@ -37361,13 +37367,13 @@
         "type": "change",
         "z": "42a18184186a4f43",
         "g": "e135f3aea8f8fccc",
-        "name": "Show video afspiller",
+        "name": "Show timer afspiller",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "to": "{\"group\":{\"show\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
                 "tot": "json"
             }
         ],
@@ -37376,7 +37382,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1540,
+        "x": 1530,
         "y": 900,
         "wires": [
             [
@@ -37391,7 +37397,7 @@
         "g": "606c3a6c3de0cf55",
         "name": "Show timer 10 sek",
         "pauseType": "delay",
-        "timeout": "60",
+        "timeout": "16",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -37402,11 +37408,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 930,
-        "y": 920,
+        "x": 870,
+        "y": 860,
         "wires": [
             [
-                "8e95e3b21d3009a5"
+                "187b5e35f48f575b"
             ]
         ]
     },
@@ -37439,6 +37445,21 @@
                 "c95cfc457130bed5"
             ]
         ]
+    },
+    {
+        "id": "187b5e35f48f575b",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
+        "name": "After start video",
+        "mode": "link",
+        "links": [
+            "3bebbeb26f016ee2",
+            "d03e09e5aec12d86"
+        ],
+        "x": 905,
+        "y": 820,
+        "wires": []
     },
     {
         "id": "84e11b56.e27758",
