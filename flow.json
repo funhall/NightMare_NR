@@ -37186,7 +37186,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "play",
+                "p": "payload",
                 "pt": "msg",
                 "to": "Sounds/Scary clock Ambience.mp4",
                 "tot": "str"
