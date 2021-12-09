@@ -1337,7 +1337,8 @@
             "c5e215aab06f4637",
             "98823546b7863ec9",
             "20c1ced028a05ae6",
-            "56676871696932db"
+            "56676871696932db",
+            "4dced23225c23313"
         ],
         "x": 1624,
         "y": 2559,
@@ -1412,7 +1413,7 @@
         ],
         "x": 724,
         "y": 2679,
-        "w": 732,
+        "w": 742,
         "h": 322
     },
     {
@@ -3039,12 +3040,11 @@
             "aea879de2121baad",
             "18cef57184a91931",
             "314f836b54e4d169",
-            "0da9dabb92fd93c8",
             "c51321d5d83f97be"
         ],
         "x": 814,
         "y": 2259,
-        "w": 582,
+        "w": 552,
         "h": 322
     },
     {
@@ -21357,7 +21357,7 @@
             "40dc1fdbb76e7388",
             "e5698f0d41280642"
         ],
-        "x": 1115,
+        "x": 1195,
         "y": 2720,
         "wires": [
             [
@@ -21448,12 +21448,13 @@
         "id": "4dced23225c23313",
         "type": "link in",
         "z": "c39524c2016c8df2",
+        "g": "fcfd3443e0b0d4c7",
         "name": "ConnelD5",
         "links": [
             "682c6386bdb2a38d"
         ],
-        "x": 1815,
-        "y": 2700,
+        "x": 2055,
+        "y": 2680,
         "wires": [
             [
                 "98823546b7863ec9"
@@ -22478,7 +22479,7 @@
             "40dc1fdbb76e7388",
             "e5698f0d41280642"
         ],
-        "x": 1885,
+        "x": 2035,
         "y": 2600,
         "wires": [
             [
@@ -22495,7 +22496,7 @@
         "links": [
             "a9094c9473a660a8"
         ],
-        "x": 1885,
+        "x": 2055,
         "y": 2640,
         "wires": [
             [
@@ -22519,7 +22520,7 @@
         "expiry": "",
         "broker": "dca8425b.8fb18",
         "x": 1250,
-        "y": 2400,
+        "y": 2340,
         "wires": []
     },
     {
@@ -22538,7 +22539,7 @@
         "expiry": "",
         "broker": "dca8425b.8fb18",
         "x": 1250,
-        "y": 2360,
+        "y": 2300,
         "wires": []
     },
     {
@@ -22557,7 +22558,7 @@
         "expiry": "",
         "broker": "dca8425b.8fb18",
         "x": 1250,
-        "y": 2440,
+        "y": 2380,
         "wires": []
     },
     {
@@ -22601,7 +22602,7 @@
             "40dc1fdbb76e7388",
             "e5698f0d41280642"
         ],
-        "x": 995,
+        "x": 1075,
         "y": 2300,
         "wires": [
             [
@@ -22618,7 +22619,7 @@
         "links": [
             "682c6386bdb2a38d"
         ],
-        "x": 995,
+        "x": 1075,
         "y": 2380,
         "wires": [
             [
@@ -22635,30 +22636,13 @@
         "links": [
             "a9094c9473a660a8"
         ],
-        "x": 995,
+        "x": 1075,
         "y": 2340,
         "wires": [
             [
                 "60082cef357258b9"
             ]
         ]
-    },
-    {
-        "id": "0da9dabb92fd93c8",
-        "type": "debug",
-        "z": "c39524c2016c8df2",
-        "g": "fd4a637b64af5012",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1280,
-        "y": 2320,
-        "wires": []
     },
     {
         "id": "483ff0442276c9f5",
@@ -22819,8 +22803,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1340,
-        "y": 2760,
+        "x": 1350,
+        "y": 2720,
         "wires": []
     },
     {
@@ -22838,8 +22822,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1340,
-        "y": 2800,
+        "x": 1350,
+        "y": 2760,
         "wires": []
     },
     {
@@ -22857,8 +22841,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1340,
-        "y": 2840,
+        "x": 1350,
+        "y": 2800,
         "wires": []
     },
     {
@@ -22870,8 +22854,8 @@
         "links": [
             "a9094c9473a660a8"
         ],
-        "x": 1125,
-        "y": 2780,
+        "x": 1195,
+        "y": 2760,
         "wires": [
             [
                 "d05d9c090988d9b8"
@@ -22887,8 +22871,8 @@
         "links": [
             "682c6386bdb2a38d"
         ],
-        "x": 1125,
-        "y": 2820,
+        "x": 1195,
+        "y": 2800,
         "wires": [
             [
                 "8e842ecca440ae19"
@@ -24792,11 +24776,11 @@
         "type": "link in",
         "z": "c39524c2016c8df2",
         "g": "7dc6faf4bc4659f0",
-        "name": "",
+        "name": "Nellie Flash",
         "links": [
             "879f0a0d63f43003"
         ],
-        "x": 1815,
+        "x": 1895,
         "y": 2340,
         "wires": [
             [
@@ -24809,7 +24793,7 @@
         "type": "change",
         "z": "c39524c2016c8df2",
         "g": "7dc6faf4bc4659f0",
-        "name": "",
+        "name": "Flash",
         "rules": [
             {
                 "t": "set",
@@ -24824,8 +24808,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1990,
-        "y": 2360,
+        "x": 2030,
+        "y": 2340,
         "wires": [
             [
                 "ba06561b325a3684"
@@ -24869,7 +24853,9 @@
         "g": "9c63b62bda5fa857",
         "name": "Corwin oplader",
         "mode": "link",
-        "links": [],
+        "links": [
+            "27c8b00e38457218"
+        ],
         "x": 3505,
         "y": 1940,
         "wires": []
@@ -24881,7 +24867,9 @@
         "g": "7d1829a2ea116c1d",
         "name": "cartmell oplader",
         "mode": "link",
-        "links": [],
+        "links": [
+            "c2d80a7af45b4cb9"
+        ],
         "x": 3245,
         "y": 2620,
         "wires": []
@@ -24893,7 +24881,9 @@
         "g": "74a93054e49f848d",
         "name": "Huston oplader",
         "mode": "link",
-        "links": [],
+        "links": [
+            "5c8e50bf67d8114d"
+        ],
         "x": 3335,
         "y": 3240,
         "wires": []
@@ -24905,7 +24895,9 @@
         "g": "56a2f6be993fbac7",
         "name": "Clingar oplader",
         "mode": "link",
-        "links": [],
+        "links": [
+            "d194274dee722122"
+        ],
         "x": 3325,
         "y": 3660,
         "wires": []
@@ -24917,10 +24909,227 @@
         "g": "ac2343a469473a1e",
         "name": "Connel oplader",
         "mode": "link",
-        "links": [],
+        "links": [
+            "d07e2d90e3b216a8"
+        ],
         "x": 3365,
         "y": 4220,
         "wires": []
+    },
+    {
+        "id": "c2d80a7af45b4cb9",
+        "type": "link in",
+        "z": "c39524c2016c8df2",
+        "name": "Cartmell Flash",
+        "links": [
+            "ec242994f4f29bfb"
+        ],
+        "x": 1615,
+        "y": 1980,
+        "wires": [
+            [
+                "f084a3aa553878bb"
+            ]
+        ]
+    },
+    {
+        "id": "f084a3aa553878bb",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "Flash",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Flash",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1750,
+        "y": 1980,
+        "wires": [
+            [
+                "4eb81a4889f1097d"
+            ]
+        ]
+    },
+    {
+        "id": "5c8e50bf67d8114d",
+        "type": "link in",
+        "z": "c39524c2016c8df2",
+        "name": "Huston Flash",
+        "links": [
+            "42a5453183a56a22"
+        ],
+        "x": 1055,
+        "y": 2000,
+        "wires": [
+            [
+                "0188b9eb9526c0b1"
+            ]
+        ]
+    },
+    {
+        "id": "0188b9eb9526c0b1",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "Flash",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Flash",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 2000,
+        "wires": [
+            [
+                "54e968697d4d3a27"
+            ]
+        ]
+    },
+    {
+        "id": "27c8b00e38457218",
+        "type": "link in",
+        "z": "c39524c2016c8df2",
+        "name": "CorwinFlash",
+        "links": [
+            "d4f73f3ffb76f174"
+        ],
+        "x": 875,
+        "y": 2360,
+        "wires": [
+            [
+                "9f88887edca3adaf"
+            ]
+        ]
+    },
+    {
+        "id": "9f88887edca3adaf",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "Flash",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Flash",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 2360,
+        "wires": [
+            [
+                "60082cef357258b9"
+            ]
+        ]
+    },
+    {
+        "id": "d194274dee722122",
+        "type": "link in",
+        "z": "c39524c2016c8df2",
+        "name": "ClingarFlash",
+        "links": [
+            "580bca76314ef748"
+        ],
+        "x": 975,
+        "y": 2820,
+        "wires": [
+            [
+                "801930930a52a48c"
+            ]
+        ]
+    },
+    {
+        "id": "801930930a52a48c",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "Flash",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Flash",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 2820,
+        "wires": [
+            [
+                "d05d9c090988d9b8"
+            ]
+        ]
+    },
+    {
+        "id": "d07e2d90e3b216a8",
+        "type": "link in",
+        "z": "c39524c2016c8df2",
+        "name": "ConnelFlash",
+        "links": [
+            "c7e224263f130b9e"
+        ],
+        "x": 1815,
+        "y": 2660,
+        "wires": [
+            [
+                "c4027b01cbd85688"
+            ]
+        ]
+    },
+    {
+        "id": "c4027b01cbd85688",
+        "type": "change",
+        "z": "c39524c2016c8df2",
+        "name": "Flash",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Flash",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1950,
+        "y": 2660,
+        "wires": [
+            [
+                "c5e215aab06f4637"
+            ]
+        ]
     },
     {
         "id": "54706de9e7f6afc3",
