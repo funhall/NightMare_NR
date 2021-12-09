@@ -33100,7 +33100,7 @@
             },
             {
                 "t": "set",
-                "p": "rum4",
+                "p": "doorroom4",
                 "pt": "global",
                 "to": "closed",
                 "tot": "str"
@@ -33142,7 +33142,7 @@
             },
             {
                 "t": "set",
-                "p": "rum4",
+                "p": "doorroom4",
                 "pt": "global",
                 "to": "open",
                 "tot": "str"
