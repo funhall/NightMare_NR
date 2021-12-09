@@ -1429,7 +1429,9 @@
             "97e1b197072c3d06"
         ],
         "x": 174,
-        "y": 39
+        "y": 39,
+        "w": 1592,
+        "h": 242
     },
     {
         "id": "f38486a5759666f0",
@@ -1461,7 +1463,9 @@
         ],
         "env": [],
         "x": 94,
-        "y": 339
+        "y": 339,
+        "w": 1252,
+        "h": 342
     },
     {
         "id": "821e49952fadaf78",
@@ -1501,7 +1505,9 @@
         ],
         "env": [],
         "x": 54,
-        "y": 1039
+        "y": 1039,
+        "w": 1372,
+        "h": 382
     },
     {
         "id": "1c3803be18092683",
@@ -1540,7 +1546,9 @@
             "0887862b1acc7149"
         ],
         "x": 54,
-        "y": 699
+        "y": 699,
+        "w": 1412,
+        "h": 302
     },
     {
         "id": "9d6515b12fd52c73",
@@ -1586,7 +1594,9 @@
             "74561f5408223569"
         ],
         "x": 34,
-        "y": 1419
+        "y": 1419,
+        "w": 1772,
+        "h": 402
     },
     {
         "id": "96be5e73cc5cc970",
@@ -1887,7 +1897,9 @@
             "22140f781deb3af3"
         ],
         "x": 94,
-        "y": 1859
+        "y": 1859,
+        "w": 782,
+        "h": 142
     },
     {
         "id": "851cbb45b48af626",
@@ -2223,7 +2235,9 @@
         ],
         "env": [],
         "x": 54,
-        "y": 2059
+        "y": 2059,
+        "w": 1232,
+        "h": 202
     },
     {
         "id": "cae032f2d30f959c",
@@ -2291,7 +2305,9 @@
         ],
         "env": [],
         "x": 2094,
-        "y": 2099
+        "y": 2099,
+        "w": 802,
+        "h": 162
     },
     {
         "id": "bbd4e40c062e81e6",
@@ -2396,7 +2412,9 @@
             "d9c4979cebf5ea77"
         ],
         "x": 1034,
-        "y": 1859
+        "y": 1859,
+        "w": 512,
+        "h": 142
     },
     {
         "id": "2049c8be1ea9c55d",
@@ -2417,7 +2435,9 @@
         ],
         "env": [],
         "x": 14,
-        "y": 2699
+        "y": 2699,
+        "w": 662,
+        "h": 182
     },
     {
         "id": "6bfc6e805841182b",
@@ -2462,34 +2482,9 @@
         ],
         "env": [],
         "x": 234,
-        "y": 3139
-    },
-    {
-        "id": "ed32e1825c3141bb",
-        "type": "group",
-        "z": "e21f6458e5ab1eb6",
-        "name": "Dør rum 4",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "092c8cf33c419c32",
-            "821aabc5195e68ee",
-            "66e3d03ef796e76d",
-            "38979f45a4929e10",
-            "4e81fb79cbcea28c",
-            "d04d8fe459956714",
-            "4963a3ed4d7fcb32",
-            "1625c71cf2e0d4d0",
-            "1fe2b426184207cb",
-            "f871f7c183e16a65",
-            "fcaaa15780be5d44",
-            "af07690fe2e89b56",
-            "6653c9df88fb7bd5"
-        ],
-        "env": [],
-        "x": -6,
-        "y": 2279
+        "y": 3139,
+        "w": 1788,
+        "h": 562
     },
     {
         "id": "b6b801ca50a23b9c",
@@ -2507,7 +2502,9 @@
         ],
         "env": [],
         "x": 874,
-        "y": 2659
+        "y": 2659,
+        "w": 572,
+        "h": 162
     },
     {
         "id": "ac2343a469473a1e",
@@ -2845,7 +2842,40 @@
             "263bb2c6840b7cee"
         ],
         "x": 1144,
-        "y": 3219
+        "y": 3219,
+        "w": 852,
+        "h": 322
+    },
+    {
+        "id": "080ff8239be71c19",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Dør rum 4",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e9ae506b6327d50e",
+            "fa60b181bbd71bd4",
+            "5632b65e062de33a",
+            "092c8cf33c419c32",
+            "821aabc5195e68ee",
+            "66e3d03ef796e76d",
+            "38979f45a4929e10",
+            "4e81fb79cbcea28c",
+            "d04d8fe459956714",
+            "4963a3ed4d7fcb32",
+            "1625c71cf2e0d4d0",
+            "1fe2b426184207cb",
+            "f871f7c183e16a65",
+            "fcaaa15780be5d44",
+            "af07690fe2e89b56",
+            "6653c9df88fb7bd5"
+        ],
+        "x": 34,
+        "y": 2319,
+        "w": 1462,
+        "h": 242
     },
     {
         "id": "82fd466d.f6c968",
@@ -7966,7 +7996,7 @@
         "z": "33e76285.1cd03e",
         "g": "96be5e73cc5cc970",
         "name": "Counter",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -32522,7 +32552,7 @@
         "id": "f871f7c183e16a65",
         "type": "debug",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -32531,15 +32561,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 590,
-        "y": 2600,
+        "x": 690,
+        "y": 2520,
         "wires": []
     },
     {
         "id": "1fe2b426184207cb",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "Rum 4",
         "topic": "boks9/input/D6",
         "qos": "2",
@@ -32549,8 +32579,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 70,
-        "y": 2380,
+        "x": 110,
+        "y": 2440,
         "wires": [
             [
                 "af07690fe2e89b56",
@@ -32779,7 +32809,7 @@
         "id": "092c8cf33c419c32",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "",
         "property": "doorroom4",
         "propertyType": "global",
@@ -32796,8 +32826,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 910,
-        "y": 2380,
+        "x": 950,
+        "y": 2440,
         "wires": [
             [
                 "821aabc5195e68ee"
@@ -32811,7 +32841,7 @@
         "id": "821aabc5195e68ee",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "Rum 4 lukket",
         "rules": [
             {
@@ -32841,11 +32871,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
-        "y": 2340,
+        "x": 1130,
+        "y": 2400,
         "wires": [
             [
-                "d04d8fe459956714"
+                "4963a3ed4d7fcb32"
             ]
         ]
     },
@@ -32853,7 +32883,7 @@
         "id": "66e3d03ef796e76d",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "Rum 4 åben",
         "rules": [
             {
@@ -32884,11 +32914,11 @@
         "to": "",
         "reg": false,
         "x": 1130,
-        "y": 2400,
+        "y": 2480,
         "wires": [
             [
                 "38979f45a4929e10",
-                "4963a3ed4d7fcb32"
+                "d04d8fe459956714"
             ]
         ]
     },
@@ -32896,7 +32926,7 @@
         "id": "38979f45a4929e10",
         "type": "ui_button",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "",
         "group": "117cda2a.43e596",
         "order": 14,
@@ -32912,8 +32942,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 770,
-        "y": 2380,
+        "x": 750,
+        "y": 2440,
         "wires": [
             [
                 "092c8cf33c419c32",
@@ -32925,21 +32955,21 @@
         "id": "4e81fb79cbcea28c",
         "type": "link out",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "",
         "mode": "link",
         "links": [
             "3a6371f6bef649a5"
         ],
-        "x": 1415,
-        "y": 2380,
+        "x": 1455,
+        "y": 2440,
         "wires": []
     },
     {
         "id": "d04d8fe459956714",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "HIGH",
         "rules": [
             {
@@ -32955,8 +32985,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1310,
-        "y": 2400,
+        "x": 1350,
+        "y": 2460,
         "wires": [
             [
                 "4e81fb79cbcea28c"
@@ -32967,7 +32997,7 @@
         "id": "4963a3ed4d7fcb32",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "LOW",
         "rules": [
             {
@@ -32983,8 +33013,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1290,
-        "y": 2320,
+        "x": 1330,
+        "y": 2380,
         "wires": [
             [
                 "4e81fb79cbcea28c"
@@ -32995,7 +33025,7 @@
         "id": "1625c71cf2e0d4d0",
         "type": "inject",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "",
         "props": [
             {
@@ -33013,7 +33043,7 @@
         "topic": "",
         "payloadType": "date",
         "x": 930,
-        "y": 2480,
+        "y": 2520,
         "wires": [
             [
                 "66e3d03ef796e76d"
@@ -33024,6 +33054,7 @@
         "id": "e9ae506b6327d50e",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "080ff8239be71c19",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -33042,8 +33073,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 390,
-        "y": 2380,
+        "x": 370,
+        "y": 2420,
         "wires": [
             [
                 "fa60b181bbd71bd4"
@@ -33057,6 +33088,7 @@
         "id": "fa60b181bbd71bd4",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "080ff8239be71c19",
         "name": "Rum 4 closed",
         "rules": [
             {
@@ -33098,6 +33130,7 @@
         "id": "5632b65e062de33a",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "080ff8239be71c19",
         "name": "Rum 4 open",
         "rules": [
             {
@@ -33139,7 +33172,7 @@
         "id": "fcaaa15780be5d44",
         "type": "delay",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -33153,8 +33186,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 930,
-        "y": 2320,
+        "x": 970,
+        "y": 2380,
         "wires": [
             [
                 "821aabc5195e68ee"
@@ -33303,7 +33336,7 @@
         "id": "af07690fe2e89b56",
         "type": "debug",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -33312,147 +33345,18 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 290,
-        "y": 2320,
+        "x": 250,
+        "y": 2360,
         "wires": []
-    },
-    {
-        "id": "b6616ab0eae9e393",
-        "type": "controltimer",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "timerType": "delay",
-        "timerDurationUnit": "millisecond",
-        "timerDurationType": "num",
-        "timerDuration": 2500,
-        "timerLoopTimeoutUnit": "second",
-        "timerLoopTimeoutType": "num",
-        "timerLoopTimeout": 0,
-        "loopTimeoutMessageType": "str",
-        "loopTimeoutMessage": "LOOP_TIMEOUT",
-        "timerMaxLoopIterationsType": "num",
-        "timerMaxLoopIterations": 0,
-        "loopMaxIterationsMessageType": "str",
-        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
-        "isConsecutiveStartActionTimerResetAllowed": false,
-        "isRunningTimerProgressVisible": false,
-        "outputReceivedMessageOnTimerTrigger": true,
-        "outputReceivedMessageOnTimerHalt": false,
-        "startTimerOnReceivalOfUnknownMessage": true,
-        "resetTimerOnReceivalOfUnknownMessage": true,
-        "isDebugModeEnabled": false,
-        "timerTriggeredMessageType": "str",
-        "timerTriggeredMessage": "TIMER_TRIGGERED",
-        "timerHaltedMessageType": "str",
-        "timerHaltedMessage": "TIMER_HALTED",
-        "isStartActionEnabled": true,
-        "isStopActionEnabled": true,
-        "isResetActionEnabled": true,
-        "isPauseActionEnabled": true,
-        "isContinueActionEnabled": true,
-        "actionPropertyNameType": "str",
-        "actionPropertyName": "payload",
-        "startActionNameType": "str",
-        "startActionName": "START",
-        "stopActionNameType": "str",
-        "stopActionName": "STOP",
-        "resetActionNameType": "str",
-        "resetActionName": "RESET",
-        "pauseActionNameType": "str",
-        "pauseActionName": "PAUSE",
-        "continueActionNameType": "str",
-        "continueActionName": "CONTINUE",
-        "x": 320,
-        "y": 2640,
-        "wires": [
-            [
-                "f871f7c183e16a65"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "ede67bbe2b6a98f4",
-        "type": "switch",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "gt",
-                "v": "1",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 370,
-        "y": 2520,
-        "wires": [
-            [
-                "a50b5f0ffa2a2c27"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "7b832fc5e15c72ed",
-        "type": "Message Counter",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "units": "seconds",
-        "interval": "2",
-        "alignToClock": true,
-        "generator": "internal",
-        "x": 190,
-        "y": 2520,
-        "wires": [
-            [
-                "ede67bbe2b6a98f4"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "a50b5f0ffa2a2c27",
-        "type": "change",
-        "z": "e21f6458e5ab1eb6",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "STOP",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 360,
-        "y": 2580,
-        "wires": [
-            [
-                "b6616ab0eae9e393"
-            ]
-        ]
     },
     {
         "id": "6653c9df88fb7bd5",
         "type": "subflow:e33dea2cf071ea8d",
         "z": "e21f6458e5ab1eb6",
-        "g": "ed32e1825c3141bb",
+        "g": "080ff8239be71c19",
         "name": "",
-        "x": 270,
-        "y": 2440,
+        "x": 310,
+        "y": 2500,
         "wires": [
             [
                 "e9ae506b6327d50e",
