@@ -37112,10 +37112,12 @@
         "directory": "e05ba92c86488d8b",
         "file": "graveyard",
         "allow_multiple": false,
-        "x": 1060,
-        "y": 1120,
+        "x": 400,
+        "y": 220,
         "wires": [
-            []
+            [
+                "cebc054ffd534624"
+            ]
         ]
     },
     {
@@ -37139,8 +37141,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 890,
-        "y": 1180,
+        "x": 230,
+        "y": 280,
         "wires": [
             [
                 "573f0c82b4f34c11"
