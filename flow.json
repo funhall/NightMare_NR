@@ -37398,7 +37398,7 @@
         "g": "606c3a6c3de0cf55",
         "name": "Show timer 10 sek",
         "pauseType": "delay",
-        "timeout": "10",
+        "timeout": "60",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
