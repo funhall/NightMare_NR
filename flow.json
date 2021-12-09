@@ -25016,38 +25016,7 @@
         "x": 875,
         "y": 2360,
         "wires": [
-            [
-                "9f88887edca3adaf"
-            ]
-        ]
-    },
-    {
-        "id": "9f88887edca3adaf",
-        "type": "change",
-        "z": "c39524c2016c8df2",
-        "name": "Flash",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Flash",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1010,
-        "y": 2360,
-        "wires": [
-            [
-                "60082cef357258b9",
-                "c1c7c804341ff2ae",
-                "da68da0a356402ed"
-            ]
+            []
         ]
     },
     {
@@ -25192,7 +25161,9 @@
         "y": 2260,
         "wires": [
             [
-                "c1c7c804341ff2ae"
+                "c1c7c804341ff2ae",
+                "60082cef357258b9",
+                "da68da0a356402ed"
             ]
         ]
     },
