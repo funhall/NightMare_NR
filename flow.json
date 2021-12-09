@@ -9787,7 +9787,8 @@
             "e9bffacdd063c056",
             "50e9c21516e3473f",
             "1151d38d047d57cb",
-            "a59e66d55d8a62c8"
+            "a59e66d55d8a62c8",
+            "6f22a71841f1bb91"
         ],
         "x": 755,
         "y": 340,
@@ -10002,8 +10003,7 @@
             "adc106bfbddb767e",
             "d853366775888253",
             "0b7a3e6985c967c2",
-            "10895e061de3f851",
-            "6f22a71841f1bb91"
+            "10895e061de3f851"
         ],
         "x": 1335,
         "y": 280,
@@ -35888,7 +35888,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=in_play&input=/home/pi/Desktop/Halloween.mp4",
+        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=in_play&input=/home/pi/Desktop/Halloween.mp4 /fullscreen",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -36142,7 +36142,7 @@
         "g": "1585a1b00ddf0369",
         "name": "Henter film til loft rum 2",
         "links": [
-            "3f275e5d73da77dc"
+            "e8ba061f5f8c7fec"
         ],
         "x": 2035,
         "y": 580,
@@ -36268,9 +36268,7 @@
         "x": 2140,
         "y": 580,
         "wires": [
-            [
-                "8d7f34cf946ffb55"
-            ]
+            []
         ]
     },
     {
