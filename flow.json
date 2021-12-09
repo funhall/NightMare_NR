@@ -3876,7 +3876,7 @@
     {
         "id": "e05ba92c86488d8b",
         "type": "soundfile-directory",
-        "directory": "/HorrorSound"
+        "directory": "/pi"
     },
     {
         "id": "b0442a5f6abaea0c",
@@ -37233,7 +37233,7 @@
         "type": "play-soundfile",
         "z": "42a18184186a4f43",
         "name": "",
-        "directory": "b0442a5f6abaea0c",
+        "directory": "e05ba92c86488d8b",
         "file": "graveyard.wav",
         "allow_multiple": false,
         "x": 370,
