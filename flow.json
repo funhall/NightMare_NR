@@ -35897,7 +35897,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_pause&input=/home/pi/DullScream.mp3",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -36132,6 +36132,26 @@
         "x": 1880,
         "y": 620,
         "wires": []
+    },
+    {
+        "id": "33dfb14b284d8b55",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "Hent Scream",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_pause&input=/home/pi/DullScream.mp3",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1270,
+        "y": 720,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "84e11b56.e27758",
