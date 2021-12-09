@@ -2071,13 +2071,14 @@
             "38fdefcfbcaf5971",
             "f3bd7cc286241bf3",
             "941d9d2157c2785d",
-            "819ef68957d8f110"
+            "819ef68957d8f110",
+            "2cb594d49f3902ca"
         ],
         "env": [],
-        "x": 204,
-        "y": 799,
-        "w": 752,
-        "h": 202
+        "x": 184,
+        "y": 719,
+        "w": 892,
+        "h": 242
     },
     {
         "id": "6150c52ec6fe7e34",
@@ -2141,7 +2142,6 @@
             "0a2d8e8faec89334",
             "07cfc246052c3c72",
             "3bebbeb26f016ee2",
-            "1fa778b627f693b7",
             "e2981395d53cb507",
             "a4c2d19254deeb69",
             "d97e73d4748e3c22",
@@ -2149,8 +2149,8 @@
             "92a6c08794fadf42"
         ],
         "env": [],
-        "x": 194,
-        "y": 539,
+        "x": 174,
+        "y": 479,
         "w": 592,
         "h": 202
     },
@@ -35136,8 +35136,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 620,
+        "x": 570,
+        "y": 560,
         "wires": [
             [
                 "07cfc246052c3c72"
@@ -35161,8 +35161,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 300,
-        "y": 580,
+        "x": 280,
+        "y": 520,
         "wires": [
             [
                 "31fe21a3176660ac"
@@ -35179,8 +35179,8 @@
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 745,
-        "y": 620,
+        "x": 725,
+        "y": 560,
         "wires": []
     },
     {
@@ -35192,34 +35192,8 @@
         "links": [
             "8e95e3b21d3009a5"
         ],
-        "x": 235,
-        "y": 620,
-        "wires": [
-            [
-                "1fa778b627f693b7"
-            ]
-        ]
-    },
-    {
-        "id": "1fa778b627f693b7",
-        "type": "delay",
-        "z": "42a18184186a4f43",
-        "g": "a6cfbf982760de76",
-        "name": "Show timer 10 sek",
-        "pauseType": "delay",
-        "timeout": "10",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 390,
-        "y": 620,
+        "x": 215,
+        "y": 560,
         "wires": [
             [
                 "31fe21a3176660ac"
@@ -35246,11 +35220,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
-        "y": 840,
+        "x": 680,
+        "y": 800,
         "wires": [
             [
-                "18e4191c70ae0a3c"
+                "2cb594d49f3902ca"
             ]
         ]
     },
@@ -35274,8 +35248,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 710,
-        "y": 880,
+        "x": 690,
+        "y": 840,
         "wires": [
             [
                 "8e95e3b21d3009a5"
@@ -35307,8 +35281,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 660,
+        "x": 570,
+        "y": 600,
         "wires": [
             [
                 "07cfc246052c3c72",
@@ -35328,8 +35302,8 @@
             "3bebbeb26f016ee2",
             "d03e09e5aec12d86"
         ],
-        "x": 915,
-        "y": 880,
+        "x": 895,
+        "y": 840,
         "wires": []
     },
     {
@@ -35354,8 +35328,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 320,
-        "y": 840,
+        "x": 300,
+        "y": 800,
         "wires": [
             [
                 "a1200c70914a7608",
@@ -35391,10 +35365,11 @@
         "name": "Show timer",
         "mode": "link",
         "links": [
-            "42b9b5a5ccea135a"
+            "42b9b5a5ccea135a",
+            "d03e09e5aec12d86"
         ],
-        "x": 915,
-        "y": 840,
+        "x": 1035,
+        "y": 800,
         "wires": []
     },
     {
@@ -35412,8 +35387,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 722.8958435058594,
-        "y": 933.3333129882812,
+        "x": 702.8958435058594,
+        "y": 893.3333129882812,
         "wires": [
             [
                 "8e95e3b21d3009a5"
@@ -35633,8 +35608,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 530,
-        "y": 940,
+        "x": 510,
+        "y": 900,
         "wires": [
             [
                 "38fdefcfbcaf5971"
@@ -35888,8 +35863,8 @@
         "links": [
             "7fc3fbad33439116"
         ],
-        "x": 255,
-        "y": 900,
+        "x": 235,
+        "y": 860,
         "wires": [
             [
                 "f3bd7cc286241bf3",
@@ -35908,8 +35883,8 @@
             "e8ba061f5f8c7fec",
             "b5f0a04d4130ba89"
         ],
-        "x": 255,
-        "y": 660,
+        "x": 235,
+        "y": 600,
         "wires": [
             [
                 "e2981395d53cb507"
@@ -35936,8 +35911,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
-        "y": 700,
+        "x": 510,
+        "y": 640,
         "wires": [
             [
                 "d5ca4e9187bf4236"
@@ -35954,8 +35929,8 @@
         "links": [
             "61b2c0553b7bbcc3"
         ],
-        "x": 655,
-        "y": 700,
+        "x": 635,
+        "y": 640,
         "wires": []
     },
     {
@@ -35980,8 +35955,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 300,
-        "y": 700,
+        "x": 280,
+        "y": 640,
         "wires": [
             [
                 "e2981395d53cb507"
@@ -36010,8 +35985,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 310,
-        "y": 960,
+        "x": 290,
+        "y": 920,
         "wires": [
             [
                 "f3bd7cc286241bf3"
@@ -37365,7 +37340,8 @@
         "g": "e135f3aea8f8fccc",
         "name": "",
         "links": [
-            "8e95e3b21d3009a5"
+            "8e95e3b21d3009a5",
+            "18e4191c70ae0a3c"
         ],
         "x": 1055,
         "y": 960,
@@ -37401,6 +37377,32 @@
         "wires": [
             [
                 "2f3df17f50177ddb"
+            ]
+        ]
+    },
+    {
+        "id": "2cb594d49f3902ca",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
+        "name": "Show timer 10 sek",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 870,
+        "y": 760,
+        "wires": [
+            [
+                "18e4191c70ae0a3c"
             ]
         ]
     },
