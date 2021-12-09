@@ -35115,8 +35115,8 @@
         "width": "24",
         "height": "14",
         "order": 0,
-        "category": "Billeder",
-        "file": "IMG_0557.jpg",
+        "category": "videoer",
+        "file": "Trailer.mp4",
         "layout": "center",
         "showcontrols": true,
         "loop": false,
@@ -35250,7 +35250,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Billeder/IMG_0557.jpg",
+                "to": "videoer/Trailer.mp4",
                 "tot": "str"
             }
         ],
