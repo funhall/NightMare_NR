@@ -38049,7 +38049,7 @@
         "tls": "",
         "persist": false,
         "proxy": "",
-        "authType": "",
+        "authType": "basic",
         "senderr": false,
         "x": 1410,
         "y": 560,
