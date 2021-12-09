@@ -35115,7 +35115,7 @@
         "width": "24",
         "height": "14",
         "order": 0,
-        "category": "videoer",
+        "category": "Billeder",
         "file": "Trailer.mp4",
         "layout": "center",
         "showcontrols": true,
@@ -35252,7 +35252,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "videoer/Trailer.mp4",
+                "to": "Billeder/Trailer.mp4",
                 "tot": "str"
             }
         ],
@@ -35346,8 +35346,7 @@
         "wires": [
             [
                 "a1200c70914a7608",
-                "e3b8b77fa407b905",
-                "f3bd7cc286241bf3"
+                "e3b8b77fa407b905"
             ]
         ]
     },
