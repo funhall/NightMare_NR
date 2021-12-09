@@ -26877,9 +26877,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Flash",
-        "payloadType": "str",
-        "x": 1570,
+        "payloadType": "date",
+        "x": 1580,
         "y": 1460,
         "wires": [
             [
