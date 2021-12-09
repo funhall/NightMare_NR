@@ -3041,7 +3041,8 @@
             "b7ce3672a74b263a",
             "6d1786f0e16c4b70",
             "862936732940bdd5",
-            "c1b996ecb90d2fd1"
+            "c1b996ecb90d2fd1",
+            "64dcb2f890d0a9a8"
         ],
         "x": 954,
         "y": 419,
@@ -36827,17 +36828,17 @@
         "type": "http request",
         "z": "42a18184186a4f43",
         "g": "bbd4e40c062e81e6",
-        "name": "Afspil Scream",
+        "name": "Hent Scream",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=/home/pi/DullScream.mp3",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_pause&input=/home/pi/DullScream.mp3",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1660,
+        "x": 1650,
         "y": 620,
         "wires": [
             []
@@ -37086,6 +37087,36 @@
         "wires": [
             [
                 "0de9eab863997cfc"
+            ]
+        ]
+    },
+    {
+        "id": "64dcb2f890d0a9a8",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1570,
+        "y": 580,
+        "wires": [
+            [
+                "bdd99e813bcd034d"
             ]
         ]
     },
