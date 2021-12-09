@@ -28575,7 +28575,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 1830,
-        "y": 1680,
+        "y": 1660,
         "wires": [
             [
                 "2a02e4a4807beb9e",
@@ -28601,7 +28601,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 1830,
-        "y": 1720,
+        "y": 1700,
         "wires": [
             [
                 "d0621b4efac8603f",
@@ -28629,7 +28629,7 @@
         "to": "",
         "reg": false,
         "x": 2010,
-        "y": 1680,
+        "y": 1660,
         "wires": [
             [
                 "30451aa57add8fcf"
@@ -28656,7 +28656,7 @@
         "to": "",
         "reg": false,
         "x": 2010,
-        "y": 1720,
+        "y": 1700,
         "wires": [
             [
                 "30451aa57add8fcf"
@@ -28683,7 +28683,7 @@
         "to": "",
         "reg": false,
         "x": 2010,
-        "y": 1760,
+        "y": 1740,
         "wires": [
             [
                 "30451aa57add8fcf"
@@ -28708,10 +28708,222 @@
         "allowrate": false,
         "outputs": 1,
         "x": 1830,
-        "y": 1760,
+        "y": 1740,
         "wires": [
             [
-                "deb5afad8d208330"
+                "deb5afad8d208330",
+                "d90ebfe97be0dea6"
+            ]
+        ]
+    },
+    {
+        "id": "d90ebfe97be0dea6",
+        "type": "delay",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1830,
+        "y": 1780,
+        "wires": [
+            [
+                "8b2347f744aa14fd",
+                "9075ae9794a65b80"
+            ]
+        ]
+    },
+    {
+        "id": "8b2347f744aa14fd",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2010,
+        "y": 1780,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "9075ae9794a65b80",
+        "type": "delay",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1830,
+        "y": 1820,
+        "wires": [
+            [
+                "3f7755b1b38da607",
+                "f0aac228473364df"
+            ]
+        ]
+    },
+    {
+        "id": "3f7755b1b38da607",
+        "type": "delay",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1830,
+        "y": 1860,
+        "wires": [
+            [
+                "5901d22ae1542dae",
+                "8ab0831175dd7b4c"
+            ]
+        ]
+    },
+    {
+        "id": "f0aac228473364df",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "600",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2010,
+        "y": 1820,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "5901d22ae1542dae",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2010,
+        "y": 1860,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "13fbb4a9244f118e",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "600",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2010,
+        "y": 1900,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "8ab0831175dd7b4c",
+        "type": "delay",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1830,
+        "y": 1900,
+        "wires": [
+            [
+                "13fbb4a9244f118e"
             ]
         ]
     },
