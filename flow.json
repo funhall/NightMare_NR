@@ -35202,9 +35202,7 @@
         "z": "42a18184186a4f43",
         "g": "a6cfbf982760de76",
         "name": "",
-        "links": [
-            "8e95e3b21d3009a5"
-        ],
+        "links": [],
         "x": 215,
         "y": 560,
         "wires": [
@@ -35311,8 +35309,7 @@
         "name": "Show timer",
         "mode": "link",
         "links": [
-            "61b2c0553b7bbcc3",
-            "3bebbeb26f016ee2"
+            "61b2c0553b7bbcc3"
         ],
         "x": 995,
         "y": 840,
