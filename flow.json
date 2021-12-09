@@ -3874,14 +3874,9 @@
         "type": "ewelink-credentials"
     },
     {
-        "id": "5c196d3faa28379d",
-        "type": "soundfile-directory",
-        "directory": "Horror sound"
-    },
-    {
         "id": "e05ba92c86488d8b",
         "type": "soundfile-directory",
-        "directory": "/home/pi/HorrorSound"
+        "directory": "/HorrorSound"
     },
     {
         "id": "31558c33.837ac4",
