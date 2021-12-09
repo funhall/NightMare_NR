@@ -37137,11 +37137,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 230,
-        "y": 280,
+        "x": 160,
+        "y": 420,
         "wires": [
             [
-                "573f0c82b4f34c11"
+                "eb04f625d1c2756f"
             ]
         ]
     },
@@ -37160,6 +37160,68 @@
         "x": 590,
         "y": 240,
         "wires": []
+    },
+    {
+        "id": "9314ce5c6f9a1aa2",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "Play vol 220",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=pl_play",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 650,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb04f625d1c2756f",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "Hent Scream",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=in_play&input=/home/pi/graveyard.wav",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [
+                "9e37ec310d361aa7"
+            ]
+        ]
+    },
+    {
+        "id": "9e37ec310d361aa7",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "Vol 80",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=volume&val=160",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 530,
+        "y": 420,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "84e11b56.e27758",
