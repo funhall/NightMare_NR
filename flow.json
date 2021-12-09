@@ -2380,34 +2380,6 @@
         "h": 162
     },
     {
-        "id": "bbd4e40c062e81e6",
-        "type": "group",
-        "z": "42a18184186a4f43",
-        "name": "Skriger når dukken røres",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5dcbbca61cc4569f",
-            "bdd99e813bcd034d",
-            "a926601f2e4039ea",
-            "624dd6b2578797a0",
-            "2ebb1946ee7ffcc6",
-            "bedc926fcb82674b",
-            "62a609d360d1bb90",
-            "c703ac26ef2d16b2",
-            "0de9eab863997cfc",
-            "a59e66d55d8a62c8",
-            "b7ce3672a74b263a",
-            "6d1786f0e16c4b70",
-            "862936732940bdd5"
-        ],
-        "x": 954,
-        "y": 419,
-        "w": 992,
-        "h": 242
-    },
-    {
         "id": "b155502214061fe5",
         "type": "group",
         "z": "e21f6458e5ab1eb6",
@@ -3047,6 +3019,33 @@
         "y": 2219,
         "w": 652,
         "h": 302
+    },
+    {
+        "id": "bbd4e40c062e81e6",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Skriger når dukken røres",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5dcbbca61cc4569f",
+            "bdd99e813bcd034d",
+            "a926601f2e4039ea",
+            "624dd6b2578797a0",
+            "2ebb1946ee7ffcc6",
+            "62a609d360d1bb90",
+            "c703ac26ef2d16b2",
+            "0de9eab863997cfc",
+            "a59e66d55d8a62c8",
+            "b7ce3672a74b263a",
+            "6d1786f0e16c4b70",
+            "862936732940bdd5"
+        ],
+        "x": 954,
+        "y": 419,
+        "w": 992,
+        "h": 242
     },
     {
         "id": "82fd466d.f6c968",
@@ -36398,188 +36397,6 @@
         ]
     },
     {
-        "id": "5dcbbca61cc4569f",
-        "type": "inject",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "go",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 1070,
-        "y": 560,
-        "wires": [
-            [
-                "6d1786f0e16c4b70"
-            ]
-        ]
-    },
-    {
-        "id": "bdd99e813bcd034d",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "Afspil Scream",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=/home/pi/DullScream.mp3",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 1660,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a926601f2e4039ea",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "Pause",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 1730,
-        "y": 560,
-        "wires": [
-            [
-                "441bdd1263ad26a7"
-            ]
-        ]
-    },
-    {
-        "id": "624dd6b2578797a0",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "Vol 220",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=120",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 1860,
-        "y": 460,
-        "wires": [
-            [
-                "62a609d360d1bb90"
-            ]
-        ]
-    },
-    {
-        "id": "2ebb1946ee7ffcc6",
-        "type": "link in",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "Dukke skrig",
-        "links": [
-            "22140f781deb3af3"
-        ],
-        "x": 995,
-        "y": 600,
-        "wires": [
-            [
-                "c703ac26ef2d16b2"
-            ]
-        ]
-    },
-    {
-        "id": "bedc926fcb82674b",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "Pause",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 1710,
-        "y": 460,
-        "wires": [
-            [
-                "624dd6b2578797a0"
-            ]
-        ]
-    },
-    {
-        "id": "62a609d360d1bb90",
-        "type": "debug",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1420,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "c703ac26ef2d16b2",
-        "type": "delay",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "2",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": true,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1140,
-        "y": 600,
-        "wires": [
-            [
-                "6d1786f0e16c4b70",
-                "62a609d360d1bb90"
-            ]
-        ]
-    },
-    {
         "id": "ed3a81289b4ed29f",
         "type": "inject",
         "z": "42a18184186a4f43",
@@ -36772,97 +36589,6 @@
             [
                 "92391051f73c0484"
             ]
-        ]
-    },
-    {
-        "id": "0de9eab863997cfc",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "Hent Scream",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 1390,
-        "y": 460,
-        "wires": [
-            [
-                "bedc926fcb82674b"
-            ]
-        ]
-    },
-    {
-        "id": "a59e66d55d8a62c8",
-        "type": "link in",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "",
-        "links": [
-            "e8ba061f5f8c7fec"
-        ],
-        "x": 1025,
-        "y": 460,
-        "wires": [
-            [
-                "862936732940bdd5"
-            ]
-        ]
-    },
-    {
-        "id": "b7ce3672a74b263a",
-        "type": "inject",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "go",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 1050,
-        "y": 520,
-        "wires": [
-            [
-                "862936732940bdd5"
-            ]
-        ]
-    },
-    {
-        "id": "6d1786f0e16c4b70",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "Play",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_play",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 1330,
-        "y": 540,
-        "wires": [
-            []
         ]
     },
     {
@@ -37063,6 +36789,256 @@
             [
                 "92391051f73c0484"
             ]
+        ]
+    },
+    {
+        "id": "5dcbbca61cc4569f",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "go",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 1070,
+        "y": 560,
+        "wires": [
+            [
+                "6d1786f0e16c4b70"
+            ]
+        ]
+    },
+    {
+        "id": "bdd99e813bcd034d",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Afspil Scream",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=/home/pi/DullScream.mp3",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1660,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a926601f2e4039ea",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Pause",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1730,
+        "y": 560,
+        "wires": [
+            [
+                "441bdd1263ad26a7"
+            ]
+        ]
+    },
+    {
+        "id": "624dd6b2578797a0",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Vol 220",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=120",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1860,
+        "y": 460,
+        "wires": [
+            [
+                "62a609d360d1bb90"
+            ]
+        ]
+    },
+    {
+        "id": "2ebb1946ee7ffcc6",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Dukke skrig",
+        "links": [
+            "22140f781deb3af3"
+        ],
+        "x": 995,
+        "y": 600,
+        "wires": [
+            [
+                "c703ac26ef2d16b2"
+            ]
+        ]
+    },
+    {
+        "id": "62a609d360d1bb90",
+        "type": "debug",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1420,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c703ac26ef2d16b2",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 600,
+        "wires": [
+            [
+                "62a609d360d1bb90",
+                "6d1786f0e16c4b70"
+            ]
+        ]
+    },
+    {
+        "id": "0de9eab863997cfc",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Hent Scream",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1390,
+        "y": 460,
+        "wires": [
+            [
+                "624dd6b2578797a0"
+            ]
+        ]
+    },
+    {
+        "id": "a59e66d55d8a62c8",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "",
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 1025,
+        "y": 460,
+        "wires": [
+            [
+                "862936732940bdd5"
+            ]
+        ]
+    },
+    {
+        "id": "b7ce3672a74b263a",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "go",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 1050,
+        "y": 520,
+        "wires": [
+            [
+                "862936732940bdd5"
+            ]
+        ]
+    },
+    {
+        "id": "6d1786f0e16c4b70",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "bbd4e40c062e81e6",
+        "name": "Play",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_play",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1330,
+        "y": 540,
+        "wires": [
+            []
         ]
     },
     {
