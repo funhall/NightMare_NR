@@ -37714,7 +37714,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=0",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
         "tls": "",
         "persist": false,
         "proxy": "",
