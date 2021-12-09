@@ -3032,11 +3032,9 @@
             "5dcbbca61cc4569f",
             "bdd99e813bcd034d",
             "a926601f2e4039ea",
-            "624dd6b2578797a0",
             "2ebb1946ee7ffcc6",
             "62a609d360d1bb90",
             "c703ac26ef2d16b2",
-            "0de9eab863997cfc",
             "a59e66d55d8a62c8",
             "b7ce3672a74b263a",
             "6d1786f0e16c4b70",
@@ -3046,7 +3044,7 @@
         ],
         "x": 954,
         "y": 419,
-        "w": 992,
+        "w": 852,
         "h": 242
     },
     {
@@ -35155,7 +35153,9 @@
         "z": "42a18184186a4f43",
         "g": "a6cfbf982760de76",
         "name": "",
-        "links": [],
+        "links": [
+            "8e95e3b21d3009a5"
+        ],
         "x": 235,
         "y": 620,
         "wires": [
@@ -35169,9 +35169,9 @@
         "type": "delay",
         "z": "42a18184186a4f43",
         "g": "a6cfbf982760de76",
-        "name": "Show timer",
+        "name": "Show timer 10 sek",
         "pauseType": "delay",
-        "timeout": "95",
+        "timeout": "10",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -35182,7 +35182,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 410,
+        "x": 430,
         "y": 620,
         "wires": [
             [
@@ -35288,7 +35288,8 @@
         "name": "Show timer",
         "mode": "link",
         "links": [
-            "61b2c0553b7bbcc3"
+            "61b2c0553b7bbcc3",
+            "3bebbeb26f016ee2"
         ],
         "x": 915,
         "y": 880,
@@ -35512,8 +35513,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 562.8958435058594,
-        "y": 1173.3333129882812,
+        "x": 590,
+        "y": 1160,
         "wires": [
             [
                 "e91ee7488c3ae977"
@@ -35654,8 +35655,7 @@
         "y": 1380,
         "wires": [
             [
-                "87a2c2dac5306bc3",
-                "cebc054ffd534624"
+                "87a2c2dac5306bc3"
             ]
         ]
     },
@@ -36868,29 +36868,6 @@
         ]
     },
     {
-        "id": "624dd6b2578797a0",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "Vol 220",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=120",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 1860,
-        "y": 460,
-        "wires": [
-            [
-                "62a609d360d1bb90"
-            ]
-        ]
-    },
-    {
         "id": "2ebb1946ee7ffcc6",
         "type": "link in",
         "z": "42a18184186a4f43",
@@ -36950,27 +36927,6 @@
                 "62a609d360d1bb90",
                 "6d1786f0e16c4b70"
             ]
-        ]
-    },
-    {
-        "id": "0de9eab863997cfc",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "bbd4e40c062e81e6",
-        "name": "Hent Scream",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_pause",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 1570,
-        "y": 460,
-        "wires": [
-            []
         ]
     },
     {
@@ -37085,9 +37041,7 @@
         "x": 1370,
         "y": 460,
         "wires": [
-            [
-                "0de9eab863997cfc"
-            ]
+            []
         ]
     },
     {
