@@ -37110,9 +37110,9 @@
         "z": "42a18184186a4f43",
         "name": "",
         "directory": "e05ba92c86488d8b",
-        "file": "graveyard",
+        "file": "graveyard.mp3",
         "allow_multiple": false,
-        "x": 400,
+        "x": 420,
         "y": 220,
         "wires": [
             [
