@@ -37384,7 +37384,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"hide\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
                 "tot": "json"
             }
         ],
