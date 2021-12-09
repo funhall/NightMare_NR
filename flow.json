@@ -2500,7 +2500,8 @@
             "ba5b4481155d1581",
             "ecb52a5b9e7536c7",
             "18779454fc783361",
-            "541b4c8a6be11a8c"
+            "541b4c8a6be11a8c",
+            "235ba686f6a1000e"
         ],
         "env": [],
         "x": 874,
@@ -34558,8 +34559,8 @@
         "y": 2780,
         "wires": [
             [
-                "18779454fc783361",
-                "ecb52a5b9e7536c7"
+                "ecb52a5b9e7536c7",
+                "235ba686f6a1000e"
             ]
         ]
     },
@@ -34818,6 +34819,32 @@
         "wires": [
             [
                 "82f3b9409b138599"
+            ]
+        ]
+    },
+    {
+        "id": "235ba686f6a1000e",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "g": "b6b801ca50a23b9c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Besked1High",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1260,
+        "y": 2780,
+        "wires": [
+            [
+                "18779454fc783361"
             ]
         ]
     },
