@@ -36832,7 +36832,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_pause&input=/home/pi/DullScream.mp3",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=/home/pi/DullScream.mp3",
         "tls": "",
         "persist": false,
         "proxy": "",
