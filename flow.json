@@ -35888,7 +35888,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=in_play&input=/home/pi/Desktop/Halloween.mp4 /fullscreen",
+        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=in_play&input=/home/pi/Desktop/Halloween.mp4",
         "tls": "",
         "persist": false,
         "proxy": "",
