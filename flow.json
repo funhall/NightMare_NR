@@ -1487,7 +1487,8 @@
             "76d47205b68c9455",
             "0e049be05df83b6d",
             "435332b4bc93c875",
-            "97e1b197072c3d06"
+            "97e1b197072c3d06",
+            "e8507eebe1589c4d"
         ],
         "x": 174,
         "y": 39,
@@ -1714,13 +1715,14 @@
             "1365a9c1632482e0",
             "47d56951dee6605d",
             "5b8a66c86345d9c0",
-            "b295335a111f419e"
+            "b295335a111f419e",
+            "7f4a82aa8f6d0263"
         ],
         "env": [],
         "x": 594,
         "y": 99,
         "w": 1812,
-        "h": 222
+        "h": 242
     },
     {
         "id": "7ba464075860abd5",
@@ -29399,7 +29401,8 @@
         "wires": [
             [],
             [
-                "5428cdecb2cdf816"
+                "5428cdecb2cdf816",
+                "e8507eebe1589c4d"
             ]
         ]
     },
@@ -29443,7 +29446,7 @@
         "to": "",
         "reg": false,
         "x": 1330,
-        "y": 180,
+        "y": 200,
         "wires": [
             [
                 "709e27e57d26236e",
@@ -32559,8 +32562,8 @@
             "2b480c9c40b1ae41",
             "f2c935c6cc9ec96a"
         ],
-        "x": 1175,
-        "y": 180,
+        "x": 1155,
+        "y": 200,
         "wires": [
             [
                 "d65d38e0b9b85dbd"
@@ -34597,6 +34600,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "08b42802ab3938de",
         "name": "",
+        "env": [],
         "x": 500,
         "y": 160,
         "wires": [
@@ -34969,6 +34973,23 @@
         ]
     },
     {
+        "id": "e8507eebe1589c4d",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "g": "08b42802ab3938de",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 100,
+        "wires": []
+    },
+    {
         "id": "dce242cef0b59c86",
         "type": "inject",
         "z": "42a18184186a4f43",
@@ -35033,6 +35054,7 @@
         "persist": false,
         "proxy": "",
         "authType": "",
+        "senderr": false,
         "x": 2310,
         "y": 220,
         "wires": [
@@ -37673,13 +37695,34 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1190,
+        "x": 1170,
         "y": 280,
         "wires": [
             [
                 "6901acc273a3b8f8",
                 "e87f139c66187ed8"
             ]
+        ]
+    },
+    {
+        "id": "7f4a82aa8f6d0263",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "6bba046dfe50c527",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 830,
+        "y": 300,
+        "wires": [
+            []
         ]
     },
     {
