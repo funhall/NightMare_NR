@@ -2919,12 +2919,14 @@
             "1a6389a07eebfdb9",
             "cbd3d4ca31844c3b",
             "4198284d16b025d6",
-            "112adcce0b71b305"
+            "112adcce0b71b305",
+            "e99c76e2304792ae",
+            "1b3ffd5a5803d005"
         ],
-        "x": 2394,
-        "y": 1379,
+        "x": 2374,
+        "y": 1319,
         "w": 652,
-        "h": 222
+        "h": 282
     },
     {
         "id": "63074db08e166961",
@@ -10593,7 +10595,8 @@
             "941d9d2157c2785d",
             "adc106bfbddb767e",
             "64e295fe15b64253",
-            "57dd660b17bee653"
+            "57dd660b17bee653",
+            "112adcce0b71b305"
         ],
         "x": 715,
         "y": 820,
@@ -27850,7 +27853,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2940,
+        "x": 2920,
         "y": 1520,
         "wires": []
     },
@@ -27876,7 +27879,7 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 2490,
+        "x": 2470,
         "y": 1460,
         "wires": [
             [
@@ -27906,7 +27909,7 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 2510,
+        "x": 2490,
         "y": 1520,
         "wires": [
             [
@@ -27993,7 +27996,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2760,
+        "x": 2740,
         "y": 1420,
         "wires": [
             [
@@ -28010,7 +28013,7 @@
         "links": [
             "2216095b02d3c520"
         ],
-        "x": 2635,
+        "x": 2495,
         "y": 1420,
         "wires": [
             [
@@ -28038,7 +28041,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2760,
+        "x": 2740,
         "y": 1560,
         "wires": [
             [
@@ -28053,9 +28056,10 @@
         "g": "6927ca2700be82a1",
         "name": "Tænd lys over skænk",
         "links": [
-            "49095ecf9ab1fd70"
+            "49095ecf9ab1fd70",
+            "7fc3fbad33439116"
         ],
-        "x": 2635,
+        "x": 2615,
         "y": 1560,
         "wires": [
             [
@@ -29030,6 +29034,47 @@
         "wires": [
             [
                 "e9a2f9338003ac40"
+            ]
+        ]
+    },
+    {
+        "id": "e99c76e2304792ae",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "6927ca2700be82a1",
+        "name": "",
+        "links": [],
+        "x": 2495,
+        "y": 1360,
+        "wires": [
+            [
+                "1b3ffd5a5803d005"
+            ]
+        ]
+    },
+    {
+        "id": "1b3ffd5a5803d005",
+        "type": "delay",
+        "z": "2bdc58f37cbddb93",
+        "g": "6927ca2700be82a1",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2610,
+        "y": 1360,
+        "wires": [
+            [
+                "1a6389a07eebfdb9"
             ]
         ]
     },
