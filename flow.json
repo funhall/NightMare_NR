@@ -2424,13 +2424,17 @@
             "38e4d1dfae696ab5",
             "d77d902d59211f03",
             "688a23b7d1397554",
-            "439b303b819824e7",
-            "d1a0af63aaf4e7d9"
+            "d1a0af63aaf4e7d9",
+            "3b52e3134f9e86d8",
+            "baae7341484bfda6",
+            "3d7af265f3cffd02",
+            "f91f08f151497daa",
+            "2273f39bfd741825"
         ],
         "env": [],
         "x": 1494,
         "y": -1,
-        "w": 2152,
+        "w": 2452,
         "h": 982
     },
     {
@@ -26268,7 +26272,8 @@
         "y": 580,
         "wires": [
             [
-                "7993b061977bd018"
+                "7993b061977bd018",
+                "2273f39bfd741825"
             ]
         ]
     },
@@ -26828,7 +26833,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 3550,
+        "x": 3850,
         "y": 240,
         "wires": []
     },
@@ -27254,8 +27259,7 @@
         "g": "50bee133c969308b",
         "name": "",
         "links": [
-            "1fb00f59406653d8",
-            "22140f781deb3af3"
+            "1fb00f59406653d8"
         ],
         "x": 2895,
         "y": 240,
@@ -27272,14 +27276,15 @@
         "z": "2bdc58f37cbddb93",
         "g": "50bee133c969308b",
         "name": "Blinker rum 3 rød",
-        "links": [],
+        "links": [
+            "22140f781deb3af3"
+        ],
         "x": 2015,
         "y": 600,
         "wires": [
             [
                 "9712e50a2131d956",
                 "185c4b89fa9ed69d",
-                "439b303b819824e7",
                 "d1a0af63aaf4e7d9"
             ]
         ]
@@ -27878,39 +27883,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3370,
-        "y": 200,
+        "x": 3730,
+        "y": 180,
         "wires": [
             [
                 "4d3749f1ee9a9522"
-            ]
-        ]
-    },
-    {
-        "id": "439b303b819824e7",
-        "type": "change",
-        "z": "2bdc58f37cbddb93",
-        "g": "50bee133c969308b",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "light3white",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2270,
-        "y": 520,
-        "wires": [
-            [
-                "f91b84881f96290d"
             ]
         ]
     },
@@ -27930,6 +27907,108 @@
         "statusType": "auto",
         "x": 2080,
         "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3b52e3134f9e86d8",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "light back",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "light3red",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3760,
+        "y": 320,
+        "wires": [
+            [
+                "4d3749f1ee9a9522"
+            ]
+        ]
+    },
+    {
+        "id": "baae7341484bfda6",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "light3red back",
+        "links": [],
+        "x": 3655,
+        "y": 320,
+        "wires": [
+            [
+                "3b52e3134f9e86d8"
+            ]
+        ]
+    },
+    {
+        "id": "3d7af265f3cffd02",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2610,
+        "y": 240,
+        "wires": [
+            [
+                "ea8102888f0cc01d"
+            ]
+        ]
+    },
+    {
+        "id": "f91f08f151497daa",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "light3white back",
+        "links": [
+            "2273f39bfd741825"
+        ],
+        "x": 2495,
+        "y": 240,
+        "wires": [
+            [
+                "3d7af265f3cffd02"
+            ]
+        ]
+    },
+    {
+        "id": "2273f39bfd741825",
+        "type": "link out",
+        "z": "2bdc58f37cbddb93",
+        "g": "50bee133c969308b",
+        "name": "after dull screems red blink",
+        "mode": "link",
+        "links": [
+            "f91f08f151497daa"
+        ],
+        "x": 2275,
+        "y": 500,
         "wires": []
     },
     {
@@ -32511,7 +32590,7 @@
             "5959dd7045e731d3",
             "64e295fe15b64253",
             "27b3fb81529ec226",
-            "ddce14e70860f8c8"
+            "36121eda307d82d2"
         ],
         "x": 835,
         "y": 1900,
