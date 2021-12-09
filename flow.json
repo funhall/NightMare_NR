@@ -34963,7 +34963,7 @@
         "topic": "topic",
         "topicType": "msg",
         "min": "44",
-        "max": "110",
+        "max": "70",
         "step": 1,
         "x": 1190,
         "y": 280,
