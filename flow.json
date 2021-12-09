@@ -23124,12 +23124,11 @@
         "links": [
             "d4d2aeec1061c558"
         ],
-        "x": 355,
+        "x": 195,
         "y": 1560,
         "wires": [
             [
-                "a5c9c59635375fc2",
-                "69655eab84abe955"
+                "6499aa33ad57dd7d"
             ]
         ]
     },
@@ -25194,6 +25193,32 @@
         "wires": [
             [
                 "da68da0a356402ed"
+            ]
+        ]
+    },
+    {
+        "id": "6499aa33ad57dd7d",
+        "type": "switch",
+        "z": "c39524c2016c8df2",
+        "name": "",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 1560,
+        "wires": [
+            [
+                "69655eab84abe955",
+                "a5c9c59635375fc2"
             ]
         ]
     },
