@@ -28098,7 +28098,7 @@
         "inputMsgField": "payload",
         "outputMsgField": "payload",
         "operation": "sum",
-        "constant": "4",
+        "constant": "20",
         "round": false,
         "decimals": 0,
         "x": 2310,
