@@ -24768,7 +24768,9 @@
         "g": "ec0b0362cc35fc8b",
         "name": "Nellie oplader",
         "mode": "link",
-        "links": [],
+        "links": [
+            "1ec793bb014a687c"
+        ],
         "x": 3345,
         "y": 1080,
         "wires": []
@@ -24779,7 +24781,9 @@
         "z": "c39524c2016c8df2",
         "g": "7dc6faf4bc4659f0",
         "name": "",
-        "links": [],
+        "links": [
+            "879f0a0d63f43003"
+        ],
         "x": 1815,
         "y": 2340,
         "wires": [
