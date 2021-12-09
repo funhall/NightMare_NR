@@ -28549,8 +28549,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2050,
-        "y": 1640,
+        "x": 2010,
+        "y": 1620,
         "wires": [
             [
                 "30451aa57add8fcf"
@@ -28578,7 +28578,8 @@
         "y": 1680,
         "wires": [
             [
-                "2a02e4a4807beb9e"
+                "2a02e4a4807beb9e",
+                "3f71798797b68529"
             ]
         ]
     },
@@ -28600,9 +28601,118 @@
         "allowrate": false,
         "outputs": 1,
         "x": 1830,
-        "y": 1740,
+        "y": 1720,
         "wires": [
-            []
+            [
+                "d0621b4efac8603f",
+                "c46235f31bc74607"
+            ]
+        ]
+    },
+    {
+        "id": "3f71798797b68529",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "600",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2010,
+        "y": 1680,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "d0621b4efac8603f",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2010,
+        "y": 1720,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "deb5afad8d208330",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "600",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2010,
+        "y": 1760,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "c46235f31bc74607",
+        "type": "delay",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1830,
+        "y": 1760,
+        "wires": [
+            [
+                "deb5afad8d208330"
+            ]
         ]
     },
     {
