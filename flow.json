@@ -42222,7 +42222,7 @@
         "width": 1,
         "height": 1,
         "passthru": false,
-        "label": "",
+        "label": "2",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.hojrebackground}}",
