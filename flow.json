@@ -27818,7 +27818,6 @@
         "name": "",
         "links": [
             "2b480c9c40b1ae41",
-            "a1b7b362e5d3e98c",
             "e8ba061f5f8c7fec"
         ],
         "x": 4315,
@@ -28013,8 +28012,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4140,
-        "y": 240,
+        "x": 4130,
+        "y": 200,
         "wires": []
     },
     {
@@ -38766,9 +38765,7 @@
         "g": "bbd4e40c062e81e6",
         "name": "Dukke skriger",
         "mode": "link",
-        "links": [
-            "89ad1d9c38dd82a8"
-        ],
+        "links": [],
         "x": 2145,
         "y": 500,
         "wires": []
