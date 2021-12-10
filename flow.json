@@ -3829,26 +3829,6 @@
         "height": 1
     },
     {
-        "id": "e00b8384b94bee1f",
-        "type": "ui_spacer",
-        "z": "33e76285.1cd03e",
-        "name": "spacer",
-        "group": "117cda2a.43e596",
-        "order": 15,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "f5cdec3eb2772b24",
-        "type": "ui_spacer",
-        "z": "33e76285.1cd03e",
-        "name": "spacer",
-        "group": "117cda2a.43e596",
-        "order": 16,
-        "width": 2,
-        "height": 1
-    },
-    {
         "id": "b915020b3d98d259",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
