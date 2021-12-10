@@ -1381,12 +1381,13 @@
             "a03c37a87d9ffe6f",
             "640b4a9dba408264",
             "c2ddef282d3dccdc",
-            "914d77b2c1bf7d1e"
+            "914d77b2c1bf7d1e",
+            "7fb75d36aeffe81f"
         ],
         "x": 414,
         "y": 2679,
         "w": 1052,
-        "h": 322
+        "h": 382
     },
     {
         "id": "3897bed133705e81",
@@ -25754,7 +25755,7 @@
         "wires": [
             [
                 "801930930a52a48c",
-                "c2ddef282d3dccdc"
+                "7fb75d36aeffe81f"
             ]
         ]
     },
@@ -25764,7 +25765,7 @@
         "z": "c39524c2016c8df2",
         "g": "60708098e23acd96",
         "name": "",
-        "pauseType": "delay",
+        "pauseType": "delayv",
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
@@ -25776,8 +25777,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1000,
-        "y": 2900,
+        "x": 1100,
+        "y": 2920,
         "wires": [
             [
                 "801930930a52a48c",
@@ -25791,7 +25792,7 @@
         "z": "c39524c2016c8df2",
         "g": "60708098e23acd96",
         "name": "",
-        "kind": "fcnt",
+        "kind": "enum",
         "count": "8",
         "initial": "1",
         "step": "1",
@@ -25803,12 +25804,30 @@
         "limit": "",
         "loopPayload": "loop-index",
         "finalPayload": "final-count",
-        "x": 1010,
-        "y": 2960,
+        "x": 1130,
+        "y": 3020,
         "wires": [
             [
                 "c2ddef282d3dccdc"
             ],
+            [
+                "c2ddef282d3dccdc"
+            ]
+        ]
+    },
+    {
+        "id": "7fb75d36aeffe81f",
+        "type": "random",
+        "z": "c39524c2016c8df2",
+        "g": "60708098e23acd96",
+        "name": "",
+        "low": "10",
+        "high": "60",
+        "inte": "true",
+        "property": "delay",
+        "x": 920,
+        "y": 2920,
+        "wires": [
             [
                 "c2ddef282d3dccdc"
             ]
