@@ -4129,7 +4129,7 @@
         "type": "ewelink-credentials"
     },
     {
-        "id": "d25afb1a78df49a9",
+        "id": "c4c19c33ca97c528",
         "type": "ui_spacer",
         "z": "2bdc58f37cbddb93",
         "name": "spacer",
@@ -4139,7 +4139,7 @@
         "height": 1
     },
     {
-        "id": "7b0d3e96b6787bf7",
+        "id": "f544995e66c0198e",
         "type": "ui_spacer",
         "z": "2bdc58f37cbddb93",
         "name": "spacer",
@@ -4149,7 +4149,7 @@
         "height": 1
     },
     {
-        "id": "4c0212651063862b",
+        "id": "db62eb32caf91753",
         "type": "ui_spacer",
         "z": "2bdc58f37cbddb93",
         "name": "spacer",
@@ -4159,7 +4159,7 @@
         "height": 1
     },
     {
-        "id": "c8b27b8e84bbe403",
+        "id": "0404a85d13daf12b",
         "type": "ui_spacer",
         "z": "2bdc58f37cbddb93",
         "name": "spacer",
@@ -45831,33 +45831,6 @@
                 "786cf1f7b5add738",
                 "f55387d8fba044bd",
                 "cdf7f38c82629991"
-            ]
-        ]
-    },
-    {
-        "id": "5a38858b4a5b157b",
-        "type": "ui_slider",
-        "z": "416eda1d3361af12",
-        "g": "a754c23b5706b2d4",
-        "name": "",
-        "label": "Game time",
-        "tooltip": "Indstiller spilletiden i Min.",
-        "group": "117cda2a.43e596",
-        "order": 19,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": "50",
-        "max": "120",
-        "step": 1,
-        "x": 550,
-        "y": 60,
-        "wires": [
-            [
-                "e79964dadc8c242e"
             ]
         ]
     },
