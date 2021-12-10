@@ -3066,9 +3066,9 @@
             "5ba8a9ae620f6208",
             "39c8eb30c62d75ab"
         ],
-        "x": 48,
+        "x": 8,
         "y": 219,
-        "w": 1338,
+        "w": 1378,
         "h": 588
     },
     {
@@ -3089,7 +3089,7 @@
             "c6c6ae2ff0afc9f7"
         ],
         "env": [],
-        "x": 74,
+        "x": 34,
         "y": 639,
         "w": 622,
         "h": 142
@@ -29205,7 +29205,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 340,
+        "x": 320,
         "y": 680,
         "wires": [
             [
@@ -29231,7 +29231,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 210,
+        "x": 170,
         "y": 680,
         "wires": [
             [
@@ -29254,7 +29254,7 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 540,
+        "x": 500,
         "y": 680,
         "wires": [
             [
@@ -29271,7 +29271,7 @@
         "links": [
             "435332b4bc93c875"
         ],
-        "x": 115,
+        "x": 75,
         "y": 680,
         "wires": [
             [
@@ -29333,7 +29333,8 @@
         "y": 620,
         "wires": [
             [
-                "cd5daeb41ac8246d"
+                "cd5daeb41ac8246d",
+                "4ad4fbe72ee55a03"
             ]
         ]
     },
@@ -29357,7 +29358,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
+        "x": 290,
         "y": 720,
         "wires": [
             [
@@ -29379,7 +29380,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
+        "x": 540,
         "y": 740,
         "wires": []
     },
