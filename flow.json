@@ -29246,7 +29246,7 @@
         "z": "2bdc58f37cbddb93",
         "g": "5ba8a9ae620f6208",
         "name": "",
-        "interval": "1500",
+        "interval": "5000",
         "step": "1",
         "minValue": "20",
         "maxValue": "1024",
