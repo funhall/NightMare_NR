@@ -25825,7 +25825,7 @@
         "name": "",
         "low": "5",
         "high": "10",
-        "inte": "true",
+        "inte": "false",
         "property": "delay",
         "x": 940,
         "y": 3000,
