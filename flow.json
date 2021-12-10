@@ -6779,7 +6779,7 @@
         "gtype": "donut",
         "title": "Time used {{msg.gametime}}",
         "label": "min. left",
-        "format": "",
+        "format": "{{msg.gamecounter}}",
         "min": "0",
         "max": "60",
         "colors": [
@@ -16166,7 +16166,8 @@
         "y": 640,
         "wires": [
             [
-                "36f20c41e7fefc4e"
+                "36f20c41e7fefc4e",
+                "1ada877b.576d69"
             ]
         ]
     },
@@ -16189,7 +16190,7 @@
         "min": "60",
         "max": "90",
         "step": "10",
-        "x": 1460,
+        "x": 1510,
         "y": 480,
         "wires": [
             [
