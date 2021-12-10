@@ -38390,7 +38390,7 @@
         "id": "acd7251bfadd3119",
         "type": "http request",
         "z": "42a18184186a4f43",
-        "name": "Start countdown sound",
+        "name": "Start intro",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
@@ -38400,7 +38400,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1190,
+        "x": 1140,
         "y": 2800,
         "wires": [
             []
