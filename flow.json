@@ -37559,8 +37559,7 @@
                 "vt": "str"
             },
             {
-                "p": "topic",
-                "vt": "str"
+                "p": "payload"
             }
         ],
         "repeat": "",
@@ -37568,6 +37567,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
+        "payload": "start",
+        "payloadType": "str",
         "x": 1030,
         "y": 460,
         "wires": [
