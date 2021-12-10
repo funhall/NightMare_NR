@@ -25921,7 +25921,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "reset",
                 "pt": "msg",
                 "to": "reset",
                 "tot": "str"
