@@ -2296,7 +2296,7 @@
         "env": [],
         "x": 2094,
         "y": 2099,
-        "w": 802,
+        "w": 862,
         "h": 162
     },
     {
@@ -34132,7 +34132,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2590,
+        "x": 2550,
         "y": 2220,
         "wires": [
             [
@@ -34179,8 +34179,8 @@
         "links": [
             "d2fb2fb9926fbc1b"
         ],
-        "x": 2855,
-        "y": 2200,
+        "x": 2915,
+        "y": 2180,
         "wires": []
     },
     {
@@ -34203,7 +34203,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2750,
+        "x": 2790,
         "y": 2220,
         "wires": [
             [
@@ -34231,7 +34231,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2730,
+        "x": 2790,
         "y": 2140,
         "wires": [
             [
@@ -38789,7 +38789,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=pl_loop",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=pl_repeat",
         "tls": "",
         "persist": false,
         "proxy": "",
