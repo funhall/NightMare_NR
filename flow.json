@@ -16269,7 +16269,7 @@
         "passthru": true,
         "topic": "topic",
         "topicType": "msg",
-        "format": "{{value} }minutter",
+        "format": "{{value}} minutter",
         "min": "60",
         "max": "90",
         "step": "10",
