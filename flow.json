@@ -37604,12 +37604,14 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1040,
+        "payload": "play",
+        "payloadType": "str",
+        "x": 1030,
         "y": 460,
         "wires": [
-            []
+            [
+                "01e5220afcc91157"
+            ]
         ]
     },
     {
