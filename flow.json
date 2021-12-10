@@ -3069,7 +3069,7 @@
         "x": 48,
         "y": 219,
         "w": 1338,
-        "h": 528
+        "h": 568
     },
     {
         "id": "5ba8a9ae620f6208",
@@ -3084,13 +3084,14 @@
             "cd5daeb41ac8246d",
             "bfaf7d4edcab7900",
             "d97b9ec466579160",
-            "f0a666a6b7f545b3"
+            "f0a666a6b7f545b3",
+            "4ad4fbe72ee55a03"
         ],
         "env": [],
         "x": 74,
         "y": 639,
         "w": 572,
-        "h": 82
+        "h": 122
     },
     {
         "id": "82fd466d.f6c968",
@@ -29233,7 +29234,8 @@
         "y": 680,
         "wires": [
             [
-                "cd5daeb41ac8246d"
+                "cd5daeb41ac8246d",
+                "4ad4fbe72ee55a03"
             ]
         ]
     },
@@ -29331,6 +29333,34 @@
         "wires": [
             [
                 "cd5daeb41ac8246d"
+            ]
+        ]
+    },
+    {
+        "id": "4ad4fbe72ee55a03",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "5ba8a9ae620f6208",
+        "name": "1024",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "light1white",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 720,
+        "wires": [
+            [
+                "d97b9ec466579160"
             ]
         ]
     },
