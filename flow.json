@@ -37555,7 +37555,7 @@
         "props": [
             {
                 "p": "filename",
-                "v": "graveyard.wav",
+                "v": "/home/pi/graveyard.wav",
                 "vt": "str"
             },
             {
@@ -37572,7 +37572,7 @@
         "y": 460,
         "wires": [
             [
-                "a6b212541dc6eaef"
+                "12e8e759bcc82fd5"
             ]
         ]
     },
@@ -37974,16 +37974,24 @@
         "wires": []
     },
     {
-        "id": "a6b212541dc6eaef",
-        "type": "play_audio_file",
+        "id": "12e8e759bcc82fd5",
+        "type": "sox-play",
         "z": "42a18184186a4f43",
-        "filename": "/home/pi",
-        "x": 1230,
-        "y": 480,
+        "name": "",
+        "outputDevice": "default",
+        "manualOutput": "",
+        "gain": "0",
+        "startNew": "skip",
+        "playStream": false,
+        "inputEncoding": "signed-integer",
+        "inputChannels": 1,
+        "inputRate": 16000,
+        "inputBits": 16,
+        "debugOutput": false,
+        "x": 1170,
+        "y": 580,
         "wires": [
-            [
-                "9fc86e8ce829d976"
-            ]
+            []
         ]
     },
     {
