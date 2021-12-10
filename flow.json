@@ -29247,7 +29247,7 @@
         "g": "5ba8a9ae620f6208",
         "name": "",
         "interval": "5000",
-        "step": "100",
+        "step": "5",
         "minValue": "20",
         "maxValue": "1024",
         "startIncCommand": "start_op",
