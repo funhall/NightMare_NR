@@ -37977,7 +37977,7 @@
         "id": "a6b212541dc6eaef",
         "type": "play_audio_file",
         "z": "42a18184186a4f43",
-        "filename": "/home/pi/",
+        "filename": "/home/pi",
         "x": 1230,
         "y": 480,
         "wires": [
