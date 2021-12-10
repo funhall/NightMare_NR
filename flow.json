@@ -3010,12 +3010,13 @@
             "20060fabebc3daa4",
             "63deeeb79fdeb0f4",
             "c3a76b62883b7f32",
-            "6b7be4d8dafc67a3"
+            "6b7be4d8dafc67a3",
+            "d5837ddcf060b909"
         ],
         "env": [],
         "x": 1154,
         "y": 959,
-        "w": 572,
+        "w": 712,
         "h": 162
     },
     {
@@ -38338,7 +38339,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1590,
+        "x": 1730,
         "y": 1020,
         "wires": [
             []
@@ -38407,7 +38408,7 @@
         "y": 1000,
         "wires": [
             [
-                "2da9c2d1fb6c3377"
+                "d5837ddcf060b909"
             ]
         ]
     },
@@ -38703,6 +38704,29 @@
         "x": 2145,
         "y": 500,
         "wires": []
+    },
+    {
+        "id": "d5837ddcf060b909",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "1d68a0033f8e369c",
+        "name": "Loop",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=pl_loop",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1490,
+        "y": 1000,
+        "wires": [
+            [
+                "2da9c2d1fb6c3377"
+            ]
+        ]
     },
     {
         "id": "84e11b56.e27758",
