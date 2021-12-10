@@ -32886,7 +32886,7 @@
         "width": 2,
         "height": 2,
         "gtype": "gage",
-        "title": "6gavle{{msg.gameStatus}}",
+        "title": "gavle{{msg.gameStatus}}",
         "label": "Placeret",
         "format": "{{value}}",
         "min": 0,
@@ -35670,6 +35670,111 @@
         "wires": [
             [
                 "4963a3ed4d7fcb32"
+            ]
+        ]
+    },
+    {
+        "id": "eb3fa624594fe6ea",
+        "type": "ui_slider",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "label": "Timer",
+        "tooltip": "",
+        "group": "5241c487.80287c",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "33",
+        "max": "466",
+        "step": "10",
+        "x": 2140,
+        "y": 3040,
+        "wires": [
+            [
+                "e71a6236c999c5ca"
+            ]
+        ]
+    },
+    {
+        "id": "e71a6236c999c5ca",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Dennis",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2360,
+        "y": 3060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5bf4aa89f4a2142",
+        "type": "ui_button",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "group": "5241c487.80287c",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "tid{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 2070,
+        "y": 2960,
+        "wires": [
+            [
+                "209f5f9466e4a1f1"
+            ]
+        ]
+    },
+    {
+        "id": "209f5f9466e4a1f1",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Dennis",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2280,
+        "y": 2940,
+        "wires": [
+            [
+                "e5bf4aa89f4a2142"
             ]
         ]
     },
