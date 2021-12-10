@@ -1382,8 +1382,8 @@
             "640b4a9dba408264",
             "c2ddef282d3dccdc",
             "914d77b2c1bf7d1e",
-            "7fb75d36aeffe81f",
-            "f26cfdab81530554"
+            "f26cfdab81530554",
+            "71e33106a9531ced"
         ],
         "x": 414,
         "y": 2679,
@@ -25756,7 +25756,7 @@
         "wires": [
             [
                 "801930930a52a48c",
-                "7fb75d36aeffe81f"
+                "c2ddef282d3dccdc"
             ]
         ]
     },
@@ -25815,24 +25815,6 @@
         ]
     },
     {
-        "id": "7fb75d36aeffe81f",
-        "type": "random",
-        "z": "c39524c2016c8df2",
-        "g": "60708098e23acd96",
-        "name": "",
-        "low": "10",
-        "high": "60",
-        "inte": "true",
-        "property": "delay",
-        "x": 920,
-        "y": 2920,
-        "wires": [
-            [
-                "c2ddef282d3dccdc"
-            ]
-        ]
-    },
-    {
         "id": "f26cfdab81530554",
         "type": "switch",
         "z": "c39524c2016c8df2",
@@ -25852,6 +25834,24 @@
         "outputs": 1,
         "x": 1110,
         "y": 3000,
+        "wires": [
+            [
+                "71e33106a9531ced"
+            ]
+        ]
+    },
+    {
+        "id": "71e33106a9531ced",
+        "type": "random",
+        "z": "c39524c2016c8df2",
+        "g": "60708098e23acd96",
+        "name": "",
+        "low": "10",
+        "high": "60",
+        "inte": "true",
+        "property": "delay",
+        "x": 1080,
+        "y": 2960,
         "wires": [
             [
                 "c2ddef282d3dccdc"
