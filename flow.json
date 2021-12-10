@@ -38439,7 +38439,7 @@
         "z": "42a18184186a4f43",
         "name": "",
         "pauseType": "delay",
-        "timeout": "21",
+        "timeout": "115",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -38450,7 +38450,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 930,
+        "x": 940,
         "y": 2720,
         "wires": [
             [
