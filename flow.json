@@ -38504,7 +38504,7 @@
         "id": "c0b506afd9fe2736",
         "type": "http request",
         "z": "42a18184186a4f43",
-        "name": "Stop sound count down",
+        "name": "Stop intro",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
@@ -38514,7 +38514,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1210,
+        "x": 1160,
         "y": 2880,
         "wires": [
             []
