@@ -37608,8 +37608,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1220,
-        "y": 560,
+        "x": 1140,
+        "y": 580,
         "wires": [
             []
         ]
@@ -37946,9 +37946,7 @@
         "name": "",
         "props": [
             {
-                "p": "filename",
-                "v": "/home/pi/graveyard.wav",
-                "vt": "str"
+                "p": "payload"
             },
             {
                 "p": "payload"
@@ -37961,8 +37959,8 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 1110,
-        "y": 980,
+        "x": 1090,
+        "y": 900,
         "wires": [
             [
                 "2da9c2d1fb6c3377"
@@ -38202,7 +38200,7 @@
         "wires": [
             [
                 "187b5e35f48f575b",
-                "33dfb14b284d8b55"
+                "2da9c2d1fb6c3377"
             ]
         ]
     },
@@ -38375,16 +38373,64 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=in_play&input=/home/pi/graveyard.wav",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=in_play&input=/home/pi/Scary clock Ambience.mp3",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1320,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc083663148cf326",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "hent Halloween",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=in_stop&input=/home/pi/Scary clock Ambience.mp3",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
         "x": 1340,
-        "y": 980,
+        "y": 960,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "63deeeb79fdeb0f4",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "x": 1110,
+        "y": 980,
+        "wires": [
+            [
+                "bc083663148cf326"
+            ]
         ]
     },
     {
