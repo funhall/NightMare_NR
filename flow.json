@@ -1957,7 +1957,8 @@
             "819ef68957d8f110",
             "2cb594d49f3902ca",
             "187b5e35f48f575b",
-            "7f8d924fabc69f2f"
+            "7f8d924fabc69f2f",
+            "bae76fb6151e2185"
         ],
         "env": [],
         "x": 264,
@@ -36565,8 +36566,8 @@
         "wires": [
             [
                 "a1200c70914a7608",
-                "7f8d924fabc69f2f",
-                "2cb594d49f3902ca"
+                "2cb594d49f3902ca",
+                "bae76fb6151e2185"
             ]
         ]
     },
@@ -38523,7 +38524,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 660,
+        "x": 740,
         "y": 740,
         "wires": [
             []
@@ -38544,6 +38545,29 @@
         "wires": [
             [
                 "bc083663148cf326"
+            ]
+        ]
+    },
+    {
+        "id": "bae76fb6151e2185",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
+        "name": "Vol 80",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=volume&val=150",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 570,
+        "y": 740,
+        "wires": [
+            [
+                "7f8d924fabc69f2f"
             ]
         ]
     },
