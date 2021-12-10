@@ -6784,7 +6784,7 @@
         "gtype": "donut",
         "title": "Time used {{msg.gametime}}",
         "label": "min. left",
-        "format": "{{msg.gamecounter}}",
+        "format": "{{msg.timer}}",
         "min": 0,
         "max": "120",
         "colors": [
@@ -16016,7 +16016,7 @@
         "z": "33e76285.1cd03e",
         "g": "dbe01fce1c4844e0",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
