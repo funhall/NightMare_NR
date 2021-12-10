@@ -16295,6 +16295,15 @@
                         "value": "5"
                     }
                 ]
+            },
+            {
+                "name": "right",
+                "params": [
+                    {
+                        "type": "num",
+                        "value": "3"
+                    }
+                ]
             }
         ],
         "prop": "gametime",
