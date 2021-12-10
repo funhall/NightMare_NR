@@ -1390,7 +1390,7 @@
             "b3e403e4e78490ce",
             "e5f609fcfff13ea4"
         ],
-        "x": 374,
+        "x": 434,
         "y": 2679,
         "w": 1052,
         "h": 422
@@ -15359,7 +15359,9 @@
         "z": "33e76285.1cd03e",
         "name": "Clingar placeret",
         "mode": "link",
-        "links": [],
+        "links": [
+            "e5f609fcfff13ea4"
+        ],
         "x": 1775,
         "y": 4980,
         "wires": []
@@ -21744,7 +21746,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 480,
+        "x": 540,
         "y": 2840,
         "wires": [
             [
@@ -21774,7 +21776,7 @@
         "topic": "",
         "payload": "HIGH",
         "payloadType": "str",
-        "x": 830,
+        "x": 890,
         "y": 2720,
         "wires": [
             [
@@ -21804,7 +21806,7 @@
         "topic": "",
         "payload": "LOW",
         "payloadType": "str",
-        "x": 830,
+        "x": 890,
         "y": 2760,
         "wires": [
             [
@@ -21835,7 +21837,7 @@
         "topic": "",
         "payload": "Flash",
         "payloadType": "str",
-        "x": 830,
+        "x": 890,
         "y": 2800,
         "wires": [
             [
@@ -21898,7 +21900,7 @@
             "40dc1fdbb76e7388",
             "e5698f0d41280642"
         ],
-        "x": 1155,
+        "x": 1215,
         "y": 2720,
         "wires": [
             [
@@ -23206,7 +23208,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1250,
+        "x": 1310,
         "y": 2880,
         "wires": [
             [],
@@ -23228,7 +23230,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1310,
+        "x": 1370,
         "y": 2720,
         "wires": []
     },
@@ -23247,7 +23249,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1310,
+        "x": 1370,
         "y": 2760,
         "wires": []
     },
@@ -23266,7 +23268,7 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 1310,
+        "x": 1370,
         "y": 2800,
         "wires": []
     },
@@ -23279,7 +23281,7 @@
         "links": [
             "a9094c9473a660a8"
         ],
-        "x": 1155,
+        "x": 1215,
         "y": 2760,
         "wires": [
             [
@@ -23296,7 +23298,7 @@
         "links": [
             "682c6386bdb2a38d"
         ],
-        "x": 1155,
+        "x": 1215,
         "y": 2800,
         "wires": [
             [
@@ -25450,7 +25452,7 @@
         "links": [
             "580bca76314ef748"
         ],
-        "x": 915,
+        "x": 975,
         "y": 2820,
         "wires": [
             [
@@ -25478,7 +25480,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1070,
+        "x": 1130,
         "y": 2820,
         "wires": [
             [
@@ -25698,7 +25700,7 @@
         "links": [
             "435332b4bc93c875"
         ],
-        "x": 415,
+        "x": 475,
         "y": 2900,
         "wires": [
             [
@@ -25728,7 +25730,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 500,
+        "x": 560,
         "y": 2800,
         "wires": [
             [
@@ -25754,7 +25756,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 600,
+        "x": 660,
         "y": 2900,
         "wires": [
             [
@@ -25781,7 +25783,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 920,
+        "x": 980,
         "y": 2900,
         "wires": [
             [
@@ -25812,7 +25814,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 850,
+        "x": 910,
         "y": 3000,
         "wires": [
             [
@@ -25833,7 +25835,7 @@
         "high": "10000",
         "inte": "false",
         "property": "delay",
-        "x": 1060,
+        "x": 1120,
         "y": 2960,
         "wires": [
             [
@@ -25854,7 +25856,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1280,
+        "x": 1340,
         "y": 2960,
         "wires": []
     },
@@ -25871,7 +25873,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1090,
+        "x": 1150,
         "y": 2920,
         "wires": []
     },
@@ -25889,7 +25891,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1210,
+        "x": 1270,
         "y": 3060,
         "wires": []
     },
@@ -25906,7 +25908,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1290,
+        "x": 1350,
         "y": 2920,
         "wires": []
     },
@@ -25930,7 +25932,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
+        "x": 1080,
         "y": 3020,
         "wires": [
             [
@@ -25944,12 +25946,16 @@
         "type": "link in",
         "z": "c39524c2016c8df2",
         "g": "60708098e23acd96",
-        "name": "",
-        "links": [],
-        "x": 585,
+        "name": "reseter timer for blink",
+        "links": [
+            "d25e0510be528d87"
+        ],
+        "x": 645,
         "y": 3020,
         "wires": [
-            []
+            [
+                "b3e403e4e78490ce"
+            ]
         ]
     },
     {
