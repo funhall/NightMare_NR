@@ -38393,7 +38393,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=in_stop&input=/home/pi/Scary clock Ambience.mp3",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=pl_stop",
         "tls": "",
         "persist": false,
         "proxy": "",
