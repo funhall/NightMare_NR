@@ -36087,7 +36087,8 @@
             "8e95e3b21d3009a5",
             "e91ee7488c3ae977",
             "d5ca4e9187bf4236",
-            "c95cfc457130bed5"
+            "c95cfc457130bed5",
+            "5a26a99d2ad6da1f"
         ],
         "x": 235,
         "y": 100,
@@ -38355,6 +38356,120 @@
                 "2da9c2d1fb6c3377"
             ]
         ]
+    },
+    {
+        "id": "9f7e1bc9f4f3a6b8",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "x": 870,
+        "y": 2800,
+        "wires": [
+            [
+                "acd7251bfadd3119",
+                "55feac10d142c10c"
+            ]
+        ]
+    },
+    {
+        "id": "acd7251bfadd3119",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "Start countdown sound",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=in_play&input=/home/pi/bio.mp4",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1190,
+        "y": 2800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d4c6aa4a9d322a6",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "Show timer afspiller",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Escaperoom_Viborg_Timer\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 2720,
+        "wires": [
+            [
+                "5a26a99d2ad6da1f"
+            ]
+        ]
+    },
+    {
+        "id": "55feac10d142c10c",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "21",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 930,
+        "y": 2720,
+        "wires": [
+            [
+                "4d4c6aa4a9d322a6"
+            ]
+        ]
+    },
+    {
+        "id": "5a26a99d2ad6da1f",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "61b2c0553b7bbcc3"
+        ],
+        "x": 1305,
+        "y": 2720,
+        "wires": []
     },
     {
         "id": "84e11b56.e27758",
