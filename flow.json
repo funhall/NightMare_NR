@@ -1950,8 +1950,6 @@
         },
         "nodes": [
             "a1200c70914a7608",
-            "e3b8b77fa407b905",
-            "8e95e3b21d3009a5",
             "79428363115e0141",
             "18e4191c70ae0a3c",
             "38fdefcfbcaf5971",
@@ -1959,7 +1957,8 @@
             "941d9d2157c2785d",
             "819ef68957d8f110",
             "2cb594d49f3902ca",
-            "187b5e35f48f575b"
+            "187b5e35f48f575b",
+            "7f8d924fabc69f2f"
         ],
         "env": [],
         "x": 264,
@@ -2011,8 +2010,8 @@
             "e89aa0349c5a6710"
         ],
         "env": [],
-        "x": 254,
-        "y": 1619,
+        "x": 314,
+        "y": 1579,
         "w": 782,
         "h": 162
     },
@@ -2993,7 +2992,8 @@
             "bc083663148cf326",
             "20060fabebc3daa4",
             "63deeeb79fdeb0f4",
-            "c3a76b62883b7f32"
+            "c3a76b62883b7f32",
+            "6b7be4d8dafc67a3"
         ],
         "env": [],
         "x": 1154,
@@ -9834,7 +9834,8 @@
         "name": "Stop time",
         "mode": "link",
         "links": [
-            "38c9d1ce4d9d6dec"
+            "38c9d1ce4d9d6dec",
+            "6b7be4d8dafc67a3"
         ],
         "x": 1655,
         "y": 1080,
@@ -10513,7 +10514,8 @@
             "1557677d6ac3f118",
             "9aaf11136db3b282",
             "4bf3d6334235f28c",
-            "b395d4dd35fd5132"
+            "b395d4dd35fd5132",
+            "6b7be4d8dafc67a3"
         ],
         "x": 835,
         "y": 540,
@@ -35971,35 +35973,6 @@
         ]
     },
     {
-        "id": "e3b8b77fa407b905",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "606c3a6c3de0cf55",
-        "name": "start video",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "videoer/Trailer.mp4",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 710,
-        "y": 740,
-        "wires": [
-            [
-                "8e95e3b21d3009a5",
-                "2cb594d49f3902ca"
-            ]
-        ]
-    },
-    {
         "id": "e2981395d53cb507",
         "type": "change",
         "z": "42a18184186a4f43",
@@ -36034,20 +36007,6 @@
         ]
     },
     {
-        "id": "8e95e3b21d3009a5",
-        "type": "link out",
-        "z": "42a18184186a4f43",
-        "g": "606c3a6c3de0cf55",
-        "name": "Show timer",
-        "mode": "link",
-        "links": [
-            "61b2c0553b7bbcc3"
-        ],
-        "x": 835,
-        "y": 740,
-        "wires": []
-    },
-    {
         "id": "79428363115e0141",
         "type": "inject",
         "z": "42a18184186a4f43",
@@ -36074,7 +36033,6 @@
         "wires": [
             [
                 "a1200c70914a7608",
-                "e3b8b77fa407b905",
                 "f3bd7cc286241bf3"
             ]
         ]
@@ -36376,8 +36334,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 1660,
+        "x": 720,
+        "y": 1620,
         "wires": [
             [
                 "84a73a05a0c97f14"
@@ -36404,8 +36362,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 670,
-        "y": 1700,
+        "x": 730,
+        "y": 1660,
         "wires": [
             [
                 "87a2c2dac5306bc3"
@@ -36422,8 +36380,8 @@
         "links": [
             "def5ec1223d561e3"
         ],
-        "x": 995,
-        "y": 1700,
+        "x": 1055,
+        "y": 1660,
         "wires": []
     },
     {
@@ -36448,8 +36406,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 360,
-        "y": 1660,
+        "x": 420,
+        "y": 1620,
         "wires": [
             [
                 "ca227d8b89cf86e1",
@@ -36468,8 +36426,8 @@
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 995,
-        "y": 1660,
+        "x": 1055,
+        "y": 1620,
         "wires": []
     },
     {
@@ -36487,8 +36445,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 690,
-        "y": 1740,
+        "x": 750,
+        "y": 1700,
         "wires": [
             [
                 "87a2c2dac5306bc3"
@@ -36513,8 +36471,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 520,
-        "y": 1740,
+        "x": 580,
+        "y": 1700,
         "wires": [
             [
                 "1a7d871de19df5a6"
@@ -36567,8 +36525,8 @@
         "g": "6188f0082d3cd712",
         "name": "",
         "links": [],
-        "x": 335,
-        "y": 1720,
+        "x": 395,
+        "y": 1680,
         "wires": [
             [
                 "ca227d8b89cf86e1",
@@ -36607,9 +36565,9 @@
         "y": 760,
         "wires": [
             [
-                "f3bd7cc286241bf3",
-                "e3b8b77fa407b905",
-                "a1200c70914a7608"
+                "a1200c70914a7608",
+                "7f8d924fabc69f2f",
+                "2cb594d49f3902ca"
             ]
         ]
     },
@@ -38091,7 +38049,7 @@
         "g": "606c3a6c3de0cf55",
         "name": "Show timer 16 sek",
         "pauseType": "delay",
-        "timeout": "16",
+        "timeout": "110",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -38149,7 +38107,8 @@
         "mode": "link",
         "links": [
             "3bebbeb26f016ee2",
-            "d03e09e5aec12d86"
+            "d03e09e5aec12d86",
+            "c3a76b62883b7f32"
         ],
         "x": 1115,
         "y": 720,
@@ -38348,7 +38307,9 @@
         "z": "42a18184186a4f43",
         "g": "1d68a0033f8e369c",
         "name": "",
-        "links": [],
+        "links": [
+            "187b5e35f48f575b"
+        ],
         "x": 1385,
         "y": 1000,
         "wires": [
@@ -38377,8 +38338,8 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 870,
-        "y": 2800,
+        "x": 1330,
+        "y": 840,
         "wires": [
             [
                 "acd7251bfadd3119",
@@ -38400,8 +38361,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1140,
-        "y": 2800,
+        "x": 1600,
+        "y": 840,
         "wires": [
             []
         ]
@@ -38425,8 +38386,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1150,
-        "y": 2720,
+        "x": 1610,
+        "y": 760,
         "wires": [
             [
                 "5a26a99d2ad6da1f"
@@ -38450,8 +38411,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 940,
-        "y": 2720,
+        "x": 1400,
+        "y": 760,
         "wires": [
             [
                 "4d4c6aa4a9d322a6"
@@ -38467,8 +38428,8 @@
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 1305,
-        "y": 2720,
+        "x": 1765,
+        "y": 760,
         "wires": []
     },
     {
@@ -38492,8 +38453,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 870,
-        "y": 2540,
+        "x": 1280,
+        "y": 720,
         "wires": [
             [
                 "4d4c6aa4a9d322a6"
@@ -38514,8 +38475,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1160,
-        "y": 2880,
+        "x": 1600,
+        "y": 900,
         "wires": [
             []
         ]
@@ -38541,11 +38502,75 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 930,
-        "y": 2920,
+        "x": 1340,
+        "y": 900,
         "wires": [
             [
                 "c0b506afd9fe2736"
+            ]
+        ]
+    },
+    {
+        "id": "1d6ec9bba9260bfe",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "start video",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "videoer/Trailer.mp4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f8d924fabc69f2f",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
+        "name": "Start intro",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=in_play&input=/home/pi/Intro.mp4",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 660,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b7be4d8dafc67a3",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "1d68a0033f8e369c",
+        "name": "Stop countdown lyd ",
+        "links": [
+            "2b480c9c40b1ae41",
+            "6ae7dc55b448fca2"
+        ],
+        "x": 1395,
+        "y": 1060,
+        "wires": [
+            [
+                "bc083663148cf326"
             ]
         ]
     },
