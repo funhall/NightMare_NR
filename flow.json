@@ -2786,8 +2786,8 @@
             "4339933a7748edbd"
         ],
         "env": [],
-        "x": 2074,
-        "y": 439,
+        "x": 1834,
+        "y": 739,
         "w": 892,
         "h": 302
     },
@@ -37267,8 +37267,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 2210,
-        "y": 600,
+        "x": 1970,
+        "y": 900,
         "wires": [
             [
                 "dad7a883ce69f9fe"
@@ -37290,8 +37290,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2400,
-        "y": 620,
+        "x": 2160,
+        "y": 920,
         "wires": [
             [
                 "4339933a7748edbd"
@@ -37313,8 +37313,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2810,
-        "y": 520,
+        "x": 2570,
+        "y": 820,
         "wires": [
             [
                 "37230a6eb083dae0"
@@ -37330,8 +37330,8 @@
         "links": [
             "435332b4bc93c875"
         ],
-        "x": 2355,
-        "y": 500,
+        "x": 2115,
+        "y": 800,
         "wires": [
             [
                 "6c3ee9b0b2c85f12"
@@ -37353,8 +37353,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2750,
-        "y": 600,
+        "x": 2510,
+        "y": 900,
         "wires": [
             []
         ]
@@ -37374,8 +37374,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2870,
-        "y": 480,
+        "x": 2630,
+        "y": 780,
         "wires": [
             []
         ]
@@ -37402,8 +37402,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 2490,
-        "y": 540,
+        "x": 2250,
+        "y": 840,
         "wires": [
             [
                 "51154fc736916e3a"
@@ -37432,8 +37432,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 2370,
-        "y": 580,
+        "x": 2130,
+        "y": 880,
         "wires": [
             [
                 "92391051f73c0484"
@@ -37449,8 +37449,8 @@
         "links": [
             "e8ba061f5f8c7fec"
         ],
-        "x": 2115,
-        "y": 620,
+        "x": 1875,
+        "y": 920,
         "wires": [
             [
                 "dad7a883ce69f9fe"
@@ -37475,8 +37475,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2640,
-        "y": 500,
+        "x": 2400,
+        "y": 800,
         "wires": [
             [
                 "51154fc736916e3a"
@@ -37493,8 +37493,8 @@
             "2b480c9c40b1ae41",
             "9267aaf0dfa06598"
         ],
-        "x": 2575,
-        "y": 680,
+        "x": 2335,
+        "y": 980,
         "wires": [
             [
                 "fc16587528d98c86"
@@ -37516,8 +37516,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 2710,
-        "y": 700,
+        "x": 2470,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -37544,8 +37544,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 2420,
-        "y": 700,
+        "x": 2180,
+        "y": 1000,
         "wires": [
             [
                 "fc16587528d98c86"
@@ -37570,8 +37570,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2490,
-        "y": 500,
+        "x": 2250,
+        "y": 800,
         "wires": [
             [
                 "8d7f34cf946ffb55"
@@ -37632,8 +37632,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2580,
-        "y": 620,
+        "x": 2340,
+        "y": 920,
         "wires": [
             [
                 "92391051f73c0484"
@@ -37961,11 +37961,11 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 1030,
-        "y": 460,
+        "x": 1110,
+        "y": 980,
         "wires": [
             [
-                "33dfb14b284d8b55"
+                "2da9c2d1fb6c3377"
             ]
         ]
     },
@@ -38366,6 +38366,26 @@
         "x": 1380,
         "y": 560,
         "wires": []
+    },
+    {
+        "id": "2da9c2d1fb6c3377",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "hent Halloween",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=in_play&input=/home/pi/Desktop/graveyard.wav",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1340,
+        "y": 980,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "84e11b56.e27758",
