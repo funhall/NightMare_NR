@@ -3829,16 +3829,6 @@
         "height": 1
     },
     {
-        "id": "b915020b3d98d259",
-        "type": "ui_spacer",
-        "z": "33e76285.1cd03e",
-        "name": "spacer",
-        "group": "117cda2a.43e596",
-        "order": 25,
-        "width": 4,
-        "height": 1
-    },
-    {
         "id": "64211c8bfdf2c13d",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
