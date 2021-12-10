@@ -38416,7 +38416,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"show\":[\"Escaperoom_Viborg_Timer\"]}}",
+                "to": "{\"group\":{\"show\":[\"Escaperoom_Viborg_Timer\"],\"hide\":[\"Escaperoom_Viborg_Start_video\"]}}",
                 "tot": "json"
             }
         ],
