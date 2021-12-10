@@ -35685,7 +35685,7 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "outs": "all",
+        "outs": "end",
         "topic": "topic",
         "topicType": "msg",
         "min": "33",
