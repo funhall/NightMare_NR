@@ -1382,12 +1382,13 @@
             "640b4a9dba408264",
             "c2ddef282d3dccdc",
             "914d77b2c1bf7d1e",
-            "7fb75d36aeffe81f"
+            "7fb75d36aeffe81f",
+            "f26cfdab81530554"
         ],
         "x": 414,
         "y": 2679,
         "w": 1052,
-        "h": 382
+        "h": 422
     },
     {
         "id": "3897bed133705e81",
@@ -25694,7 +25695,7 @@
         "links": [
             "435332b4bc93c875"
         ],
-        "x": 535,
+        "x": 455,
         "y": 2900,
         "wires": [
             [
@@ -25750,7 +25751,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 740,
+        "x": 640,
         "y": 2900,
         "wires": [
             [
@@ -25804,14 +25805,12 @@
         "limit": "",
         "loopPayload": "loop-index",
         "finalPayload": "final-count",
-        "x": 1130,
-        "y": 3020,
+        "x": 1070,
+        "y": 3060,
         "wires": [
+            [],
             [
-                "c2ddef282d3dccdc"
-            ],
-            [
-                "c2ddef282d3dccdc"
+                "f26cfdab81530554"
             ]
         ]
     },
@@ -25827,6 +25826,32 @@
         "property": "delay",
         "x": 920,
         "y": 2920,
+        "wires": [
+            [
+                "c2ddef282d3dccdc"
+            ]
+        ]
+    },
+    {
+        "id": "f26cfdab81530554",
+        "type": "switch",
+        "z": "c39524c2016c8df2",
+        "g": "60708098e23acd96",
+        "name": "",
+        "property": "Clingar",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1110,
+        "y": 3000,
         "wires": [
             [
                 "c2ddef282d3dccdc"
