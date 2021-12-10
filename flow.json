@@ -1383,7 +1383,8 @@
             "c2ddef282d3dccdc",
             "914d77b2c1bf7d1e",
             "f26cfdab81530554",
-            "71e33106a9531ced"
+            "71e33106a9531ced",
+            "5f43b8eae853a085"
         ],
         "x": 414,
         "y": 2679,
@@ -25846,17 +25847,35 @@
         "z": "c39524c2016c8df2",
         "g": "60708098e23acd96",
         "name": "",
-        "low": "10",
-        "high": "60",
+        "low": "5",
+        "high": "10",
         "inte": "true",
         "property": "delay",
         "x": 1080,
         "y": 2960,
         "wires": [
             [
-                "c2ddef282d3dccdc"
+                "c2ddef282d3dccdc",
+                "5f43b8eae853a085"
             ]
         ]
+    },
+    {
+        "id": "5f43b8eae853a085",
+        "type": "debug",
+        "z": "c39524c2016c8df2",
+        "g": "60708098e23acd96",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 2960,
+        "wires": []
     },
     {
         "id": "54706de9e7f6afc3",
