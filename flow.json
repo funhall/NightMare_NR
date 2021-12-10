@@ -29243,7 +29243,7 @@
         "z": "2bdc58f37cbddb93",
         "g": "5ba8a9ae620f6208",
         "name": "",
-        "interval": "300",
+        "interval": "100",
         "step": "10",
         "minValue": "20",
         "maxValue": "1024",
