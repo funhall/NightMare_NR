@@ -1391,7 +1391,7 @@
         "x": 374,
         "y": 2679,
         "w": 1052,
-        "h": 462
+        "h": 402
     },
     {
         "id": "3897bed133705e81",
@@ -25866,8 +25866,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 3100,
+        "x": 1090,
+        "y": 2920,
         "wires": []
     },
     {
@@ -25875,15 +25875,16 @@
         "type": "debug",
         "z": "c39524c2016c8df2",
         "g": "60708098e23acd96",
-        "name": "",
+        "name": "status",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1060,
+        "x": 1040,
         "y": 3040,
         "wires": []
     },
