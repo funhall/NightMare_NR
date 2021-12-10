@@ -3091,7 +3091,7 @@
         "env": [],
         "x": 34,
         "y": 639,
-        "w": 622,
+        "w": 632,
         "h": 142
     },
     {
@@ -29247,14 +29247,14 @@
         "g": "5ba8a9ae620f6208",
         "name": "",
         "interval": "5000",
-        "step": "1",
+        "step": "100",
         "minValue": "20",
         "maxValue": "1024",
         "startIncCommand": "start_op",
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 500,
+        "x": 560,
         "y": 680,
         "wires": [
             [
