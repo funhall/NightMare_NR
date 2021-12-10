@@ -38501,6 +38501,55 @@
         ]
     },
     {
+        "id": "c0b506afd9fe2736",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "Stop sound count down",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=pl_stop",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1210,
+        "y": 2880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26e994869d05be66",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 930,
+        "y": 2920,
+        "wires": [
+            [
+                "c0b506afd9fe2736"
+            ]
+        ]
+    },
+    {
         "id": "84e11b56.e27758",
         "type": "inject",
         "z": "5b3651b.92335b",
