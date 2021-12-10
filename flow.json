@@ -2018,7 +2018,7 @@
         "env": [],
         "x": 264,
         "y": 659,
-        "w": 802,
+        "w": 892,
         "h": 202
     },
     {
@@ -35876,8 +35876,8 @@
         "width": "24",
         "height": "14",
         "order": 0,
-        "category": "Sounds",
-        "file": "Scary clock Ambience.mp4",
+        "category": "Billeder",
+        "file": "IMG_0557.jpg",
         "layout": "center",
         "showcontrols": true,
         "loop": false,
@@ -36650,8 +36650,7 @@
         "g": "a6cfbf982760de76",
         "name": "",
         "links": [
-            "e8ba061f5f8c7fec",
-            "b5f0a04d4130ba89"
+            "e8ba061f5f8c7fec"
         ],
         "x": 335,
         "y": 520,
@@ -36672,7 +36671,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Billeder/Trailer.mp4",
+                "to": "Billeder/IMG_0557.jpg",
                 "tot": "str"
             }
         ],
@@ -37545,8 +37544,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1140,
-        "y": 580,
+        "x": 1220,
+        "y": 560,
         "wires": [
             []
         ]
@@ -38121,7 +38120,7 @@
         "type": "delay",
         "z": "42a18184186a4f43",
         "g": "606c3a6c3de0cf55",
-        "name": "Show timer 10 sek",
+        "name": "Show timer 16 sek",
         "pauseType": "delay",
         "timeout": "16",
         "timeoutUnits": "seconds",
@@ -38184,7 +38183,7 @@
             "3bebbeb26f016ee2",
             "d03e09e5aec12d86"
         ],
-        "x": 985,
+        "x": 1115,
         "y": 720,
         "wires": []
     },
