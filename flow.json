@@ -3305,6 +3305,27 @@
         "h": 82
     },
     {
+        "id": "1d68a0033f8e369c",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Count down lyd i rum 1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2da9c2d1fb6c3377",
+            "bc083663148cf326",
+            "20060fabebc3daa4",
+            "63deeeb79fdeb0f4",
+            "c3a76b62883b7f32"
+        ],
+        "env": [],
+        "x": 1154,
+        "y": 959,
+        "w": 572,
+        "h": 162
+    },
+    {
         "id": "82fd466d.f6c968",
         "type": "ui_tab",
         "name": "Nightmare personale",
@@ -36226,7 +36247,9 @@
         "x": 782.8958435058594,
         "y": 793.3333129882812,
         "wires": [
-            []
+            [
+                "9fc86e8ce829d976"
+            ]
         ]
     },
     {
@@ -37943,6 +37966,7 @@
         "id": "20060fabebc3daa4",
         "type": "inject",
         "z": "42a18184186a4f43",
+        "g": "1d68a0033f8e369c",
         "name": "",
         "props": [
             {
@@ -37959,8 +37983,8 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 1090,
-        "y": 900,
+        "x": 1270,
+        "y": 1000,
         "wires": [
             [
                 "2da9c2d1fb6c3377"
@@ -38199,8 +38223,7 @@
         "y": 760,
         "wires": [
             [
-                "187b5e35f48f575b",
-                "2da9c2d1fb6c3377"
+                "187b5e35f48f575b"
             ]
         ]
     },
@@ -38369,7 +38392,8 @@
         "id": "2da9c2d1fb6c3377",
         "type": "http request",
         "z": "42a18184186a4f43",
-        "name": "hent Halloween",
+        "g": "1d68a0033f8e369c",
+        "name": "Start countdown sound",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
@@ -38379,8 +38403,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1320,
-        "y": 860,
+        "x": 1590,
+        "y": 1020,
         "wires": [
             []
         ]
@@ -38389,7 +38413,8 @@
         "id": "bc083663148cf326",
         "type": "http request",
         "z": "42a18184186a4f43",
-        "name": "hent Halloween",
+        "g": "1d68a0033f8e369c",
+        "name": "Stop sound count down",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
@@ -38399,8 +38424,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1340,
-        "y": 960,
+        "x": 1590,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -38409,6 +38434,7 @@
         "id": "63deeeb79fdeb0f4",
         "type": "inject",
         "z": "42a18184186a4f43",
+        "g": "1d68a0033f8e369c",
         "name": "",
         "props": [
             {
@@ -38425,11 +38451,26 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 1110,
-        "y": 980,
+        "x": 1250,
+        "y": 1080,
         "wires": [
             [
                 "bc083663148cf326"
+            ]
+        ]
+    },
+    {
+        "id": "c3a76b62883b7f32",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "1d68a0033f8e369c",
+        "name": "",
+        "links": [],
+        "x": 1385,
+        "y": 1000,
+        "wires": [
+            [
+                "2da9c2d1fb6c3377"
             ]
         ]
     },
