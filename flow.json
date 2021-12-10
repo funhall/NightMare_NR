@@ -3990,16 +3990,6 @@
         "type": "ewelink-credentials"
     },
     {
-        "id": "e05ba92c86488d8b",
-        "type": "soundfile-directory",
-        "directory": "/home/pi/"
-    },
-    {
-        "id": "b0442a5f6abaea0c",
-        "type": "soundfile-directory",
-        "directory": "/"
-    },
-    {
         "id": "ccd269eeb5183c43",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
@@ -37609,9 +37599,7 @@
         "x": 1030,
         "y": 460,
         "wires": [
-            [
-                "01e5220afcc91157"
-            ]
+            []
         ]
     },
     {
@@ -37992,22 +37980,6 @@
         "wires": [
             [
                 "bdd99e813bcd034d"
-            ]
-        ]
-    },
-    {
-        "id": "01e5220afcc91157",
-        "type": "PlaySound",
-        "z": "42a18184186a4f43",
-        "name": "",
-        "playerOptions": "{}",
-        "audioURI": "graveyard.wav",
-        "options": "{}",
-        "x": 1140,
-        "y": 560,
-        "wires": [
-            [
-                "9fc86e8ce829d976"
             ]
         ]
     },
