@@ -37606,8 +37606,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
-        "y": 420,
+        "x": 1040,
+        "y": 460,
         "wires": [
             []
         ]
@@ -37991,6 +37991,20 @@
             [
                 "bdd99e813bcd034d"
             ]
+        ]
+    },
+    {
+        "id": "01e5220afcc91157",
+        "type": "PlaySound",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "playerOptions": "{}",
+        "audioURI": "graveyard.wav",
+        "options": "{}",
+        "x": 1140,
+        "y": 560,
+        "wires": [
+            []
         ]
     },
     {
