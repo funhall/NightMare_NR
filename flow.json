@@ -2864,7 +2864,8 @@
             "e50812896c2c6ccf",
             "d3d06ee42bbf0a8b",
             "bcbe28d88f6f97ef",
-            "f3ac59f6dc86891f"
+            "f3ac59f6dc86891f",
+            "b2f4c24ad38b6c92"
         ],
         "x": 2034,
         "y": 39,
@@ -28554,7 +28555,7 @@
         "y": 440,
         "wires": [
             [
-                "4d3749f1ee9a9522"
+                "b2f4c24ad38b6c92"
             ]
         ]
     },
@@ -29647,6 +29648,26 @@
         "x": 4340,
         "y": 620,
         "wires": []
+    },
+    {
+        "id": "b2f4c24ad38b6c92",
+        "type": "calculator",
+        "z": "2bdc58f37cbddb93",
+        "g": "63074db08e166961",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "sum",
+        "constant": "1",
+        "round": false,
+        "decimals": 0,
+        "x": 4870,
+        "y": 400,
+        "wires": [
+            [
+                "4d3749f1ee9a9522"
+            ]
+        ]
     },
     {
         "id": "12696b2c777c71a4",
