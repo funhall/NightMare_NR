@@ -3824,7 +3824,7 @@
         "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "117cda2a.43e596",
-        "order": 13,
+        "order": 14,
         "width": 4,
         "height": 1
     },
@@ -3834,7 +3834,7 @@
         "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "117cda2a.43e596",
-        "order": 14,
+        "order": 15,
         "width": 2,
         "height": 1
     },
@@ -3849,42 +3849,12 @@
         "height": 1
     },
     {
-        "id": "458b5b7227522077",
-        "type": "ui_spacer",
-        "z": "33e76285.1cd03e",
-        "name": "spacer",
-        "group": "117cda2a.43e596",
-        "order": 21,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "2cacd097d68d7e1b",
-        "type": "ui_spacer",
-        "z": "33e76285.1cd03e",
-        "name": "spacer",
-        "group": "117cda2a.43e596",
-        "order": 23,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "71abe466fc4f92d2",
-        "type": "ui_spacer",
-        "z": "33e76285.1cd03e",
-        "name": "spacer",
-        "group": "117cda2a.43e596",
-        "order": 24,
-        "width": 6,
-        "height": 1
-    },
-    {
         "id": "b915020b3d98d259",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "117cda2a.43e596",
-        "order": 26,
+        "order": 25,
         "width": 4,
         "height": 1
     },
@@ -6691,7 +6661,7 @@
         "g": "dbe01fce1c4844e0",
         "name": "Start spil/Playing",
         "group": "117cda2a.43e596",
-        "order": 20,
+        "order": 19,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -8439,11 +8409,11 @@
         "g": "3897bed133705e81",
         "name": "Gavle",
         "group": "117cda2a.43e596",
-        "order": 12,
+        "order": 9,
         "width": 1,
         "height": 1,
         "passthru": false,
-        "label": "1Gavle",
+        "label": "Gavle",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.gavlebackground}}",
@@ -8683,7 +8653,7 @@
         "g": "7ba464075860abd5",
         "name": "Power on/off",
         "group": "117cda2a.43e596",
-        "order": 22,
+        "order": 21,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -9739,7 +9709,7 @@
         "g": "f4e5ec1eb5ea4c59",
         "name": "Game over",
         "group": "117cda2a.43e596",
-        "order": 19,
+        "order": 18,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -12683,7 +12653,7 @@
         "g": "25201c18524fdbea",
         "name": "Tænd lader",
         "group": "117cda2a.43e596",
-        "order": 25,
+        "order": 24,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -29424,7 +29394,7 @@
         "g": "08b42802ab3938de",
         "name": "",
         "group": "117cda2a.43e596",
-        "order": 11,
+        "order": 12,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -29779,7 +29749,7 @@
         "g": "f38486a5759666f0",
         "name": "",
         "group": "117cda2a.43e596",
-        "order": 10,
+        "order": 11,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -30239,7 +30209,7 @@
         "g": "1c3803be18092683",
         "name": "",
         "group": "117cda2a.43e596",
-        "order": 9,
+        "order": 10,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -34403,7 +34373,7 @@
         "g": "080ff8239be71c19",
         "name": "",
         "group": "117cda2a.43e596",
-        "order": 18,
+        "order": 13,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -45022,7 +44992,7 @@
         "label": "Game time",
         "tooltip": "Indstiller spilletiden i Min.",
         "group": "117cda2a.43e596",
-        "order": 27,
+        "order": 26,
         "width": 6,
         "height": 1,
         "passthru": true,
@@ -52855,34 +52825,6 @@
         "wires": []
     },
     {
-        "id": "882eddd90157b68b",
-        "type": "ui_button",
-        "z": "416eda1d3361af12",
-        "g": "ed80a615853c3223",
-        "name": "Gavle",
-        "group": "117cda2a.43e596",
-        "order": 15,
-        "width": 1,
-        "height": 1,
-        "passthru": false,
-        "label": "2Gavle",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.gavlebackground}}",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1050,
-        "y": 1700,
-        "wires": [
-            [
-                "d8e8bd03d8aa68f6"
-            ]
-        ]
-    },
-    {
         "id": "728a96d60a8179d0",
         "type": "link in",
         "z": "416eda1d3361af12",
@@ -52954,9 +52896,7 @@
         "x": 850,
         "y": 1680,
         "wires": [
-            [
-                "882eddd90157b68b"
-            ]
+            []
         ]
     },
     {
@@ -52982,9 +52922,7 @@
         "x": 850,
         "y": 1720,
         "wires": [
-            [
-                "882eddd90157b68b"
-            ]
+            []
         ]
     },
     {
