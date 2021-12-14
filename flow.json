@@ -26411,7 +26411,7 @@
         "g": "3080724a291fe565",
         "name": "",
         "interval": "300",
-        "step": "10",
+        "step": "1",
         "minValue": "10",
         "maxValue": "1024",
         "startIncCommand": "start_op",
