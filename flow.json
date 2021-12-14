@@ -3093,8 +3093,8 @@
             "e9857ec030a16ab1"
         ],
         "env": [],
-        "x": 184,
-        "y": 659,
+        "x": 204,
+        "y": 639,
         "w": 602,
         "h": 202
     },
@@ -26484,8 +26484,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 780,
+        "x": 510,
+        "y": 760,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -26585,8 +26585,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 350,
-        "y": 780,
+        "x": 370,
+        "y": 760,
         "wires": [
             [
                 "de5ea08b0ff1a997",
@@ -26673,8 +26673,8 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 680,
-        "y": 780,
+        "x": 700,
+        "y": 760,
         "wires": [
             [
                 "397b6fcd88e6dca3",
@@ -26709,8 +26709,8 @@
         "links": [
             "7fc3fbad33439116"
         ],
-        "x": 255,
-        "y": 780,
+        "x": 275,
+        "y": 760,
         "wires": [
             [
                 "9b391ee6ccfc7d08"
@@ -30175,8 +30175,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 820,
+        "x": 490,
+        "y": 800,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -30633,7 +30633,7 @@
         "z": "2bdc58f37cbddb93",
         "g": "1a8e6e1daddc8f68",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -30842,8 +30842,8 @@
             "9267aaf0dfa06598",
             "e8ba061f5f8c7fec"
         ],
-        "x": 295,
-        "y": 700,
+        "x": 315,
+        "y": 680,
         "wires": [
             [
                 "cfd659f10ae33059"
@@ -30870,8 +30870,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 720,
+        "x": 510,
+        "y": 700,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -30943,8 +30943,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 290,
-        "y": 740,
+        "x": 310,
+        "y": 720,
         "wires": [
             [
                 "9b391ee6ccfc7d08"
