@@ -5139,7 +5139,7 @@
         "timerType": "delay",
         "timerDurationUnit": "millisecond",
         "timerDurationType": "num",
-        "timerDuration": 1500,
+        "timerDuration": 1100,
         "timerLoopTimeoutUnit": "second",
         "timerLoopTimeoutType": "num",
         "timerLoopTimeout": 0,
