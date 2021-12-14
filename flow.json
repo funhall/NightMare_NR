@@ -2886,7 +2886,8 @@
             "a973d45f984d496d",
             "93dc99ab9d599667",
             "ecc6f07e193c9587",
-            "aece152ba4398dd2"
+            "aece152ba4398dd2",
+            "3bf33e5c4381c0af"
         ],
         "x": 2034,
         "y": 19,
@@ -3373,7 +3374,12 @@
             "b72c70940c8b91ae",
             "4e5e558155437ae7",
             "75f3412e531ae899",
-            "d1e33a2ea23e88eb"
+            "d1e33a2ea23e88eb",
+            "c2082f8d23577de8",
+            "f92739ff0cfa96e1",
+            "54d2ea789bc9e42b",
+            "ea36030f4d10bf58",
+            "187a4535a659d9ed"
         ],
         "env": [],
         "x": 1154,
@@ -27673,7 +27679,7 @@
         "expiry": "",
         "broker": "dca8425b.8fb18",
         "x": 3230,
-        "y": 240,
+        "y": 280,
         "wires": []
     },
     {
@@ -30440,6 +30446,23 @@
         "wires": [
             [
                 "f6f3e0d694580af0"
+            ]
+        ]
+    },
+    {
+        "id": "3bf33e5c4381c0af",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "63074db08e166961",
+        "name": "direct rum 3 hvid",
+        "links": [
+            "54d2ea789bc9e42b"
+        ],
+        "x": 3065,
+        "y": 360,
+        "wires": [
+            [
+                "ea8102888f0cc01d"
             ]
         ]
     },
@@ -39902,7 +39925,7 @@
         "authType": "",
         "senderr": false,
         "x": 1770,
-        "y": 1320,
+        "y": 1360,
         "wires": [
             []
         ]
@@ -39999,7 +40022,10 @@
         "y": 1320,
         "wires": [
             [
-                "07ca034c044eb89e"
+                "c2082f8d23577de8",
+                "f92739ff0cfa96e1",
+                "d1e33a2ea23e88eb",
+                "187a4535a659d9ed"
             ]
         ]
     },
@@ -40038,10 +40064,126 @@
         "authType": "basic",
         "senderr": false,
         "x": 1500,
-        "y": 1320,
+        "y": 1360,
         "wires": [
             [
                 "07ca034c044eb89e"
+            ]
+        ]
+    },
+    {
+        "id": "c2082f8d23577de8",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1520,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f92739ff0cfa96e1",
+        "type": "trigger",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "LOW",
+        "op1": "LOW",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-200",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1690,
+        "y": 1260,
+        "wires": [
+            [
+                "54d2ea789bc9e42b"
+            ]
+        ]
+    },
+    {
+        "id": "54d2ea789bc9e42b",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "3bf33e5c4381c0af"
+        ],
+        "x": 1875,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "ea36030f4d10bf58",
+        "type": "trigger",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "LOW",
+        "op1": "HIGH",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-200",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1690,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "187a4535a659d9ed",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1560,
+        "y": 1320,
+        "wires": [
+            [
+                "ea36030f4d10bf58"
             ]
         ]
     },
