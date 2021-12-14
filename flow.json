@@ -35091,7 +35091,7 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "open",
+                "v": "closed",
                 "vt": "str"
             },
             {
@@ -35102,7 +35102,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1010,
-        "y": 2420,
+        "y": 2400,
         "wires": [
             [
                 "4963a3ed4d7fcb32"
@@ -35131,7 +35131,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 830,
-        "y": 2420,
+        "y": 2440,
         "wires": [
             [
                 "092c8cf33c419c32",
