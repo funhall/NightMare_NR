@@ -1799,7 +1799,8 @@
             "3f985d6090fe8515",
             "e7923fe80c1f08d4",
             "0f8cb9d00c2a14c4",
-            "91e6ff63dd11763d"
+            "91e6ff63dd11763d",
+            "484a9f8fb175f722"
         ],
         "env": [],
         "x": 114,
@@ -15405,7 +15406,7 @@
         "z": "33e76285.1cd03e",
         "g": "dbe01fce1c4844e0",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -15653,8 +15654,7 @@
         "wires": [
             [
                 "1ada877b.576d69",
-                "d43dbf02e57729b7",
-                "91e6ff63dd11763d"
+                "484a9f8fb175f722"
             ]
         ]
     },
@@ -16851,6 +16851,35 @@
         "x": 1780,
         "y": 940,
         "wires": []
+    },
+    {
+        "id": "484a9f8fb175f722",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1660,
+        "y": 860,
+        "wires": [
+            [
+                "d43dbf02e57729b7",
+                "91e6ff63dd11763d"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
