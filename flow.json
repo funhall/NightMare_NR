@@ -39990,11 +39990,8 @@
         "props": [
             {
                 "p": "reset",
-                "v": "start",
+                "v": "x",
                 "vt": "str"
-            },
-            {
-                "p": "payload"
             }
         ],
         "repeat": "",
@@ -40002,8 +39999,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "start",
-        "payloadType": "str",
         "x": 1250,
         "y": 1400,
         "wires": [
