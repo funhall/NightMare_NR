@@ -2070,7 +2070,8 @@
             "2fd0437d917259cf",
             "3d1d2e566be43e16",
             "32dd122c0995256b",
-            "cc8dee55e395afac"
+            "cc8dee55e395afac",
+            "b10bdf8b7d377e61"
         ],
         "env": [],
         "x": 314,
@@ -3391,7 +3392,7 @@
         "id": "92e6d0714aba78d7",
         "type": "group",
         "z": "42a18184186a4f43",
-        "name": "Singing little girl singing son rum 3",
+        "name": "Singing little girl singing son rum 3 når gavle er placeret",
         "style": {
             "label": true
         },
@@ -8514,7 +8515,8 @@
             "451de6d6614c5847",
             "565afc3094528f2f",
             "fb2907834c58bfd3",
-            "09f49c782876928c"
+            "09f49c782876928c",
+            "e89aa0349c5a6710"
         ],
         "x": 1295,
         "y": 2280,
@@ -37768,12 +37770,14 @@
         "z": "42a18184186a4f43",
         "g": "6188f0082d3cd712",
         "name": "",
-        "links": [],
+        "links": [
+            "d4d2aeec1061c558"
+        ],
         "x": 395,
         "y": 1680,
         "wires": [
             [
-                "46281dbc9b429c99"
+                "b10bdf8b7d377e61"
             ]
         ]
     },
@@ -41100,6 +41104,32 @@
         "wires": [
             [
                 "32dd122c0995256b"
+            ]
+        ]
+    },
+    {
+        "id": "b10bdf8b7d377e61",
+        "type": "switch",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 480,
+        "y": 1660,
+        "wires": [
+            [
+                "46281dbc9b429c99"
             ]
         ]
     },
