@@ -2401,7 +2401,7 @@
         ],
         "env": [],
         "x": 874,
-        "y": 2659,
+        "y": 2839,
         "w": 572,
         "h": 162
     },
@@ -2748,8 +2748,6 @@
             "fa60b181bbd71bd4",
             "5632b65e062de33a",
             "092c8cf33c419c32",
-            "821aabc5195e68ee",
-            "66e3d03ef796e76d",
             "38979f45a4929e10",
             "4e81fb79cbcea28c",
             "d04d8fe459956714",
@@ -33415,7 +33413,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 960,
-        "y": 2720,
+        "y": 2900,
         "wires": [
             [
                 "541b4c8a6be11a8c"
@@ -34980,7 +34978,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1330,
-        "y": 2700,
+        "y": 2880,
         "wires": []
     },
     {
@@ -35004,7 +35002,7 @@
             "b395d4dd35fd5132"
         ],
         "x": 1355,
-        "y": 2760,
+        "y": 2940,
         "wires": []
     },
     {
@@ -35103,99 +35101,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 950,
-        "y": 2440,
+        "x": 1010,
+        "y": 2420,
         "wires": [
             [
-                "821aabc5195e68ee"
+                "fa60b181bbd71bd4"
             ],
             [
-                "66e3d03ef796e76d"
-            ]
-        ]
-    },
-    {
-        "id": "821aabc5195e68ee",
-        "type": "change",
-        "z": "e21f6458e5ab1eb6",
-        "g": "080ff8239be71c19",
-        "name": "Rum 4 lukket",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Lukket",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "doorroom4",
-                "pt": "global",
-                "to": "closed",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "rum4background",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1130,
-        "y": 2400,
-        "wires": [
-            [
-                "4963a3ed4d7fcb32"
-            ]
-        ]
-    },
-    {
-        "id": "66e3d03ef796e76d",
-        "type": "change",
-        "z": "e21f6458e5ab1eb6",
-        "g": "080ff8239be71c19",
-        "name": "Rum 4 åben",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Åben",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "doorroom4",
-                "pt": "global",
-                "to": "open",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "rum4background",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1130,
-        "y": 2480,
-        "wires": [
-            [
-                "38979f45a4929e10",
-                "d04d8fe459956714"
+                "5632b65e062de33a"
             ]
         ]
     },
@@ -35219,8 +35132,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 750,
-        "y": 2440,
+        "x": 830,
+        "y": 2420,
         "wires": [
             [
                 "092c8cf33c419c32",
@@ -35322,9 +35235,7 @@
         "x": 930,
         "y": 2520,
         "wires": [
-            [
-                "66e3d03ef796e76d"
-            ]
+            []
         ]
     },
     {
@@ -35396,10 +35307,11 @@
         "to": "",
         "reg": false,
         "x": 580,
-        "y": 2360,
+        "y": 2400,
         "wires": [
             [
-                "38979f45a4929e10"
+                "38979f45a4929e10",
+                "d04d8fe459956714"
             ]
         ]
     },
@@ -35437,11 +35349,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 2400,
+        "x": 590,
+        "y": 2440,
         "wires": [
             [
-                "66e3d03ef796e76d"
+                "4963a3ed4d7fcb32"
             ]
         ]
     },
@@ -35463,12 +35375,10 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 970,
-        "y": 2380,
+        "x": 960,
+        "y": 2360,
         "wires": [
-            [
-                "821aabc5195e68ee"
-            ]
+            []
         ]
     },
     {
@@ -35591,7 +35501,7 @@
         "name": "",
         "env": [],
         "x": 1090,
-        "y": 2780,
+        "y": 2960,
         "wires": [
             [
                 "ecb52a5b9e7536c7",
@@ -35814,7 +35724,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1260,
-        "y": 2780,
+        "y": 2960,
         "wires": [
             [
                 "18779454fc783361"
@@ -36203,6 +36113,168 @@
         "x": 2050,
         "y": 2100,
         "wires": []
+    },
+    {
+        "id": "06e3ad10c0413196",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "property": "doorroom4",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "open",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1650,
+        "y": 2520,
+        "wires": [
+            [
+                "d584eb2e7904c00d"
+            ],
+            [
+                "21cd501b98b823e0"
+            ]
+        ]
+    },
+    {
+        "id": "d584eb2e7904c00d",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Rum 4 lukket",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Lukket",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "doorroom4",
+                "pt": "global",
+                "to": "closed",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "rum4background",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1830,
+        "y": 2480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21cd501b98b823e0",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "Rum 4 åben",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Åben",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "doorroom4",
+                "pt": "global",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "rum4background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1830,
+        "y": 2560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "026dc9ee1003b7b2",
+        "type": "inject",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 1630,
+        "y": 2600,
+        "wires": [
+            [
+                "21cd501b98b823e0"
+            ]
+        ]
+    },
+    {
+        "id": "30866ee9e6adca89",
+        "type": "delay",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1680,
+        "y": 2480,
+        "wires": [
+            [
+                "d584eb2e7904c00d"
+            ]
+        ]
     },
     {
         "id": "dce242cef0b59c86",
