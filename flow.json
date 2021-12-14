@@ -1792,7 +1792,9 @@
             "d43dbf02e57729b7",
             "26d203288b6c16b2",
             "8fdcf1ec74341d95",
-            "bc3e605f2c0ecda6"
+            "bc3e605f2c0ecda6",
+            "b54de0517bab2a27",
+            "d526d4c77e4182f6"
         ],
         "env": [],
         "x": 114,
@@ -7068,7 +7070,7 @@
         "y": 800,
         "wires": [
             [
-                "a2638b0a6698a97c"
+                "b54de0517bab2a27"
             ]
         ]
     },
@@ -9796,8 +9798,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 850,
-        "y": 800,
+        "x": 950,
+        "y": 780,
         "wires": [
             [
                 "f6da3ededc910c6b",
@@ -10215,7 +10217,7 @@
             "ed9c75fae5462a70",
             "7e388bd9d3122864"
         ],
-        "x": 955,
+        "x": 1015,
         "y": 820,
         "wires": []
     },
@@ -16649,6 +16651,98 @@
             [
                 "58cb52c53dde8dc9"
             ]
+        ]
+    },
+    {
+        "id": "b54de0517bab2a27",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
+        "name": "Hvis game on",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "pause",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 740,
+        "y": 800,
+        "wires": [
+            [
+                "a2638b0a6698a97c"
+            ],
+            [
+                "d526d4c77e4182f6"
+            ]
+        ]
+    },
+    {
+        "id": "d526d4c77e4182f6",
+        "type": "link out",
+        "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
+        "name": "Start efter pause",
+        "mode": "link",
+        "links": [
+            "e052e27a2acae014",
+            "f91f08f151497daa",
+            "baae7341484bfda6",
+            "f5d880fe4af69b9e"
+        ],
+        "x": 865,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "e052e27a2acae014",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "links": [
+            "d526d4c77e4182f6"
+        ],
+        "x": 285,
+        "y": 2900,
+        "wires": [
+            [
+                "62ad210a48d0d6a5"
+            ]
+        ]
+    },
+    {
+        "id": "62ad210a48d0d6a5",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "game",
+                "pt": "global",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 2900,
+        "wires": [
+            []
         ]
     },
     {
@@ -28974,7 +29068,7 @@
         "g": "63074db08e166961",
         "name": "light3red back",
         "links": [
-            "21fddbee4f9d487c"
+            "d526d4c77e4182f6"
         ],
         "x": 4635,
         "y": 440,
@@ -29018,7 +29112,9 @@
         "z": "2bdc58f37cbddb93",
         "g": "63074db08e166961",
         "name": "light3white back",
-        "links": [],
+        "links": [
+            "d526d4c77e4182f6"
+        ],
         "x": 2715,
         "y": 320,
         "wires": [
@@ -30268,7 +30364,9 @@
         "type": "link in",
         "z": "2bdc58f37cbddb93",
         "name": "light2white back",
-        "links": [],
+        "links": [
+            "d526d4c77e4182f6"
+        ],
         "x": 1995,
         "y": 2040,
         "wires": [
