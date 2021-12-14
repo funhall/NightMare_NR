@@ -1797,7 +1797,8 @@
             "d526d4c77e4182f6",
             "4f741380480ddcb6",
             "3f985d6090fe8515",
-            "e7923fe80c1f08d4"
+            "e7923fe80c1f08d4",
+            "0f8cb9d00c2a14c4"
         ],
         "env": [],
         "x": 114,
@@ -11142,7 +11143,7 @@
         "z": "33e76285.1cd03e",
         "g": "dbe01fce1c4844e0",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -15403,7 +15404,7 @@
         "z": "33e76285.1cd03e",
         "g": "dbe01fce1c4844e0",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -15411,8 +15412,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1910,
-        "y": 880,
+        "x": 1930,
+        "y": 1020,
         "wires": []
     },
     {
@@ -15431,7 +15432,7 @@
         "y": 840,
         "wires": [
             [
-                "36f20c41e7fefc4e"
+                "0f8cb9d00c2a14c4"
             ]
         ]
     },
@@ -16811,6 +16812,26 @@
         "x": 1880,
         "y": 700,
         "wires": []
+    },
+    {
+        "id": "0f8cb9d00c2a14c4",
+        "type": "calculator",
+        "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
+        "name": "",
+        "inputMsgField": "gametime",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "-1",
+        "round": false,
+        "decimals": 0,
+        "x": 1880,
+        "y": 900,
+        "wires": [
+            [
+                "36f20c41e7fefc4e"
+            ]
+        ]
     },
     {
         "id": "25b0621fbdbd0e71",
