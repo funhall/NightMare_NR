@@ -2230,9 +2230,7 @@
             "38801871fbc76583",
             "1d5b82de58df5d90",
             "3a6371f6bef649a5",
-            "f212c62553f0165f",
-            "82f3b9409b138599",
-            "1022d45cb87187b0"
+            "f212c62553f0165f"
         ],
         "env": [],
         "x": 54,
@@ -34824,7 +34822,7 @@
         "z": "e21f6458e5ab1eb6",
         "g": "080ff8239be71c19",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -35002,7 +35000,8 @@
             "a1af2809e73bca7d",
             "1dd296e14fe25399",
             "167b5e205f71449f",
-            "bdf8cec0e1a2db9f"
+            "bdf8cec0e1a2db9f",
+            "b395d4dd35fd5132"
         ],
         "x": 1355,
         "y": 2760,
@@ -35797,51 +35796,6 @@
         "wires": []
     },
     {
-        "id": "82f3b9409b138599",
-        "type": "change",
-        "z": "e21f6458e5ab1eb6",
-        "g": "ef2a5747977267c9",
-        "name": "LOW",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "LOW",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1110,
-        "y": 2200,
-        "wires": [
-            [
-                "f37bfbaa98e665f0"
-            ]
-        ]
-    },
-    {
-        "id": "1022d45cb87187b0",
-        "type": "link in",
-        "z": "e21f6458e5ab1eb6",
-        "g": "ef2a5747977267c9",
-        "name": "",
-        "links": [
-            "18779454fc783361"
-        ],
-        "x": 1005,
-        "y": 2220,
-        "wires": [
-            [
-                "82f3b9409b138599"
-            ]
-        ]
-    },
-    {
         "id": "235ba686f6a1000e",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
@@ -35982,7 +35936,8 @@
         "name": "",
         "links": [
             "2b480c9c40b1ae41",
-            "9267aaf0dfa06598"
+            "9267aaf0dfa06598",
+            "18779454fc783361"
         ],
         "x": 1235,
         "y": 2360,
