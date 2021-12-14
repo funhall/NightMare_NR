@@ -40133,7 +40133,7 @@
         "g": "45f3ba2e982eb896",
         "name": "",
         "pauseType": "delay",
-        "timeout": "1500",
+        "timeout": "1400",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
