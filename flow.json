@@ -26347,7 +26347,7 @@
         "name": "",
         "interval": "300",
         "step": "10",
-        "minValue": "20",
+        "minValue": "10",
         "maxValue": "1024",
         "startIncCommand": "start_op",
         "stopIncCommand": "stop_op",
