@@ -3293,15 +3293,13 @@
             "1908c9d73396fa2e",
             "f0abe2b8e0352aaa",
             "79715b931f79ca79",
-            "eee23fe8c6698fa0",
-            "851a2ece127fdfc4",
-            "ef87cd40dd2af482"
+            "851a2ece127fdfc4"
         ],
         "env": [],
         "x": 1494,
-        "y": 1779,
+        "y": 1839,
         "w": 772,
-        "h": 282
+        "h": 222
     },
     {
         "id": "f4e5ec1eb5ea4c59",
@@ -40909,8 +40907,8 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 1610,
-        "y": 1820,
+        "x": 1590,
+        "y": 1880,
         "wires": [
             [
                 "851a2ece127fdfc4"
@@ -40957,9 +40955,7 @@
         "y": 1940,
         "wires": [
             [
-                "eee23fe8c6698fa0",
-                "79715b931f79ca79",
-                "ef87cd40dd2af482"
+                "79715b931f79ca79"
             ]
         ]
     },
@@ -41006,32 +41002,6 @@
         ]
     },
     {
-        "id": "eee23fe8c6698fa0",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "92e6d0714aba78d7",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "HIGH",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1860,
-        "y": 1820,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "851a2ece127fdfc4",
         "type": "link out",
         "z": "42a18184186a4f43",
@@ -41041,33 +41011,9 @@
         "links": [
             "1908c9d73396fa2e"
         ],
-        "x": 1695,
-        "y": 1820,
+        "x": 1675,
+        "y": 1880,
         "wires": []
-    },
-    {
-        "id": "ef87cd40dd2af482",
-        "type": "delay",
-        "z": "42a18184186a4f43",
-        "g": "92e6d0714aba78d7",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1400",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1900,
-        "y": 1860,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "f86c40f07eaa215c",
