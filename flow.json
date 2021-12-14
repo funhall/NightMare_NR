@@ -2061,15 +2061,13 @@
             "label": true
         },
         "nodes": [
-            "ca227d8b89cf86e1",
-            "8b57aed87fb51d18",
             "87a2c2dac5306bc3",
             "55a7d079713a1146",
             "84a73a05a0c97f14",
-            "1a7d871de19df5a6",
             "46281dbc9b429c99",
             "e89aa0349c5a6710",
-            "cea17f8d1ad64c81"
+            "cea17f8d1ad64c81",
+            "2fd0437d917259cf"
         ],
         "env": [],
         "x": 314,
@@ -37638,62 +37636,6 @@
         ]
     },
     {
-        "id": "ca227d8b89cf86e1",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "6188f0082d3cd712",
-        "name": "Show video afspiller",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 720,
-        "y": 1620,
-        "wires": [
-            [
-                "84a73a05a0c97f14"
-            ]
-        ]
-    },
-    {
-        "id": "8b57aed87fb51d18",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "6188f0082d3cd712",
-        "name": "start video",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Billeder/Queen_new.mp4",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 730,
-        "y": 1660,
-        "wires": [
-            [
-                "87a2c2dac5306bc3"
-            ]
-        ]
-    },
-    {
         "id": "87a2c2dac5306bc3",
         "type": "link out",
         "z": "42a18184186a4f43",
@@ -37732,8 +37674,6 @@
         "y": 1620,
         "wires": [
             [
-                "ca227d8b89cf86e1",
-                "8b57aed87fb51d18",
                 "46281dbc9b429c99"
             ]
         ]
@@ -37753,29 +37693,6 @@
         "wires": []
     },
     {
-        "id": "1a7d871de19df5a6",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "6188f0082d3cd712",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://192.168.1.32:1880/startvideo?video=stop",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 750,
-        "y": 1700,
-        "wires": [
-            [
-                "87a2c2dac5306bc3"
-            ]
-        ]
-    },
-    {
         "id": "46281dbc9b429c99",
         "type": "delay",
         "z": "42a18184186a4f43",
@@ -37793,11 +37710,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 580,
-        "y": 1700,
+        "x": 650,
+        "y": 1660,
         "wires": [
             [
-                "1a7d871de19df5a6"
+                "2fd0437d917259cf"
             ]
         ]
     },
@@ -37851,8 +37768,6 @@
         "y": 1680,
         "wires": [
             [
-                "ca227d8b89cf86e1",
-                "8b57aed87fb51d18",
                 "46281dbc9b429c99"
             ]
         ]
@@ -39949,9 +39864,7 @@
         "x": 440,
         "y": 1720,
         "wires": [
-            [
-                "1a7d871de19df5a6"
-            ]
+            []
         ]
     },
     {
@@ -41051,6 +40964,27 @@
             [
                 "f86c40f07eaa215c"
             ]
+        ]
+    },
+    {
+        "id": "2fd0437d917259cf",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "6188f0082d3cd712",
+        "name": "Start queen",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=/home/pi/Queen.mp4",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 870,
+        "y": 1680,
+        "wires": [
+            []
         ]
     },
     {
