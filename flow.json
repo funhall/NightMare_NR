@@ -10145,7 +10145,8 @@
             "1151d38d047d57cb",
             "a59e66d55d8a62c8",
             "6f22a71841f1bb91",
-            "f7e5ca754bce7495"
+            "f7e5ca754bce7495",
+            "1d8066c69f65ba31"
         ],
         "x": 735,
         "y": 300,
@@ -10809,7 +10810,8 @@
             "57dd660b17bee653",
             "112adcce0b71b305",
             "d853366775888253",
-            "aa353a5903eb92d6"
+            "aa353a5903eb92d6",
+            "ea3e825c7fdf75f5"
         ],
         "x": 955,
         "y": 820,
@@ -27643,7 +27645,7 @@
         "g": "63074db08e166961",
         "name": "Lys blinker hvis Gameon == True ellers lys 100%",
         "env": [],
-        "x": 2500,
+        "x": 2420,
         "y": 340,
         "wires": [
             [
@@ -29761,6 +29763,205 @@
         "x": 3040,
         "y": 1180,
         "wires": []
+    },
+    {
+        "id": "087fc953a0adb3d5",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "lys 1024",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1024",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1940,
+        "y": 1880,
+        "wires": [
+            [
+                "2ab466e560a07068"
+            ]
+        ]
+    },
+    {
+        "id": "8a6755fde9e23588",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "Lys 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1950,
+        "y": 1940,
+        "wires": [
+            [
+                "2ab466e560a07068"
+            ]
+        ]
+    },
+    {
+        "id": "2ab466e560a07068",
+        "type": "ui_slider",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "label": "Lys rum 2",
+        "tooltip": "",
+        "group": "43b4f7524f5eadc0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "1024",
+        "step": "1",
+        "x": 2120,
+        "y": 1960,
+        "wires": [
+            [
+                "3fa269d7f9b94eec"
+            ]
+        ]
+    },
+    {
+        "id": "3fa269d7f9b94eec",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "light2white",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2310,
+        "y": 1960,
+        "wires": [
+            [
+                "30451aa57add8fcf"
+            ]
+        ]
+    },
+    {
+        "id": "4176c50c50803da6",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "name": "set white light back",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "light2white",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2150,
+        "y": 2040,
+        "wires": [
+            [
+                "7f4412732f166975"
+            ]
+        ]
+    },
+    {
+        "id": "f5d880fe4af69b9e",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "name": "light2white back",
+        "links": [],
+        "x": 1995,
+        "y": 2040,
+        "wires": [
+            [
+                "4176c50c50803da6"
+            ]
+        ]
+    },
+    {
+        "id": "7f4412732f166975",
+        "type": "calculator",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "sum",
+        "constant": "2",
+        "round": false,
+        "decimals": 0,
+        "x": 2130,
+        "y": 2000,
+        "wires": [
+            [
+                "2ab466e560a07068"
+            ]
+        ]
+    },
+    {
+        "id": "1d8066c69f65ba31",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "name": "Tænder lys rum 2",
+        "links": [
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 1765,
+        "y": 1880,
+        "wires": [
+            [
+                "087fc953a0adb3d5"
+            ]
+        ]
+    },
+    {
+        "id": "ea3e825c7fdf75f5",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "name": "Slukker lys rum 2",
+        "links": [
+            "7fc3fbad33439116"
+        ],
+        "x": 1755,
+        "y": 1940,
+        "wires": [
+            [
+                "8a6755fde9e23588"
+            ]
+        ]
     },
     {
         "id": "12696b2c777c71a4",
