@@ -2930,7 +2930,7 @@
         "id": "120a5cc92fc23678",
         "type": "ui_link",
         "name": "Gocart",
-        "link": "http://192.168.1.75:1880/ui",
+        "link": "http://192.168.1.75:1880/ui/#!/1",
         "icon": "open_in_browser",
         "target": "iframe",
         "order": 4
