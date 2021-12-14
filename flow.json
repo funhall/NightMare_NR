@@ -40993,7 +40993,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=160",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=100",
         "tls": "",
         "persist": false,
         "proxy": "",
