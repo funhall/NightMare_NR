@@ -4195,7 +4195,17 @@
         "type": "ewelink-credentials"
     },
     {
-        "id": "9f9e48108a45cb97",
+        "id": "491283805118f5b2",
+        "type": "ui_spacer",
+        "z": "33e76285.1cd03e",
+        "name": "spacer",
+        "group": "117cda2a.43e596",
+        "order": 14,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "a2ce7c77c74ec9c4",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -4205,7 +4215,7 @@
         "height": 1
     },
     {
-        "id": "a63a0f559a2b9cd2",
+        "id": "ab027d58506beabe",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -4215,7 +4225,7 @@
         "height": 1
     },
     {
-        "id": "fc748ea1449612f4",
+        "id": "4335a269410a15af",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -4225,7 +4235,7 @@
         "height": 1
     },
     {
-        "id": "f831237eb0193b99",
+        "id": "90bfd84187e048cd",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -4235,7 +4245,7 @@
         "height": 1
     },
     {
-        "id": "41bb22e32d6a217d",
+        "id": "101a152fbdaeb574",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -4245,7 +4255,7 @@
         "height": 1
     },
     {
-        "id": "567a7e96e9d4ed4f",
+        "id": "e71b8695e54d2376",
         "type": "ui_spacer",
         "z": "33e76285.1cd03e",
         "name": "spacer",
@@ -7031,7 +7041,7 @@
         "g": "dbe01fce1c4844e0",
         "name": "Start spil/Playing",
         "group": "117cda2a.43e596",
-        "order": 18,
+        "order": 16,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -9029,7 +9039,7 @@
         "g": "7ba464075860abd5",
         "name": "Power on/off",
         "group": "117cda2a.43e596",
-        "order": 15,
+        "order": 19,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -10092,7 +10102,7 @@
         "g": "f4e5ec1eb5ea4c59",
         "name": "Game over",
         "group": "117cda2a.43e596",
-        "order": 16,
+        "order": 17,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -13018,7 +13028,7 @@
         "g": "25201c18524fdbea",
         "name": "Tænd lader",
         "group": "117cda2a.43e596",
-        "order": 17,
+        "order": 15,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -16362,8 +16372,8 @@
         "label": "Spille tid",
         "tooltip": "",
         "group": "117cda2a.43e596",
-        "order": 19,
-        "width": 6,
+        "order": 18,
+        "width": 5,
         "height": 1,
         "wrap": false,
         "passthru": true,
