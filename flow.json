@@ -1976,7 +1976,9 @@
             "187b5e35f48f575b",
             "7f8d924fabc69f2f",
             "bae76fb6151e2185",
-            "9fc86e8ce829d976"
+            "9fc86e8ce829d976",
+            "757c2026d37262b8",
+            "a85f1f23c34dde57"
         ],
         "env": [],
         "x": 264,
@@ -2891,32 +2893,6 @@
         "h": 262
     },
     {
-        "id": "e135f3aea8f8fccc",
-        "type": "group",
-        "z": "42a18184186a4f43",
-        "name": "Start countdown clock video rum 1",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "756b44eb6abac07b",
-            "c95cfc457130bed5",
-            "a74143d40870dc73",
-            "2f3df17f50177ddb",
-            "df30affa7b0635f8",
-            "100ab872668ccc8b",
-            "d4dc9c3aa0aa0259",
-            "d03e09e5aec12d86",
-            "b8980423d8f3724b",
-            "4c73cc1de72b3d0a"
-        ],
-        "env": [],
-        "x": 274,
-        "y": 919,
-        "w": 582,
-        "h": 242
-    },
-    {
         "id": "670a12d0f55499c9",
         "type": "group",
         "z": "2bdc58f37cbddb93",
@@ -3010,8 +2986,8 @@
             "d00d5c2a2a4a0ab7"
         ],
         "env": [],
-        "x": 1154,
-        "y": 939,
+        "x": 354,
+        "y": 959,
         "w": 652,
         "h": 182
     },
@@ -37954,7 +37930,7 @@
         "y": 820,
         "wires": [
             [
-                "f3bd7cc286241bf3"
+                "a85f1f23c34dde57"
             ]
         ]
     },
@@ -38840,219 +38816,11 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 1270,
-        "y": 1000,
+        "x": 470,
+        "y": 1020,
         "wires": [
             [
                 "2da9c2d1fb6c3377"
-            ]
-        ]
-    },
-    {
-        "id": "756b44eb6abac07b",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "start video",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Sounds/Scary clock Ambience.mp4",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 650,
-        "y": 1000,
-        "wires": [
-            [
-                "c95cfc457130bed5"
-            ]
-        ]
-    },
-    {
-        "id": "c95cfc457130bed5",
-        "type": "link out",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "Show timer",
-        "mode": "link",
-        "links": [
-            "61b2c0553b7bbcc3"
-        ],
-        "x": 815,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "a74143d40870dc73",
-        "type": "inject",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 380,
-        "y": 960,
-        "wires": [
-            [
-                "756b44eb6abac07b",
-                "b8980423d8f3724b"
-            ]
-        ]
-    },
-    {
-        "id": "2f3df17f50177ddb",
-        "type": "link out",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "Show timer",
-        "mode": "link",
-        "links": [
-            "42b9b5a5ccea135a"
-        ],
-        "x": 815,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "df30affa7b0635f8",
-        "type": "http request",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://192.168.1.60:1880/startvideo?video=start",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 690,
-        "y": 1060,
-        "wires": [
-            [
-                "c95cfc457130bed5"
-            ]
-        ]
-    },
-    {
-        "id": "100ab872668ccc8b",
-        "type": "inject",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 380,
-        "y": 1100,
-        "wires": [
-            [
-                "df30affa7b0635f8"
-            ]
-        ]
-    },
-    {
-        "id": "d4dc9c3aa0aa0259",
-        "type": "delay",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "500",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 490,
-        "y": 1060,
-        "wires": [
-            [
-                "df30affa7b0635f8"
-            ]
-        ]
-    },
-    {
-        "id": "d03e09e5aec12d86",
-        "type": "link in",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "",
-        "links": [
-            "187b5e35f48f575b"
-        ],
-        "x": 315,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b8980423d8f3724b",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "Show timer afspiller",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"show\":[\"Escaperoom_Viborg_Timer\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 650,
-        "y": 960,
-        "wires": [
-            [
-                "2f3df17f50177ddb"
             ]
         ]
     },
@@ -39079,36 +38847,6 @@
         "wires": [
             [
                 "187b5e35f48f575b"
-            ]
-        ]
-    },
-    {
-        "id": "4c73cc1de72b3d0a",
-        "type": "inject",
-        "z": "42a18184186a4f43",
-        "g": "e135f3aea8f8fccc",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Sounds/Scary clock Ambience.mp4",
-        "payloadType": "str",
-        "x": 680,
-        "y": 1120,
-        "wires": [
-            [
-                "c95cfc457130bed5"
             ]
         ]
     },
@@ -39261,8 +38999,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1530,
-        "y": 1020,
+        "x": 730,
+        "y": 1040,
         "wires": [
             [
                 "d00d5c2a2a4a0ab7"
@@ -39284,8 +39022,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1590,
-        "y": 1080,
+        "x": 790,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -39311,8 +39049,8 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 1250,
-        "y": 1080,
+        "x": 450,
+        "y": 1100,
         "wires": [
             [
                 "bc083663148cf326"
@@ -39328,8 +39066,8 @@
         "links": [
             "187b5e35f48f575b"
         ],
-        "x": 1385,
-        "y": 1000,
+        "x": 585,
+        "y": 1020,
         "wires": [
             [
                 "2da9c2d1fb6c3377"
@@ -39585,8 +39323,8 @@
             "6ae7dc55b448fca2",
             "e8ba061f5f8c7fec"
         ],
-        "x": 1395,
-        "y": 1060,
+        "x": 595,
+        "y": 1080,
         "wires": [
             [
                 "bc083663148cf326"
@@ -39643,8 +39381,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1730,
-        "y": 980,
+        "x": 930,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -40930,6 +40668,49 @@
         "wires": [
             [
                 "46281dbc9b429c99"
+            ]
+        ]
+    },
+    {
+        "id": "757c2026d37262b8",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
+        "name": "",
+        "links": [],
+        "x": 865,
+        "y": 700,
+        "wires": [
+            [
+                "a85f1f23c34dde57"
+            ]
+        ]
+    },
+    {
+        "id": "a85f1f23c34dde57",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "606c3a6c3de0cf55",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 700,
+        "wires": [
+            [
+                "2cb594d49f3902ca"
             ]
         ]
     },
