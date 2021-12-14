@@ -3387,6 +3387,32 @@
         "h": 282
     },
     {
+        "id": "92e6d0714aba78d7",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Singing little girl singing son rum 3",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8ec71797465b1ee0",
+            "bbeec297563e2fdd",
+            "133af30dc12d9446",
+            "0b460dcc751dfbb0",
+            "1908c9d73396fa2e",
+            "f0abe2b8e0352aaa",
+            "79715b931f79ca79",
+            "eee23fe8c6698fa0",
+            "851a2ece127fdfc4",
+            "ef87cd40dd2af482"
+        ],
+        "env": [],
+        "x": 1494,
+        "y": 1779,
+        "w": 772,
+        "h": 282
+    },
+    {
         "id": "82fd466d.f6c968",
         "type": "ui_tab",
         "name": "Nightmare personale",
@@ -6946,7 +6972,8 @@
             "b59c9fe5405260d4",
             "e36b7e766e065456",
             "e5f609fcfff13ea4",
-            "4e5e558155437ae7"
+            "4e5e558155437ae7",
+            "1908c9d73396fa2e"
         ],
         "x": 1855,
         "y": 4820,
@@ -10024,7 +10051,8 @@
         "links": [
             "38c9d1ce4d9d6dec",
             "6b7be4d8dafc67a3",
-            "75f3412e531ae899"
+            "75f3412e531ae899",
+            "f0abe2b8e0352aaa"
         ],
         "x": 1655,
         "y": 1080,
@@ -10237,7 +10265,8 @@
             "93dc99ab9d599667",
             "6b7be4d8dafc67a3",
             "be248f35de102856",
-            "75f3412e531ae899"
+            "75f3412e531ae899",
+            "f0abe2b8e0352aaa"
         ],
         "x": 735,
         "y": 300,
@@ -10709,7 +10738,8 @@
             "b395d4dd35fd5132",
             "6b7be4d8dafc67a3",
             "7e388bd9d3122864",
-            "75f3412e531ae899"
+            "75f3412e531ae899",
+            "f0abe2b8e0352aaa"
         ],
         "x": 835,
         "y": 540,
@@ -40742,6 +40772,229 @@
             [
                 "13d50f302f1d910f"
             ],
+            []
+        ]
+    },
+    {
+        "id": "8ec71797465b1ee0",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "Start lullaby singing song sound",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=/home/pi/llittle-girl-singing.wav",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2110,
+        "y": 1980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bbeec297563e2fdd",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "Stop sound count down",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_stop",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1930,
+        "y": 2020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "133af30dc12d9446",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "x": 1610,
+        "y": 1820,
+        "wires": [
+            [
+                "851a2ece127fdfc4"
+            ]
+        ]
+    },
+    {
+        "id": "0b460dcc751dfbb0",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "",
+        "props": [
+            {
+                "p": "reset",
+                "v": "x",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1590,
+        "y": 2020,
+        "wires": [
+            [
+                "bbeec297563e2fdd"
+            ]
+        ]
+    },
+    {
+        "id": "1908c9d73396fa2e",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "",
+        "links": [
+            "369f293e.f63406",
+            "851a2ece127fdfc4"
+        ],
+        "x": 1675,
+        "y": 1940,
+        "wires": [
+            [
+                "eee23fe8c6698fa0",
+                "79715b931f79ca79",
+                "ef87cd40dd2af482"
+            ]
+        ]
+    },
+    {
+        "id": "f0abe2b8e0352aaa",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "Stop countdown lyd ",
+        "links": [
+            "2b480c9c40b1ae41",
+            "6ae7dc55b448fca2",
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 1735,
+        "y": 2000,
+        "wires": [
+            [
+                "bbeec297563e2fdd"
+            ]
+        ]
+    },
+    {
+        "id": "79715b931f79ca79",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "Vol 200",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=200",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 1840,
+        "y": 1980,
+        "wires": [
+            [
+                "8ec71797465b1ee0"
+            ]
+        ]
+    },
+    {
+        "id": "eee23fe8c6698fa0",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1860,
+        "y": 1820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "851a2ece127fdfc4",
+        "type": "link out",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "1908c9d73396fa2e"
+        ],
+        "x": 1695,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "ef87cd40dd2af482",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "92e6d0714aba78d7",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1400",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2010,
+        "y": 1860,
+        "wires": [
             []
         ]
     },
