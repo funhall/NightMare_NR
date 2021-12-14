@@ -33730,7 +33730,8 @@
         "name": "Alle gavle placeret",
         "mode": "link",
         "links": [
-            "4f6a27fb1252664d"
+            "4f6a27fb1252664d",
+            "1908c9d73396fa2e"
         ],
         "x": 2115,
         "y": 3440,
@@ -40880,7 +40881,8 @@
         "name": "",
         "links": [
             "369f293e.f63406",
-            "851a2ece127fdfc4"
+            "851a2ece127fdfc4",
+            "9d7f12bb0656b299"
         ],
         "x": 1675,
         "y": 1940,
@@ -40992,7 +40994,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2010,
+        "x": 1900,
         "y": 1860,
         "wires": [
             []
