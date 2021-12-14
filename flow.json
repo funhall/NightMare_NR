@@ -1790,7 +1790,9 @@
             "a597cf356341ebae",
             "36f20c41e7fefc4e",
             "d43dbf02e57729b7",
-            "26d203288b6c16b2"
+            "26d203288b6c16b2",
+            "8fdcf1ec74341d95",
+            "bc3e605f2c0ecda6"
         ],
         "env": [],
         "x": 114,
@@ -16399,7 +16401,8 @@
             "6b7be4d8dafc67a3",
             "7e388bd9d3122864",
             "75f3412e531ae899",
-            "f0abe2b8e0352aaa"
+            "f0abe2b8e0352aaa",
+            "8fdcf1ec74341d95"
         ],
         "x": 1075,
         "y": 520,
@@ -16564,6 +16567,49 @@
             [
                 "3bebd32b5735ccd4"
             ]
+        ]
+    },
+    {
+        "id": "8fdcf1ec74341d95",
+        "type": "link in",
+        "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
+        "name": "",
+        "links": [
+            "2b480c9c40b1ae41"
+        ],
+        "x": 245,
+        "y": 720,
+        "wires": [
+            [
+                "bc3e605f2c0ecda6"
+            ]
+        ]
+    },
+    {
+        "id": "bc3e605f2c0ecda6",
+        "type": "change",
+        "z": "33e76285.1cd03e",
+        "g": "dbe01fce1c4844e0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "starttext",
+                "pt": "msg",
+                "to": "Gameover",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 740,
+        "wires": [
+            []
         ]
     },
     {
@@ -23620,7 +23666,7 @@
         "z": "c39524c2016c8df2",
         "g": "377ac035b96a41de",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -24064,7 +24110,9 @@
         "x": 115,
         "y": 1940,
         "wires": [
-            []
+            [
+                "1e9d13558156835e"
+            ]
         ]
     },
     {
