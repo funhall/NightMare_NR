@@ -39228,7 +39228,7 @@
         "type": "delay",
         "z": "42a18184186a4f43",
         "g": "606c3a6c3de0cf55",
-        "name": "Show timer 100 sek",
+        "name": "Show timer 110 sek",
         "pauseType": "delay",
         "timeout": "110",
         "timeoutUnits": "seconds",
