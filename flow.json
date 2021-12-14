@@ -28325,7 +28325,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "LOW",
+        "payload": "reset",
         "payloadType": "str",
         "x": 2630,
         "y": 1280,
