@@ -3027,12 +3027,13 @@
             "f0aac228473364df",
             "5901d22ae1542dae",
             "13fbb4a9244f118e",
-            "8ab0831175dd7b4c"
+            "8ab0831175dd7b4c",
+            "3fa269d7f9b94eec"
         ],
         "env": [],
         "x": 1614,
         "y": 2019,
-        "w": 852,
+        "w": 992,
         "h": 522
     },
     {
@@ -10138,7 +10139,6 @@
             "71bdd19e51a7ce13",
             "312c9e2f5e5b603c",
             "7b4fb3e02bff15d4",
-            "0b7a3e6985c967c2",
             "269fb8c0bc98db40",
             "e9bffacdd063c056",
             "50e9c21516e3473f",
@@ -10359,7 +10359,6 @@
         "links": [
             "a422065c72ada863",
             "adc106bfbddb767e",
-            "0b7a3e6985c967c2",
             "10895e061de3f851"
         ],
         "x": 1335,
@@ -27083,8 +27082,8 @@
         "correl": "",
         "expiry": "",
         "broker": "dca8425b.8fb18",
-        "x": 2370,
-        "y": 2160,
+        "x": 2510,
+        "y": 2140,
         "wires": []
     },
     {
@@ -27128,8 +27127,8 @@
         "y": 2160,
         "wires": [
             [
-                "30451aa57add8fcf",
-                "f7c3a8f368d95589"
+                "f7c3a8f368d95589",
+                "3fa269d7f9b94eec"
             ]
         ]
     },
@@ -27140,9 +27139,7 @@
         "g": "0cfe45306bc96b95",
         "name": "Krypt rød LOW",
         "links": [
-            "3f275e5d73da77dc",
-            "d0db6f812a7972aa",
-            "e8ba061f5f8c7fec"
+            "d0db6f812a7972aa"
         ],
         "x": 1775,
         "y": 2120,
@@ -27175,9 +27172,7 @@
         "x": 1930,
         "y": 2120,
         "wires": [
-            [
-                "30451aa57add8fcf"
-            ]
+            []
         ]
     },
     {
@@ -28786,7 +28781,9 @@
         "x": 1930,
         "y": 2120,
         "wires": [
-            []
+            [
+                "3fa269d7f9b94eec"
+            ]
         ]
     },
     {
@@ -29848,6 +29845,7 @@
         "id": "3fa269d7f9b94eec",
         "type": "change",
         "z": "2bdc58f37cbddb93",
+        "g": "0cfe45306bc96b95",
         "name": "",
         "rules": [
             {
@@ -29863,8 +29861,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2310,
-        "y": 1960,
+        "x": 2340,
+        "y": 2100,
         "wires": [
             [
                 "30451aa57add8fcf"
@@ -29962,6 +29960,22 @@
                 "8a6755fde9e23588"
             ]
         ]
+    },
+    {
+        "id": "d81afb45c87d1831",
+        "type": "debug",
+        "z": "2bdc58f37cbddb93",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2320,
+        "y": 1920,
+        "wires": []
     },
     {
         "id": "12696b2c777c71a4",
