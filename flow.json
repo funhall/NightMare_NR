@@ -2921,12 +2921,13 @@
             "39c8eb30c62d75ab",
             "ea9ca5fddf754d68",
             "55b365334ad7bad3",
-            "38e506841b6ba67f"
+            "38e506841b6ba67f",
+            "2fd455b802481f37"
         ],
-        "x": 188,
+        "x": 228,
         "y": 339,
-        "w": 1378,
-        "h": 648
+        "w": 1364,
+        "h": 628
     },
     {
         "id": "0cfe45306bc96b95",
@@ -3089,13 +3090,14 @@
             "3e86871486d1741a",
             "5a26c8c69eb99df2",
             "01dac7b97282ed65",
-            "565afc3094528f2f"
+            "565afc3094528f2f",
+            "dbe994cdfcdf55cd"
         ],
         "env": [],
         "x": 254,
         "y": 439,
         "w": 672,
-        "h": 142
+        "h": 182
     },
     {
         "id": "3080724a291fe565",
@@ -3111,13 +3113,15 @@
             "9b391ee6ccfc7d08",
             "4904644ae19bf16a",
             "2561ecfaae4095f8",
-            "20d689c8b00d2164"
+            "20d689c8b00d2164",
+            "cfd659f10ae33059",
+            "1d7ae13f87d2281d"
         ],
         "env": [],
-        "x": 254,
-        "y": 599,
+        "x": 294,
+        "y": 699,
         "w": 572,
-        "h": 122
+        "h": 202
     },
     {
         "id": "780a8f237b09fa68",
@@ -3159,8 +3163,8 @@
             "f90a6745ff16e685"
         ],
         "env": [],
-        "x": 214,
-        "y": 759,
+        "x": 934,
+        "y": 739,
         "w": 632,
         "h": 202
     },
@@ -14186,7 +14190,9 @@
             "269fb8c0bc98db40",
             "4bf3d6334235f28c",
             "b395d4dd35fd5132",
-            "e36b7e766e065456"
+            "e36b7e766e065456",
+            "1d7ae13f87d2281d",
+            "0639a8f8c4981901"
         ],
         "x": 1665,
         "y": 2140,
@@ -15928,7 +15934,9 @@
             "be248f35de102856",
             "75f3412e531ae899",
             "f0abe2b8e0352aaa",
-            "e36b7e766e065456"
+            "e36b7e766e065456",
+            "1d7ae13f87d2281d",
+            "0639a8f8c4981901"
         ],
         "x": 735,
         "y": 300,
@@ -26221,8 +26229,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
-        "y": 640,
+        "x": 570,
+        "y": 820,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -26322,8 +26330,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 390,
-        "y": 640,
+        "x": 430,
+        "y": 820,
         "wires": [
             [
                 "de5ea08b0ff1a997",
@@ -26410,8 +26418,8 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 720,
-        "y": 640,
+        "x": 760,
+        "y": 820,
         "wires": [
             [
                 "397b6fcd88e6dca3",
@@ -26446,8 +26454,8 @@
         "links": [
             "7fc3fbad33439116"
         ],
-        "x": 295,
-        "y": 640,
+        "x": 335,
+        "y": 820,
         "wires": [
             [
                 "9b391ee6ccfc7d08"
@@ -29815,8 +29823,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 800,
+        "x": 1220,
+        "y": 780,
         "wires": [
             [
                 "d97b9ec466579160"
@@ -29841,8 +29849,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 350,
-        "y": 800,
+        "x": 1070,
+        "y": 780,
         "wires": [
             [
                 "cd5daeb41ac8246d",
@@ -29864,8 +29872,8 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 740,
-        "y": 800,
+        "x": 1460,
+        "y": 780,
         "wires": [
             [
                 "397b6fcd88e6dca3",
@@ -29882,8 +29890,8 @@
         "links": [
             "435332b4bc93c875"
         ],
-        "x": 255,
-        "y": 800,
+        "x": 975,
+        "y": 780,
         "wires": [
             [
                 "bfaf7d4edcab7900"
@@ -29910,8 +29918,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 680,
+        "x": 550,
+        "y": 860,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -29940,8 +29948,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 350,
-        "y": 740,
+        "x": 1020,
+        "y": 820,
         "wires": [
             [
                 "cd5daeb41ac8246d",
@@ -29969,8 +29977,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 840,
+        "x": 1190,
+        "y": 820,
         "wires": [
             [
                 "d97b9ec466579160"
@@ -29990,8 +29998,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 860,
+        "x": 1440,
+        "y": 840,
         "wires": []
     },
     {
@@ -30433,8 +30441,8 @@
         "topic": "",
         "payload": "stop_op",
         "payloadType": "str",
-        "x": 420,
-        "y": 880,
+        "x": 1140,
+        "y": 860,
         "wires": [
             [
                 "d97b9ec466579160"
@@ -30447,9 +30455,12 @@
         "z": "2bdc58f37cbddb93",
         "g": "5ba8a9ae620f6208",
         "name": "",
-        "links": [],
-        "x": 285,
-        "y": 900,
+        "links": [
+            "9267aaf0dfa06598",
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 1005,
+        "y": 880,
         "wires": [
             [
                 "f90a6745ff16e685"
@@ -30461,7 +30472,7 @@
         "type": "change",
         "z": "2bdc58f37cbddb93",
         "g": "5ba8a9ae620f6208",
-        "name": "",
+        "name": "Stop timer",
         "rules": [
             {
                 "t": "set",
@@ -30476,8 +30487,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 920,
+        "x": 1180,
+        "y": 900,
         "wires": [
             [
                 "d97b9ec466579160"
@@ -30559,6 +30570,95 @@
         "wires": [
             [
                 "d7186285ab67fe7c"
+            ]
+        ]
+    },
+    {
+        "id": "1d7ae13f87d2281d",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "3080724a291fe565",
+        "name": "",
+        "links": [
+            "9267aaf0dfa06598",
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 375,
+        "y": 740,
+        "wires": [
+            [
+                "cfd659f10ae33059"
+            ]
+        ]
+    },
+    {
+        "id": "cfd659f10ae33059",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "3080724a291fe565",
+        "name": "Stop timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop_op",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 760,
+        "wires": [
+            [
+                "4904644ae19bf16a"
+            ]
+        ]
+    },
+    {
+        "id": "dbe994cdfcdf55cd",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "a1e456100e5b3a54",
+        "name": "",
+        "links": [],
+        "x": 375,
+        "y": 580,
+        "wires": [
+            [
+                "2fd455b802481f37"
+            ]
+        ]
+    },
+    {
+        "id": "2fd455b802481f37",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "670a12d0f55499c9",
+        "name": "Stop timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop_op",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 580,
+        "wires": [
+            [
+                "5a26c8c69eb99df2"
             ]
         ]
     },
