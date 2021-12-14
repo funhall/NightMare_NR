@@ -35363,7 +35363,7 @@
         "g": "080ff8239be71c19",
         "name": "",
         "pauseType": "delay",
-        "timeout": "1",
+        "timeout": "2",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -35374,8 +35374,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 960,
-        "y": 2360,
+        "x": 980,
+        "y": 2460,
         "wires": [
             [
                 "d04d8fe459956714"
