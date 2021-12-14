@@ -3381,7 +3381,9 @@
             "8f6f47172811994f",
             "13d50f302f1d910f",
             "187a4535a659d9ed",
-            "6d688f39a8421fd0"
+            "6d688f39a8421fd0",
+            "a1c77188c0b2fcae",
+            "af3d53733d46284a"
         ],
         "env": [],
         "x": 1134,
@@ -39926,7 +39928,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1750,
+        "x": 1670,
         "y": 1360,
         "wires": [
             []
@@ -40131,7 +40133,7 @@
         "g": "45f3ba2e982eb896",
         "name": "",
         "pauseType": "delay",
-        "timeout": "7",
+        "timeout": "1",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -40170,7 +40172,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1980,
+        "x": 1910,
         "y": 1200,
         "wires": [
             [
@@ -40197,8 +40199,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1990,
-        "y": 1260,
+        "x": 1930,
+        "y": 1240,
         "wires": [
             [
                 "6d688f39a8421fd0"
@@ -40225,11 +40227,119 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2130,
-        "y": 1260,
+        "x": 2090,
+        "y": 1240,
+        "wires": [
+            [
+                "54d2ea789bc9e42b",
+                "af3d53733d46284a"
+            ]
+        ]
+    },
+    {
+        "id": "a1c77188c0b2fcae",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2090,
+        "y": 1280,
+        "wires": [
+            [
+                "a1b9629b9d1b7c19",
+                "54d2ea789bc9e42b"
+            ]
+        ]
+    },
+    {
+        "id": "a1b9629b9d1b7c19",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1930,
+        "y": 1320,
+        "wires": [
+            [
+                "a3e04653d5673e05"
+            ]
+        ]
+    },
+    {
+        "id": "a3e04653d5673e05",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "name": "LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2090,
+        "y": 1320,
         "wires": [
             [
                 "54d2ea789bc9e42b"
+            ]
+        ]
+    },
+    {
+        "id": "af3d53733d46284a",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1940,
+        "y": 1280,
+        "wires": [
+            [
+                "a1c77188c0b2fcae"
             ]
         ]
     },
