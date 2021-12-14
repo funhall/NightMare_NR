@@ -3362,7 +3362,7 @@
         "id": "45f3ba2e982eb896",
         "type": "group",
         "z": "42a18184186a4f43",
-        "name": "Count down lyd i rum 1",
+        "name": "Singing lullaby son rum 3",
         "style": {
             "label": true
         },
@@ -3372,13 +3372,14 @@
             "1ec59be58de5e23e",
             "b72c70940c8b91ae",
             "4e5e558155437ae7",
-            "75f3412e531ae899"
+            "75f3412e531ae899",
+            "d1e33a2ea23e88eb"
         ],
         "env": [],
         "x": 1154,
-        "y": 1279,
-        "w": 572,
-        "h": 162
+        "y": 1219,
+        "w": 772,
+        "h": 222
     },
     {
         "id": "82fd466d.f6c968",
@@ -39900,8 +39901,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1550,
-        "y": 1340,
+        "x": 1770,
+        "y": 1320,
         "wires": [
             []
         ]
@@ -39948,11 +39949,11 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 1270,
-        "y": 1320,
+        "x": 1290,
+        "y": 1260,
         "wires": [
             [
-                "07ca034c044eb89e"
+                "d1e33a2ea23e88eb"
             ]
         ]
     },
@@ -40018,6 +40019,29 @@
         "wires": [
             [
                 "95c48bfee93f17ac"
+            ]
+        ]
+    },
+    {
+        "id": "d1e33a2ea23e88eb",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "Vol 200",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=volume&val=200",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 1500,
+        "y": 1320,
+        "wires": [
+            [
+                "07ca034c044eb89e"
             ]
         ]
     },
