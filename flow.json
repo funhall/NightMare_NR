@@ -30309,7 +30309,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "stop",
+        "payload": "stop_op",
         "payloadType": "str",
         "x": 420,
         "y": 880,
