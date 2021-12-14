@@ -3376,17 +3376,17 @@
             "75f3412e531ae899",
             "d1e33a2ea23e88eb",
             "c2082f8d23577de8",
-            "f92739ff0cfa96e1",
             "54d2ea789bc9e42b",
-            "ea36030f4d10bf58",
-            "187a4535a659d9ed",
             "d90ae0d579843ef6",
-            "8f6f47172811994f"
+            "8f6f47172811994f",
+            "13d50f302f1d910f",
+            "187a4535a659d9ed",
+            "6d688f39a8421fd0"
         ],
         "env": [],
-        "x": 1154,
+        "x": 1134,
         "y": 1159,
-        "w": 1082,
+        "w": 1202,
         "h": 282
     },
     {
@@ -39926,7 +39926,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1770,
+        "x": 1750,
         "y": 1360,
         "wires": [
             []
@@ -39947,7 +39947,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 1590,
+        "x": 1570,
         "y": 1400,
         "wires": [
             []
@@ -39974,7 +39974,7 @@
         "topic": "",
         "payload": "start",
         "payloadType": "str",
-        "x": 1270,
+        "x": 1250,
         "y": 1200,
         "wires": [
             [
@@ -40000,13 +40000,11 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1250,
+        "x": 1230,
         "y": 1400,
         "wires": [
             [
-                "95c48bfee93f17ac",
-                "ea36030f4d10bf58",
-                "f92739ff0cfa96e1"
+                "95c48bfee93f17ac"
             ]
         ]
     },
@@ -40020,7 +40018,7 @@
             "369f293e.f63406",
             "d90ae0d579843ef6"
         ],
-        "x": 1335,
+        "x": 1315,
         "y": 1320,
         "wires": [
             [
@@ -40041,7 +40039,7 @@
             "6ae7dc55b448fca2",
             "e8ba061f5f8c7fec"
         ],
-        "x": 1395,
+        "x": 1375,
         "y": 1380,
         "wires": [
             [
@@ -40064,7 +40062,7 @@
         "proxy": "",
         "authType": "basic",
         "senderr": false,
-        "x": 1500,
+        "x": 1480,
         "y": 1360,
         "wires": [
             [
@@ -40092,36 +40090,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1520,
+        "x": 1500,
         "y": 1200,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "f92739ff0cfa96e1",
-        "type": "trigger",
-        "z": "42a18184186a4f43",
-        "g": "45f3ba2e982eb896",
-        "name": "LOW",
-        "op1": "LOW",
-        "op2": "0",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "-200",
-        "extend": false,
-        "overrideDelay": false,
-        "units": "ms",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 2050,
-        "y": 1240,
-        "wires": [
-            [
-                "54d2ea789bc9e42b"
-            ]
         ]
     },
     {
@@ -40134,61 +40106,9 @@
         "links": [
             "3bf33e5c4381c0af"
         ],
-        "x": 2195,
+        "x": 2295,
         "y": 1240,
         "wires": []
-    },
-    {
-        "id": "ea36030f4d10bf58",
-        "type": "trigger",
-        "z": "42a18184186a4f43",
-        "g": "45f3ba2e982eb896",
-        "name": "LOW",
-        "op1": "HIGH",
-        "op2": "0",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "-200",
-        "extend": false,
-        "overrideDelay": false,
-        "units": "ms",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 2050,
-        "y": 1280,
-        "wires": [
-            [
-                "54d2ea789bc9e42b"
-            ]
-        ]
-    },
-    {
-        "id": "187a4535a659d9ed",
-        "type": "delay",
-        "z": "42a18184186a4f43",
-        "g": "45f3ba2e982eb896",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "100",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1830,
-        "y": 1260,
-        "wires": [
-            [
-                "ea36030f4d10bf58"
-            ]
-        ]
     },
     {
         "id": "d90ae0d579843ef6",
@@ -40200,7 +40120,7 @@
         "links": [
             "4e5e558155437ae7"
         ],
-        "x": 1395,
+        "x": 1375,
         "y": 1200,
         "wires": []
     },
@@ -40222,12 +40142,94 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1650,
+        "x": 1630,
         "y": 1240,
         "wires": [
             [
-                "f92739ff0cfa96e1",
+                "13d50f302f1d910f"
+            ]
+        ]
+    },
+    {
+        "id": "13d50f302f1d910f",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1980,
+        "y": 1200,
+        "wires": [
+            [
+                "54d2ea789bc9e42b",
                 "187a4535a659d9ed"
+            ]
+        ]
+    },
+    {
+        "id": "187a4535a659d9ed",
+        "type": "delay",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1990,
+        "y": 1260,
+        "wires": [
+            [
+                "6d688f39a8421fd0"
+            ]
+        ]
+    },
+    {
+        "id": "6d688f39a8421fd0",
+        "type": "change",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2130,
+        "y": 1260,
+        "wires": [
+            [
+                "54d2ea789bc9e42b"
             ]
         ]
     },
