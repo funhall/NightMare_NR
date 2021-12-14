@@ -2074,9 +2074,9 @@
         ],
         "env": [],
         "x": 314,
-        "y": 1579,
+        "y": 1559,
         "w": 782,
-        "h": 222
+        "h": 242
     },
     {
         "id": "a6cfbf982760de76",
@@ -37713,11 +37713,13 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 650,
-        "y": 1660,
+        "x": 610,
+        "y": 1600,
         "wires": [
             [
-                "3d1d2e566be43e16"
+                "3d1d2e566be43e16",
+                "58a9ce98c203883a",
+                "ab9b7c67761be85e"
             ]
         ]
     },
@@ -40997,7 +40999,7 @@
         "type": "http request",
         "z": "42a18184186a4f43",
         "g": "6188f0082d3cd712",
-        "name": "Vol 200",
+        "name": "Vol 70",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
@@ -41007,13 +41009,11 @@
         "proxy": "",
         "authType": "basic",
         "senderr": false,
-        "x": 680,
-        "y": 1700,
+        "x": 670,
+        "y": 1680,
         "wires": [
             [
-                "2fd0437d917259cf",
-                "32dd122c0995256b",
-                "cc8dee55e395afac"
+                "2fd0437d917259cf"
             ]
         ]
     },
@@ -41057,6 +41057,50 @@
         "y": 1760,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "58a9ce98c203883a",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "Vol 70",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.36:8080/requests/status.xml?command=volume&val=70",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 670,
+        "y": 1760,
+        "wires": [
+            [
+                "cc8dee55e395afac"
+            ]
+        ]
+    },
+    {
+        "id": "ab9b7c67761be85e",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "name": "Vol 200",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.60:8080/requests/status.xml?command=volume&val=70",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 680,
+        "y": 1720,
+        "wires": [
+            [
+                "32dd122c0995256b"
+            ]
         ]
     },
     {
