@@ -26411,7 +26411,7 @@
         "z": "2bdc58f37cbddb93",
         "g": "3080724a291fe565",
         "name": "",
-        "interval": "3000",
+        "interval": "30",
         "step": "1",
         "minValue": "10",
         "maxValue": "1024",
