@@ -31183,8 +31183,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "LOW",
-                "tot": "str"
+                "to": "0",
+                "tot": "num"
             }
         ],
         "action": "",
