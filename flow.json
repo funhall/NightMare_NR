@@ -47778,35 +47778,6 @@
         "wires": []
     },
     {
-        "id": "259e215ebbd3a189",
-        "type": "ui_button",
-        "z": "416eda1d3361af12",
-        "g": "a754c23b5706b2d4",
-        "name": "Start spil",
-        "group": "117cda2a.43e596",
-        "order": 14,
-        "width": 2,
-        "height": 1,
-        "passthru": false,
-        "label": "wStart spil",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "START",
-        "payloadType": "str",
-        "topic": "on",
-        "topicType": "msg",
-        "x": 220,
-        "y": 320,
-        "wires": [
-            [
-                "bedb79207fce50bd",
-                "af97539ab20b91f9"
-            ]
-        ]
-    },
-    {
         "id": "d23a62d10c090ef4",
         "type": "inject",
         "z": "416eda1d3361af12",
