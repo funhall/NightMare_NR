@@ -25989,7 +25989,7 @@
         "g": "377ac035b96a41de",
         "name": "",
         "property": "game",
-        "propertyType": "msg",
+        "propertyType": "global",
         "rules": [
             {
                 "t": "eq",
