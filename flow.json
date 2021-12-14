@@ -3740,11 +3740,11 @@
     {
         "id": "1d01efe067ef138e",
         "type": "ui_group",
-        "name": "Timer",
+        "name": "",
         "tab": "bff636ce.5bde08",
         "order": 2,
         "disp": true,
-        "width": "6",
+        "width": "8",
         "collapse": false
     },
     {
