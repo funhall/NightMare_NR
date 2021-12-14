@@ -3010,7 +3010,7 @@
         "x": 188,
         "y": 339,
         "w": 1378,
-        "h": 608
+        "h": 648
     },
     {
         "id": "0cfe45306bc96b95",
@@ -3238,13 +3238,15 @@
             "f0a666a6b7f545b3",
             "4ad4fbe72ee55a03",
             "c6c6ae2ff0afc9f7",
-            "b7deacf9d53f383d"
+            "b7deacf9d53f383d",
+            "0639a8f8c4981901",
+            "f90a6745ff16e685"
         ],
         "env": [],
         "x": 214,
         "y": 759,
         "w": 632,
-        "h": 162
+        "h": 202
     },
     {
         "id": "5047fc093ea1e32d",
@@ -30320,6 +30322,49 @@
         ]
     },
     {
+        "id": "0639a8f8c4981901",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "5ba8a9ae620f6208",
+        "name": "",
+        "links": [],
+        "x": 285,
+        "y": 900,
+        "wires": [
+            [
+                "f90a6745ff16e685"
+            ]
+        ]
+    },
+    {
+        "id": "f90a6745ff16e685",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "5ba8a9ae620f6208",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop_op",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 920,
+        "wires": [
+            [
+                "d97b9ec466579160"
+            ]
+        ]
+    },
+    {
         "id": "12696b2c777c71a4",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
@@ -39147,7 +39192,7 @@
         "g": "606c3a6c3de0cf55",
         "name": "Show timer 100 sek",
         "pauseType": "delay",
-        "timeout": "100",
+        "timeout": "110",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
