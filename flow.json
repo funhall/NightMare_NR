@@ -2924,9 +2924,9 @@
             "38e506841b6ba67f",
             "2fd455b802481f37"
         ],
-        "x": 228,
+        "x": 158,
         "y": 339,
-        "w": 1364,
+        "w": 1434,
         "h": 628
     },
     {
@@ -3119,8 +3119,8 @@
             "e9857ec030a16ab1"
         ],
         "env": [],
-        "x": 264,
-        "y": 699,
+        "x": 184,
+        "y": 659,
         "w": 602,
         "h": 202
     },
@@ -26230,8 +26230,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 820,
+        "x": 490,
+        "y": 780,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -26331,8 +26331,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 430,
-        "y": 820,
+        "x": 350,
+        "y": 780,
         "wires": [
             [
                 "de5ea08b0ff1a997",
@@ -26413,14 +26413,14 @@
         "name": "",
         "interval": "30",
         "step": "1",
-        "minValue": "10",
+        "minValue": "0",
         "maxValue": "1024",
         "startIncCommand": "start_op",
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 760,
-        "y": 820,
+        "x": 680,
+        "y": 780,
         "wires": [
             [
                 "397b6fcd88e6dca3",
@@ -26455,8 +26455,8 @@
         "links": [
             "7fc3fbad33439116"
         ],
-        "x": 335,
-        "y": 820,
+        "x": 255,
+        "y": 780,
         "wires": [
             [
                 "9b391ee6ccfc7d08"
@@ -29919,8 +29919,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
-        "y": 860,
+        "x": 470,
+        "y": 820,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -30392,7 +30392,7 @@
         "z": "2bdc58f37cbddb93",
         "g": "670a12d0f55499c9",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -30584,8 +30584,8 @@
             "9267aaf0dfa06598",
             "e8ba061f5f8c7fec"
         ],
-        "x": 375,
-        "y": 740,
+        "x": 295,
+        "y": 700,
         "wires": [
             [
                 "cfd659f10ae33059"
@@ -30612,8 +30612,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 760,
+        "x": 490,
+        "y": 720,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -30685,8 +30685,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 370,
-        "y": 780,
+        "x": 290,
+        "y": 740,
         "wires": [
             [
                 "9b391ee6ccfc7d08"
