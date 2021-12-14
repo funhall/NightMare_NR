@@ -3380,7 +3380,8 @@
             "c7f6d64cf67d1afc",
             "8e8b1784d846f246",
             "09f49c782876928c",
-            "68c31e3af64d208a"
+            "68c31e3af64d208a",
+            "9b3a18cd8f35bc53"
         ],
         "env": [],
         "x": 114,
@@ -16528,7 +16529,8 @@
         "y": 540,
         "wires": [
             [
-                "68c31e3af64d208a"
+                "68c31e3af64d208a",
+                "9b3a18cd8f35bc53"
             ]
         ]
     },
@@ -16557,6 +16559,32 @@
         "wires": [
             [
                 "770a598c.8e9238"
+            ]
+        ]
+    },
+    {
+        "id": "9b3a18cd8f35bc53",
+        "type": "switch",
+        "z": "33e76285.1cd03e",
+        "g": "f4e5ec1eb5ea4c59",
+        "name": "",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 540,
+        "wires": [
+            [
+                "db97f440126e6ab3"
             ]
         ]
     },
