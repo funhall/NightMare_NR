@@ -2812,7 +2812,8 @@
             "1b0e30e3fefb921a",
             "8b7f077d101226c0",
             "f6f3e0d694580af0",
-            "7e388bd9d3122864"
+            "7e388bd9d3122864",
+            "9a0db1d8900e2409"
         ],
         "x": 2484,
         "y": 1139,
@@ -30453,14 +30454,29 @@
         "z": "2bdc58f37cbddb93",
         "g": "63074db08e166961",
         "name": "direct rum 3 hvid",
-        "links": [
-            "54d2ea789bc9e42b"
-        ],
+        "links": [],
         "x": 3065,
         "y": 360,
         "wires": [
             [
                 "ea8102888f0cc01d"
+            ]
+        ]
+    },
+    {
+        "id": "9a0db1d8900e2409",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "6927ca2700be82a1",
+        "name": "Direkte lys over skænk",
+        "links": [
+            "54d2ea789bc9e42b"
+        ],
+        "x": 2905,
+        "y": 1300,
+        "wires": [
+            [
+                "d7186285ab67fe7c"
             ]
         ]
     },
@@ -40099,7 +40115,7 @@
         "name": "",
         "mode": "link",
         "links": [
-            "3bf33e5c4381c0af"
+            "9a0db1d8900e2409"
         ],
         "x": 2295,
         "y": 1240,
