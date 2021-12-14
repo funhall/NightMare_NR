@@ -30811,7 +30811,7 @@
         "z": "2bdc58f37cbddb93",
         "g": "92002aca1fdb7a99",
         "name": "",
-        "interval": "30",
+        "interval": "300",
         "step": "1",
         "minValue": "10",
         "maxValue": "10",
