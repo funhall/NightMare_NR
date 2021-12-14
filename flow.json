@@ -1768,7 +1768,6 @@
             "b6512c56f89deb44",
             "2b480c9c40b1ae41",
             "3bebd32b5735ccd4",
-            "5b90813930018f61",
             "e5cb0c79d6f2b63d",
             "c7f6d64cf67d1afc",
             "8e8b1784d846f246",
@@ -1779,7 +1778,7 @@
         "x": 114,
         "y": 199,
         "w": 1262,
-        "h": 402
+        "h": 382
     },
     {
         "id": "dbe01fce1c4844e0",
@@ -4196,9 +4195,9 @@
         "type": "ewelink-credentials"
     },
     {
-        "id": "c4c19c33ca97c528",
+        "id": "9f9e48108a45cb97",
         "type": "ui_spacer",
-        "z": "2bdc58f37cbddb93",
+        "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "801aa303154a1cf0",
         "order": 2,
@@ -4206,9 +4205,9 @@
         "height": 1
     },
     {
-        "id": "f544995e66c0198e",
+        "id": "a63a0f559a2b9cd2",
         "type": "ui_spacer",
-        "z": "2bdc58f37cbddb93",
+        "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "801aa303154a1cf0",
         "order": 3,
@@ -4216,9 +4215,9 @@
         "height": 1
     },
     {
-        "id": "db62eb32caf91753",
+        "id": "fc748ea1449612f4",
         "type": "ui_spacer",
-        "z": "2bdc58f37cbddb93",
+        "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "5241c487.80287c",
         "order": 3,
@@ -4226,12 +4225,32 @@
         "height": 1
     },
     {
-        "id": "0404a85d13daf12b",
+        "id": "f831237eb0193b99",
         "type": "ui_spacer",
-        "z": "2bdc58f37cbddb93",
+        "z": "33e76285.1cd03e",
         "name": "spacer",
         "group": "5241c487.80287c",
-        "order": 8,
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "41bb22e32d6a217d",
+        "type": "ui_spacer",
+        "z": "33e76285.1cd03e",
+        "name": "spacer",
+        "group": "5241c487.80287c",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "567a7e96e9d4ed4f",
+        "type": "ui_spacer",
+        "z": "33e76285.1cd03e",
+        "name": "spacer",
+        "group": "5241c487.80287c",
+        "order": 10,
         "width": 2,
         "height": 1
     },
@@ -6743,7 +6762,7 @@
         "g": "c4fe518a.1dca8",
         "name": "",
         "group": "5241c487.80287c",
-        "order": 6,
+        "order": 7,
         "width": 2,
         "height": 2,
         "gtype": "gage",
@@ -10719,8 +10738,8 @@
             "75f3412e531ae899",
             "f0abe2b8e0352aaa"
         ],
-        "x": 835,
-        "y": 540,
+        "x": 1075,
+        "y": 520,
         "wires": []
     },
     {
@@ -10778,17 +10797,6 @@
                 "db97f440126e6ab3"
             ]
         ]
-    },
-    {
-        "id": "5b90813930018f61",
-        "type": "comment",
-        "z": "33e76285.1cd03e",
-        "g": "f4e5ec1eb5ea4c59",
-        "name": "Game over knap må ikke bruges i app spillet skal afsluttes irl",
-        "info": "Gdfgdfd",
-        "x": 580,
-        "y": 560,
-        "wires": []
     },
     {
         "id": "83a775612f7422fe",
@@ -11044,8 +11052,7 @@
         "g": "8a907ee3e43a8bdb",
         "name": "",
         "links": [
-            "6fef9e47ae94c9c4",
-            "c24c1d88f1dabc1b"
+            "6fef9e47ae94c9c4"
         ],
         "x": 195,
         "y": 2260,
@@ -11821,7 +11828,7 @@
         "z": "33e76285.1cd03e",
         "g": "8a907ee3e43a8bdb",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16356,7 +16363,7 @@
         "tooltip": "",
         "group": "117cda2a.43e596",
         "order": 19,
-        "width": "6",
+        "width": 6,
         "height": 1,
         "wrap": false,
         "passthru": true,
@@ -27305,7 +27312,7 @@
         "label": "Lys rum 4",
         "tooltip": "",
         "group": "43b4f7524f5eadc0",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -30080,7 +30087,7 @@
         "label": "Lys rum 2",
         "tooltip": "",
         "group": "43b4f7524f5eadc0",
-        "order": 3,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -30309,7 +30316,7 @@
         "z": "2bdc58f37cbddb93",
         "g": "670a12d0f55499c9",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -33648,7 +33655,7 @@
         "g": "639befce27376865",
         "name": "",
         "group": "5241c487.80287c",
-        "order": 5,
+        "order": 6,
         "width": 2,
         "height": 2,
         "gtype": "gage",
@@ -36306,7 +36313,7 @@
         "label": "Timer",
         "tooltip": "",
         "group": "5241c487.80287c",
-        "order": 8,
+        "order": 11,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -36355,7 +36362,7 @@
         "z": "e21f6458e5ab1eb6",
         "name": "",
         "group": "5241c487.80287c",
-        "order": 9,
+        "order": 12,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -47781,7 +47788,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "Start spil",
+        "label": "wStart spil",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -51043,7 +51050,7 @@
         "g": "69b6b05b16a94401",
         "name": "",
         "group": "5241c487.80287c",
-        "order": 7,
+        "order": 8,
         "width": 2,
         "height": 2,
         "gtype": "gage",
