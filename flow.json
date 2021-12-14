@@ -2292,33 +2292,10 @@
             "f8402ab92fbde0b5"
         ],
         "env": [],
-        "x": 2094,
+        "x": 2274,
         "y": 2099,
         "w": 862,
         "h": 162
-    },
-    {
-        "id": "b155502214061fe5",
-        "type": "group",
-        "z": "e21f6458e5ab1eb6",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "3f398b6e018b7a68",
-            "11a30b89acaec2f3",
-            "f2c935c6cc9ec96a"
-        ],
-        "x": 1034,
-        "y": 1859,
-        "w": 822,
-        "h": 182
     },
     {
         "id": "2049c8be1ea9c55d",
@@ -3303,6 +3280,34 @@
         "y": 2859,
         "w": 732,
         "h": 182
+    },
+    {
+        "id": "0681a000f02e8ea0",
+        "type": "group",
+        "z": "e21f6458e5ab1eb6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c82aa274c5c18e32",
+            "3004a539f9fbc3c0",
+            "0c33a4bda28b1a2b",
+            "3f943d33915a9970",
+            "3f398b6e018b7a68",
+            "11a30b89acaec2f3",
+            "f2c935c6cc9ec96a",
+            "631ca4e2c7e6ce3c"
+        ],
+        "x": 1274,
+        "y": 1879,
+        "w": 872,
+        "h": 262
     },
     {
         "id": "82fd466d.f6c968",
@@ -33271,7 +33276,7 @@
         "id": "3f398b6e018b7a68",
         "type": "mqtt in",
         "z": "e21f6458e5ab1eb6",
-        "g": "b155502214061fe5",
+        "g": "0681a000f02e8ea0",
         "name": "Kors i serie",
         "topic": "boks5/input/D6",
         "qos": "2",
@@ -33281,8 +33286,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1120,
-        "y": 1940,
+        "x": 1360,
+        "y": 1960,
         "wires": [
             [
                 "11a30b89acaec2f3",
@@ -33295,7 +33300,7 @@
         "id": "11a30b89acaec2f3",
         "type": "debug",
         "z": "e21f6458e5ab1eb6",
-        "g": "b155502214061fe5",
+        "g": "0681a000f02e8ea0",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -33305,23 +33310,23 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1450,
-        "y": 1900,
+        "x": 1690,
+        "y": 1920,
         "wires": []
     },
     {
         "id": "f2c935c6cc9ec96a",
         "type": "link out",
         "z": "e21f6458e5ab1eb6",
-        "g": "b155502214061fe5",
+        "g": "0681a000f02e8ea0",
         "name": "Kors i serie",
         "mode": "link",
         "links": [
             "167b5e205f71449f",
             "71bdd19e51a7ce13"
         ],
-        "x": 1815,
-        "y": 2000,
+        "x": 2055,
+        "y": 2060,
         "wires": []
     },
     {
@@ -34316,7 +34321,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2350,
+        "x": 2530,
         "y": 2180,
         "wires": [
             [
@@ -34361,7 +34366,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2550,
+        "x": 2730,
         "y": 2160,
         "wires": [
             [
@@ -34404,7 +34409,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2550,
+        "x": 2730,
         "y": 2220,
         "wires": [
             [
@@ -34433,7 +34438,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2210,
+        "x": 2390,
         "y": 2200,
         "wires": [
             [
@@ -34451,7 +34456,7 @@
         "links": [
             "d2fb2fb9926fbc1b"
         ],
-        "x": 2915,
+        "x": 3095,
         "y": 2180,
         "wires": []
     },
@@ -34475,7 +34480,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2790,
+        "x": 2970,
         "y": 2220,
         "wires": [
             [
@@ -34503,7 +34508,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2790,
+        "x": 2970,
         "y": 2140,
         "wires": [
             [
@@ -34532,7 +34537,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 2210,
+        "x": 2390,
         "y": 2140,
         "wires": [
             [
@@ -36023,7 +36028,8 @@
         "id": "c82aa274c5c18e32",
         "type": "controltimer",
         "z": "e21f6458e5ab1eb6",
-        "name": "1500",
+        "g": "0681a000f02e8ea0",
+        "name": "1100",
         "timerType": "delay",
         "timerDurationUnit": "millisecond",
         "timerDurationType": "num",
@@ -36065,11 +36071,12 @@
         "pauseActionName": "PAUSE",
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
-        "x": 1570,
-        "y": 2060,
+        "x": 1810,
+        "y": 2080,
         "wires": [
             [
-                "f2c935c6cc9ec96a"
+                "f2c935c6cc9ec96a",
+                "631ca4e2c7e6ce3c"
             ],
             []
         ]
@@ -36078,6 +36085,7 @@
         "id": "3004a539f9fbc3c0",
         "type": "switch",
         "z": "e21f6458e5ab1eb6",
+        "g": "0681a000f02e8ea0",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -36094,8 +36102,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1670,
-        "y": 1940,
+        "x": 1910,
+        "y": 1960,
         "wires": [
             [
                 "3f943d33915a9970"
@@ -36107,13 +36115,14 @@
         "id": "0c33a4bda28b1a2b",
         "type": "Message Counter",
         "z": "e21f6458e5ab1eb6",
+        "g": "0681a000f02e8ea0",
         "name": "1000",
         "units": "seconds",
         "interval": "1",
         "alignToClock": true,
         "generator": "internal",
-        "x": 1450,
-        "y": 1940,
+        "x": 1690,
+        "y": 1960,
         "wires": [
             [
                 "3004a539f9fbc3c0"
@@ -36125,6 +36134,7 @@
         "id": "3f943d33915a9970",
         "type": "change",
         "z": "e21f6458e5ab1eb6",
+        "g": "0681a000f02e8ea0",
         "name": "",
         "rules": [
             {
@@ -36140,13 +36150,31 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1660,
-        "y": 2000,
+        "x": 1900,
+        "y": 2020,
         "wires": [
             [
                 "c82aa274c5c18e32"
             ]
         ]
+    },
+    {
+        "id": "631ca4e2c7e6ce3c",
+        "type": "debug",
+        "z": "e21f6458e5ab1eb6",
+        "g": "0681a000f02e8ea0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2050,
+        "y": 2100,
+        "wires": []
     },
     {
         "id": "dce242cef0b59c86",
