@@ -28313,7 +28313,9 @@
         "name": "HIGH",
         "props": [
             {
-                "p": "payload"
+                "p": "reset",
+                "v": "reset",
+                "vt": "str"
             },
             {
                 "p": "topic",
@@ -28325,8 +28327,6 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "reset",
-        "payloadType": "str",
         "x": 2630,
         "y": 1280,
         "wires": [
