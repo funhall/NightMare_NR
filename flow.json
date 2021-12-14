@@ -3074,31 +3074,6 @@
         "h": 182
     },
     {
-        "id": "3080724a291fe565",
-        "type": "group",
-        "z": "2bdc58f37cbddb93",
-        "g": "1a8e6e1daddc8f68",
-        "name": "Dæmper lys ved srart spil",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "de5ea08b0ff1a997",
-            "9b391ee6ccfc7d08",
-            "4904644ae19bf16a",
-            "2561ecfaae4095f8",
-            "20d689c8b00d2164",
-            "cfd659f10ae33059",
-            "1d7ae13f87d2281d",
-            "e9857ec030a16ab1"
-        ],
-        "env": [],
-        "x": 214,
-        "y": 639,
-        "w": 592,
-        "h": 222
-    },
-    {
         "id": "780a8f237b09fa68",
         "type": "group",
         "z": "2bdc58f37cbddb93",
@@ -3365,18 +3340,13 @@
             "782323ae665624f6",
             "edb6b853e6e5c862",
             "a1e456100e5b3a54",
-            "3080724a291fe565",
             "780a8f237b09fa68",
             "5ba8a9ae620f6208",
             "39c8eb30c62d75ab",
-            "ea9ca5fddf754d68",
-            "55b365334ad7bad3",
             "38e506841b6ba67f",
             "2fd455b802481f37",
             "92002aca1fdb7a99",
-            "1a83746c8fca6cdd",
-            "ff0ac8f69971652c",
-            "b3f8880f14e6a47a"
+            "4e6cb6f5cc5cc8f6"
         ],
         "x": 148,
         "y": 339,
@@ -3398,15 +3368,42 @@
             "e8b34f4068585653",
             "2fab807054a529dc",
             "0ea58f3b8a26cd69",
-            "e1a9939a6dc0c626",
-            "655b1622846c724f",
-            "3166a70076b5cc66"
+            "e1a9939a6dc0c626"
         ],
         "env": [],
-        "x": 174,
-        "y": 879,
+        "x": 234,
+        "y": 1099,
         "w": 672,
-        "h": 202
+        "h": 142
+    },
+    {
+        "id": "4e6cb6f5cc5cc8f6",
+        "type": "group",
+        "z": "2bdc58f37cbddb93",
+        "g": "1a8e6e1daddc8f68",
+        "name": "Dæmper lys ved srart spil",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ea9ca5fddf754d68",
+            "55b365334ad7bad3",
+            "1a83746c8fca6cdd",
+            "ff0ac8f69971652c",
+            "b3f8880f14e6a47a",
+            "de5ea08b0ff1a997",
+            "9b391ee6ccfc7d08",
+            "4904644ae19bf16a",
+            "2561ecfaae4095f8",
+            "20d689c8b00d2164",
+            "cfd659f10ae33059",
+            "1d7ae13f87d2281d",
+            "e9857ec030a16ab1"
+        ],
+        "x": 214,
+        "y": 699,
+        "w": 792,
+        "h": 242
     },
     {
         "id": "82fd466d.f6c968",
@@ -26471,7 +26468,7 @@
         "id": "de5ea08b0ff1a997",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "g": "3080724a291fe565",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "nedtælling",
         "rules": [
             {
@@ -26488,7 +26485,7 @@
         "to": "",
         "reg": false,
         "x": 510,
-        "y": 760,
+        "y": 840,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -26574,7 +26571,7 @@
         "id": "9b391ee6ccfc7d08",
         "type": "switch",
         "z": "2bdc58f37cbddb93",
-        "g": "3080724a291fe565",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "",
         "property": "game",
         "propertyType": "global",
@@ -26589,7 +26586,7 @@
         "repair": false,
         "outputs": 1,
         "x": 370,
-        "y": 760,
+        "y": 840,
         "wires": [
             [
                 "de5ea08b0ff1a997",
@@ -26666,7 +26663,7 @@
         "id": "4904644ae19bf16a",
         "type": "time-based-dimmer",
         "z": "2bdc58f37cbddb93",
-        "g": "3080724a291fe565",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "",
         "interval": "30",
         "step": "1",
@@ -26677,7 +26674,7 @@
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
         "x": 700,
-        "y": 760,
+        "y": 840,
         "wires": [
             [
                 "55b365334ad7bad3",
@@ -26707,13 +26704,13 @@
         "id": "2561ecfaae4095f8",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
-        "g": "3080724a291fe565",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "Klargørring",
         "links": [
             "7fc3fbad33439116"
         ],
         "x": 275,
-        "y": 760,
+        "y": 840,
         "wires": [
             [
                 "9b391ee6ccfc7d08"
@@ -30162,7 +30159,7 @@
         "id": "20d689c8b00d2164",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "g": "3080724a291fe565",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "1024",
         "rules": [
             {
@@ -30179,7 +30176,7 @@
         "to": "",
         "reg": false,
         "x": 490,
-        "y": 800,
+        "y": 880,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -30634,7 +30631,7 @@
         "id": "ea9ca5fddf754d68",
         "type": "debug",
         "z": "2bdc58f37cbddb93",
-        "g": "1a8e6e1daddc8f68",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -30643,15 +30640,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 520,
+        "x": 890,
+        "y": 900,
         "wires": []
     },
     {
         "id": "55b365334ad7bad3",
         "type": "debug",
         "z": "2bdc58f37cbddb93",
-        "g": "1a8e6e1daddc8f68",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -30660,8 +30657,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1090,
-        "y": 760,
+        "x": 670,
+        "y": 900,
         "wires": []
     },
     {
@@ -30839,14 +30836,14 @@
         "id": "1d7ae13f87d2281d",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
-        "g": "3080724a291fe565",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "",
         "links": [
             "9267aaf0dfa06598",
             "e8ba061f5f8c7fec"
         ],
         "x": 315,
-        "y": 680,
+        "y": 760,
         "wires": [
             [
                 "cfd659f10ae33059"
@@ -30857,7 +30854,7 @@
         "id": "cfd659f10ae33059",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "g": "3080724a291fe565",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "Stop timer",
         "rules": [
             {
@@ -30874,7 +30871,7 @@
         "to": "",
         "reg": false,
         "x": 510,
-        "y": 700,
+        "y": 780,
         "wires": [
             [
                 "4904644ae19bf16a"
@@ -30928,7 +30925,7 @@
         "id": "e9857ec030a16ab1",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
-        "g": "3080724a291fe565",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "",
         "props": [
             {
@@ -30947,7 +30944,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 320,
-        "y": 820,
+        "y": 900,
         "wires": [
             [
                 "de5ea08b0ff1a997",
@@ -30977,8 +30974,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 340,
-        "y": 960,
+        "x": 400,
+        "y": 1180,
         "wires": [
             [
                 "7f28cc42e743c381",
@@ -31006,8 +31003,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
-        "y": 920,
+        "x": 590,
+        "y": 1140,
         "wires": [
             [
                 "2fab807054a529dc"
@@ -31032,8 +31029,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 350,
-        "y": 920,
+        "x": 410,
+        "y": 1140,
         "wires": [
             [
                 "7f28cc42e743c381",
@@ -31055,8 +31052,8 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 740,
-        "y": 940,
+        "x": 800,
+        "y": 1160,
         "wires": [
             [
                 "397b6fcd88e6dca3"
@@ -31083,8 +31080,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
-        "y": 980,
+        "x": 610,
+        "y": 1200,
         "wires": [
             [
                 "2fab807054a529dc"
@@ -31100,8 +31097,8 @@
         "links": [
             "d4d2aeec1061c558"
         ],
-        "x": 215,
-        "y": 920,
+        "x": 275,
+        "y": 1140,
         "wires": [
             [
                 "e8b34f4068585653"
@@ -31109,49 +31106,10 @@
         ]
     },
     {
-        "id": "655b1622846c724f",
-        "type": "link in",
-        "z": "2bdc58f37cbddb93",
-        "g": "92002aca1fdb7a99",
-        "name": "",
-        "links": [],
-        "x": 295,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3166a70076b5cc66",
-        "type": "inject",
-        "z": "2bdc58f37cbddb93",
-        "g": "92002aca1fdb7a99",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "2",
-        "payloadType": "num",
-        "x": 460,
-        "y": 1040,
-        "wires": [
-            [
-                "397b6fcd88e6dca3"
-            ]
-        ]
-    },
-    {
         "id": "1a83746c8fca6cdd",
         "type": "switch",
         "z": "2bdc58f37cbddb93",
-        "g": "1a8e6e1daddc8f68",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -31165,8 +31123,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 890,
-        "y": 700,
+        "x": 710,
+        "y": 780,
         "wires": [
             [
                 "cfd659f10ae33059",
@@ -31178,7 +31136,7 @@
         "id": "ff0ac8f69971652c",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "g": "1a8e6e1daddc8f68",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "",
         "rules": [
             {
@@ -31194,8 +31152,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
-        "y": 640,
+        "x": 840,
+        "y": 740,
         "wires": [
             [
                 "397b6fcd88e6dca3",
@@ -31207,7 +31165,7 @@
         "id": "b3f8880f14e6a47a",
         "type": "delay",
         "z": "2bdc58f37cbddb93",
-        "g": "1a8e6e1daddc8f68",
+        "g": "4e6cb6f5cc5cc8f6",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -31221,8 +31179,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 950,
-        "y": 680,
+        "x": 860,
+        "y": 780,
         "wires": [
             [
                 "ff0ac8f69971652c"
