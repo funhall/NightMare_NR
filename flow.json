@@ -3359,6 +3359,28 @@
         "h": 182
     },
     {
+        "id": "45f3ba2e982eb896",
+        "type": "group",
+        "z": "42a18184186a4f43",
+        "name": "Count down lyd i rum 1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "07ca034c044eb89e",
+            "95c48bfee93f17ac",
+            "1ec59be58de5e23e",
+            "b72c70940c8b91ae",
+            "4e5e558155437ae7",
+            "75f3412e531ae899"
+        ],
+        "env": [],
+        "x": 1154,
+        "y": 1279,
+        "w": 572,
+        "h": 162
+    },
+    {
         "id": "82fd466d.f6c968",
         "type": "ui_tab",
         "name": "Nightmare personale",
@@ -6917,7 +6939,8 @@
             "9c117b22ce846f1d",
             "b59c9fe5405260d4",
             "e36b7e766e065456",
-            "e5f609fcfff13ea4"
+            "e5f609fcfff13ea4",
+            "4e5e558155437ae7"
         ],
         "x": 1855,
         "y": 4820,
@@ -9994,7 +10017,8 @@
         "mode": "link",
         "links": [
             "38c9d1ce4d9d6dec",
-            "6b7be4d8dafc67a3"
+            "6b7be4d8dafc67a3",
+            "75f3412e531ae899"
         ],
         "x": 1655,
         "y": 1080,
@@ -10206,7 +10230,8 @@
             "1d8066c69f65ba31",
             "93dc99ab9d599667",
             "6b7be4d8dafc67a3",
-            "be248f35de102856"
+            "be248f35de102856",
+            "75f3412e531ae899"
         ],
         "x": 735,
         "y": 300,
@@ -10677,7 +10702,8 @@
             "4bf3d6334235f28c",
             "b395d4dd35fd5132",
             "6b7be4d8dafc67a3",
-            "7e388bd9d3122864"
+            "7e388bd9d3122864",
+            "75f3412e531ae899"
         ],
         "x": 835,
         "y": 540,
@@ -39856,6 +39882,142 @@
         "wires": [
             [
                 "1a7d871de19df5a6"
+            ]
+        ]
+    },
+    {
+        "id": "07ca034c044eb89e",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "Start lullaby singing song sound",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=in_play&input=/home/pi/lullaby-glockenspiel-lullaby.wav",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1550,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95c48bfee93f17ac",
+        "type": "http request",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "Stop sound count down",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://:venovej1@192.168.1.32:8080/requests/status.xml?command=pl_stop",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1590,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ec59be58de5e23e",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "x": 1270,
+        "y": 1320,
+        "wires": [
+            [
+                "07ca034c044eb89e"
+            ]
+        ]
+    },
+    {
+        "id": "b72c70940c8b91ae",
+        "type": "inject",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "x": 1250,
+        "y": 1400,
+        "wires": [
+            [
+                "95c48bfee93f17ac"
+            ]
+        ]
+    },
+    {
+        "id": "4e5e558155437ae7",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "",
+        "links": [
+            "369f293e.f63406"
+        ],
+        "x": 1385,
+        "y": 1320,
+        "wires": [
+            [
+                "07ca034c044eb89e"
+            ]
+        ]
+    },
+    {
+        "id": "75f3412e531ae899",
+        "type": "link in",
+        "z": "42a18184186a4f43",
+        "g": "45f3ba2e982eb896",
+        "name": "Stop countdown lyd ",
+        "links": [
+            "2b480c9c40b1ae41",
+            "6ae7dc55b448fca2",
+            "e8ba061f5f8c7fec"
+        ],
+        "x": 1395,
+        "y": 1380,
+        "wires": [
+            [
+                "95c48bfee93f17ac"
             ]
         ]
     },
