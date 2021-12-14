@@ -2895,41 +2895,6 @@
         "h": 262
     },
     {
-        "id": "670a12d0f55499c9",
-        "type": "group",
-        "z": "2bdc58f37cbddb93",
-        "name": "Rum 1",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "54706de9e7f6afc3",
-            "2ac5afa480c29832",
-            "6410a3d409c65544",
-            "91966b424e9124b3",
-            "397b6fcd88e6dca3",
-            "a1aa32c4949c4fe3",
-            "af823658e7727418",
-            "d6b40e3e7cdcd52b",
-            "4b9fe11ca561240d",
-            "782323ae665624f6",
-            "edb6b853e6e5c862",
-            "a1e456100e5b3a54",
-            "3080724a291fe565",
-            "780a8f237b09fa68",
-            "5ba8a9ae620f6208",
-            "39c8eb30c62d75ab",
-            "ea9ca5fddf754d68",
-            "55b365334ad7bad3",
-            "38e506841b6ba67f",
-            "2fd455b802481f37"
-        ],
-        "x": 158,
-        "y": 339,
-        "w": 1434,
-        "h": 628
-    },
-    {
         "id": "0cfe45306bc96b95",
         "type": "group",
         "z": "2bdc58f37cbddb93",
@@ -3079,7 +3044,7 @@
         "id": "a1e456100e5b3a54",
         "type": "group",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "Hæver lys styrke ved game over",
         "style": {
             "label": true
@@ -3094,7 +3059,7 @@
             "dbe994cdfcdf55cd"
         ],
         "env": [],
-        "x": 254,
+        "x": 174,
         "y": 439,
         "w": 672,
         "h": 182
@@ -3103,7 +3068,7 @@
         "id": "3080724a291fe565",
         "type": "group",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "Dæmper lys ved srart spil",
         "style": {
             "label": true
@@ -3128,7 +3093,7 @@
         "id": "780a8f237b09fa68",
         "type": "group",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "Blink ved hjælp",
         "style": {
             "label": true
@@ -3147,7 +3112,7 @@
         "id": "5ba8a9ae620f6208",
         "type": "group",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "Hæver lys ved åbning til rum 2",
         "style": {
             "label": true
@@ -3371,6 +3336,66 @@
         "y": 199,
         "w": 1262,
         "h": 382
+    },
+    {
+        "id": "1a8e6e1daddc8f68",
+        "type": "group",
+        "z": "2bdc58f37cbddb93",
+        "name": "Rum 1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "54706de9e7f6afc3",
+            "2ac5afa480c29832",
+            "6410a3d409c65544",
+            "91966b424e9124b3",
+            "397b6fcd88e6dca3",
+            "a1aa32c4949c4fe3",
+            "af823658e7727418",
+            "d6b40e3e7cdcd52b",
+            "4b9fe11ca561240d",
+            "782323ae665624f6",
+            "edb6b853e6e5c862",
+            "a1e456100e5b3a54",
+            "3080724a291fe565",
+            "780a8f237b09fa68",
+            "5ba8a9ae620f6208",
+            "39c8eb30c62d75ab",
+            "ea9ca5fddf754d68",
+            "55b365334ad7bad3",
+            "38e506841b6ba67f",
+            "2fd455b802481f37",
+            "92002aca1fdb7a99"
+        ],
+        "x": 148,
+        "y": 339,
+        "w": 1444,
+        "h": 748
+    },
+    {
+        "id": "92002aca1fdb7a99",
+        "type": "group",
+        "z": "2bdc58f37cbddb93",
+        "g": "1a8e6e1daddc8f68",
+        "name": "Hæver lys til 10 efter video",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "cb04015a70efb473",
+            "7f28cc42e743c381",
+            "e8b34f4068585653",
+            "2fab807054a529dc",
+            "0ea58f3b8a26cd69",
+            "e1a9939a6dc0c626",
+            "655b1622846c724f"
+        ],
+        "env": [],
+        "x": 174,
+        "y": 879,
+        "w": 672,
+        "h": 182
     },
     {
         "id": "82fd466d.f6c968",
@@ -8504,7 +8529,8 @@
             "565afc3094528f2f",
             "fb2907834c58bfd3",
             "09f49c782876928c",
-            "e89aa0349c5a6710"
+            "e89aa0349c5a6710",
+            "e1a9939a6dc0c626"
         ],
         "x": 1295,
         "y": 2280,
@@ -26157,7 +26183,7 @@
         "id": "54706de9e7f6afc3",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "Rum1 - Rød",
         "topic": "belysning/output/D8",
         "qos": "",
@@ -26176,7 +26202,7 @@
         "id": "2ac5afa480c29832",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "Rum1 - Grøn",
         "topic": "belysning/output/D??",
         "qos": "",
@@ -26195,7 +26221,7 @@
         "id": "6410a3d409c65544",
         "type": "mqtt out",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "Rum1 - Hvid",
         "topic": "belysning/output/D7",
         "qos": "",
@@ -26242,7 +26268,7 @@
         "id": "91966b424e9124b3",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "1024",
         "rules": [
             {
@@ -26271,7 +26297,7 @@
         "id": "397b6fcd88e6dca3",
         "type": "ui_slider",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "",
         "label": "Lys rum 1",
         "tooltip": "",
@@ -26432,7 +26458,7 @@
         "id": "a1aa32c4949c4fe3",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "Klargørring",
         "links": [
             "18779454fc783361",
@@ -26485,7 +26511,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 420,
+        "x": 340,
         "y": 520,
         "wires": [
             [
@@ -26531,7 +26557,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
+        "x": 530,
         "y": 480,
         "wires": [
             [
@@ -26557,7 +26583,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 430,
+        "x": 350,
         "y": 480,
         "wires": [
             [
@@ -26580,7 +26606,7 @@
         "stopIncCommand": "stop_op",
         "startDecCommand": "start_ned",
         "stopDecCommand": "stop_ned",
-        "x": 820,
+        "x": 740,
         "y": 500,
         "wires": [
             [
@@ -26609,7 +26635,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 630,
+        "x": 550,
         "y": 540,
         "wires": [
             [
@@ -26626,7 +26652,7 @@
         "links": [
             "d4d2aeec1061c558"
         ],
-        "x": 295,
+        "x": 215,
         "y": 480,
         "wires": [
             [
@@ -28648,7 +28674,7 @@
         "id": "af823658e7727418",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "0",
         "rules": [
             {
@@ -28676,7 +28702,7 @@
         "id": "d6b40e3e7cdcd52b",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "",
         "links": [
             "49095ecf9ab1fd70"
@@ -28693,7 +28719,7 @@
         "id": "4b9fe11ca561240d",
         "type": "link in",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "",
         "links": [
             "2216095b02d3c520"
@@ -28710,7 +28736,7 @@
         "id": "782323ae665624f6",
         "type": "delay",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "",
         "pauseType": "delay",
         "timeout": "10",
@@ -28814,7 +28840,7 @@
         "id": "edb6b853e6e5c862",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "",
         "rules": [
             {
@@ -29931,7 +29957,7 @@
         "id": "39c8eb30c62d75ab",
         "type": "inject",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "",
         "props": [
             {
@@ -30373,7 +30399,7 @@
         "id": "ea9ca5fddf754d68",
         "type": "debug",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -30390,9 +30416,9 @@
         "id": "55b365334ad7bad3",
         "type": "debug",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -30407,7 +30433,7 @@
         "id": "38e506841b6ba67f",
         "type": "debug",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -30627,7 +30653,7 @@
         "g": "a1e456100e5b3a54",
         "name": "",
         "links": [],
-        "x": 375,
+        "x": 295,
         "y": 580,
         "wires": [
             [
@@ -30639,7 +30665,7 @@
         "id": "2fd455b802481f37",
         "type": "change",
         "z": "2bdc58f37cbddb93",
-        "g": "670a12d0f55499c9",
+        "g": "1a8e6e1daddc8f68",
         "name": "Stop timer",
         "rules": [
             {
@@ -30691,6 +30717,171 @@
             [
                 "9b391ee6ccfc7d08"
             ]
+        ]
+    },
+    {
+        "id": "cb04015a70efb473",
+        "type": "inject",
+        "z": "2bdc58f37cbddb93",
+        "g": "92002aca1fdb7a99",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 960,
+        "wires": [
+            [
+                "e8b34f4068585653"
+            ]
+        ]
+    },
+    {
+        "id": "7f28cc42e743c381",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "92002aca1fdb7a99",
+        "name": "nedtælling",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "start_op",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 920,
+        "wires": [
+            [
+                "2fab807054a529dc"
+            ]
+        ]
+    },
+    {
+        "id": "e8b34f4068585653",
+        "type": "switch",
+        "z": "2bdc58f37cbddb93",
+        "g": "92002aca1fdb7a99",
+        "name": "",
+        "property": "game",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 920,
+        "wires": [
+            [
+                "7f28cc42e743c381",
+                "0ea58f3b8a26cd69"
+            ]
+        ]
+    },
+    {
+        "id": "2fab807054a529dc",
+        "type": "time-based-dimmer",
+        "z": "2bdc58f37cbddb93",
+        "g": "92002aca1fdb7a99",
+        "name": "",
+        "interval": "30",
+        "step": "1",
+        "minValue": "10",
+        "maxValue": "10",
+        "startIncCommand": "start_op",
+        "stopIncCommand": "stop_op",
+        "startDecCommand": "start_ned",
+        "stopDecCommand": "stop_ned",
+        "x": 740,
+        "y": 940,
+        "wires": [
+            [
+                "397b6fcd88e6dca3"
+            ]
+        ]
+    },
+    {
+        "id": "0ea58f3b8a26cd69",
+        "type": "change",
+        "z": "2bdc58f37cbddb93",
+        "g": "92002aca1fdb7a99",
+        "name": "0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 980,
+        "wires": [
+            [
+                "2fab807054a529dc"
+            ]
+        ]
+    },
+    {
+        "id": "e1a9939a6dc0c626",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "92002aca1fdb7a99",
+        "name": "Skruer op for lys rum 1",
+        "links": [
+            "d4d2aeec1061c558"
+        ],
+        "x": 215,
+        "y": 920,
+        "wires": [
+            [
+                "e8b34f4068585653"
+            ]
+        ]
+    },
+    {
+        "id": "655b1622846c724f",
+        "type": "link in",
+        "z": "2bdc58f37cbddb93",
+        "g": "92002aca1fdb7a99",
+        "name": "",
+        "links": [],
+        "x": 295,
+        "y": 1020,
+        "wires": [
+            []
         ]
     },
     {
