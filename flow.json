@@ -2313,13 +2313,12 @@
         "nodes": [
             "3f398b6e018b7a68",
             "11a30b89acaec2f3",
-            "f2c935c6cc9ec96a",
-            "d9c4979cebf5ea77"
+            "f2c935c6cc9ec96a"
         ],
         "x": 1034,
         "y": 1859,
-        "w": 512,
-        "h": 142
+        "w": 822,
+        "h": 182
     },
     {
         "id": "2049c8be1ea9c55d",
@@ -10359,7 +10358,8 @@
         "links": [
             "a422065c72ada863",
             "adc106bfbddb767e",
-            "10895e061de3f851"
+            "10895e061de3f851",
+            "57dd660b17bee653"
         ],
         "x": 1335,
         "y": 280,
@@ -33088,6 +33088,7 @@
         "g": "639befce27376865",
         "name": "Reset gavle til 0",
         "links": [
+            "3f275e5d73da77dc",
             "7fc3fbad33439116",
             "e8ba061f5f8c7fec"
         ],
@@ -33284,8 +33285,9 @@
         "y": 1940,
         "wires": [
             [
-                "d9c4979cebf5ea77",
-                "11a30b89acaec2f3"
+                "11a30b89acaec2f3",
+                "0c33a4bda28b1a2b",
+                "c82aa274c5c18e32"
             ]
         ]
     },
@@ -33318,8 +33320,8 @@
             "167b5e205f71449f",
             "71bdd19e51a7ce13"
         ],
-        "x": 1435,
-        "y": 1960,
+        "x": 1815,
+        "y": 2000,
         "wires": []
     },
     {
@@ -35490,20 +35492,6 @@
         ]
     },
     {
-        "id": "d9c4979cebf5ea77",
-        "type": "subflow:e33dea2cf071ea8d",
-        "z": "e21f6458e5ab1eb6",
-        "g": "b155502214061fe5",
-        "name": "",
-        "x": 1280,
-        "y": 1960,
-        "wires": [
-            [
-                "f2c935c6cc9ec96a"
-            ]
-        ]
-    },
-    {
         "id": "45c7f845b2b79c12",
         "type": "subflow:e33dea2cf071ea8d",
         "z": "e21f6458e5ab1eb6",
@@ -36028,6 +36016,135 @@
         "wires": [
             [
                 "e5bf4aa89f4a2142"
+            ]
+        ]
+    },
+    {
+        "id": "c82aa274c5c18e32",
+        "type": "controltimer",
+        "z": "e21f6458e5ab1eb6",
+        "name": "1500",
+        "timerType": "delay",
+        "timerDurationUnit": "millisecond",
+        "timerDurationType": "num",
+        "timerDuration": 1100,
+        "timerLoopTimeoutUnit": "second",
+        "timerLoopTimeoutType": "num",
+        "timerLoopTimeout": 0,
+        "loopTimeoutMessageType": "str",
+        "loopTimeoutMessage": "LOOP_TIMEOUT",
+        "timerMaxLoopIterationsType": "num",
+        "timerMaxLoopIterations": 0,
+        "loopMaxIterationsMessageType": "str",
+        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
+        "isConsecutiveStartActionTimerResetAllowed": false,
+        "isRunningTimerProgressVisible": false,
+        "outputReceivedMessageOnTimerTrigger": true,
+        "outputReceivedMessageOnTimerHalt": false,
+        "startTimerOnReceivalOfUnknownMessage": true,
+        "resetTimerOnReceivalOfUnknownMessage": true,
+        "isDebugModeEnabled": false,
+        "timerTriggeredMessageType": "str",
+        "timerTriggeredMessage": "TIMER_TRIGGERED",
+        "timerHaltedMessageType": "str",
+        "timerHaltedMessage": "TIMER_HALTED",
+        "isStartActionEnabled": true,
+        "isStopActionEnabled": true,
+        "isResetActionEnabled": true,
+        "isPauseActionEnabled": true,
+        "isContinueActionEnabled": true,
+        "actionPropertyNameType": "str",
+        "actionPropertyName": "payload",
+        "startActionNameType": "str",
+        "startActionName": "START",
+        "stopActionNameType": "str",
+        "stopActionName": "STOP",
+        "resetActionNameType": "str",
+        "resetActionName": "RESET",
+        "pauseActionNameType": "str",
+        "pauseActionName": "PAUSE",
+        "continueActionNameType": "str",
+        "continueActionName": "CONTINUE",
+        "x": 1570,
+        "y": 2060,
+        "wires": [
+            [
+                "f2c935c6cc9ec96a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3004a539f9fbc3c0",
+        "type": "switch",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1670,
+        "y": 1940,
+        "wires": [
+            [
+                "3f943d33915a9970"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "0c33a4bda28b1a2b",
+        "type": "Message Counter",
+        "z": "e21f6458e5ab1eb6",
+        "name": "1000",
+        "units": "seconds",
+        "interval": "1",
+        "alignToClock": true,
+        "generator": "internal",
+        "x": 1450,
+        "y": 1940,
+        "wires": [
+            [
+                "3004a539f9fbc3c0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3f943d33915a9970",
+        "type": "change",
+        "z": "e21f6458e5ab1eb6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "STOP",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1660,
+        "y": 2000,
+        "wires": [
+            [
+                "c82aa274c5c18e32"
             ]
         ]
     },
