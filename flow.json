@@ -40788,8 +40788,7 @@
         "y": 1640,
         "wires": [
             [
-                "54d2ea789bc9e42b",
-                "2f1fa4c570900929"
+                "54d2ea789bc9e42b"
             ]
         ]
     },
@@ -40815,34 +40814,6 @@
         "wires": [
             [
                 "2023079a0e7480b8"
-            ]
-        ]
-    },
-    {
-        "id": "2f1fa4c570900929",
-        "type": "loop",
-        "z": "42a18184186a4f43",
-        "name": "",
-        "kind": "fcnt",
-        "count": "5",
-        "initial": "1",
-        "step": "1",
-        "condition": "",
-        "conditionType": "js",
-        "when": "before",
-        "enumeration": "enum",
-        "enumerationType": "msg",
-        "limit": "",
-        "loopPayload": "loop-index",
-        "finalPayload": "final-count",
-        "x": 2310,
-        "y": 1580,
-        "wires": [
-            [
-                "13d50f302f1d910f"
-            ],
-            [
-                "13d50f302f1d910f"
             ]
         ]
     },
