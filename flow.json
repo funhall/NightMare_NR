@@ -1981,9 +1981,9 @@
             "a85f1f23c34dde57"
         ],
         "env": [],
-        "x": 264,
-        "y": 659,
-        "w": 892,
+        "x": 144,
+        "y": 679,
+        "w": 932,
         "h": 222
     },
     {
@@ -37279,7 +37279,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Escaperoom_Viborg_Timer\"],\"show\":[\"Escaperoom_Viborg_Start_video\"]}}",
+                "to": "{\"group\":{\"show\":[\"Escaperoom_Viborg_Timer\"],\"hide\":[\"Escaperoom_Viborg_Start_video\"]}}",
                 "tot": "json"
             }
         ],
@@ -37288,8 +37288,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 700,
+        "x": 500,
+        "y": 720,
         "wires": [
             [
                 "18e4191c70ae0a3c"
@@ -37352,8 +37352,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 380,
-        "y": 700,
+        "x": 260,
+        "y": 720,
         "wires": [
             [
                 "a1200c70914a7608",
@@ -37390,8 +37390,8 @@
         "links": [
             "42b9b5a5ccea135a"
         ],
-        "x": 815,
-        "y": 700,
+        "x": 675,
+        "y": 720,
         "wires": []
     },
     {
@@ -37409,8 +37409,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 782.8958435058594,
-        "y": 793.3333129882812,
+        "x": 662.8958435058594,
+        "y": 813.3333129882812,
         "wires": [
             [
                 "9fc86e8ce829d976"
@@ -37630,8 +37630,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 590,
-        "y": 800,
+        "x": 470,
+        "y": 820,
         "wires": [
             [
                 "38fdefcfbcaf5971"
@@ -37805,8 +37805,8 @@
         "links": [
             "7fc3fbad33439116"
         ],
-        "x": 315,
-        "y": 760,
+        "x": 195,
+        "y": 780,
         "wires": [
             [
                 "a1200c70914a7608",
@@ -37926,8 +37926,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 370,
-        "y": 820,
+        "x": 250,
+        "y": 840,
         "wires": [
             [
                 "a85f1f23c34dde57"
@@ -38842,8 +38842,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 950,
-        "y": 760,
+        "x": 830,
+        "y": 780,
         "wires": [
             [
                 "187b5e35f48f575b"
@@ -38862,8 +38862,8 @@
             "d03e09e5aec12d86",
             "c3a76b62883b7f32"
         ],
-        "x": 1115,
-        "y": 720,
+        "x": 1035,
+        "y": 780,
         "wires": []
     },
     {
@@ -38980,8 +38980,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
-        "y": 840,
+        "x": 650,
+        "y": 860,
         "wires": []
     },
     {
@@ -39267,31 +39267,6 @@
         ]
     },
     {
-        "id": "1d6ec9bba9260bfe",
-        "type": "change",
-        "z": "42a18184186a4f43",
-        "name": "start video",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "videoer/Trailer.mp4",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 990,
-        "y": 820,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "7f8d924fabc69f2f",
         "type": "http request",
         "z": "42a18184186a4f43",
@@ -39306,8 +39281,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 740,
-        "y": 740,
+        "x": 620,
+        "y": 760,
         "wires": [
             []
         ]
@@ -39346,8 +39321,8 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 570,
-        "y": 740,
+        "x": 450,
+        "y": 760,
         "wires": [
             [
                 "7f8d924fabc69f2f"
@@ -40678,8 +40653,8 @@
         "g": "606c3a6c3de0cf55",
         "name": "",
         "links": [],
-        "x": 865,
-        "y": 700,
+        "x": 745,
+        "y": 720,
         "wires": [
             [
                 "a85f1f23c34dde57"
@@ -40706,8 +40681,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 990,
-        "y": 700,
+        "x": 870,
+        "y": 720,
         "wires": [
             [
                 "2cb594d49f3902ca"
