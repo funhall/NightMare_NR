@@ -6971,7 +6971,7 @@
         "gtype": "donut",
         "title": "Time used {{msg.gametime}}",
         "label": "min. left",
-        "format": "{{msg.gamecounter}}",
+        "format": "{{msg.timeused}}",
         "min": "0",
         "max": "60",
         "colors": [
@@ -16821,7 +16821,7 @@
         "g": "dbe01fce1c4844e0",
         "name": "",
         "inputMsgField": "payload",
-        "outputMsgField": "payload",
+        "outputMsgField": "timeused",
         "operation": "mult",
         "constant": "-1",
         "round": false,
